@@ -1,0 +1,127 @@
+{
+  "seasonYear": 2025,
+  "seriesId": "gpm",
+  "rows": [
+    {
+      "place": 1,
+      "teamId": "2025-unam-fi-beta",
+      "score": 120,
+      "qualified": true
+    },
+    {
+      "place": 2,
+      "teamId": "2025-unam-fc-omega",
+      "score": 114.8,
+      "qualified": true
+    },
+    {
+      "place": 3,
+      "teamId": "2025-ipn-escom-overflow",
+      "score": 109.5,
+      "qualified": true
+    },
+    {
+      "place": 4,
+      "teamId": "2025-ipn-esime-heap",
+      "score": 104.3,
+      "qualified": true
+    },
+    {
+      "place": 5,
+      "teamId": "2025-ipn-upiita-quasar",
+      "score": 99,
+      "qualified": true
+    },
+    {
+      "place": 6,
+      "teamId": "2025-udg-cucei-kernel",
+      "score": 93.8,
+      "qualified": true
+    },
+    {
+      "place": 7,
+      "teamId": "2025-itesm-cem-nebula",
+      "score": 88.5,
+      "qualified": true
+    },
+    {
+      "place": 8,
+      "teamId": "2025-itesm-mty-alpha",
+      "score": 83.3,
+      "qualified": true
+    },
+    {
+      "place": 9,
+      "teamId": "2025-uanl-fcfm-delta",
+      "score": 78,
+      "qualified": true
+    },
+    {
+      "place": 10,
+      "teamId": "2025-buap-segfault",
+      "score": 72.8,
+      "qualified": true
+    },
+    {
+      "place": 11,
+      "teamId": "2025-uady-recursion",
+      "score": 67.5,
+      "qualified": false
+    },
+    {
+      "place": 12,
+      "teamId": "2025-ugto-pivot",
+      "score": 62.3,
+      "qualified": false
+    },
+    {
+      "place": 13,
+      "teamId": "2025-unam-fi-cipher",
+      "score": 57,
+      "qualified": false
+    },
+    {
+      "place": 14,
+      "teamId": "2025-unam-fc-photon",
+      "score": 51.8,
+      "qualified": false
+    },
+    {
+      "place": 15,
+      "teamId": "2025-ipn-escom-binary",
+      "score": 46.5,
+      "qualified": false
+    },
+    {
+      "place": 16,
+      "teamId": "2025-ipn-esime-gamma",
+      "score": 41.3,
+      "qualified": false
+    },
+    {
+      "place": 17,
+      "teamId": "2025-ipn-upiita-nullptr",
+      "score": 36,
+      "qualified": false
+    },
+    {
+      "place": 18,
+      "teamId": "2025-udg-cucei-lambda",
+      "score": 30.8,
+      "qualified": false
+    },
+    {
+      "place": 19,
+      "teamId": "2025-itesm-cem-trie",
+      "score": 25.5,
+      "qualified": false
+    },
+    {
+      "place": 20,
+      "teamId": "2025-itesm-mty-vortex",
+      "score": 20.3,
+      "qualified": false
+    }
+  ],
+  "source": "https://example.com/huron-scoreboards/mock-data"
+}

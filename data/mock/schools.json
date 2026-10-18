@@ -1,0 +1,102 @@
+[
+  {
+    "id": "unam",
+    "officialName": "Universidad Nacional Autónoma de México",
+    "shortName": "UNAM",
+    "city": "Ciudad de México",
+    "state": "Ciudad de México"
+  },
+  {
+    "id": "unam-fi",
+    "officialName": "Facultad de Ingeniería, Universidad Nacional Autónoma de México",
+    "shortName": "UNAM FI",
+    "parentInstitutionId": "unam",
+    "city": "Ciudad de México",
+    "state": "Ciudad de México"
+  },
+  {
+    "id": "unam-fc",
+    "officialName": "Facultad de Ciencias, Universidad Nacional Autónoma de México",
+    "shortName": "UNAM FC",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "ipn",
+    "officialName": "Instituto Politécnico Nacional",
+    "shortName": "IPN"
+  },
+  {
+    "id": "ipn-escom",
+    "officialName": "Escuela Superior de Cómputo",
+    "shortName": "ESCOM",
+    "parentInstitutionId": "ipn",
+    "city": "Ciudad de México",
+    "state": "Ciudad de México"
+  },
+  {
+    "id": "ipn-esime",
+    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica",
+    "shortName": "ESIME",
+    "parentInstitutionId": "ipn"
+  },
+  {
+    "id": "ipn-upiita",
+    "officialName": "Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas",
+    "shortName": "UPIITA",
+    "parentInstitutionId": "ipn",
+    "city": "Ciudad de México",
+    "state": "Ciudad de México"
+  },
+  {
+    "id": "udg-cucei",
+    "officialName": "Centro Universitario de Ciencias Exactas e Ingenierías",
+    "shortName": "CUCEI",
+    "city": "Guadalajara",
+    "state": "Jalisco"
+  },
+  {
+    "id": "itesm-cem",
+    "officialName": "Tecnológico de Monterrey, Campus Estado de México",
+    "shortName": "ITESM CEM",
+    "city": "Atizapán de Zaragoza",
+    "state": "Estado de México"
+  },
+  {
+    "id": "itesm-mty",
+    "officialName": "Tecnológico de Monterrey, Campus Monterrey",
+    "shortName": "ITESM MTY"
+  },
+  {
+    "id": "uanl-fcfm",
+    "officialName": "Facultad de Ciencias Físico Matemáticas, Universidad Autónoma de Nuevo León",
+    "shortName": "UANL FCFM",
+    "city": "San Nicolás de los Garza",
+    "state": "Nuevo León"
+  },
+  {
+    "id": "buap",
+    "officialName": "Benemérita Universidad Autónoma de Puebla",
+    "shortName": "BUAP"
+  },
+  {
+    "id": "uady",
+    "officialName": "Universidad Autónoma de Yucatán",
+    "shortName": "UADY",
+    "city": "Mérida",
+    "state": "Yucatán"
+  },
+  {
+    "id": "ugto",
+    "officialName": "Universidad de Guanajuato",
+    "shortName": "UGTO",
+    "city": "Guanajuato",
+    "state": "Guanajuato"
+  },
+  {
+    "id": "uaz",
+    "officialName": "Universidad Autónoma de Zacatecas",
+    "shortName": "UAZ",
+    "city": "Zacatecas",
+    "state": "Zacatecas"
+  }
+]

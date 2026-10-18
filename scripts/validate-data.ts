@@ -1,3 +1,4 @@
+import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 
@@ -7,8 +8,22 @@ import { validateDataDirectory } from './data-validation';
 
 const repositoryRoot = fileURLToPath(new URL('..', import.meta.url));
 
+/**
+ * Datasets are validated independently so that mock records can never satisfy a reference in the
+ * real archive. `data/mock` holds seed data; `data` holds transcribed results.
+ */
+const datasetDirectories = [
+  path.join(repositoryRoot, 'data'),
+  path.join(repositoryRoot, 'data', 'mock'),
+];
+
 const run = async (): Promise<void> => {
-  const { issues, fileCount } = await validateDataDirectory(repositoryRoot);
+  const reports = await Promise.all(
+    datasetDirectories.map(async (directory) => validateDataDirectory(repositoryRoot, directory)),
+  );
+
+  const issues = reports.flatMap((report) => report.issues);
+  const fileCount = reports.reduce((total, report) => total + report.fileCount, 0);
 
   if (issues.length > 0) {
     console.error(formatIssues(issues));

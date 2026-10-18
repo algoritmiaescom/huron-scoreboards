@@ -287,6 +287,7 @@ data/
   media/
     events/
       2024-mexico-finals.json      Event plus its curated posts
+  mock/                            Seed data, same layout, invented results
 ```
 
 One contest per file keeps pull requests reviewable: a correction touches one file, and the diff
@@ -296,6 +297,14 @@ referenced across contests and must not be duplicated.
 JSON is verbose for a wide standings table, which is the cost of this choice. Mitigate it with
 compact per-row encoding and clear validation errors rather than by inventing a bespoke format.
 Keys are stable, so avoid reordering them in unrelated changes to keep diffs readable.
+
+### Mock data is a separate dataset
+
+`data/mock/` repeats the layout above with invented results, so the application has something to
+render before contests are transcribed. It is a sibling dataset, not a staging area: references are
+resolved within one dataset, so a mock record can never satisfy a reference in the real archive.
+Every mock `source` points at `example.com` to mark it as having no verifiable origin. See
+[data/README.md](../data/README.md).
 
 ## Validation
 

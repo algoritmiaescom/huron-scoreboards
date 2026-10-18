@@ -33,6 +33,9 @@ correcting competition data through GitHub. See `docs/product-scope.md` and `doc
 - Competition data is versioned in the repository as JSON under `data/` and read through a
   repository interface; validate it with Zod because it is community-contributed. The entities,
   and which values are stored versus derived, are defined in `docs/data-model.md`.
+- `data/` is the real archive; `data/mock/` is seed data with invented results. They are separate
+  datasets validated independently, so never promote a mock file into `data/` — real results are
+  transcribed from an official scoreboard.
 - Data is validated twice from one set of Zod schemas: by `npm run validate:data` in CI before a
   change merges, and at the repository boundary when the application loads it. Infer domain types
   from the schemas with `z.infer` so they cannot drift.

@@ -18,6 +18,11 @@ Competition results are community-contributed and versioned in this repository a
 `data/`. Corrections and new contests are submitted the same way as code: edit the data files and
 open a pull request.
 
+The real archive under `data/` is currently empty; `data/mock/` holds seed records with **invented
+results** so the application has something to render. Mock data is a separate dataset, never a
+staging area — transcribe results from an official scoreboard into `data/` rather than promoting
+mock files. See [data/README.md](./data/README.md).
+
 - Identify the season, series (GPM or Mexico finals), and stage (qualifier 1-3, repechage, or
   final) the change belongs to.
 - Keep team, school, and problem identifiers consistent with existing records so historical

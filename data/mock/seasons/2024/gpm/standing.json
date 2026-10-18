@@ -1,0 +1,67 @@
+{
+  "seasonYear": 2024,
+  "seriesId": "gpm",
+  "rows": [
+    {
+      "place": 1,
+      "teamId": "2024-unam-fi-alpha",
+      "score": 100,
+      "qualified": true
+    },
+    {
+      "place": 2,
+      "teamId": "2024-unam-fc-delta",
+      "score": 92.5,
+      "qualified": true
+    },
+    {
+      "place": 3,
+      "teamId": "2024-ipn-escom-segfault",
+      "score": 85,
+      "qualified": true
+    },
+    {
+      "place": 4,
+      "teamId": "2024-ipn-esime-recursion",
+      "score": 77.5,
+      "qualified": true
+    },
+    {
+      "place": 5,
+      "teamId": "2024-ipn-upiita-pivot",
+      "score": 70,
+      "qualified": true
+    },
+    {
+      "place": 6,
+      "teamId": "2024-udg-cucei-cipher",
+      "score": 62.5,
+      "qualified": true
+    },
+    {
+      "place": 7,
+      "teamId": "2024-itesm-cem-photon",
+      "score": 55,
+      "qualified": true
+    },
+    {
+      "place": 8,
+      "teamId": "2024-itesm-mty-binary",
+      "score": 47.5,
+      "qualified": true
+    },
+    {
+      "place": 9,
+      "teamId": "2024-uanl-fcfm-gamma",
+      "score": 40,
+      "qualified": false
+    },
+    {
+      "place": 10,
+      "teamId": "2024-buap-nullptr",
+      "score": 32.5,
+      "qualified": false
+    }
+  ],
+  "source": "https://example.com/huron-scoreboards/mock-data"
+}

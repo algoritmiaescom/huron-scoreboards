@@ -1,0 +1,120 @@
+{
+  "event": {
+    "id": "2025-mexico-finals",
+    "name": "Final Regional Mexicana 2025",
+    "date": "2025-11-09",
+    "hashtag": "#FinalMexicana2025",
+    "location": "Guadalajara, Jalisco",
+    "contestId": "2025-mexico-finals",
+    "postIds": [
+      "2025-finals-opening",
+      "2025-finals-freeze",
+      "2025-finals-reaction",
+      "2025-finals-podium",
+      "2025-finals-huron"
+    ]
+  },
+  "posts": [
+    {
+      "id": "2025-finals-opening",
+      "source": "x",
+      "author": {
+        "username": "icpcmexico",
+        "displayName": "ICPC México",
+        "avatarUrl": "https://example.com/avatars/icpcmexico.png",
+        "profileUrl": "https://example.com/icpcmexico"
+      },
+      "postedAt": "2025-11-09T09:05:00-06:00",
+      "title": "Arranca la Final Regional Mexicana",
+      "body": "Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/media/finals-opening.jpg",
+          "alt": "Equipos sentados frente a sus computadoras al inicio de la final"
+        }
+      ],
+      "permalink": "https://example.com/icpcmexico/posts/1",
+      "tags": ["#FinalMexicana2025", "#ICPC"]
+    },
+    {
+      "id": "2025-finals-freeze",
+      "source": "x",
+      "author": {
+        "username": "icpcmexico",
+        "profileUrl": "https://example.com/icpcmexico"
+      },
+      "postedAt": "2025-11-09T13:00:00-06:00",
+      "body": "Scoreboard congelado a una hora del final. El marcador queda oculto hasta la premiación.",
+      "media": [],
+      "permalink": "https://example.com/icpcmexico/posts/2",
+      "tags": ["#FinalMexicana2025"]
+    },
+    {
+      "id": "2025-finals-reaction",
+      "source": "instagram",
+      "author": {
+        "username": "equipo_cucei"
+      },
+      "postedAt": "2025-11-09T14:20:00-06:00",
+      "body": "¡Resolvimos el problema J en el último minuto!",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://example.com/media/finals-reaction.mp4",
+          "alt": "Integrantes del equipo celebrando frente a la pantalla"
+        }
+      ],
+      "permalink": "https://example.com/equipo_cucei/reels/1",
+      "tags": []
+    },
+    {
+      "id": "2025-finals-podium",
+      "source": "facebook",
+      "author": {
+        "username": "icpcmexico",
+        "displayName": "ICPC México",
+        "profileUrl": "https://example.com/icpcmexico"
+      },
+      "postedAt": "2025-11-09T18:40:00-06:00",
+      "title": "Podio 2025",
+      "body": "Felicidades a los equipos que suben al podio de la Final Regional Mexicana 2025.",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/media/finals-podium-1.jpg",
+          "alt": "Los tres equipos ganadores en el podio con sus medallas"
+        },
+        {
+          "type": "image",
+          "url": "https://example.com/media/finals-podium-2.jpg",
+          "alt": "Entrega de reconocimientos al equipo campeón"
+        }
+      ],
+      "permalink": "https://example.com/icpcmexico/posts/3",
+      "tags": ["#FinalMexicana2025", "#ICPC", "#Podio"]
+    },
+    {
+      "id": "2025-finals-huron",
+      "source": "youtube",
+      "author": {
+        "username": "huronclub",
+        "displayName": "Huron Algorithms Club",
+        "avatarUrl": "https://example.com/avatars/huron.png",
+        "profileUrl": "https://example.com/huronclub"
+      },
+      "postedAt": "2025-11-10T11:00:00-06:00",
+      "title": "Resumen de la final",
+      "body": "Repasamos los problemas más interesantes de la Final Regional Mexicana 2025.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://example.com/media/finals-recap.mp4",
+          "alt": "Resumen en video de la final con análisis de problemas"
+        }
+      ],
+      "permalink": "https://example.com/huronclub/videos/1",
+      "tags": ["#FinalMexicana2025"]
+    }
+  ]
+}

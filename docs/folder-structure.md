@@ -2,6 +2,7 @@
 
 ```text
 data/                      Competition and media data as JSON (see docs/data-model.md)
+  mock/                    Seed dataset with invented results, validated separately
 e2e/                       Playwright user journeys
 src/
   app/

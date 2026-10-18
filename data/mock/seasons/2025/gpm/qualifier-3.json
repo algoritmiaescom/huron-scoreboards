@@ -1,0 +1,1033 @@
+{
+  "id": "2025-gpm-qualifier-3",
+  "seasonYear": 2025,
+  "seriesId": "gpm",
+  "stage": "qualifier-3",
+  "name": "GPM 2025 Clasificatorio 3",
+  "date": "2025-08-24",
+  "durationMinutes": 300,
+  "penaltyMinutesPerFailedAttempt": 20,
+  "problems": [
+    {
+      "label": "A",
+      "title": "Warmup Parade",
+      "url": "https://example.com/problems/a"
+    },
+    {
+      "label": "B",
+      "title": "Cactus Fence"
+    },
+    {
+      "label": "C",
+      "title": "Metro Transfers"
+    },
+    {
+      "label": "D",
+      "title": "Taco Truck Routes",
+      "url": "https://example.com/problems/d"
+    },
+    {
+      "label": "E",
+      "title": "Binary Piñata"
+    },
+    {
+      "label": "F",
+      "title": "Lucha Libre Brackets"
+    },
+    {
+      "label": "G",
+      "title": "Mariachi Harmonies",
+      "url": "https://example.com/problems/g"
+    },
+    {
+      "label": "H",
+      "title": "Desert Caravan"
+    },
+    {
+      "label": "I",
+      "title": "Pyramid Steps"
+    },
+    {
+      "label": "J",
+      "title": "Cenote Depths",
+      "url": "https://example.com/problems/j"
+    },
+    {
+      "label": "K",
+      "title": "Axolotl Colony"
+    },
+    {
+      "label": "L",
+      "title": "Volcano Watch"
+    }
+  ],
+  "standings": [
+    {
+      "place": 1,
+      "teamId": "2025-unam-fc-omega",
+      "results": [
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 45
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 126
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 212
+        },
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 126
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 231
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 209
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 2,
+      "teamId": "2025-ipn-escom-overflow",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 62
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 114
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 97
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "solved",
+          "attempts": 3,
+          "solvedAtMinute": 237
+        },
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 194
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 246
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 3,
+      "teamId": "2025-ipn-upiita-quasar",
+      "results": [
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 121
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 114
+        },
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 132
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 66
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 4,
+      "teamId": "2025-unam-fi-beta",
+      "results": [
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 49
+        },
+        {
+          "status": "solved",
+          "attempts": 3,
+          "solvedAtMinute": 39
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 229
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 111
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 5,
+      "teamId": "2025-udg-cucei-kernel",
+      "results": [
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 114
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 116
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "solved",
+          "attempts": 3,
+          "solvedAtMinute": 96
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 6,
+      "teamId": "2025-ipn-esime-heap",
+      "results": [
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 146
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 166
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 203
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 7,
+      "teamId": "2025-uanl-fcfm-delta",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 52
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 49
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 8,
+      "teamId": "2025-itesm-cem-nebula",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 55
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 158
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 9,
+      "teamId": "2025-ugto-pivot",
+      "results": [
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 185
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 195
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 10,
+      "teamId": "2025-buap-segfault",
+      "results": [
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 221
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "solved",
+          "attempts": 2,
+          "solvedAtMinute": 199
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 11,
+      "teamId": "2025-ipn-upiita-nullptr",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 74
+        },
+        {
+          "status": "attempted",
+          "attempts": 3
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 12,
+      "teamId": "2025-itesm-mty-alpha",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 96
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 13,
+      "teamId": "2025-ipn-escom-binary",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 109
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 14,
+      "teamId": "2025-ipn-esime-gamma",
+      "results": [
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 183
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 15,
+      "teamId": "2025-unam-fi-cipher",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "solved",
+          "attempts": 1,
+          "solvedAtMinute": 195
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 3
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 3
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 16,
+      "teamId": "2025-uady-recursion",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 3
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "solved",
+          "attempts": 3,
+          "solvedAtMinute": 238
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 3
+        }
+      ]
+    },
+    {
+      "place": 17,
+      "teamId": "2025-itesm-cem-trie",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 17,
+      "teamId": "2025-itesm-mty-vortex",
+      "results": [
+        {
+          "status": "attempted",
+          "attempts": 2
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "attempted",
+          "attempts": 3
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 17,
+      "teamId": "2025-udg-cucei-lambda",
+      "results": [
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    },
+    {
+      "place": 17,
+      "teamId": "2025-unam-fc-photon",
+      "results": [
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 3
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "attempted",
+          "attempts": 1
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ]
+    }
+  ],
+  "source": "https://example.com/huron-scoreboards/mock-data"
+}

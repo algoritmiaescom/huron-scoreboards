@@ -230,12 +230,19 @@ const loadMedia = async (
 };
 
 /**
- * Reads every data file under `<root>/data`, validates each against its schema, then runs the
+ * Reads every data file in a dataset directory, validates each against its schema, then runs the
  * cross-file reference checks. All failures are collected so a contributor sees them at once.
+ *
+ * References are resolved within a single dataset, so each root is validated independently: mock
+ * teams resolve against mock schools and never against the real archive.
+ *
+ * @param root Repository root, used to report file paths relative to it.
+ * @param dataDirectory Dataset directory to read. Defaults to `<root>/data`.
  */
-export const validateDataDirectory = async (root: string): Promise<ValidationReport> => {
-  const dataDirectory = path.join(root, 'data');
-
+export const validateDataDirectory = async (
+  root: string,
+  dataDirectory: string = path.join(root, 'data'),
+): Promise<ValidationReport> => {
   if (!(await directoryExists(dataDirectory))) {
     return { issues: [], fileCount: 0 };
   }

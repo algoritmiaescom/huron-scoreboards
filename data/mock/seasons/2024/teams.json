@@ -1,0 +1,301 @@
+[
+  {
+    "id": "2024-unam-fi-alpha",
+    "name": "UNAM FI alpha",
+    "schoolId": "unam-fi",
+    "seasonYear": 2024
+  },
+  {
+    "id": "2024-unam-fc-delta",
+    "name": "UNAM FC delta",
+    "schoolId": "unam-fc",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Diego Hernández",
+        "role": "contestant"
+      },
+      {
+        "name": "Regina Castillo",
+        "role": "contestant"
+      },
+      {
+        "name": "Iván Peña",
+        "role": "contestant"
+      },
+      {
+        "name": "Emiliano Vargas",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-ipn-escom-segfault",
+    "name": "ESCOM segfault",
+    "schoolId": "ipn-escom",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Camila Flores",
+        "role": "contestant"
+      },
+      {
+        "name": "Héctor Navarro",
+        "role": "contestant"
+      },
+      {
+        "name": "Ana Domínguez",
+        "role": "contestant"
+      },
+      {
+        "name": "Ximena Salazar",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-ipn-esime-recursion",
+    "name": "ESIME recursion",
+    "schoolId": "ipn-esime",
+    "seasonYear": 2024
+  },
+  {
+    "id": "2024-ipn-upiita-pivot",
+    "name": "UPIITA pivot",
+    "schoolId": "ipn-upiita",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Carolina Guerrero"
+      },
+      {
+        "name": "Diego Torres"
+      },
+      {
+        "name": "Regina Flores"
+      },
+      {
+        "name": "Ximena Guerrero",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-udg-cucei-cipher",
+    "name": "CUCEI cipher",
+    "schoolId": "udg-cucei",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Valeria Cordero",
+        "role": "contestant"
+      },
+      {
+        "name": "Camila Ibarra",
+        "role": "contestant"
+      },
+      {
+        "name": "Emiliano Hernández",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-itesm-cem-photon",
+    "name": "ITESM CEM photon",
+    "schoolId": "itesm-cem",
+    "seasonYear": 2024
+  },
+  {
+    "id": "2024-itesm-mty-binary",
+    "name": "ITESM MTY binary",
+    "schoolId": "itesm-mty",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Santiago Ramírez",
+        "role": "contestant"
+      },
+      {
+        "name": "Carolina Rojas",
+        "role": "contestant"
+      },
+      {
+        "name": "Diego Cordero",
+        "role": "contestant"
+      }
+    ]
+  },
+  {
+    "id": "2024-uanl-fcfm-gamma",
+    "name": "UANL FCFM gamma",
+    "schoolId": "uanl-fcfm",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Mariana Castillo"
+      },
+      {
+        "name": "Valeria Peña"
+      },
+      {
+        "name": "Camila Martínez"
+      },
+      {
+        "name": "Ximena Castillo",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-buap-nullptr",
+    "name": "BUAP nullptr",
+    "schoolId": "buap",
+    "seasonYear": 2024
+  },
+  {
+    "id": "2024-uady-lambda",
+    "name": "UADY lambda",
+    "schoolId": "uady",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Fernanda Salazar",
+        "role": "contestant"
+      },
+      {
+        "name": "Santiago Hernández",
+        "role": "contestant"
+      },
+      {
+        "name": "Ximena Flores",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-ugto-trie",
+    "name": "UGTO trie",
+    "schoolId": "ugto",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Emiliano Torres",
+        "role": "contestant"
+      },
+      {
+        "name": "Mariana Flores",
+        "role": "contestant"
+      },
+      {
+        "name": "Valeria Navarro",
+        "role": "contestant"
+      },
+      {
+        "name": "Emiliano Peña",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-unam-fi-vortex",
+    "name": "UNAM FI vortex",
+    "schoolId": "unam-fi",
+    "seasonYear": 2024
+  },
+  {
+    "id": "2024-unam-fc-matrix",
+    "name": "UNAM FC matrix",
+    "schoolId": "unam-fc",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Óscar Vargas",
+        "role": "contestant"
+      },
+      {
+        "name": "Fernanda Guerrero",
+        "role": "contestant"
+      },
+      {
+        "name": "Santiago Torres",
+        "role": "contestant"
+      },
+      {
+        "name": "Emiliano Navarro",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-ipn-escom-syntax",
+    "name": "ESCOM syntax",
+    "schoolId": "ipn-escom",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Rodrigo Rojas",
+        "role": "contestant"
+      },
+      {
+        "name": "Emiliano Cordero",
+        "role": "contestant"
+      },
+      {
+        "name": "Mariana Ibarra",
+        "role": "contestant"
+      }
+    ]
+  },
+  {
+    "id": "2024-ipn-esime-beta",
+    "name": "ESIME beta",
+    "schoolId": "ipn-esime",
+    "seasonYear": 2024
+  },
+  {
+    "id": "2024-ipn-upiita-omega",
+    "name": "UPIITA omega",
+    "schoolId": "ipn-upiita",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Paulina Domínguez"
+      },
+      {
+        "name": "Óscar Ramírez"
+      },
+      {
+        "name": "Fernanda Rojas"
+      },
+      {
+        "name": "Ximena Domínguez",
+        "role": "coach"
+      }
+    ]
+  },
+  {
+    "id": "2024-udg-cucei-overflow",
+    "name": "CUCEI overflow",
+    "schoolId": "udg-cucei",
+    "seasonYear": 2024,
+    "members": [
+      {
+        "name": "Iván Hernández",
+        "role": "contestant"
+      },
+      {
+        "name": "Rodrigo Castillo",
+        "role": "contestant"
+      },
+      {
+        "name": "Emiliano Peña",
+        "role": "contestant"
+      },
+      {
+        "name": "Emiliano Vargas",
+        "role": "coach"
+      }
+    ]
+  }
+]

@@ -25,8 +25,8 @@ const writeJson = async (root: string, relativePath: string, value: unknown): Pr
   await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`);
 };
 
-const validData = async (root: string): Promise<void> => {
-  await writeJson(root, 'data/schools.json', [
+const validData = async (root: string, prefix = 'data'): Promise<void> => {
+  await writeJson(root, `${prefix}/schools.json`, [
     {
       id: 'ipn-escom',
       officialName: 'Escuela Superior de Cómputo',
@@ -34,7 +34,7 @@ const validData = async (root: string): Promise<void> => {
     },
   ]);
 
-  await writeJson(root, 'data/seasons/2024/teams.json', [
+  await writeJson(root, `${prefix}/seasons/2024/teams.json`, [
     {
       id: '2024-huron-tigers',
       name: 'Huron Tigers',
@@ -43,7 +43,7 @@ const validData = async (root: string): Promise<void> => {
     },
   ]);
 
-  await writeJson(root, 'data/seasons/2024/gpm/qualifier-1.json', {
+  await writeJson(root, `${prefix}/seasons/2024/gpm/qualifier-1.json`, {
     id: '2024-gpm-q1',
     seasonYear: 2024,
     seriesId: 'gpm',
@@ -63,7 +63,7 @@ const validData = async (root: string): Promise<void> => {
     source: 'https://example.com/gpm-2024-q1',
   });
 
-  await writeJson(root, 'data/seasons/2024/gpm/standing.json', {
+  await writeJson(root, `${prefix}/seasons/2024/gpm/standing.json`, {
     seasonYear: 2024,
     seriesId: 'gpm',
     rows: [
@@ -77,7 +77,7 @@ const validData = async (root: string): Promise<void> => {
     source: 'https://example.com/gpm-2024-standing',
   });
 
-  await writeJson(root, 'data/media/events/2024-gpm.json', {
+  await writeJson(root, `${prefix}/media/events/2024-gpm.json`, {
     event: {
       id: '2024-gpm',
       name: 'GPM 2024',
@@ -162,6 +162,21 @@ describe('validateDataDirectory', () => {
 
     expect(report.fileCount).toBe(5);
     expect(report.issues).toHaveLength(0);
+  });
+
+  it('validates a nested dataset directory without mixing it into the parent', async () => {
+    const root = await createRoot();
+    await validData(root, 'data/mock');
+
+    const mock = await validateDataDirectory(root, path.join(root, 'data', 'mock'));
+
+    expect(mock.fileCount).toBe(5);
+    expect(mock.issues).toHaveLength(0);
+
+    const parent = await validateDataDirectory(root, path.join(root, 'data'));
+
+    expect(parent.fileCount).toBe(0);
+    expect(parent.issues).toHaveLength(0);
   });
 
   it('reports schema and cross-reference problems in mocked data', async () => {

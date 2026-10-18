@@ -1,0 +1,24 @@
+{
+  "event": {
+    "id": "2024-gpm-repechage",
+    "name": "GPM 2024 Repechaje",
+    "date": "2024-09-23",
+    "hashtag": "#GPM2024",
+    "postIds": ["2024-repechage-results"]
+  },
+  "posts": [
+    {
+      "id": "2024-repechage-results",
+      "source": "linkedin",
+      "author": {
+        "username": "gpmexico",
+        "displayName": "Gran Premio de México"
+      },
+      "postedAt": "2024-09-23T20:15:00-06:00",
+      "body": "Publicados los resultados del repechaje 2024. Nos vemos en la final.",
+      "media": [],
+      "permalink": "https://example.com/gpmexico/posts/9",
+      "tags": ["#GPM2024"]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2023-unam-fi-binary",
+    "name": "UNAM FI binary",
+    "schoolId": "unam-fi",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-unam-fc-gamma",
+    "name": "UNAM FC gamma",
+    "schoolId": "unam-fc",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-ipn-escom-nullptr",
+    "name": "ESCOM nullptr",
+    "schoolId": "ipn-escom",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-ipn-esime-lambda",
+    "name": "ESIME lambda",
+    "schoolId": "ipn-esime",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-ipn-upiita-trie",
+    "name": "UPIITA trie",
+    "schoolId": "ipn-upiita",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-udg-cucei-vortex",
+    "name": "CUCEI vortex",
+    "schoolId": "udg-cucei",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-itesm-cem-matrix",
+    "name": "ITESM CEM matrix",
+    "schoolId": "itesm-cem",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-itesm-mty-syntax",
+    "name": "ITESM MTY syntax",
+    "schoolId": "itesm-mty",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-uanl-fcfm-beta",
+    "name": "UANL FCFM beta",
+    "schoolId": "uanl-fcfm",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-buap-omega",
+    "name": "BUAP omega",
+    "schoolId": "buap",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-uady-overflow",
+    "name": "UADY overflow",
+    "schoolId": "uady",
+    "seasonYear": 2023
+  },
+  {
+    "id": "2023-ugto-heap",
+    "name": "UGTO heap",
+    "schoolId": "ugto",
+    "seasonYear": 2023
+  }
+]
