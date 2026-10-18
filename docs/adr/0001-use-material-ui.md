@@ -12,4 +12,6 @@ baseline styles.
 ## Consequences
 
 The application gains an accessible component foundation and consistent theming. Feature code
-must use theme tokens and should not introduce a parallel styling system.
+must use theme tokens and should not introduce a parallel styling system. The styling and theming
+conventions that follow from this are in [design](../design.md) and
+[best practices](../best-practices.md).

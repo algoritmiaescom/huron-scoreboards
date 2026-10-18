@@ -1,5 +1,5 @@
 import { UnderConstructionPage } from '@/app/pages/UnderConstructionPage';
 
-export function App() {
+export const App = () => {
   return <UnderConstructionPage />;
-}
+};

@@ -31,6 +31,21 @@ export default defineConfig([
       '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
       '@typescript-eslint/no-floating-promises': 'error',
       '@typescript-eslint/no-misused-promises': 'error',
+      'func-style': ['error', 'expression', { allowArrowFunctions: true }],
+      'prefer-arrow-callback': ['error', { allowNamedFunctions: false }],
+      'no-restricted-syntax': [
+        'error',
+        {
+          selector:
+            'FunctionExpression:not(Property > FunctionExpression):not(MethodDefinition > FunctionExpression)',
+          message: 'Use an arrow function instead of a function expression.',
+        },
+        {
+          selector: 'JSXAttribute[name.name="sx"]',
+          message:
+            'Style with a styled component from @mui/material/styles instead of the sx prop.',
+        },
+      ],
     },
   },
   {

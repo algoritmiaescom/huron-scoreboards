@@ -1,7 +1,18 @@
 # Huron Scoreboards
 
-A React application for displaying and administering local scoreboards. It currently serves a
-single "Under construction" placeholder screen while scoreboard features are built.
+The public site of the algorithms club at Huron. Its goal is to publish the historical standings
+of Mexican ICPC programming competitions, surface the community reaction around the latest
+contest, and let anyone correct the record through this repository.
+
+Planned modules:
+
+- **Scoreboards** — contest standings with per-problem attempts, accepted times, and
+  first-to-solve highlights, plus filters and per-school historical pages.
+- **Media feed** — public posts published under the hashtag of the most recent contest.
+- **Contribution** — a guide for adding and correcting competition data through GitHub.
+
+See [Product scope](docs/product-scope.md) for the full definition. The application currently
+serves a single "Under construction" placeholder screen while these features are built.
 
 ## Prerequisites
 
@@ -34,11 +45,15 @@ persistence are not implemented yet.
 
 ## Documentation
 
+- [Product scope](docs/product-scope.md)
 - [Architecture](docs/architecture.md)
+- [Architecture decision records](docs/adr/README.md)
 - [Best practices](docs/best-practices.md)
+- [Design](docs/design.md)
 - [Folder structure](docs/folder-structure.md)
 - [Testing](docs/testing.md)
 - [Accessibility](docs/accessibility.md)
+- [Agent guidance](AGENTS.md)
 - [Contributing](CONTRIBUTING.md)
 
 Hosting and deployment are intentionally undecided.

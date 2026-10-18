@@ -14,6 +14,15 @@ src/
 
 The application currently contains only the placeholder screen in `src/app/pages/`.
 
+The planned modules map to these features:
+
+```text
+src/features/
+  scoreboards/   Contest standings, per-problem results, filters, school history
+  media-feed/    Posts published under the latest contest hashtag
+  contribution/  Guide for correcting competition data through GitHub
+```
+
 When feature work starts, create domain code in `src/features/<feature>/` using:
 
 ```text
