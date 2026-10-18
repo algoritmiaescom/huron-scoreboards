@@ -41,6 +41,7 @@ persistence are not implemented yet.
 | `npm run test`          | Run unit and component tests                      |
 | `npm run test:coverage` | Run tests and enforce coverage thresholds         |
 | `npm run test:e2e`      | Run Playwright end-to-end and accessibility tests |
+| `npm run validate:data` | Validate repository data against Zod schemas      |
 | `npm run validate`      | Run all non-E2E quality checks                    |
 
 ## Documentation
