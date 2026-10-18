@@ -10,19 +10,30 @@ requests.
 
 ## Competition model
 
-The Mexican ICPC season repeats yearly and is the backbone of the data model:
+A season holds two competitions. The Gran Premio de México (GPM) runs up to three qualifier
+rounds plus a repechage, and its accumulated result decides which teams advance to the Final
+Regional Mexicana:
 
 ```text
 season (year)
-├── qualifier round 1
-├── qualifier round 2        (a season has up to three qualifiers)
-├── qualifier round 3
-├── repechage                (second chance for teams that missed advancement)
+├── GPM
+│   ├── qualifier round 1
+│   ├── qualifier round 2    (a season has up to three qualifiers)
+│   ├── qualifier round 3
+│   ├── repechage            (second chance for teams that missed advancement)
+│   └── accumulated standing (determines who advances)
 └── Mexico finals
+    └── final                (single contest held after the GPM)
 ```
 
-A contest belongs to exactly one season and one stage. A contest defines an ordered set of
-problems, and each participating team has one result per problem.
+A contest belongs to exactly one season, one series, and one stage. A contest defines an ordered
+set of problems, and each participating team has one result per problem.
+
+Other competitions exist — Master Mexico, Donald Knuth, and the Girls Programming Challenge — and
+are out of scope for the first version, but the model treats the series as an open set so they
+can be added later as data.
+
+See [data model](data-model.md) for the entities and their rules.
 
 ## Modules
 

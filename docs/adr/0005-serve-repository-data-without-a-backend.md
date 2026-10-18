@@ -21,8 +21,9 @@ or operate. The repository interface keeps the storage format replaceable, so a 
 be introduced later without touching components.
 
 Data is community-contributed, so it cannot be trusted: validate every record with Zod at the
-repository boundary and surface invalid data explicitly. Correctness depends on pull-request
-review rather than on runtime authorization.
+repository boundary and surface invalid data explicitly. Because there is no server to reject bad
+input, CI is the enforcement point — a GitHub Actions job validates `data/` on every pull request,
+and correctness otherwise depends on review.
 
 A failure in the external media source must degrade only its own page.
 

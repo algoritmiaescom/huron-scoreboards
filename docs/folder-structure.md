@@ -1,6 +1,7 @@
 # Folder structure
 
 ```text
+data/                      Competition and media data as JSON (see docs/data-model.md)
 e2e/                       Playwright user journeys
 src/
   app/
@@ -34,3 +35,6 @@ repositories/ Persistence contracts and implementations
 
 Create code in the narrowest feature that owns it. Promote code to `components/` or shared
 infrastructure only after it is genuinely domain-neutral and reused.
+
+`data/` holds content rather than code, so it sits outside `src/`. Only a feature's repository
+implementations read it; components never load data files directly.

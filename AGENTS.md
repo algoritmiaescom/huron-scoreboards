@@ -6,9 +6,9 @@ keep this file as the single source.
 ## Product goal
 
 Huron Scoreboards publishes the historical standings of Mexican ICPC competitions (yearly
-seasons of up to three qualifiers plus a repechage, then the Mexico finals), a media feed for
-the latest contest hashtag, and a guide for correcting competition data through GitHub. See
-`docs/product-scope.md`.
+seasons holding the GPM, with up to three qualifiers plus a repechage and an accumulated
+standing, and the Mexico finals), a media feed for the latest contest hashtag, and a guide for
+correcting competition data through GitHub. See `docs/product-scope.md` and `docs/data-model.md`.
 
 ## Required workflow
 
@@ -30,8 +30,12 @@ the latest contest hashtag, and a guide for correcting competition data through 
 - Keep application composition and top-level screens in `src/app/`.
 - Keep reusable, domain-neutral UI in `src/components/`.
 - Access persistence through repository interfaces; components must not use browser storage.
-- Competition data is versioned in the repository and read through a repository interface;
-  validate it with Zod because it is community-contributed.
+- Competition data is versioned in the repository as JSON under `data/` and read through a
+  repository interface; validate it with Zod because it is community-contributed. The entities,
+  and which values are stored versus derived, are defined in `docs/data-model.md`.
+- Data is validated twice from one set of Zod schemas: by `npm run validate:data` in CI before a
+  change merges, and at the repository boundary when the application loads it. Infer domain types
+  from the schemas with `z.infer` so they cannot drift.
 - Use local React state for local UI, React Hook Form for forms, Zustand for shared client state,
   and route/search parameters for URL state, including scoreboard filters.
 - Do not add an asynchronous state library until the application has server state.
@@ -47,6 +51,7 @@ the latest contest hashtag, and a guide for correcting competition data through 
   `eslint.config.js` instead of prose.
 - Visual identity, palette, and theming go in `docs/design.md` and `src/app/theme/`.
 - Product scope and module behavior go in `docs/product-scope.md`.
+- Domain entities and their rules go in `docs/data-model.md`.
 
 See `docs/architecture.md`, `docs/best-practices.md`, `docs/design.md`,
 `docs/folder-structure.md`, and `docs/adr/README.md` for details.

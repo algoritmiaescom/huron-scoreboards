@@ -47,6 +47,7 @@ persistence are not implemented yet.
 
 - [Product scope](docs/product-scope.md)
 - [Architecture](docs/architecture.md)
+- [Data model](docs/data-model.md)
 - [Architecture decision records](docs/adr/README.md)
 - [Best practices](docs/best-practices.md)
 - [Design](docs/design.md)
