@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t">
+  <title id="t">Placeholder logo for CUCEI</title>
+  <rect width="120" height="120" rx="16" fill="#e4e7ec" />
+  <rect x="8" y="8" width="104" height="104" rx="10" fill="none" stroke="#98a2b3" stroke-width="2" />
+  <text x="60" y="60" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#475467" text-anchor="middle" dominant-baseline="central">CUCEI</text>
+</svg>

@@ -1,4 +1,4 @@
-import { readdir, readFile } from 'node:fs/promises';
+import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 
 import { validateMediaReferences, type MediaDataset } from '@/features/media/model/dataset';
@@ -9,6 +9,7 @@ import {
 } from '@/features/scoreboards/model/dataset';
 import {
   contestSchema,
+  isRemoteLogo,
   schoolsFileSchema,
   seasonStandingSchema,
   teamsFileSchema,
@@ -229,6 +230,46 @@ const loadMedia = async (
   return { dataset, issues, fileCount };
 };
 
+const fileExists = async (filePath: string): Promise<boolean> => {
+  try {
+    const stats = await stat(filePath);
+    return stats.isFile();
+  } catch {
+    return false;
+  }
+};
+
+/**
+ * Committed logos are checked against the filesystem, which the shared validators cannot do: they
+ * also run in the browser. Remote logos are left alone because reaching them needs the network.
+ */
+const validateLogoFiles = async (
+  root: string,
+  dataset: ScoreboardsDataset,
+): Promise<ValidationIssue[]> => {
+  const issues: ValidationIssue[] = [];
+
+  for (const { file, record } of dataset.schools) {
+    for (const [index, school] of record.entries()) {
+      const { logo } = school;
+
+      if (logo === undefined || isRemoteLogo(logo)) {
+        continue;
+      }
+
+      if (!(await fileExists(path.join(root, 'public', logo)))) {
+        issues.push({
+          file,
+          location: `[${String(index)}].logo`,
+          message: `logo file \`public/${logo}\` does not exist`,
+        });
+      }
+    }
+  }
+
+  return issues;
+};
+
 /**
  * Reads every data file in a dataset directory, validates each against its schema, then runs the
  * cross-file reference checks. All failures are collected so a contributor sees them at once.
@@ -257,6 +298,7 @@ export const validateDataDirectory = async (
       ...media.issues,
       ...validateScoreboardsReferences(scoreboards.dataset),
       ...validateMediaReferences(media.dataset, contestIds),
+      ...(await validateLogoFiles(root, scoreboards.dataset)),
     ],
     fileCount: scoreboards.fileCount + media.fileCount,
   };

@@ -4,7 +4,8 @@
     "officialName": "Universidad Nacional Autónoma de México",
     "shortName": "UNAM",
     "city": "Ciudad de México",
-    "state": "Ciudad de México"
+    "state": "Ciudad de México",
+    "logo": "logos/unam.svg"
   },
   {
     "id": "unam-fi",
@@ -31,7 +32,8 @@
     "shortName": "ESCOM",
     "parentInstitutionId": "ipn",
     "city": "Ciudad de México",
-    "state": "Ciudad de México"
+    "state": "Ciudad de México",
+    "logo": "logos/ipn-escom.svg"
   },
   {
     "id": "ipn-esime",
@@ -52,7 +54,8 @@
     "officialName": "Centro Universitario de Ciencias Exactas e Ingenierías",
     "shortName": "CUCEI",
     "city": "Guadalajara",
-    "state": "Jalisco"
+    "state": "Jalisco",
+    "logo": "logos/udg-cucei.svg"
   },
   {
     "id": "itesm-cem",
@@ -64,7 +67,8 @@
   {
     "id": "itesm-mty",
     "officialName": "Tecnológico de Monterrey, Campus Monterrey",
-    "shortName": "ITESM MTY"
+    "shortName": "ITESM MTY",
+    "logo": "https://example.com/logos/itesm-mty.png"
   },
   {
     "id": "uanl-fcfm",
@@ -83,7 +87,8 @@
     "officialName": "Universidad Autónoma de Yucatán",
     "shortName": "UADY",
     "city": "Mérida",
-    "state": "Yucatán"
+    "state": "Yucatán",
+    "logo": "https://example.com/logos/uady.svg"
   },
   {
     "id": "ugto",

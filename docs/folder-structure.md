@@ -4,6 +4,8 @@
 data/                      Competition and media data as JSON (see docs/data-model.md)
   mock/                    Seed dataset with invented results, validated separately
 e2e/                       Playwright user journeys
+public/
+  logos/                   School logos served by path, referenced from data
 src/
   app/
     pages/                 Route-level or top-level screens

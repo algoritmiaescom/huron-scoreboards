@@ -39,6 +39,23 @@ mock files. See [data/README.md](./data/README.md).
 
 For media posts, supply alt text for every image or video. Posts without it cannot be published.
 
+### School logos
+
+A school may have a logo, and most do not. Add one either way you prefer:
+
+- commit the image to `public/logos/` and set `logo` to the path the site serves it from, such as
+  `logos/ipn-escom.svg`; or
+- set `logo` to an absolute `https` URL if the school hosts the image itself.
+
+Use a lowercase slug filename ending in `.svg`, `.png`, or `.webp`. Validation checks that a
+committed file actually exists, so a path that points nowhere fails CI. Do not supply alt text:
+it is derived from the school name.
+
+Only commit a logo the club is comfortable redistributing. School logos are trademarked
+institutional marks, and while naming a school by its logo to identify it is ordinary practice,
+the file ends up published in a public repository. Linking the school's own copy avoids that
+entirely.
+
 Every data change is checked in CI by `npm run validate:data`, which parses each file against its
 schema and verifies that cross-file references resolve. Run it locally before opening the pull
 request; it reports every problem at once with the file and location.

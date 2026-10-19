@@ -179,6 +179,61 @@ describe('validateDataDirectory', () => {
     expect(parent.issues).toHaveLength(0);
   });
 
+  it('reports a committed logo whose file is missing', async () => {
+    const root = await createRoot();
+    await validData(root);
+    await writeJson(root, 'data/schools.json', [
+      {
+        id: 'ipn-escom',
+        officialName: 'Escuela Superior de Cómputo',
+        shortName: 'ESCOM',
+        logo: 'logos/ipn-escom.svg',
+      },
+    ]);
+
+    const report = await validateDataDirectory(root);
+
+    expect(report.issues.map(formatIssue)).toEqual([
+      'data/schools.json [0].logo: logo file `public/logos/ipn-escom.svg` does not exist',
+    ]);
+  });
+
+  it('accepts a committed logo once the file exists', async () => {
+    const root = await createRoot();
+    await validData(root);
+    await writeJson(root, 'data/schools.json', [
+      {
+        id: 'ipn-escom',
+        officialName: 'Escuela Superior de Cómputo',
+        shortName: 'ESCOM',
+        logo: 'logos/ipn-escom.svg',
+      },
+    ]);
+    await mkdir(path.join(root, 'public', 'logos'), { recursive: true });
+    await writeFile(path.join(root, 'public', 'logos', 'ipn-escom.svg'), '<svg />');
+
+    const report = await validateDataDirectory(root);
+
+    expect(report.issues).toHaveLength(0);
+  });
+
+  it('does not look on disk for a remotely hosted logo', async () => {
+    const root = await createRoot();
+    await validData(root);
+    await writeJson(root, 'data/schools.json', [
+      {
+        id: 'ipn-escom',
+        officialName: 'Escuela Superior de Cómputo',
+        shortName: 'ESCOM',
+        logo: 'https://example.com/logos/escom.svg',
+      },
+    ]);
+
+    const report = await validateDataDirectory(root);
+
+    expect(report.issues).toHaveLength(0);
+  });
+
   it('reports schema and cross-reference problems in mocked data', async () => {
     const root = await createRoot();
     await invalidData(root);

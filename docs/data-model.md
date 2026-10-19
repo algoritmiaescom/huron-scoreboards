@@ -65,8 +65,22 @@ type School = {
   parentInstitutionId?: string; // 'ipn'
   city?: string;
   state?: string;
+  logo?: string; // 'logos/ipn-escom.svg' or 'https://…'
 };
 ```
+
+`logo` is optional and holds either a file committed under `public/` and referenced by the path
+the site serves it from, such as `logos/ipn-escom.svg`, or an absolute `http(s)` URL to a logo the
+school hosts itself. One field covers both because a school has one logo; which storage it uses is
+a hosting detail, not a modelling distinction.
+
+Only `http` and `https` are accepted for remote logos. A general URL check also accepts
+`javascript:` and `data:`, and this value is rendered as an image source, so community-contributed
+data must not be able to introduce either.
+
+Logos are not required, and most schools will not have one. Every view that shows a school must
+render without a logo rather than reserving a broken image. No alt text is stored: it is derived
+from the school name, unlike media posts, where it cannot be.
 
 An institution such as `unam` or `ipn` is a `School` record that no team competes under directly.
 Rolled-up history must make clear whether it is showing a unit or an institution.
@@ -290,6 +304,15 @@ data/
   mock/                            Seed data, same layout, invented results
 ```
 
+School logos are the one exception to data living under `data/`. They are static assets the
+browser requests by URL, so the files sit in `public/logos/` and the data stores only the path:
+
+```text
+public/
+  logos/
+    ipn-escom.svg                  Referenced as `logos/ipn-escom.svg`
+```
+
 One contest per file keeps pull requests reviewable: a correction touches one file, and the diff
 shows exactly which contest changed. Schools and teams are shared registries because they are
 referenced across contests and must not be duplicated.
@@ -349,7 +372,12 @@ parsing everything:
 - `results` has exactly one entry per contest problem, in problem order;
 - problem labels are unique within a contest;
 - identifiers are unique within their registry;
-- a contest's `seasonYear` and `seriesId` agree with its path under `data/`.
+- a contest's `seasonYear` and `seriesId` agree with its path under `data/`;
+- a committed `logo` path points at a file that exists under `public/`.
+
+Only the validation script checks the logo file, because the same validators also run in the
+browser, where there is no filesystem. Remote logos are not fetched: that would need the network,
+and CI must not depend on a third-party host being up.
 
 ### Reporting
 

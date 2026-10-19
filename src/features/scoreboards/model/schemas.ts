@@ -16,6 +16,28 @@ export const contestStageSchema = z.enum([
   'final',
 ]);
 
+/** A logo committed under `public/`, referenced by the path the site serves it from. */
+const LOGO_PATH_PATTERN = /^logos\/[a-z0-9]+(?:-[a-z0-9]+)*\.(?:svg|png|webp)$/;
+
+/**
+ * Only `http` and `https` are allowed. The value is rendered as an image source, and a plain URL
+ * check accepts `javascript:` and `data:`, which community-contributed data must never reach.
+ */
+const remoteLogoSchema = z.url({ protocol: /^https?$/ });
+
+export const isRemoteLogo = (logo: string): boolean => remoteLogoSchema.safeParse(logo).success;
+
+/**
+ * A logo is either committed to the repository or hosted by the school. One field keeps the
+ * common case — a school has one logo — from needing two mutually exclusive properties.
+ */
+export const schoolLogoSchema = z
+  .string()
+  .refine(
+    (value) => LOGO_PATH_PATTERN.test(value) || isRemoteLogo(value),
+    'must be a file committed under `public/` and referenced as `logos/ipn-escom.svg`, or an absolute http(s) URL',
+  );
+
 export const schoolSchema = z.object({
   id: slugSchema,
   officialName: z.string().min(1),
@@ -23,6 +45,8 @@ export const schoolSchema = z.object({
   parentInstitutionId: slugSchema.optional(),
   city: z.string().min(1).optional(),
   state: z.string().min(1).optional(),
+  // Optional: many schools have no logo on file, so every view must render without one.
+  logo: schoolLogoSchema.optional(),
 });
 
 export const teamMemberSchema = z.object({

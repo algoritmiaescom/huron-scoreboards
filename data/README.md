@@ -49,10 +49,15 @@ Edge cases the data covers on purpose:
   sharing first-to-solve on the same minute;
 - contests that differ in duration, penalty value and problem count;
 - posts with no media, no title, no tags, or an author known only by username, plus an event with
-  no location and no linked contest.
+  no location and no linked contest;
+- schools with a committed logo, schools with a remotely hosted one, and ten of fifteen with none.
 
 The 2026 final is announced but unplayed, so its event deliberately has no `contestId`: media can
 reference a contest that does not exist in the archive yet.
+
+The logos in `public/logos/` are **neutral placeholder monograms**, not the institutions' real
+marks. They exist so the path-based logo branch has files to resolve against. Replace them with a
+real logo the club is comfortable redistributing, or point the school at its own hosted copy.
 
 ## Adding real results
 
