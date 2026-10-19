@@ -1,0 +1,15 @@
+{
+  "title": "huron-scoreboards",
+  "description": "Displays detailed ICPC competition scoreboards and historical performance charts with filters plus a media feed for latest contest updates.",
+  "language": "es-MX",
+  "icons": {
+    "icon": "/brand/huron-club.jpg"
+  },
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
