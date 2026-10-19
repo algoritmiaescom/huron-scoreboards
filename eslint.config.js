@@ -8,7 +8,14 @@ import tseslint from 'typescript-eslint';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
-  globalIgnores(['coverage', 'dist', 'node_modules', 'playwright-report', 'test-results']),
+  globalIgnores([
+    'coverage',
+    'dist',
+    'node_modules',
+    'playwright-report',
+    'test-results',
+    'prototype',
+  ]),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
