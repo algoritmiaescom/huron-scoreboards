@@ -47,6 +47,7 @@ persistence are not implemented yet.
 ## Documentation
 
 - [Product scope](docs/product-scope.md)
+- [Prototype port plan](docs/prototype-port-plan.md)
 - [Architecture](docs/architecture.md)
 - [Data model](docs/data-model.md)
 - [Architecture decision records](docs/adr/README.md)
