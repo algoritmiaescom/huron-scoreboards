@@ -47,12 +47,13 @@ persistence are not implemented yet.
 ## Documentation
 
 - [Product scope](docs/product-scope.md)
-- [Prototype port plan](docs/prototype-port-plan.md)
+- [Implementation plan](docs/implementation-plan.md)
 - [Architecture](docs/architecture.md)
 - [Data model](docs/data-model.md)
 - [Architecture decision records](docs/adr/README.md)
 - [Best practices](docs/best-practices.md)
 - [Design](docs/design.md)
+- [Design specification](DESIGN.md)
 - [Folder structure](docs/folder-structure.md)
 - [Testing](docs/testing.md)
 - [Accessibility](docs/accessibility.md)

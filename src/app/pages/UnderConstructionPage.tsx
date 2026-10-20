@@ -24,10 +24,10 @@ export const UnderConstructionPage = () => {
         <CenteredStack spacing={3}>
           <PageIcon color="primary" />
           <Typography component="h1" variant="h2">
-            Under construction
+            En construcción
           </Typography>
           <Typography color="text.secondary" variant="body1">
-            Huron Scoreboards is being built. Check back soon.
+            Huron Scoreboards esta en construcción. Vuelve pronto :).
           </Typography>
         </CenteredStack>
       </Container>

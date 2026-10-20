@@ -30,6 +30,13 @@ npm run test:e2e
 
 Add an E2E test for a critical cross-page workflow, not for every component variation.
 
+The placeholder's foundation checks cover locally served fonts, the initial light palette,
+saved-theme restoration, and document overflow across the implementation plan's seven viewport sizes. The shared tooling/E2E
+TypeScript project includes DOM types because Playwright evaluations execute in the browser.
+Theme unit tests cover both palettes, status contrast, and provider mode changes.
+The scripts TypeScript project includes scripts and their transitive domain dependencies,
+not all browser source files; browser code is checked by the application project.
+
 ## Data validation
 
 Competition and media data under `data/` is community-contributed, so it is checked like code.

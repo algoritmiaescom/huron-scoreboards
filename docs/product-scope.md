@@ -62,6 +62,35 @@ Each problem cell communicates:
 Standings can be narrowed by team name, school, problem, accepted results, and first-to-solve
 results. Filter state belongs in route and search parameters so a filtered view is shareable.
 
+**Route and selection contract**
+
+The application uses `/scoreboards`, `/schools`, `/schools/:schoolId`, `/media`, and
+`/contribute`. Once standings are released, `/` redirects to `/scoreboards`; unknown paths show
+recovery rather than another page's content.
+
+- A contest view uses `/scoreboards?contest=<id>`. Without an explicit selection, choose the
+  latest archived contest whose date is not later than today's date in `America/Mexico_City`.
+  Break equal-date ties by ascending contest id. If no held contests exist, show an empty archive.
+- Accumulated views use `/scoreboards?season=<year>&series=<id>&view=accumulated`. They select a
+  `SeasonStanding`, not a fabricated contest. Conflicting or incomplete selection parameters
+  show a recovery message with an explicit action to choose a valid selection.
+- Unknown contest, school, series, or problem values must not silently show unrelated data.
+  Explain the invalid selection/filter and offer removal or navigation to available records.
+- Team search (`team`) matches team names only, case-insensitively, not school names. `school`
+  selects the exact competing school's id; institution rollups belong to school history.
+- `problem` identifies a label in the selected contest. Alone it does not remove teams or hide
+  columns; it scopes the `accepted=1` and `first=1` predicates. Without a selected problem, those
+  predicates match any solved or first-solved problem respectively.
+- Filters combine with AND semantics. First-to-solve is derived from the unfiltered contest.
+  Invalid toggle values are explained rather than silently interpreted as a valid filter.
+- Filter edits replace the current history entry; explicit selection changes create a history
+  entry and clear incompatible filters. Removing a chip removes only its parameter. Clear-all
+  retains the current selection, so reload, back/forward, and shared URLs reproduce the view.
+- School links target the school that actually competed, including academic units. Unit
+  histories provide a separate parent-institution link instead of silently redirecting to it.
+
+These contracts keep selected data explicit, URLs shareable, and school identities unambiguous.
+
 **School history**
 
 Every school has a page summarizing its results across seasons, using charts for performance
@@ -71,6 +100,17 @@ trends and podium displays for its best placements.
 
 A page that collects public media posts published under the hashtag of the most recent contest,
 so the site reflects the live reaction around the competition that just took place.
+
+For the initial port, posts come only from validated repository records. Select the latest held
+archived contest using the date/id rule above, then its linked media event (latest event date,
+then ascending event id if several exist), considering only events dated today or earlier in
+`America/Mexico_City`. Display only its referenced posts. If that contest has no eligible event,
+show an explicit empty state rather than posts from a different contest or an upcoming event.
+Unlinked announced events remain valid archive data but do not replace this feed.
+
+Repository-backed mode must not claim live updates or an API outage. A future live integration
+is a separate architectural milestone; the post presentation and loading/empty/error components
+remain reusable for it.
 
 ### 3. Contribution
 

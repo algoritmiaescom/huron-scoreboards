@@ -467,7 +467,7 @@ export default function ScoreboardsPage() {
     problemFilter && { key: "problem", label: `Problema ${problemFilter}` },
     acceptedOnly && { key: "accepted", label: "Solo resueltos" },
     firstOnly && { key: "first", label: "Primero en resolver" },
-  ].filter(Boolean) as { key: string label: string }[]
+  ].filter(Boolean) as { key: string; label: string }[]
 
   const availableSeries = series.filter((item) =>
     contests.some(

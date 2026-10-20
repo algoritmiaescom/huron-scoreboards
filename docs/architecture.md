@@ -13,10 +13,19 @@ the Vite build.
 
 `main.tsx` mounts the application providers. `App.tsx` renders the current screen. The
 application currently ships a single "Under construction" placeholder and has no routing, domain
-features, or persistence.
+features, or competition persistence. Theme preferences are persisted separately.
 
 React Router, Zustand, React Hook Form, and Zod remain selected for upcoming feature work and are
-installed, but they are intentionally unused while the placeholder is the only screen.
+installed. Zod validates persisted theme preferences and competition schemas; routing, shared
+stores, and forms are not needed by the placeholder.
+
+## Theme preferences
+
+Application providers own the active light/dark mode. A typed theme preference repository owns
+localStorage access; components never read/write storage directly. It validates saved modes,
+loads before rendering themed children, and writes only on user selection. Failures are logged
+and shown as a warning while theme controls remain usable for the visit. See
+[ADR 0006](adr/0006-persist-theme-preference.md) and [design](../DESIGN.md).
 
 ## Planned state ownership
 
