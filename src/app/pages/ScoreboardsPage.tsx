@@ -6,14 +6,15 @@ import { styled } from '@mui/material/styles';
 import { useEffect, useMemo, useState } from 'react';
 import { useLoaderData, useSearchParams } from 'react-router';
 
-import { ContestHeader } from '@/features/scoreboards/components/ContestHeader';
-import { ContestSelector } from '@/features/scoreboards/components/ContestSelector';
-import { ContestStandings } from '@/features/scoreboards/components/ContestStandings';
-import { ResultsLegend } from '@/features/scoreboards/components/ResultsLegend';
-import { resolveContestSelection } from '@/features/scoreboards/model/contestSelection';
+import {
+  ContestHeader,
+  ContestSelector,
+  resolveContestSelection,
+  type ScoreboardsArchive,
+} from '@/features/scoreboards';
+import { ContestResults } from '@/features/scoreboards/components/ContestResults';
 import { mexicoCityDate } from '@/lib/dates';
 
-import type { ScoreboardsArchive } from '@/features/scoreboards';
 import type { RepositoryResult } from '@/lib/data/repository';
 
 const Page = styled(Container)(({ theme }) => ({
@@ -148,16 +149,16 @@ export const ScoreboardsPage = () => {
     );
   }
 
-  const contest = (selection as Extract<typeof selection, { status: 'selected' }>).contest;
+  const contest = selection.contest;
   const selectContest = (id: string) => {
-    const next = new URLSearchParams(searchParams);
+    const next = new URLSearchParams();
     next.set('contest', id);
-    setSearchParams(next, { replace: false });
+    setSearchParams(next, { replace: false, flushSync: true });
   };
 
   return (
     <Page maxWidth="xl">
-      <title>{contest.name} | Huron Scoreboards</title>
+      <title>{`${contest.name} | Huron Scoreboards`}</title>
       <Stack spacing={3}>
         <ContestHeader contest={contest} datasetSource={archive.source} />
         <ContestSelector
@@ -166,8 +167,7 @@ export const ScoreboardsPage = () => {
           today={today}
           onSelect={selectContest}
         />
-        <ResultsLegend />
-        <ContestStandings archive={archive} contest={contest} />
+        <ContestResults archive={archive} contest={contest} />
       </Stack>
     </Page>
   );

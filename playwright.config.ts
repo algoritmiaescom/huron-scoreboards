@@ -24,6 +24,7 @@ export default defineConfig({
     },
     {
       command: 'npm run dev -- --host 127.0.0.1 --port 4175 --strictPort',
+      env: { VITE_DATA_SOURCE: 'mock' },
       reuseExistingServer: !process.env.CI,
       url: 'http://127.0.0.1:4175/src/test/fixtures/scoreboard-primitives.html',
     },

@@ -28,7 +28,9 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 | 2. Runtime data and selectors    | Complete    | Validated repositories, production bundle isolation, scoring/filter/history/feed selectors; 81 unit tests and 4 E2E tests passed               |
 | 3. Routing, shell, contribution  | Complete    | Responsive shell, contribution guide, loading/error recovery; 95 unit tests and 13 E2E tests passed; repository URL provisional by approval    |
 | 4. Scoreboard primitives         | Complete    | Reusable results, identities, header, legend and provenance; 114 unit tests and 18 E2E tests passed; responsive/accessibility fixture verified |
-| 5-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                             |
+| 5. Contest standings             | Complete    | Released standings/root redirect, data-driven selection, tables/cards, provenance and recovery; unit/browser acceptance verified below         |
+| 6. URL filtering and sharing     | Complete    | Typed URL filters, chips/counts, history/reload, clipboard recovery; 146 unit tests and 26 E2E tests passed                                    |
+| 7-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                             |
 
 Initial visual review covered 13 route states in both themes at desktop/phone sizes (52
 captures). Foundation verification covered seven sizes in each theme (14 captures), 19 widths
@@ -36,7 +38,7 @@ per mode, reduced motion, and computed keyboard focus. These are foundation chec
 of completed route parity, physical-device testing, or a full zoom audit.
 
 Update statuses only after exit criteria pass. Do not recreate temporary verification routes in
-the shipping app. Next major milestone: unfiltered contest standings.
+the shipping app. Next major milestone: accumulated standings.
 
 ## Data and presentation rules
 
@@ -254,6 +256,15 @@ Redirect root to standings and replace placeholder tests only when this slice wo
 **Exit:** users can inspect any archived mock contest, choose another, and reach its source and
 contribution guide on desktop and phone.
 
+**Completed:** the standings route composes validated archive loading, data-driven
+season/series/contest selection, provenance, ordered desktop rows and phone cards. Root navigation
+redirects to standings. Empty real archives, contests without teams, absent held contests,
+invalid selections, and repository diagnostics have explicit states and recovery.
+Browser journeys cover sparse seasons, series changes, source/correction actions, root entry,
+and equivalent table/card results. Sticky identity cells use explicit column attributes so
+mixed row-header/data cells retain correct offsets; dynamic titles use a single metadata string.
+The production preview confirms the real archive's empty state without mock substitution.
+
 ### 6. Add URL filtering and sharing
 
 **Dependencies:** 5.
@@ -268,6 +279,28 @@ after copying succeeds.
 
 **Exit:** filter combinations, first-solve ties, empty matches, removal, back/forward, reload,
 deep links, and clipboard failures are covered.
+
+**Completed:** reusable filter controls, active chips, counts, a filtered badge, and sharing
+compose around the existing filtering selector. Typed URL parsing rejects stale/repeated
+values and invalid toggles with targeted removal actions; invalid filters never display
+unrelated results. AND combinations preserve official places and whole-contest first-solve
+ties, and selecting a problem never hides columns. Exact schools with no matching teams show
+empty matches rather than institution rollups.
+
+Filter edits replace history and clear-all preserves contest selection; explicit contest changes
+push history and clear filters. Search-only changes reuse the validated loader result.
+Synchronous URL edits avoid dropped parameters during rapid interactions without a second
+filter store. Reload, deep links, and browser back/forward restore the same controls/results.
+Share feedback follows successful clipboard writes only; missing/rejected clipboard access
+opens a selectable manual-copy URL dialog, and URL edits clear stale success feedback.
+
+`npm run validate` passed with 146 unit tests; `npm run test:e2e -- --workers=2` passed all
+26 browser tests. Filtered standings passed both themes at the seven viewport sizes and
+all breakpoint edges (38 size/theme combinations), phone/desktop axe scans, contained table
+scrolling, aligned sticky columns, keyboard focus visibility, touch interactions, and 200%
+root-font enlargement. Visual review covered desktop light and phone dark. These are browser
+checks, not claims of physical-device or browser-toolbar zoom testing. The existing production
+chunk-size warning remains; no warning/coverage threshold was relaxed.
 
 ### 7. Add accumulated standings
 

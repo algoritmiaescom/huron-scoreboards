@@ -15,10 +15,9 @@ import { ProblemResultCell } from './ProblemResultCell';
 import { ProblemResults } from './ProblemResults';
 import { SchoolIdentity } from './SchoolIdentity';
 import { TeamIdentity } from './TeamIdentity';
-import { selectContestRows } from '../model/selectors';
 
 import type { Contest } from '../model/schemas';
-import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
+import type { selectContestRows } from '../model/selectors';
 
 // The colgroup and sticky offsets share exact, border-box widths.
 const widths = { place: 72, team: 200, school: 240, problem: 100, summary: 120 };
@@ -52,14 +51,14 @@ const StandingsTable = styled(Table, {
     backgroundColor: theme.palette.background.paper,
   },
   '& thead th': { position: 'sticky', top: 0, zIndex: 2 },
-  '& tr > :nth-of-type(-n+3)': { position: 'sticky', zIndex: 1 },
-  '& tr > :nth-of-type(1)': { left: 0 },
-  '& tr > :nth-of-type(2)': { left: widths.place },
-  '& tr > :nth-of-type(3)': {
+  '& [data-identity-column]': { position: 'sticky', zIndex: 1 },
+  '& [data-identity-column="place"]': { left: 0 },
+  '& [data-identity-column="team"]': { left: widths.place },
+  '& [data-identity-column="school"]': {
     left: widths.place + widths.team,
     borderRight: `1px solid ${theme.palette.divider}`,
   },
-  '& thead tr > :nth-of-type(-n+3)': { zIndex: 3 },
+  '& thead [data-identity-column]': { zIndex: 3 },
 }));
 
 const Cards = styled('ol')(({ theme }) => ({
@@ -85,14 +84,13 @@ const Totals = styled('dl')(({ theme }) => ({
 }));
 
 export const ContestStandings = ({
-  archive,
+  rows,
   contest,
 }: {
-  archive: ScoreboardsArchive;
+  rows: ReturnType<typeof selectContestRows>;
   contest: Contest;
 }) => {
   const desktop = useMediaQuery(useTheme().breakpoints.up('md'));
-  const rows = selectContestRows(archive, contest);
   if (rows.length === 0) {
     return <Alert severity="info">Este concurso todavía no tiene equipos publicados.</Alert>;
   }
@@ -150,9 +148,15 @@ export const ContestStandings = ({
         </colgroup>
         <TableHead>
           <TableRow>
-            <TableCell scope="col">Puesto</TableCell>
-            <TableCell scope="col">Equipo</TableCell>
-            <TableCell scope="col">Institución</TableCell>
+            <TableCell scope="col" data-identity-column="place">
+              Puesto
+            </TableCell>
+            <TableCell scope="col" data-identity-column="team">
+              Equipo
+            </TableCell>
+            <TableCell scope="col" data-identity-column="school">
+              Institución
+            </TableCell>
             {contest.problems.map((problem) => (
               <TableCell key={problem.label} scope="col" align="center">
                 Problema {problem.label}
@@ -174,13 +178,13 @@ export const ContestStandings = ({
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.teamId}>
-              <TableCell>
+              <TableCell data-identity-column="place">
                 <Typography variant="data">#{row.place}</Typography>
               </TableCell>
-              <TableCell component="th" scope="row">
+              <TableCell component="th" scope="row" data-identity-column="team">
                 <TeamIdentity team={row.team} />
               </TableCell>
-              <TableCell>
+              <TableCell data-identity-column="school">
                 <SchoolIdentity school={row.school} />
               </TableCell>
               {contest.problems.map((problem, index) => (

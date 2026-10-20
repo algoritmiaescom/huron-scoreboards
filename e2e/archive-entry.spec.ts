@@ -1,10 +1,15 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-test('shows the under construction screen without accessibility violations', async ({ page }) => {
+test('redirects to the empty production archive without accessibility violations', async ({
+  page,
+}) => {
   await page.goto('/');
 
-  await expect(page.getByRole('heading', { name: 'En construcción' })).toBeVisible();
+  await expect(page).toHaveURL('/scoreboards');
+  await expect(
+    page.getByRole('heading', { name: 'Todavía no hay concursos publicados' }),
+  ).toBeVisible();
 
   const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
   expect(accessibilityScanResults.violations).toEqual([]);
@@ -35,7 +40,9 @@ test('loads fonts locally and uses its initial light palette', async ({ page }) 
   });
 
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: 'En construcción' })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Todavía no hay concursos publicados' }),
+  ).toBeVisible();
 
   const typography = await page.evaluate(async () => {
     const display = await document.fonts.load('700 16px "Space Grotesk Variable"');
@@ -54,9 +61,9 @@ test('loads fonts locally and uses its initial light palette', async ({ page }) 
   expect(remoteRequests).toEqual([]);
 });
 
-test('reflows the placeholder across the responsive verification matrix', async ({ page }) => {
+test('reflows the empty archive across the responsive verification matrix', async ({ page }) => {
   await page.goto('/');
-  const heading = page.getByRole('heading', { name: 'En construcción' });
+  const heading = page.getByRole('heading', { name: 'Todavía no hay concursos publicados' });
   await expect(heading).toBeVisible();
 
   for (const [width, height] of [

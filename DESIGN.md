@@ -116,6 +116,19 @@ live resizing without state loss, touch/keyboard use, and 200% zoom. At 400% zoo
   states as applicable. Do not describe a live-source outage when no live integration exists.
 - Correction actions link to GitHub and explain the official-evidence requirement.
 
+### Standings controls and sharing
+
+Filter controls use an outlined panel with a single column on phones, two columns from 600px,
+and a horizontal control row from 1200px. Toggle buttons pair icons with text and expose their
+pressed state. Active chips wrap, including long names; activating or deleting a chip removes
+only that filter. Counts and the filtered badge remain visible alongside clear/share actions.
+Keep every problem column when filtering and preserve official places.
+
+Invalid values have explicit explanations and removal actions rather than silently reverting
+to an unfiltered result. Empty matches offer selection-preserving clear-all. A copied-link
+announcement appears only after the clipboard write resolves and expires when the URL changes.
+Clipboard failures offer a labeled, read-only URL that selects on focus in a dismissible dialog.
+
 ### Scoreboard presentation primitives
 
 Table cells and ordered two-column result grids reuse the same result component. They receive

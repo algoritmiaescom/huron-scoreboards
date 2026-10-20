@@ -34,7 +34,9 @@ test('navigates the complete page, restores its theme, and recovers unknown rout
   await page.goto('/does-not-exist');
   await expect(page).toHaveTitle('Página no encontrada | Huron Scoreboards');
   await page.getByRole('link', { name: 'Volver al inicio' }).click();
-  await expect(page.getByRole('heading', { name: 'En construcción' })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Todavía no hay concursos publicados' }),
+  ).toBeVisible();
   await expect(page.getByRole('main')).toBeFocused();
 });
 
@@ -42,7 +44,10 @@ test('supports skip links, trapped drawer focus, Escape and navigation on a phon
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/');
+  await page.goto('/scoreboards');
+  await expect(
+    page.getByRole('heading', { name: 'Todavía no hay concursos publicados' }),
+  ).toBeVisible();
   await page.keyboard.press('Tab');
   const skip = page.getByRole('link', { name: 'Saltar al contenido' });
   await expect(skip).toBeFocused();
@@ -114,6 +119,9 @@ for (const mode of ['light', 'dark'] as const) {
         [1537, 900],
       ]) {
         await page.setViewportSize({ width, height });
+        await expect(page.getByRole('button', { name: 'Abrir navegación' })).toHaveCount(
+          width < 900 ? 1 : 0,
+        );
         const layout = await page.evaluate(() => ({
           content: document.documentElement.scrollWidth,
           viewport: document.documentElement.clientWidth,
@@ -136,8 +144,10 @@ for (const mode of ['light', 'dark'] as const) {
 test('keeps mobile navigation usable in short landscape and across a desktop resize', async ({
   page,
 }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.setViewportSize({ width: 844, height: 390 });
   await page.goto('/contribute');
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   await page.getByRole('button', { name: 'Abrir navegación' }).click();
   const drawer = page.getByRole('dialog', { name: 'Menú de navegación' });
   await expect(drawer.getByRole('button', { name: 'Cerrar navegación' })).toBeInViewport();

@@ -12,14 +12,13 @@ The application uses React 19, TypeScript, Vite, and Material UI. React Compiler
 the Vite build.
 
 `main.tsx` mounts application providers. `App.tsx` mounts React Router's browser router;
-`src/app/routes.tsx` owns the released route tree. The root retains its construction screen;
-`/contribute` loads the contribution guide, and unmatched paths render recovery. Standings,
-schools, and media are not released or linked yet. Their repositories/selectors remain available
-independently of screen composition.
+`src/app/routes.tsx` owns the released route tree. The root redirects to `/scoreboards`;
+`/contribute` loads the contribution guide, and unmatched paths render recovery. School,
+accumulated, and media screens remain unreleased.
 
 The application shell owns navigation, responsive drawer state, the theme control, skip link,
 one main landmark, and footer. Route transitions focus the main region and reset scroll.
-The contribution route is loaded lazily; initial and navigation loading states are announced.
+The contribution and standings routes load lazily; initial and navigation loading states are announced.
 Route error boundaries log diagnostics and provide reload/home recovery. Page titles are
 rendered with React 19 document metadata. The document language is Spanish.
 
@@ -47,7 +46,10 @@ As feature work progresses:
 - Shared client state belongs to a small feature-owned Zustand store.
 - Navigation state belongs in routes and search parameters. Scoreboard filters (team, school,
   problem, accepted, first to solve) live in search parameters so filtered standings are
-  shareable.
+  shareable. Filter edits replace history; contest selection pushes an entry and clears filters.
+  Search-only standings navigation reuses the validated loader result. URL-backed input edits
+  commit synchronously through the router provider's React DOM `flushSync` integration so rapid edits do not overwrite
+  one another with stale parameters. No separate filter store is maintained.
 - Persisted data is accessed through a typed repository interface, never directly from
   components.
 
@@ -64,8 +66,8 @@ archive instead (`mock` selects invented data explicitly). Invalid development v
 explicitly on repository initialization. Production ignores this variable and discovers only
 the real archive.
 The development file module is behind a build-time development branch, and the production glob
-excludes mock files. No runtime fallback substitutes invented records. The production bundle
-boundary is tested independently of the placeholder, which does not load competition data yet.
+excludes mock files. No runtime fallback substitutes invented records. Both the production bundle
+boundary and the production standings route are tested against the real archive's empty state.
 
 Repository `load()` results distinguish `ready`, `empty`, `invalid`, and `error`. Invalid and
 failed loads retain file/record diagnostics and expose no partial dataset. Explicit record
@@ -81,6 +83,12 @@ Pure scoreboard selectors own catalog discovery, identity joins, contest-specifi
 tied first solves, AND filters, published accumulated results, qualification cuts, and
 school/institution history. Filters never change official places or recompute first solve from
 filtered rows. Accumulated scores remain separate from contest scores.
+
+The standings loader logs repository errors; route composition handles archive/selection states.
+Typed filter parsing explains repeated, stale, and malformed values before standings render.
+The result selector supplies the same joined/scored rows to desktop tables and phone cards.
+Clipboard feedback and the manual-copy dialog are local interaction state, keyed to the URL so
+success for a previous view cannot be mistaken for success for the current one.
 
 Default feed composition chooses the latest held contest, then the latest eligible event for
 that contest. The caller supplies the current instant; selection uses its calendar date in

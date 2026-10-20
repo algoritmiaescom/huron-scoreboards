@@ -30,7 +30,7 @@ npm run test:e2e
 
 Add an E2E test for a critical cross-page workflow, not for every component variation.
 
-Scoreboard presentation is exercised before its route is released through the isolated
+Scoreboard primitives are exercised independently through the isolated
 `src/test/fixtures/scoreboard-primitives.html` entry. Playwright starts a second Vite server
 on port 4175 for this fixture; application workflows still use the production preview on 4173.
 The fixture is not an application route or a production build entry.
@@ -44,7 +44,8 @@ touch taps, keyboard roster disclosure, focus scrolling inside the table, and en
 Unit tests cover optional metadata, unavailable rosters, logo failures, semantic tokens,
 provenance, dates, and source/correction actions.
 
-The placeholder's foundation checks cover locally served fonts, the initial light palette,
+The production archive-entry checks cover root redirection, the honest empty archive,
+locally served fonts, the initial light palette,
 saved-theme restoration, and document overflow across the implementation plan's seven viewport sizes. The shared tooling/E2E
 TypeScript project includes DOM types because Playwright evaluations execute in the browser.
 Theme unit tests cover both palettes, status contrast, and provider mode changes.
@@ -66,6 +67,20 @@ this does not replace physical-device testing or a manual browser-toolbar zoom a
 Repository URLs are checked against application configuration, not a live GitHub service.
 The configured placeholder is explicitly disclosed; real destination availability cannot be
 verified until the repository URL is supplied.
+
+Standings workflows use the same port-4175 development server with `VITE_DATA_SOURCE=mock`
+explicitly set; the port-4173 production preview still uses only real archive data.
+Browser journeys verify sparse contest discovery, provenance/correction links, AND filters,
+unchanged problem columns/places, counts, chips, clear-all, reload, back/forward, exact clipboard
+contents, and selectable manual-copy recovery for absent/rejected clipboard APIs. External mock
+logo requests are intercepted rather than depending on example services.
+
+Filtered standings cover both themes at all seven viewport sizes and breakpoint edges,
+table/card description equivalence, aligned sticky identity columns, focused-cell visibility,
+200% root-font enlargement, touch toggles/chips, and phone/desktop axe scans. Matrix checks wait
+for responsive layout changes before measuring overflow. Unit tests inject loader archives to
+cover tied first solves, stale/repeated filters, empty matches/archives/teams, repository errors,
+selection recovery, history semantics, single-load typing, and delayed clipboard success.
 
 ## Data validation
 

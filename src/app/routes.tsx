@@ -23,6 +23,10 @@ export const routes: RouteObject[] = [
       {
         path: 'scoreboards',
         loader: loadScoreboards,
+        shouldRevalidate: ({ currentUrl, nextUrl, defaultShouldRevalidate }) =>
+          currentUrl.pathname === nextUrl.pathname && currentUrl.search !== nextUrl.search
+            ? false
+            : defaultShouldRevalidate,
         ErrorBoundary: RouteErrorPage,
         Component: LazyScoreboardsPage,
       },

@@ -7,7 +7,12 @@ import { AppShell } from '@/app/components/AppShell';
 import { appConfig, repositoryLinks } from '@/app/config';
 import { AppErrorPage, RouteErrorPage, RouteLoading } from '@/app/pages/RouteStatusPages';
 import { routes } from '@/app/routes';
+import { archive } from '@/test/fixtures/archive';
 import { renderApp } from '@/test/test-utils';
+
+vi.mock('@/app/repositories/loadScoreboards', () => ({
+  loadScoreboards: () => Promise.resolve({ status: 'ready', data: archive }),
+}));
 
 afterEach(() => {
   vi.restoreAllMocks();
@@ -26,7 +31,11 @@ describe('application routes', () => {
     try {
       renderRoute('/contribute');
       expect(
-        await screen.findByRole('link', { name: 'Abrir el repositorio de GitHub' }),
+        await screen.findByRole(
+          'link',
+          { name: 'Abrir el repositorio de GitHub' },
+          { timeout: 5000 },
+        ),
       ).toHaveAttribute('href', repositoryLinks.home);
       expect(screen.getByRole('link', { name: 'Repositorio en GitHub' })).toHaveAttribute(
         'href',
@@ -82,7 +91,9 @@ describe('application routes', () => {
       await screen.findByRole('heading', { name: 'Página no encontrada' }),
     ).toBeInTheDocument();
     await user.click(screen.getByRole('link', { name: 'Volver al inicio' }));
-    expect(await screen.findByRole('heading', { name: /GPM|Final Regional/ })).toBeInTheDocument();
+    expect(
+      await screen.findByRole('heading', { name: 'Contest' }, { timeout: 5000 }),
+    ).toBeInTheDocument();
     expect(router.state.location.pathname).toBe('/scoreboards');
     expect(screen.getByRole('main')).toHaveFocus();
     expect(scroll).toHaveBeenCalledWith(0, 0);

@@ -1,4 +1,5 @@
 import { selectContest, selectLatestHeldContest } from './selectors';
+import { isFilterKey } from './standingsFilters';
 
 import type { Contest } from './schemas';
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
@@ -6,7 +7,8 @@ import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
 export type ContestSelection =
   | { status: 'selected'; contest: Contest }
   | { status: 'empty' }
-  | { status: 'invalid' | 'unavailable'; message: string };
+  | { status: 'invalid'; message: string }
+  | { status: 'unavailable'; message: string };
 
 export const resolveContestSelection = (
   archive: ScoreboardsArchive,
@@ -14,7 +16,7 @@ export const resolveContestSelection = (
   today: string,
 ): ContestSelection => {
   const keys = [...params.keys()];
-  if (keys.some((key) => params.getAll(key).length > 1)) {
+  if (keys.some((key) => !isFilterKey(key) && params.getAll(key).length > 1)) {
     return { status: 'invalid', message: 'La dirección contiene parámetros repetidos.' };
   }
   if (keys.some((key) => ['season', 'series', 'view'].includes(key))) {
@@ -23,14 +25,7 @@ export const resolveContestSelection = (
       message: 'La vista acumulada aún no está disponible. Elige un concurso individual.',
     };
   }
-  if (keys.some((key) => ['team', 'school', 'problem', 'accepted', 'first'].includes(key))) {
-    return {
-      status: 'unavailable',
-      message:
-        'Los filtros aún no están disponibles. Quita los parámetros para ver el concurso completo.',
-    };
-  }
-  if (keys.some((key) => key !== 'contest')) {
+  if (keys.some((key) => key !== 'contest' && !isFilterKey(key))) {
     return { status: 'invalid', message: 'La dirección contiene parámetros desconocidos.' };
   }
   const id = params.get('contest');

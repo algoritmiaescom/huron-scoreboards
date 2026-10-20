@@ -11,9 +11,10 @@ Modules:
 - **Media feed** — public posts published under the hashtag of the most recent contest.
 - **Contribution** — a guide for adding and correcting competition data through GitHub.
 
-See [Product scope](docs/product-scope.md) for the full definition. The application provides the
-contribution guide at `/contribute` in a responsive shell. The root remains a construction
-screen until standings are usable; unreleased features are not linked in navigation.
+See [Product scope](docs/product-scope.md) for the full definition. The application provides
+contest standings at `/scoreboards` and the contribution guide at `/contribute` in a responsive
+shell. The root redirects to standings; unreleased school, accumulated, and media views are not
+linked in navigation.
 
 ## Prerequisites
 
@@ -28,8 +29,8 @@ npm ci
 npm run dev
 ```
 
-Light/dark preferences persist locally through the navigation control. Validated scoreboard/media
-repositories and domain selectors are ready for future screens. Data-layer development defaults to the invented
+Light/dark preferences persist locally through the navigation control. Standings include
+responsive tables/cards, URL-backed filters, and shareable views. Development defaults to the invented
 `data/mock/` dataset; production excludes it and uses only the real archive (currently empty).
 
 ### Development dataset
@@ -44,7 +45,8 @@ VITE_DATA_SOURCE=archive npm run dev
 Restart the development server after changing the environment file. Unset defaults to `mock`;
 invalid values produce an explicit configuration error when repositories load. Production builds
 always use `archive`, regardless of this variable, and never fall back to mock records.
-The current placeholder does not display competition data yet.
+The standings page explicitly identifies demonstration data and shows an empty state for the
+currently empty real archive.
 
 ### Repository links
 

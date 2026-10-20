@@ -91,9 +91,14 @@ recovery rather than another page's content.
 
 These contracts keep selected data explicit, URLs shareable, and school identities unambiguous.
 
-During incremental delivery, `/` remains the construction screen. Only `/contribute` is released
-alongside route recovery; navigation does not advertise unfinished scoreboard, school, or media
-routes. Those paths currently show recovery rather than a misleading empty feature.
+Released routes are `/scoreboards`, `/contribute`, root-to-standings redirection, and route recovery.
+Contest selection and filters follow the contract above. Accumulated standings, school histories,
+and media screens remain unreleased; navigation does not advertise unfinished routes.
+
+Invalid filters retain their chips and show specific removal actions without displaying
+unrelated standings. Known schools without matching teams produce an empty result, not an
+institution rollup. The share action copies the current URL only on success; unavailable or
+rejected clipboard access opens a dialog with a selectable, read-only URL for manual copying.
 
 **School history**
 
