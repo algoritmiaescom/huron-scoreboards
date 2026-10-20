@@ -30,6 +30,20 @@ npm run test:e2e
 
 Add an E2E test for a critical cross-page workflow, not for every component variation.
 
+Scoreboard presentation is exercised before its route is released through the isolated
+`src/test/fixtures/scoreboard-primitives.html` entry. Playwright starts a second Vite server
+on port 4175 for this fixture; application workflows still use the production preview on 4173.
+The fixture is not an application route or a production build entry.
+
+Its table and cards share derived rows and result components. Tests compare complete accessible
+descriptions and arbitrary problem order, including tied first solves, rather than duplicating
+scoring. Both themes cover the seven viewport sizes and all four breakpoint edges (38
+size/theme combinations), cell minimum dimensions, document overflow, and phone/desktop axe
+scans. Real-browser checks cover focus/hover descriptions, Escape and outside dismissal,
+touch taps, keyboard roster disclosure, focus scrolling inside the table, and enlarged text.
+Unit tests cover optional metadata, unavailable rosters, logo failures, semantic tokens,
+provenance, dates, and source/correction actions.
+
 The placeholder's foundation checks cover locally served fonts, the initial light palette,
 saved-theme restoration, and document overflow across the implementation plan's seven viewport sizes. The shared tooling/E2E
 TypeScript project includes DOM types because Playwright evaluations execute in the browser.

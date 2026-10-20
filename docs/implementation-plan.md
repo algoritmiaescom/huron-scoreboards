@@ -20,14 +20,15 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 
 ## Progress
 
-| Milestone                        | Status      | Evidence / next action                                                                                                                      |
-| -------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0. Design and behavior contracts | Complete    | Route/filter/media contracts approved; design values, responsive rules, and screen/state inventory recorded                                 |
-| 1. Visual foundation             | Complete    | Light/dark theme, local fonts, approved branding, provider controls; 37 tests, 3 E2E tests, and 38 responsive sample checks passed          |
-| Theme preference follow-up       | Complete    | Validated localStorage repository, saved-theme restore and storage-failure tests; 46 unit tests and 4 E2E tests passed                      |
-| 2. Runtime data and selectors    | Complete    | Validated repositories, production bundle isolation, scoring/filter/history/feed selectors; 81 unit tests and 4 E2E tests passed            |
-| 3. Routing, shell, contribution  | Complete    | Responsive shell, contribution guide, loading/error recovery; 95 unit tests and 13 E2E tests passed; repository URL provisional by approval |
-| 4-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                          |
+| Milestone                        | Status      | Evidence / next action                                                                                                                         |
+| -------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0. Design and behavior contracts | Complete    | Route/filter/media contracts approved; design values, responsive rules, and screen/state inventory recorded                                    |
+| 1. Visual foundation             | Complete    | Light/dark theme, local fonts, approved branding, provider controls; 37 tests, 3 E2E tests, and 38 responsive sample checks passed             |
+| Theme preference follow-up       | Complete    | Validated localStorage repository, saved-theme restore and storage-failure tests; 46 unit tests and 4 E2E tests passed                         |
+| 2. Runtime data and selectors    | Complete    | Validated repositories, production bundle isolation, scoring/filter/history/feed selectors; 81 unit tests and 4 E2E tests passed               |
+| 3. Routing, shell, contribution  | Complete    | Responsive shell, contribution guide, loading/error recovery; 95 unit tests and 13 E2E tests passed; repository URL provisional by approval    |
+| 4. Scoreboard primitives         | Complete    | Reusable results, identities, header, legend and provenance; 114 unit tests and 18 E2E tests passed; responsive/accessibility fixture verified |
+| 5-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                             |
 
 Initial visual review covered 13 route states in both themes at desktop/phone sizes (52
 captures). Foundation verification covered seven sizes in each theme (14 captures), 19 widths
@@ -35,7 +36,7 @@ per mode, reduced motion, and computed keyboard focus. These are foundation chec
 of completed route parity, physical-device testing, or a full zoom audit.
 
 Update statuses only after exit criteria pass. Do not recreate temporary verification routes in
-the shipping app. Next major milestone: scoreboard rendering primitives.
+the shipping app. Next major milestone: unfiltered contest standings.
 
 ## Data and presentation rules
 
@@ -218,6 +219,26 @@ Pass derived first-solve status explicitly instead of changing persisted records
 
 **Exit:** tests cover optional metadata, text/icon semantics, complete focus/hover descriptions,
 problem ordering, and equivalent information without duplicated scoring logic.
+
+**Completed:** result cells, ordered two-column grids, legend, team/roster and school identities,
+source/correction callout, and contest header are exported from the scoreboard feature. Cells
+consume derived first-solve flags, preserve ties, explain attempts including acceptance, and
+expose complete descriptions on focus, hover, click, or touch. Missing optional metadata and
+rosters remain explicit; logo failures are visible and diagnosed. Header fields follow the
+contest model, and invented data never claims official provenance.
+
+An isolated browser fixture composes table rows and cards from the same selectors/components;
+no temporary application route was added. The root remains the construction screen until
+milestone 5. Verified both themes at the seven standard sizes and all four breakpoint edges
+(38 size/theme combinations), minimum 68 x 48px cells, contained scrolling/focus, equivalent
+accessible descriptions, axe scans, keyboard disclosure, touch and outside dismissal, and 200%
+root-font enlargement. Visual inspection covered desktop light and phone dark. Browser checks
+caught and resolved unintended heading levels and unreliable quick-tap descriptions. Physical
+devices and browser-toolbar zoom remain supplemental checks.
+
+`npm run validate` passed with 114 unit tests and 96.61% line coverage; `npm run test:e2e`
+passed all 18 tests. The existing roughly 593kB production-entry warning remains unchanged;
+test fixture modules are not part of the shipping application.
 
 ### 5. Ship unfiltered contest standings
 

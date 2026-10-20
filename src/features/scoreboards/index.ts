@@ -15,3 +15,10 @@ export type {
   StandingRow,
   Team,
 } from './model/schemas';
+export { ContestHeader } from './components/ContestHeader';
+export { ProblemResultCell } from './components/ProblemResultCell';
+export { ProblemResults } from './components/ProblemResults';
+export { ResultsLegend } from './components/ResultsLegend';
+export { SchoolIdentity } from './components/SchoolIdentity';
+export { SourceCallout } from './components/SourceCallout';
+export { TeamIdentity } from './components/TeamIdentity';

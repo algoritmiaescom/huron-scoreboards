@@ -102,6 +102,8 @@ live resizing without state loss, touch/keyboard use, and 200% zoom. At 400% zoo
   follow the URL contract in product scope. Never re-rank official placements after filtering.
 - Result cells provide full descriptions on keyboard focus and hover, visible focus, and
   problem labels. Focus must scroll the containing table without hiding the selected cell.
+  A tap or click also opens the description; Escape, focus leaving the cell, or an outside
+  interaction dismisses it. Keep the complete accessible name available even when closed.
 - Accumulated standings show published scores, explicit qualification labels, provenance,
   and a cut indicator only when supported by the published rows.
 - School pages distinguish unit-only and institution-rollup scope. Charts reverse the place
@@ -113,6 +115,26 @@ live resizing without state loss, touch/keyboard use, and 200% zoom. At 400% zoo
 - Every data surface distinguishes loading, empty, invalid selection, unavailable, and error
   states as applicable. Do not describe a live-source outage when no live integration exists.
 - Correction actions link to GitHub and explain the official-evidence requirement.
+
+### Scoreboard presentation primitives
+
+Table cells and ordered two-column result grids reuse the same result component. They receive
+derived first-solve flags rather than calculating scoring or changing stored results. The
+visible value is attempts followed by solve minute when solved; FTS adds a bolt, text badge,
+and yellow border. The legend explains all four appearances, accepted-attempt semantics,
+and possible first-solve ties.
+
+Team names are text rather than implicit headings. Rosters use a native disclosure; absent
+rosters say "Integrantes no disponibles", and unspecified member roles remain unlabeled.
+School identities preserve the competing unit's short and official names with optional location
+and logo. Missing logos use a decorative school icon; failed images report "Logo no disponible".
+Only callers with an available school destination supply a link.
+
+Contest headers use a yellow top border, season/series/stage hierarchy, contest name, UTC-stable
+calendar date, duration, per-contest penalty, and problem count. Source/correction actions are
+reusable independently. Mock records explicitly identify invented results and an example source;
+only archive records label the source as official. Do not add locations or hashtags absent
+from the contest model.
 
 ## Focus and motion
 

@@ -13,6 +13,8 @@ const stageLabels: Record<ContestStage, string> = {
   final: 'Final',
 };
 
+export const contestStageLabel = (stage: ContestStage): string => stageLabels[stage];
+
 export const seriesLabel = (id: string): string => {
   if (id === 'gpm') {
     return 'Gran Premio de México';
@@ -41,7 +43,7 @@ export const selectCatalog = (archive: ScoreboardsArchive) => {
           contests: archive.contests
             .filter((contest) => contest.seasonYear === seasonYear && contest.seriesId === seriesId)
             .toSorted((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id))
-            .map((contest) => ({ ...contest, stageLabel: stageLabels[contest.stage] })),
+            .map((contest) => ({ ...contest, stageLabel: contestStageLabel(contest.stage) })),
           accumulated: archive.seasonStandings.some(
             (standing) => standing.seasonYear === seasonYear && standing.seriesId === seriesId,
           ),

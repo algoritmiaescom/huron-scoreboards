@@ -24,6 +24,10 @@ src/
 Released screens are the root construction screen, contribution guide, and route recovery in
 `src/app/pages/`, composed within the application shell. Contribution-specific sections live in
 `src/features/contribution/components/`. The data layer remains independent of screen composition.
+Reusable scoreboard result cells/grids, team/school identities, roster disclosure, contest
+header, provenance callout, and legend live in `src/features/scoreboards/components/` and are
+exported through the feature entry point. They do not release a standings route on their own.
+Their isolated browser composition lives under `src/test/fixtures/`, not `src/app/pages/`.
 
 The modules map to these features:
 
