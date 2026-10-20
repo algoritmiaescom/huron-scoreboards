@@ -74,19 +74,18 @@ describe('application routes', () => {
     });
   });
 
-  it('recovers unknown and unreleased paths instead of presenting another feature', async () => {
+  it('recovers unknown paths and redirects through the real scoreboards route', async () => {
     const scroll = vi.spyOn(window, 'scrollTo').mockImplementation(() => undefined);
     const user = userEvent.setup();
-    const router = renderRoute('/scoreboards');
+    const router = renderRoute('/not-a-real-route');
     expect(
       await screen.findByRole('heading', { name: 'Página no encontrada' }),
     ).toBeInTheDocument();
     await user.click(screen.getByRole('link', { name: 'Volver al inicio' }));
-    expect(await screen.findByRole('heading', { name: 'En construcción' })).toBeInTheDocument();
-    expect(router.state.location.pathname).toBe('/');
+    expect(await screen.findByRole('heading', { name: /GPM|Final Regional/ })).toBeInTheDocument();
+    expect(router.state.location.pathname).toBe('/scoreboards');
     expect(screen.getByRole('main')).toHaveFocus();
     expect(scroll).toHaveBeenCalledWith(0, 0);
-    expect(screen.queryByRole('link', { name: 'Clasificaciones' })).not.toBeInTheDocument();
   });
 
   it('surfaces route exceptions with diagnostics and recovery actions', async () => {

@@ -1,5 +1,6 @@
 import CloseRounded from '@mui/icons-material/CloseRounded';
 import GroupsOutlined from '@mui/icons-material/GroupsOutlined';
+import LeaderboardOutlined from '@mui/icons-material/LeaderboardOutlined';
 import MenuRounded from '@mui/icons-material/MenuRounded';
 import { Divider, Drawer, IconButton, Stack, Typography, useMediaQuery } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
@@ -55,19 +56,34 @@ export const SiteNavigation = () => {
     setDrawerOpen(false);
   }
   const link = (
-    <NavigationLink
-      to="/contribute"
-      onClick={() => {
-        setDrawerOpen(false);
-      }}
-    >
-      <GroupsOutlined />
-      Contribuir
-    </NavigationLink>
+    <>
+      <NavigationLink
+        to="/scoreboards"
+        onClick={() => {
+          setDrawerOpen(false);
+        }}
+      >
+        <LeaderboardOutlined />
+        Clasificaciones
+      </NavigationLink>
+      <NavigationLink
+        to="/contribute"
+        onClick={() => {
+          setDrawerOpen(false);
+        }}
+      >
+        <GroupsOutlined />
+        Contribuir
+      </NavigationLink>
+    </>
   );
 
   if (desktop) {
-    return <nav aria-label="Navegación principal">{link}</nav>;
+    return (
+      <Stack component="nav" direction="row" aria-label="Navegación principal">
+        {link}
+      </Stack>
+    );
   }
   return (
     <>

@@ -5,12 +5,10 @@ import { App } from '@/App';
 import { renderApp } from '@/test/test-utils';
 
 describe('App', () => {
-  it('shows the under construction screen', () => {
+  it('redirects to the scoreboards route from the app root', async () => {
     renderApp(<App />);
 
-    expect(screen.getByRole('heading', { name: 'En construcción' })).toBeInTheDocument();
-    expect(
-      screen.getByText('Huron Scoreboards esta en construcción. Vuelve pronto :).'),
-    ).toBeInTheDocument();
+    await screen.findByRole('heading', { name: /GPM|Final Regional/ });
+    expect(window.location.pathname).toBe('/scoreboards');
   });
 });

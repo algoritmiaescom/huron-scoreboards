@@ -46,9 +46,11 @@ const formatContestDate = (date: string) =>
 export const ContestHeader = ({
   contest,
   datasetSource,
+  headingLevel = 'h1',
 }: {
   contest: Contest;
   datasetSource: DatasetSource;
+  headingLevel?: 'h1' | 'h2';
 }) => (
   <Header>
     <Content>
@@ -60,7 +62,7 @@ export const ContestHeader = ({
       <Typography variant="overline" color="primary">
         {datasetSource === 'mock' ? 'Concurso de demostración' : 'Archivo de resultados'}
       </Typography>
-      <Title variant="h3" variantMapping={{ h3: 'h1' }}>
+      <Title variant="h3" variantMapping={{ h3: headingLevel }}>
         {contest.name}
       </Title>
       <Metadata aria-label="Datos del concurso">
