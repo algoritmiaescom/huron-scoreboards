@@ -1,6 +1,5 @@
-import { z } from 'zod';
-
 import { describe, expect, it } from 'vitest';
+import { z } from 'zod';
 
 import { formatIssue, formatIssues, formatLocation, issuesFromZodError } from './issues';
 

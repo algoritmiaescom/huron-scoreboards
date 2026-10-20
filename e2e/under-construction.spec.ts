@@ -4,7 +4,7 @@ import { expect, test } from '@playwright/test';
 test('shows the under construction screen without accessibility violations', async ({ page }) => {
   await page.goto('/');
 
-  await expect(page.getByRole('heading', { name: 'Under construction' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'En construcción' })).toBeVisible();
 
   const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
   expect(accessibilityScanResults.violations).toEqual([]);
@@ -35,7 +35,7 @@ test('loads fonts locally and uses its initial light palette', async ({ page }) 
   });
 
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: 'Under construction' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'En construcción' })).toBeVisible();
 
   const typography = await page.evaluate(async () => {
     const display = await document.fonts.load('700 16px "Space Grotesk Variable"');
@@ -56,7 +56,7 @@ test('loads fonts locally and uses its initial light palette', async ({ page }) 
 
 test('reflows the placeholder across the responsive verification matrix', async ({ page }) => {
   await page.goto('/');
-  const heading = page.getByRole('heading', { name: 'Under construction' });
+  const heading = page.getByRole('heading', { name: 'En construcción' });
   await expect(heading).toBeVisible();
 
   for (const [width, height] of [

@@ -3,15 +3,15 @@ import '@fontsource/ibm-plex-mono/latin-500.css';
 import '@fontsource/ibm-plex-mono/latin-600.css';
 import '@fontsource/ibm-plex-mono/latin-700.css';
 
-import { Alert, CssBaseline, ThemeProvider, type PaletteMode } from '@mui/material';
-import { useState, type PropsWithChildren } from 'react';
+import { Alert, CssBaseline, type PaletteMode, ThemeProvider } from '@mui/material';
+import { type PropsWithChildren, useState } from 'react';
 
 import { createAppTheme } from '@/app/theme/appTheme';
-import { ThemeModeContext } from '@/app/theme/ThemeModeContext';
 import {
   localStorageThemePreferenceRepository,
   type ThemePreferenceRepository,
 } from '@/app/theme/repositories/themePreferenceRepository';
+import { ThemeModeContext } from '@/app/theme/ThemeModeContext';
 
 const themes = {
   light: createAppTheme('light'),

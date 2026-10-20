@@ -1,4 +1,5 @@
-import { alpha, createTheme, responsiveFontSizes, type PaletteMode } from '@mui/material/styles';
+import { alpha, createTheme, type PaletteMode, responsiveFontSizes } from '@mui/material/styles';
+
 import type { CSSProperties } from 'react';
 
 interface BrandPalette {

@@ -41,6 +41,13 @@ ban on function expressions and on the `sx` JSX attribute.
 
 ## Imports and boundaries
 
+- Keep static imports before other statements. Group Node built-ins, external packages,
+  internal `@/` imports, relative imports, and standalone type imports, with blank lines between
+  groups. Sort module paths and named import members alphabetically, ignoring case.
+- ESLint owns import ordering (`import-x/first`, `import-x/order`, and `sort-imports`);
+  run `npm run lint:fix` to apply automatic fixes. Prettier owns formatting, not sorting.
+  Preserve execution order for side-effect imports such as CSS and test setup; ESLint does not
+  reorder them automatically.
 - Use the `@/` alias for source imports.
 - A feature must not import another feature's internal modules.
 - Shared components must remain domain-neutral.

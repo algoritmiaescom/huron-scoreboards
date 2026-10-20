@@ -8,9 +8,9 @@ describe('App', () => {
   it('shows the under construction screen', () => {
     renderApp(<App />);
 
-    expect(screen.getByRole('heading', { name: 'Under construction' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'En construcción' })).toBeInTheDocument();
     expect(
-      screen.getByText('Huron Scoreboards is being built. Check back soon.'),
+      screen.getByText('Huron Scoreboards esta en construcción. Vuelve pronto :).'),
     ).toBeInTheDocument();
   });
 });

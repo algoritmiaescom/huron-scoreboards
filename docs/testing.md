@@ -46,6 +46,22 @@ references. See [data model](data-model.md) for the full check list.
 Cover the validator itself with unit tests, including fixtures that are deliberately invalid: a
 validator that never rejects anything passes silently and is worse than none.
 
+Runtime repository tests exercise the actual development files as well as injected malformed
+JSON, schema failures, load failures, broken references, missing records, and empty archives.
+They verify dataset isolation and that a media failure leaves valid standings available.
+The production-bundle test builds the data composition entry with the production environment,
+checks that no mock modules were included, and executes the bundle to verify the currently
+empty real archive without a mock fallback.
+Development selection tests cover the unset default, explicit `mock`/`archive` values and
+invalid configuration errors. Production-bundle tests verify that `mock`, `archive` and invalid
+`VITE_DATA_SOURCE` values all leave production restricted to the real archive.
+
+Pure selector tests cover contest-specific penalties, tied first solves before filtering,
+official places, AND filters, sparse catalogs, published accumulated scores, safe qualification
+cuts, transitive school scope, season-scoped teams, optional metadata, and ordered event posts.
+Feed composition tests use the Mexico City date boundary and reject substitution of older,
+future, or unlinked events. These are data-layer checks, not completed feature-screen E2E coverage.
+
 ## CI
 
 Pull requests and pushes to `main` run validation and E2E jobs. Failed Playwright runs upload an

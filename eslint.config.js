@@ -1,11 +1,12 @@
 import js from '@eslint/js';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import prettier from 'eslint-config-prettier';
+import importX from 'eslint-plugin-import-x';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
   globalIgnores([
@@ -53,6 +54,26 @@ export default defineConfig([
             'Style with a styled component from @mui/material/styles instead of the sx prop.',
         },
       ],
+    },
+  },
+  {
+    files: ['**/*.{js,ts,tsx}'],
+    plugins: {
+      'import-x': importX,
+    },
+    rules: {
+      'import-x/first': 'error',
+      'import-x/order': [
+        'error',
+        {
+          groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index'], 'type'],
+          pathGroups: [{ pattern: '@/**', group: 'internal' }],
+          pathGroupsExcludedImportTypes: ['builtin', 'type'],
+          alphabetize: { order: 'asc', caseInsensitive: true },
+          'newlines-between': 'always',
+        },
+      ],
+      'sort-imports': ['error', { ignoreDeclarationSort: true, ignoreCase: true }],
     },
   },
   {

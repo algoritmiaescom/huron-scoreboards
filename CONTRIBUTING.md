@@ -38,6 +38,9 @@ mock files. See [data/README.md](./data/README.md).
 - Link the official source or scoreboard evidence for every result you add or change.
 
 For media posts, supply alt text for every image or video. Posts without it cannot be published.
+List each post id exactly once in its event's `postIds`; that order is the presentation order.
+Keep team registries in their matching season directory and publish only one accumulated
+standing per season/series.
 
 ### School logos
 

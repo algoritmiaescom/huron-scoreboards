@@ -1,6 +1,7 @@
+import { fileURLToPath, URL } from 'node:url';
+
 import babel from '@rolldown/plugin-babel';
 import react, { reactCompilerPreset } from '@vitejs/plugin-react';
-import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({

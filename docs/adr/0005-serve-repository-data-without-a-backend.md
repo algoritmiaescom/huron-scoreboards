@@ -11,8 +11,8 @@ Competition results are versioned in this repository, loaded as application data
 through a typed repository interface that returns validated domain objects. Corrections arrive as
 pull requests rather than through an in-app authoring screen.
 
-The media feed is the only external data source. Treat it as a failable integration behind its
-own boundary.
+The initial media feed uses curated repository records behind its own boundary. Any future live
+source is a separate, failable integration rather than a prerequisite for archive browsing.
 
 ## Consequences
 
@@ -25,7 +25,7 @@ repository boundary and surface invalid data explicitly. Because there is no ser
 input, CI is the enforcement point — a GitHub Actions job validates `data/` on every pull request,
 and correctness otherwise depends on review.
 
-A failure in the external media source must degrade only its own page.
+A failure in media data or a future external media source must degrade only its own page.
 
 Which modules the site presents is a product question, defined in `docs/product-scope.md`, not in
 this record.

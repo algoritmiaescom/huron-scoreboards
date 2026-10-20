@@ -27,8 +27,24 @@ npm ci
 npm run dev
 ```
 
-The initial implementation serves a placeholder screen only. Scoreboard behavior, routing, and
-persistence are not implemented yet.
+The application still serves a placeholder screen. Light/dark preferences persist locally;
+validated scoreboard/media repositories and domain selectors are ready for future screens.
+Routing and feature UI are not implemented yet. Data-layer development defaults to the invented
+`data/mock/` dataset; production excludes it and uses only the real archive (currently empty).
+
+### Development dataset
+
+Set `VITE_DATA_SOURCE` to `mock` for `data/mock/` or `archive` for the real `data/` archive.
+Copy [.env.example](.env.example) to `.env.local` to save your local choice, or set it inline:
+
+```sh
+VITE_DATA_SOURCE=archive npm run dev
+```
+
+Restart the development server after changing the environment file. Unset defaults to `mock`;
+invalid values produce an explicit configuration error when repositories load. Production builds
+always use `archive`, regardless of this variable, and never fall back to mock records.
+The current placeholder does not display competition data yet.
 
 ## Commands
 

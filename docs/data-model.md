@@ -372,7 +372,9 @@ parsing everything:
 - `results` has exactly one entry per contest problem, in problem order;
 - problem labels are unique within a contest;
 - identifiers are unique within their registry;
+- one accumulated standing exists per season/series, and an event cannot repeat a post reference;
 - a contest's `seasonYear` and `seriesId` agree with its path under `data/`;
+- a team's `seasonYear` agrees with the season of its registry file;
 - a committed `logo` path points at a file that exists under `public/`.
 
 Only the validation script checks the logo file, because the same validators also run in the
@@ -386,6 +388,17 @@ first. It prints the file path, the location within the file, and what was expec
 contributor fixing a transcription error should not have to re-run CI once per mistake.
 
 Exit non-zero on any failure.
+
+Runtime repositories return explicit `ready`, `empty`, `invalid`, or `error` results. Both
+invalid records and load failures retain file/record diagnostics; neither exposes a partially
+loaded archive. A missing record in a valid archive is a separate `not-found` lookup result.
+Mock and real references are always resolved independently.
+
+Domain selectors preserve official places and stored accumulated scores. School history
+defaults to the exact competing school; institution scope explicitly includes all descendants
+once. Teams remain season-scoped. Per-season contest counts, best place, and podium counts use
+contest rows, not accumulated standings. Accumulated-only seasons remain visible, with no
+invented best contest place; team counts include either kind of published participation.
 
 ## Open questions
 

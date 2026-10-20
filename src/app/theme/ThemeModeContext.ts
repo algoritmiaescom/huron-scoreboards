@@ -1,5 +1,6 @@
-import type { PaletteMode } from '@mui/material';
 import { createContext, useContext } from 'react';
+
+import type { PaletteMode } from '@mui/material';
 
 interface ThemeModeControls {
   mode: PaletteMode;

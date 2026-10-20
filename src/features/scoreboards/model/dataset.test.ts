@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { validateScoreboardsReferences, type ScoreboardsDataset } from './dataset';
+import { type ScoreboardsDataset, validateScoreboardsReferences } from './dataset';
 
 const dataset: ScoreboardsDataset = {
   schools: [

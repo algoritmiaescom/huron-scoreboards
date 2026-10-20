@@ -8,8 +8,9 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 [data model](data-model.md), [architecture](architecture.md), and
 [coding guidelines](best-practices.md) govern implementation.
 
-- Development uses the existing [mock dataset](../data/mock/). Production uses only the real
-  archive and honest empty states, never silent mock fallbacks.
+- Development defaults to the existing [mock dataset](../data/mock/); `VITE_DATA_SOURCE=archive`
+  selects the real archive locally (`mock` selects seed data). Production ignores this setting
+  and uses only the real archive and honest empty states, never silent mock fallbacks.
 - Media starts with repository-backed events/posts. Keep reusable loading, empty, unavailable,
   and error presentations; defer live integration and async-state tooling.
 - Use installed React/MUI APIs and repository tooling. Do not introduce parallel domain types,
@@ -23,8 +24,9 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 | -------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | 0. Design and behavior contracts | Complete    | Route/filter/media contracts approved; design values, responsive rules, and screen/state inventory recorded                        |
 | 1. Visual foundation             | Complete    | Light/dark theme, local fonts, approved branding, provider controls; 37 tests, 3 E2E tests, and 38 responsive sample checks passed |
-| Theme preference follow-up       | In progress | Persist browser-local selection through a validated repository; test saved preferences and storage failures                        |
-| 2-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                 |
+| Theme preference follow-up       | Complete    | Validated localStorage repository, saved-theme restore and storage-failure tests; 46 unit tests and 4 E2E tests passed             |
+| 2. Runtime data and selectors    | Complete    | Validated repositories, production bundle isolation, scoring/filter/history/feed selectors; 81 unit tests and 4 E2E tests passed   |
+| 3-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                 |
 
 Initial visual review covered 13 route states in both themes at desktop/phone sizes (52
 captures). Foundation verification covered seven sizes in each theme (14 captures), 19 widths
@@ -32,7 +34,7 @@ per mode, reduced motion, and computed keyboard focus. These are foundation chec
 of completed route parity, physical-device testing, or a full zoom audit.
 
 Update statuses only after exit criteria pass. Do not recreate temporary verification routes in
-the shipping app. Next major milestone: runtime repositories and domain selectors.
+the shipping app. Next major milestone after data-layer verification: routing, shell, and contribution.
 
 ## Data and presentation rules
 
@@ -145,6 +147,24 @@ Retain existing CI validation from the same schemas.
 
 **Exit:** repository tests cover real/mock isolation, empty archives, malformed data and references;
 domain tests cover ties, penalty rules, hierarchy, and optional fields.
+
+Complete. Scoreboard and media repositories expose explicit ready/empty/invalid/error results
+and preserve file/record diagnostics without publishing partial data. Application composition
+owns dataset selection and supplies contest ids to media; features do not import each other.
+The production data-layer build excludes mock modules and executes against only the real
+archive, which is currently empty. No competition data is loaded by the placeholder screen.
+
+Selectors cover sparse catalogs, official placements, contest-specific scoring, every tied
+first solver, AND filtering, unchanged accumulated scores, safe qualification cuts, transitive
+institution rollups, season-scoped identities, and latest-held-contest media selection using
+Mexico City dates. Runtime and CI share the added registry-season, standing-uniqueness and
+post-reference checks.
+
+Verification: `npm run validate` passed (81 tests across 13 files, 96.38% line coverage, 26 data
+files validated, production build). `npm run test:e2e` passed all four existing workflows,
+including the seven-size responsive matrix. With approval, stale placeholder test assertions
+were aligned to the current Spanish screen; no screen behavior changed. Feature-screen
+responsive verification remains part of each later UI milestone.
 
 ### 3. Add routing, shell, and contribution
 

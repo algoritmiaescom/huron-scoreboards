@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { validateMediaReferences, type MediaDataset } from './dataset';
+import { type MediaDataset, validateMediaReferences } from './dataset';
 
 const dataset: MediaDataset = {
   events: [

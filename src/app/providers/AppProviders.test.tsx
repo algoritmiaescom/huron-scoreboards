@@ -3,8 +3,8 @@ import { render, renderHook, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { useThemeMode } from '@/app/theme/ThemeModeContext';
 import { THEME_PREFERENCE_KEY } from '@/app/theme/repositories/themePreferenceRepository';
+import { useThemeMode } from '@/app/theme/ThemeModeContext';
 
 import { AppProviders } from './AppProviders';
 
