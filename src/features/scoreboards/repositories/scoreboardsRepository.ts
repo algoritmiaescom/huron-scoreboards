@@ -108,8 +108,10 @@ export const createJsonScoreboardsRepository = (
     }
     const data: ScoreboardsArchive = {
       source,
-      schools: dataset.schools.flatMap(({ record }) => record),
-      teams: dataset.teams.flatMap(({ record }) => record),
+      schools: dataset.schools
+        .flatMap(({ record }) => record)
+        .sort((a, b) => a.id.localeCompare(b.id)),
+      teams: dataset.teams.flatMap(({ record }) => record).sort((a, b) => a.id.localeCompare(b.id)),
       contests: dataset.contests
         .map(({ record }) => record)
         .sort((a, b) => a.id.localeCompare(b.id)),

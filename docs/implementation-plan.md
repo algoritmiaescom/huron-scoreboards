@@ -20,13 +20,14 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 
 ## Progress
 
-| Milestone                        | Status      | Evidence / next action                                                                                                             |
-| -------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| 0. Design and behavior contracts | Complete    | Route/filter/media contracts approved; design values, responsive rules, and screen/state inventory recorded                        |
-| 1. Visual foundation             | Complete    | Light/dark theme, local fonts, approved branding, provider controls; 37 tests, 3 E2E tests, and 38 responsive sample checks passed |
-| Theme preference follow-up       | Complete    | Validated localStorage repository, saved-theme restore and storage-failure tests; 46 unit tests and 4 E2E tests passed             |
-| 2. Runtime data and selectors    | Complete    | Validated repositories, production bundle isolation, scoring/filter/history/feed selectors; 81 unit tests and 4 E2E tests passed   |
-| 3-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                 |
+| Milestone                        | Status      | Evidence / next action                                                                                                                      |
+| -------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0. Design and behavior contracts | Complete    | Route/filter/media contracts approved; design values, responsive rules, and screen/state inventory recorded                                 |
+| 1. Visual foundation             | Complete    | Light/dark theme, local fonts, approved branding, provider controls; 37 tests, 3 E2E tests, and 38 responsive sample checks passed          |
+| Theme preference follow-up       | Complete    | Validated localStorage repository, saved-theme restore and storage-failure tests; 46 unit tests and 4 E2E tests passed                      |
+| 2. Runtime data and selectors    | Complete    | Validated repositories, production bundle isolation, scoring/filter/history/feed selectors; 81 unit tests and 4 E2E tests passed            |
+| 3. Routing, shell, contribution  | Complete    | Responsive shell, contribution guide, loading/error recovery; 95 unit tests and 13 E2E tests passed; repository URL provisional by approval |
+| 4-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                          |
 
 Initial visual review covered 13 route states in both themes at desktop/phone sizes (52
 captures). Foundation verification covered seven sizes in each theme (14 captures), 19 widths
@@ -34,7 +35,7 @@ per mode, reduced motion, and computed keyboard focus. These are foundation chec
 of completed route parity, physical-device testing, or a full zoom audit.
 
 Update statuses only after exit criteria pass. Do not recreate temporary verification routes in
-the shipping app. Next major milestone after data-layer verification: routing, shell, and contribution.
+the shipping app. Next major milestone: scoreboard rendering primitives.
 
 ## Data and presentation rules
 
@@ -181,6 +182,31 @@ placeholder-only ADR when replacing the root.
 
 **Exit:** the first complete page works across viewports with valid links, navigation focus,
 and persisted theme selection through the visible control.
+
+Complete with the approved repository-link exception below. The shell and read-only contribution page are implemented. Only completed navigation is
+exposed; the root stays a construction screen and unreleased paths show recovery. Shared
+application configuration derives repository URLs. By user approval, `OWNER/REPOSITORY` remains
+a provisional URL with explicit UI warnings until the actual GitHub destination is supplied;
+the real-link availability criterion is deferred, not claimed verified.
+
+Verification: `npm run validate` passed (95 tests across 14 files, 96.28% line coverage,
+26 data files validated, production build). `npm run test:e2e` passed 13 workflows covering
+keyboard/touch navigation, skip/main focus, drawer trapping/Escape/restoration, visible theme
+persistence, route titles/recovery, delayed page loading, failed page chunks and successful retry.
+The page component is lazy-loaded inside Suspense with a stable route boundary so a failed
+import cannot leave the main region blank.
+
+All three released route states passed document-overflow checks at seven specified sizes plus
+600/900/1200/1536px breakpoint edges in both themes (114 route/size/theme combinations).
+Axe passed on phone/desktop routes and the open landscape drawer; reduced motion, computed
+focus outline, and 200% root-font enlargement also passed. Visual inspection covered desktop
+light and phone dark. The 320px case verifies 400%-zoom-equivalent reflow; physical devices and
+actual browser-toolbar zoom remain supplemental release checks, not claims of this milestone.
+
+Validation exposed nondeterministic school/team ordering after parallel file loads. Repository
+outputs now sort those identities, with a regression assertion. The production build passes
+with a Vite size warning for the roughly 593kB minified entry (190kB gzip); the contribution page
+is a separate lazy chunk. No warning threshold was relaxed.
 
 ### 4. Build scoreboard rendering primitives
 

@@ -37,6 +37,22 @@ Theme unit tests cover both palettes, status contrast, and provider mode changes
 The scripts TypeScript project includes scripts and their transitive domain dependencies,
 not all browser source files; browser code is checked by the application project.
 
+The application-shell suite adds direct contribution links and titles, unknown-route recovery,
+visible-control theme persistence, main-region focus, skip navigation, drawer focus trapping,
+Escape/focus restoration, touch input, short-landscape use, and drawer state across breakpoint
+changes. An intercepted lazy page chunk verifies error presentation and successful retry.
+
+Each released route (`/`, `/contribute`, and unknown-route recovery) is checked in both themes
+at the seven specified sizes and one pixel below/at/above 600, 900, 1200 and 1536px. Assertions
+check document overflow; axe scans run at phone/desktop sizes and with an open mobile drawer.
+Reduced motion, computed focus outline, and 200% root-font enlargement at a 640px viewport are
+checked separately. The 320px matrix case covers 400%-zoom-equivalent reflow from 1280px;
+this does not replace physical-device testing or a manual browser-toolbar zoom audit.
+
+Repository URLs are checked against application configuration, not a live GitHub service.
+The configured placeholder is explicitly disclosed; real destination availability cannot be
+verified until the repository URL is supplied.
+
 ## Data validation
 
 Competition and media data under `data/` is community-contributed, so it is checked like code.

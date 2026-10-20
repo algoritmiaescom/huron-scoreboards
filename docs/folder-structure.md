@@ -8,18 +8,22 @@ public/
   logos/                   School logos served by path, referenced from data
 src/
   app/
+    components/            Application shell, navigation, footer and theme control
+    config.ts              Repository links and provisional configuration
     pages/                 Route-level or top-level screens
     providers/             Application-wide provider composition
     repositories/          Dataset selection and cross-feature data composition
     theme/                 Material UI theme and design tokens
+    routes.tsx             Released route tree and lazy page loading
   components/              Reusable, domain-neutral UI
   features/                Domain schemas, selectors and repositories; UI added incrementally
   lib/                     Shared validation, JSON loading and date helpers
   test/                    Shared unit-test setup and utilities
 ```
 
-The only shipping screen is the placeholder in `src/app/pages/`. The data layer is implemented
-independently of screen composition.
+Released screens are the root construction screen, contribution guide, and route recovery in
+`src/app/pages/`, composed within the application shell. Contribution-specific sections live in
+`src/features/contribution/components/`. The data layer remains independent of screen composition.
 
 The modules map to these features:
 

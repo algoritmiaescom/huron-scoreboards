@@ -91,6 +91,10 @@ recovery rather than another page's content.
 
 These contracts keep selected data explicit, URLs shareable, and school identities unambiguous.
 
+During incremental delivery, `/` remains the construction screen. Only `/contribute` is released
+alongside route recovery; navigation does not advertise unfinished scoreboard, school, or media
+routes. Those paths currently show recovery rather than a misleading empty feature.
+
 **School history**
 
 Every school has a page summarizing its results across seasons, using charts for performance

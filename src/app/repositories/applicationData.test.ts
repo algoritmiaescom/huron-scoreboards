@@ -67,6 +67,9 @@ describe('runtime repositories', () => {
     }
     expect(result.scoreboards.data.contests.length).toBeGreaterThan(0);
     expect(result.media.data.events.length).toBeGreaterThan(0);
+    for (const records of [result.scoreboards.data.schools, result.scoreboards.data.teams]) {
+      expect(records.map(({ id }) => id)).toEqual(records.map(({ id }) => id).toSorted());
+    }
   });
 
   it.each(['archive', 'mock'] as const)('never loads the other dataset for %s', async (source) => {

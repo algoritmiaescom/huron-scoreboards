@@ -69,8 +69,8 @@ the current visit. A successful subsequent selection clears the warning and repa
 Preferences are browser-local and do not synchronize across devices; cross-tab synchronization
 is not part of the current interaction contract.
 
-The provider exposes controls now; the navigation toggle is introduced with the application
-shell. Theme preference must not introduce browser persistence for competition records.
+The navigation exposes the provider's theme control in both desktop and mobile layouts.
+Theme preference must not introduce browser persistence for competition records.
 
 ## Responsive layouts
 

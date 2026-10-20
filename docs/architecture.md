@@ -11,14 +11,24 @@ latest contest, and a guide for correcting the data through GitHub. See
 The application uses React 19, TypeScript, Vite, and Material UI. React Compiler is enabled in
 the Vite build.
 
-`main.tsx` mounts the application providers. `App.tsx` renders the current screen. The
-application currently ships a single construction placeholder without routing or feature screens.
-Validated scoreboard/media repositories and pure domain selectors are available for the upcoming
-screens. Theme preferences are persisted separately.
+`main.tsx` mounts application providers. `App.tsx` mounts React Router's browser router;
+`src/app/routes.tsx` owns the released route tree. The root retains its construction screen;
+`/contribute` loads the contribution guide, and unmatched paths render recovery. Standings,
+schools, and media are not released or linked yet. Their repositories/selectors remain available
+independently of screen composition.
 
-React Router, Zustand, React Hook Form, and Zod remain selected for upcoming feature work and are
-installed. Zod validates persisted theme preferences and competition schemas; routing, shared
-stores, and forms are not needed by the placeholder.
+The application shell owns navigation, responsive drawer state, the theme control, skip link,
+one main landmark, and footer. Route transitions focus the main region and reset scroll.
+The contribution route is loaded lazily; initial and navigation loading states are announced.
+Route error boundaries log diagnostics and provide reload/home recovery. Page titles are
+rendered with React 19 document metadata. The document language is Spanish.
+
+Application configuration in `src/app/config.ts` supplies repository URL, default branch, and
+the provisional-link flag. Contribution/footer links share derived URLs. The user-approved
+placeholder URL is clearly identified in the UI until a real repository is configured.
+
+React Router and Zod are in use. Zustand and React Hook Form remain installed for future
+shared client state and forms; neither is needed for navigation or the read-only guide.
 
 ## Theme preferences
 
@@ -28,9 +38,9 @@ loads before rendering themed children, and writes only on user selection. Failu
 and shown as a warning while theme controls remain usable for the visit. See
 [ADR 0006](adr/0006-persist-theme-preference.md) and [design](../DESIGN.md).
 
-## Planned state ownership
+## State ownership
 
-When feature work begins:
+As feature work progresses:
 
 - Local interaction state stays in React components.
 - Form state belongs to React Hook Form and is validated with Zod.

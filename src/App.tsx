@@ -1,5 +1,7 @@
-import { UnderConstructionPage } from '@/app/pages/UnderConstructionPage';
+import { createBrowserRouter, RouterProvider } from 'react-router';
 
-export const App = () => {
-  return <UnderConstructionPage />;
-};
+import { routes } from '@/app/routes';
+
+const router = createBrowserRouter(routes);
+
+export const App = () => <RouterProvider router={router} />;

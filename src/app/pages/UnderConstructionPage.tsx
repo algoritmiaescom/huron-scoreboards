@@ -2,10 +2,10 @@ import ConstructionIcon from '@mui/icons-material/Construction';
 import { Container, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const PageRoot = styled('main')({
+const PageRoot = styled('section')({
   alignItems: 'center',
   display: 'flex',
-  minHeight: '100vh',
+  minHeight: '65dvh',
 });
 
 const CenteredStack = styled(Stack)({
@@ -20,6 +20,7 @@ const PageIcon = styled(ConstructionIcon)(({ theme }) => ({
 export const UnderConstructionPage = () => {
   return (
     <PageRoot>
+      <title>En construcción | Huron Scoreboards</title>
       <Container maxWidth="sm">
         <CenteredStack spacing={3}>
           <PageIcon color="primary" />
