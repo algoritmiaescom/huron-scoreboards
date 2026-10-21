@@ -167,6 +167,25 @@ the published row ordering supports a single, untied boundary. Do not infer a cu
 qualified-only list or noncontiguous flags. School identities stay unlinked until their
 history destinations exist. Sharing is reused; contest-only filters and legends are absent.
 
+### School index
+
+The school index uses a large editorial heading, a decorative yellow ring on wide screens,
+and a raised, bounded search panel. School cards use a yellow rotated school badge, outlined
+scope chip, identity/logo, and bottom-aligned statistics. Cards form one column below 600px,
+two from 600px, and three from 1200px; long names, locations, scope labels and enlarged text
+wrap without document overflow. Identity names are level-two headings beneath the page title.
+
+Institution cards state that totals include their registered descendant units; unit cards state
+that only exact-school results are included. A school with no registered units is labeled as such
+without inventing an organizational type. Display best official contest placement and team-result
+count separately from distinct contests. Zero results say "Sin resultados" instead of a fake rank.
+Absent optional location fields are omitted; missing/failed logos reuse the identity fallback.
+Search shows a live result count and distinct empty/no-match states with recovery.
+
+School cards remain static, without action arrows, hover affordances, or broken destination
+links until history pages exist. The index is accessible through "Instituciones" in both
+desktop navigation and the mobile drawer, with an active-page indication.
+
 ## Focus and motion
 
 Use a 3px yellow focus outline, 2px offset, and a 2px navy inner ring, visible in both themes.

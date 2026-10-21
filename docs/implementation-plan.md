@@ -31,7 +31,8 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 | 5. Contest standings             | Complete    | Released standings/root redirect, data-driven selection, tables/cards, provenance and recovery; unit/browser acceptance verified below         |
 | 6. URL filtering and sharing     | Complete    | Typed URL filters, chips/counts, history/reload, clipboard recovery; 146 unit tests and 26 E2E tests passed                                    |
 | 7. Accumulated standings         | Complete    | Published scores/qualification, safe cuts, URL recovery and sharing; 186 unit tests and 31 E2E tests passed                                    |
-| 8-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                             |
+| 8. School index                  | Complete    | Searchable scoped cards, precise counts, URL recovery, desktop/mobile navigation; individual history links remain staged                       |
+| 9-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                             |
 
 Initial visual review covered 13 route states in both themes at desktop/phone sizes (52
 captures). Foundation verification covered seven sizes in each theme (14 captures), 19 widths
@@ -39,7 +40,7 @@ per mode, reduced motion, and computed keyboard focus. These are foundation chec
 of completed route parity, physical-device testing, or a full zoom audit.
 
 Update statuses only after exit criteria pass. Do not recreate temporary verification routes in
-the shipping app. Next major milestone: school index (release navigation with school histories).
+the shipping app. Next major milestone: school histories (release individual school links).
 
 ## Data and presentation rules
 
@@ -344,10 +345,33 @@ zoom checks remain supplemental. The existing production-entry size warning rema
 
 Build searchable responsive cards with scope-aware summaries, optional locations/logos, best
 placement, and precise result counts. Distinguish no schools, no search matches, and no results.
-Expose navigation only when card destinations work; release alongside milestone 9 if necessary.
+Expose index navigation when the index works; enable individual card links with milestone 9.
 
 **Exit:** search, zero-result schools, descendant aggregation, and optional identities work
 without duplicate results.
+
+**Completed:** the lazy `/schools` index presents searchable reusable cards with stable school
+identities, optional locations/logos, registered-unit counts and explicit scope. Parentless
+schools summarize direct and transitive-descendant results once; units remain exact-school.
+Cards separate team-contest result counts, distinct contests and best official placement.
+Accumulated standings and result-less registrations do not inflate metrics. Empty school
+archives, schools without results, no search matches, invalid query parameters and repository
+diagnostics are distinct states with appropriate recovery.
+
+Search uses `q`, replacing history without reloading the archive; rapid typing, reload, and
+back/forward preserve the query. Desktop navigation and the mobile drawer expose "Instituciones"
+with active-page styling; card destinations remain staged with milestone 9. Static cards do not imply unavailable
+actions, and existing scoreboard school identities remain unlinked.
+
+`npm run validate` passed with 198 unit tests and 93.82% line coverage. The complete
+`npm run test:e2e -- --workers=2 --reporter=line` suite passed all 36 browser tests.
+Both themes passed the seven standard sizes and all breakpoint edges (38 size/theme
+combinations), one/two/three-column reflow, equivalent scoped values, overflow checks,
+phone/desktop axe scans, keyboard search, touch recovery, and 200% root-font enlargement.
+Visual inspection covered desktop light and phone dark. Physical-device and toolbar-zoom
+checks remain supplemental. Validation and browser suites were run separately after a
+concurrent attempt hit unrelated existing test timeouts and a timing-sensitive fixture reflow
+assertion; no test thresholds or timeouts were relaxed.
 
 ### 9. Add school histories and charts
 

@@ -2,6 +2,7 @@ import { Navigate } from 'react-router';
 
 import { AppShell } from '@/app/components/AppShell';
 import { LazyContributePage } from '@/app/pages/LazyContributePage';
+import { LazySchoolsPage } from '@/app/pages/LazySchoolsPage';
 import { LazyScoreboardsPage } from '@/app/pages/LazyScoreboardsPage';
 import {
   AppErrorPage,
@@ -11,7 +12,16 @@ import {
 } from '@/app/pages/RouteStatusPages';
 import { loadScoreboards } from '@/app/repositories/loadScoreboards';
 
-import type { RouteObject } from 'react-router';
+import type { RouteObject, ShouldRevalidateFunction } from 'react-router';
+
+const revalidateArchive: ShouldRevalidateFunction = ({
+  currentUrl,
+  nextUrl,
+  defaultShouldRevalidate,
+}) =>
+  currentUrl.pathname === nextUrl.pathname && currentUrl.search !== nextUrl.search
+    ? false
+    : defaultShouldRevalidate;
 
 export const routes: RouteObject[] = [
   {
@@ -23,12 +33,16 @@ export const routes: RouteObject[] = [
       {
         path: 'scoreboards',
         loader: loadScoreboards,
-        shouldRevalidate: ({ currentUrl, nextUrl, defaultShouldRevalidate }) =>
-          currentUrl.pathname === nextUrl.pathname && currentUrl.search !== nextUrl.search
-            ? false
-            : defaultShouldRevalidate,
+        shouldRevalidate: revalidateArchive,
         ErrorBoundary: RouteErrorPage,
         Component: LazyScoreboardsPage,
+      },
+      {
+        path: 'schools',
+        loader: loadScoreboards,
+        shouldRevalidate: revalidateArchive,
+        ErrorBoundary: RouteErrorPage,
+        Component: LazySchoolsPage,
       },
       {
         path: 'contribute',

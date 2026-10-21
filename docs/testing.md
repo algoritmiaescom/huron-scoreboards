@@ -91,6 +91,17 @@ Unit/component tests cover standing-only seasons and open-ended series, malforme
 selection URLs, empty rows, qualified-only/all-unqualified/noncontiguous flags, and tied
 qualification boundaries without invented cuts.
 
+School index tests cover transitive institution rollups versus exact academic units, direct
+parent results, distinct contest counts, zero-result/accumulated-only schools, and name/location
+search with absent metadata. Injected loader tests cover empty real archives, repository
+errors/invalid data, no matches, malformed queries, history, and single-load rapid input.
+Browser journeys verify direct lazy loading, reloadable search, optional/failed logos, static
+cards without dangling links, desktop/mobile index navigation with active state and drawer
+closure/main focus, and production archive isolation. Both themes cover all seven
+viewport sizes plus breakpoint edges (38 size/theme combinations), one/two/three-column reflow,
+unchanged summary values, document overflow, phone/desktop axe scans, keyboard search,
+touch recovery, and 200% root-font enlargement.
+
 ## Data validation
 
 Competition and media data under `data/` is community-contributed, so it is checked like code.

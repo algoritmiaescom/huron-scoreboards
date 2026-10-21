@@ -14,12 +14,13 @@ the Vite build.
 `main.tsx` mounts application providers. `App.tsx` mounts React Router's browser router;
 `src/app/routes.tsx` owns the released route tree. The root redirects to `/scoreboards`;
 `/contribute` loads the contribution guide, and unmatched paths render recovery. The standings
-page selects contest or accumulated results from URL parameters. School and media screens
-remain unreleased.
+page selects contest or accumulated results from URL parameters. The lazy `/schools` index is
+accessible through desktop/mobile navigation, while school histories and media remain
+unreleased. Individual school-history links stay staged until destination pages work.
 
 The application shell owns navigation, responsive drawer state, the theme control, skip link,
 one main landmark, and footer. Route transitions focus the main region and reset scroll.
-The contribution and standings routes load lazily; initial and navigation loading states are announced.
+The contribution, standings, and school index routes load lazily; initial and navigation loading states are announced.
 Route error boundaries log diagnostics and provide reload/home recovery. Page titles are
 rendered with React 19 document metadata. The document language is Spanish.
 
@@ -90,6 +91,15 @@ Typed filter parsing explains repeated, stale, and malformed values before stand
 The result selector supplies the same joined/scored rows to desktop tables and phone cards.
 Clipboard feedback and the manual-copy dialog are local interaction state, keyed to the URL so
 success for a previous view cannot be mistaken for success for the current one.
+
+The school directory derives summaries from existing school-history selectors: parentless
+records roll up transitive descendants, while academic units retain exact-school scope.
+Team-contest rows, distinct contests, and best published contest place are separate metrics;
+accumulated results do not contribute. Summaries are memoized from the loader result, not
+recalculated for every keystroke. The index stores search in `q`, reuses synchronous URL edits
+and search-only loader reuse, and keeps data access behind the existing validated repository.
+Reusable school cards and search/summary helpers remain within the scoreboard feature; the
+application page composes archive diagnostics, empty states and URL-backed search.
 
 Typed scoreboard selection distinguishes a contest id from a season/series/accumulated view.
 The picker discovers both contest and standing-only catalog entries. Accumulated composition

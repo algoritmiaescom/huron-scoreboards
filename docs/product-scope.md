@@ -92,6 +92,8 @@ recovery rather than another page's content.
 These contracts keep selected data explicit, URLs shareable, and school identities unambiguous.
 
 Released routes are `/scoreboards`, `/contribute`, root-to-standings redirection, and route recovery.
+The school index is accessible at `/schools` through "Instituciones" in desktop and mobile
+navigation; individual history links are staged until history destinations are implemented.
 Contest selection and filters follow the contract above. The shared season/series/classification
 picker advertises accumulated standings only where published records exist, including
 standing-only seasons or series. Changing season/series retains accumulated mode when a record
@@ -114,8 +116,23 @@ rejected clipboard access opens a dialog with a selectable, read-only URL for ma
 
 **School history**
 
+The school index uses responsive cards searchable by short/official name, city, or state.
+Search is case-insensitive and ignores leading/trailing whitespace. Search state uses
+`/schools?q=<query>`; edits replace history and reload/back/forward restore the same query.
+Repeated or unknown parameters require explicit recovery, without showing unrelated cards.
+The directory distinguishes an empty school archive, no search matches, and schools without
+contest results. Zero-result schools remain discoverable with "Sin resultados", not an invented
+placement. Optional locations/logos do not produce missing-value strings or broken images.
+
+Records without a parent summarize their own results and all transitive descendants; records
+with a parent show only that school's exact results. Cards explain this scope and count
+registered descendants for institution summaries. A result is one team's row in one contest;
+distinct contest counts are shown separately. Best placement uses those official contest places,
+including ties. Accumulated standings and teams registered without results do not inflate either
+metric. Cards remain noninteractive until school histories are available.
+
 Every school has a page summarizing its results across seasons, using charts for performance
-trends and podium displays for its best placements.
+trends and podium displays for its best placements (the next implementation milestone).
 
 ### 2. Media feed
 

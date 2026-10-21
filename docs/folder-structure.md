@@ -21,7 +21,8 @@ src/
   test/                    Shared unit-test setup and utilities
 ```
 
-Released screens are contest/accumulated standings, the contribution guide, and route recovery in
+Released screens are contest/accumulated standings, the directly accessible school index,
+the contribution guide, and route recovery in
 `src/app/pages/`, composed within the application shell. Contribution-specific sections live in
 `src/features/contribution/components/`. The data layer remains independent of screen composition.
 Reusable scoreboard result cells/grids, team/school identities, roster disclosure, contest
@@ -34,6 +35,12 @@ scoreboard model; the application page owns scoreboard selection and loader-resu
 contest-only metadata or filters. Route-only result compositions are imported directly to retain
 lazy loading rather than exporting them from the eagerly consumed feature entry point.
 Their isolated browser composition lives under `src/test/fixtures/`, not `src/app/pages/`.
+
+`SchoolsPage` composes URL search and repository states for `/schools`, loaded through
+`LazySchoolsPage`. `SchoolSummaryCard` reuses `SchoolIdentity` with a heading; the
+`schoolDirectory` model derives scope-aware summaries and filters optional identity fields.
+These route-only pieces are imported directly to keep the public entry point narrow.
+The shared desktop/mobile navigation links to the index; card links await history destinations.
 
 The modules map to these features:
 

@@ -13,8 +13,10 @@ Modules:
 
 See [Product scope](docs/product-scope.md) for the full definition. The application provides
 contest and accumulated standings at `/scoreboards` and the contribution guide at `/contribute`
-in a responsive shell. The root redirects to standings; unreleased school and media views are not
-linked in navigation.
+in a responsive shell. A searchable school index is directly accessible at `/schools` (for example,
+`/schools?q=UNAM`), linked as "Instituciones" in desktop and mobile navigation.
+School-history links are staged until the history pages are ready; media remains unreleased.
+The root redirects to standings.
 
 ## Prerequisites
 
