@@ -5,7 +5,7 @@ import { createMemoryRouter, RouterProvider } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { routes } from '@/app/routes';
-import { archive, contest } from '@/test/fixtures/archive';
+import { archive, contest, standing } from '@/test/fixtures/archive';
 import { renderApp } from '@/test/test-utils';
 
 import { ScoreboardsPage } from './ScoreboardsPage';
@@ -119,7 +119,7 @@ describe('contest filtering workflow', () => {
       data: { ...archive, contests: [contest, other] },
     });
     await screen.findByRole('heading', { name: 'Contest' });
-    await user.selectOptions(screen.getByRole('combobox', { name: 'Concurso' }), other.id);
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Clasificación' }), other.id);
     expect(router.state.location.search).toBe(`?contest=${other.id}`);
     expect(router.state.historyAction).toBe('PUSH');
     await act(async () => {
@@ -192,6 +192,150 @@ describe('standings state recovery', () => {
     expect(await screen.findByRole('alert')).toHaveTextContent(
       'No hay concursos disponibles para la fecha actual',
     );
+  });
+});
+
+describe('accumulated standings workflow', () => {
+  const query = 'season=2024&series=gpm&view=accumulated';
+
+  it('shows exact published scores and qualification without contest-only metadata or filters', async () => {
+    const { router } = renderPage(query);
+    await screen.findByRole('heading', { name: 'Clasificación acumulada 2024' });
+    expect(document.title).toBe('Acumulada 2024 - Gran Premio de México | Huron Scoreboards');
+    const cards = screen.getByRole('list', { name: 'Clasificación acumulada 2024' });
+    expect(within(cards).getByText('12.75')).toBeInTheDocument();
+    expect(within(cards).getByText('9.25')).toBeInTheDocument();
+    expect(within(cards).getAllByText('Clasificado', { exact: true })).toHaveLength(2);
+    expect(within(cards).getAllByText('No clasificado', { exact: true })).toHaveLength(2);
+    expect(within(cards).getAllByText('UNIT')).toHaveLength(2);
+    expect(screen.getByText('Línea de corte de clasificación')).toBeInTheDocument();
+    expect(
+      screen.queryByRole('group', { name: 'Filtros de clasificación' }),
+    ).not.toBeInTheDocument();
+    expect(screen.queryByLabelText('Datos del concurso')).not.toBeInTheDocument();
+    expect(screen.queryByText('Cómo leer los resultados')).not.toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Fuente de ejemplo' })).toHaveAttribute(
+      'href',
+      standing.source,
+    );
+    expect(screen.getByRole('link', { name: 'Cómo corregir estos datos' })).toHaveAttribute(
+      'href',
+      '/contribute',
+    );
+    expect(router.state.location.search).toBe(`?${query}`);
+  });
+
+  it('switches contest/accumulated views with clean URLs and restores each view through history', async () => {
+    const user = userEvent.setup();
+    const { router } = renderPage(`contest=${contest.id}&team=Alpha`);
+    await screen.findByRole('heading', { name: 'Contest' });
+    const select = screen.getByRole('combobox', { name: 'Clasificación' });
+    await user.selectOptions(select, 'accumulated');
+    expect(router.state.location.search).toBe(`?${query}`);
+    expect(router.state.historyAction).toBe('PUSH');
+    expect(screen.queryByRole('textbox', { name: 'Nombre del equipo' })).not.toBeInTheDocument();
+    await act(async () => {
+      await router.navigate(-1);
+    });
+    expect(screen.getByRole('textbox', { name: 'Nombre del equipo' })).toHaveValue('Alpha');
+    await act(async () => {
+      await router.navigate(1);
+    });
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Clasificación' }), contest.id);
+    expect(router.state.location.search).toBe(`?contest=${contest.id}`);
+    expect(screen.getByRole('textbox', { name: 'Nombre del equipo' })).toHaveValue('');
+  });
+
+  it('offers selection-preserving removal of incompatible filters', async () => {
+    const user = userEvent.setup();
+    const { router } = renderPage(`${query}&school=unit&first=1`);
+    expect(
+      await screen.findByText(
+        'Los filtros de concurso no están disponibles en la clasificación acumulada.',
+      ),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole('list', { name: 'Clasificación acumulada 2024' }),
+    ).not.toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Quitar filtros de concurso' }));
+    expect(router.state.location.search).toBe(`?${query}`);
+    expect(router.state.historyAction).toBe('REPLACE');
+    expect(screen.getByRole('list', { name: 'Clasificación acumulada 2024' })).toBeInTheDocument();
+  });
+
+  it('recovers missing accumulated selections with the published catalog', async () => {
+    const user = userEvent.setup();
+    const { router } = renderPage('season=2023&series=gpm&view=accumulated');
+    expect(await screen.findByRole('alert')).toHaveTextContent(
+      'No hay clasificación acumulada publicada',
+    );
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Temporada' }), '2024');
+    await user.selectOptions(
+      screen.getByRole('combobox', { name: 'Clasificación' }),
+      'accumulated',
+    );
+    expect(router.state.location.search).toBe(`?${query}`);
+    expect(screen.getByRole('list', { name: 'Clasificación acumulada 2024' })).toBeInTheDocument();
+  });
+
+  it('discovers accumulated-only seasons from the no-held-contest state', async () => {
+    const user = userEvent.setup();
+    const { router } = renderPage('', {
+      status: 'ready',
+      data: {
+        ...archive,
+        contests: [],
+        seasonStandings: [{ ...standing, seriesId: 'open-series' }],
+      },
+    });
+    await screen.findByRole('heading', {
+      name: 'No hay concursos disponibles para la fecha actual',
+    });
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Temporada' }), '2024');
+    expect(router.state.location.search).toBe('?season=2024&series=open-series&view=accumulated');
+    expect(screen.getByRole('combobox', { name: 'Serie' })).toHaveValue('open-series');
+    expect(screen.getByRole('option', { name: 'open series' })).toBeInTheDocument();
+    expect(screen.getByRole('combobox', { name: 'Clasificación' })).toHaveValue('accumulated');
+    expect(screen.getByRole('list', { name: 'Clasificación acumulada 2024' })).toBeInTheDocument();
+  });
+
+  it('preserves accumulated mode when changing season or series and falls back only on explicit selection', async () => {
+    const user = userEvent.setup();
+    const { router } = renderPage(query, {
+      status: 'ready',
+      data: {
+        ...archive,
+        seasonStandings: [
+          standing,
+          { ...standing, seriesId: 'open-series' },
+          { ...standing, seasonYear: 2023, rows: [] },
+        ],
+      },
+    });
+    await screen.findByRole('heading', { name: 'Clasificación acumulada 2024' });
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Serie' }), 'open-series');
+    expect(router.state.location.search).toBe('?season=2024&series=open-series&view=accumulated');
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Temporada' }), '2023');
+    expect(router.state.location.search).toBe('?season=2023&series=gpm&view=accumulated');
+    expect(
+      screen.getByText('Esta clasificación acumulada todavía no tiene equipos publicados.'),
+    ).toBeInTheDocument();
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Temporada' }), '2024');
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Clasificación' }), contest.id);
+    expect(router.state.location.search).toBe(`?contest=${contest.id}`);
+    await screen.findByRole('heading', { name: 'Contest' });
+  });
+
+  it('retains qualified-only published rows and does not invent a cutoff', async () => {
+    renderPage(query, {
+      status: 'ready',
+      data: { ...archive, seasonStandings: [{ ...standing, rows: standing.rows.slice(0, 2) }] },
+    });
+    const cards = await screen.findByRole('list', { name: 'Clasificación acumulada 2024' });
+    expect(within(cards).getAllByRole('listitem')).toHaveLength(2);
+    expect(within(cards).getAllByText('Clasificado', { exact: true })).toHaveLength(2);
+    expect(screen.queryByText('Línea de corte de clasificación')).not.toBeInTheDocument();
+    expect(within(cards).getByText('9.25')).toBeInTheDocument();
   });
 });
 

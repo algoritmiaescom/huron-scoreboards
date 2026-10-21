@@ -1,9 +1,11 @@
 import { Paper, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+import { accumulatedSelectionParams, contestSelectionParams } from '../model/scoreboardSelection';
 import { selectCatalog, selectLatestHeldContest } from '../model/selectors';
 
 import type { Contest } from '../model/schemas';
+import type { SelectedScoreboard } from '../model/scoreboardSelection';
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
 
 const Controls = styled(Paper)(({ theme }) => ({
@@ -31,35 +33,45 @@ const Select = styled('select')(({ theme }) => ({
   textOverflow: 'ellipsis',
 }));
 
-export const ContestSelector = ({
+export const ScoreboardSelector = ({
   archive,
-  contest,
+  selection,
   today,
   onSelect,
 }: {
   archive: ScoreboardsArchive;
-  contest?: Contest;
+  selection?: SelectedScoreboard;
   today: string;
-  onSelect: (id: string) => void;
+  onSelect: (params: URLSearchParams) => void;
 }) => {
-  const catalog = selectCatalog(archive)
-    .map((season) => ({
-      ...season,
-      series: season.series.filter((series) => series.contests.length > 0),
-    }))
-    .filter((season) => season.series.length > 0);
-  const season = catalog.find(({ seasonYear }) => seasonYear === contest?.seasonYear);
-  const series = season?.series.find(({ id }) => id === contest?.seriesId);
-  const selectGroup = (contests: Contest[]) => {
-    if (contests.length === 0) {
-      throw new Error('ContestSelector requires a nonempty contest group.');
+  const catalog = selectCatalog(archive);
+  const selected = selection?.status === 'selected' ? selection.contest : selection?.standing;
+  const season = catalog.find(({ seasonYear }) => seasonYear === selected?.seasonYear);
+  const series = season?.series.find(({ id }) => id === selected?.seriesId);
+  const selectGroup = (seasonYear: number, seriesId?: string) => {
+    const contests: Contest[] = archive.contests.filter(
+      (candidate) =>
+        candidate.seasonYear === seasonYear &&
+        (seriesId === undefined || candidate.seriesId === seriesId),
+    );
+    const standing = archive.seasonStandings.find(
+      (candidate) =>
+        candidate.seasonYear === seasonYear &&
+        (seriesId === undefined || candidate.seriesId === seriesId),
+    );
+    if (standing !== undefined && (selection?.status === 'accumulated' || contests.length === 0)) {
+      onSelect(accumulatedSelectionParams(standing.seasonYear, standing.seriesId));
+      return;
     }
     const latest = selectLatestHeldContest({ ...archive, contests }, today);
-    const next = latest.status === 'found' ? latest.record : contests[0];
-    onSelect(next.id);
+    const next = latest.status === 'found' ? latest.record : contests.at(0);
+    if (next === undefined) {
+      throw new Error('ScoreboardSelector requires a published contest or season standing.');
+    }
+    onSelect(contestSelectionParams(next.id));
   };
   return (
-    <Controls variant="outlined" aria-label="Selección de concurso">
+    <Controls variant="outlined" aria-label="Selección de clasificación">
       <Field>
         <Typography component="label" htmlFor="contest-season" variant="body2">
           Temporada
@@ -68,11 +80,7 @@ export const ContestSelector = ({
           id="contest-season"
           value={season?.seasonYear ?? ''}
           onChange={(event) => {
-            selectGroup(
-              archive.contests.filter(
-                ({ seasonYear }) => String(seasonYear) === event.target.value,
-              ),
-            );
+            selectGroup(Number(event.target.value));
           }}
         >
           <option value="" disabled>
@@ -94,13 +102,10 @@ export const ContestSelector = ({
           value={series?.id ?? ''}
           disabled={season === undefined}
           onChange={(event) => {
-            selectGroup(
-              archive.contests.filter(
-                (candidate) =>
-                  candidate.seasonYear === season?.seasonYear &&
-                  candidate.seriesId === event.target.value,
-              ),
-            );
+            if (season === undefined) {
+              throw new Error('Select a season before selecting a series.');
+            }
+            selectGroup(season.seasonYear, event.target.value);
           }}
         >
           <option value="" disabled>
@@ -115,24 +120,36 @@ export const ContestSelector = ({
       </Field>
       <Field>
         <Typography component="label" htmlFor="contest-stage" variant="body2">
-          Concurso
+          Clasificación
         </Typography>
         <Select
           id="contest-stage"
-          value={contest?.id ?? ''}
+          value={
+            selection?.status === 'accumulated' ? 'accumulated' : (selection?.contest.id ?? '')
+          }
           disabled={series === undefined}
           onChange={(event) => {
-            onSelect(event.target.value);
+            if (event.target.value === 'accumulated') {
+              if (season === undefined || series === undefined) {
+                throw new Error('Select a season and series before an accumulated standing.');
+              }
+              onSelect(accumulatedSelectionParams(season.seasonYear, series.id));
+            } else {
+              onSelect(contestSelectionParams(event.target.value));
+            }
           }}
         >
           <option value="" disabled>
-            Elige un concurso
+            Elige una clasificación
           </option>
           {series?.contests.map(({ id, name, stageLabel }) => (
             <option key={id} value={id}>
               {stageLabel} — {name}
             </option>
           ))}
+          {series?.accumulated === true && (
+            <option value="accumulated">Clasificación acumulada</option>
+          )}
         </Select>
       </Field>
     </Controls>

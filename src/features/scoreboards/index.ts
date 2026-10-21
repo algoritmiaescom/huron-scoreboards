@@ -22,6 +22,6 @@ export { ResultsLegend } from './components/ResultsLegend';
 export { SchoolIdentity } from './components/SchoolIdentity';
 export { SourceCallout } from './components/SourceCallout';
 export { TeamIdentity } from './components/TeamIdentity';
-export { ContestSelector } from './components/ContestSelector';
+export { ScoreboardSelector } from './components/ScoreboardSelector';
 export { ContestStandings } from './components/ContestStandings';
-export { resolveContestSelection, type ContestSelection } from './model/contestSelection';
+export { resolveScoreboardSelection, type ScoreboardSelection } from './model/scoreboardSelection';

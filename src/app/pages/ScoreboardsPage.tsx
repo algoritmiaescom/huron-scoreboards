@@ -8,10 +8,13 @@ import { useLoaderData, useSearchParams } from 'react-router';
 
 import {
   ContestHeader,
-  ContestSelector,
-  resolveContestSelection,
+  resolveScoreboardSelection,
   type ScoreboardsArchive,
+  ScoreboardSelector,
+  seriesLabel,
 } from '@/features/scoreboards';
+import { AccumulatedHeader } from '@/features/scoreboards/components/AccumulatedHeader';
+import { AccumulatedResults } from '@/features/scoreboards/components/AccumulatedResults';
 import { ContestResults } from '@/features/scoreboards/components/ContestResults';
 import { mexicoCityDate } from '@/lib/dates';
 
@@ -44,7 +47,7 @@ export const ScoreboardsPage = () => {
     if (archive === undefined || result.status === 'invalid' || result.status === 'error') {
       return;
     }
-    const selected = resolveContestSelection(archive, searchParams, today);
+    const selected = resolveScoreboardSelection(archive, searchParams, today);
     if (selected.status === 'selected') {
       if (searchParams.get('contest') === null) {
         const next = new URLSearchParams(searchParams);
@@ -109,17 +112,36 @@ export const ScoreboardsPage = () => {
     );
   }
 
-  const selection = resolveContestSelection(archive, searchParams, today);
+  const selection = resolveScoreboardSelection(archive, searchParams, today);
+  const selectView = (params: URLSearchParams) => {
+    setSearchParams(params, { replace: false, flushSync: true });
+  };
+  const selector = (
+    <ScoreboardSelector
+      archive={archive}
+      selection={
+        selection.status === 'selected' || selection.status === 'accumulated'
+          ? selection
+          : undefined
+      }
+      today={today}
+      onSelect={selectView}
+    />
+  );
 
-  if (selection.status === 'invalid' || selection.status === 'unavailable') {
+  if (selection.status === 'invalid') {
     return (
       <Page maxWidth="md">
         <title>Clasificaciones | Huron Scoreboards</title>
         <Section>
           <Stack spacing={2}>
+            <Typography component="h1" variant="h4">
+              Selección no disponible
+            </Typography>
             <Alert severity="warning" icon={<CloseOutlined />}>
               {selection.message}
             </Alert>
+            {selector}
             <Button
               variant="contained"
               onClick={() => {
@@ -140,33 +162,41 @@ export const ScoreboardsPage = () => {
         <title>Clasificaciones | Huron Scoreboards</title>
         <Section>
           <Stack spacing={2}>
+            <Typography component="h1" variant="h4">
+              No hay concursos disponibles para la fecha actual
+            </Typography>
             <Alert severity="info">
               No hay concursos disponibles para la fecha actual. Vuelve más tarde.
             </Alert>
+            {selector}
           </Stack>
         </Section>
       </Page>
     );
   }
 
+  if (selection.status === 'accumulated') {
+    const { standing } = selection;
+    return (
+      <Page maxWidth="xl">
+        <title>{`Acumulada ${String(standing.seasonYear)} - ${seriesLabel(standing.seriesId)} | Huron Scoreboards`}</title>
+        <Stack spacing={3}>
+          <AccumulatedHeader standing={standing} datasetSource={archive.source} />
+          {selector}
+          <AccumulatedResults archive={archive} standing={standing} />
+        </Stack>
+      </Page>
+    );
+  }
+
   const contest = selection.contest;
-  const selectContest = (id: string) => {
-    const next = new URLSearchParams();
-    next.set('contest', id);
-    setSearchParams(next, { replace: false, flushSync: true });
-  };
 
   return (
     <Page maxWidth="xl">
       <title>{`${contest.name} | Huron Scoreboards`}</title>
       <Stack spacing={3}>
         <ContestHeader contest={contest} datasetSource={archive.source} />
-        <ContestSelector
-          archive={archive}
-          contest={contest}
-          today={today}
-          onSelect={selectContest}
-        />
+        {selector}
         <ContestResults archive={archive} contest={contest} />
       </Stack>
     </Page>

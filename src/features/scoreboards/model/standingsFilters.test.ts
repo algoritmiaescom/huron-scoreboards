@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import { archive, contest } from '@/test/fixtures/archive';
 
-import { resolveContestSelection } from './contestSelection';
+import { resolveScoreboardSelection } from './scoreboardSelection';
 import {
   clearStandingsFilters,
   parseStandingsFilters,
@@ -22,7 +22,7 @@ describe('standings URL contract', () => {
       issues: [],
     });
     expect(params.toString()).toBe('contest=2024-gpm-q1');
-    expect(resolveContestSelection(archive, next, '2024-03-01')).toEqual({
+    expect(resolveScoreboardSelection(archive, next, '2024-03-01')).toEqual({
       status: 'selected',
       contest,
     });
@@ -52,7 +52,7 @@ describe('standings URL contract', () => {
       issues: [{ key: 'first', message: 'El filtro "first" está repetido.' }],
     });
     const params = new URLSearchParams('contest=2024-gpm-q1&problem=A&problem=B&team=Alpha');
-    expect(resolveContestSelection(archive, params, '2024-03-01').status).toBe('selected');
+    expect(resolveScoreboardSelection(archive, params, '2024-03-01').status).toBe('selected');
     expect(updateStandingsFilter(params, 'problem', '').toString()).toBe(
       'contest=2024-gpm-q1&team=Alpha',
     );
@@ -72,20 +72,20 @@ describe('standings URL contract', () => {
     'rejects invalid selections: %s',
     (query) => {
       expect(
-        resolveContestSelection(archive, new URLSearchParams(query), '2024-03-01').status,
+        resolveScoreboardSelection(archive, new URLSearchParams(query), '2024-03-01').status,
       ).toBe('invalid');
     },
   );
 
-  it('keeps accumulated routes unavailable and handles absent held contests', () => {
+  it('resolves accumulated routes separately and handles absent held contests', () => {
     expect(
-      resolveContestSelection(
+      resolveScoreboardSelection(
         archive,
         new URLSearchParams('season=2024&series=gpm&view=accumulated'),
         '2024-03-01',
       ).status,
-    ).toBe('unavailable');
-    expect(resolveContestSelection(archive, new URLSearchParams(), '2024-02-01')).toEqual({
+    ).toBe('accumulated');
+    expect(resolveScoreboardSelection(archive, new URLSearchParams(), '2024-02-01')).toEqual({
       status: 'empty',
     });
   });

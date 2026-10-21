@@ -30,7 +30,8 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 | 4. Scoreboard primitives         | Complete    | Reusable results, identities, header, legend and provenance; 114 unit tests and 18 E2E tests passed; responsive/accessibility fixture verified |
 | 5. Contest standings             | Complete    | Released standings/root redirect, data-driven selection, tables/cards, provenance and recovery; unit/browser acceptance verified below         |
 | 6. URL filtering and sharing     | Complete    | Typed URL filters, chips/counts, history/reload, clipboard recovery; 146 unit tests and 26 E2E tests passed                                    |
-| 7-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                             |
+| 7. Accumulated standings         | Complete    | Published scores/qualification, safe cuts, URL recovery and sharing; 186 unit tests and 31 E2E tests passed                                    |
+| 8-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                             |
 
 Initial visual review covered 13 route states in both themes at desktop/phone sizes (52
 captures). Foundation verification covered seven sizes in each theme (14 captures), 19 widths
@@ -38,7 +39,7 @@ per mode, reduced motion, and computed keyboard focus. These are foundation chec
 of completed route parity, physical-device testing, or a full zoom audit.
 
 Update statuses only after exit criteria pass. Do not recreate temporary verification routes in
-the shipping app. Next major milestone: accumulated standings.
+the shipping app. Next major milestone: school index (release navigation with school histories).
 
 ## Data and presentation rules
 
@@ -307,10 +308,35 @@ chunk-size warning remains; no warning/coverage threshold was relaxed.
 **Dependencies:** 5; independent of 6.
 
 Select SeasonStanding by season/series/view. Render published scores, source, qualification text,
-school links, and supported cut indicators, without contest-only metadata/filters.
+school identities, and supported cut indicators, without contest-only metadata/filters.
+Enable school links with the history destinations in milestones 8/9, not dangling routes.
 
 **Exit:** accumulated URLs round-trip, missing records recover explicitly, qualified-only rows
 work, and no accumulation or unsupported qualification boundary is inferred.
+
+**Completed:** distinct accumulated headers and desktop tables/phone cards reuse identities,
+rosters, provenance, and sharing. They render stored scores at their published precision,
+official places including ties, and explicit qualification text/icons with semantic surfaces.
+A cut appears only between a qualified prefix and an entirely unqualified suffix with distinct
+places; empty, qualified-only, all-unqualified, noncontiguous, and tied-boundary cases are covered.
+No contest-only date, duration, penalty, problem metadata, legend, or filter controls are invented.
+
+The shared season/series/classification picker discovers published accumulated records,
+including standing-only seasons and open-ended series. Explicit group changes retain accumulated
+mode where available and fall back to a contest only on that selection action. Direct malformed,
+conflicting, repeated, incomplete, or missing-record URLs explain the problem and offer recovery.
+Incompatible contest filters require explicit removal that preserves season/series/view.
+Selection pushes history; reload, back/forward, and sharing reproduce the selected view.
+School links are intentionally staged with their unreleased history destinations.
+
+`npm run validate` passed with 186 unit tests and 93.92% line coverage; the full
+`npm run test:e2e -- --workers=2 --reporter=line` suite passed all 31 tests. Accumulated
+standings passed both themes at the seven standard sizes plus every breakpoint edge
+(38 size/theme combinations), table/card data equivalence, document-overflow checks,
+phone/desktop axe scans, keyboard scrolling, touch selection, and 200% root-font enlargement.
+Visual inspection covered desktop light and phone dark. Physical-device and browser-toolbar
+zoom checks remain supplemental. The existing production-entry size warning remains (about
+542kB minified); warning and coverage thresholds are unchanged.
 
 ### 8. Add the school index
 

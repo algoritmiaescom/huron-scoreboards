@@ -149,6 +149,24 @@ reusable independently. Mock records explicitly identify invented results and an
 only archive records label the source as official. Do not add locations or hashtags absent
 from the contest model.
 
+### Accumulated standings
+
+Accumulated headers retain the yellow border, season/series hierarchy, source and correction
+actions, but show no invented contest date, duration, penalty, or problems. They explicitly
+identify published scores and qualification; demonstration scores remain labeled as invented.
+The shared picker calls the result choice "Clasificación" and lists an accumulated option only
+for published records.
+
+Desktop results use a five-column table (place, team, institution, published score,
+qualification) in a focusable, vertically contained scroll region with a sticky header.
+Below 900px, ordered cards present the same values, identities and roster disclosures.
+Scores retain their stored precision, and official places including ties remain unchanged.
+Qualified rows use the semantic qualified surface and an icon/text chip; unqualified rows
+also carry explicit text. A thick primary-color rule and text label indicate a cut only when
+the published row ordering supports a single, untied boundary. Do not infer a cut from a
+qualified-only list or noncontiguous flags. School identities stay unlinked until their
+history destinations exist. Sharing is reused; contest-only filters and legends are absent.
+
 ## Focus and motion
 
 Use a 3px yellow focus outline, 2px offset, and a 2px navy inner ring, visible in both themes.

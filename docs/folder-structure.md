@@ -21,14 +21,18 @@ src/
   test/                    Shared unit-test setup and utilities
 ```
 
-Released screens are contest standings, the contribution guide, and route recovery in
+Released screens are contest/accumulated standings, the contribution guide, and route recovery in
 `src/app/pages/`, composed within the application shell. Contribution-specific sections live in
 `src/features/contribution/components/`. The data layer remains independent of screen composition.
 Reusable scoreboard result cells/grids, team/school identities, roster disclosure, contest
 header, provenance callout, and legend live in `src/features/scoreboards/components/` and are
 exported through the feature entry point. `ContestResults` composes URL filters, removable chips,
 counts, sharing/recovery, and standings presentation. Pure parameter parsing/editing lives in the
-scoreboard model; the application page owns contest selection and loader-result presentation.
+scoreboard model; the application page owns scoreboard selection and loader-result presentation.
+`ScoreboardSelector` discovers contest and accumulated choices; `AccumulatedHeader`,
+`AccumulatedResults`, and `AccumulatedStandings` compose published-score presentation without
+contest-only metadata or filters. Route-only result compositions are imported directly to retain
+lazy loading rather than exporting them from the eagerly consumed feature entry point.
 Their isolated browser composition lives under `src/test/fixtures/`, not `src/app/pages/`.
 
 The modules map to these features:

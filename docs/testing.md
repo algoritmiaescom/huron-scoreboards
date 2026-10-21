@@ -82,6 +82,15 @@ for responsive layout changes before measuring overflow. Unit tests inject loade
 cover tied first solves, stale/repeated filters, empty matches/archives/teams, repository errors,
 selection recovery, history semantics, single-load typing, and delayed clipboard success.
 
+Accumulated browser journeys cover published fractional scores, qualification/cut placement,
+provenance, contest/accumulated switching, missing-record and incompatible-filter recovery,
+reload, history, and exact shared URLs. Both themes cover the seven sizes and breakpoint edges
+(38 size/theme combinations), equivalent table/card data, no document overflow, phone/desktop
+axe scans, keyboard scrolling, a touch-sized picker, and 200% root-font enlargement.
+Unit/component tests cover standing-only seasons and open-ended series, malformed/conflicting
+selection URLs, empty rows, qualified-only/all-unqualified/noncontiguous flags, and tied
+qualification boundaries without invented cuts.
+
 ## Data validation
 
 Competition and media data under `data/` is community-contributed, so it is checked like code.

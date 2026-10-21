@@ -16,7 +16,7 @@ test('discovers sparse seasons and series and exposes honest source and correcti
   await page.getByRole('combobox', { name: 'Temporada' }).selectOption('2023');
   await expect(page.getByRole('combobox', { name: 'Temporada' })).toHaveValue('2023');
   await page.getByRole('combobox', { name: 'Serie', exact: true }).selectOption('gpm');
-  const stages = page.getByRole('combobox', { name: 'Concurso', exact: true });
+  const stages = page.getByRole('combobox', { name: 'Clasificación', exact: true });
   await expect(stages.locator('option:not([disabled])')).toHaveCount(2);
   await expect(stages.locator('option', { hasText: 'Repechaje' })).toHaveCount(0);
   await page.getByRole('combobox', { name: 'Serie', exact: true }).selectOption('mexico-finals');
@@ -61,7 +61,7 @@ test('filters the actual contest, shares its URL, and restores reload and histor
   );
   await expect(table.locator('tbody tr')).toHaveCount(1);
   await page
-    .getByRole('combobox', { name: 'Concurso', exact: true })
+    .getByRole('combobox', { name: 'Clasificación', exact: true })
     .selectOption('2024-gpm-qualifier-2');
   await expect(page).toHaveURL(`${origin}/scoreboards?contest=2024-gpm-qualifier-2`);
   await expect(name).toHaveValue('');

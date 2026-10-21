@@ -92,8 +92,20 @@ recovery rather than another page's content.
 These contracts keep selected data explicit, URLs shareable, and school identities unambiguous.
 
 Released routes are `/scoreboards`, `/contribute`, root-to-standings redirection, and route recovery.
-Contest selection and filters follow the contract above. Accumulated standings, school histories,
-and media screens remain unreleased; navigation does not advertise unfinished routes.
+Contest selection and filters follow the contract above. The shared season/series/classification
+picker advertises accumulated standings only where published records exist, including
+standing-only seasons or series. Changing season/series retains accumulated mode when a record
+exists; otherwise that explicit selection chooses an available contest. Direct missing accumulated
+URLs show recovery, never a substitute contest.
+School histories and media screens remain unreleased; navigation does not advertise unfinished routes.
+
+Accumulated standings preserve published scores, places (including ties), and qualification
+flags rather than computing an accumulation. Qualified rows have explicit text and icons.
+A single cut is shown only between a qualified prefix and an entirely unqualified suffix,
+never through a shared place or for qualified-only/noncontiguous records. Empty rows have an
+explicit state. Contest filters on accumulated URLs show an explanation and an action removing
+only those filters; sharing, reload, and history preserve the accumulated selection. School
+identities remain unlinked until their history destinations are released.
 
 Invalid filters retain their chips and show specific removal actions without displaying
 unrelated standings. Known schools without matching teams produce an empty result, not an

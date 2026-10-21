@@ -12,8 +12,8 @@ Modules:
 - **Contribution** — a guide for adding and correcting competition data through GitHub.
 
 See [Product scope](docs/product-scope.md) for the full definition. The application provides
-contest standings at `/scoreboards` and the contribution guide at `/contribute` in a responsive
-shell. The root redirects to standings; unreleased school, accumulated, and media views are not
+contest and accumulated standings at `/scoreboards` and the contribution guide at `/contribute`
+in a responsive shell. The root redirects to standings; unreleased school and media views are not
 linked in navigation.
 
 ## Prerequisites
@@ -30,7 +30,8 @@ npm run dev
 ```
 
 Light/dark preferences persist locally through the navigation control. Standings include
-responsive tables/cards, URL-backed filters, and shareable views. Development defaults to the invented
+responsive tables/cards, URL-backed contest filters, published accumulated scores and
+qualification, and shareable views. Development defaults to the invented
 `data/mock/` dataset; production excludes it and uses only the real archive (currently empty).
 
 ### Development dataset

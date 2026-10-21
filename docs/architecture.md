@@ -13,8 +13,9 @@ the Vite build.
 
 `main.tsx` mounts application providers. `App.tsx` mounts React Router's browser router;
 `src/app/routes.tsx` owns the released route tree. The root redirects to `/scoreboards`;
-`/contribute` loads the contribution guide, and unmatched paths render recovery. School,
-accumulated, and media screens remain unreleased.
+`/contribute` loads the contribution guide, and unmatched paths render recovery. The standings
+page selects contest or accumulated results from URL parameters. School and media screens
+remain unreleased.
 
 The application shell owns navigation, responsive drawer state, the theme control, skip link,
 one main landmark, and footer. Route transitions focus the main region and reset scroll.
@@ -46,7 +47,7 @@ As feature work progresses:
 - Shared client state belongs to a small feature-owned Zustand store.
 - Navigation state belongs in routes and search parameters. Scoreboard filters (team, school,
   problem, accepted, first to solve) live in search parameters so filtered standings are
-  shareable. Filter edits replace history; contest selection pushes an entry and clears filters.
+  shareable. Filter edits replace history; scoreboard selection pushes an entry and clears filters.
   Search-only standings navigation reuses the validated loader result. URL-backed input edits
   commit synchronously through the router provider's React DOM `flushSync` integration so rapid edits do not overwrite
   one another with stale parameters. No separate filter store is maintained.
@@ -89,6 +90,12 @@ Typed filter parsing explains repeated, stale, and malformed values before stand
 The result selector supplies the same joined/scored rows to desktop tables and phone cards.
 Clipboard feedback and the manual-copy dialog are local interaction state, keyed to the URL so
 success for a previous view cannot be mistaken for success for the current one.
+
+Typed scoreboard selection distinguishes a contest id from a season/series/accumulated view.
+The picker discovers both contest and standing-only catalog entries. Accumulated composition
+reuses identities, provenance, and sharing but has a separate header and table/card renderer:
+it consumes stored scores/qualification and selector-supported cut boundaries without contest
+scoring or filters. Incompatible filter parameters require explicit, selection-preserving removal.
 
 Default feed composition chooses the latest held contest, then the latest eligible event for
 that contest. The caller supplies the current instant; selection uses its calendar date in
