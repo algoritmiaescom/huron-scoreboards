@@ -17,7 +17,11 @@ test('searches stable identities and locations with reloadable URLs and honest r
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(15);
   await expect(page.getByRole('status')).toHaveText('15 de 15 instituciones y unidades');
-  await expect(list.getByRole('link')).toHaveCount(0);
+  await expect(list.getByRole('link')).toHaveCount(15);
+  await expect(list.getByRole('link', { name: 'UNAM', exact: true })).toHaveAttribute(
+    'href',
+    '/schools/unam',
+  );
   const parent = page.getByRole('article', { name: 'UNAM', exact: true });
   await expect(parent.getByText('2 unidades académicas')).toBeVisible();
   await expect(parent.getByText(/Incluye resultados propios/)).toBeVisible();
@@ -71,6 +75,48 @@ test('uses only real data in production and exposes index navigation without una
   );
 });
 
+test('opens unit and institution histories with the correct scope and contest destination', async ({
+  page,
+}) => {
+  await page.goto(directoryUrl);
+  await page.getByRole('link', { name: 'UNAM', exact: true }).click();
+  await expect(page).toHaveURL(`${origin}/schools/unam`);
+  await expect(page.getByText('Alcance institucional')).toBeVisible({ timeout: 15_000 });
+  const stats = page.getByRole('region', { name: 'Resumen del historial' });
+  await expect(stats.getByText('50', { exact: true })).toBeVisible();
+  await expect(
+    page.getByRole('img', { name: 'Tendencia del mejor puesto por temporada' }),
+  ).toBeVisible();
+  await page.getByRole('link', { name: 'Ver solo resultados directos' }).click();
+  await expect(page).toHaveURL(`${origin}/schools/unam?scope=school`);
+  await expect(
+    page.getByRole('region', { name: 'Resumen del historial' }).locator('dd').first(),
+  ).toHaveText('0');
+  await expect(page.getByText(/Todavía no hay resultados de concursos/)).toBeVisible();
+  await page.getByRole('link', { name: 'Todas las instituciones' }).click();
+  await page.getByRole('link', { name: 'UNAM FI', exact: true }).click();
+  await expect(page).toHaveURL(`${origin}/schools/unam-fi`);
+  await expect(page.getByText('Esta escuela únicamente')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Ver institución UNAM' })).toHaveAttribute(
+    'href',
+    '/schools/unam',
+  );
+  await expect(page.getByRole('link', { name: 'Contest' })).toHaveCount(0);
+  const contestResults = page.getByRole('list', { name: 'Resultados de concursos' });
+  const targetContest = contestResults.getByRole('link', {
+    name: 'GPM 2024 Clasificatorio 1',
+    exact: true,
+  });
+  await expect(targetContest).toHaveCount(2);
+  await targetContest.first().click();
+  await expect(page).toHaveURL(`${origin}/scoreboards?contest=2024-gpm-qualifier-1`);
+  const contestHeading = page.getByRole('heading', {
+    name: 'GPM 2024 Clasificatorio 1',
+    exact: true,
+  });
+  await expect(contestHeading.first()).toBeVisible({ timeout: 15_000 });
+});
+
 for (const width of [390, 1024]) {
   test(`opens the school index through navigation at ${String(width)}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 844 });
@@ -96,6 +142,83 @@ for (const width of [390, 1024]) {
         .getByRole('navigation', { name: 'Navegación principal' })
         .getByRole('link', { name: 'Instituciones', exact: true }),
     ).toHaveAttribute('aria-current', 'page');
+  });
+}
+
+for (const mode of ['light', 'dark'] as const) {
+  test(`school histories preserve chart, roster and contest data across viewports in ${mode}`, async ({
+    page,
+  }) => {
+    await page.addInitScript((value) => {
+      localStorage.setItem('huron-scoreboards.theme-mode', value);
+    }, mode);
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto(`${origin}/schools/unam-fi`);
+    const results = page.getByRole('list', { name: 'Resultados de concursos' });
+    await expect(results.locator(':scope > li').first()).toBeVisible();
+    const original = await results.textContent();
+    const chart = page.getByRole('img', { name: /Tendencia del mejor puesto por temporada/ });
+    await expect(chart).toBeVisible();
+    await expect(
+      page.getByRole('heading', { name: 'Participación y problemas resueltos' }),
+    ).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Mejores puestos' })).toBeVisible();
+    await expect(page.getByText(/Cada participación cuenta una fila de un equipo/)).toBeVisible();
+    const stats = page.getByRole('region', { name: 'Resumen del historial' });
+    const count = await results.locator(':scope > li').count();
+    for (const [width, height] of [
+      [320, 568],
+      [390, 844],
+      [844, 390],
+      [768, 1024],
+      [1024, 768],
+      [1440, 900],
+      [1920, 1080],
+      [599, 800],
+      [600, 800],
+      [601, 800],
+      [899, 800],
+      [900, 800],
+      [901, 800],
+      [1199, 800],
+      [1200, 800],
+      [1201, 800],
+      [1535, 900],
+      [1536, 900],
+      [1537, 900],
+    ]) {
+      await page.setViewportSize({ width, height });
+      await expect(results.locator(':scope > li')).toHaveCount(count);
+      await expect.poll(() => results.textContent()).toBe(original);
+      await expect(chart).toBeVisible();
+      await expect(stats).toBeVisible();
+      expect(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth <= document.documentElement.clientWidth,
+        ),
+        `${mode} ${String(width)}x${String(height)}`,
+      ).toBe(true);
+    }
+    for (const width of [390, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+    }
+    const firstRoster = results.locator('details').first();
+    if ((await firstRoster.count()) > 0) {
+      await firstRoster.locator('summary').focus();
+      await page.keyboard.press('Enter');
+      await expect(firstRoster).toHaveAttribute('open', '');
+    }
+    await page.setViewportSize({ width: 320, height: 568 });
+    await page.evaluate(() => {
+      document.documentElement.style.fontSize = '200%';
+    });
+    await expect(chart).toBeVisible();
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= document.documentElement.clientWidth,
+      ),
+    ).toBe(true);
   });
 }
 

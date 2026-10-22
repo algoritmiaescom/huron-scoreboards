@@ -14,13 +14,14 @@ the Vite build.
 `main.tsx` mounts application providers. `App.tsx` mounts React Router's browser router;
 `src/app/routes.tsx` owns the released route tree. The root redirects to `/scoreboards`;
 `/contribute` loads the contribution guide, and unmatched paths render recovery. The standings
-page selects contest or accumulated results from URL parameters. The lazy `/schools` index is
-accessible through desktop/mobile navigation, while school histories and media remain
-unreleased. Individual school-history links stay staged until destination pages work.
+page selects contest or accumulated results from URL parameters. The lazy `/schools` index and
+`/schools/:schoolId` histories are accessible through desktop/mobile navigation. The media screen
+remains unreleased.
 
 The application shell owns navigation, responsive drawer state, the theme control, skip link,
 one main landmark, and footer. Route transitions focus the main region and reset scroll.
-The contribution, standings, and school index routes load lazily; initial and navigation loading states are announced.
+The contribution, standings, school index, and school history routes load lazily; initial and
+navigation loading states are announced.
 Route error boundaries log diagnostics and provide reload/home recovery. Page titles are
 rendered with React 19 document metadata. The document language is Spanish.
 
@@ -100,6 +101,11 @@ recalculated for every keystroke. The index stores search in `q`, reuses synchro
 and search-only loader reuse, and keeps data access behind the existing validated repository.
 Reusable school cards and search/summary helpers remain within the scoreboard feature; the
 application page composes archive diagnostics, empty states and URL-backed search.
+
+School history pages use the same validated scoreboard archive and school-history selector.
+Their presentation model recomputes trend/statistical seasons from contest rows only and exposes
+accumulated standings separately. The archive loader memoizes its in-flight/resolved result for
+route transitions because the repository data is immutable for the lifetime of the loaded app.
 
 Typed scoreboard selection distinguishes a contest id from a season/series/accumulated view.
 The picker discovers both contest and standing-only catalog entries. Accumulated composition

@@ -31,11 +31,11 @@ const SchoolLink = styled(Link)(({ theme }) => ({
 export const SchoolIdentity = ({
   school,
   href,
-  heading = false,
+  heading,
 }: {
   school: School;
   href?: string;
-  heading?: boolean;
+  heading?: 'h1' | 'h2';
 }) => {
   const [failedLogo, setFailedLogo] = useState<string>();
   const name = href ? <SchoolLink to={href}>{school.shortName}</SchoolLink> : school.shortName;
@@ -54,7 +54,10 @@ export const SchoolIdentity = ({
         <SchoolOutlined aria-hidden="true" />
       )}
       <IdentityText>
-        <Typography component={heading ? 'h2' : 'p'} variant={heading ? 'h5' : 'body2'}>
+        <Typography
+          component={heading ?? 'p'}
+          variant={heading === 'h1' ? 'h3' : heading === 'h2' ? 'h5' : 'body2'}
+        >
           {name}
         </Typography>
         <Typography variant="caption" color="text.secondary">

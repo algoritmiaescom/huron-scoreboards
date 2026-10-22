@@ -91,15 +91,16 @@ recovery rather than another page's content.
 
 These contracts keep selected data explicit, URLs shareable, and school identities unambiguous.
 
-Released routes are `/scoreboards`, `/contribute`, root-to-standings redirection, and route recovery.
-The school index is accessible at `/schools` through "Instituciones" in desktop and mobile
-navigation; individual history links are staged until history destinations are implemented.
+Released routes are `/scoreboards`, `/schools`, `/schools/:schoolId`, `/contribute`,
+root-to-standings redirection, and route recovery. The school index is accessible at `/schools`
+through "Instituciones" in desktop and mobile navigation; school cards and school identities link
+to the corresponding released history.
 Contest selection and filters follow the contract above. The shared season/series/classification
 picker advertises accumulated standings only where published records exist, including
 standing-only seasons or series. Changing season/series retains accumulated mode when a record
 exists; otherwise that explicit selection chooses an available contest. Direct missing accumulated
 URLs show recovery, never a substitute contest.
-School histories and media screens remain unreleased; navigation does not advertise unfinished routes.
+The media screen remains unreleased and is not advertised in navigation.
 
 Accumulated standings preserve published scores, places (including ties), and qualification
 flags rather than computing an accumulation. Qualified rows have explicit text and icons.
@@ -107,7 +108,7 @@ A single cut is shown only between a qualified prefix and an entirely unqualifie
 never through a shared place or for qualified-only/noncontiguous records. Empty rows have an
 explicit state. Contest filters on accumulated URLs show an explanation and an action removing
 only those filters; sharing, reload, and history preserve the accumulated selection. School
-identities remain unlinked until their history destinations are released.
+identities link to exact-school histories.
 
 Invalid filters retain their chips and show specific removal actions without displaying
 unrelated standings. Known schools without matching teams produce an empty result, not an
@@ -129,10 +130,16 @@ with a parent show only that school's exact results. Cards explain this scope an
 registered descendants for institution summaries. A result is one team's row in one contest;
 distinct contest counts are shown separately. Best placement uses those official contest places,
 including ties. Accumulated standings and teams registered without results do not inflate either
-metric. Cards remain noninteractive until school histories are available.
+metric. Cards link to the corresponding school history.
 
-Every school has a page summarizing its results across seasons, using charts for performance
-trends and podium displays for its best placements (the next implementation milestone).
+Every school has a page summarizing contest results across seasons, with separate exact-school and
+institution-descendant scopes. Statistics and trend points use contest rows only; accumulated
+standings are displayed separately and do not inflate participation, podium, or best-place
+metrics. Responsive trend charts reverse the place axis and provide exact seasonal values as
+accessible text. Podium highlights, rosters, and contest-result cards link to the selected
+contest. Unit histories provide a parent-institution link without changing the default exact
+scope. Empty histories, unknown schools, invalid scope parameters, absent rosters, and repository
+errors are explicit states.
 
 ### 2. Media feed
 

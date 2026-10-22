@@ -64,7 +64,7 @@ export const SchoolSummaryCard = ({ summary }: { summary: SchoolSummary }) => {
         </SchoolBadge>
         <Chip label={scopeLabel} size="small" variant="outlined" />
       </BadgeRow>
-      <SchoolIdentity school={school} heading />
+      <SchoolIdentity school={school} heading="h2" href={`/schools/${school.id}`} />
       <Typography variant="caption" color="text.secondary">
         {scope === 'institution' && units > 0
           ? 'Incluye resultados propios y de todas sus unidades académicas.'

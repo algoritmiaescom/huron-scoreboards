@@ -102,6 +102,15 @@ viewport sizes plus breakpoint edges (38 size/theme combinations), one/two/three
 unchanged summary values, document overflow, phone/desktop axe scans, keyboard search,
 touch recovery, and 200% root-font enlargement.
 
+School history tests cover institution rollups and exact-unit scope, separate parent navigation,
+contest-only counts/trends versus accumulated standings, single/multi-season chart values,
+podiums, solved-volume bars, the definition of a team-contest participation, team rosters,
+unknown schools, invalid scope parameters, and empty histories. Browser journeys verify
+index-to-history-to-contest navigation, exact scope changes, and contest links.
+Both themes cover seven viewport sizes, breakpoint edges, live resize without data loss,
+document-overflow checks, phone/desktop axe scans, keyboard roster disclosure, and 200% root-font
+enlargement.
+
 ## Data validation
 
 Competition and media data under `data/` is community-contributed, so it is checked like code.

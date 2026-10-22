@@ -21,7 +21,7 @@ src/
   test/                    Shared unit-test setup and utilities
 ```
 
-Released screens are contest/accumulated standings, the directly accessible school index,
+Released screens are contest/accumulated standings, the school index and school histories,
 the contribution guide, and route recovery in
 `src/app/pages/`, composed within the application shell. Contribution-specific sections live in
 `src/features/contribution/components/`. The data layer remains independent of screen composition.
@@ -37,10 +37,12 @@ lazy loading rather than exporting them from the eagerly consumed feature entry 
 Their isolated browser composition lives under `src/test/fixtures/`, not `src/app/pages/`.
 
 `SchoolsPage` composes URL search and repository states for `/schools`, loaded through
-`LazySchoolsPage`. `SchoolSummaryCard` reuses `SchoolIdentity` with a heading; the
-`schoolDirectory` model derives scope-aware summaries and filters optional identity fields.
-These route-only pieces are imported directly to keep the public entry point narrow.
-The shared desktop/mobile navigation links to the index; card links await history destinations.
+`LazySchoolsPage`. `SchoolHistoryPage` composes school scope and history for `/schools/:schoolId`,
+loaded through `LazySchoolHistoryPage`; it uses the reusable `SchoolTrendChart` and
+`SchoolHistoryResults` components. `SchoolSummaryCard` reuses `SchoolIdentity` with a heading;
+the `schoolDirectory` and `schoolHistory` models derive scope-aware summaries and history metrics.
+Route-only pieces are imported directly to keep the public entry point narrow. The shared
+desktop/mobile navigation links to the index; cards and unit histories link to history pages.
 
 The modules map to these features:
 

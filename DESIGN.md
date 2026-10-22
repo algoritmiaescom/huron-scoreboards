@@ -164,8 +164,8 @@ Scores retain their stored precision, and official places including ties remain 
 Qualified rows use the semantic qualified surface and an icon/text chip; unqualified rows
 also carry explicit text. A thick primary-color rule and text label indicate a cut only when
 the published row ordering supports a single, untied boundary. Do not infer a cut from a
-qualified-only list or noncontiguous flags. School identities stay unlinked until their
-history destinations exist. Sharing is reused; contest-only filters and legends are absent.
+qualified-only list or noncontiguous flags. School identities link to their exact-school history. Sharing is reused; contest-only filters and
+legends are absent.
 
 ### School index
 
@@ -182,9 +182,24 @@ count separately from distinct contests. Zero results say "Sin resultados" inste
 Absent optional location fields are omitted; missing/failed logos reuse the identity fallback.
 Search shows a live result count and distinct empty/no-match states with recovery.
 
-School cards remain static, without action arrows, hover affordances, or broken destination
-links until history pages exist. The index is accessible through "Instituciones" in both
-desktop navigation and the mobile drawer, with an active-page indication.
+School cards link to their history pages, with visible names as the affordance. The index is
+accessible through "Instituciones" in both desktop navigation and the mobile drawer, with an
+active-page indication.
+
+### School histories
+
+History pages distinguish an institution rollup from exact-school scope. Institution scope
+includes direct and transitive descendants; unit pages also offer a separate parent link.
+Statistics, seasonal summaries, and trend points use contest results only; accumulated standings
+remain in a visually separate section. The responsive SVG trend places better (lower) ranks
+higher, with labeled axes, horizontal grid lines, connected points, and exact seasonal values in
+accessible text. The best-place axis starts at rank one and expands when archived data exceeds the
+visible default range. A single season is explicitly a point, not a trend. A separate volume panel
+shows the unique teams and aggregate problems solved per season. Podium highlights sit beside the
+trend on wide screens and stack below it on narrow screens. Participation means one team row in
+one contest; the same team counts once for each contest it enters. Contest-result cards preserve
+school/team identity and roster disclosures, and link to the selected contest. Empty histories and
+missing optional rosters remain clear without fabricated data.
 
 ## Focus and motion
 

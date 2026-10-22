@@ -31,8 +31,9 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 | 5. Contest standings             | Complete    | Released standings/root redirect, data-driven selection, tables/cards, provenance and recovery; unit/browser acceptance verified below         |
 | 6. URL filtering and sharing     | Complete    | Typed URL filters, chips/counts, history/reload, clipboard recovery; 146 unit tests and 26 E2E tests passed                                    |
 | 7. Accumulated standings         | Complete    | Published scores/qualification, safe cuts, URL recovery and sharing; 186 unit tests and 31 E2E tests passed                                    |
-| 8. School index                  | Complete    | Searchable scoped cards, precise counts, URL recovery, desktop/mobile navigation; individual history links remain staged                       |
-| 9-11. Remaining slices           | Not started | Follow explicit dependencies below                                                                                                             |
+| 8. School index                  | Complete    | Searchable scoped cards, precise counts, URL recovery, desktop/mobile navigation, linked history cards                                         |
+| 9. School histories and charts   | Complete    | Institution/unit scope, contest-only metrics, trends, podiums, contest links; 212 unit tests and 41 browser tests passed                       |
+| 10-11. Remaining slices          | Not started | Implement repository-backed media, then complete cross-feature release verification                                                            |
 
 Initial visual review covered 13 route states in both themes at desktop/phone sizes (52
 captures). Foundation verification covered seven sizes in each theme (14 captures), 19 widths
@@ -40,7 +41,7 @@ per mode, reduced motion, and computed keyboard focus. These are foundation chec
 of completed route parity, physical-device testing, or a full zoom audit.
 
 Update statuses only after exit criteria pass. Do not recreate temporary verification routes in
-the shipping app. Next major milestone: school histories (release individual school links).
+the shipping app. Next major milestone: repository-backed media.
 
 ## Data and presentation rules
 
@@ -360,8 +361,8 @@ diagnostics are distinct states with appropriate recovery.
 
 Search uses `q`, replacing history without reloading the archive; rapid typing, reload, and
 back/forward preserve the query. Desktop navigation and the mobile drawer expose "Instituciones"
-with active-page styling; card destinations remain staged with milestone 9. Static cards do not imply unavailable
-actions, and existing scoreboard school identities remain unlinked.
+with active-page styling. School cards link to their released history routes, and contest
+identities link only where a school destination is available.
 
 `npm run validate` passed with 198 unit tests and 93.82% line coverage. The complete
 `npm run test:e2e -- --workers=2 --reporter=line` suite passed all 36 browser tests.
@@ -378,15 +379,31 @@ assertion; no test thresholds or timeouts were relaxed.
 **Dependencies:** 8.
 
 Compose scope banners, statistics, trends, podiums, participation, rosters, and contest links from
-shared selectors. Recharts is the proposed chart dependency; check compatibility/accessibility
-before adding it through npm in this milestone. Derive ranges/scales from data, reverse the place
-axis, and provide exact keyboard-accessible values with text/table equivalents.
+shared selectors. Keep the chart dependency-free with responsive SVG, a reversed place axis, and
+exact accessible values with text equivalents.
 
 Handle empty, single-season, missing-roster, unknown-school, and standalone-school cases.
 Accumulation is not another contest and must not inflate solved/participation totals.
 
 **Exit:** index-to-school-to-contest journeys work, rollup/unit scope is correct, and charts
 agree with accessible equivalents without clipping data.
+
+**Completed:** the lazy `/schools/:schoolId` route presents parent-institution rollups and
+exact-school histories, with query-backed scope navigation. Team-result counts, distinct contests,
+teams, podiums, and best official place use contest rows only; accumulated standings are shown in
+a separate section. Responsive SVG trends use a reversed, labeled place axis, grid lines, connected
+points and exact seasonal values. Separate volume bars show unique teams and solved problems;
+podium and result cards retain team identities, rosters, published place/score data, and links to
+the selected contest. Participation is defined as one team row in one contest. Unknown schools,
+invalid scopes, empty histories, missing rosters, and repository errors have explicit states.
+Index cards and unit-parent links complete the index-to-history-to-contest journey.
+
+`npm run validate` passed with 212 unit tests and 93.68% line coverage. The full
+`npm run test:e2e -- --workers=2 --reporter=line` suite passed all 41 browser tests. School
+histories passed both themes at the seven standard sizes and every breakpoint edge, with overflow
+checks, equivalent rendered data during live resizing, phone/desktop axe scans, keyboard roster
+disclosure, and 200% root-font enlargement. Cross-page tests verify institution/unit scope and
+contest destinations. Physical-device and browser-toolbar zoom checks remain supplemental.
 
 ### 10. Add repository-backed media
 

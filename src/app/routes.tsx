@@ -2,6 +2,7 @@ import { Navigate } from 'react-router';
 
 import { AppShell } from '@/app/components/AppShell';
 import { LazyContributePage } from '@/app/pages/LazyContributePage';
+import { LazySchoolHistoryPage } from '@/app/pages/LazySchoolHistoryPage';
 import { LazySchoolsPage } from '@/app/pages/LazySchoolsPage';
 import { LazyScoreboardsPage } from '@/app/pages/LazyScoreboardsPage';
 import {
@@ -36,6 +37,13 @@ export const routes: RouteObject[] = [
         shouldRevalidate: revalidateArchive,
         ErrorBoundary: RouteErrorPage,
         Component: LazyScoreboardsPage,
+      },
+      {
+        path: 'schools/:schoolId',
+        loader: loadScoreboards,
+        shouldRevalidate: revalidateArchive,
+        ErrorBoundary: RouteErrorPage,
+        Component: LazySchoolHistoryPage,
       },
       {
         path: 'schools',

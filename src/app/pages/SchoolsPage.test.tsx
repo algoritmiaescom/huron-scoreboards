@@ -43,7 +43,7 @@ const renderPage = (
 };
 
 describe('school index workflow', () => {
-  it('shows precise scoped summaries, identities and zero-result schools without dangling links', async () => {
+  it('shows precise scoped summaries, identities and working history links', async () => {
     renderPage();
     await screen.findByRole('heading', { name: 'Instituciones a través de cada temporada.' });
     expect(document.title).toBe('Instituciones | Huron Scoreboards');
@@ -62,8 +62,13 @@ describe('school index workflow', () => {
     expect(within(unused).getByText('0', { exact: true })).toBeInTheDocument();
     expect(screen.getByText(/estadísticas provienen de resultados inventados/)).toBeInTheDocument();
     expect(
-      within(screen.getByRole('list', { name: 'Instituciones y unidades' })).queryByRole('link'),
-    ).not.toBeInTheDocument();
+      within(screen.getByRole('list', { name: 'Instituciones y unidades' })).getByRole('link', {
+        name: 'UNI',
+      }),
+    ).toHaveAttribute('href', '/schools/uni');
+    expect(
+      within(screen.getByRole('list', { name: 'Instituciones y unidades' })).getAllByRole('link'),
+    ).toHaveLength(5);
     expect(screen.queryByText(/undefined|null/)).not.toBeInTheDocument();
   });
 
