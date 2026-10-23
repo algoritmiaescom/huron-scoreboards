@@ -39,6 +39,11 @@ references. See [data model](data-model.md) for the full check list.
 Cover the validator itself with unit tests, including fixtures that are deliberately invalid: a
 validator that never rejects anything passes silently and is worse than none.
 
+Media ingestion tests use mocked Juicer responses and temporary filesystem fixtures, not live
+API credentials. They cover both pagination models, explicit platform failures, append-only
+merging, dry-run behavior, and idempotency. Credentialed PR/CI rollout checks are manual; see
+[media ingestion](media-ingestion.md).
+
 ## CI
 
 Pull requests and pushes to `main` run validation and E2E jobs. Failed Playwright runs upload an

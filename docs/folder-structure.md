@@ -3,6 +3,9 @@
 ```text
 data/                      Competition and media data as JSON (see docs/data-model.md)
   mock/                    Seed dataset with invented results, validated separately
+config/                    Non-secret operator configuration
+scripts/
+  media-ingestion/         Juicer adapters and append-only ingestion, Node-only
 e2e/                       Playwright user journeys
 public/
   logos/                   School logos served by path, referenced from data
@@ -23,7 +26,7 @@ The planned modules map to these features:
 ```text
 src/features/
   scoreboards/   Contest standings, per-problem results, filters, school history
-  media-feed/    Posts published under the latest contest hashtag
+  media/         Schemas for archived posts; feed UI added with feature work
   contribution/  Guide for correcting competition data through GitHub
 ```
 

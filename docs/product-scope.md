@@ -72,6 +72,10 @@ trends and podium displays for its best placements.
 A page that collects public media posts published under the hashtag of the most recent contest,
 so the site reflects the live reaction around the competition that just took place.
 
+Posts are collected through Juicer outside the browser, archived as JSON, and published only
+after a pull request is reviewed and merged. The feed is a reviewed snapshot, not a real-time
+stream. Maintainers may also curate posts directly. See [media ingestion](media-ingestion.md).
+
 ### 3. Contribution
 
 A guide explaining how to add missing contests and correct existing results. Contribution happens
