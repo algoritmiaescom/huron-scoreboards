@@ -23,36 +23,24 @@ See [ADR 0006](adr/0006-ingest-media-through-reviewed-pull-requests.md).
 See [Juicer authentication](https://juicer.mintlify.app/authentication.md). Never put the key in
 configuration JSON, a `VITE_` environment variable, logs, commits, or workflow inputs.
 
-### 2. GitHub App registration and installation
+### 2. Built-in GitHub authentication
 
-An organization owner or authorized app manager may need to perform these steps.
+No GitHub App or personal access token is needed. GitHub supplies `GITHUB_TOKEN` automatically
+for each run; do not create a secret with that name. The ingestion job requests:
 
-1. Open the owning organization/account's **Settings > Developer settings > GitHub Apps >
-   New GitHub App**. Prefer ownership by `algoritmiaescom`.
-2. Choose an available name such as **Huron Media Ingestion**. Use this repository URL as the
-   homepage.
-3. Disable active webhooks. No webhook receiver, hosted service, user OAuth, callback URL, or
-   device flow is required.
-4. Set repository permissions:
-   - **Contents: Read and write** for the data branch/commits.
-   - **Pull requests: Read and write** for creating/updating the PR.
-   - **Metadata: Read-only**, provided automatically.
-     Leave unrelated permissions disabled, including Workflows, Actions, and Checks write access.
-5. Limit installation to the owning account, then install the app on `algoritmiaescom` with
-   **Only select repositories > huron-scoreboards**.
-6. Copy the app's **Client ID** (not App ID) to Actions variable
-   **`MEDIA_INGESTION_APP_CLIENT_ID`**.
-7. Generate a private key. Save the entire PEM, including markers and newlines, as Actions
-   secret **`MEDIA_INGESTION_APP_PRIVATE_KEY`**. Secure the downloaded key outside the repo.
-8. Confirm organization policy allows the app and the pinned Actions used in the workflow.
+- **Contents: write** for the automation branch and commits.
+- **Pull requests: write** for creating/updating the data PR.
+- **Actions: write** to dispatch CI on that branch.
 
-The workflow generates a short-lived installation token on each run, scoped to this repository
-and the two write permissions. It revokes that token at job completion. Do not create a
-long-lived app-token secret or a personal access token. The private key is used to obtain a token;
-it is not itself a git credential.
+Under **Settings > Actions > General > Workflow permissions**, enable **Allow GitHub Actions to
+create and approve pull requests**. The workflow only creates/updates PRs; it never approves or
+auto-merges them. If the setting is disabled by organization policy, an organization administrator
+must allow it. Organization policy must also permit the requested token permissions.
 
-See [GitHub App registration](https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app)
-and [App authentication in Actions](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/making-authenticated-api-requests-with-a-github-app-in-a-github-actions-workflow).
+The repository's default token permissions can remain read-only: the ingestion job explicitly
+requests its writes, while CI retains read-only access. No GitHub credential needs manual rotation.
+If migrating from the earlier App-based setup, remove the unused App Client ID/private-key
+configuration and revoke any app key/installation dedicated solely to this integration.
 
 ### 3. Repository settings
 
@@ -61,14 +49,13 @@ Under **Settings > Secrets and variables > Actions**, configure:
 | Kind     | Name                               | Value                          |
 | -------- | ---------------------------------- | ------------------------------ |
 | Secret   | `JUICER_API_KEY`                   | Permanent Juicer key           |
-| Secret   | `MEDIA_INGESTION_APP_PRIVATE_KEY`  | Complete private-key PEM       |
-| Variable | `MEDIA_INGESTION_APP_CLIENT_ID`    | App Client ID                  |
 | Variable | `MEDIA_INGESTION_SCHEDULE_ENABLED` | Leave unset until rollout ends |
 
 Organization-level secrets/variables must explicitly allow this repository. Enable Actions and
-allow the pinned actions. Keep branch protection, reviews, and required checks; do not give the
-app a default-branch bypass. The built-in `GITHUB_TOKEN` stays read-only. The app token performs
-git writes and PR creation, allowing normal PR CI to trigger.
+allow the pinned actions. Keep branch protection, reviews, and required checks; do not grant
+default-branch bypass permissions. Token-generated push/PR events do not start CI automatically.
+After publishing a PR update, ingestion explicitly dispatches `ci.yml` on the automation branch.
+GitHub permits `workflow_dispatch` events generated using `GITHUB_TOKEN` to start workflows.
 
 Only trusted default-branch manual/scheduled jobs receive credentials. Do not move this workflow
 to `pull_request_target` or run secret-bearing steps on untrusted PR code.
@@ -192,11 +179,12 @@ removal for the applicable request. Manual corrections follow the normal contrib
 
 ## Automation and rollout
 
-1. Merge the configured real event and workflow onto the default branch.
+1. Merge the configured real event and both workflows onto the default branch. CI must include
+   `workflow_dispatch` before ingestion can dispatch it.
 2. Run a local dry-run and confirm authentication, source relevance, and both enabled modes.
 3. Manually run **Actions > Ingest media > Run workflow** on the default branch.
-4. Review the resulting `automation/media-ingestion` PR. Verify normal validation, data, and E2E
-   checks actually run; do not bypass missing checks.
+4. Review the resulting `automation/media-ingestion` PR. Verify the dispatched validation, data,
+   and E2E checks run on its latest commit and satisfy required checks; do not bypass missing checks.
 5. Edit a description on the open data PR and rerun with a new upstream post. Confirm the edit
    survives. Repeat with unchanged input to verify no duplicates or unnecessary commits.
 6. Set **`MEDIA_INGESTION_SCHEDULE_ENABLED=true`**. The daily cron is **12:17 UTC**. GitHub can
@@ -207,6 +195,22 @@ workflow merges that data branch into the trusted default-branch checkout before
 curator edits are retained without executing branch-supplied code. Conflicts and unrelated PR
 changes require manual resolution. Pushes are never forced; a concurrent remote edit fails.
 When no media changes relative to the existing PR are found, no commit/PR update is made.
+No-change runs do not dispatch redundant CI runs.
+
+CI can also be started manually through **Actions > CI > Run workflow**, selecting
+`automation/media-ingestion`, or with:
+
+```sh
+gh workflow run ci.yml --ref automation/media-ingestion
+```
+
+Dispatched CI checks the selected branch head, not the synthetic PR merge commit. Every new
+commit needs fresh checks. Confirm results appear on the latest PR commit and are accepted by
+branch protection during rollout. Human pushes still trigger normal PR CI.
+
+If CI dispatch fails, ingestion fails explicitly even though its branch/PR was already published.
+Retry CI manually using the instructions above; rerunning unchanged ingestion will not dispatch
+it again. CI failures are reported by the separate CI run, not by the already-finished ingestion job.
 
 After merging (especially squash-merging) or closing an ingestion PR, delete its automation
 branch before the next run. An unmerged leftover branch without an open PR blocks ingestion
@@ -215,9 +219,9 @@ but PR creation fails, open the PR manually or resolve the leftover branch befor
 
 The PR includes ingestion counts for review, not raw payloads. It never auto-merges. Failed
 ingestion leaves the merged archive unchanged. Assign maintainers for failed-run notifications,
-Juicer billing/connections, and app ownership. Public-repo schedules may be disabled after
+Juicer billing/connections, and repository Actions settings. Public-repo schedules may be disabled after
 prolonged inactivity; re-enable the workflow in Actions when needed.
 
 For credential rotation, replace the affected secret, verify a manual run, then revoke the old
-Juicer key or app private key. For emergency shutdown, disable the workflow and revoke the
-credential/app installation. Never send secrets through chat or commit them.
+Juicer key. For emergency shutdown, disable the workflow and revoke the Juicer credential if
+necessary. Never send secrets through chat or commit them.

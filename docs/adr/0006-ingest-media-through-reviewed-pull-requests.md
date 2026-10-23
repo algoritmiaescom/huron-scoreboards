@@ -13,8 +13,11 @@ Juicer feeds, direct hashtag lookup, or both, normalizing them into the media fe
 domain schema. Store snapshots as JSON under `data/media/events/`.
 
 GitHub Actions runs the script manually or daily and proposes changes through one reviewed pull
-request. Use a repository-scoped GitHub App installation token so the normal PR checks run.
-Append new posts only; preserve archived posts and contributor edits.
+request. Use the built-in repository `GITHUB_TOKEN` for branch writes and pull requests, granting
+contents, pull requests, and Actions write permissions only to the ingestion job. After creating
+or updating its PR, explicitly dispatch the existing CI workflow on the automation branch.
+CI supports manual dispatch and retains read-only permissions. Append new posts only; preserve
+archived posts and contributor edits.
 
 ## Consequences
 
@@ -25,5 +28,14 @@ fallback. Ingestion failures leave the published archive unchanged.
 Updates wait for review and merge, so this is not a real-time feed. Direct lookups are best-effort;
 external media URLs may expire or disappear. Operators maintain Juicer connections, credentials,
 and the ingestion configuration. Posts require attribution and review before publication.
+
+No GitHub App, private key, or personal access token is required. Repository/organization policy
+must allow Actions to create PRs. Token-generated push/PR events do not trigger CI, but explicit
+`workflow_dispatch` events do.
+
+Dispatched CI checks the branch head, not the synthetic PR merge commit. New commits require new
+checks, and branch-protection compatibility must be verified during rollout. A dispatch failure
+fails ingestion after publishing; a maintainer can manually run CI on the automation branch.
+No-change ingestion runs do not create redundant CI runs.
 
 See the [operator guide](../media-ingestion.md) for configuration and external setup.

@@ -41,7 +41,9 @@ validator that never rejects anything passes silently and is worse than none.
 
 Media ingestion tests use mocked Juicer responses and temporary filesystem fixtures, not live
 API credentials. They cover both pagination models, explicit platform failures, append-only
-merging, dry-run behavior, and idempotency. Credentialed PR/CI rollout checks are manual; see
+merging, dry-run behavior, and idempotency. Workflow tests cover explicit CI dispatch after PR
+creation/update, no-change runs, and dispatch failures. CI supports manual runs on a selected branch.
+Credentialed PR/CI rollout checks are manual; see
 [media ingestion](media-ingestion.md).
 
 ## CI

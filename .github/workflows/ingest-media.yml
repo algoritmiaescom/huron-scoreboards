@@ -14,6 +14,10 @@ permissions:
 
 jobs:
   ingest:
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
     if: >-
       github.ref_name == github.event.repository.default_branch &&
       (github.event_name != 'schedule' || vars.MEDIA_INGESTION_SCHEDULE_ENABLED == 'true')
@@ -35,18 +39,10 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - name: Create repository-scoped app token
-        id: app
-        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3
-        with:
-          client-id: ${{ vars.MEDIA_INGESTION_APP_CLIENT_ID }}
-          private-key: ${{ secrets.MEDIA_INGESTION_APP_PRIVATE_KEY }}
-          permission-contents: write
-          permission-pull-requests: write
       - name: Preserve an existing ingestion PR
         id: previous
         env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
@@ -92,7 +88,7 @@ jobs:
           npx prettier 'data/media/events/*.json' --check
       - name: Publish reviewed data changes
         env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
+          GH_TOKEN: ${{ github.token }}
           COMPARISON: ${{ steps.previous.outputs.comparison }}
           PR_NUMBER: ${{ steps.previous.outputs.number }}
         shell: bash
@@ -130,3 +126,5 @@ jobs:
             gh pr create --base "$BASE_BRANCH" --head "$MEDIA_BRANCH" \
               --title 'data: ingest social media posts' --body-file "$RUNNER_TEMP/media-ingestion-pr.md"
           fi
+          # GITHUB_TOKEN does not trigger push/PR CI; workflow_dispatch is an explicit exception.
+          gh workflow run ci.yml --ref "$MEDIA_BRANCH"

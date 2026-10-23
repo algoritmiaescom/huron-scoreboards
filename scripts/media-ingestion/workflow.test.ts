@@ -18,6 +18,10 @@ const workflow = await readFile(
   new URL('../../.github/workflows/ingest-media.yml', import.meta.url),
   'utf8',
 );
+const ciWorkflow = await readFile(
+  new URL('../../.github/workflows/ci.yml', import.meta.url),
+  'utf8',
+);
 const stepScript = (name: string) => {
   const step = workflow.split(`      - name: ${name}\n`)[1].split('      - name: ')[0];
   return step
@@ -67,8 +71,9 @@ const fs = require('node:fs');
 const args = process.argv.slice(2);
 if (args[0] === 'pr' && args[1] === 'list') {
   console.log(process.env.TEST_PR_NUMBER || '');
-} else if (args[0] === 'pr') {
+} else if (args[0] === 'pr' || args[0] === 'workflow') {
   fs.appendFileSync(process.env.TEST_GH_LOG, JSON.stringify(args) + '\\n');
+  if (args[0] === 'workflow' && process.env.TEST_DISPATCH_FAIL === 'true') process.exit(1);
 }
 `,
     { mode: 0o755 },
@@ -104,12 +109,21 @@ if (args[0] === 'pr' && args[1] === 'list') {
 };
 
 describe('ingestion workflow git operations', () => {
-  it('is default-branch only, read-only by default, and schedule gated', () => {
+  it('is default-branch only, grants job-scoped permissions, and dispatches read-only CI', () => {
     expect(workflow).toContain("cron: '17 12 * * *'");
     expect(workflow).toContain("vars.MEDIA_INGESTION_SCHEDULE_ENABLED == 'true'");
     expect(workflow).toContain('github.ref_name == github.event.repository.default_branch');
     expect(workflow).toContain('cancel-in-progress: false');
     expect(workflow).toContain('contents: read');
+    expect(workflow).toContain('      contents: write');
+    expect(workflow).toContain('      pull-requests: write');
+    expect(workflow).toContain('      actions: write');
+    expect(workflow).toContain('GH_TOKEN: ${{ github.token }}');
+    expect(workflow).not.toContain('create-github-app-token');
+    expect(workflow).not.toContain('MEDIA_INGESTION_APP');
+    expect(ciWorkflow).toContain('  workflow_dispatch:');
+    expect(ciWorkflow).toContain('  contents: read');
+    expect(ciWorkflow).not.toContain('contents: write');
     expect(workflow).not.toContain('pull_request_target');
     expect(workflow).not.toContain('--force');
   });
@@ -120,7 +134,10 @@ describe('ingestion workflow git operations', () => {
     await writeFile(path.join(repo, target), 'new post\n');
     run(publish, { COMPARISON: 'HEAD', PR_NUMBER: '' });
     expect(git('show', `origin/${branch}:${target}`)).toBe('new post');
-    expect(await readFile(log, 'utf8')).toContain('"create"');
+    const commands = await readFile(log, 'utf8');
+    expect(commands).toContain('"create"');
+    expect(commands).toContain(`["workflow","run","ci.yml","--ref","${branch}"]`);
+    expect(commands.indexOf('"create"')).toBeLessThan(commands.indexOf('"workflow"'));
   });
 
   it('preserves curator data, updates the open PR, and makes no repeat commit', async () => {
@@ -132,11 +149,30 @@ describe('ingestion workflow git operations', () => {
     const original = git('rev-parse', `origin/${branch}`);
     run(publish, { COMPARISON: `origin/${branch}`, PR_NUMBER: '7' });
     expect(git('rev-parse', `origin/${branch}`)).toBe(original);
+    await expect(readFile(log, 'utf8')).rejects.toThrow('ENOENT');
     await writeFile(path.join(repo, target), 'curator edit\nnew post\n');
     run(publish, { COMPARISON: `origin/${branch}`, PR_NUMBER: '7' });
     expect(git('show', `origin/${branch}:${target}`)).toBe('curator edit\nnew post');
     expect(git('merge-base', '--is-ancestor', original, `origin/${branch}`)).toBe('');
-    expect(await readFile(log, 'utf8')).toContain('"edit","7"');
+    const commands = await readFile(log, 'utf8');
+    expect(commands).toContain('"edit","7"');
+    expect(commands).toContain(`["workflow","run","ci.yml","--ref","${branch}"]`);
+    expect(commands.indexOf('"edit"')).toBeLessThan(commands.indexOf('"workflow"'));
+  });
+
+  it('surfaces dispatch failures after publishing so CI can be started manually', async () => {
+    const { repo, git, run, log } = await setup();
+    run(prepare);
+    await writeFile(path.join(repo, target), 'new post\n');
+    expect(() =>
+      run(publish, {
+        COMPARISON: 'HEAD',
+        PR_NUMBER: '',
+        TEST_DISPATCH_FAIL: 'true',
+      }),
+    ).toThrow();
+    expect(git('show', `origin/${branch}:${target}`)).toBe('new post');
+    expect(await readFile(log, 'utf8')).toContain('"workflow","run","ci.yml"');
   });
 
   it('rejects unrelated changes on an existing PR or generated worktree', async () => {
