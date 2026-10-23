@@ -1,0 +1,185 @@
+// @vitest-environment node
+import { execFileSync } from 'node:child_process';
+import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import process from 'node:process';
+
+import { afterEach, describe, expect, it } from 'vitest';
+
+const roots: string[] = [];
+afterEach(async () => {
+  await Promise.all(
+    roots.splice(0).map(async (root) => rm(root, { recursive: true, force: true })),
+  );
+});
+
+const workflow = await readFile(
+  new URL('../../.github/workflows/ingest-media.yml', import.meta.url),
+  'utf8',
+);
+const stepScript = (name: string) => {
+  const step = workflow.split(`      - name: ${name}\n`)[1].split('      - name: ')[0];
+  return step
+    .split('        run: |\n')[1]
+    .split('\n')
+    .map((line) => line.slice(10))
+    .join('\n');
+};
+const prepare = stepScript('Preserve an existing ingestion PR');
+const publish = stepScript('Publish reviewed data changes');
+const branch = 'automation/media-ingestion';
+const target = 'data/media/events/2026-finals.json';
+
+const setup = async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'huron-workflow-'));
+  roots.push(root);
+  const remote = path.join(root, 'remote.git');
+  const repo = path.join(root, 'repo');
+  const bin = path.join(root, 'bin');
+  const output = path.join(root, 'output');
+  const log = path.join(root, 'gh.log');
+  await mkdir(repo);
+  await mkdir(bin);
+  const git = (...args: string[]) =>
+    execFileSync('git', args, { cwd: repo, encoding: 'utf8', stdio: 'pipe' }).trim();
+  execFileSync('git', ['init', '--bare', remote], { stdio: 'pipe' });
+  git('init', '-b', 'main');
+  git('config', 'user.name', 'Test curator');
+  git('config', 'user.email', 'test@example.com');
+  git('remote', 'add', 'origin', remote);
+  await mkdir(path.join(repo, 'config'));
+  await mkdir(path.join(repo, 'data/media/events'), { recursive: true });
+  await writeFile(
+    path.join(repo, 'config/media-ingestion.json'),
+    JSON.stringify({
+      events: [{ eventId: '2026-finals', sources: [{ type: 'feed', feedId: 1 }] }],
+    }),
+  );
+  await writeFile(path.join(repo, target), 'baseline\n');
+  git('add', '.');
+  git('commit', '-m', 'baseline');
+  git('push', '-u', 'origin', 'main');
+  await writeFile(
+    path.join(bin, 'gh'),
+    `#!/usr/bin/env node
+const fs = require('node:fs');
+const args = process.argv.slice(2);
+if (args[0] === 'pr' && args[1] === 'list') {
+  console.log(process.env.TEST_PR_NUMBER || '');
+} else if (args[0] === 'pr') {
+  fs.appendFileSync(process.env.TEST_GH_LOG, JSON.stringify(args) + '\\n');
+}
+`,
+    { mode: 0o755 },
+  );
+  await writeFile(path.join(root, 'media-ingestion-summary.txt'), '{"added":1}\n');
+  const env = {
+    ...process.env,
+    PATH: `${bin}:${process.env.PATH ?? ''}`,
+    GITHUB_OUTPUT: output,
+    GH_REPO: 'example/repo',
+    BASE_BRANCH: 'main',
+    MEDIA_BRANCH: branch,
+    RUNNER_TEMP: root,
+    TEST_GH_LOG: log,
+    HUSKY: '0',
+  };
+  const run = (script: string, extra: Record<string, string> = {}) =>
+    execFileSync('bash', ['-euo', 'pipefail', '-c', script], {
+      cwd: repo,
+      env: { ...env, ...extra },
+      encoding: 'utf8',
+      stdio: 'pipe',
+    });
+  const commitData = async (contents = 'curator edit\n') => {
+    git('switch', '-c', branch);
+    await writeFile(path.join(repo, target), contents);
+    git('add', target);
+    git('commit', '-m', 'curated import');
+    git('push', 'origin', branch);
+    git('switch', 'main');
+  };
+  return { root, repo, remote, git, run, output, log, commitData };
+};
+
+describe('ingestion workflow git operations', () => {
+  it('is default-branch only, read-only by default, and schedule gated', () => {
+    expect(workflow).toContain("cron: '17 12 * * *'");
+    expect(workflow).toContain("vars.MEDIA_INGESTION_SCHEDULE_ENABLED == 'true'");
+    expect(workflow).toContain('github.ref_name == github.event.repository.default_branch');
+    expect(workflow).toContain('cancel-in-progress: false');
+    expect(workflow).toContain('contents: read');
+    expect(workflow).not.toContain('pull_request_target');
+    expect(workflow).not.toContain('--force');
+  });
+
+  it('creates an initial data-only branch and PR', async () => {
+    const { repo, git, run, log } = await setup();
+    run(prepare);
+    await writeFile(path.join(repo, target), 'new post\n');
+    run(publish, { COMPARISON: 'HEAD', PR_NUMBER: '' });
+    expect(git('show', `origin/${branch}:${target}`)).toBe('new post');
+    expect(await readFile(log, 'utf8')).toContain('"create"');
+  });
+
+  it('preserves curator data, updates the open PR, and makes no repeat commit', async () => {
+    const { repo, git, run, log, output, commitData } = await setup();
+    await commitData();
+    run(prepare, { TEST_PR_NUMBER: '7' });
+    expect(await readFile(output, 'utf8')).toContain(`comparison=origin/${branch}`);
+    expect(await readFile(path.join(repo, target), 'utf8')).toBe('curator edit\n');
+    const original = git('rev-parse', `origin/${branch}`);
+    run(publish, { COMPARISON: `origin/${branch}`, PR_NUMBER: '7' });
+    expect(git('rev-parse', `origin/${branch}`)).toBe(original);
+    await writeFile(path.join(repo, target), 'curator edit\nnew post\n');
+    run(publish, { COMPARISON: `origin/${branch}`, PR_NUMBER: '7' });
+    expect(git('show', `origin/${branch}:${target}`)).toBe('curator edit\nnew post');
+    expect(git('merge-base', '--is-ancestor', original, `origin/${branch}`)).toBe('');
+    expect(await readFile(log, 'utf8')).toContain('"edit","7"');
+  });
+
+  it('rejects unrelated changes on an existing PR or generated worktree', async () => {
+    const { repo, git, run, commitData } = await setup();
+    await commitData();
+    git('switch', branch);
+    await writeFile(path.join(repo, 'config/media-ingestion.json'), '{}');
+    git('add', '.');
+    git('commit', '-m', 'unrelated change');
+    git('push', 'origin', branch);
+    git('switch', 'main');
+    expect(() => run(prepare, { TEST_PR_NUMBER: '7' })).toThrow();
+    await writeFile(path.join(repo, 'config/media-ingestion.json'), '{}');
+    expect(() => run(publish, { COMPARISON: 'HEAD', PR_NUMBER: '' })).toThrow();
+  });
+
+  it('blocks leftover unmerged branches and merge conflicts', async () => {
+    const { repo, git, run, commitData } = await setup();
+    await commitData();
+    expect(() => run(prepare)).toThrow();
+    await writeFile(path.join(repo, target), 'conflicting default-branch correction\n');
+    git('add', '.');
+    git('commit', '-m', 'default correction');
+    expect(() => run(prepare, { TEST_PR_NUMBER: '7' })).toThrow();
+  });
+
+  it('does not overwrite a concurrent remote curator update', async () => {
+    const { root, repo, remote, git, run, commitData } = await setup();
+    await commitData();
+    run(prepare, { TEST_PR_NUMBER: '7' });
+    const other = path.join(root, 'other');
+    execFileSync('git', ['clone', '-b', branch, remote, other], { stdio: 'pipe' });
+    const otherGit = (...args: string[]) =>
+      execFileSync('git', args, { cwd: other, stdio: 'pipe' });
+    otherGit('config', 'user.name', 'Another curator');
+    otherGit('config', 'user.email', 'other@example.com');
+    await writeFile(path.join(other, target), 'concurrent remote correction\n');
+    otherGit('add', '.');
+    otherGit('commit', '-m', 'concurrent edit');
+    otherGit('push', 'origin', branch);
+    await writeFile(path.join(repo, target), 'curator edit\nnew post\n');
+    expect(() => run(publish, { COMPARISON: `origin/${branch}`, PR_NUMBER: '7' })).toThrow();
+    git('fetch', 'origin', branch);
+    expect(git('show', `origin/${branch}:${target}`)).toBe('concurrent remote correction');
+  });
+});

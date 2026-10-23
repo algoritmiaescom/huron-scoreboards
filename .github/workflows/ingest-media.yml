@@ -1,0 +1,132 @@
+name: Ingest media
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 12 * * *'
+
+concurrency:
+  group: media-ingestion
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ingest:
+    if: >-
+      github.ref_name == github.event.repository.default_branch &&
+      (github.event_name != 'schedule' || vars.MEDIA_INGESTION_SCHEDULE_ENABLED == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_REPO: ${{ github.repository }}
+      BASE_BRANCH: ${{ github.event.repository.default_branch }}
+      MEDIA_BRANCH: automation/media-ingestion
+      HUSKY: '0'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Create repository-scoped app token
+        id: app
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3
+        with:
+          client-id: ${{ vars.MEDIA_INGESTION_APP_CLIENT_ID }}
+          private-key: ${{ secrets.MEDIA_INGESTION_APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
+      - name: Preserve an existing ingestion PR
+        id: previous
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh auth setup-git
+          git config user.name 'Huron Media Ingestion'
+          git config user.email 'media-ingestion@users.noreply.github.com'
+          number=$(gh pr list --head "$MEDIA_BRANCH" --base "$BASE_BRANCH" --state open --json number --jq '.[0].number // empty')
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+          if [ -n "$number" ]; then
+            git fetch origin "$MEDIA_BRANCH:refs/remotes/origin/$MEDIA_BRANCH"
+            node --input-type=module <<'JS'
+          import { execFileSync } from 'node:child_process';
+          import { readFileSync } from 'node:fs';
+          const config = JSON.parse(readFileSync('config/media-ingestion.json', 'utf8'));
+          const allowed = new Set(config.events.map(({ eventId }) => `data/media/events/${eventId}.json`));
+          const changes = execFileSync('git', ['diff', '--name-only', '-z',
+            `HEAD...origin/${process.env.MEDIA_BRANCH}`], { encoding: 'utf8' }).split('\0').filter(Boolean);
+          if (changes.some((file) => !allowed.has(file))) {
+            throw new Error('Existing PR has unrelated changes; resolve it manually before ingestion');
+          }
+          JS
+            git merge --no-ff --no-commit "origin/$MEDIA_BRANCH"
+            echo "comparison=origin/$MEDIA_BRANCH" >> "$GITHUB_OUTPUT"
+          else
+            # Reuse a branch only if it is already contained in the default branch.
+            if git ls-remote --heads origin "$MEDIA_BRANCH" | grep -q .; then
+              git fetch origin "$MEDIA_BRANCH:refs/remotes/origin/$MEDIA_BRANCH"
+              if ! git merge-base --is-ancestor "origin/$MEDIA_BRANCH" HEAD; then
+                echo "::error::An unmerged automation branch exists without an open PR. Resolve or delete it manually."
+                exit 1
+              fi
+            fi
+            echo "comparison=HEAD" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Ingest and validate media
+        env:
+          JUICER_API_KEY: ${{ secrets.JUICER_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run ingest:media | tee "$RUNNER_TEMP/media-ingestion-summary.txt"
+          npm run validate:data
+          npx prettier 'data/media/events/*.json' --check
+      - name: Publish reviewed data changes
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          COMPARISON: ${{ steps.previous.outputs.comparison }}
+          PR_NUMBER: ${{ steps.previous.outputs.number }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'JS'
+          import { execFileSync } from 'node:child_process';
+          import { readFileSync } from 'node:fs';
+          const config = JSON.parse(readFileSync('config/media-ingestion.json', 'utf8'));
+          const allowed = new Set(config.events.map(({ eventId }) => `data/media/events/${eventId}.json`));
+          const files = execFileSync('git', ['diff', '--name-only', '-z', 'HEAD'],
+            { encoding: 'utf8' }).split('\0').filter(Boolean);
+          if (files.some((file) => !allowed.has(file))) throw new Error('Refusing unrelated changes');
+          for (const file of files) execFileSync('git', ['add', '--', file]);
+          JS
+          if git diff --quiet "$COMPARISON" -- data/media/events; then
+            echo "No new media changes; no commit or PR update needed."
+            exit 0
+          fi
+          git commit -m 'data: ingest social media posts' \
+            -m 'Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>'
+          # No force push: concurrent curator updates must fail rather than be overwritten.
+          git push origin "HEAD:refs/heads/$MEDIA_BRANCH"
+          {
+            printf '%s\n\n' '## Media ingestion' \
+              'Append-only Juicer import. Review attribution and media descriptions before merging.' \
+              'Existing posts and contributor edits are preserved. No automatic deletions or merge.'
+            printf '%s\n' '### Ingestion counts' '```text'
+            cat "$RUNNER_TEMP/media-ingestion-summary.txt"
+            printf '%s\n' '```'
+          } > "$RUNNER_TEMP/media-ingestion-pr.md"
+          if [ -n "$PR_NUMBER" ]; then
+            gh pr edit "$PR_NUMBER" --body-file "$RUNNER_TEMP/media-ingestion-pr.md"
+          else
+            gh pr create --base "$BASE_BRANCH" --head "$MEDIA_BRANCH" \
+              --title 'data: ingest social media posts' --body-file "$RUNNER_TEMP/media-ingestion-pr.md"
+          fi

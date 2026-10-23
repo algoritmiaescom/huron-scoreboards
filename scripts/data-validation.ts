@@ -2,7 +2,7 @@ import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 
 import { validateMediaReferences, type MediaDataset } from '@/features/media/model/dataset';
-import { eventFileSchema } from '@/features/media/model/schemas';
+import { eventFileSchema, type EventFile } from '@/features/media/model/schemas';
 import {
   validateScoreboardsReferences,
   type ScoreboardsDataset,
@@ -203,6 +203,7 @@ const loadSeasons = async (
 const loadMedia = async (
   root: string,
   dataDirectory: string,
+  overrides: ReadonlyMap<string, EventFile>,
 ): Promise<{ dataset: MediaDataset; issues: ValidationIssue[]; fileCount: number }> => {
   const dataset: MediaDataset = { events: [] };
   const issues: ValidationIssue[] = [];
@@ -222,7 +223,7 @@ const loadMedia = async (
     if (parsed.record !== undefined) {
       dataset.events.push({
         file: toPosixPath(path.relative(root, eventPath)),
-        record: parsed.record,
+        record: overrides.get(toPosixPath(path.relative(root, eventPath))) ?? parsed.record,
       });
     }
   }
@@ -283,13 +284,14 @@ const validateLogoFiles = async (
 export const validateDataDirectory = async (
   root: string,
   dataDirectory: string = path.join(root, 'data'),
+  mediaOverrides: ReadonlyMap<string, EventFile> = new Map(),
 ): Promise<ValidationReport> => {
   if (!(await directoryExists(dataDirectory))) {
     return { issues: [], fileCount: 0 };
   }
 
   const scoreboards = await loadSeasons(root, dataDirectory);
-  const media = await loadMedia(root, dataDirectory);
+  const media = await loadMedia(root, dataDirectory, mediaOverrides);
   const contestIds = new Set(scoreboards.dataset.contests.map(({ record }) => record.id));
 
   return {

@@ -139,6 +139,12 @@ for a later run instead of exceeding the job budget.
 
 ## Run locally
 
+The Node-only `JuicerClient` class in `scripts/media-ingestion/juicer.ts` uses a dedicated Axios
+instance. It accepts request timeout, retry, page, and lifetime request budgets independently of
+event configuration, so one instance can collect multiple sources. Create a new instance for a new
+ingestion run to reset its request budget. Tests inject an Axios adapter and retry sleep function;
+they exercise the real Axios request configuration without contacting Juicer.
+
 Use Node 24, npm 11, and `npm ci`. Supply `JUICER_API_KEY` through your local secure environment;
 the script does not automatically load an environment file.
 

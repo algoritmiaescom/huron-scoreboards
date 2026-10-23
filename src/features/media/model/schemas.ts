@@ -18,8 +18,8 @@ export const postAuthorSchema = z.object({
 export const postMediaSchema = z.object({
   type: z.enum(['image', 'video']),
   url: z.url(),
-  // Required: alt text cannot be derived from the post, so a contributor must supply it.
-  alt: z.string().min(1, 'alt text is required for every image and video'),
+  // An empty string means a description is unavailable, not that the media is decorative.
+  alt: z.string(),
 });
 
 export const postSchema = z.object({
