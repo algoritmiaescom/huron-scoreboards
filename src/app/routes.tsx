@@ -2,6 +2,7 @@ import { Navigate } from 'react-router';
 
 import { AppShell } from '@/app/components/AppShell';
 import { LazyContributePage } from '@/app/pages/LazyContributePage';
+import { LazyMediaPage } from '@/app/pages/LazyMediaPage';
 import { LazySchoolHistoryPage } from '@/app/pages/LazySchoolHistoryPage';
 import { LazySchoolsPage } from '@/app/pages/LazySchoolsPage';
 import { LazyScoreboardsPage } from '@/app/pages/LazyScoreboardsPage';
@@ -11,6 +12,7 @@ import {
   RouteErrorPage,
   RouteLoading,
 } from '@/app/pages/RouteStatusPages';
+import { loadMediaPage } from '@/app/repositories/loadMediaPage';
 import { loadScoreboards } from '@/app/repositories/loadScoreboards';
 
 import type { RouteObject, ShouldRevalidateFunction } from 'react-router';
@@ -51,6 +53,12 @@ export const routes: RouteObject[] = [
         shouldRevalidate: revalidateArchive,
         ErrorBoundary: RouteErrorPage,
         Component: LazySchoolsPage,
+      },
+      {
+        path: 'media',
+        loader: loadMediaPage,
+        ErrorBoundary: RouteErrorPage,
+        Component: LazyMediaPage,
       },
       {
         path: 'contribute',

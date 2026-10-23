@@ -111,7 +111,9 @@ live resizing without state loss, touch/keyboard use, and 200% zoom. At 400% zoo
   values with text/table equivalents.
 - Media cards show author/source/time, optional content, descriptive alt text, accessible
   carousel controls, and a required original permalink. Videos need honest playback or an
-  original-post action, not a nonfunctional play overlay.
+  original-post action, not a nonfunctional play overlay. The media page offers a labeled
+  contest selector when multiple eligible archives exist; only contests with referenced posts
+  are historical choices, and selection stays in the `contest` URL parameter.
 - Every data surface distinguishes loading, empty, invalid selection, unavailable, and error
   states as applicable. Do not describe a live-source outage when no live integration exists.
 - Correction actions link to GitHub and explain the official-evidence requirement.

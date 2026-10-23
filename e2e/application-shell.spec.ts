@@ -40,6 +40,77 @@ test('navigates the complete page, restores its theme, and recovers unknown rout
   await expect(page.getByRole('main')).toBeFocused();
 });
 
+test('opens multimedia from desktop and mobile navigation with an honest empty archive state', async ({
+  page,
+}) => {
+  await page.goto('/scoreboards');
+  await page.getByRole('link', { name: 'Multimedia', exact: true }).click();
+  await expect(page).toHaveURL('/media');
+  await expect(page).toHaveTitle('Comunidad | Huron Scoreboards');
+  await expect(page.getByRole('heading', { name: 'Más allá de la clasificación.' })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Aún no hay publicaciones archivadas' }),
+  ).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Multimedia', exact: true })).toHaveAttribute(
+    'aria-current',
+    'page',
+  );
+  await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
+  await expect(page.getByRole('article')).toHaveCount(0);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.getByRole('button', { name: 'Abrir navegación' }).click();
+  const drawer = page.getByRole('dialog', { name: 'Menú de navegación' });
+  await drawer.getByRole('link', { name: 'Clasificaciones', exact: true }).click();
+  await expect(drawer).not.toBeVisible();
+  await expect(page.getByRole('main')).toBeFocused();
+  await expect(page).toHaveURL('/scoreboards');
+  await page.getByRole('button', { name: 'Abrir navegación' }).click();
+  await drawer.getByRole('link', { name: 'Multimedia', exact: true }).click();
+  await expect(drawer).not.toBeVisible();
+  await expect(page.getByRole('main')).toBeFocused();
+  await expect(page).toHaveURL('/media');
+});
+
+test('browses previous mock contest media and reloads the selected archive', async ({ page }) => {
+  await page.goto('http://127.0.0.1:4175/media');
+  const picker = page.getByLabel('Ver publicaciones de otra competencia');
+  await expect(picker).toBeVisible();
+  await picker.selectOption('2025-mexico-finals');
+
+  await expect(page).toHaveURL('http://127.0.0.1:4175/media?contest=2025-mexico-finals');
+  await expect(
+    page.getByText(
+      'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
+    ),
+  ).toBeVisible();
+  await expect(picker).toHaveValue('2025-mexico-finals');
+
+  await page.reload();
+  await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
+    '2025-mexico-finals',
+  );
+  await expect(
+    page.getByText(
+      'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
+    ),
+  ).toBeVisible();
+  for (const width of [320, 390, 599, 600, 899, 900, 1200]) {
+    await page.setViewportSize({ width, height: 844 });
+    await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
+      '2025-mexico-finals',
+    );
+    const dimensions = await page.evaluate(() => ({
+      viewport: document.documentElement.clientWidth,
+      content: document.documentElement.scrollWidth,
+    }));
+    expect(dimensions.content, `${String(width)}px media overflow`).toBeLessThanOrEqual(
+      dimensions.viewport,
+    );
+  }
+  await page.goBack();
+  await expect(page).toHaveURL('http://127.0.0.1:4175/media');
+});
+
 test('supports skip links, trapped drawer focus, Escape and navigation on a phone', async ({
   page,
 }) => {
@@ -94,7 +165,7 @@ for (const mode of ['light', 'dark'] as const) {
     await page.addInitScript((themeMode) => {
       localStorage.setItem('huron-scoreboards.theme-mode', themeMode);
     }, mode);
-    for (const route of ['/', '/contribute', '/unknown']) {
+    for (const route of ['/', '/media', '/contribute', '/unknown']) {
       await page.goto(route);
       await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
       for (const [width, height] of [

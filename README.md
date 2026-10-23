@@ -1,22 +1,24 @@
 # Huron Scoreboards
 
 The public site of the algorithms club at Huron. Its goal is to publish the historical standings
-of Mexican ICPC programming competitions, surface the community reaction around the latest
+of Mexican ICPC programming competitions, surface archived community posts around the latest
 contest, and let anyone correct the record through this repository.
 
 Modules:
 
 - **Scoreboards** — contest standings with per-problem attempts, accepted times, and
   first-to-solve highlights, plus filters and per-school historical pages.
-- **Media feed** — public posts published under the hashtag of the most recent contest.
+- **Media feed** — curated repository posts for the latest held contest, with access to previous
+  contests that have archived posts.
 - **Contribution** — a guide for adding and correcting competition data through GitHub.
 
-See [Product scope](docs/product-scope.md) for the full definition. The application provides
-contest and accumulated standings at `/scoreboards` and the contribution guide at `/contribute`
-in a responsive shell. A searchable school index is directly accessible at `/schools` (for example,
+See [Product scope](docs/product-scope.md) for the full definition. The application provides contest and accumulated standings at `/scoreboards`, the curated feed at
+`/media`, and the contribution guide at `/contribute` in a responsive shell. A searchable school
+index is directly accessible at `/schools` (for example,
 `/schools?q=UNAM`), linked as "Instituciones" in desktop and mobile navigation. Cards open
 responsive per-school histories at `/schools/:schoolId`, with institution/unit scope, trends,
-podiums, and contest destinations; media remains unreleased.
+podiums, and contest destinations. The feed is linked as "Multimedia" in desktop and mobile
+navigation; it reads only validated archive records and does not query social networks live.
 The root redirects to standings.
 
 ## Prerequisites

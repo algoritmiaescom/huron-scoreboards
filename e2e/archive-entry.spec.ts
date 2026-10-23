@@ -15,6 +15,18 @@ test('redirects to the empty production archive without accessibility violations
   expect(accessibilityScanResults.violations).toEqual([]);
 });
 
+test('shows an honest empty media archive in production', async ({ page }) => {
+  await page.goto('/media');
+  await expect(page).toHaveTitle('Comunidad | Huron Scoreboards');
+  await expect(
+    page.getByRole('heading', { name: 'Aún no hay publicaciones archivadas' }),
+  ).toBeVisible();
+  await expect(page.getByRole('article')).toHaveCount(0);
+  await expect(page.getByText(/inventados/)).toHaveCount(0);
+  await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+});
+
 test('restores a saved theme across reloads', async ({ page }) => {
   await page.goto('/');
   await page.evaluate(() => {

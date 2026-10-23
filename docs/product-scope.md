@@ -91,17 +91,16 @@ recovery rather than another page's content.
 
 These contracts keep selected data explicit, URLs shareable, and school identities unambiguous.
 
-Released routes are `/scoreboards`, `/schools`, `/schools/:schoolId`, `/contribute`,
+Released routes are `/scoreboards`, `/schools`, `/schools/:schoolId`, `/media`, `/contribute`,
 root-to-standings redirection, and route recovery. The school index is accessible at `/schools`
 through "Instituciones" in desktop and mobile navigation; school cards and school identities link
-to the corresponding released history.
+to the corresponding released history. The media feed is available at `/media` through
+"Multimedia" in desktop and mobile navigation.
 Contest selection and filters follow the contract above. The shared season/series/classification
 picker advertises accumulated standings only where published records exist, including
 standing-only seasons or series. Changing season/series retains accumulated mode when a record
 exists; otherwise that explicit selection chooses an available contest. Direct missing accumulated
 URLs show recovery, never a substitute contest.
-The media screen remains unreleased and is not advertised in navigation.
-
 Accumulated standings preserve published scores, places (including ties), and qualification
 flags rather than computing an accumulation. Qualified rows have explicit text and icons.
 A single cut is shown only between a qualified prefix and an entirely unqualified suffix,
@@ -143,19 +142,23 @@ errors are explicit states.
 
 ### 2. Media feed
 
-A page that collects public media posts published under the hashtag of the most recent contest,
-so the site reflects the live reaction around the competition that just took place.
+The `/media` page presents curated public media posts linked to the latest held contest. Posts
+come only from validated repository records; select the latest held archived contest using the
+date/id rule above, then its linked media event (latest event date, then ascending event id if
+several exist), considering only events dated today or earlier in `America/Mexico_City`. Display
+only its explicitly referenced posts. If that contest has no eligible event or the event has no
+linked posts, show an explicit empty state rather than posts from another contest or an upcoming
+event. Visitors can select a previous held contest with eligible archived posts; the selection is
+shareable as `/media?contest=<id>`, and removing the parameter returns to the latest contest.
+Only contests whose selected eligible event has at least one referenced post appear as historical
+choices. A valid selection with no feed remains an honest empty state; an unknown, future, or
+repeated selection is explained instead of silently falling back. Unlinked announced events
+remain valid archive data but do not replace this feed.
 
-For the initial port, posts come only from validated repository records. Select the latest held
-archived contest using the date/id rule above, then its linked media event (latest event date,
-then ascending event id if several exist), considering only events dated today or earlier in
-`America/Mexico_City`. Display only its referenced posts. If that contest has no eligible event,
-show an explicit empty state rather than posts from a different contest or an upcoming event.
-Unlinked announced events remain valid archive data but do not replace this feed.
-
-Repository-backed mode must not claim live updates or an API outage. A future live integration
-is a separate architectural milestone; the post presentation and loading/empty/error components
-remain reusable for it.
+Cards support optional author/profile metadata, title, media assets, and tags, with accessible
+carousel controls, native video playback, and an original-post link. Repository-backed mode must
+not claim live updates or an API outage. A future live integration is a separate architectural
+milestone; the post presentation and loading/empty/error states remain reusable for it.
 
 ### 3. Contribution
 

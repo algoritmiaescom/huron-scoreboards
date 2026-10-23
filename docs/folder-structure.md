@@ -21,8 +21,8 @@ src/
   test/                    Shared unit-test setup and utilities
 ```
 
-Released screens are contest/accumulated standings, the school index and school histories,
-the contribution guide, and route recovery in
+Released screens are contest/accumulated standings, the school index and school histories, the
+repository-backed media feed, the contribution guide, and route recovery in
 `src/app/pages/`, composed within the application shell. Contribution-specific sections live in
 `src/features/contribution/components/`. The data layer remains independent of screen composition.
 Reusable scoreboard result cells/grids, team/school identities, roster disclosure, contest
@@ -43,6 +43,11 @@ loaded through `LazySchoolHistoryPage`; it uses the reusable `SchoolTrendChart` 
 the `schoolDirectory` and `schoolHistory` models derive scope-aware summaries and history metrics.
 Route-only pieces are imported directly to keep the public entry point narrow. The shared
 desktop/mobile navigation links to the index; cards and unit histories link to history pages.
+
+`MediaPage` composes the latest held contest, eligible event, and referenced posts for `/media`,
+loaded through `LazyMediaPage`. `MediaPostCard` owns the accessible carousel, asset playback,
+optional post metadata, and original-post link. The shared desktop/mobile navigation links to the
+feed; media selection and validation remain in the repository/model layers.
 
 The modules map to these features:
 

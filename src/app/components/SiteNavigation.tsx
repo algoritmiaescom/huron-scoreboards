@@ -2,6 +2,7 @@ import CloseRounded from '@mui/icons-material/CloseRounded';
 import GroupsOutlined from '@mui/icons-material/GroupsOutlined';
 import LeaderboardOutlined from '@mui/icons-material/LeaderboardOutlined';
 import MenuRounded from '@mui/icons-material/MenuRounded';
+import NewspaperOutlined from '@mui/icons-material/NewspaperOutlined';
 import SchoolOutlined from '@mui/icons-material/SchoolOutlined';
 import { Divider, Drawer, IconButton, Stack, Typography, useMediaQuery } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
@@ -75,6 +76,15 @@ export const SiteNavigation = () => {
       >
         <SchoolOutlined />
         Instituciones
+      </NavigationLink>
+      <NavigationLink
+        to="/media"
+        onClick={() => {
+          setDrawerOpen(false);
+        }}
+      >
+        <NewspaperOutlined />
+        Multimedia
       </NavigationLink>
       <NavigationLink
         to="/contribute"

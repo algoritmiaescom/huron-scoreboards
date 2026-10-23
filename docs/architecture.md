@@ -15,13 +15,13 @@ the Vite build.
 `src/app/routes.tsx` owns the released route tree. The root redirects to `/scoreboards`;
 `/contribute` loads the contribution guide, and unmatched paths render recovery. The standings
 page selects contest or accumulated results from URL parameters. The lazy `/schools` index and
-`/schools/:schoolId` histories are accessible through desktop/mobile navigation. The media screen
-remains unreleased.
+`/schools/:schoolId` histories and the repository-backed `/media` feed are accessible through
+desktop/mobile navigation.
 
 The application shell owns navigation, responsive drawer state, the theme control, skip link,
 one main landmark, and footer. Route transitions focus the main region and reset scroll.
-The contribution, standings, school index, and school history routes load lazily; initial and
-navigation loading states are announced.
+The contribution, standings, school index, school history, and media routes load lazily; initial
+and navigation loading states are announced.
 Route error boundaries log diagnostics and provide reload/home recovery. Page titles are
 rendered with React 19 document metadata. The document language is Spanish.
 
@@ -81,6 +81,10 @@ The application loads scoreboards first and supplies their contest ids to media 
 without a media-to-scoreboards import. Invalid scoreboards block media validation explicitly;
 invalid media does not discard valid standings. Media currently loads curated event/post files,
 not a live service. A future external integration must preserve the same isolated failure behavior.
+The media route defaults to the latest held contest and accepts `?contest=<id>` for a previous
+held contest. Its picker is derived from validated event records and includes only contests whose
+selected eligible event has referenced posts. Contest selection lives in the URL; invalid,
+future, and repeated values produce an explicit recovery message instead of changing the feed.
 
 Pure scoreboard selectors own catalog discovery, identity joins, contest-specific scoring,
 tied first solves, AND filters, published accumulated results, qualification cuts, and
@@ -116,7 +120,9 @@ scoring or filters. Incompatible filter parameters require explicit, selection-p
 Default feed composition chooses the latest held contest, then the latest eligible event for
 that contest. The caller supplies the current instant; selection uses its calendar date in
 `America/Mexico_City` with ascending ids breaking equal-date ties. No eligible event means an
-empty feed, not a different contest's posts. Route parsing and UI states arrive in later slices.
+empty feed, not a different contest's posts. The `/media` route loads validated event/post records,
+shows only explicitly linked posts, and distinguishes empty and repository error states. It does
+not query social networks live.
 
 ## Future server state
 
