@@ -71,45 +71,60 @@ test('opens multimedia from desktop and mobile navigation with an honest empty a
   await expect(page).toHaveURL('/media');
 });
 
-test('browses previous mock contest media and reloads the selected archive', async ({ page }) => {
-  await page.goto('http://127.0.0.1:4175/media');
-  const picker = page.getByLabel('Ver publicaciones de otra competencia');
-  await expect(picker).toBeVisible();
-  await picker.selectOption('2025-mexico-finals');
+for (const mode of ['light', 'dark'] as const) {
+  test(`browses previous mock contest media in ${mode} and reloads the selection`, async ({
+    page,
+  }) => {
+    await page.addInitScript((themeMode) => {
+      localStorage.setItem('huron-scoreboards.theme-mode', themeMode);
+    }, mode);
+    await page.goto('http://127.0.0.1:4175/media');
+    const picker = page.getByLabel('Ver publicaciones de otra competencia');
+    await expect(picker).toBeVisible();
+    await picker.selectOption('2025-mexico-finals');
 
-  await expect(page).toHaveURL('http://127.0.0.1:4175/media?contest=2025-mexico-finals');
-  await expect(
-    page.getByText(
-      'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
-    ),
-  ).toBeVisible();
-  await expect(picker).toHaveValue('2025-mexico-finals');
+    await expect(page).toHaveURL('http://127.0.0.1:4175/media?contest=2025-mexico-finals');
+    await expect(
+      page.getByText(
+        'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
+      ),
+    ).toBeVisible();
+    await expect(picker).toHaveValue('2025-mexico-finals');
 
-  await page.reload();
-  await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
-    '2025-mexico-finals',
-  );
-  await expect(
-    page.getByText(
-      'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
-    ),
-  ).toBeVisible();
-  for (const width of [320, 390, 599, 600, 899, 900, 1200]) {
-    await page.setViewportSize({ width, height: 844 });
+    for (const width of [320, 390, 599, 600, 899, 900, 1200, 1440]) {
+      await page.setViewportSize({ width, height: 844 });
+      await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
+        '2025-mexico-finals',
+      );
+      const dimensions = await page.evaluate(() => ({
+        viewport: document.documentElement.clientWidth,
+        content: document.documentElement.scrollWidth,
+      }));
+      expect(dimensions.content, `${mode} ${String(width)}px media overflow`).toBeLessThanOrEqual(
+        dimensions.viewport,
+      );
+    }
+    for (const width of [390, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+    }
+
+    await page.reload();
     await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
       '2025-mexico-finals',
     );
-    const dimensions = await page.evaluate(() => ({
-      viewport: document.documentElement.clientWidth,
-      content: document.documentElement.scrollWidth,
-    }));
-    expect(dimensions.content, `${String(width)}px media overflow`).toBeLessThanOrEqual(
-      dimensions.viewport,
+    await expect(
+      page.getByText(
+        'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
+      ),
+    ).toBeVisible();
+    await page.goBack();
+    await expect(page).toHaveURL('http://127.0.0.1:4175/media');
+    await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
+      '2026-gpm-qualifier-3',
     );
-  }
-  await page.goBack();
-  await expect(page).toHaveURL('http://127.0.0.1:4175/media');
-});
+  });
+}
 
 test('supports skip links, trapped drawer focus, Escape and navigation on a phone', async ({
   page,

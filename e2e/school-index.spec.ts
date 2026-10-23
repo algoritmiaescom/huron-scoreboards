@@ -231,6 +231,7 @@ for (const mode of ['light', 'dark'] as const) {
     }, mode);
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto(`${directoryUrl}?q=UNAM`);
+    await page.evaluate(() => document.fonts.ready);
     const search = page.getByRole('textbox', { name: searchLabel });
     const cards = page.getByRole('list', { name: 'Instituciones y unidades' });
     await expect(cards.getByRole('article')).toHaveCount(3);
@@ -257,6 +258,16 @@ for (const mode of ['light', 'dark'] as const) {
       [1537, 900],
     ]) {
       await page.setViewportSize({ width, height });
+      await page.evaluate(
+        () =>
+          new Promise<void>((resolve) => {
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                resolve();
+              });
+            });
+          }),
+      );
       await expect
         .poll(() =>
           cards.evaluate(

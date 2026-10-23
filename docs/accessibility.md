@@ -11,3 +11,12 @@ Accessibility is a release requirement.
 
 ESLint checks JSX accessibility rules. Playwright runs axe against critical pages. Automated
 checks do not replace keyboard and screen-reader review for new workflows.
+
+The media archive selector uses a visible label and native select semantics, appears only when
+there is more than one contest choice, and keeps its selection in the URL. Its populated state is
+covered by keyboard-operable browser interaction and axe scans in both themes at phone and desktop
+widths; the production empty archive is scanned separately. The browser suite also checks mobile
+navigation, touch interactions, visible focus, reduced motion, and enlarged-text reflow.
+
+The automated checks do not represent physical-device testing, screen-reader review, or
+browser-toolbar zoom testing. Those remain supplemental manual release checks.

@@ -22,6 +22,7 @@ test('shows an honest empty media archive in production', async ({ page }) => {
     page.getByRole('heading', { name: 'Aún no hay publicaciones archivadas' }),
   ).toBeVisible();
   await expect(page.getByRole('article')).toHaveCount(0);
+  await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveCount(0);
   await expect(page.getByText(/inventados/)).toHaveCount(0);
   await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);

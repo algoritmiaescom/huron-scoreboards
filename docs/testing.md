@@ -63,6 +63,8 @@ check document overflow; axe scans run at phone/desktop sizes and with an open m
 Reduced motion, computed focus outline, and 200% root-font enlargement at a 640px viewport are
 checked separately. The 320px matrix case covers 400%-zoom-equivalent reflow from 1280px;
 this does not replace physical-device testing or a manual browser-toolbar zoom audit.
+Viewport overflow checks wait for local fonts and responsive layout frames to settle before
+measuring, avoiding false failures during font loading or resize transitions.
 
 Repository URLs are checked against application configuration, not a live GitHub service.
 The configured placeholder is explicitly disclosed; real destination availability cannot be

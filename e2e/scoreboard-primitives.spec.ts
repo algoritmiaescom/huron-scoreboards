@@ -132,6 +132,16 @@ test('supports enlarged text and keyboard scrolling in a contained table', async
   await page.evaluate(() => {
     document.documentElement.style.fontSize = '200%';
   });
+  await page.evaluate(async () => {
+    await document.fonts.ready;
+    await new Promise<void>((resolve) => {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          resolve();
+        });
+      });
+    });
+  });
   const layout = await page.evaluate(() => ({
     width: document.documentElement.clientWidth,
     content: document.documentElement.scrollWidth,

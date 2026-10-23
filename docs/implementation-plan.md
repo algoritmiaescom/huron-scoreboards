@@ -20,21 +20,21 @@ The [design specification](../DESIGN.md), [product scope](product-scope.md),
 
 ## Progress
 
-| Milestone                        | Status      | Evidence / next action                                                                                                                            |
-| -------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0. Design and behavior contracts | Complete    | Route/filter/media contracts approved; design values, responsive rules, and screen/state inventory recorded                                       |
-| 1. Visual foundation             | Complete    | Light/dark theme, local fonts, approved branding, provider controls; 37 tests, 3 E2E tests, and 38 responsive sample checks passed                |
-| Theme preference follow-up       | Complete    | Validated localStorage repository, saved-theme restore and storage-failure tests; 46 unit tests and 4 E2E tests passed                            |
-| 2. Runtime data and selectors    | Complete    | Validated repositories, production bundle isolation, scoring/filter/history/feed selectors; 81 unit tests and 4 E2E tests passed                  |
-| 3. Routing, shell, contribution  | Complete    | Responsive shell, contribution guide, loading/error recovery; 95 unit tests and 13 E2E tests passed; repository URL provisional by approval       |
-| 4. Scoreboard primitives         | Complete    | Reusable results, identities, header, legend and provenance; 114 unit tests and 18 E2E tests passed; responsive/accessibility fixture verified    |
-| 5. Contest standings             | Complete    | Released standings/root redirect, data-driven selection, tables/cards, provenance and recovery; unit/browser acceptance verified below            |
-| 6. URL filtering and sharing     | Complete    | Typed URL filters, chips/counts, history/reload, clipboard recovery; 146 unit tests and 26 E2E tests passed                                       |
-| 7. Accumulated standings         | Complete    | Published scores/qualification, safe cuts, URL recovery and sharing; 186 unit tests and 31 E2E tests passed                                       |
-| 8. School index                  | Complete    | Searchable scoped cards, precise counts, URL recovery, desktop/mobile navigation, linked history cards                                            |
-| 9. School histories and charts   | Complete    | Institution/unit scope, contest-only metrics, trends, podiums, contest links; 212 unit tests and 41 browser tests passed                          |
-| 10. Repository-backed media      | Complete    | `/media` history picker and URL state; 226 unit tests and focused responsive browser test pass; unrelated existing responsive E2E failures remain |
-| 11. Cross-feature verification   | Not started | Complete release review across all routes, data states, accessibility, and supplemental physical-device/zoom checks                               |
+| Milestone                        | Status   | Evidence / next action                                                                                                                         |
+| -------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0. Design and behavior contracts | Complete | Route/filter/media contracts approved; design values, responsive rules, and screen/state inventory recorded                                    |
+| 1. Visual foundation             | Complete | Light/dark theme, local fonts, approved branding, provider controls; 37 tests, 3 E2E tests, and 38 responsive sample checks passed             |
+| Theme preference follow-up       | Complete | Validated localStorage repository, saved-theme restore and storage-failure tests; 46 unit tests and 4 E2E tests passed                         |
+| 2. Runtime data and selectors    | Complete | Validated repositories, production bundle isolation, scoring/filter/history/feed selectors; 81 unit tests and 4 E2E tests passed               |
+| 3. Routing, shell, contribution  | Complete | Responsive shell, contribution guide, loading/error recovery; 95 unit tests and 13 E2E tests passed; repository URL provisional by approval    |
+| 4. Scoreboard primitives         | Complete | Reusable results, identities, header, legend and provenance; 114 unit tests and 18 E2E tests passed; responsive/accessibility fixture verified |
+| 5. Contest standings             | Complete | Released standings/root redirect, data-driven selection, tables/cards, provenance and recovery; unit/browser acceptance verified below         |
+| 6. URL filtering and sharing     | Complete | Typed URL filters, chips/counts, history/reload, clipboard recovery; 146 unit tests and 26 E2E tests passed                                    |
+| 7. Accumulated standings         | Complete | Published scores/qualification, safe cuts, URL recovery and sharing; 186 unit tests and 31 E2E tests passed                                    |
+| 8. School index                  | Complete | Searchable scoped cards, precise counts, URL recovery, desktop/mobile navigation, linked history cards                                         |
+| 9. School histories and charts   | Complete | Institution/unit scope, contest-only metrics, trends, podiums, contest links; 212 unit tests and 41 browser tests passed                       |
+| 10. Repository-backed media      | Complete | `/media` historical picker and URL state, referenced posts, carousel/video, empty/error states; covered in the release suite                   |
+| 11. Cross-feature verification   | Complete | `npm run validate` (226 unit tests) and all 45 browser tests pass; route/data/accessibility/responsive checks verified                         |
 
 Initial visual review covered 13 route states in both themes at desktop/phone sizes (52
 captures). Foundation verification covered seven sizes in each theme (14 captures), 19 widths
@@ -42,7 +42,8 @@ per mode, reduced motion, and computed keyboard focus. These are foundation chec
 of completed route parity, physical-device testing, or a full zoom audit.
 
 Update statuses only after exit criteria pass. Do not recreate temporary verification routes in
-the shipping app. Next major milestone: cross-feature release verification.
+the shipping app. Automated cross-feature release verification is complete; physical-device,
+screen-reader, and browser-toolbar zoom checks remain supplemental manual release checks.
 
 ## Data and presentation rules
 
@@ -428,7 +429,7 @@ async-state dependency.
 contest, renders only its referenced posts, and presents accessible metadata, carousels, native
 video playback, and original-post links. Empty archive/event states and invalid repository
 diagnostics remain explicit. Focused selection/component tests, full validation (220 unit tests),
-and all 43 Playwright tests passed. The route was checked in both themes across the responsive
+and the Playwright suite at that milestone passed. The route was checked in both themes across the responsive
 viewport and breakpoint matrix, with overflow and axe checks.
 
 **Historical-media follow-up:** keep the latest held contest as the default, while allowing a
@@ -436,9 +437,6 @@ visitor to select previous held contests whose eligible event has linked posts. 
 contest in `?contest=<id>` so the view can be shared and restored; reject invalid selections
 explicitly instead of falling back to another contest. Selection, reload, responsive widths,
 back navigation, invalid/repeated selection, and mock-archive navigation are covered by tests.
-Full validation passed (226 unit tests), and the media-history browser test passes. The full
-Playwright suite has an unrelated school-index reflow failure at 599px and scoreboard table
-overflow failure at 640px; the scoreboard test also failed in isolation intermittently.
 
 ### 11. Complete cross-feature release verification
 
@@ -450,6 +448,15 @@ and actual zoom/touch behavior. Update README, architecture, folder, product, de
 and testing docs to match delivered behavior.
 
 **Exit:** all gates pass and accepted deviations have explicit review evidence.
+
+**Complete:** the release review checked route deep links and navigation, URL recovery/history,
+the empty production archive and mock-data isolation, school/scoreboard/accumulated destinations,
+media repository failures and historical selections, themes, keyboard/touch behavior, axe, and
+responsive route matrices. `npm run validate` passed (226 unit tests); the full Playwright suite
+passed all 45 tests. Two intermittent overflow failures during earlier runs were traced to
+measurement before font/layout settling; the checks now wait for fonts/layout and pass in the
+complete suite. Physical-device, screen-reader, and browser-toolbar zoom checks were not performed
+in this automated environment and remain supplemental manual release checks.
 
 ## Verification gate for each milestone
 
