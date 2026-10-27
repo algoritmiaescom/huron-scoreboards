@@ -2,7 +2,8 @@ import SchoolOutlined from '@mui/icons-material/SchoolOutlined';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useState } from 'react';
-import { Link } from 'react-router';
+
+import { TextLink } from '@/components';
 
 import type { School } from '../model/schemas';
 
@@ -22,11 +23,6 @@ const Logo = styled('img')(({ theme }) => ({
 }));
 
 const IdentityText = styled('div')({ minWidth: 0 });
-const SchoolLink = styled(Link)(({ theme }) => ({
-  color: theme.palette.primary.main,
-  textDecoration: 'underline',
-  textUnderlineOffset: '0.15em',
-}));
 
 export const SchoolIdentity = ({
   school,
@@ -38,7 +34,7 @@ export const SchoolIdentity = ({
   heading?: 'h1' | 'h2';
 }) => {
   const [failedLogo, setFailedLogo] = useState<string>();
-  const name = href ? <SchoolLink to={href}>{school.shortName}</SchoolLink> : school.shortName;
+  const name = href ? <TextLink to={href}>{school.shortName}</TextLink> : school.shortName;
   return (
     <Identity>
       {school.logo !== undefined && failedLogo !== school.logo ? (

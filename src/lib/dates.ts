@@ -14,3 +14,17 @@ export const mexicoCityDate = (instant: Date): string => {
   };
   return `${part('year')}-${part('month')}-${part('day')}`;
 };
+
+/** Formats a stored `YYYY-MM-DD` calendar date in Spanish without shifting its day. */
+export const formatCalendarDate = (date: string, dateStyle: 'long' | 'medium' = 'long'): string =>
+  new Intl.DateTimeFormat('es-MX', { dateStyle, timeZone: 'UTC' }).format(
+    new Date(`${date}T00:00:00Z`),
+  );
+
+/** Formats an instant in Spanish using Mexico City time. */
+export const formatMexicoCityDateTime = (instant: string): string =>
+  new Intl.DateTimeFormat('es-MX', {
+    dateStyle: 'medium',
+    timeStyle: 'short',
+    timeZone: 'America/Mexico_City',
+  }).format(new Date(instant));

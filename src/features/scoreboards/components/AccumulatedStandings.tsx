@@ -1,9 +1,5 @@
-import CheckCircleOutlined from '@mui/icons-material/CheckCircleOutlined';
-import Remove from '@mui/icons-material/Remove';
 import {
   Alert,
-  Card,
-  Chip,
   Table,
   TableBody,
   TableCell,
@@ -14,19 +10,16 @@ import {
 } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
 
+import { DataList, ListGrid, ScrollRegion } from '@/components';
+
+import { QualificationChip } from './QualificationChip';
 import { SchoolIdentity } from './SchoolIdentity';
+import { StandingCard } from './StandingCard';
 import { TeamIdentity } from './TeamIdentity';
 import { selectAccumulatedRows, selectQualificationCut } from '../model/selectors';
 
 import type { SeasonStanding } from '../model/schemas';
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
-
-const ScrollRegion = styled('div')(({ theme }) => ({
-  overflow: 'auto',
-  maxHeight: '72dvh',
-  border: `1px solid ${theme.palette.divider}`,
-  borderRadius: theme.shape.borderRadius,
-}));
 
 const ResultsTable = styled(Table)(({ theme }) => ({
   minWidth: 800,
@@ -43,21 +36,9 @@ const ResultsTable = styled(Table)(({ theme }) => ({
   '& [data-cut="true"] > *': { borderBottom: `4px solid ${theme.palette.primary.main}` },
 }));
 
-const Cards = styled('ol')(({ theme }) => ({
-  listStyle: 'none',
-  padding: 0,
-  margin: 0,
-  display: 'grid',
-  gap: theme.spacing(2),
-}));
-
-const MobileCard = styled(Card)(({ theme }) => ({
-  padding: theme.spacing(2),
-  minWidth: 0,
-  overflowWrap: 'anywhere',
+const QualifiedCard = styled(StandingCard)(({ theme }) => ({
   '&[data-qualified="true"]': { backgroundColor: theme.palette.scoreboard.qualified },
   '&[data-cut="true"]': { borderBottom: `4px solid ${theme.palette.primary.main}` },
-  '& > * + *': { marginTop: theme.spacing(2) },
 }));
 
 const CutLabel = styled(Typography)(({ theme }) => ({
@@ -71,21 +52,6 @@ const CutLabel = styled(Typography)(({ theme }) => ({
     marginRight: theme.spacing(1),
   },
 }));
-
-const Score = styled('dl')(({ theme }) => ({
-  margin: 0,
-  '& dt': { ...theme.typography.caption, color: theme.palette.text.secondary },
-  '& dd': { ...theme.typography.data, margin: 0 },
-}));
-
-const Qualification = ({ qualified }: { qualified: boolean }) => (
-  <Chip
-    icon={qualified ? <CheckCircleOutlined /> : <Remove />}
-    label={qualified ? 'Clasificado' : 'No clasificado'}
-    size="small"
-    variant="outlined"
-  />
-);
 
 export const AccumulatedStandings = ({
   archive,
@@ -107,34 +73,24 @@ export const AccumulatedStandings = ({
   }
   if (!desktop) {
     return (
-      <Cards aria-label={label}>
+      <ListGrid aria-label={label}>
         {rows.map((row, index) => (
           <li key={row.teamId}>
-            <MobileCard data-qualified={row.qualified} data-cut={cut === index + 1}>
-              <Typography variant="data">Puesto #{row.place}</Typography>
-              <TeamIdentity team={row.team} />
-              <SchoolIdentity school={row.school} />
-              <Score>
-                <dt>Puntaje publicado</dt>
-                <dd>{String(row.score)}</dd>
-              </Score>
-              <Qualification qualified={row.qualified} />
-            </MobileCard>
+            <QualifiedCard row={row} data-qualified={row.qualified} data-cut={cut === index + 1}>
+              <DataList items={[{ label: 'Puntaje publicado', value: String(row.score) }]} />
+              <QualificationChip qualified={row.qualified} />
+            </QualifiedCard>
             {cut === index + 1 && (
               <CutLabel variant="caption">Línea de corte de clasificación</CutLabel>
             )}
           </li>
         ))}
-      </Cards>
+      </ListGrid>
     );
   }
   return (
     <>
-      <ScrollRegion
-        role="region"
-        aria-label="Clasificación acumulada con desplazamiento"
-        tabIndex={0}
-      >
+      <ScrollRegion label="Clasificación acumulada con desplazamiento">
         <ResultsTable aria-label={label}>
           <colgroup>
             <col width="10%" />
@@ -174,7 +130,7 @@ export const AccumulatedStandings = ({
                   <Typography variant="data">{String(row.score)}</Typography>
                 </TableCell>
                 <TableCell>
-                  <Qualification qualified={row.qualified} />
+                  <QualificationChip qualified={row.qualified} />
                 </TableCell>
               </TableRow>
             ))}

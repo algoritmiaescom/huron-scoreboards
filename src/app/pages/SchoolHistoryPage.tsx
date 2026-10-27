@@ -1,9 +1,20 @@
 import { ArrowBack, Launch } from '@mui/icons-material';
-import { Alert, Button, Card, Chip, Container, Paper, Stack, Typography } from '@mui/material';
+import { Alert, Button, Card, Chip, Paper, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useMemo } from 'react';
 import { Link, useLoaderData, useParams, useSearchParams } from 'react-router';
 
+import { DocumentTitle } from '@/app/components/DocumentTitle';
+import {
+  AccentCard,
+  DataList,
+  DataLoadError,
+  ListGrid,
+  PageContainer,
+  SectionTitle,
+  TextLink,
+} from '@/components';
+import { QualificationChip } from '@/features/scoreboards/components/QualificationChip';
 import { SchoolHistoryResults } from '@/features/scoreboards/components/SchoolHistoryResults';
 import { SchoolIdentity } from '@/features/scoreboards/components/SchoolIdentity';
 import { SchoolParticipationChart } from '@/features/scoreboards/components/SchoolParticipationChart';
@@ -13,23 +24,14 @@ import { selectSchoolHistoryPresentation } from '@/features/scoreboards/model/sc
 
 import type { ScoreboardsArchive } from '@/features/scoreboards';
 import type { RepositoryResult } from '@/lib/data/repository';
+import type { ReactNode } from 'react';
 
-const Page = styled(Container)(({ theme }) => ({
-  paddingBlock: theme.spacing(4),
-  overflowWrap: 'anywhere',
-  [theme.breakpoints.up('md')]: { paddingBlock: theme.spacing(6) },
-}));
-
-const Hero = styled(Card)(({ theme }) => ({
-  minWidth: 0,
+const Hero = styled(AccentCard)(({ theme }) => ({
   padding: theme.spacing(2.5),
-  borderTop: `4px solid ${theme.palette.brand.yellow}`,
-  overflowWrap: 'anywhere',
   [theme.breakpoints.up('md')]: { padding: theme.spacing(4) },
 }));
 
-const Statistics = styled('dl')(({ theme }) => ({
-  margin: 0,
+const Statistics = styled(DataList)(({ theme }) => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
   gap: theme.spacing(2),
@@ -40,8 +42,7 @@ const Statistics = styled('dl')(({ theme }) => ({
     padding: theme.spacing(1.5),
     minWidth: 0,
   },
-  '& dt': { ...theme.typography.caption, color: theme.palette.text.secondary },
-  '& dd': { ...theme.typography.data, fontSize: theme.typography.h6.fontSize, margin: 0 },
+  '& dd': { fontSize: theme.typography.h6.fontSize },
 }));
 
 const Actions = styled(Stack)(({ theme }) => ({
@@ -59,12 +60,7 @@ const BackLink = styled(Link)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
 }));
-const HighlightLink = styled(Link)(({ theme }) => ({
-  ...theme.typography.body1,
-  color: theme.palette.primary.main,
-  textDecoration: 'underline',
-  textUnderlineOffset: '0.15em',
-}));
+const HighlightLink = styled(TextLink)(({ theme }) => theme.typography.body1);
 const ScopeChip = styled(Chip)({ alignSelf: 'flex-start' });
 const Insights = styled('div')(({ theme }) => ({
   display: 'grid',
@@ -91,16 +87,6 @@ const InlineSummary = styled(Stack)(({ theme }) => ({
   flexWrap: 'wrap',
 }));
 
-const Highlights = styled('ol')(({ theme }) => ({
-  display: 'grid',
-  gridTemplateColumns: 'minmax(0, 1fr)',
-  gap: theme.spacing(1.5),
-  listStyle: 'none',
-  margin: 0,
-  padding: 0,
-  [theme.breakpoints.up('md')]: { gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' },
-}));
-
 const Highlight = styled(Paper)(({ theme }) => ({
   minWidth: 0,
   padding: theme.spacing(1.5),
@@ -115,6 +101,21 @@ const HistoryPage = styled('div')(({ theme }) => ({
   display: 'grid',
   gap: theme.spacing(4),
 }));
+
+const StatusSection = ({
+  documentTitle,
+  maxWidth = 'md',
+  children,
+}: {
+  documentTitle: string;
+  maxWidth?: 'md' | 'lg';
+  children: ReactNode;
+}) => (
+  <PageContainer maxWidth={maxWidth}>
+    <DocumentTitle>{documentTitle}</DocumentTitle>
+    <Stack spacing={2}>{children}</Stack>
+  </PageContainer>
+);
 
 export const SchoolHistoryPage = () => {
   const result = useLoaderData<RepositoryResult<ScoreboardsArchive>>();
@@ -144,70 +145,45 @@ export const SchoolHistoryPage = () => {
   const clearParams = `/schools/${encodeURIComponent(schoolId)}`;
   if (result.status === 'invalid' || result.status === 'error') {
     return (
-      <Page maxWidth="lg">
-        <title>Instituciones | Huron Scoreboards</title>
-        <Stack spacing={2}>
-          <Typography component="h1" variant="h4">
-            No pudimos cargar el historial
-          </Typography>
-          <Alert severity="error">La base de datos publicada tiene un problema.</Alert>
-          <ul>
-            {result.issues.map((issue) => (
-              <li key={`${issue.file}:${issue.location}:${issue.message}`}>
-                {issue.file}: {issue.message}
-              </li>
-            ))}
-          </ul>
-          <Button
-            variant="contained"
-            onClick={() => {
-              window.location.reload();
-            }}
-          >
-            Reintentar
-          </Button>
-        </Stack>
-      </Page>
+      <StatusSection documentTitle="Instituciones" maxWidth="lg">
+        <DataLoadError
+          title="No pudimos cargar el historial"
+          headingLevel="h1"
+          message="La base de datos publicada tiene un problema."
+          issues={result.issues}
+        />
+      </StatusSection>
     );
   }
   if (invalidParams) {
     return (
-      <Page maxWidth="md">
-        <title>Selección no disponible | Huron Scoreboards</title>
-        <Stack spacing={2}>
-          <Typography component="h1" variant="h4">
-            Selección no disponible
-          </Typography>
-          <Alert severity="warning">
-            El alcance debe ser único y ser "school" o "institution"; no se admiten otros
-            parámetros.
-          </Alert>
-          <Button component={Link} to={clearParams} variant="contained">
-            Restablecer alcance
-          </Button>
-          <Button component={Link} to="/schools" startIcon={<ArrowBack />}>
-            Volver a instituciones
-          </Button>
-        </Stack>
-      </Page>
+      <StatusSection documentTitle="Selección no disponible">
+        <Typography component="h1" variant="h4">
+          Selección no disponible
+        </Typography>
+        <Alert severity="warning">
+          El alcance debe ser único y ser "school" o "institution"; no se admiten otros parámetros.
+        </Alert>
+        <Button component={Link} to={clearParams} variant="contained">
+          Restablecer alcance
+        </Button>
+        <Button component={Link} to="/schools" startIcon={<ArrowBack />}>
+          Volver a instituciones
+        </Button>
+      </StatusSection>
     );
   }
   if (archive === undefined || school === undefined) {
     return (
-      <Page maxWidth="md">
-        <title>Institución no encontrada | Huron Scoreboards</title>
-        <Stack spacing={2}>
-          <Typography component="h1" variant="h4">
-            Institución no encontrada
-          </Typography>
-          <Alert severity="info">
-            No existe una institución con el identificador "{schoolId}".
-          </Alert>
-          <Button component={Link} to="/schools" startIcon={<ArrowBack />} variant="contained">
-            Volver a instituciones
-          </Button>
-        </Stack>
-      </Page>
+      <StatusSection documentTitle="Institución no encontrada">
+        <Typography component="h1" variant="h4">
+          Institución no encontrada
+        </Typography>
+        <Alert severity="info">No existe una institución con el identificador "{schoolId}".</Alert>
+        <Button component={Link} to="/schools" startIcon={<ArrowBack />} variant="contained">
+          Volver a instituciones
+        </Button>
+      </StatusSection>
     );
   }
   if (selection?.status !== 'found') {
@@ -223,8 +199,8 @@ export const SchoolHistoryPage = () => {
   );
   const highlights = podiums.slice(0, 5);
   return (
-    <Page maxWidth="xl">
-      <title>{`${school.shortName} | Instituciones | Huron Scoreboards`}</title>
+    <PageContainer maxWidth="xl">
+      <DocumentTitle>{`${school.shortName} | Instituciones`}</DocumentTitle>
       <HistoryPage>
         <Hero>
           <Stack spacing={2}>
@@ -276,45 +252,29 @@ export const SchoolHistoryPage = () => {
         </Hero>
 
         <section aria-label="Resumen del historial">
-          <Statistics>
-            <div>
-              <dt>Resultados de equipos</dt>
-              <dd>{history.summary.results}</dd>
-            </div>
-            <div>
-              <dt>Concursos</dt>
-              <dd>{history.summary.contests}</dd>
-            </div>
-            <div>
-              <dt>Equipos</dt>
-              <dd>{history.summary.teams}</dd>
-            </div>
-            <div>
-              <dt>Podios</dt>
-              <dd>{history.summary.podiums}</dd>
-            </div>
-            <div>
-              <dt>Mejor puesto</dt>
-              <dd>
-                {history.summary.bestPlace === undefined
-                  ? 'Sin resultados'
-                  : `#${String(history.summary.bestPlace)}`}
-              </dd>
-            </div>
-          </Statistics>
+          <Statistics
+            items={[
+              { label: 'Resultados de equipos', value: history.summary.results },
+              { label: 'Concursos', value: history.summary.contests },
+              { label: 'Equipos', value: history.summary.teams },
+              { label: 'Podios', value: history.summary.podiums },
+              {
+                label: 'Mejor puesto',
+                value:
+                  history.summary.bestPlace === undefined
+                    ? 'Sin resultados'
+                    : `#${String(history.summary.bestPlace)}`,
+              },
+            ]}
+          />
         </section>
 
         {history.seasons.length > 0 ? (
           <Insights>
             <SchoolTrendChart seasons={history.seasons} />
             <PodiumSection role="region" aria-labelledby="school-podium-heading">
-              <Typography variant="overline" color="primary">
-                Podio
-              </Typography>
-              <Typography id="school-podium-heading" component="h2" variant="h5">
-                Mejores puestos
-              </Typography>
-              <Highlights aria-label="Podios destacados">
+              <SectionTitle id="school-podium-heading" eyebrow="Podio" title="Mejores puestos" />
+              <ListGrid columns={{ md: 3 }} spacing={1.5} aria-label="Podios destacados">
                 {highlights.length > 0 ? (
                   highlights.map(({ contest, row }) => (
                     <li key={`${contest.id}-${row.teamId}`}>
@@ -338,7 +298,7 @@ export const SchoolHistoryPage = () => {
                     </Typography>
                   </li>
                 )}
-              </Highlights>
+              </ListGrid>
             </PodiumSection>
           </Insights>
         ) : (
@@ -402,7 +362,7 @@ export const SchoolHistoryPage = () => {
                     </div>
                     <InlineSummary>
                       <Typography variant="data">Puntaje publicado: {row.score}</Typography>
-                      <Chip size="small" label={row.qualified ? 'Clasificado' : 'No clasificado'} />
+                      <QualificationChip qualified={row.qualified} />
                       <Button
                         component={Link}
                         to={`/scoreboards?season=${String(standing.seasonYear)}&series=${encodeURIComponent(standing.seriesId)}&view=accumulated`}
@@ -420,6 +380,6 @@ export const SchoolHistoryPage = () => {
 
         <SchoolHistoryResults history={history} datasetSource={result.data.source} />
       </HistoryPage>
-    </Page>
+    </PageContainer>
   );
 };

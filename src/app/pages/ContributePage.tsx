@@ -1,15 +1,16 @@
 import Code from '@mui/icons-material/Code';
 import GitHub from '@mui/icons-material/GitHub';
 import Launch from '@mui/icons-material/Launch';
-import { Alert, Button, Container, Divider, Stack, Typography } from '@mui/material';
+import { Alert, Button, Divider, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+import { DocumentTitle } from '@/app/components/DocumentTitle';
 import { appConfig, repositoryLinks } from '@/app/config';
+import { PageContainer } from '@/components';
 import { ContributionSteps, DataRequirements, EvidenceRequirements } from '@/features/contribution';
 
-const Page = styled(Container)(({ theme }) => ({
+const Page = styled(PageContainer)(({ theme }) => ({
   paddingBlock: theme.spacing(5),
-  overflowWrap: 'anywhere',
   [theme.breakpoints.up('md')]: { paddingBlock: theme.spacing(8) },
 }));
 
@@ -53,7 +54,7 @@ const SectionDivider = styled(Divider)(({ theme }) => ({ marginBlock: theme.spac
 
 export const ContributePage = () => (
   <Page maxWidth="lg">
-    <title>Contribuir | Huron Scoreboards</title>
+    <DocumentTitle>Contribuir</DocumentTitle>
     <Intro>
       <Typography variant="overline" color="primary">
         Datos públicos, revisión pública

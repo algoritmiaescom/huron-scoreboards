@@ -3,20 +3,15 @@ import { Button, Card, Chip, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router';
 
+import { DataList, ListGrid, TextLink } from '@/components';
+import { formatCalendarDate } from '@/lib/dates';
+
 import { SchoolIdentity } from './SchoolIdentity';
 import { TeamIdentity } from './TeamIdentity';
 import { contestStageLabel, seriesLabel } from '../model/selectors';
 
 import type { SchoolHistory } from '../model/schoolHistory';
 import type { DatasetSource } from '@/lib/data/repository';
-
-const Results = styled('ol')(({ theme }) => ({
-  display: 'grid',
-  gap: theme.spacing(2),
-  listStyle: 'none',
-  margin: 0,
-  padding: 0,
-}));
 
 const Result = styled(Card)(({ theme }) => ({
   padding: theme.spacing(2),
@@ -30,26 +25,7 @@ const Result = styled(Card)(({ theme }) => ({
   },
 }));
 
-const ResultData = styled('dl')(({ theme }) => ({
-  display: 'flex',
-  flexWrap: 'wrap',
-  gap: theme.spacing(2),
-  margin: 0,
-  '& dt': { ...theme.typography.caption, color: theme.palette.text.secondary },
-  '& dd': { ...theme.typography.data, margin: 0 },
-}));
-
-const ContestLink = styled(Link)(({ theme }) => ({
-  ...theme.typography.body1,
-  color: theme.palette.primary.main,
-  textDecoration: 'underline',
-  textUnderlineOffset: '0.15em',
-}));
-
-const formatDate = (date: string) =>
-  new Intl.DateTimeFormat('es-MX', { dateStyle: 'medium', timeZone: 'UTC' }).format(
-    new Date(`${date}T00:00:00Z`),
-  );
+const ContestLink = styled(TextLink)(({ theme }) => theme.typography.body1);
 
 export const SchoolHistoryResults = ({
   history,
@@ -67,7 +43,7 @@ export const SchoolHistoryResults = ({
         Esta escuela todavía no tiene resultados de concursos publicados.
       </Typography>
     ) : (
-      <Results aria-label="Resultados de concursos">
+      <ListGrid aria-label="Resultados de concursos">
         {history.contests.toReversed().map(({ contest, row }) => (
           <li key={`${contest.id}-${row.teamId}`}>
             <Result>
@@ -79,7 +55,7 @@ export const SchoolHistoryResults = ({
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {contest.seasonYear} · {seriesLabel(contest.seriesId)} ·{' '}
-                  {contestStageLabel(contest.stage)} · {formatDate(contest.date)}
+                  {contestStageLabel(contest.stage)} · {formatCalendarDate(contest.date, 'medium')}
                 </Typography>
                 <TeamIdentity team={row.team} />
               </Stack>
@@ -92,20 +68,13 @@ export const SchoolHistoryResults = ({
                 />
               </Stack>
               <Stack spacing={1}>
-                <ResultData>
-                  <div>
-                    <dt>Puesto</dt>
-                    <dd>#{row.place}</dd>
-                  </div>
-                  <div>
-                    <dt>Resueltos</dt>
-                    <dd>{row.solved}</dd>
-                  </div>
-                  <div>
-                    <dt>Penalización</dt>
-                    <dd>{row.penalty} min</dd>
-                  </div>
-                </ResultData>
+                <DataList
+                  items={[
+                    { label: 'Puesto', value: `#${String(row.place)}` },
+                    { label: 'Resueltos', value: row.solved },
+                    { label: 'Penalización', value: `${String(row.penalty)} min` },
+                  ]}
+                />
                 <Button
                   component={Link}
                   to={`/scoreboards?contest=${encodeURIComponent(contest.id)}`}
@@ -118,7 +87,7 @@ export const SchoolHistoryResults = ({
             </Result>
           </li>
         ))}
-      </Results>
+      </ListGrid>
     )}
   </section>
 );

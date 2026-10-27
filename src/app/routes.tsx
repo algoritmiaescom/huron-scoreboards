@@ -1,11 +1,7 @@
 import { Navigate } from 'react-router';
 
 import { AppShell } from '@/app/components/AppShell';
-import { LazyContributePage } from '@/app/pages/LazyContributePage';
-import { LazyMediaPage } from '@/app/pages/LazyMediaPage';
-import { LazySchoolHistoryPage } from '@/app/pages/LazySchoolHistoryPage';
-import { LazySchoolsPage } from '@/app/pages/LazySchoolsPage';
-import { LazyScoreboardsPage } from '@/app/pages/LazyScoreboardsPage';
+import { lazyPage } from '@/app/pages/lazyPage';
 import {
   AppErrorPage,
   NotFoundPage,
@@ -26,6 +22,18 @@ const revalidateArchive: ShouldRevalidateFunction = ({
     ? false
     : defaultShouldRevalidate;
 
+const ScoreboardsPage = lazyPage(
+  async () => (await import('@/app/pages/ScoreboardsPage')).ScoreboardsPage,
+);
+const SchoolHistoryPage = lazyPage(
+  async () => (await import('@/app/pages/SchoolHistoryPage')).SchoolHistoryPage,
+);
+const SchoolsPage = lazyPage(async () => (await import('@/app/pages/SchoolsPage')).SchoolsPage);
+const MediaPage = lazyPage(async () => (await import('@/app/pages/MediaPage')).MediaPage);
+const ContributePage = lazyPage(
+  async () => (await import('@/app/pages/ContributePage')).ContributePage,
+);
+
 export const routes: RouteObject[] = [
   {
     Component: AppShell,
@@ -38,32 +46,32 @@ export const routes: RouteObject[] = [
         loader: loadScoreboards,
         shouldRevalidate: revalidateArchive,
         ErrorBoundary: RouteErrorPage,
-        Component: LazyScoreboardsPage,
+        Component: ScoreboardsPage,
       },
       {
         path: 'schools/:schoolId',
         loader: loadScoreboards,
         shouldRevalidate: revalidateArchive,
         ErrorBoundary: RouteErrorPage,
-        Component: LazySchoolHistoryPage,
+        Component: SchoolHistoryPage,
       },
       {
         path: 'schools',
         loader: loadScoreboards,
         shouldRevalidate: revalidateArchive,
         ErrorBoundary: RouteErrorPage,
-        Component: LazySchoolsPage,
+        Component: SchoolsPage,
       },
       {
         path: 'media',
         loader: loadMediaPage,
         ErrorBoundary: RouteErrorPage,
-        Component: LazyMediaPage,
+        Component: MediaPage,
       },
       {
         path: 'contribute',
         ErrorBoundary: RouteErrorPage,
-        Component: LazyContributePage,
+        Component: ContributePage,
       },
       { path: '*', Component: NotFoundPage },
     ],

@@ -1,15 +1,11 @@
 import { Card, CardContent, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+import { ListGrid, SectionTitle } from '@/components';
+
 import type { SchoolHistory } from '../model/schoolHistory';
 
-const SeasonList = styled('ol')(({ theme }) => ({
-  display: 'grid',
-  gap: theme.spacing(2),
-  listStyle: 'none',
-  margin: theme.spacing(3, 0, 0),
-  padding: 0,
-}));
+const SeasonList = styled(ListGrid)(({ theme }) => ({ marginTop: theme.spacing(3) }));
 
 const SeasonHeader = styled('div')(({ theme }) => ({
   display: 'flex',
@@ -44,12 +40,7 @@ export const SchoolParticipationChart = ({ seasons }: { seasons: SchoolHistory['
   return (
     <Card>
       <CardContent>
-        <Typography variant="overline" color="primary">
-          Volumen
-        </Typography>
-        <Typography component="h2" variant="h5">
-          Participación y problemas resueltos
-        </Typography>
+        <SectionTitle eyebrow="Volumen" title="Participación y problemas resueltos" />
         <SeasonList aria-label="Participación y problemas resueltos por temporada">
           {seasons.map(({ seasonYear, teams, solved }) => (
             <li key={seasonYear}>

@@ -6,6 +6,8 @@ import { Avatar, Card, CardContent, Chip, IconButton, Stack, Typography } from '
 import { styled } from '@mui/material/styles';
 import { useState } from 'react';
 
+import { formatMexicoCityDateTime } from '@/lib/dates';
+
 import type { Post, PostSource } from '../model/schemas';
 
 const MediaFrame = styled('div')(({ theme }) => ({
@@ -129,13 +131,6 @@ const sourceLabels: Record<PostSource, string> = {
   linkedin: 'LinkedIn',
 };
 
-const formatPostedAt = (value: string) =>
-  new Intl.DateTimeFormat('es-MX', {
-    dateStyle: 'medium',
-    timeStyle: 'short',
-    timeZone: 'America/Mexico_City',
-  }).format(new Date(value));
-
 export const MediaPostCard = ({ post }: { post: Post }) => {
   const [assetIndex, setAssetIndex] = useState(0);
   const [failedImage, setFailedImage] = useState<string>();
@@ -215,7 +210,7 @@ export const MediaPostCard = ({ post }: { post: Post }) => {
                 <AuthorName>{authorName}</AuthorName>
               )}
               <Typography color="text.secondary" variant="caption" component="p">
-                @{post.author.username} · {formatPostedAt(post.postedAt)}
+                @{post.author.username} · {formatMexicoCityDateTime(post.postedAt)}
               </Typography>
             </AuthorDetails>
           </Author>

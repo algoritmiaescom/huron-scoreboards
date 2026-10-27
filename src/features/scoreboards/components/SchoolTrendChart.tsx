@@ -1,6 +1,8 @@
 import { Card, CardContent, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+import { DataList, ListGrid, SectionTitle } from '@/components';
+
 import type { SchoolHistory } from '../model/schoolHistory';
 
 const Chart = styled('svg')(({ theme }) => ({
@@ -17,24 +19,19 @@ const Chart = styled('svg')(({ theme }) => ({
   },
 }));
 
-const Values = styled('ol')(({ theme }) => ({
-  display: 'grid',
+const Values = styled(ListGrid)(({ theme }) => ({
   gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 10rem), 1fr))',
-  gap: theme.spacing(1.5),
-  listStyle: 'none',
-  padding: 0,
-  margin: theme.spacing(2, 0, 0),
+  marginTop: theme.spacing(2),
 }));
 
-const Season = styled('dl')(({ theme }) => ({
+const Season = styled(DataList)(({ theme }) => ({
   padding: theme.spacing(1.5),
   display: 'grid',
   gridTemplateColumns: '1fr auto',
   gap: theme.spacing(0.5, 1),
   border: `1px solid ${theme.palette.divider}`,
   borderRadius: theme.shape.borderRadius,
-  '& dt': { ...theme.typography.caption, color: theme.palette.text.secondary },
-  '& dd': { ...theme.typography.data, margin: 0 },
+  '& > div': { display: 'contents' },
 }));
 
 const rankTicks = (maxRank: number) => {
@@ -67,12 +64,7 @@ export const SchoolTrendChart = ({ seasons }: { seasons: SchoolHistory['seasons'
   return (
     <Card>
       <CardContent>
-        <Typography variant="overline" color="primary">
-          Tendencia
-        </Typography>
-        <Typography component="h2" variant="h5">
-          Mejor puesto por temporada
-        </Typography>
+        <SectionTitle eyebrow="Tendencia" title="Mejor puesto por temporada" />
         <Typography color="text.secondary" variant="body2">
           Un valor menor es mejor. Enfoca o pasa el cursor sobre un punto para ver su valor.
         </Typography>
@@ -126,21 +118,18 @@ export const SchoolTrendChart = ({ seasons }: { seasons: SchoolHistory['seasons'
             </g>
           ))}
         </Chart>
-        <Values aria-label="Valores exactos de la tendencia">
+        <Values spacing={1.5} aria-label="Valores exactos de la tendencia">
           {seasons.map(({ seasonYear, bestPlace, results, contests, podiums }) => (
             <li key={seasonYear}>
-              <Season>
-                <dt>Temporada</dt>
-                <dd>{seasonYear}</dd>
-                <dt>Mejor puesto</dt>
-                <dd>#{bestPlace}</dd>
-                <dt>Participaciones</dt>
-                <dd>{results}</dd>
-                <dt>Concursos</dt>
-                <dd>{contests}</dd>
-                <dt>Podios</dt>
-                <dd>{podiums.length}</dd>
-              </Season>
+              <Season
+                items={[
+                  { label: 'Temporada', value: seasonYear },
+                  { label: 'Mejor puesto', value: `#${String(bestPlace)}` },
+                  { label: 'Participaciones', value: results },
+                  { label: 'Concursos', value: contests },
+                  { label: 'Podios', value: podiums.length },
+                ]}
+              />
             </li>
           ))}
         </Values>

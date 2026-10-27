@@ -1,27 +1,15 @@
 import Launch from '@mui/icons-material/Launch';
 import Tag from '@mui/icons-material/Tag';
-import {
-  Alert,
-  Button,
-  Card,
-  CardContent,
-  Chip,
-  Container,
-  Stack,
-  Typography,
-} from '@mui/material';
+import { Alert, Button, Card, CardContent, Chip, Container, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link, useLoaderData, useSearchParams } from 'react-router';
 
+import { DocumentTitle } from '@/app/components/DocumentTitle';
+import { DataLoadError, ListGrid, PageContainer, SectionTitle } from '@/components';
 import { MediaPostCard } from '@/features/media/components/MediaPostCard';
+import { formatCalendarDate } from '@/lib/dates';
 
 import type { MediaPageData } from '@/app/repositories/loadMediaPage';
-
-const Page = styled(Container)(({ theme }) => ({
-  paddingBlock: theme.spacing(4),
-  overflowWrap: 'anywhere',
-  [theme.breakpoints.up('md')]: { paddingBlock: theme.spacing(6) },
-}));
 
 const Hero = styled('header')(({ theme }) => ({
   position: 'relative',
@@ -106,17 +94,6 @@ const ContestSelect = styled('select')(({ theme }) => ({
   },
 }));
 
-const PostGrid = styled('ol')(({ theme }) => ({
-  display: 'grid',
-  gridTemplateColumns: 'minmax(0, 1fr)',
-  gap: theme.spacing(2),
-  listStyle: 'none',
-  margin: 0,
-  padding: 0,
-  [theme.breakpoints.up('md')]: { gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' },
-  [theme.breakpoints.up('lg')]: { gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' },
-}));
-
 const EmptyCard = styled(Card)(({ theme }) => ({
   paddingBlock: theme.spacing(7),
   textAlign: 'center',
@@ -131,17 +108,6 @@ const EmptyContent = styled(CardContent)(({ theme }) => ({
 const SourceNote = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(3),
 }));
-
-const IssueList = styled('ul')(({ theme }) => ({
-  marginBlock: theme.spacing(1),
-  paddingInlineStart: theme.spacing(3),
-}));
-
-const formatDate = (date: string) =>
-  new Intl.DateTimeFormat('es-MX', {
-    dateStyle: 'long',
-    timeZone: 'UTC',
-  }).format(new Date(`${date}T00:00:00Z`));
 
 export const MediaPage = () => {
   const {
@@ -169,14 +135,14 @@ export const MediaPage = () => {
   const selectedEvent = feed.status === 'found' ? feed.record.event : undefined;
   const subtitle =
     selectedEvent !== undefined
-      ? `${selectedEvent.name} · ${formatDate(selectedEvent.date)}${selectedEvent.location === undefined ? '' : ` · ${selectedEvent.location}`}`
+      ? `${selectedEvent.name} · ${formatCalendarDate(selectedEvent.date)}${selectedEvent.location === undefined ? '' : ` · ${selectedEvent.location}`}`
       : selectedContest === undefined
         ? 'Aún no hay concursos realizados en el archivo.'
-        : `${selectedContest.name} · ${formatDate(selectedContest.date)}`;
+        : `${selectedContest.name} · ${formatCalendarDate(selectedContest.date)}`;
 
   return (
     <>
-      <title>Comunidad | Huron Scoreboards</title>
+      <DocumentTitle>Comunidad</DocumentTitle>
       <Hero>
         <HeroContent maxWidth="xl">
           <HeroEyebrow variant="overline">
@@ -190,52 +156,31 @@ export const MediaPage = () => {
         </HeroContent>
       </Hero>
 
-      <Page maxWidth="xl">
+      <PageContainer maxWidth="xl">
         {scoreboards.status === 'invalid' || scoreboards.status === 'error' ? (
-          <Stack spacing={2}>
-            <Typography component="h2" variant="h4">
-              No se pudo cargar el archivo de competencias
-            </Typography>
-            <Alert severity="error">
-              El feed requiere validar las competencias archivadas antes de elegir el evento más
-              reciente.
-              <IssueList>
-                {scoreboards.issues.map((issue) => (
-                  <li key={`${issue.file}:${issue.location}:${issue.message}`}>
-                    {issue.file}: {issue.message}
-                  </li>
-                ))}
-              </IssueList>
-            </Alert>
-          </Stack>
+          <DataLoadError
+            title="No se pudo cargar el archivo de competencias"
+            message="El feed requiere validar las competencias archivadas antes de elegir el evento más reciente."
+            issues={scoreboards.issues}
+          />
         ) : media.status === 'blocked' ? (
           <Alert severity="error">El archivo de publicaciones quedó bloqueado.</Alert>
         ) : media.status === 'invalid' || media.status === 'error' ? (
-          <Stack spacing={2}>
-            <Typography component="h2" variant="h4">
-              No se pudo cargar el archivo de publicaciones
-            </Typography>
-            <Alert severity="error">
-              El contenido archivado no superó la validación.
-              <IssueList>
-                {media.issues.map((issue) => (
-                  <li key={`${issue.file}:${issue.location}:${issue.message}`}>
-                    {issue.file}: {issue.message}
-                  </li>
-                ))}
-              </IssueList>
-            </Alert>
-          </Stack>
+          <DataLoadError
+            title="No se pudo cargar el archivo de publicaciones"
+            message="El contenido archivado no superó la validación."
+            issues={media.issues}
+          />
         ) : (
           <FeedSection aria-labelledby="media-feed-heading">
             <FeedHeader>
               <div>
-                <Typography variant="overline" color="primary">
-                  Publicaciones sociales
-                </Typography>
-                <Typography id="media-feed-heading" component="h2" variant="h4">
-                  Desde la comunidad
-                </Typography>
+                <SectionTitle
+                  id="media-feed-heading"
+                  eyebrow="Publicaciones sociales"
+                  title="Desde la comunidad"
+                  variant="h4"
+                />
               </div>
               <Typography variant="body2" color="text.secondary">
                 Fuentes: X · Instagram · Facebook · YouTube · LinkedIn
@@ -268,7 +213,7 @@ export const MediaPage = () => {
                       );
                       return (
                         <option key={contest.id} value={contest.id}>
-                          {contest.name} · {formatDate(contest.date)}
+                          {contest.name} · {formatCalendarDate(contest.date)}
                           {hasMedia ? '' : ' · sin publicaciones archivadas'}
                         </option>
                       );
@@ -286,7 +231,8 @@ export const MediaPage = () => {
                 Elige una competencia archivada para continuar.
               </Alert>
             ) : feed.status === 'found' && feed.record.posts.length > 0 ? (
-              <PostGrid
+              <ListGrid
+                columns={{ md: 2, lg: 3 }}
                 aria-label={`Publicaciones de ${selectedContest?.name ?? 'la competencia seleccionada'}`}
               >
                 {feed.record.posts.map((post) => (
@@ -294,7 +240,7 @@ export const MediaPage = () => {
                     <MediaPostCard post={post} />
                   </li>
                 ))}
-              </PostGrid>
+              </ListGrid>
             ) : (
               <EmptyCard>
                 <EmptyContent>
@@ -330,7 +276,7 @@ export const MediaPage = () => {
             </SourceNote>
           </FeedSection>
         )}
-      </Page>
+      </PageContainer>
     </>
   );
 };

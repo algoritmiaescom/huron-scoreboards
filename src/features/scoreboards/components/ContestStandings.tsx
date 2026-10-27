@@ -1,6 +1,5 @@
 import {
   Alert,
-  Card,
   Table,
   TableBody,
   TableCell,
@@ -11,9 +10,12 @@ import {
 } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
 
+import { DataList, ListGrid, ScrollRegion } from '@/components';
+
 import { ProblemResultCell } from './ProblemResultCell';
 import { ProblemResults } from './ProblemResults';
 import { SchoolIdentity } from './SchoolIdentity';
+import { StandingCard } from './StandingCard';
 import { TeamIdentity } from './TeamIdentity';
 
 import type { Contest } from '../model/schemas';
@@ -23,11 +25,7 @@ import type { selectContestRows } from '../model/selectors';
 const widths = { place: 72, team: 200, school: 240, problem: 100, summary: 120 };
 const identityWidth = widths.place + widths.team + widths.school;
 
-const ScrollRegion = styled('div')(({ theme }) => ({
-  overflow: 'auto',
-  maxHeight: '72dvh',
-  border: `1px solid ${theme.palette.divider}`,
-  borderRadius: theme.shape.borderRadius,
+const StandingsScrollRegion = styled(ScrollRegion)(({ theme }) => ({
   position: 'relative',
   '& [role="img"]': {
     scrollMarginLeft: identityWidth + 8,
@@ -61,28 +59,6 @@ const StandingsTable = styled(Table, {
   '& thead [data-identity-column]': { zIndex: 3 },
 }));
 
-const Cards = styled('ol')(({ theme }) => ({
-  listStyle: 'none',
-  padding: 0,
-  margin: 0,
-  display: 'grid',
-  gap: theme.spacing(2),
-}));
-const MobileCard = styled(Card)(({ theme }) => ({
-  padding: theme.spacing(2),
-  minWidth: 0,
-  overflowWrap: 'anywhere',
-  '& > * + *': { marginTop: theme.spacing(2) },
-}));
-const Totals = styled('dl')(({ theme }) => ({
-  display: 'flex',
-  flexWrap: 'wrap',
-  gap: theme.spacing(2),
-  margin: 0,
-  '& dd': { ...theme.typography.data, margin: 0 },
-  '& dt': { ...theme.typography.caption, color: theme.palette.text.secondary },
-}));
-
 export const ContestStandings = ({
   rows,
   contest,
@@ -100,38 +76,31 @@ export const ContestStandings = ({
         <Alert severity="info">
           La vista móvil agrupa los problemas por equipo y conserva todos los resultados.
         </Alert>
-        <Cards aria-label={`Clasificación de ${contest.name}`}>
+        <ListGrid aria-label={`Clasificación de ${contest.name}`}>
           {rows.map((row) => (
             <li key={row.teamId}>
-              <MobileCard>
-                <Typography variant="data">Puesto #{row.place}</Typography>
-                <TeamIdentity team={row.team} />
-                <SchoolIdentity school={row.school} />
-                <Totals>
-                  <div>
-                    <dt>Resueltos</dt>
-                    <dd>{row.solved}</dd>
-                  </div>
-                  <div>
-                    <dt>Penalización</dt>
-                    <dd>{row.penalty} min</dd>
-                  </div>
-                </Totals>
+              <StandingCard row={row}>
+                <DataList
+                  items={[
+                    { label: 'Resueltos', value: row.solved },
+                    { label: 'Penalización', value: `${String(row.penalty)} min` },
+                  ]}
+                />
                 <ProblemResults
                   problems={contest.problems}
                   results={row.results}
                   firstSolvedLabels={row.firstSolvedLabels}
                   teamName={row.team.name}
                 />
-              </MobileCard>
+              </StandingCard>
             </li>
           ))}
-        </Cards>
+        </ListGrid>
       </>
     );
   }
   return (
-    <ScrollRegion role="region" aria-label="Clasificación con desplazamiento" tabIndex={0}>
+    <StandingsScrollRegion label="Clasificación con desplazamiento">
       <StandingsTable
         problemCount={contest.problems.length}
         aria-label={`Clasificación de ${contest.name}`}
@@ -207,6 +176,6 @@ export const ContestStandings = ({
           ))}
         </TableBody>
       </StandingsTable>
-    </ScrollRegion>
+    </StandingsScrollRegion>
   );
 };

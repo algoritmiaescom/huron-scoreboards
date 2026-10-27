@@ -1,17 +1,11 @@
 import Search from '@mui/icons-material/Search';
-import {
-  Alert,
-  Button,
-  Container,
-  InputAdornment,
-  Stack,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Alert, Button, InputAdornment, Stack, TextField, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useMemo } from 'react';
 import { useLoaderData, useSearchParams } from 'react-router';
 
+import { DocumentTitle } from '@/app/components/DocumentTitle';
+import { DataLoadError, ListGrid, PageContainer } from '@/components';
 import { SchoolSummaryCard } from '@/features/scoreboards/components/SchoolSummaryCard';
 import {
   filterSchoolDirectory,
@@ -21,9 +15,8 @@ import {
 import type { ScoreboardsArchive } from '@/features/scoreboards';
 import type { RepositoryResult } from '@/lib/data/repository';
 
-const Page = styled(Container)(({ theme }) => ({
+const Page = styled(PageContainer)(({ theme }) => ({
   paddingBlock: theme.spacing(6),
-  overflowWrap: 'anywhere',
   [theme.breakpoints.up('md')]: { paddingBlock: theme.spacing(10) },
 }));
 
@@ -61,18 +54,6 @@ const SearchPanel = styled('div')(({ theme }) => ({
   boxShadow: theme.shadows[3],
 }));
 
-const Grid = styled('ul')(({ theme }) => ({
-  display: 'grid',
-  gridTemplateColumns: 'minmax(0, 1fr)',
-  gap: theme.spacing(3),
-  padding: 0,
-  margin: 0,
-  listStyle: 'none',
-  '& > li': { minWidth: 0 },
-  [theme.breakpoints.up('sm')]: { gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' },
-  [theme.breakpoints.up('lg')]: { gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' },
-}));
-
 export const SchoolsPage = () => {
   const result = useLoaderData<RepositoryResult<ScoreboardsArchive>>();
   const [params, setParams] = useSearchParams();
@@ -92,7 +73,7 @@ export const SchoolsPage = () => {
   };
   return (
     <Page maxWidth="xl">
-      <title>Instituciones | Huron Scoreboards</title>
+      <DocumentTitle>Instituciones</DocumentTitle>
       <Stack spacing={6}>
         <Hero>
           <Typography variant="overline" color="primary">
@@ -105,26 +86,10 @@ export const SchoolsPage = () => {
           </Typography>
         </Hero>
         {result.status === 'invalid' || result.status === 'error' ? (
-          <Stack spacing={2}>
-            <Alert severity="error">
-              No pudimos cargar las instituciones. La base de datos publicada tiene un problema.
-            </Alert>
-            <ul>
-              {result.issues.map((issue) => (
-                <li key={`${issue.file}:${issue.location}:${issue.message}`}>
-                  {issue.file}: {issue.message}
-                </li>
-              ))}
-            </ul>
-            <Button
-              variant="contained"
-              onClick={() => {
-                window.location.reload();
-              }}
-            >
-              Reintentar
-            </Button>
-          </Stack>
+          <DataLoadError
+            message="No pudimos cargar las instituciones. La base de datos publicada tiene un problema."
+            issues={result.issues}
+          />
         ) : summaries.length === 0 ? (
           <Alert severity="info">Todavía no hay instituciones publicadas en este archivo.</Alert>
         ) : (
@@ -183,13 +148,18 @@ export const SchoolsPage = () => {
                     <Button onClick={clearSearch}>Limpiar búsqueda</Button>
                   </Stack>
                 ) : (
-                  <Grid aria-label="Instituciones y unidades">
+                  <ListGrid
+                    as="ul"
+                    columns={{ sm: 2, lg: 3 }}
+                    spacing={3}
+                    aria-label="Instituciones y unidades"
+                  >
                     {filtered.map((summary) => (
                       <li key={summary.school.id}>
                         <SchoolSummaryCard summary={summary} />
                       </li>
                     ))}
-                  </Grid>
+                  </ListGrid>
                 )}
               </>
             )}

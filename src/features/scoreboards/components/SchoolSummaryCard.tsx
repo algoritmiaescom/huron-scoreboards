@@ -2,6 +2,8 @@ import SchoolOutlined from '@mui/icons-material/SchoolOutlined';
 import { Card, Chip, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+import { DataList } from '@/components';
+
 import { SchoolIdentity } from './SchoolIdentity';
 
 import type { SchoolSummary } from '../model/schoolDirectory';
@@ -37,15 +39,12 @@ const SchoolBadge = styled('div')(({ theme }) => ({
   transform: 'rotate(-6deg)',
 }));
 
-const Stats = styled('dl')(({ theme }) => ({
-  margin: 0,
+const Stats = styled(DataList)(({ theme }) => ({
   marginTop: 'auto',
   paddingTop: theme.spacing(1),
   display: 'grid',
   gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
-  gap: theme.spacing(2),
-  '& dt': { ...theme.typography.caption, color: theme.palette.text.secondary },
-  '& dd': { ...theme.typography.data, fontSize: theme.typography.h6.fontSize, margin: 0 },
+  '& dd': { fontSize: theme.typography.h6.fontSize },
 }));
 
 export const SchoolSummaryCard = ({ summary }: { summary: SchoolSummary }) => {
@@ -70,16 +69,15 @@ export const SchoolSummaryCard = ({ summary }: { summary: SchoolSummary }) => {
           ? 'Incluye resultados propios y de todas sus unidades académicas.'
           : 'Solo resultados de esta escuela, sin agregar otras unidades.'}
       </Typography>
-      <Stats>
-        <div>
-          <dt>Mejor puesto</dt>
-          <dd>{bestPlace === undefined ? 'Sin resultados' : `#${String(bestPlace)}`}</dd>
-        </div>
-        <div>
-          <dt>Resultados de equipos</dt>
-          <dd>{results}</dd>
-        </div>
-      </Stats>
+      <Stats
+        items={[
+          {
+            label: 'Mejor puesto',
+            value: bestPlace === undefined ? 'Sin resultados' : `#${String(bestPlace)}`,
+          },
+          { label: 'Resultados de equipos', value: results },
+        ]}
+      />
       <Typography variant="caption" color="text.secondary">
         {contests === 1 ? '1 concurso publicado' : `${String(contests)} concursos publicados`}
       </Typography>
