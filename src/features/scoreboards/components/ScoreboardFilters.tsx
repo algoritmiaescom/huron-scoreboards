@@ -12,7 +12,9 @@ const Controls = styled('div')(({ theme }) => ({
   display: 'grid',
   gridTemplateColumns: 'minmax(0, 1fr)',
   gap: theme.spacing(2),
+  alignItems: 'end',
   '& > *': { minWidth: 0 },
+  '& .MuiInputBase-root': { minHeight: theme.spacing(5.5) },
   [theme.breakpoints.up('sm')]: {
     gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
   },
@@ -23,7 +25,7 @@ const Controls = styled('div')(({ theme }) => ({
 
 const Toggle = styled(ToggleButton)(({ theme }) => ({
   gap: theme.spacing(1),
-  minHeight: theme.spacing(5.5),
+  height: theme.spacing(5.5),
   textTransform: 'none',
 }));
 

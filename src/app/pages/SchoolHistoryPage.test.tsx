@@ -22,6 +22,15 @@ const statistic = (label: string) => {
   return value;
 };
 
+// The banner's best place precedes the per-season values in the trend chart.
+const bestPlace = () => {
+  const value = screen.getAllByText('Mejor puesto')[0]?.parentElement?.querySelector('dd');
+  if (value === null || value === undefined) {
+    throw new Error('Missing best place value');
+  }
+  return value;
+};
+
 const renderHistory = (
   path: string,
   data: RepositoryResult<ScoreboardsArchive> = { status: 'ready', data: archive },
@@ -57,7 +66,7 @@ describe('school history workflow', () => {
       ),
     };
     renderHistory('/schools/unit', { status: 'ready', data });
-    await screen.findByRole('heading', { name: 'UNIT' });
+    await screen.findByRole('heading', { level: 1, name: 'Unit' });
     expect(document.title).toBe('UNIT | Instituciones | Huron Scoreboards');
     expect(screen.getByText('Esta escuela únicamente')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Ver institución UNI' })).toHaveAttribute(
@@ -67,7 +76,7 @@ describe('school history workflow', () => {
     expect(statistic('Resultados de equipos')).toHaveTextContent('2');
     expect(statistic('Concursos')).toHaveTextContent('1');
     expect(statistic('Podios')).toHaveTextContent('1');
-    expect(statistic('Mejor puesto')).toHaveTextContent('#1');
+    expect(bestPlace()).toHaveTextContent('#1');
     expect(
       screen.getByRole('img', { name: /Tendencia del mejor puesto por temporada/ }),
     ).toHaveAttribute('aria-labelledby', 'school-trend-title school-trend-description');
@@ -105,7 +114,7 @@ describe('school history workflow', () => {
   it('aggregates an institution and exposes each descendant scope without duplicating contest results', async () => {
     const user = userEvent.setup();
     const { router } = renderHistory('/schools/uni');
-    await screen.findByRole('heading', { name: 'UNI' });
+    await screen.findByRole('heading', { level: 1, name: 'University' });
     expect(screen.getByText('Alcance institucional')).toBeInTheDocument();
     expect(screen.getByText(/Resultados directos de UNI y de sus unidades/)).toBeInTheDocument();
     expect(statistic('Resultados de equipos')).toHaveTextContent('3');
@@ -128,7 +137,7 @@ describe('school history workflow', () => {
       status: 'ready',
       data: { ...archive, contests: [], seasonStandings: [archive.seasonStandings[0]] },
     });
-    await screen.findByRole('heading', { name: 'UNIT' });
+    await screen.findByRole('heading', { level: 1, name: 'Unit' });
     expect(statistic('Resultados de equipos')).toHaveTextContent('0');
     expect(statistic('Podios')).toHaveTextContent('0');
     expect(
@@ -172,8 +181,8 @@ describe('school history workflow', () => {
 
   it('keeps zero-result schools discoverable without manufacturing a trend or placement', async () => {
     renderHistory('/schools/unused');
-    await screen.findByRole('heading', { name: 'N' });
-    expect(statistic('Mejor puesto')).toHaveTextContent('Sin resultados');
+    await screen.findByRole('heading', { level: 1, name: 'No registrations' });
+    expect(bestPlace()).toHaveTextContent('—');
     expect(
       screen.getByText('Esta escuela todavía no tiene resultados de concursos publicados.'),
     ).toBeInTheDocument();
@@ -192,7 +201,9 @@ describe('school history workflow', () => {
     expect(await screen.findByRole('alert')).toHaveTextContent('El alcance debe ser único');
     await user.click(screen.getByRole('link', { name: 'Restablecer alcance' }));
     expect(router.state.location.search).toBe('');
-    expect(await screen.findByRole('heading', { name: 'UNI' })).toBeInTheDocument();
+    expect(
+      await screen.findByRole('heading', { level: 1, name: 'University' }),
+    ).toBeInTheDocument();
   });
 
   it('orders multi-season trend points by season and reverses the rank axis', async () => {
@@ -208,7 +219,7 @@ describe('school history workflow', () => {
       status: 'ready',
       data: { ...archive, teams: [...archive.teams, priorTeam], contests: [contest, priorContest] },
     });
-    await screen.findByRole('heading', { name: 'UNIT' });
+    await screen.findByRole('heading', { level: 1, name: 'Unit' });
     const chart = screen.getByRole('img', { name: /Tendencia del mejor puesto por temporada/ });
     const points = chart.querySelectorAll('[data-season]');
     expect(points).toHaveLength(2);

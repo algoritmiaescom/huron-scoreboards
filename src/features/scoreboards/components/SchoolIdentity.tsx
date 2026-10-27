@@ -1,9 +1,10 @@
-import SchoolOutlined from '@mui/icons-material/SchoolOutlined';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useState } from 'react';
 
-import { TextLink } from '@/components';
+import { CardLink, TextLink } from '@/components';
+
+import { SchoolLogo } from './SchoolLogo';
 
 import type { School } from '../model/schemas';
 
@@ -15,40 +16,26 @@ const Identity = styled('div')(({ theme }) => ({
   overflowWrap: 'anywhere',
 }));
 
-const Logo = styled('img')(({ theme }) => ({
-  width: theme.spacing(5),
-  height: theme.spacing(5),
-  objectFit: 'contain',
-  flexShrink: 0,
-}));
-
 const IdentityText = styled('div')({ minWidth: 0 });
 
 export const SchoolIdentity = ({
   school,
   href,
+  stretchLink = false,
   heading,
 }: {
   school: School;
   href?: string;
+  /** Stretch the link over the enclosing card so the whole card is clickable. */
+  stretchLink?: boolean;
   heading?: 'h1' | 'h2';
 }) => {
   const [failedLogo, setFailedLogo] = useState<string>();
-  const name = href ? <TextLink to={href}>{school.shortName}</TextLink> : school.shortName;
+  const Anchor = stretchLink ? CardLink : TextLink;
+  const name = href ? <Anchor to={href}>{school.shortName}</Anchor> : school.shortName;
   return (
     <Identity>
-      {school.logo !== undefined && failedLogo !== school.logo ? (
-        <Logo
-          src={school.logo.startsWith('logos/') ? `/${school.logo}` : school.logo}
-          alt={`Logo de ${school.officialName}`}
-          onError={() => {
-            console.error(`Could not load school logo: ${school.id}`, school.logo);
-            setFailedLogo(school.logo);
-          }}
-        />
-      ) : (
-        <SchoolOutlined aria-hidden="true" />
-      )}
+      <SchoolLogo school={school} onUnavailable={setFailedLogo} />
       <IdentityText>
         <Typography
           component={heading ?? 'p'}

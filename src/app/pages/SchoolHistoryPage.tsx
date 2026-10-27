@@ -1,14 +1,14 @@
-import { ArrowBack, Launch } from '@mui/icons-material';
+import { ArrowBack, Launch, LocationOnOutlined } from '@mui/icons-material';
 import { Alert, Button, Card, Chip, Paper, Stack, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { alpha, styled } from '@mui/material/styles';
 import { useMemo } from 'react';
 import { Link, useLoaderData, useParams, useSearchParams } from 'react-router';
 
 import { DocumentTitle } from '@/app/components/DocumentTitle';
 import {
-  AccentCard,
   DataList,
   DataLoadError,
+  HeroBanner,
   ListGrid,
   PageContainer,
   SectionTitle,
@@ -16,7 +16,7 @@ import {
 } from '@/components';
 import { QualificationChip } from '@/features/scoreboards/components/QualificationChip';
 import { SchoolHistoryResults } from '@/features/scoreboards/components/SchoolHistoryResults';
-import { SchoolIdentity } from '@/features/scoreboards/components/SchoolIdentity';
+import { SchoolLogo } from '@/features/scoreboards/components/SchoolLogo';
 import { SchoolParticipationChart } from '@/features/scoreboards/components/SchoolParticipationChart';
 import { SchoolTrendChart } from '@/features/scoreboards/components/SchoolTrendChart';
 import { TeamIdentity } from '@/features/scoreboards/components/TeamIdentity';
@@ -24,18 +24,74 @@ import { selectSchoolHistoryPresentation } from '@/features/scoreboards/model/sc
 
 import type { ScoreboardsArchive } from '@/features/scoreboards';
 import type { RepositoryResult } from '@/lib/data/repository';
+import type { Theme } from '@mui/material/styles';
 import type { ReactNode } from 'react';
 
-const Hero = styled(AccentCard)(({ theme }) => ({
-  padding: theme.spacing(2.5),
-  [theme.breakpoints.up('md')]: { padding: theme.spacing(4) },
+const Hero = styled(HeroBanner)(({ theme }) => ({
+  paddingBlock: theme.spacing(5),
+  [theme.breakpoints.up('md')]: { paddingBlock: theme.spacing(8) },
+  '& [data-hero-title]': {
+    marginTop: 0,
+    fontSize: '2.6rem',
+    [theme.breakpoints.up('md')]: { fontSize: '4.5rem' },
+  },
+}));
+
+const onBanner = (theme: Theme) => theme.palette.getContrastText(theme.palette.brand.navy);
+
+const BackButton = styled(Button)(({ theme }) => ({
+  color: onBanner(theme),
+  opacity: 0.75,
+})) as typeof Button;
+
+const NameChip = styled(Chip)(({ theme }) => ({
+  color: onBanner(theme),
+  borderColor: onBanner(theme),
+  opacity: 0.75,
+}));
+
+const LogoTile = styled('span')(({ theme }) => ({
+  display: 'grid',
+  placeItems: 'center',
+  padding: theme.spacing(0.5),
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: theme.palette.common.white,
+  color: theme.palette.brand.navy,
+}));
+
+const Location = styled(Typography)(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  gap: theme.spacing(1),
+  marginTop: theme.spacing(2),
+  color: onBanner(theme),
+  opacity: 0.7,
+}));
+
+const BestPlace = styled(DataList)(({ theme }) => ({
+  flexShrink: 0,
+  '& dt': {
+    ...theme.typography.overline,
+    color: alpha(onBanner(theme), 0.6),
+  },
+  '& dd': {
+    fontSize: '4rem',
+    fontWeight: 700,
+    lineHeight: 1.2,
+    color: theme.palette.brand.yellow,
+  },
+}));
+
+const Content = styled(PageContainer)(({ theme }) => ({
+  paddingBlock: theme.spacing(4),
+  [theme.breakpoints.up('md')]: { paddingBlock: theme.spacing(4) },
 }));
 
 const Statistics = styled(DataList)(({ theme }) => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
   gap: theme.spacing(2),
-  [theme.breakpoints.up('md')]: { gridTemplateColumns: 'repeat(5, minmax(0, 1fr))' },
+  [theme.breakpoints.up('lg')]: { gridTemplateColumns: 'repeat(4, minmax(0, 1fr))' },
   '& > div': {
     border: `1px solid ${theme.palette.divider}`,
     borderRadius: theme.shape.borderRadius,
@@ -52,16 +108,7 @@ const Actions = styled(Stack)(({ theme }) => ({
   [theme.breakpoints.up('sm')]: { flexDirection: 'row', flexWrap: 'wrap' },
 }));
 
-const BackLink = styled(Link)(({ theme }) => ({
-  ...theme.typography.button,
-  alignSelf: 'flex-start',
-  color: theme.palette.primary.main,
-  textDecoration: 'none',
-  display: 'flex',
-  alignItems: 'center',
-}));
 const HighlightLink = styled(TextLink)(({ theme }) => theme.typography.body1);
-const ScopeChip = styled(Chip)({ alignSelf: 'flex-start' });
 const Insights = styled('div')(({ theme }) => ({
   display: 'grid',
   gridTemplateColumns: 'minmax(0, 1fr)',
@@ -199,27 +246,61 @@ export const SchoolHistoryPage = () => {
   );
   const highlights = podiums.slice(0, 5);
   return (
-    <PageContainer maxWidth="xl">
+    <>
       <DocumentTitle>{`${school.shortName} | Instituciones`}</DocumentTitle>
-      <HistoryPage>
-        <Hero>
-          <Stack spacing={2}>
-            <BackLink to="/schools">
-              <ArrowBack fontSize="small" />
-              Todas las instituciones
-            </BackLink>
-            <SchoolIdentity school={school} heading="h1" />
-            <ScopeChip
+      <Hero
+        asideBreakpoint="md"
+        navigation={
+          <BackButton component={Link} to="/schools" startIcon={<ArrowBack />}>
+            Todas las instituciones
+          </BackButton>
+        }
+        badges={
+          <>
+            {school.logo !== undefined && (
+              <LogoTile>
+                <SchoolLogo school={school} />
+              </LogoTile>
+            )}
+            <Chip
               label={scope === 'institution' ? 'Alcance institucional' : 'Esta escuela únicamente'}
-              variant="outlined"
+              color="secondary"
             />
-            <Typography color="text.secondary">
+            <NameChip label={school.shortName} variant="outlined" />
+          </>
+        }
+        title={school.officialName}
+        aside={
+          <BestPlace
+            items={[
+              {
+                label: 'Mejor puesto',
+                value:
+                  history.summary.bestPlace === undefined
+                    ? '—'
+                    : `#${String(history.summary.bestPlace)}`,
+              },
+            ]}
+          />
+        }
+      >
+        {(school.city !== undefined || school.state !== undefined) && (
+          <Location>
+            <LocationOnOutlined aria-hidden="true" />
+            {[school.city, school.state].filter((part) => part !== undefined).join(', ')}
+          </Location>
+        )}
+      </Hero>
+      <Content maxWidth="xl">
+        <HistoryPage>
+          <Stack spacing={2}>
+            <Alert severity={scope === 'institution' ? 'info' : 'warning'}>
               {scope === 'institution'
                 ? children.length > 0
                   ? `Resultados directos de ${school.shortName} y de sus unidades académicas descendientes.`
                   : 'Resultados de equipos registrados con esta institución.'
                 : 'Solo resultados de equipos registrados directamente con esta escuela.'}
-            </Typography>
+            </Alert>
             {result.data.source === 'mock' && (
               <Alert severity="warning">
                 Datos de demostración: los resultados y estadísticas son inventados.
@@ -249,137 +330,130 @@ export const SchoolHistoryPage = () => {
               )}
             </Actions>
           </Stack>
-        </Hero>
 
-        <section aria-label="Resumen del historial">
-          <Statistics
-            items={[
-              { label: 'Resultados de equipos', value: history.summary.results },
-              { label: 'Concursos', value: history.summary.contests },
-              { label: 'Equipos', value: history.summary.teams },
-              { label: 'Podios', value: history.summary.podiums },
-              {
-                label: 'Mejor puesto',
-                value:
-                  history.summary.bestPlace === undefined
-                    ? 'Sin resultados'
-                    : `#${String(history.summary.bestPlace)}`,
-              },
-            ]}
-          />
-        </section>
+          <section aria-label="Resumen del historial">
+            <Statistics
+              items={[
+                { label: 'Resultados de equipos', value: history.summary.results },
+                { label: 'Concursos', value: history.summary.contests },
+                { label: 'Equipos', value: history.summary.teams },
+                { label: 'Podios', value: history.summary.podiums },
+              ]}
+            />
+          </section>
 
-        {history.seasons.length > 0 ? (
-          <Insights>
-            <SchoolTrendChart seasons={history.seasons} />
-            <PodiumSection role="region" aria-labelledby="school-podium-heading">
-              <SectionTitle id="school-podium-heading" eyebrow="Podio" title="Mejores puestos" />
-              <ListGrid columns={{ md: 3 }} spacing={1.5} aria-label="Podios destacados">
-                {highlights.length > 0 ? (
-                  highlights.map(({ contest, row }) => (
-                    <li key={`${contest.id}-${row.teamId}`}>
-                      <Highlight variant="outlined">
-                        <Typography variant="overline">
-                          {contest.seasonYear} · Puesto #{row.place}
+          {history.seasons.length > 0 ? (
+            <Insights>
+              <SchoolTrendChart seasons={history.seasons} />
+              <PodiumSection role="region" aria-labelledby="school-podium-heading">
+                <SectionTitle id="school-podium-heading" eyebrow="Podio" title="Mejores puestos" />
+                <ListGrid columns={{ md: 3 }} spacing={1.5} aria-label="Podios destacados">
+                  {highlights.length > 0 ? (
+                    highlights.map(({ contest, row }) => (
+                      <li key={`${contest.id}-${row.teamId}`}>
+                        <Highlight variant="outlined">
+                          <Typography variant="overline">
+                            {contest.seasonYear} · Puesto #{row.place}
+                          </Typography>
+                          <TeamIdentity team={row.team} />
+                          <HighlightLink
+                            to={`/scoreboards?contest=${encodeURIComponent(contest.id)}`}
+                          >
+                            {contest.name}
+                          </HighlightLink>
+                        </Highlight>
+                      </li>
+                    ))
+                  ) : (
+                    <li>
+                      <Typography color="text.secondary">
+                        Aún no hay puestos de podio registrados.
+                      </Typography>
+                    </li>
+                  )}
+                </ListGrid>
+              </PodiumSection>
+            </Insights>
+          ) : (
+            <Alert severity="info">
+              Todavía no hay resultados de concursos publicados para construir una tendencia.
+            </Alert>
+          )}
+
+          {history.seasons.length > 0 && <SchoolParticipationChart seasons={history.seasons} />}
+
+          <section aria-labelledby="school-seasons-heading">
+            <Typography id="school-seasons-heading" component="h2" variant="h4">
+              Temporadas y podios
+            </Typography>
+            <Typography color="text.secondary">
+              Cada participación cuenta una fila de un equipo en un concurso. Si compite en varios,
+              cuenta una vez por concurso.
+            </Typography>
+            {history.seasons.length === 0 ? (
+              <Typography color="text.secondary">
+                No hay temporadas con concursos publicados.
+              </Typography>
+            ) : (
+              <Stack spacing={2}>
+                {history.seasons.map((season) => (
+                  <SeasonCard key={season.seasonYear} variant="outlined">
+                    <Typography component="h3" variant="h5">
+                      {season.seasonYear}
+                    </Typography>
+                    <Typography color="text.secondary">
+                      {season.teams} equipos · {season.contests} concursos · {season.results}{' '}
+                      participaciones · {season.podiums.length} podios · mejor puesto #
+                      {season.bestPlace}
+                    </Typography>
+                  </SeasonCard>
+                ))}
+              </Stack>
+            )}
+          </section>
+
+          {history.accumulated.length > 0 && (
+            <section aria-labelledby="school-accumulated-heading">
+              <Typography id="school-accumulated-heading" component="h2" variant="h4">
+                Clasificaciones acumuladas publicadas
+              </Typography>
+              <Typography color="text.secondary">
+                Se muestran por separado y no cuentan como concursos, resultados ni participación.
+              </Typography>
+              <AccumulatedStack spacing={2}>
+                {history.accumulated.map(({ standing, row }) => (
+                  <AccumulatedCard
+                    key={`${String(standing.seasonYear)}-${standing.seriesId}-${row.teamId}`}
+                    variant="outlined"
+                  >
+                    <SummaryRow spacing={2}>
+                      <div>
+                        <Typography component="h3" variant="h6">
+                          {standing.seasonYear} · {standing.seriesId} · puesto #{row.place}
                         </Typography>
                         <TeamIdentity team={row.team} />
-                        <HighlightLink
-                          to={`/scoreboards?contest=${encodeURIComponent(contest.id)}`}
+                      </div>
+                      <InlineSummary>
+                        <Typography variant="data">Puntaje publicado: {row.score}</Typography>
+                        <QualificationChip qualified={row.qualified} />
+                        <Button
+                          component={Link}
+                          to={`/scoreboards?season=${String(standing.seasonYear)}&series=${encodeURIComponent(standing.seriesId)}&view=accumulated`}
+                          endIcon={<Launch />}
                         >
-                          {contest.name}
-                        </HighlightLink>
-                      </Highlight>
-                    </li>
-                  ))
-                ) : (
-                  <li>
-                    <Typography color="text.secondary">
-                      Aún no hay puestos de podio registrados.
-                    </Typography>
-                  </li>
-                )}
-              </ListGrid>
-            </PodiumSection>
-          </Insights>
-        ) : (
-          <Alert severity="info">
-            Todavía no hay resultados de concursos publicados para construir una tendencia.
-          </Alert>
-        )}
-
-        {history.seasons.length > 0 && <SchoolParticipationChart seasons={history.seasons} />}
-
-        <section aria-labelledby="school-seasons-heading">
-          <Typography id="school-seasons-heading" component="h2" variant="h4">
-            Temporadas y podios
-          </Typography>
-          <Typography color="text.secondary">
-            Cada participación cuenta una fila de un equipo en un concurso. Si compite en varios,
-            cuenta una vez por concurso.
-          </Typography>
-          {history.seasons.length === 0 ? (
-            <Typography color="text.secondary">
-              No hay temporadas con concursos publicados.
-            </Typography>
-          ) : (
-            <Stack spacing={2}>
-              {history.seasons.map((season) => (
-                <SeasonCard key={season.seasonYear} variant="outlined">
-                  <Typography component="h3" variant="h5">
-                    {season.seasonYear}
-                  </Typography>
-                  <Typography color="text.secondary">
-                    {season.teams} equipos · {season.contests} concursos · {season.results}{' '}
-                    participaciones · {season.podiums.length} podios · mejor puesto #
-                    {season.bestPlace}
-                  </Typography>
-                </SeasonCard>
-              ))}
-            </Stack>
+                          Ver clasificación
+                        </Button>
+                      </InlineSummary>
+                    </SummaryRow>
+                  </AccumulatedCard>
+                ))}
+              </AccumulatedStack>
+            </section>
           )}
-        </section>
 
-        {history.accumulated.length > 0 && (
-          <section aria-labelledby="school-accumulated-heading">
-            <Typography id="school-accumulated-heading" component="h2" variant="h4">
-              Clasificaciones acumuladas publicadas
-            </Typography>
-            <Typography color="text.secondary">
-              Se muestran por separado y no cuentan como concursos, resultados ni participación.
-            </Typography>
-            <AccumulatedStack spacing={2}>
-              {history.accumulated.map(({ standing, row }) => (
-                <AccumulatedCard
-                  key={`${String(standing.seasonYear)}-${standing.seriesId}-${row.teamId}`}
-                  variant="outlined"
-                >
-                  <SummaryRow spacing={2}>
-                    <div>
-                      <Typography component="h3" variant="h6">
-                        {standing.seasonYear} · {standing.seriesId} · puesto #{row.place}
-                      </Typography>
-                      <TeamIdentity team={row.team} />
-                    </div>
-                    <InlineSummary>
-                      <Typography variant="data">Puntaje publicado: {row.score}</Typography>
-                      <QualificationChip qualified={row.qualified} />
-                      <Button
-                        component={Link}
-                        to={`/scoreboards?season=${String(standing.seasonYear)}&series=${encodeURIComponent(standing.seriesId)}&view=accumulated`}
-                        endIcon={<Launch />}
-                      >
-                        Ver clasificación
-                      </Button>
-                    </InlineSummary>
-                  </SummaryRow>
-                </AccumulatedCard>
-              ))}
-            </AccumulatedStack>
-          </section>
-        )}
-
-        <SchoolHistoryResults history={history} datasetSource={result.data.source} />
-      </HistoryPage>
-    </PageContainer>
+          <SchoolHistoryResults history={history} datasetSource={result.data.source} />
+        </HistoryPage>
+      </Content>
+    </>
   );
 };

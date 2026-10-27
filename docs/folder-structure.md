@@ -25,7 +25,9 @@ src/
 `src/components/` is exported through the `@/components` barrel and holds layout and
 presentation primitives shared by several screens and features: `PageContainer` (page padding),
 `ListGrid` (unstyled responsive grid list), `DataList` (label/value `dl`), `AccentCard` (brand
-accent card), `SectionTitle` (eyebrow plus heading), `TextLink` (underlined router link),
+accent card), `HeroBanner` (navy brand banner that opens every top-level page and school history),
+`SectionTitle` (eyebrow plus heading), `TextLink` (underlined router link), `CardLink`
+(stretched link that makes a whole card clickable and hoverable),
 `ScrollRegion` (focusable scrollable region), and `DataLoadError`/`RetryButton` (validation-issue
 alert with reload). Restyle them with `styled()` instead of copying their styles. Pages set
 `<DocumentTitle>` from `src/app/components/`, which appends the site name.
@@ -49,7 +51,8 @@ Their isolated browser composition lives under `src/test/fixtures/`, not `src/ap
 
 `SchoolsPage` composes URL search and repository states for `/schools`.
 `SchoolHistoryPage` composes school scope and history for `/schools/:schoolId`; it uses the reusable `SchoolTrendChart` and
-`SchoolHistoryResults` components. `SchoolSummaryCard` reuses `SchoolIdentity` with a heading;
+`SchoolHistoryResults` components. `SchoolSummaryCard` reuses `SchoolIdentity` with a heading
+and a stretched card link; `SchoolLogo` renders a logo with an icon fallback;
 the `schoolDirectory` and `schoolHistory` models derive scope-aware summaries and history metrics.
 Route-only pieces are imported directly to keep the public entry point narrow. The shared
 desktop/mobile navigation links to the index; cards and unit histories link to history pages.

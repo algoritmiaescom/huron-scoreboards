@@ -1,12 +1,12 @@
 import CloseOutlined from '@mui/icons-material/CloseOutlined';
 import Search from '@mui/icons-material/Search';
 import { Alert, Button, Paper, Stack, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { alpha, styled } from '@mui/material/styles';
 import { useEffect, useMemo, useState } from 'react';
 import { useLoaderData, useSearchParams } from 'react-router';
 
 import { DocumentTitle } from '@/app/components/DocumentTitle';
-import { DataLoadError, PageContainer } from '@/components';
+import { DataLoadError, HeroBanner, PageContainer } from '@/components';
 import {
   ContestHeader,
   resolveScoreboardSelection,
@@ -26,6 +26,76 @@ const Section = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(2),
   [theme.breakpoints.up('md')]: { padding: theme.spacing(3) },
 }));
+
+const Hero = styled(HeroBanner)(({ theme }) => {
+  const gridLine = alpha(theme.palette.common.white, 0.045);
+  return {
+    '&::before': {
+      content: '""',
+      position: 'absolute',
+      inset: 0,
+      backgroundImage: `linear-gradient(${gridLine} 1px, transparent 1px), linear-gradient(90deg, ${gridLine} 1px, transparent 1px)`,
+      backgroundSize: '48px 48px',
+      maskImage: 'linear-gradient(90deg, black, transparent 75%)',
+    },
+    '&::after': {
+      content: '""',
+      position: 'absolute',
+      width: 360,
+      height: 360,
+      borderRadius: '50%',
+      backgroundColor: theme.palette.brand.yellow,
+      opacity: 0.12,
+      right: -80,
+      top: -180,
+    },
+    '& [data-hero-title]': {
+      fontSize: '3.2rem',
+      [theme.breakpoints.up('md')]: { fontSize: '6.4rem' },
+    },
+  };
+});
+
+const HeroLogo = styled('img')(({ theme }) => ({
+  alignSelf: 'flex-start',
+  width: 150,
+  padding: theme.spacing(3),
+  filter: 'brightness(0) invert(1)',
+  opacity: 0.9,
+  border: `1px solid ${alpha(theme.palette.common.white, 0.18)}`,
+  borderRadius: Number(theme.shape.borderRadius) * 5,
+  boxShadow: `0 24px 80px ${alpha(theme.palette.common.black, 0.28)}`,
+  [theme.breakpoints.up('md')]: { width: 220, transform: 'rotate(3deg)' },
+  [theme.breakpoints.up('lg')]: { alignSelf: 'auto' },
+}));
+
+const Content = styled(PageContainer)(({ theme }) => ({
+  paddingBlock: theme.spacing(3),
+  [theme.breakpoints.up('md')]: { paddingBlock: theme.spacing(5) },
+}));
+
+const Overlap = styled('div')(({ theme }) => ({
+  position: 'relative',
+  zIndex: 2,
+  marginTop: theme.spacing(-6),
+  [theme.breakpoints.up('md')]: { marginTop: theme.spacing(-8) },
+}));
+
+/** Introduces the standings with the archive banner; status states omit it to keep their message in view. */
+const ScoreboardsLayout = ({ children }: { children: ReactNode }) => (
+  <>
+    <Hero
+      eyebrow="01 — Archivo del ICPC México"
+      title="Cada solución tiene una historia."
+      titleComponent="p"
+      description="Explora clasificaciones oficiales por temporadas y series, preservadas por la comunidad."
+      aside={<HeroLogo src="/brand/icpc-mexico.png" alt="ICPC Masters México" />}
+    />
+    <Content maxWidth="xl">
+      <Overlap>{children}</Overlap>
+    </Content>
+  </>
+);
 
 const StatusSection = ({
   maxWidth = 'md',
@@ -152,27 +222,27 @@ export const ScoreboardsPage = () => {
   if (selection.status === 'accumulated') {
     const { standing } = selection;
     return (
-      <PageContainer maxWidth="xl">
+      <ScoreboardsLayout>
         <DocumentTitle>{`Acumulada ${String(standing.seasonYear)} - ${seriesLabel(standing.seriesId)}`}</DocumentTitle>
         <Stack spacing={3}>
-          <AccumulatedHeader standing={standing} datasetSource={archive.source} />
           {selector}
+          <AccumulatedHeader standing={standing} datasetSource={archive.source} />
           <AccumulatedResults archive={archive} standing={standing} />
         </Stack>
-      </PageContainer>
+      </ScoreboardsLayout>
     );
   }
 
   const contest = selection.contest;
 
   return (
-    <PageContainer maxWidth="xl">
+    <ScoreboardsLayout>
       <DocumentTitle>{contest.name}</DocumentTitle>
       <Stack spacing={3}>
-        <ContestHeader contest={contest} datasetSource={archive.source} />
         {selector}
+        <ContestHeader contest={contest} datasetSource={archive.source} />
         <ContestResults archive={archive} contest={contest} />
       </Stack>
-    </PageContainer>
+    </ScoreboardsLayout>
   );
 };

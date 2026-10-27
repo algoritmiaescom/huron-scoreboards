@@ -1,3 +1,4 @@
+import ArrowForward from '@mui/icons-material/ArrowForward';
 import SchoolOutlined from '@mui/icons-material/SchoolOutlined';
 import { Card, Chip, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -9,6 +10,7 @@ import { SchoolIdentity } from './SchoolIdentity';
 import type { SchoolSummary } from '../model/schoolDirectory';
 
 const Summary = styled(Card)(({ theme }) => ({
+  position: 'relative',
   height: '100%',
   padding: theme.spacing(3),
   display: 'flex',
@@ -39,9 +41,16 @@ const SchoolBadge = styled('div')(({ theme }) => ({
   transform: 'rotate(-6deg)',
 }));
 
-const Stats = styled(DataList)(({ theme }) => ({
+const Footer = styled('div')(({ theme }) => ({
   marginTop: 'auto',
   paddingTop: theme.spacing(1),
+  display: 'flex',
+  alignItems: 'center',
+  gap: theme.spacing(2),
+}));
+
+const Stats = styled(DataList)(({ theme }) => ({
+  flex: 1,
   display: 'grid',
   gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
   '& dd': { fontSize: theme.typography.h6.fontSize },
@@ -63,21 +72,24 @@ export const SchoolSummaryCard = ({ summary }: { summary: SchoolSummary }) => {
         </SchoolBadge>
         <Chip label={scopeLabel} size="small" variant="outlined" />
       </BadgeRow>
-      <SchoolIdentity school={school} heading="h2" href={`/schools/${school.id}`} />
+      <SchoolIdentity school={school} heading="h2" href={`/schools/${school.id}`} stretchLink />
       <Typography variant="caption" color="text.secondary">
         {scope === 'institution' && units > 0
           ? 'Incluye resultados propios y de todas sus unidades académicas.'
           : 'Solo resultados de esta escuela, sin agregar otras unidades.'}
       </Typography>
-      <Stats
-        items={[
-          {
-            label: 'Mejor puesto',
-            value: bestPlace === undefined ? 'Sin resultados' : `#${String(bestPlace)}`,
-          },
-          { label: 'Resultados de equipos', value: results },
-        ]}
-      />
+      <Footer>
+        <Stats
+          items={[
+            {
+              label: 'Mejor puesto',
+              value: bestPlace === undefined ? 'Sin resultados' : `#${String(bestPlace)}`,
+            },
+            { label: 'Resultados de equipos', value: results },
+          ]}
+        />
+        <ArrowForward color="primary" aria-hidden="true" />
+      </Footer>
       <Typography variant="caption" color="text.secondary">
         {contests === 1 ? '1 concurso publicado' : `${String(contests)} concursos publicados`}
       </Typography>

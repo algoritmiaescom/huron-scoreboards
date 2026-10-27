@@ -159,7 +159,7 @@ export const createAppTheme = (mode: PaletteMode) => {
               borderColor: alpha(dark ? white : navy, dark ? 0.12 : 0.1),
               boxShadow: `0 1px 2px ${alpha(navy, 0.05)}, 0 12px 34px ${alpha(navy, dark ? 0.12 : 0.07)}`,
               transition: 'transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease',
-              '&:has(.MuiCardActionArea-root):hover': {
+              '&:has(.MuiCardActionArea-root, [data-card-link]):hover': {
                 transform: 'translateY(-5px)',
                 borderColor: alpha(blue, 0.5),
                 boxShadow: `0 22px 48px ${alpha(navy, dark ? 0.26 : 0.14)}`,

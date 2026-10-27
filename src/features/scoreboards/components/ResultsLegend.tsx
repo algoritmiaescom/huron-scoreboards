@@ -7,6 +7,7 @@ import { styled } from '@mui/material/styles';
 
 const Legend = styled('aside')(({ theme }) => ({
   padding: theme.spacing(2),
+  backgroundColor: theme.palette.background.paper,
   border: `1px solid ${theme.palette.divider}`,
   borderRadius: theme.shape.borderRadius,
 }));

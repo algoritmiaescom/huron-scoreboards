@@ -1,23 +1,17 @@
 import Launch from '@mui/icons-material/Launch';
 import Tag from '@mui/icons-material/Tag';
-import { Alert, Button, Card, CardContent, Chip, Container, Typography } from '@mui/material';
+import { Alert, Button, Card, CardContent, Chip, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link, useLoaderData, useSearchParams } from 'react-router';
 
 import { DocumentTitle } from '@/app/components/DocumentTitle';
-import { DataLoadError, ListGrid, PageContainer, SectionTitle } from '@/components';
+import { DataLoadError, HeroBanner, ListGrid, PageContainer, SectionTitle } from '@/components';
 import { MediaPostCard } from '@/features/media/components/MediaPostCard';
 import { formatCalendarDate } from '@/lib/dates';
 
 import type { MediaPageData } from '@/app/repositories/loadMediaPage';
 
-const Hero = styled('header')(({ theme }) => ({
-  position: 'relative',
-  overflow: 'hidden',
-  color: theme.palette.getContrastText(theme.palette.brand.navy),
-  backgroundColor: theme.palette.brand.navy,
-  paddingBlock: theme.spacing(7),
-  [theme.breakpoints.up('md')]: { paddingBlock: theme.spacing(11) },
+const Hero = styled(HeroBanner)(({ theme }) => ({
   '&::after': {
     content: '""',
     position: 'absolute',
@@ -28,26 +22,12 @@ const Hero = styled('header')(({ theme }) => ({
     right: -80,
     top: -190,
     opacity: 0.12,
-    pointerEvents: 'none',
   },
-}));
-
-const HeroContent = styled(Container)({ position: 'relative', zIndex: 1 });
-const HeroEyebrow = styled(Typography)(({ theme }) => ({
-  color: theme.palette.brand.yellow,
-}));
-const HeroTitle = styled('h1')(({ theme }) => ({
-  ...theme.typography.h1,
-  maxWidth: '16ch',
-  marginTop: theme.spacing(1),
-  marginBottom: 0,
-  [theme.breakpoints.down('sm')]: { fontSize: '2.6rem' },
-  [theme.breakpoints.up('md')]: { fontSize: '5rem' },
-}));
-const HeroDescription = styled(Typography)(({ theme }) => ({
-  marginTop: theme.spacing(2),
-  color: theme.palette.getContrastText(theme.palette.brand.navy),
-  opacity: 0.72,
+  '& [data-hero-title]': {
+    maxWidth: '16ch',
+    [theme.breakpoints.down('sm')]: { fontSize: '2.6rem' },
+    [theme.breakpoints.up('md')]: { fontSize: '5rem' },
+  },
 }));
 const Hashtag = styled(Chip)(({ theme }) => ({
   marginTop: theme.spacing(3),
@@ -143,17 +123,14 @@ export const MediaPage = () => {
   return (
     <>
       <DocumentTitle>Comunidad</DocumentTitle>
-      <Hero>
-        <HeroContent maxWidth="xl">
-          <HeroEyebrow variant="overline">
-            Publicaciones archivadas · {selectedContest?.name ?? 'competencia'}
-          </HeroEyebrow>
-          <HeroTitle>Más allá de la clasificación.</HeroTitle>
-          <HeroDescription>{subtitle}</HeroDescription>
-          {selectedEvent !== undefined && (
-            <Hashtag icon={<Tag />} label={selectedEvent.hashtag} color="secondary" />
-          )}
-        </HeroContent>
+      <Hero
+        eyebrow={`Publicaciones archivadas · ${selectedContest?.name ?? 'competencia'}`}
+        title="Más allá de la clasificación."
+        description={subtitle}
+      >
+        {selectedEvent !== undefined && (
+          <Hashtag icon={<Tag />} label={selectedEvent.hashtag} color="secondary" />
+        )}
       </Hero>
 
       <PageContainer maxWidth="xl">
