@@ -256,28 +256,25 @@ Notes on the shape:
 - Social posts have a body, not a title/subtitle/description triple. `title` is optional and only
   for sources that genuinely have one.
 - `media` and `tags` are arrays: posts carry carousels and several hashtags.
-- **`alt` is required.** [Accessibility](accessibility.md) is a release requirement, and alt text
-  cannot be generated from the post, so a contributor must supply it.
+- **`alt` is a required string but may be empty.** Ingestion preserves upstream descriptions and
+  uses `""` when unavailable; contributors can improve them. Empty descriptions do not mean
+  informative media is decorative. [Accessibility](accessibility.md) remains a release requirement.
 - `permalink` is mandatory so the original post is always attributable.
 
-### Posts arrive from two places
+### Ingested and curated posts share one archive
 
-Posts come from a live social API and from optional curated records in the repository. The repo
-records are the fallback and the archive: they keep past events viewable when an API is
-unavailable, rate-limited, or has dropped the content.
+Posts are collected outside the browser through configured Juicer feeds, direct hashtag lookup,
+or both, then normalized into the same validated `Post` used by curated records. GitHub Actions
+proposes append-only changes for review; the browser will read the merged archive through a
+repository interface, never branch on origin or call Juicer.
 
-Both paths must produce the same validated `Post`, so the feature reads them through one
-repository interface and never branches on origin in components.
+Existing posts and manual edits are preserved. Stable event-scoped IDs allow the same upstream
+post to belong to multiple events without violating global uniqueness. Duplicates within an event
+are detected by identity or canonical permalink. Remote media is referenced, not downloaded.
 
-Two consequences worth settling before implementation:
-
-- A static client cannot usually call a social API directly — tokens cannot be shipped in the
-  bundle and CORS normally blocks it. This needs a proxy, a serverless endpoint, or a build-time
-  fetch. That choice is an integration decision and needs an ADR; it also revisits the
-  "no backend" position in [ADR 0005](adr/0005-serve-repository-data-without-a-backend.md).
-- Live fetching introduces genuine server state, which is the trigger
-  [architecture](architecture.md) names for adding an asynchronous state library. Until then, no
-  such library is added.
+See [ADR 0006](adr/0006-ingest-media-through-reviewed-pull-requests.md) for the integration decision
+and [media ingestion](media-ingestion.md) for configuration, limitations, and setup. This does not
+introduce server state into the browser or require an asynchronous state library.
 
 ## Storage
 
@@ -391,4 +388,5 @@ Exit non-zero on any failure.
 
 - **Scoring details for older seasons**, including the penalty value each contest actually used
   and whether contest duration differed.
-- **Which social sources** the live integration will actually support.
+- **Platform coverage**, which depends on the Juicer account and the availability of upstream
+  sources; the current schema supports X, Instagram, Facebook, YouTube, and LinkedIn.

@@ -1,0 +1,15 @@
+{
+  "events": [
+    {
+      "eventId": "2026-mexico-finals",
+      "sources": [
+        { "type": "feed", "feedId": 460310 },
+        {
+          "type": "hashtag",
+          "platforms": ["instagram", "facebook"],
+          "hashtags": ["#ICPCMX2026", "#ICPCMexico"]
+        }
+      ]
+    }
+  ]
+}

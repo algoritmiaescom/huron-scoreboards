@@ -38,9 +38,12 @@ it through a repository interface that returns validated domain objects, so the 
 and future remote source stay replaceable. Validate every record with Zod at the repository
 boundary; the data is community-contributed and must not be trusted.
 
-The media feed reads public posts for the hashtag of the most recent contest. Treat it as an
-external, failable source: the page must degrade to a clear empty or error state without breaking
-the rest of the site.
+Media posts are collected outside the browser through Juicer and proposed as append-only JSON
+changes through reviewed pull requests. The future media repository reads this validated archive;
+there are no live Juicer calls or credentials in the client. Failed ingestion leaves the published
+snapshot intact. The page must still handle an empty or invalid archive without breaking the rest
+of the site. See [ADR 0006](adr/0006-ingest-media-through-reviewed-pull-requests.md) and the
+[operator guide](media-ingestion.md).
 
 ## Future server state
 

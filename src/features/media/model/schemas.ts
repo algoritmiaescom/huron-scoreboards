@@ -18,8 +18,8 @@ export const postAuthorSchema = z.object({
 export const postMediaSchema = z.object({
   type: z.enum(['image', 'video']),
   url: z.url(),
-  // Required: alt text cannot be derived from the post, so a contributor must supply it.
-  alt: z.string().min(1, 'alt text is required for every image and video'),
+  // An empty string means a description is unavailable, not that the media is decorative.
+  alt: z.string(),
 });
 
 export const postSchema = z.object({
@@ -34,11 +34,13 @@ export const postSchema = z.object({
   tags: z.array(z.string().min(1)),
 });
 
+export const hashtagSchema = z.string().regex(/^#[\w]+$/, 'must be a hashtag such as `#GPM2024`');
+
 export const eventSchema = z.object({
   id: mediaIdSchema,
   name: z.string().min(1),
   date: z.iso.date(),
-  hashtag: z.string().regex(/^#[\w]+$/, 'must be a hashtag such as `#GPM2024`'),
+  hashtag: hashtagSchema,
   location: z.string().min(1).optional(),
   // Loose reference: the media feature must not import scoreboards types.
   contestId: z.string().min(1).optional(),
