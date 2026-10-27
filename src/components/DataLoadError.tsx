@@ -1,6 +1,8 @@
 import { Alert, Button, Stack, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+import { formatIssue } from '@/lib/validation/issues';
+
 import type { ValidationIssue } from '@/lib/validation/issues';
 
 const Layout = styled(Stack)({ alignItems: 'flex-start' });
@@ -45,9 +47,7 @@ export const DataLoadError = ({
       {issues.length > 0 && (
         <IssueList>
           {issues.map((issue) => (
-            <li key={`${issue.file}:${issue.location}:${issue.message}`}>
-              {issue.file}: {issue.message}
-            </li>
+            <li key={`${issue.file}:${issue.location}:${issue.message}`}>{formatIssue(issue)}</li>
           ))}
         </IssueList>
       )}

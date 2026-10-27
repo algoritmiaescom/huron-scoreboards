@@ -229,6 +229,14 @@ describe('team and school identities', () => {
       log.mockRestore();
     }
   });
+
+  it.each(['data:image/svg+xml,<svg onload=alert(1) />', 'http://example.com/unit.svg'])(
+    'never uses the unvalidated logo %s as an image source',
+    (logo) => {
+      renderApp(<SchoolIdentity school={{ ...archive.schools[1], logo }} />);
+      expect(screen.queryByRole('img')).not.toBeInTheDocument();
+    },
+  );
 });
 
 describe('contest header and provenance', () => {

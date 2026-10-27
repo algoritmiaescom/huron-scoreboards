@@ -182,7 +182,9 @@ describe('media page', () => {
     expect(
       await screen.findByRole('heading', { name: 'No se pudo cargar el archivo de publicaciones' }),
     ).toBeVisible();
-    expect(screen.getByRole('alert')).toHaveTextContent('media/events/bad.json');
+    expect(screen.getByRole('alert')).toHaveTextContent(
+      'media/events/bad.json posts[0]: invalid alt text',
+    );
     expect(screen.queryByText(/fuente en vivo|API/)).not.toBeInTheDocument();
   });
 

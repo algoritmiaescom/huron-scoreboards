@@ -60,6 +60,7 @@ export const AppProviders = ({
     }
   };
 
+  // React 19 renders a context as its own provider.
   return (
     <ThemeModeContext value={{ mode, toggleMode }}>
       <ThemeProvider theme={themes[mode]}>

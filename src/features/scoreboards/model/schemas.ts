@@ -20,10 +20,11 @@ export const contestStageSchema = z.enum([
 const LOGO_PATH_PATTERN = /^logos\/[a-z0-9]+(?:-[a-z0-9]+)*\.(?:svg|png|webp)$/;
 
 /**
- * Only `http` and `https` are allowed. The value is rendered as an image source, and a plain URL
- * check accepts `javascript:` and `data:`, which community-contributed data must never reach.
+ * Only `https` is allowed. The value is rendered as an image source: a plain URL check accepts
+ * `javascript:` and `data:`, which community-contributed data must never reach, and `http` would
+ * load as mixed content.
  */
-const remoteLogoSchema = z.url({ protocol: /^https?$/ });
+const remoteLogoSchema = z.url({ protocol: /^https$/ });
 
 export const isRemoteLogo = (logo: string): boolean => remoteLogoSchema.safeParse(logo).success;
 
@@ -35,7 +36,7 @@ export const schoolLogoSchema = z
   .string()
   .refine(
     (value) => LOGO_PATH_PATTERN.test(value) || isRemoteLogo(value),
-    'must be a file committed under `public/` and referenced as `logos/ipn-escom.svg`, or an absolute http(s) URL',
+    'must be a file committed under `public/` and referenced as `logos/ipn-escom.svg`, or an absolute https URL',
   );
 
 export const schoolSchema = z.object({

@@ -159,7 +159,7 @@ describe('school index workflow', () => {
       expect(await screen.findByRole('alert')).toHaveTextContent(
         'No pudimos cargar las instituciones',
       );
-      expect(screen.getByText('schools.json: Invalid school')).toBeInTheDocument();
+      expect(screen.getByText('schools.json [0]: Invalid school')).toBeInTheDocument();
       expect(screen.getByRole('button', { name: 'Reintentar' })).toBeInTheDocument();
       expect(screen.queryByRole('article')).not.toBeInTheDocument();
     },

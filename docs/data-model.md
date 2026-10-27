@@ -70,13 +70,14 @@ type School = {
 ```
 
 `logo` is optional and holds either a file committed under `public/` and referenced by the path
-the site serves it from, such as `logos/ipn-escom.svg`, or an absolute `http(s)` URL to a logo the
+the site serves it from, such as `logos/ipn-escom.svg`, or an absolute `https` URL to a logo the
 school hosts itself. One field covers both because a school has one logo; which storage it uses is
 a hosting detail, not a modelling distinction.
 
-Only `http` and `https` are accepted for remote logos. A general URL check also accepts
-`javascript:` and `data:`, and this value is rendered as an image source, so community-contributed
-data must not be able to introduce either.
+Only `https` is accepted for remote logos. A general URL check also accepts `javascript:` and
+`data:`, and this value is rendered as an image source, so community-contributed data must not be
+able to introduce either; `http` would load as mixed content. The logo component re-checks the
+value and shows the fallback icon for anything the schema would reject.
 
 Logos are not required, and most schools will not have one. Every view that shows a school must
 render without a logo rather than reserving a broken image. No alt text is stored: it is derived

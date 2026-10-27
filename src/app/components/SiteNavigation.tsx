@@ -54,6 +54,8 @@ export const SiteNavigation = () => {
   const theme = useTheme();
   const desktop = useMediaQuery(theme.breakpoints.up('md'));
   const [drawerOpen, setDrawerOpen] = useState(false);
+  // Adjusting state during render avoids an extra committed frame with the drawer open; the guard
+  // makes it run once. https://react.dev/learn/you-might-not-need-an-effect#adjusting-some-state-when-a-prop-changes
   if (desktop && drawerOpen) {
     setDrawerOpen(false);
   }
