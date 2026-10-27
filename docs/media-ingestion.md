@@ -137,21 +137,16 @@ event configuration, so one instance can collect multiple sources. Create a new 
 ingestion run to reset its request budget. Tests inject an Axios adapter and retry sleep function;
 they exercise the real Axios request configuration without contacting Juicer.
 
-Use Node 24, npm 11, and `npm ci`. Supply `JUICER_API_KEY` through your local secure environment;
-the script does not automatically load an environment file. To keep the key in a file, copy
-`.env.example` to the ignored `.env`, set the key, and pass the file to `tsx`:
+Use Node 24, npm 11, and `npm ci`. Copy `.env.example` to the ignored `.env` and set
+`JUICER_API_KEY`. Node scripts under `scripts/` load the repository-root `.env` automatically when
+it exists; variables already set in the environment, such as CI secrets, take precedence.
 
 ```sh
 cp .env.example .env
-npx tsx --env-file=.env --tsconfig tsconfig.scripts.json scripts/ingest-media.ts --dry-run
-```
-
-Alternatively, export `JUICER_API_KEY` in your shell and use the npm script:
-
-```sh
 npm run ingest:media -- --dry-run
 npm run ingest:media
 npm run ingest:media -- --config config/media-ingestion.json --dry-run
+npm run ingest:media -- --dry-run --verbose
 npm run validate:data
 ```
 
@@ -159,6 +154,31 @@ Dry-run collects and validates but changes nothing. Both modes print enabled sou
 per-event counts for fetched, added, duplicate, suppressed, date-excluded, and newly imported missing-alt media items. Credentials
 and raw response bodies are not logged. HTTP-200 platform errors, malformed responses, missing
 required domain fields, repeated cursors, and exhausted limits fail the run.
+
+### Troubleshooting
+
+Errors are prefixed with the failing query, for example
+`[event 2026-mexico-finals, hashtag #ICPCMX2026, platform x, page 1]`, followed by the HTTP
+status, Juicer's error code and message, and a hint. Only Juicer's structured error fields are
+shown; other response bodies are never printed. Pass `--verbose` to print one line per request
+attempt, with its path, query parameters, status, and duration. Credentials are never printed and
+pagination cursors are masked.
+
+| Error                              | Likely cause and fix                                                                                    |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `HTTP 401`                         | `JUICER_API_KEY` is missing or invalid; use a permanent dashboard key.                                  |
+| `HTTP 402 insufficient_credits`    | Direct hashtag search spends Data API credits per request. Top up, or rely on feed sources.             |
+| `HTTP 404`                         | `feedId` must be the numeric feed ID from the API, not the feed slug shown in the dashboard URL.        |
+| `platform failure (fetch_timeout)` | Juicer could not reach the platform in time; usually transient, so rerun later.                         |
+| `page limit reached`               | Too many results; set `startingAt`, narrow hashtags/platforms, or raise `maxPages` deliberately.        |
+| `unsupported platform "…"`         | An unfiltered feed contains a platform the archive does not model; filter with `platforms`/`sourceIds`. |
+
+HTTP 402 is the one exception to failing the run: the query is skipped with a warning, and later
+queries of the same source type are skipped without spending requests, while other sources
+continue. Skipped queries are listed in the event summary's `skipped` field, which appears in the
+PR description; in GitHub Actions they also appear as run annotations. Because ingestion is
+append-only, a later run can collect the skipped posts once credits are restored, as long as
+Juicer still returns them.
 
 All configured events are loaded before requests; all proposed changes are validated before
 writing. Each changed file is formatted and replaced atomically. A filesystem failure during

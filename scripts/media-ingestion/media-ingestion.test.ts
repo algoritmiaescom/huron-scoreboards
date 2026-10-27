@@ -10,7 +10,7 @@ import { postMediaSchema } from '@/features/media/model/schemas';
 
 import { configSchema, parseConfig, parseJson, type SourceConfig } from './config';
 import { appendPosts, canonicalPermalink, ingestMedia, normalizePost } from './ingestion';
-import { JuicerClient, toPostSource, type CollectedPost } from './juicer';
+import { JuicerClient, toPostSource, type CollectedPost, type SkippedQuery } from './juicer';
 
 const roots: string[] = [];
 afterEach(async () => {
@@ -371,7 +371,7 @@ describe('Juicer client', () => {
       error: 'HTTP 302',
     },
     { response: () => httpResponse('secret', { status: 401 }), error: 'HTTP 401' },
-    { response: () => httpResponse('secret', { status: 500 }), error: 'after retries' },
+    { response: () => httpResponse('secret', { status: 500 }), error: 'gave up after 1 attempt' },
     { response: () => httpResponse('{'), error: 'invalid JSON' },
     { response: () => json({ data: [], meta: {} }), error: 'Invalid Juicer feed response' },
     {
@@ -386,7 +386,7 @@ describe('Juicer client', () => {
       response: () => json(feedPage([{ ...wirePost(), external_created_at: undefined }])),
       error: 'publication timestamp',
     },
-    { response: () => json(feedPage([], 2, 2)), error: 'unexpected feed page' },
+    { response: () => json(feedPage([], 2, 2)), error: 'feed page 2 when page 1 was requested' },
     { response: () => json(feedPage([], 1, 2)), error: 'page limit reached' },
   ])('rejects failed or incomplete feed responses %#', async ({ response, error }) => {
     const cfg = { ...config(), retries: 0, maxPages: 1 };
@@ -399,6 +399,114 @@ describe('Juicer client', () => {
       ),
     ).rejects.toThrow(error);
     expect(adapter).toHaveBeenCalledTimes(1);
+  });
+
+  it('explains Juicer error bodies with request context and hints', async () => {
+    const cfg = config([{ type: 'hashtag', platforms: ['linkedin'], hashtags: ['#ICPCMX2026'] }]);
+    const body = {
+      error: {
+        code: 'insufficient_credits',
+        message: 'Your API credit balance is too low for this request.',
+        action: { checkout_url: 'https://juicer.io/plans?source=insufficient_credits' },
+      },
+    };
+    const adapter = adapterMock().mockResolvedValue(
+      httpResponse(JSON.stringify(body), { status: 402 }),
+    );
+    const failure = new JuicerClient(cfg, 'secret', { adapter }).collect(
+      cfg.events[0].sources[0],
+      eventConfig(),
+      '#ICPC',
+    );
+    await expect(failure).rejects.toThrow(
+      '[event 2026-finals, hashtag #ICPCMX2026, platform linkedin, page 1] Juicer HTTP 402 insufficient_credits: Your API credit balance is too low for this request.',
+    );
+    await expect(failure).rejects.toThrow('remove hashtag sources');
+    await expect(failure).rejects.toThrow('(https://juicer.io/plans?source=insufficient_credits)');
+  });
+
+  it('skips credit-exhausted queries only when the caller opts in', async () => {
+    const cfg = config([
+      { type: 'hashtag', platforms: ['x', 'linkedin'], hashtags: ['#ICPCMX2026', '#ICPCMexico'] },
+    ]);
+    const credits = httpResponse(JSON.stringify({ error: { code: 'insufficient_credits' } }), {
+      status: 402,
+    });
+    const adapter = adapterMock().mockResolvedValue(credits);
+    const client = new JuicerClient(cfg, 'secret', { adapter });
+    const skipped: SkippedQuery[] = [];
+    const posts = await client.collect(cfg.events[0].sources[0], eventConfig(), '#ICPC', (skip) => {
+      skipped.push(skip);
+    });
+    expect(posts).toEqual([]);
+    // The first 402 is account-wide, so the remaining three queries make no request.
+    expect(adapter).toHaveBeenCalledTimes(1);
+    expect(skipped.map(({ query }) => query)).toEqual([
+      'hashtag #ICPCMX2026, platform x',
+      'hashtag #ICPCMX2026, platform linkedin',
+      'hashtag #ICPCMexico, platform x',
+      'hashtag #ICPCMexico, platform linkedin',
+    ]);
+    expect(skipped[0]?.reason).toMatch(/^Juicer HTTP 402 insufficient_credits\. Hint: /);
+    expect(skipped[3]?.reason).toContain('not requested');
+
+    const feed = config();
+    adapter.mockResolvedValue(json(feedPage()));
+    expect(
+      await client.collect(feed.events[0].sources[0], eventConfig(), '#ICPC', () => undefined),
+    ).toHaveLength(1);
+
+    adapter.mockResolvedValue(httpResponse('', { status: 401 }));
+    await expect(
+      new JuicerClient(cfg, 'secret', { adapter }).collect(
+        cfg.events[0].sources[0],
+        eventConfig(),
+        '#ICPC',
+        () => undefined,
+      ),
+    ).rejects.toThrow('HTTP 401');
+  });
+
+  it('never echoes non-JSON error bodies or the API key', async () => {
+    const cfg = { ...config(), retries: 0 };
+    const adapter = adapterMock().mockResolvedValue(
+      httpResponse(JSON.stringify({ error: { message: 'bad key secret-key' } }), { status: 401 }),
+    );
+    const failure = new JuicerClient(cfg, 'secret-key', { adapter }).collect(
+      cfg.events[0].sources[0],
+      eventConfig(),
+      '#ICPC',
+    );
+    await expect(failure).rejects.toThrow('bad key [REDACTED]');
+    await expect(failure).rejects.toThrow('[event 2026-finals, feed 123, all platforms, page 1]');
+    adapter.mockResolvedValue(httpResponse('<html>secret-key</html>', { status: 404 }));
+    const notFound = new JuicerClient(cfg, 'secret-key', { adapter }).collect(
+      cfg.events[0].sources[0],
+      eventConfig(),
+      '#ICPC',
+    );
+    await expect(notFound).rejects.toThrow(/HTTP 404\. Hint: .*numeric feed ID/);
+    await expect(notFound).rejects.not.toThrow('html');
+  });
+
+  it('logs each attempt without credentials or cursors', async () => {
+    const cfg = config([{ type: 'hashtag', platforms: ['x'] }]);
+    const log = vi.fn<(line: string) => void>();
+    const adapter = adapterMock()
+      .mockResolvedValueOnce(json(dataPage([wirePost('1')], 'opaque-secret-cursor')))
+      .mockResolvedValueOnce(json(dataPage([])));
+    await new JuicerClient(cfg, 'secret', { adapter, log }).collect(
+      cfg.events[0].sources[0],
+      eventConfig(),
+      '#ICPC',
+    );
+    const lines = log.mock.calls.map(([line]) => line);
+    expect(lines).toHaveLength(2);
+    expect(lines[0]).toMatch(
+      /^GET \/v1\/data\/posts\?platforms=Twitter&term=#ICPC&term_type=hashtag \(attempt 1\/3\) -> HTTP 200 in \d+ ms$/,
+    );
+    expect(lines[1]).toContain('cursor=…');
+    expect(lines.join('\n')).not.toMatch(/secret/);
   });
 
   it('enforces request limits and bounded Retry-After', async () => {
@@ -435,8 +543,23 @@ describe('Juicer client', () => {
   });
 
   it.each([
-    { platforms: [], error: 'platform failure' },
-    { platforms: [{ platform: 'Twitter', success: false }], error: 'platform failure' },
+    { platforms: [], error: 'expected exactly one' },
+    { platforms: [{ platform: 'Twitter', success: false }], error: 'Twitter platform failure' },
+    {
+      platforms: [
+        {
+          platform: 'Twitter',
+          success: false,
+          error_code: 'fetch_timeout',
+          message: 'Twitter request timed out.',
+        },
+      ],
+      error: '(fetch_timeout: Twitter request timed out.)',
+    },
+    {
+      platforms: [{ platform: 'Instagram', success: true, has_more: false, next_cursor: null }],
+      error: 'instead of the requested platform',
+    },
     { platforms: [{ platform: 'Twitter', success: true }], error: 'pagination status' },
     {
       platforms: [{ platform: 'Twitter', success: true, has_more: true, next_cursor: null }],
@@ -601,6 +724,36 @@ describe('filesystem ingestion', () => {
     expect(result[0]?.added).toBe(1);
     expect(await readFile(file, 'utf8')).toBe(before);
     expect(await readFile(mockFile, 'utf8')).toBe('mock sentinel');
+  });
+
+  it('records skipped credit-limited sources and keeps other sources', async () => {
+    const { root, file } = await fixture();
+    const cfg = config([
+      { type: 'feed', feedId: 123 },
+      { type: 'hashtag', platforms: ['x'] },
+    ]);
+    const adapter = adapterMock()
+      .mockResolvedValueOnce(json(feedPage()))
+      .mockResolvedValueOnce(
+        httpResponse(JSON.stringify({ error: { code: 'insufficient_credits' } }), { status: 402 }),
+      );
+    const warnings: string[] = [];
+    const [summary] = await ingestMedia({
+      root,
+      config: cfg,
+      apiKey: 'secret',
+      dependencies: { adapter },
+      onWarning: (warning) => {
+        warnings.push(warning);
+      },
+    });
+    expect(summary.added).toBe(1);
+    expect(summary.skipped).toEqual(['hashtag #ICPC, platform x']);
+    expect(warnings).toHaveLength(1);
+    expect(warnings[0]).toMatch(
+      /^\[event 2026-finals, hashtag #ICPC, platform x\] Skipped: Juicer HTTP 402 insufficient_credits/,
+    );
+    expect(await readFile(file, 'utf8')).toMatch(/"postIds": \[\s*"2026-finals-x-/);
   });
 
   it('fails all targets before writing if a later source fails', async () => {

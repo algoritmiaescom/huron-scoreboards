@@ -23,7 +23,10 @@ archived posts and contributor edits.
 
 No API credentials, external social requests, backend, or asynchronous server-state library enter
 the browser. The future media repository reads validated archive data, not a live API with a
-fallback. Ingestion failures leave the published archive unchanged.
+fallback. Ingestion failures leave the published archive unchanged. The one exception is a Juicer
+credit rejection (HTTP 402): those queries are skipped with a warning and listed in the PR, so an
+exhausted credit balance for direct lookups does not block feed collection. Append-only updates
+can collect the skipped posts in a later run, while Juicer still returns them.
 
 Updates wait for review and merge, so this is not a real-time feed. Direct lookups are best-effort;
 external media URLs may expire or disappear. Operators maintain Juicer connections, credentials,

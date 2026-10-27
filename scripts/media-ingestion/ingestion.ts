@@ -87,6 +87,8 @@ export interface EventSummary {
   suppressed: number;
   outsideDateRange: number;
   missingAlt: number;
+  // Source queries skipped because Juicer rejected them for exhausted credits.
+  skipped: string[];
 }
 
 export const appendPosts = (
@@ -98,6 +100,7 @@ export const appendPosts = (
     eventId: config.eventId,
     sources: [...new Set(config.sources.map(({ type }) => type))],
     fetched: candidates.length,
+    skipped: [],
     added: 0,
     duplicates: 0,
     suppressed: 0,
@@ -158,12 +161,14 @@ export const ingestMedia = async ({
   apiKey,
   dryRun = false,
   dependencies,
+  onWarning,
 }: {
   root: string;
   config: IngestionConfig;
   apiKey: string;
   dryRun?: boolean;
   dependencies?: ClientDependencies;
+  onWarning?: (warning: string) => void;
 }): Promise<EventSummary[]> => {
   if (config.events.length === 0) {
     throw new Error(
@@ -194,12 +199,22 @@ export const ingestMedia = async ({
   const proposals = [];
   for (const target of targets) {
     const candidates: CollectedPost[] = [];
+    const skipped: string[] = [];
     for (const source of target.eventConfig.sources) {
       candidates.push(
-        ...(await client.collect(source, target.eventConfig, target.existing.event.hashtag)),
+        ...(await client.collect(
+          source,
+          target.eventConfig,
+          target.existing.event.hashtag,
+          ({ query, reason }) => {
+            skipped.push(query);
+            onWarning?.(`[event ${target.eventConfig.eventId}, ${query}] Skipped: ${reason}`);
+          },
+        )),
       );
     }
     const { record, summary } = appendPosts(target.existing, candidates, target.eventConfig);
+    summary.skipped = skipped;
     eventFileSchema.parse(record);
     proposals.push({ ...target, record, summary });
   }
