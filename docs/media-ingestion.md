@@ -133,7 +133,15 @@ ingestion run to reset its request budget. Tests inject an Axios adapter and ret
 they exercise the real Axios request configuration without contacting Juicer.
 
 Use Node 24, npm 11, and `npm ci`. Supply `JUICER_API_KEY` through your local secure environment;
-the script does not automatically load an environment file.
+the script does not automatically load an environment file. To keep the key in a file, copy
+`.env.example` to the ignored `.env`, set the key, and pass the file to `tsx`:
+
+```sh
+cp .env.example .env
+npx tsx --env-file=.env --tsconfig tsconfig.scripts.json scripts/ingest-media.ts --dry-run
+```
+
+Alternatively, export `JUICER_API_KEY` in your shell and use the npm script:
 
 ```sh
 npm run ingest:media -- --dry-run
