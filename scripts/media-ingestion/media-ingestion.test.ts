@@ -152,6 +152,12 @@ describe('configuration and alt contract', () => {
     { events: [{ eventId: 'event', sources: [] }] },
     { events: [{ eventId: 'event', sources: [{ type: 'hashtag', platforms: ['tiktok'] }] }] },
     { events: [{ eventId: 'event', sources: [{ type: 'hashtag', platforms: ['x', 'x'] }] }] },
+    ...[[], ['ICPC'], ['#ICPC', '#icpc']].map((hashtags) => ({
+      events: [{ eventId: 'event', sources: [{ type: 'hashtag', platforms: ['x'], hashtags }] }],
+    })),
+    {
+      events: [{ eventId: 'event', sources: [{ type: 'feed', feedId: 1, hashtags: ['#ICPC'] }] }],
+    },
     { ...config(), retries: 99 },
     { ...config(), typo: true },
     { ...config(), events: [eventConfig(), eventConfig()] },
@@ -247,6 +253,25 @@ describe('Juicer client', () => {
       cursor: 'opaque-1',
     });
     expect(calledUrl(adapter, 2).searchParams.get('cursor')).toBeNull();
+  });
+
+  it('queries each configured hashtag per platform instead of the event hashtag', async () => {
+    const cfg = config([{ type: 'hashtag', platforms: ['x'], hashtags: ['#GPM2026', '#ICPC'] }]);
+    const adapter = adapterMock()
+      .mockResolvedValueOnce(json(dataPage([wirePost('1')])))
+      .mockResolvedValueOnce(json(dataPage([wirePost('1')])));
+    const posts = await new JuicerClient(cfg, 'secret', { adapter }).collect(
+      cfg.events[0].sources[0],
+      eventConfig(),
+      '#EventHashtag',
+    );
+    expect(posts).toHaveLength(2);
+    expect([0, 1].map((index) => calledUrl(adapter, index).searchParams.get('term'))).toEqual([
+      '#GPM2026',
+      '#ICPC',
+    ]);
+    const { summary } = appendPosts(record(), posts, cfg.events[0]);
+    expect(summary).toMatchObject({ fetched: 2, added: 1, duplicates: 1 });
   });
 
   it('accepts empty feed pages and rejects invalid keys before requests', async () => {

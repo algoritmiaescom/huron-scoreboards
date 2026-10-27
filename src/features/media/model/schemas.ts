@@ -34,11 +34,13 @@ export const postSchema = z.object({
   tags: z.array(z.string().min(1)),
 });
 
+export const hashtagSchema = z.string().regex(/^#[\w]+$/, 'must be a hashtag such as `#GPM2024`');
+
 export const eventSchema = z.object({
   id: mediaIdSchema,
   name: z.string().min(1),
   date: z.iso.date(),
-  hashtag: z.string().regex(/^#[\w]+$/, 'must be a hashtag such as `#GPM2024`'),
+  hashtag: hashtagSchema,
   location: z.string().min(1).optional(),
   // Loose reference: the media feature must not import scoreboards types.
   contestId: z.string().min(1).optional(),

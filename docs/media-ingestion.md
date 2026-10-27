@@ -17,7 +17,8 @@ See [ADR 0006](adr/0006-ingest-media-through-reviewed-pull-requests.md).
   account OAuth connections, and configure moderation in Juicer. Record the numeric API feed ID.
   Only public posts are imported.
 - Direct hashtag mode does not require a feed. Select supported platforms and confirm their
-  availability in your account. Results are best-effort and are not moderated by the feed's rules.
+  availability in your account. It searches the event hashtag or a configured list of hashtags.
+  Results are best-effort and are not moderated by the feed's rules.
 - Store the permanent key as the repository Actions secret **`JUICER_API_KEY`**.
 
 See [Juicer authentication](https://juicer.mintlify.app/authentication.md). Never put the key in
@@ -92,7 +93,8 @@ Edit `config/media-ingestion.json`:
       "eventId": "your-real-event",
       "sources": [
         { "type": "feed", "feedId": 123, "platforms": ["x", "instagram"] },
-        { "type": "hashtag", "platforms": ["x", "youtube"] }
+        { "type": "hashtag", "platforms": ["x", "youtube"] },
+        { "type": "hashtag", "platforms": ["instagram"], "hashtags": ["#GPM2026", "#ICPCMexico"] }
       ],
       "startingAt": "2026-10-20T00:00:00-06:00",
       "endingAt": "2026-10-25T23:59:59-06:00",
@@ -108,9 +110,12 @@ Edit `config/media-ingestion.json`:
 
 Replace the sample feed ID and event. Use either source type or both. Supported domain platforms
 are `x`, `instagram`, `facebook`, `youtube`, and `linkedin`. Feed platform filters are optional;
-an unfiltered feed containing unsupported platforms fails explicitly. Hashtag mode always uses the
-event record's hashtag. Associate each configured feed with the intended event in Juicer; a
-feed's public posts need not all contain a hashtag in their text.
+an unfiltered feed containing unsupported platforms fails explicitly. A hashtag source searches
+the event record's hashtag unless it lists its own `hashtags`, which replace it; include the event
+hashtag in that list to keep searching it. Each hashtag is queried on each of the source's
+platforms, and a post matching several hashtags is imported once. Associate each configured feed
+with the intended event in Juicer; a feed's public posts need not all contain a hashtag in their
+text.
 
 For individual feed sources, use `"sourceIds": [12345, 67890]` instead of `platforms`.
 These are Juicer source IDs, not social-post IDs. The two filter forms are mutually exclusive
@@ -119,7 +124,7 @@ because Juicer's `filter` parameter matches a list of sources rather than inters
 Date bounds are optional and inclusive in local filtering. Feed requests also pass the bounds to
 Juicer, whose endpoint documents them as after/before filters. Direct mode filters locally:
 it does not assume date-query support or stop pagination early. `maxPages` applies per
-source/platform; `maxRequests` includes retries across the entire run. Hitting a limit fails,
+source/platform/hashtag; `maxRequests` includes retries across the entire run. Hitting a limit fails,
 rather than publishing an incomplete collection. Narrow sources or increase limits deliberately.
 Retries apply only to network/timeouts, 429, and 5xx. A `Retry-After` exceeding 60 seconds fails
 for a later run instead of exceeding the job budget.

@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { mediaIdSchema, postSourceSchema } from '@/features/media/model/schemas';
+import { hashtagSchema, mediaIdSchema, postSourceSchema } from '@/features/media/model/schemas';
 
 const platformsSchema = z
   .array(postSourceSchema)
@@ -22,6 +22,16 @@ const sourceSchema = z.discriminatedUnion('type', [
   z.strictObject({
     type: z.literal('hashtag'),
     platforms: platformsSchema,
+    // Defaults to the hashtag stored in the event's archive record.
+    hashtags: z
+      .array(hashtagSchema)
+      .min(1)
+      .refine(
+        (hashtags) =>
+          new Set(hashtags.map((hashtag) => hashtag.toLowerCase())).size === hashtags.length,
+        'hashtags must be unique',
+      )
+      .optional(),
   }),
 ]);
 

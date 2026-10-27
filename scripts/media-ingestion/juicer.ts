@@ -173,13 +173,15 @@ export class JuicerClient {
   readonly collect = async (
     source: SourceConfig,
     event: EventConfig,
-    hashtag: string,
+    defaultHashtag: string,
   ): Promise<CollectedPost[]> => {
     const { config } = this;
     const collected: CollectedPost[] = [];
     // Query one platform at a time so cursors can never be applied to the wrong platform.
     const platforms = source.platforms ?? [undefined];
-    for (const platform of platforms) {
+    const terms = source.type === 'hashtag' ? (source.hashtags ?? [defaultHashtag]) : [undefined];
+    const queries = terms.flatMap((term) => platforms.map((platform) => ({ term, platform })));
+    for (const { term, platform } of queries) {
       let cursor: string | undefined;
       const seenCursors = new Set<string>();
       let complete = false;
@@ -207,8 +209,8 @@ export class JuicerClient {
           if (event.endingAt !== undefined) {
             url.searchParams.set('ending_at', event.endingAt);
           }
-        } else {
-          url.searchParams.set('term', hashtag);
+        } else if (term !== undefined) {
+          url.searchParams.set('term', term);
           url.searchParams.set('term_type', 'hashtag');
           if (cursor !== undefined) {
             url.searchParams.set('cursor', cursor);
