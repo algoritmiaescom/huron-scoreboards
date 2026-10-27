@@ -5,7 +5,72 @@
     "date": "2026-11-07",
     "hashtag": "#ICPCMX2026",
     "location": "ESCOM IPN",
-    "postIds": []
+    "postIds": [
+      "2026-mexico-finals-linkedin-9d0537298c4761c4943c35efdc4c160fde645075bb38f2e6c47c0a5101f09c9b",
+      "2026-mexico-finals-linkedin-c407c115c3b9c017bcde76cac06578436f2629ddf56217cbce9b4fcb1aac1d94",
+      "2026-mexico-finals-linkedin-b2aebeea5a305efe180ad5fbb170d9ddc3ce667698a0e827d301aec0e23b45ad"
+    ]
   },
-  "posts": []
+  "posts": [
+    {
+      "id": "2026-mexico-finals-linkedin-9d0537298c4761c4943c35efdc4c160fde645075bb38f2e6c47c0a5101f09c9b",
+      "source": "linkedin",
+      "author": {
+        "username": "CPC-GALLOS",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQG2oVYEzpxvNA/company-logo_400_400/company-logo_400_400/0/1722278459347?e=1794441600&v=beta&t=fZqPGK2XCf2mtR18FSSpcQvrAnmpy6UCp2dluCup-q0",
+        "profileUrl": "https://www.linkedin.com/company/cpc-gallos/"
+      },
+      "postedAt": "2026-04-20T15:41:43.217-07:00",
+      "body": "¡Gran inicio de temporada el sábado pasado! Estamos muy orgullosos de cómo se vivió la Primera Fecha del #GranPremioMX2026 con sede en la UAA. Fue increíble ver que todos los equipos lograron resolver al menos 2 problemas. 📈\n\nLo mejor de todo fue que la gran mayoría de los participantes son miembros de nuestro club. 💻🔥\n\n¡Nos vemos en la siguiente fecha! 🎈\n\n#ICPC #ICPCMX2026 #CompetitiveProgramming #UAA",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://www.juicer.io/api/media/37508788?s=a6c871f2188363215739c79d787a3ea87c7539a5",
+          "alt": ""
+        }
+      ],
+      "permalink": "https://www.linkedin.com/feed/update/urn:li:activity:7452124368463392768/",
+      "tags": ["#GranPremioMX2026", "#ICPC", "#ICPCMX2026", "#CompetitiveProgramming", "#UAA"]
+    },
+    {
+      "id": "2026-mexico-finals-linkedin-c407c115c3b9c017bcde76cac06578436f2629ddf56217cbce9b4fcb1aac1d94",
+      "source": "linkedin",
+      "author": {
+        "username": "ICPC Mexico at ITESO",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEwFZlgCxtA_A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673446075003?e=1794441600&v=beta&t=45AA1DSssWM6Fxpwk-MR4ukapXhdf8kPAgHL7V_doKw",
+        "profileUrl": "https://www.linkedin.com/in/acmiteso"
+      },
+      "postedAt": "2026-09-07T15:43:20.825-07:00",
+      "body": "Final Mexicana #ICPCMX2026 ...",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://www.juicer.io/api/media/37508787?s=42e5fef91475a6b88778b1da100cf430713cc826",
+          "alt": ""
+        }
+      ],
+      "permalink": "https://www.linkedin.com/feed/update/urn:li:activity:7502859079044956161/",
+      "tags": ["#ICPCMX2026"]
+    },
+    {
+      "id": "2026-mexico-finals-linkedin-b2aebeea5a305efe180ad5fbb170d9ddc3ce667698a0e827d301aec0e23b45ad",
+      "source": "linkedin",
+      "author": {
+        "username": "ICPC Mexico at ITESO",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEwFZlgCxtA_A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673446075003?e=1794441600&v=beta&t=45AA1DSssWM6Fxpwk-MR4ukapXhdf8kPAgHL7V_doKw",
+        "profileUrl": "https://www.linkedin.com/in/acmiteso"
+      },
+      "postedAt": "2026-09-07T15:46:09.682-07:00",
+      "body": "Final Mexicana #ICPCMX2026 ...",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://www.juicer.io/api/media/37522735?s=e8f3b741c5129d20646500c01034815f9fb5f947",
+          "alt": ""
+        }
+      ],
+      "permalink": "https://www.linkedin.com/feed/update/urn:li:activity:7502859787282604032/",
+      "tags": ["#ICPCMX2026"]
+    }
+  ]
 }
