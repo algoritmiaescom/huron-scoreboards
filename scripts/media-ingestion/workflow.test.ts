@@ -4,6 +4,7 @@ import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import process from 'node:process';
+import { fileURLToPath } from 'node:url';
 
 import { afterEach, describe, expect, it } from 'vitest';
 
@@ -22,16 +23,11 @@ const ciWorkflow = await readFile(
   new URL('../../.github/workflows/ci.yml', import.meta.url),
   'utf8',
 );
-const stepScript = (name: string) => {
-  const step = workflow.split(`      - name: ${name}\n`)[1].split('      - name: ')[0];
-  return step
-    .split('        run: |\n')[1]
-    .split('\n')
-    .map((line) => line.slice(10))
-    .join('\n');
-};
-const prepare = stepScript('Preserve an existing ingestion PR');
-const publish = stepScript('Publish reviewed data changes');
+const repositoryRoot = fileURLToPath(new URL('../..', import.meta.url));
+const tsx = path.join(repositoryRoot, 'node_modules/.bin/tsx');
+const cli = path.join(repositoryRoot, 'scripts/media-pull-request.ts');
+const prepare = 'prepare';
+const publish = 'publish';
 const branch = 'automation/media-ingestion';
 const target = 'data/media/events/2026-finals.json';
 
@@ -90,8 +86,8 @@ if (args[0] === 'pr' && args[1] === 'list') {
     TEST_GH_LOG: log,
     HUSKY: '0',
   };
-  const run = (script: string, extra: Record<string, string> = {}) =>
-    execFileSync('bash', ['-euo', 'pipefail', '-c', script], {
+  const run = (command: string, extra: Record<string, string> = {}) =>
+    execFileSync(tsx, [cli, command], {
       cwd: repo,
       env: { ...env, ...extra },
       encoding: 'utf8',
@@ -126,6 +122,21 @@ describe('ingestion workflow git operations', () => {
     expect(ciWorkflow).not.toContain('contents: write');
     expect(workflow).not.toContain('pull_request_target');
     expect(workflow).not.toContain('--force');
+    expect(workflow).toContain('run: npm run media:pull-request -- prepare');
+    expect(workflow).toContain('run: npm run media:pull-request -- publish');
+  });
+
+  it('rejects unknown commands and missing environment', () => {
+    expect(() => execFileSync(tsx, [cli, 'unknown'], { encoding: 'utf8', stdio: 'pipe' })).toThrow(
+      'Usage: media-pull-request.ts <prepare|publish>',
+    );
+    expect(() =>
+      execFileSync(tsx, [cli, 'publish'], {
+        encoding: 'utf8',
+        stdio: 'pipe',
+        env: { ...process.env, BASE_BRANCH: '', MEDIA_BRANCH: '' },
+      }),
+    ).toThrow('BASE_BRANCH must be set');
   });
 
   it('creates an initial data-only branch and PR', async () => {
@@ -184,15 +195,19 @@ describe('ingestion workflow git operations', () => {
     git('commit', '-m', 'unrelated change');
     git('push', 'origin', branch);
     git('switch', 'main');
-    expect(() => run(prepare, { TEST_PR_NUMBER: '7' })).toThrow();
-    await writeFile(path.join(repo, 'config/media-ingestion.json'), '{}');
-    expect(() => run(publish, { COMPARISON: 'HEAD', PR_NUMBER: '' })).toThrow();
+    expect(() => run(prepare, { TEST_PR_NUMBER: '7' })).toThrow(
+      'Existing PR has unrelated changes; resolve it manually before ingestion: config/media-ingestion.json',
+    );
+    await writeFile(path.join(repo, 'config/media-ingestion.json'), '{"events": []}');
+    expect(() => run(publish, { COMPARISON: 'HEAD', PR_NUMBER: '' })).toThrow(
+      'Refusing to commit unrelated changes: config/media-ingestion.json',
+    );
   });
 
   it('blocks leftover unmerged branches and merge conflicts', async () => {
     const { repo, git, run, commitData } = await setup();
     await commitData();
-    expect(() => run(prepare)).toThrow();
+    expect(() => run(prepare)).toThrow(`An unmerged ${branch} branch exists without an open PR`);
     await writeFile(path.join(repo, target), 'conflicting default-branch correction\n');
     git('add', '.');
     git('commit', '-m', 'default correction');

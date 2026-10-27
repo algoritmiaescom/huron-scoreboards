@@ -223,8 +223,11 @@ removal for the applicable request. Manual corrections follow the normal contrib
 6. Set **`MEDIA_INGESTION_SCHEDULE_ENABLED=true`**. The daily cron is **12:17 UTC**. GitHub can
    delay scheduled runs; this is not a real-time service.
 
-Runs are serialized. Existing PR changes must be limited to configured real event files. The
-workflow merges that data branch into the trusted default-branch checkout before ingestion, so
+Runs are serialized. The workflow's branch and PR steps are implemented in
+`scripts/media-pull-request.ts` (`npm run media:pull-request -- prepare|publish`), not inline in
+the YAML. `prepare` reuses or validates the automation branch; `publish` commits, pushes, opens or
+updates the PR, and dispatches CI. Failures are reported as GitHub Actions error annotations.
+Existing PR changes must be limited to configured real event files. The workflow merges that data branch into the trusted default-branch checkout before ingestion, so
 curator edits are retained without executing branch-supplied code. Conflicts and unrelated PR
 changes require manual resolution. Pushes are never forced; a concurrent remote edit fails.
 When no media changes relative to the existing PR are found, no commit/PR update is made.
