@@ -147,6 +147,21 @@ describe('media page', () => {
     );
   });
 
+  it('keeps media without a description announced instead of treating it as decorative', async () => {
+    const post: Post = {
+      ...eventFile.posts[0],
+      id: 'undescribed-post',
+      author: { username: 'club', displayName: 'Club de algoritmia' },
+      media: [{ type: 'image', url: 'https://example.com/photo.jpg', alt: '' }],
+    };
+    renderMedia(createPageData([post]));
+    expect(
+      await screen.findByRole('img', {
+        name: 'Imagen de Club de algoritmia sin descripción disponible',
+      }),
+    ).toBeVisible();
+  });
+
   it('distinguishes no event, an event with no posts, and media repository errors', async () => {
     const empty = createPageData(
       [],

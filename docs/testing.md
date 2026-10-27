@@ -146,6 +146,13 @@ cuts, transitive school scope, season-scoped teams, optional metadata, and order
 Feed composition tests use the Mexico City date boundary and reject substitution of older,
 future, or unlinked events. These are data-layer checks, not completed feature-screen E2E coverage.
 
+Media ingestion tests use mocked Juicer responses and temporary filesystem fixtures, not live
+API credentials. They cover both pagination models, explicit platform failures, append-only
+merging, dry-run behavior, and idempotency. Workflow tests cover explicit CI dispatch after PR
+creation/update, no-change runs, and dispatch failures. CI supports manual runs on a selected branch.
+Credentialed PR/CI rollout checks are manual; see
+[media ingestion](media-ingestion.md).
+
 ## CI
 
 Pull requests and pushes to `main` run validation and E2E jobs. Failed Playwright runs upload an

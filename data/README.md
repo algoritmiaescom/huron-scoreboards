@@ -18,6 +18,10 @@ and mock records can never be served as history.
 The real archive is currently empty. Transcribing an official scoreboard into it is the most
 valuable contribution you can make.
 
+Real media events and their posts also live here, under `media/events/`. Juicer ingestion appends
+posts through reviewed PRs; see [setup and operation](../docs/media-ingestion.md). No real event
+is enabled by default, and ingestion never promotes mock data.
+
 ## The mock dataset is not real
 
 > [!WARNING]

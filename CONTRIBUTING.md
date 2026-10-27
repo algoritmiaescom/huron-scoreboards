@@ -37,7 +37,10 @@ mock files. See [data/README.md](./data/README.md).
 - Record the official place as published, including ties.
 - Link the official source or scoreboard evidence for every result you add or change.
 
-For media posts, supply alt text for every image or video. Posts without it cannot be published.
+For media posts, keep an `alt` string on every image or video. It may be empty when a description
+is unavailable, but supply a meaningful description whenever possible; an empty value does not
+make an informative image decorative. Automated imports and external setup are documented in
+[media ingestion](docs/media-ingestion.md).
 List each post id exactly once in its event's `postIds`; that order is the presentation order.
 Keep team registries in their matching season directory and publish only one accumulated
 standing per season/series.

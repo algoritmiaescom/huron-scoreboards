@@ -160,6 +160,10 @@ carousel controls, native video playback, and an original-post link. Repository-
 not claim live updates or an API outage. A future live integration is a separate architectural
 milestone; the post presentation and loading/empty/error states remain reusable for it.
 
+Posts are collected through Juicer outside the browser, archived as JSON, and published only
+after a pull request is reviewed and merged. The feed is a reviewed snapshot, not a real-time
+stream. Maintainers may also curate posts directly. See [media ingestion](media-ingestion.md).
+
 ### 3. Contribution
 
 A guide explaining how to add missing contests and correct existing results. Contribution happens

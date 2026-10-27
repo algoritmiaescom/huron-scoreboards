@@ -137,6 +137,11 @@ export const MediaPostCard = ({ post }: { post: Post }) => {
   const [failedAvatar, setFailedAvatar] = useState(false);
   const asset = post.media.at(assetIndex);
   const authorName = post.author.displayName ?? `@${post.author.username}`;
+  // An empty `alt` means the description is unavailable, not that the media is decorative.
+  const assetLabel =
+    asset?.alt === ''
+      ? `${asset.type === 'image' ? 'Imagen' : 'Video'} de ${authorName} sin descripción disponible`
+      : asset?.alt;
 
   return (
     <PostCardRoot role="article">
@@ -150,14 +155,14 @@ export const MediaPostCard = ({ post }: { post: Post }) => {
             ) : (
               <Image
                 src={asset.url}
-                alt={asset.alt}
+                alt={assetLabel}
                 onError={() => {
                   setFailedImage(asset.url);
                 }}
               />
             )
           ) : (
-            <Video controls preload="metadata" aria-label={asset.alt}>
+            <Video controls preload="metadata" aria-label={assetLabel}>
               <source src={asset.url} />
               Tu navegador no puede reproducir este video. Consulta la publicación original.
             </Video>
