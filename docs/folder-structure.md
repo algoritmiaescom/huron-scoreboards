@@ -4,8 +4,8 @@
 data/                      Competition and media data as JSON (see docs/data-model.md)
   mock/                    Seed dataset with invented results, validated separately
 config/                    Non-secret operator configuration
-scripts/
-  media-ingestion/         Juicer adapters and append-only ingestion, Node-only
+scripts/                   Node-only CLIs run through npm scripts and GitHub Actions
+  media-ingestion/         Juicer adapters and append-only ingestion
 e2e/                       Playwright user journeys
 public/
   logos/                   School logos served by path, referenced from data
