@@ -1,11 +1,11 @@
 import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 
-import { validateMediaReferences, type MediaDataset } from '@/features/media/model/dataset';
-import { eventFileSchema, type EventFile } from '@/features/media/model/schemas';
+import { type MediaDataset, validateMediaReferences } from '@/features/media/model/dataset';
+import { type EventFile, eventFileSchema } from '@/features/media/model/schemas';
 import {
-  validateScoreboardsReferences,
   type ScoreboardsDataset,
+  validateScoreboardsReferences,
 } from '@/features/scoreboards/model/dataset';
 import {
   contestSchema,
@@ -154,6 +154,7 @@ const loadSeasons = async (
           dataset.teams.push({
             file: toPosixPath(path.relative(root, entryPath)),
             record: parsed.record,
+            location: { seasonYear },
           });
         }
 

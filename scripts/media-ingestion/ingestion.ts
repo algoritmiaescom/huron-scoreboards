@@ -1,23 +1,24 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { readFile, realpath, rename, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+
 import { format, resolveConfig } from 'prettier';
 import { z } from 'zod';
 
 import {
+  type EventFile,
   eventFileSchema,
   eventSchema,
+  type Post,
   postAuthorSchema,
   postMediaSchema,
   postSchema,
-  type EventFile,
-  type Post,
 } from '@/features/media/model/schemas';
 import { formatIssues } from '@/lib/validation/issues';
 
 import { validateDataDirectory } from '../data-validation';
-import { parseJson, type EventConfig, type IngestionConfig, type SourceConfig } from './config';
-import { type CollectedPost, JuicerClient, type ClientDependencies } from './juicer';
+import { type EventConfig, type IngestionConfig, parseJson, type SourceConfig } from './config';
+import { type ClientDependencies, type CollectedPost, JuicerClient } from './juicer';
 
 // Validate known fields without erasing contributor metadata during append-only updates.
 const archiveSchema = eventFileSchema.loose().extend({

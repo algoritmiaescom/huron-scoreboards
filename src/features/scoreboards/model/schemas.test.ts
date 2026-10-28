@@ -25,17 +25,16 @@ describe('schoolSchema logo', () => {
     },
   );
 
-  it.each(['https://example.com/logo.svg', 'http://example.com/logo.png'])(
-    'accepts the remote logo %s',
-    (logo) => {
-      expect(parseLogo(logo).success).toBe(true);
-    },
-  );
+  it('accepts a remote https logo', () => {
+    expect(parseLogo('https://example.com/logo.svg').success).toBe(true);
+  });
 
   it.each([
     // Rendered as an image source, so a scheme that can execute must never validate.
     'javascript:alert(1)',
     'data:image/svg+xml,<svg onload=alert(1) />',
+    // Would load as mixed content.
+    'http://example.com/logo.png',
     // Must stay inside public/logos.
     '../../etc/passwd',
     'logos/../../secrets.svg',

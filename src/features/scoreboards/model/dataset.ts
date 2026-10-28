@@ -1,6 +1,5 @@
-import type { ValidationIssue } from '@/lib/validation/issues';
-
 import type { Contest, School, SeasonStanding, Team } from './schemas';
+import type { ValidationIssue } from '@/lib/validation/issues';
 
 /** A file's parsed contents, kept with its path so issues can point at the right file. */
 export interface DataFile<T> {
@@ -17,9 +16,13 @@ export interface SeasonStandingFile extends DataFile<SeasonStanding> {
   location: { seasonYear: number; seriesId: string };
 }
 
+export interface TeamsFile extends DataFile<Team[]> {
+  location?: { seasonYear: number };
+}
+
 export interface ScoreboardsDataset {
   schools: DataFile<School[]>[];
-  teams: DataFile<Team[]>[];
+  teams: TeamsFile[];
   contests: ContestFile[];
   seasonStandings: SeasonStandingFile[];
 }
@@ -126,8 +129,15 @@ const validateTeams = (
 ): ValidationIssue[] => {
   const issues = collectDuplicateIds(dataset.teams, (team) => team.id, 'team');
 
-  dataset.teams.forEach(({ file, record }) => {
+  dataset.teams.forEach(({ file, record, location }) => {
     record.forEach((team, index) => {
+      if (location !== undefined && team.seasonYear !== location.seasonYear) {
+        issues.push({
+          file,
+          location: `[${String(index)}].seasonYear`,
+          message: `season ${String(team.seasonYear)} does not match the season ${String(location.seasonYear)} in the file path`,
+        });
+      }
       if (!schoolIds.has(team.schoolId)) {
         issues.push({
           file,
@@ -224,8 +234,19 @@ const validateSeasonStandings = (
   teamsById: ReadonlyMap<string, Team>,
 ): ValidationIssue[] => {
   const issues: ValidationIssue[] = [];
+  const seen = new Map<string, string>();
 
   dataset.seasonStandings.forEach(({ file, record, location }) => {
+    const key = `${String(record.seasonYear)}/${record.seriesId}`;
+    const existing = seen.get(key);
+    if (existing !== undefined) {
+      issues.push({
+        file,
+        location: '',
+        message: `duplicate season standing \`${key}\`, already defined in ${existing}`,
+      });
+    }
+    seen.set(key, file);
     if (record.seasonYear !== location.seasonYear) {
       issues.push({
         file,

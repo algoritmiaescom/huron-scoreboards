@@ -1,6 +1,5 @@
-import type { ValidationIssue } from '@/lib/validation/issues';
-
 import type { EventFile } from './schemas';
+import type { ValidationIssue } from '@/lib/validation/issues';
 
 export interface MediaDataFile {
   file: string;
@@ -53,7 +52,16 @@ export const validateMediaReferences = (
 
     const postIds = new Set(record.posts.map((post) => post.id));
 
+    const seenReferences = new Set<string>();
     record.event.postIds.forEach((postId, index) => {
+      if (seenReferences.has(postId)) {
+        issues.push({
+          file,
+          location: `event.postIds[${String(index)}]`,
+          message: `duplicate post reference \`${postId}\``,
+        });
+      }
+      seenReferences.add(postId);
       if (!postIds.has(postId)) {
         issues.push({
           file,
