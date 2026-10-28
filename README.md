@@ -78,7 +78,6 @@ intentionally provisional and the guide warns that contributions cannot be submi
 ## Documentation
 
 - [Product scope](docs/product-scope.md)
-- [Implementation plan](docs/implementation-plan.md)
 - [Architecture](docs/architecture.md)
 - [Data model](docs/data-model.md)
 - [Architecture decision records](docs/adr/README.md)

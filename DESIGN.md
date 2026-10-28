@@ -93,7 +93,7 @@ Verify each changed route in both themes at 320 x 568, 390 x 844, 844 x 390, 768
 1024 x 768, 1440 x 900, and 1920 x 1080. Check one pixel below/at/above used breakpoints,
 live resizing without state loss, touch/keyboard use, and 200% zoom. At 400% zoom on a
 1280px desktop, verify 320-CSS-pixel-equivalent reflow. See the
-[implementation plan](docs/implementation-plan.md) for the acceptance gate.
+[testing guide](docs/testing.md) for release verification.
 
 ## Interaction and accessible states
 
