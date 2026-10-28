@@ -19,13 +19,25 @@ export const DataRequirements = () => (
           intento tiene 1, no 0. Un problema sin intentos usa el estado <code>unattempted</code>.
         </li>
         <li>
-          El minuto de aceptación debe estar dentro de la duración del concurso. Los problemas no
-          resueltos no suman penalización.
+          El minuto de aceptación debe estar dentro de la duración conocida del concurso. Los
+          problemas no resueltos no suman penalización.
         </li>
         <li>
-          No guardes primeros en resolver, totales de problemas resueltos ni penalización: se
-          calculan a partir de los resultados. Puede haber varios primeros en resolver en el mismo
-          minuto.
+          No guardes primeros en resolver: se calculan solo cuando todos los equipos tienen detalle
+          por problema. Puede haber empates. Los totales publicados se conservan en
+          <code>publishedTotals</code>; deben coincidir con los resultados cuando se puedan
+          calcular.
+        </li>
+        <li>
+          Si solo hay totales oficiales, usa <code>results: null</code> y registra
+          <code>publishedTotals</code> con <code>solved</code> y <code>penalty</code>. Una
+          penalización desconocida usa <code>null</code>, no cero. No inventes intentos ni minutos.
+          Se permiten equipos con y sin detalle en un mismo concurso.
+        </li>
+        <li>
+          Las fechas, duración y reglas de penalización desconocidas usan <code>null</code>. Si no
+          se conoce el conjunto de problemas, usa <code>problems: []</code> con filas de solo
+          totales. Fecha 0 usa <code>fecha-0</code> y no es una clasificatoria.
         </li>
         <li>
           Registra <code>penaltyMinutesPerFailedAttempt</code> según las reglas oficiales del
@@ -39,7 +51,8 @@ export const DataRequirements = () => (
         <li>
           La clasificación acumulada es un <code>standing.json</code> separado: conserva el puntaje
           y la clasificación oficiales, con un solo registro por temporada y serie. No inventes un
-          concurso acumulado.
+          concurso acumulado. Usa <code>qualified: null</code> si se desconoce la clasificación; no
+          equivale a <code>false</code>.
         </li>
         <li>
           Los equipos se registran en el <code>teams.json</code> de su temporada. Los nombres de

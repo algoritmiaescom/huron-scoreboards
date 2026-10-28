@@ -63,6 +63,17 @@ describe('scoring and joins', () => {
 });
 
 describe('catalog and selection', () => {
+  it('retains undated contests in the catalog but never selects them as latest held', () => {
+    const undated = { ...contest, id: 'undated', date: null };
+    const partialArchive = { ...archive, contests: [undated, contest] };
+    expect(selectCatalog(partialArchive)[0].series[0].contests.map(({ id }) => id)).toEqual([
+      contest.id,
+      'undated',
+    ]);
+    expect(selectLatestHeldContest({ ...archive, contests: [undated] }, '2026-01-01')).toEqual({
+      status: 'not-found',
+    });
+  });
   it('discovers sparse seasons, optional stages, standing-only series and open-ended series ids', () => {
     const catalog = selectCatalog({
       ...archive,
@@ -112,6 +123,28 @@ describe('catalog and selection', () => {
 });
 
 describe('standings filters', () => {
+  it('uses published solved counts without inventing problem-specific results', () => {
+    const partial = {
+      ...contest,
+      standings: [
+        {
+          place: 1,
+          teamId: '2024-a',
+          results: null,
+          publishedTotals: { solved: 1, penalty: null },
+        },
+      ],
+    };
+    expect(selectFilteredContestRows(archive, partial, { accepted: true })).toMatchObject({
+      rows: [{ solved: 1, penalty: null }],
+    });
+    expect(
+      selectFilteredContestRows(archive, partial, { accepted: true, problem: 'A' }),
+    ).toMatchObject({ rows: [] });
+    expect(selectFilteredContestRows(archive, partial, { first: true })).toMatchObject({
+      rows: [],
+    });
+  });
   const ids = (filters: Parameters<typeof selectFilteredContestRows>[2]) => {
     const result = selectFilteredContestRows(archive, contest, filters);
     if (result.status !== 'ready') {
@@ -162,6 +195,17 @@ describe('standings filters', () => {
 });
 
 describe('accumulated standing', () => {
+  it('never interprets unknown qualification as exclusion or draws a cut through it', () => {
+    const partial = {
+      ...standing,
+      rows: standing.rows.map((row, index) => ({
+        ...row,
+        qualified: index === 2 ? null : row.qualified,
+      })),
+    };
+    expect(selectQualificationCut(partial)).toBeUndefined();
+    expect(selectAccumulatedRows(archive, partial)[2].qualified).toBeNull();
+  });
   it('preserves published fractional scores, places and qualification rather than deriving them', () => {
     expect(
       selectAccumulatedRows(archive, standing).map(({ score, place, qualified }) => ({

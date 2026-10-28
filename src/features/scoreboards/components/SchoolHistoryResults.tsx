@@ -72,7 +72,10 @@ export const SchoolHistoryResults = ({
                   items={[
                     { label: 'Puesto', value: `#${String(row.place)}` },
                     { label: 'Resueltos', value: row.solved },
-                    { label: 'Penalización', value: `${String(row.penalty)} min` },
+                    {
+                      label: 'Penalización',
+                      value: row.penalty === null ? 'Desconocida' : `${String(row.penalty)} min`,
+                    },
                   ]}
                 />
                 <Button

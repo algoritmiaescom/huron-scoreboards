@@ -2,7 +2,7 @@ import { screen, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { archive, standing } from '@/test/fixtures/archive';
+import { archive, partialStanding, standing } from '@/test/fixtures/archive';
 import { renderApp } from '@/test/test-utils';
 
 import { AccumulatedHeader } from './AccumulatedHeader';
@@ -22,6 +22,13 @@ describe.each([false, true])('accumulated presentation (desktop=%s)', (desktop) 
     }));
     return renderApp(<AccumulatedStandings archive={archive} standing={{ ...standing, rows }} />);
   };
+
+  it('labels unknown qualification without treating it as excluded or drawing a cut', () => {
+    renderStanding(partialStanding.rows);
+    expect(screen.getByText('Clasificación desconocida')).toBeInTheDocument();
+    expect(screen.getAllByText('No clasificado', { exact: true })).toHaveLength(2);
+    expect(screen.queryByText('Línea de corte de clasificación')).not.toBeInTheDocument();
+  });
 
   it('preserves published rows, exact scores and a supported boundary', () => {
     renderStanding();

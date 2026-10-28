@@ -1,10 +1,27 @@
 import { describe, expect, it } from 'vitest';
 
-import { archive, contest, standing } from '@/test/fixtures/archive';
+import { archive, contest, partialContest, standing } from '@/test/fixtures/archive';
 
 import { selectSchoolHistoryPresentation } from './schoolHistory';
 
 describe('school history presentation selectors', () => {
+  it('preserves undated totals-only results in season summaries without inventing problem detail', () => {
+    const result = selectSchoolHistoryPresentation(
+      { ...archive, contests: [partialContest] },
+      'unit',
+      'school',
+    );
+    expect(result).toMatchObject({
+      status: 'found',
+      record: {
+        seasons: [{ seasonYear: 2024, solved: 1, results: 2 }],
+        contests: [
+          { contest: { date: null }, row: { results: null, solved: 1, penalty: null } },
+          {},
+        ],
+      },
+    });
+  });
   it('separates contest statistics from published accumulated rows', () => {
     const result = selectSchoolHistoryPresentation(archive, 'uni', 'institution');
     expect(result.status).toBe('found');

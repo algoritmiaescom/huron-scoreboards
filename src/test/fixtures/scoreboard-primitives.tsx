@@ -24,8 +24,10 @@ import {
   selectContestRows,
   TeamIdentity,
 } from '@/features/scoreboards';
+import { AccumulatedStandings } from '@/features/scoreboards/components/AccumulatedStandings';
+import { ContestResults } from '@/features/scoreboards/components/ContestResults';
 
-import { archive, contest } from './archive';
+import { archive, contest, partialContest, partialStanding } from './archive';
 
 const Page = styled(Container)(({ theme }) => ({
   paddingBlock: theme.spacing(3),
@@ -54,14 +56,33 @@ const stressContest = {
   ...contest,
   name: 'Concurso de demostración con un nombre extraordinariamente largo y metadatos completos',
   problems: [{ label: 'B', title: 'Problema con título largo' }, { label: 'A' }, { label: 'C' }],
-  standings: contest.standings.map((row) => ({
-    ...row,
-    results: [row.results[1], row.results[0], row.results[2]],
-  })),
+  standings: contest.standings.map((row) => {
+    if (row.results === null) {
+      throw new Error('The stress fixture requires detailed problem results.');
+    }
+    return { ...row, results: [row.results[1], row.results[0], row.results[2]] };
+  }),
 };
 
 export const Fixture = () => {
   const rows = selectContestRows(archive, stressContest);
+  if (new URLSearchParams(window.location.search).has('partial')) {
+    return (
+      <Page maxWidth="lg">
+        <ThemeModeControl />
+        <main>
+          <Stack spacing={3}>
+            <ContestHeader contest={partialContest} datasetSource="mock" />
+            <ContestResults archive={archive} contest={partialContest} />
+            <Typography component="h2" variant="h4">
+              Clasificación acumulada
+            </Typography>
+            <AccumulatedStandings archive={archive} standing={partialStanding} />
+          </Stack>
+        </main>
+      </Page>
+    );
+  }
   return (
     <Page maxWidth="lg">
       <ThemeModeControl />
@@ -96,7 +117,7 @@ export const Fixture = () => {
                       <TableCell key={problem.label}>
                         <ProblemResultCell
                           problem={problem}
-                          result={row.results[index]}
+                          result={row.results?.[index] ?? null}
                           firstToSolve={row.firstSolvedLabels.includes(problem.label)}
                           teamName={row.team.name}
                         />

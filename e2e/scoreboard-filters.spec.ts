@@ -9,6 +9,42 @@ test.beforeEach(async ({ page }) => {
   await page.route('https://example.com/**', (route) => route.abort());
 });
 
+for (const width of [390, 1440]) {
+  test(`loads partial mock history through the archive at ${String(width)}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(`${origin}/scoreboards?contest=2023-gpm-qualifier-1`);
+    await expect(page.getByText('Fecha desconocida', { exact: true })).toBeVisible();
+    await expect(page.getByText('Duración desconocida', { exact: true })).toBeVisible();
+    await expect(
+      page.getByText('Regla de penalización desconocida', { exact: true }),
+    ).toBeVisible();
+    await expect(page.getByText('Problemas desconocidos', { exact: true })).toBeVisible();
+    const totals = page.getByRole(width < 900 ? 'list' : 'table', {
+      name: 'Clasificación de GPM 2023 Clasificatorio 1',
+    });
+    await expect(totals.locator(width < 900 ? ':scope > li' : 'tbody tr')).toHaveCount(12);
+    await expect(totals.locator(width < 900 ? ':scope > li' : 'tbody tr').first()).toContainText(
+      '919 min',
+    );
+    await expect(page.getByRole('img', { name: /Problema/ })).toHaveCount(0);
+    await page.getByRole('button', { name: 'Resuelto', exact: true }).click();
+    await expect(page.getByRole('status')).toHaveText('9 de 12 equipos');
+    await page.reload();
+    await expect(page.getByRole('status')).toHaveText('9 de 12 equipos');
+    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+
+    await page.goto(`${origin}/scoreboards?contest=2023-gpm-qualifier-2&school=unam-fc&accepted=1`);
+    await expect(page.getByRole('status')).toContainText('1 de ');
+    await expect(page.getByText('Desconocida', { exact: true })).toBeVisible();
+    await expect(page.getByRole('img', { name: /Problema A. Detalle no disponible/ })).toHaveCount(
+      1,
+    );
+    await expect(page.getByRole('img', { name: /primero en resolver/ })).toHaveCount(0);
+    await page.getByRole('combobox', { name: 'Problema', exact: true }).selectOption('A');
+    await expect(page.getByText('No hay equipos que coincidan con estos filtros.')).toBeVisible();
+  });
+}
+
 test('discovers sparse seasons and series and exposes honest source and correction actions', async ({
   page,
 }) => {

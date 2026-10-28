@@ -47,11 +47,28 @@ export const ContestHeader = ({
   >
     <Metadata aria-label="Datos del concurso">
       <li>
-        <time dateTime={contest.date}>{formatCalendarDate(contest.date)}</time>
+        {contest.date === null ? (
+          'Fecha desconocida'
+        ) : (
+          <time dateTime={contest.date}>{formatCalendarDate(contest.date)}</time>
+        )}
       </li>
-      <li>{contest.durationMinutes} min</li>
-      <li>Penalización: +{contest.penaltyMinutesPerFailedAttempt} min por intento fallido</li>
-      <li>{contest.problems.length} problemas</li>
+      <li>
+        {contest.durationMinutes === null
+          ? 'Duración desconocida'
+          : `${String(contest.durationMinutes)} min`}
+      </li>
+      <li>
+        {contest.penaltyMinutesPerFailedAttempt === null
+          ? 'Regla de penalización desconocida'
+          : `Penalización: +${String(contest.penaltyMinutesPerFailedAttempt)} min por intento fallido`}
+      </li>
+      <li>
+        {contest.problems.length === 0
+          ? 'Problemas desconocidos'
+          : `${String(contest.problems.length)} problemas`}
+      </li>
+      {contest.stage === 'fecha-0' && <li>No clasificatoria</li>}
     </Metadata>
   </StandingsHeader>
 );

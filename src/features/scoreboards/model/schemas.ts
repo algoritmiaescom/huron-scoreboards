@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+import { scoreStandingRow } from './scoring';
+
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export const slugSchema = z
@@ -9,6 +11,7 @@ export const slugSchema = z
 export const seasonYearSchema = z.number().int().min(1990).max(2100);
 
 export const contestStageSchema = z.enum([
+  'fecha-0',
   'qualifier-1',
   'qualifier-2',
   'qualifier-3',
@@ -86,17 +89,34 @@ export const problemResultSchema = z.discriminatedUnion('status', [
   }),
 ]);
 
-export const standingRowSchema = z.object({
+const publishedTotalsSchema = z.object({
+  solved: z.number().int().nonnegative(),
+  penalty: z.number().int().nonnegative().nullable(),
+});
+
+const standingIdentity = {
   place: z.number().int().positive(),
   teamId: slugSchema,
-  results: z.array(problemResultSchema),
-});
+};
+
+export const standingRowSchema = z.union([
+  z.object({
+    ...standingIdentity,
+    results: z.array(problemResultSchema),
+    publishedTotals: publishedTotalsSchema.optional(),
+  }),
+  z.object({
+    ...standingIdentity,
+    results: z.null(),
+    publishedTotals: publishedTotalsSchema,
+  }),
+]);
 
 export const seasonStandingRowSchema = z.object({
   place: z.number().int().positive(),
   teamId: slugSchema,
   score: z.number(),
-  qualified: z.boolean(),
+  qualified: z.boolean().nullable(),
 });
 
 /**
@@ -145,10 +165,10 @@ export const contestSchema = z
     seriesId: slugSchema,
     stage: contestStageSchema,
     name: z.string().min(1),
-    date: z.iso.date(),
-    durationMinutes: z.number().int().positive(),
-    penaltyMinutesPerFailedAttempt: z.number().int().nonnegative(),
-    problems: z.array(problemSchema).min(1),
+    date: z.iso.date().nullable(),
+    durationMinutes: z.number().int().positive().nullable(),
+    penaltyMinutesPerFailedAttempt: z.number().int().nonnegative().nullable(),
+    problems: z.array(problemSchema),
     standings: z.array(standingRowSchema),
     source: z.url(),
   })
@@ -180,6 +200,52 @@ export const contestSchema = z
 
       seenTeamIds.add(row.teamId);
 
+      if (
+        row.publishedTotals !== undefined &&
+        contest.problems.length > 0 &&
+        row.publishedTotals.solved > contest.problems.length
+      ) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['standings', rowIndex, 'publishedTotals', 'solved'],
+          message: 'published solved count exceeds the known problem count',
+        });
+      }
+
+      if (row.results === null) {
+        return;
+      }
+
+      if (contest.problems.length === 0) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['problems'],
+          message: 'detailed rows require a known nonempty problem set',
+        });
+      }
+
+      if (row.publishedTotals !== undefined) {
+        const computed = scoreStandingRow(row, contest.penaltyMinutesPerFailedAttempt);
+        if (row.publishedTotals.solved !== computed.solved) {
+          ctx.addIssue({
+            code: 'custom',
+            path: ['standings', rowIndex, 'publishedTotals', 'solved'],
+            message: 'published solved count does not match detailed results',
+          });
+        }
+        if (
+          computed.penalty !== null &&
+          row.publishedTotals.penalty !== null &&
+          computed.penalty !== row.publishedTotals.penalty
+        ) {
+          ctx.addIssue({
+            code: 'custom',
+            path: ['standings', rowIndex, 'publishedTotals', 'penalty'],
+            message: 'published penalty does not match detailed results',
+          });
+        }
+      }
+
       if (row.results.length !== contest.problems.length) {
         ctx.addIssue({
           code: 'custom',
@@ -189,7 +255,11 @@ export const contestSchema = z
       }
 
       row.results.forEach((result, resultIndex) => {
-        if (result.status === 'solved' && result.solvedAtMinute > contest.durationMinutes) {
+        if (
+          result.status === 'solved' &&
+          contest.durationMinutes !== null &&
+          result.solvedAtMinute > contest.durationMinutes
+        ) {
           ctx.addIssue({
             code: 'custom',
             path: ['standings', rowIndex, 'results', resultIndex, 'solvedAtMinute'],

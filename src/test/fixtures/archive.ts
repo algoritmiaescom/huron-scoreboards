@@ -1,5 +1,6 @@
 import type { EventFile } from '@/features/media';
-import type { Contest, ScoreboardsArchive, SeasonStanding } from '@/features/scoreboards';
+import type { Contest, SeasonStanding } from '@/features/scoreboards/model/schemas';
+import type { ScoreboardsArchive } from '@/features/scoreboards/repositories/scoreboardsRepository';
 import type { DatasetSource, JsonFiles } from '@/lib/data/repository';
 
 export const contest: Contest = {
@@ -63,6 +64,33 @@ export const standing: SeasonStanding = {
     { place: 4, teamId: '2024-d', score: 5, qualified: false },
   ],
   source: 'https://example.com/standing',
+};
+
+export const partialContest: Contest = {
+  ...contest,
+  stage: 'fecha-0',
+  name: 'Concurso histórico parcial',
+  date: null,
+  durationMinutes: null,
+  penaltyMinutesPerFailedAttempt: null,
+  standings: contest.standings.map((row, index) =>
+    index === 0
+      ? {
+          place: row.place,
+          teamId: row.teamId,
+          results: null,
+          publishedTotals: { solved: 1, penalty: null },
+        }
+      : row,
+  ),
+};
+
+export const partialStanding: SeasonStanding = {
+  ...standing,
+  rows: standing.rows.map((row, index) => ({
+    ...row,
+    qualified: index === 1 ? null : row.qualified,
+  })),
 };
 
 export const archive: ScoreboardsArchive = {

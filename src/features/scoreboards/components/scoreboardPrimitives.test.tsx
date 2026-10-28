@@ -6,7 +6,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { AppProviders } from '@/app/providers/AppProviders';
 import { createAppTheme } from '@/app/theme/appTheme';
 import { selectContestRows } from '@/features/scoreboards/model/selectors';
-import { archive, contest } from '@/test/fixtures/archive';
+import { archive, contest, partialContest } from '@/test/fixtures/archive';
 import { renderApp } from '@/test/test-utils';
 
 import { ContestHeader } from './ContestHeader';
@@ -20,6 +20,12 @@ import { TeamIdentity } from './TeamIdentity';
 import type { ProblemResult, Team } from '../model/schemas';
 
 describe('ProblemResultCell', () => {
+  it('distinguishes an unavailable cell from an unattempted problem', () => {
+    renderApp(<ProblemResultCell problem={{ label: 'A' }} result={null} firstToSolve />);
+    expect(screen.getByRole('img')).toHaveAccessibleName('Problema A. Detalle no disponible');
+    expect(screen.queryByText('FTS')).not.toBeInTheDocument();
+    expect(screen.queryByText('0')).not.toBeInTheDocument();
+  });
   it.each<{ result: ProblemResult; label: string; firstToSolve?: boolean }>([
     { result: { status: 'unattempted' }, label: 'Sin intentar' },
     { result: { status: 'attempted', attempts: 1 }, label: '1 intento fallido, sin resolver' },
@@ -100,15 +106,20 @@ describe('ordered problem results and legend', () => {
     const rows = selectContestRows(archive, contest);
     renderApp(
       <>
-        {rows.slice(0, 2).map((row) => (
-          <ProblemResults
-            key={row.teamId}
-            problems={[contest.problems[1], contest.problems[0], contest.problems[2]]}
-            results={[row.results[1], row.results[0], row.results[2]]}
-            firstSolvedLabels={row.firstSolvedLabels}
-            teamName={row.team.name}
-          />
-        ))}
+        {rows.slice(0, 2).map((row) => {
+          if (row.results === null) {
+            throw new Error('Expected detailed fixture results');
+          }
+          return (
+            <ProblemResults
+              key={row.teamId}
+              problems={[contest.problems[1], contest.problems[0], contest.problems[2]]}
+              results={[row.results[1], row.results[0], row.results[2]]}
+              firstSolvedLabels={row.firstSolvedLabels}
+              teamName={row.team.name}
+            />
+          );
+        })}
         <ResultsLegend />
       </>,
     );
@@ -240,6 +251,18 @@ describe('team and school identities', () => {
 });
 
 describe('contest header and provenance', () => {
+  it('renders unknown historical metadata explicitly and labels Fecha 0 as non-qualifying', () => {
+    renderApp(
+      <MemoryRouter>
+        <ContestHeader contest={{ ...partialContest, problems: [] }} datasetSource="mock" />
+      </MemoryRouter>,
+    );
+    expect(screen.getByText('Fecha desconocida')).toBeInTheDocument();
+    expect(screen.getByText('Duración desconocida')).toBeInTheDocument();
+    expect(screen.getByText('Regla de penalización desconocida')).toBeInTheDocument();
+    expect(screen.getByText('Problemas desconocidos')).toBeInTheDocument();
+    expect(screen.getByText('No clasificatoria')).toBeInTheDocument();
+  });
   it('uses canonical season/stage/source fields, a timezone-stable date, and contest-specific penalty', () => {
     renderApp(
       <MemoryRouter>
