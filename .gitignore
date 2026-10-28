@@ -20,3 +20,9 @@ test-results
 
 # Operating system files
 .DS_Store
+
+# Isolated Python feasibility spike and local benchmark evidence
+scripts/standings-spike/.venv/
+__pycache__/
+.pytest_cache/
+.standings-spike/
