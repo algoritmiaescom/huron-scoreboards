@@ -1,8 +1,8 @@
 # Standings ingestion implementation plan
 
-Status: M1 in progress; local integration verified, hosted benchmark pending.
+Status: M1 in progress; local and hosted benchmarks passed, overall Actions job duration pending.
 
-Created: 2026-10-27. Last updated: 2026-10-27.
+Created: 2026-10-27. Last updated: 2026-10-28.
 
 ## Purpose and use
 
@@ -115,17 +115,22 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 - [x] Demonstrate that extraction receives the selected rendered state, not a fresh page that
       loses season selections, expanded accordions, or country filters.
 - [x] Verify a JavaScript interaction, a text PDF, and a scanned-table OCR example.
-- [ ] Benchmark a small Ollama model on standard hosted Linux against manually verified cells.
+- [x] Benchmark a small Ollama model on standard hosted Linux against manually verified cells.
       Record runner resources, model identifier/digest, context limits, model download time,
       runtime, peak memory, extraction errors, and estimated weekly/backfill minutes.
-- [ ] Choose explicit correctness and runtime acceptance thresholds from the benchmark; do not
+- [x] Choose explicit correctness and runtime acceptance thresholds from the benchmark; do not
       enable the schedule merely because the model returned valid JSON.
 - [x] Document local setup, model licensing, cache needs, and the proposed integration boundary.
 
 Implementation and local results are in the [M1 spike report](standings-ingestion-spike.md).
-The manual-only hosted benchmark workflow is implemented but has not been dispatched. Local
-inference passed all three exact-value checks; provisional 120-second and 6-GiB gates are
-implemented, but the hosted measurements and final threshold decision remain unchecked above.
+The manually dispatched hosted benchmark passed on 2026-10-28: all three extractions exactly
+matched the expected rows, inference took 21.86, 8.52, and 8.55 seconds, and peak sampled aggregate
+RSS was approximately 1.72 GiB. Retain the exact-match, 120-second-per-extraction, and 6-GiB gates
+for this synthetic feasibility test only. The supplied report records a 53.23-second harness run,
+not total Actions job duration. The user supplied [run 40640725672](https://github.com/algoritmiaescom/huron-scoreboards/actions/runs/40640725672),
+a 129-second Ollama installation timing artifact, and a log showing 0.53-second model-runner
+startup. The run page returned HTTP 404 from this environment; record the overall job duration
+before marking M1 done. No production schedule is authorized by this result.
 
 The repository is private: hosted usage consumes the account's included minutes and can incur
 charges beyond its quota. Check current allowance and pricing before rollout. Start without a
@@ -289,18 +294,28 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** merge the spike workflow into the default branch and manually dispatch
-  `standings-spike.yml`. Record the run URL and hosted measurements in the spike report; confirm
-  or revise the provisional gates before marking M1 done. M2 can proceed independently.
-- **Blockers:** hosted benchmarking requires the workflow on the remote default branch and an
-  Actions run. No schedule is enabled; no workflow dispatch, commit, or push was performed locally.
+- **Next step:** record the total Actions job duration in the spike report, then mark M1 done.
+  The run URL, installation timing, and model-runner startup timing are recorded. The next
+  implementation milestone is M2:
+  extend schemas for Fecha 0, detailed/totals-only rows, and explicitly unknown metadata, then
+  update validation, calculations, and UI with focused tests and application E2E coverage.
+- **Blockers:** only M1 overall Actions job duration remains outstanding; the supplied artifacts
+  do not include it, and the run page is inaccessible from this environment. M2 can proceed
+  independently. No schedule is enabled.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
-  three successful local Ollama extractions, and failure-handling tests. See the spike report for
-  portable results and limitations. Production site adapters are not implemented.
+  three successful local and three successful hosted Ollama extractions, and failure-handling
+  tests. See the spike report for portable results and limitations. Production site adapters are
+  not implemented. No workflow dispatch, commit, or push was performed by this documentation update.
 
 ## Progress log
 
-| Date       | Milestone | Update                                                                                                                                                                                                                                         | Verification / reference                                                                                                                                            |
-| ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                             | Documentation only; no ingestion implementation yet.                                                                                                                |
-| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending. | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md). |
+2026-10-28 follow-up: recorded the user-supplied run URL, 129-second Ollama installation,
+and 0.53-second model-runner startup. Overall Actions job duration remains pending. Documentation
+verification: `npm run validate` and `git diff --check` passed, including all 296 tests; no
+application behavior changed and no application E2E run was required.
+
+| Date       | Milestone | Update                                                                                                                                                                                                                                         | Verification / reference                                                                                                                                                                       |
+| ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                             | Documentation only; no ingestion implementation yet.                                                                                                                                           |
+| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending. | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md).                            |
+| 2026-10-28 | M1        | Recorded the supplied successful hosted benchmark and retained synthetic exact-match, 120-second, and 6-GiB gates. Run URL and installation/overall job timing remain pending; scheduling remains disabled.                                    | Supplied hosted report: exact rows in 3/3 runs, 21.86/8.52/8.55-second inference, 1.72-GiB sampled aggregate RSS. See [hosted measurements](standings-ingestion-spike.md#hosted-measurements). |

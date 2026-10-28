@@ -135,9 +135,48 @@ Verification completed locally:
 - `git diff --check`: passed. Temporary downloaded tool archives were removed; installed ignored
   tools, the model cache, and evidence were retained for reuse. No Ollama listener was left running.
 
-### Provisional gates and limitations
+## Hosted measurements
 
-Based on that local baseline, require:
+Recorded from the user-supplied hosted inference report dated 2026-10-28, with `status: passed`
+and `synthetic: true`, plus the supplied Ollama log and installation timing artifact.
+The user identified [Actions run 40640725672](https://github.com/algoritmiaescom/huron-scoreboards/actions/runs/40640725672)
+as the source. The run page returned HTTP 404 from this environment, so remote run metadata
+could not be verified. Overall job duration remains outstanding before closing M1; neither
+the inference report nor the Ollama log includes the complete setup and artifact-upload time.
+
+| Item                         | Observed value                                                      |
+| ---------------------------- | ------------------------------------------------------------------- |
+| Host                         | Linux x86_64, 2 logical CPUs, 8,323,960,832 bytes RAM               |
+| Runtime                      | Python 3.12.3, Ollama 0.13.5, locked dependencies above             |
+| Model                        | `qwen2.5:1.5b`, Q4_K_M; expected manifest digest matched            |
+| Ollama installation          | 129 seconds, from the supplied installation timing artifact         |
+| Model runner startup         | 0.53 seconds, from the supplied Ollama log                          |
+| Model download               | 986,061,892-byte model; pull took 12.36 seconds                     |
+| First extraction             | 21.86 seconds                                                       |
+| Subsequent extractions       | 8.52 and 8.55 seconds                                               |
+| Correctness                  | All 3 runs exactly matched both teams and all 6 fields per row      |
+| PDF / OCR                    | Both matched the fixture; OCR word confidences 92-96                |
+| Peak aggregate RSS           | 1,844,502,528 bytes (approximately 1.72 GiB)                        |
+| Harness elapsed time         | 53.23 seconds, including model pull but excluding tool installation |
+| Overall Actions job duration | Not supplied; cannot be inferred from the Ollama log                |
+| 20-page weekly assumption    | 7.29 inference minutes using the slowest observed run               |
+| 500-page backfill assumption | 182.13 inference minutes using the slowest observed run             |
+
+The content and prompt SHA-256 values were respectively
+`22a007a7a127880397b17b0d4249d44621016ad3bbb2e814925a1103ab95751c` and
+`9f58e40ae58c70f533f5506035b34493de51563a8885a6ee29738d3326a3524a`.
+The report records a 4096-token context, temperature 0, seed 42, and a 1024-token output budget.
+No row or field errors were observed in the three repetitions.
+
+This establishes small-fixture hosted feasibility, not production extraction accuracy or a
+billing forecast. The projections exclude installation, discovery, network, larger tables,
+PDF/OCR, and PR/CI. Real-source accuracy and scaling still require representative fixtures,
+bounded chunking, and completeness validation during adapter development. Scheduling remains
+disabled.
+
+### Accepted synthetic gates and limitations
+
+Based on the local baseline and successful hosted measurements, retain:
 
 - Every expected row and field exactly correct in every repetition, with no extras or omissions.
 - Text-PDF and scanned-PDF output exactly matching the known fixture tokens.
@@ -145,10 +184,11 @@ Based on that local baseline, require:
 - No more than 6 GiB sampled aggregate RSS for the inference run.
 - A failing exit status and persisted failure report for an extraction or gate failure.
 
-These are initial feasibility gates, not permission to schedule production ingestion. M1 remains
-in progress until a standard hosted runner confirms or revises them with measurements. Real,
-large scoreboards will need bounded chunking, row-completeness checks, and fixture coverage in
-later milestones; a 4096-token context is not assumed to fit a complete historical scoreboard.
+These are synthetic feasibility gates, not permission to schedule production ingestion. Hosted
+execution satisfies these gates; M1 remains in progress only for the missing overall Actions
+job duration. Real, large scoreboards will need bounded chunking,
+row-completeness checks, and fixture coverage in later milestones; a 4096-token context is not
+assumed to fit a complete historical scoreboard.
 
 ## Hosted benchmark and CI
 
