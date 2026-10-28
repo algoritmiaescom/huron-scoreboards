@@ -1,0 +1,20 @@
+[project]
+name = "huron-standings-spike"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+  "par-scrape==0.11.0",
+  "par-ai-core[all]==0.5.9",
+  "playwright==1.64.1",
+  "pymupdf==1.26.5",
+  "pytesseract==0.3.13",
+  "pillow==12.0.0",
+  "psutil==7.1.2",
+]
+
+[dependency-groups]
+dev = ["pytest==8.4.2"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+pythonpath = ["."]

@@ -1,6 +1,6 @@
 # Standings ingestion implementation plan
 
-Status: planned; implementation has not started.
+Status: M1 in progress; local integration verified, hosted benchmark pending.
 
 Created: 2026-10-27. Last updated: 2026-10-27.
 
@@ -98,29 +98,34 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 
 ## Milestones
 
-| ID  | Milestone                                               | Prerequisites            | Status  |
-| --- | ------------------------------------------------------- | ------------------------ | ------- |
-| M1  | Integration and cost feasibility spike                  | None                     | pending |
-| M2  | Partial historical standings model and UI               | None                     | pending |
-| M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | pending |
-| M4  | ICPC Mexico adapter                                     | M3                       | pending |
-| M5  | ScoreLATAM adapter                                      | M3                       | pending |
-| M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | pending |
-| M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | pending |
-| M8  | Reviewed-PR automation and controlled rollout           | M4, M5, M6, M7           | pending |
+| ID  | Milestone                                               | Prerequisites            | Status      |
+| --- | ------------------------------------------------------- | ------------------------ | ----------- |
+| M1  | Integration and cost feasibility spike                  | None                     | in progress |
+| M2  | Partial historical standings model and UI               | None                     | pending     |
+| M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | pending     |
+| M4  | ICPC Mexico adapter                                     | M3                       | pending     |
+| M5  | ScoreLATAM adapter                                      | M3                       | pending     |
+| M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | pending     |
+| M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | pending     |
+| M8  | Reviewed-PR automation and controlled rollout           | M4, M5, M6, M7           | pending     |
 
 ### M1: Integration and cost feasibility spike
 
-- [ ] Pin a compatible PAR Scrape/Python environment and establish a reproducible installation.
-- [ ] Demonstrate that extraction receives the selected rendered state, not a fresh page that
+- [x] Pin a compatible PAR Scrape/Python environment and establish a reproducible installation.
+- [x] Demonstrate that extraction receives the selected rendered state, not a fresh page that
       loses season selections, expanded accordions, or country filters.
-- [ ] Verify a JavaScript interaction, a text PDF, and a scanned-table OCR example.
+- [x] Verify a JavaScript interaction, a text PDF, and a scanned-table OCR example.
 - [ ] Benchmark a small Ollama model on standard hosted Linux against manually verified cells.
       Record runner resources, model identifier/digest, context limits, model download time,
       runtime, peak memory, extraction errors, and estimated weekly/backfill minutes.
 - [ ] Choose explicit correctness and runtime acceptance thresholds from the benchmark; do not
       enable the schedule merely because the model returned valid JSON.
-- [ ] Document local setup, model licensing, cache needs, and the proposed integration boundary.
+- [x] Document local setup, model licensing, cache needs, and the proposed integration boundary.
+
+Implementation and local results are in the [M1 spike report](standings-ingestion-spike.md).
+The manual-only hosted benchmark workflow is implemented but has not been dispatched. Local
+inference passed all three exact-value checks; provisional 120-second and 6-GiB gates are
+implemented, but the hosted measurements and final threshold decision remain unchecked above.
 
 The repository is private: hosted usage consumes the account's included minutes and can incur
 charges beyond its quota. Check current allowance and pricing before rollout. Start without a
@@ -284,15 +289,18 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** start M1 with a pinned PAR Scrape/Ollama integration and hosted-runner benchmark.
-  M2 can proceed independently.
-- **Blockers:** none recorded. M1 must resolve rendered-state integration, model selection,
-  resource budgets, and measured acceptance thresholds before scheduled operation.
-- **Implementation evidence:** none yet; discovery observations are planning inputs, not tested
-  production adapters.
+- **Next step:** merge the spike workflow into the default branch and manually dispatch
+  `standings-spike.yml`. Record the run URL and hosted measurements in the spike report; confirm
+  or revise the provisional gates before marking M1 done. M2 can proceed independently.
+- **Blockers:** hosted benchmarking requires the workflow on the remote default branch and an
+  Actions run. No schedule is enabled; no workflow dispatch, commit, or push was performed locally.
+- **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
+  three successful local Ollama extractions, and failure-handling tests. See the spike report for
+  portable results and limitations. Production site adapters are not implemented.
 
 ## Progress log
 
-| Date       | Milestone | Update                                                                                                             | Verification / reference                             |
-| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
-| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure. | Documentation only; no ingestion implementation yet. |
+| Date       | Milestone | Update                                                                                                                                                                                                                                         | Verification / reference                                                                                                                                            |
+| ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                             | Documentation only; no ingestion implementation yet.                                                                                                                |
+| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending. | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md). |

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>Synthetic standings extraction fixture - not archive data</title>
+  <label>
+    Edition
+    <select id="edition">
+      <option>2025</option>
+      <option>2026</option>
+    </select>
+  </label>
+  <button id="region" type="button" aria-expanded="false">Latin America</button>
+  <section id="panel" hidden>
+    <label>
+      Country
+      <select id="country">
+        <option>All</option>
+        <option>Mexico</option>
+      </select>
+    </label>
+    <main id="standings"></main>
+  </section>
+  <script>
+    const render = () => {
+      const selected =
+        document.querySelector('#edition').value === '2026' &&
+        document.querySelector('#country').value === 'Mexico';
+      document.querySelector('#standings').innerHTML = selected
+        ? `<h1>Synthetic Mexico 2026</h1>
+           <table><thead><tr><th>Place</th><th>Team</th><th>A attempts</th><th>A minute</th><th>Solved</th><th>Penalty</th></tr></thead>
+           <tbody><tr><td>1</td><td>Fixture Alpha</td><td>1</td><td>10</td><td>1</td><td>10</td></tr>
+           <tr><td>2</td><td>Fixture Beta</td><td>2</td><td>30</td><td>1</td><td>50</td></tr></tbody></table>`
+        : '<h1>Wrong edition or country</h1><p>Decoy Brazil 2025</p>';
+    };
+    document.querySelector('#region').addEventListener('click', () => {
+      document.querySelector('#panel').hidden = false;
+      document.querySelector('#region').setAttribute('aria-expanded', 'true');
+      render();
+    });
+    document.querySelector('#edition').addEventListener('change', render);
+    document.querySelector('#country').addEventListener('change', render);
+    render();
+  </script>
+</html>

@@ -9,7 +9,15 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig([
-  globalIgnores(['coverage', 'dist', 'node_modules', 'playwright-report', 'test-results']),
+  globalIgnores([
+    'coverage',
+    'dist',
+    'node_modules',
+    'playwright-report',
+    'test-results',
+    '.standings-spike',
+    'scripts/standings-spike/.venv',
+  ]),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
