@@ -80,6 +80,7 @@ intentionally provisional and the guide warns that contributions cannot be submi
 - [Product scope](docs/product-scope.md)
 - [Architecture](docs/architecture.md)
 - [Data model](docs/data-model.md)
+- [Standings ingestion implementation plan](docs/standings-ingestion-plan.md)
 - [Architecture decision records](docs/adr/README.md)
 - [Best practices](docs/best-practices.md)
 - [Design](docs/design.md)
