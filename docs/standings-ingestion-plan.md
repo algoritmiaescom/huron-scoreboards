@@ -1,6 +1,6 @@
 # Standings ingestion implementation plan
 
-Status: M1 in progress; local and hosted benchmarks passed, overall Actions job duration pending.
+Status: M2 done; M1 benchmark passed, overall Actions job duration pending before formal closure.
 
 Created: 2026-10-27. Last updated: 2026-10-28.
 
@@ -101,7 +101,7 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 | ID  | Milestone                                               | Prerequisites            | Status      |
 | --- | ------------------------------------------------------- | ------------------------ | ----------- |
 | M1  | Integration and cost feasibility spike                  | None                     | in progress |
-| M2  | Partial historical standings model and UI               | None                     | pending     |
+| M2  | Partial historical standings model and UI               | None                     | done        |
 | M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | pending     |
 | M4  | ICPC Mexico adapter                                     | M3                       | pending     |
 | M5  | ScoreLATAM adapter                                      | M3                       | pending     |
@@ -139,17 +139,39 @@ self-hosting has hardware, electricity, maintenance, and trusted-runner implicat
 
 ### M2: Partial historical standings model and UI
 
-- [ ] Extend the existing Zod schemas and inferred types with a distinct Fecha 0 stage.
-- [ ] Represent detailed versus totals-only rows, including mixed-detail standings when needed.
-- [ ] Represent unknown dates, duration, penalty rules, and qualification explicitly; do not
+- [x] Extend the existing Zod schemas and inferred types with a distinct Fecha 0 stage.
+- [x] Represent detailed versus totals-only rows, including mixed-detail standings when needed.
+- [x] Represent unknown dates, duration, penalty rules, and qualification explicitly; do not
       fabricate values or interpret unknown qualification as `false`.
-- [ ] Keep source-published totals as observations and computed totals authoritative for complete
+- [x] Keep source-published totals as observations and computed totals authoritative for complete
       detailed results; define how mismatches block or stage publication.
-- [ ] Preserve the convention that attempts include the accepted submission.
-- [ ] Update repository validation, derived calculations, filters, tables/cards, and historical
+- [x] Preserve the convention that attempts include the accepted submission.
+- [x] Update repository validation, derived calculations, filters, tables/cards, and historical
       views. Unknown values must not render as zero or unattempted.
-- [ ] Preserve existing complete-record behavior and test partial-data rendering/accessibility.
-- [ ] Update the data model, product scope, and contribution guidance for the new shapes.
+- [x] Preserve existing complete-record behavior and test partial-data rendering/accessibility.
+- [x] Update the data model, product scope, and contribution guidance for the new shapes.
+
+Implemented on 2026-10-28. Historical metadata and qualification use explicit `null`; totals-only
+rows use `results: null` with required `publishedTotals`. Mixed-detail contests are supported,
+and contradictory computable totals fail both CI and the runtime repository boundary. Missing
+problem details never become unattempted cells, and first-solve claims are suppressed when any
+row lacks detail. Undated contests remain explicitly selectable and present in school history,
+but are ineligible for latest-held/media selection. The initial M2 implementation left archive
+and mock JSON unchanged.
+
+Mock-data follow-up: the 2023 first qualifier now exercises totals-only history with unknown
+metadata/problem set, preserving all 12 original synthetic teams, places, solved counts, and
+penalties. Its second qualifier mixes detailed rows with a totals-only leader whose penalty is
+unknown. The real archive and other seasons are unchanged. `npm run validate:data` passed;
+two new archive-route browser tests passed at 390px and 1440px, covering reload, filters, and
+accessibility. See [mock data examples](../data/README.md).
+
+Verification: `npm run validate` passed (317 tests, data validation, formatting, lint, type checks,
+coverage, and production build). `npm run test:e2e -- --workers=2` passed all 49 browser tests,
+including partial-data filters, mobile/desktop reflow, and light/dark accessibility checks.
+Screenshots were inspected at 390px and 1440px. Chromium dependencies missing from this machine
+were extracted into a temporary user-owned directory and supplied via `LD_LIBRARY_PATH`; no
+system packages or repository configuration were changed.
 
 ### M3: Shared pipeline
 
@@ -295,19 +317,23 @@ Final acceptance must prove:
 ## Current handoff
 
 - **Next step:** record the total Actions job duration in the spike report, then mark M1 done.
-  The run URL, installation timing, and model-runner startup timing are recorded. The next
-  implementation milestone is M2:
-  extend schemas for Fecha 0, detailed/totals-only rows, and explicitly unknown metadata, then
-  update validation, calculations, and UI with focused tests and application E2E coverage.
+  M2 is complete. The next implementation milestone is M3: source configuration, typed
+  candidates/evidence, reviewed identity aliases, and reconciliation/review proposals. Keep
+  contradictory candidates outside the published archive and preserve existing records.
 - **Blockers:** only M1 overall Actions job duration remains outstanding; the supplied artifacts
-  do not include it, and the run page is inaccessible from this environment. M2 can proceed
-  independently. No schedule is enabled.
+  do not include it, and the run page is inaccessible from this environment. No schedule is enabled.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
   three successful local and three successful hosted Ollama extractions, and failure-handling
   tests. See the spike report for portable results and limitations. Production site adapters are
   not implemented. No workflow dispatch, commit, or push was performed by this documentation update.
 
 ## Progress log
+
+2026-10-28 M2: completed partial historical schemas, scoring, filtering, unknown-state rendering,
+Fecha 0, persistence validation, and contributor documentation. `npm run validate` passed with
+317 tests; `npm run test:e2e -- --workers=2` passed all 49 tests, including the four new partial-data
+browser cases. `git diff --check` passed. No competition datasets, workflow triggers, commits, or
+branches were changed by this implementation.
 
 2026-10-28 follow-up: recorded the user-supplied run URL, 129-second Ollama installation,
 and 0.53-second model-runner startup. Overall Actions job duration remains pending. Documentation
