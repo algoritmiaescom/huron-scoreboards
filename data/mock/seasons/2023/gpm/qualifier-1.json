@@ -4,558 +4,118 @@
   "seriesId": "gpm",
   "stage": "qualifier-1",
   "name": "GPM 2023 Clasificatorio 1",
-  "date": "2023-03-26",
-  "durationMinutes": 300,
-  "penaltyMinutesPerFailedAttempt": 20,
-  "problems": [
-    {
-      "label": "A"
-    },
-    {
-      "label": "B"
-    },
-    {
-      "label": "C"
-    },
-    {
-      "label": "D"
-    },
-    {
-      "label": "E"
-    },
-    {
-      "label": "F"
-    },
-    {
-      "label": "G"
-    },
-    {
-      "label": "H"
-    },
-    {
-      "label": "I"
-    },
-    {
-      "label": "J"
-    }
-  ],
+  "date": null,
+  "durationMinutes": null,
+  "penaltyMinutesPerFailedAttempt": null,
+  "problems": [],
   "standings": [
     {
       "place": 1,
       "teamId": "2023-unam-fi-binary",
-      "results": [
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 84
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 79
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 207
-        },
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 166
-        },
-        {
-          "status": "solved",
-          "attempts": 3,
-          "solvedAtMinute": 183
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 140
-        },
-        {
-          "status": "attempted",
-          "attempts": 3
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 919
+      }
     },
     {
       "place": 2,
       "teamId": "2023-unam-fc-gamma",
-      "results": [
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 118
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 191
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 115
-        },
-        {
-          "status": "solved",
-          "attempts": 3,
-          "solvedAtMinute": 70
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 223
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 2
-        },
-        {
-          "status": "attempted",
-          "attempts": 3
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 757
+      }
     },
     {
       "place": 3,
       "teamId": "2023-ipn-esime-lambda",
-      "results": [
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 208
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 155
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 130
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 170
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 683
+      }
     },
     {
       "place": 4,
       "teamId": "2023-ipn-escom-nullptr",
-      "results": [
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 226
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 204
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 145
-        },
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 147
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 2
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 742
+      }
     },
     {
       "place": 5,
       "teamId": "2023-ipn-upiita-trie",
-      "results": [
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 54
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 177
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 124
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 375
+      }
     },
     {
       "place": 6,
       "teamId": "2023-itesm-cem-matrix",
-      "results": [
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 189
-        },
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 178
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 94
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 501
+      }
     },
     {
       "place": 7,
       "teamId": "2023-udg-cucei-vortex",
-      "results": [
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 200
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "solved",
-          "attempts": 3,
-          "solvedAtMinute": 204
-        },
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 142
-        },
-        {
-          "status": "attempted",
-          "attempts": 2
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 606
+      }
     },
     {
       "place": 8,
       "teamId": "2023-buap-omega",
-      "results": [
-        {
-          "status": "solved",
-          "attempts": 3,
-          "solvedAtMinute": 111
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 151
+      }
     },
     {
       "place": 9,
       "teamId": "2023-uanl-fcfm-beta",
-      "results": [
-        {
-          "status": "attempted",
-          "attempts": 2
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 156
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 176
+      }
     },
     {
       "place": 10,
       "teamId": "2023-itesm-mty-syntax",
-      "results": [
-        {
-          "status": "attempted",
-          "attempts": 3
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 3
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 2
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
     },
     {
       "place": 10,
       "teamId": "2023-uady-overflow",
-      "results": [
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
     },
     {
       "place": 10,
       "teamId": "2023-ugto-heap",
-      "results": [
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "attempted",
-          "attempts": 2
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
     }
   ],
   "source": "https://example.com/huron-scoreboards/mock-data"
