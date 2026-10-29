@@ -103,7 +103,7 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 | M1  | Integration and cost feasibility spike                  | None                     | in progress |
 | M2  | Partial historical standings model and UI               | None                     | done        |
 | M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | in progress |
-| M4  | ICPC Mexico adapter                                     | M3                       | pending     |
+| M4  | ICPC Mexico adapter                                     | M3                       | in progress |
 | M5  | ScoreLATAM adapter                                      | M3                       | pending     |
 | M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | pending     |
 | M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | pending     |
@@ -233,19 +233,33 @@ Remaining M3 acceptance items stay unchecked until their runtime behavior exists
 
 Entry: <https://www.icpcmexico.org/contests>
 
-- [ ] Traverse season groups and classify GPM season pages, Fecha 0, qualifiers 1-3, repechage,
+- [x] Traverse season groups and classify GPM season pages, Fecha 0, qualifiers 1-3, repechage,
       and Mexico Finals.
 - [ ] Exclude training camps, Masters, LATAM championships, and unrelated events.
-- [ ] Inspect each GPM season page for accumulated standings or outgoing result links; report
+- [x] Inspect each GPM season page for accumulated standings or outgoing result links; report
       missing standings explicitly rather than producing empty results.
-- [ ] Parse DOM/structured data with intact cell boundaries. Do not parse flattened page text
+- [x] Parse DOM/structured data with intact cell boundaries. Do not parse flattened page text
       that merges adjacent numbers.
-- [ ] Verify each layout's accepted/failed/unattempted notation and penalty rules.
+- [x] Verify the inspected scoreboard layout's accepted/failed/unattempted notation and penalty
+      rule using synthetic table fixtures.
 - [ ] Dispatch linked PDFs through the document pipeline when available; otherwise explicitly
       stage those destinations until M6 is complete.
 - [ ] Preserve official participant scope: GPM scoreboards may include non-Mexican schools.
 - [ ] Test representative stages, a missing accumulated result, an external link, provisional
       data, and a source-layout change.
+
+The source-specific adapter discovers ICPC Mexico season and contest links, distinguishes Fecha 0,
+qualifiers, repechage, and Mexico Finals, and reports accumulated-standing links as missing or
+ambiguous rather than returning an empty result. Its parse5 scoreboard parser keeps each HTML cell
+separate, retains published place/solved/penalty totals and cell locators, parses `·`, `(N)`, and
+`minute +N`, and preserves event dates and the penalty rule when present. Unknown cell notation
+stages that row as totals-only; registered-team count mismatches mark row coverage incomplete. The
+source exposes no stable team or school IDs in the inspected scoreboard, so both remain null and
+no identity aliases are proposed. This adapter currently takes operator-supplied HTML and event
+context; event-page scoreboard-link extraction and acquisition-CLI wiring remain outstanding.
+Focused adapter tests cover discovery and synthetic scoreboard fixtures (9 tests). The full
+`npm run validate` gate passed with 386 tests, data validation, formatting, lint, type checking,
+coverage, and production build. No live source fetch, archive edit, or identity mapping was made.
 
 ### M5: ScoreLATAM
 
@@ -352,9 +366,10 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** add reviewed source-specific interaction recipes and wire acquisition jobs into
-  the CLI; add bounded season/backfill controls and source-specific fixture-based coverage checks.
-  Record total Actions job duration separately to formally close M1.
+- **Next step:** extract scoreboard destinations from contest pages, connect ICPC Mexico discovery
+  and parsing to acquisition jobs in the CLI, and add bounded season/backfill controls plus
+  source-specific fixture coverage checks. Record total Actions job duration separately to
+  formally close M1.
 - **Blockers:** only M1 overall Actions job duration remains outstanding; the supplied artifacts
   do not include it, and the run page is inaccessible from this environment. No schedule is enabled.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
@@ -402,6 +417,14 @@ cross-source completeness checks remain outstanding.
 runner connecting bounded fetch/render, content-keyed parser caching, candidate validation, and
 provenance stamping. Tests cover cache reuse, source-policy rejection, rendered-state parsing,
 wrong-edition output, and partial batches. `npm run validate` passed with 377 tests.
+
+2026-10-28 M4 started: added tested ICPC Mexico index/season discovery and a parse5 scoreboard
+adapter. The parser preserves cell-level evidence and source-published totals, stages unknown
+problem notation as totals-only, and marks row-count discrepancies incomplete; source IDs remain
+null because none were found in the inspected page. Nine focused adapter tests and `npm run
+validate` passed (386 total tests, including lint, data validation, typecheck, coverage, and
+production build). Event-page scoreboard-link extraction and acquisition-CLI integration remain
+the next implementation steps; no source records were imported.
 
 | Date       | Milestone | Update                                                                                                                                                                                                                                         | Verification / reference                                                                                                                                                                       |
 | ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
