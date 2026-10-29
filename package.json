@@ -24,6 +24,7 @@
     "validate:data": "tsx --tsconfig tsconfig.scripts.json scripts/validate-data.ts",
     "ingest:media": "tsx --tsconfig tsconfig.scripts.json scripts/ingest-media.ts",
     "media:pull-request": "tsx --tsconfig tsconfig.scripts.json scripts/media-pull-request.ts",
+    "standings:ingest": "tsx --tsconfig tsconfig.scripts.json scripts/standings-ingestion/run.ts",
     "standings:spike": "uv run --locked --project scripts/standings-spike python scripts/standings-spike/spike.py",
     "validate": "npm run format:check && npm run lint && npm run validate:data && npm run typecheck && npm run test:coverage && npm run build",
     "prepare": "husky"

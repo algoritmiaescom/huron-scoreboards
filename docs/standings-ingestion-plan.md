@@ -1,6 +1,6 @@
 # Standings ingestion implementation plan
 
-Status: M2 done; M1 benchmark passed, overall Actions job duration pending before formal closure.
+Status: M2 done; M3 in progress. The hosted M1 benchmark passed; overall Actions job duration remains pending before formal closure.
 
 Created: 2026-10-27. Last updated: 2026-10-28.
 
@@ -102,7 +102,7 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 | --- | ------------------------------------------------------- | ------------------------ | ----------- |
 | M1  | Integration and cost feasibility spike                  | None                     | in progress |
 | M2  | Partial historical standings model and UI               | None                     | done        |
-| M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | pending     |
+| M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | in progress |
 | M4  | ICPC Mexico adapter                                     | M3                       | pending     |
 | M5  | ScoreLATAM adapter                                      | M3                       | pending     |
 | M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | pending     |
@@ -192,6 +192,42 @@ system packages or repository configuration were changed.
 - [ ] Test idempotent reruns, disagreements, incomplete inputs, source removal, and ambiguous
       identities. Independent successful candidates may proceed, but incomplete runs must be
       unmistakable in both workflow status and review reports.
+
+Initial M3 contracts are implemented in `src/features/scoreboards/ingestion/`: the versioned
+source registry validates authority grouping, stage support, priorities, and season overrides;
+edition labels require explicit reviewed mappings before candidate acceptance. The candidate
+schema retains source URLs, retrieval time, content hash, parser/model versions, publication
+state, row data, and evidence locators. Candidate checks cover unique source identities, ranking,
+problem counts, solve duration, and computable published totals. Version-1 proposals retain
+candidate references, conflicts, alternative evidence, additions, and source failures; incomplete
+runs and non-final candidates cannot propose additions. The reviewed identity registry resolves
+only exact source IDs with reviewer provenance and validates canonical school/team targets. The
+ICPC Global directory and finder have distinct source IDs but share one authority ID.
+
+The initial source priorities are in `config/standings-sources.json`; the reviewed alias registry
+starts empty in `config/standings-identities.json`. Edition mappings deliberately remain empty
+until a source label is confirmed and reviewed. `reconcileCandidates` is a dry-run comparison:
+it emits additions/conflicts by candidate-row reference, never changes the archive, and permits
+independent additions from a partial run only when no run-wide validation issue exists.
+Candidate coverage records expected row count, row completeness, and pagination completion; these
+gate additions while preserving incomplete evidence for review. `BoundedSourceFetcher` restricts
+requests and manual redirects to a configured HTTPS origin and applies request-count, timeout,
+redirect, and response-byte budgets with typed failure results. `parseFetchedContent` connects
+content hashes and parser/prompt/model settings to the bounded, Zod-validated cache. Offline tests
+inject network responses; the workflow does not contact competition sites. The generic Playwright
+renderer restricts page and subresource requests to the configured HTTPS origin, runs a bounded
+explicit click/select/wait sequence, waits for a source-provided ready selector, and captures one
+size-limited selected element. Source-specific interaction recipes are not configured yet.
+`acquireStandingsCandidate` and the bounded sequential `acquireStandingsBatch` enforce preferred
+source/edition policy, fetch or render the selected content, cache parser output, validate requested
+contest identity, and retain provenance. `standings:ingest` still accepts candidate files rather
+than acquisition job descriptions; the acquisition batch and source adapters are not wired into
+the CLI. The CLI applies source/edition filters, validates the real archive, runs the dry-run
+reconciler, and atomically writes a new proposal under ignored
+`.standings-ingestion/proposals/`; it never changes `data/`. Candidate files are supplied by the
+operator and are not fetched or parsed by the CLI. No source-specific interaction adapter, CLI
+acquisition-job input, or source-specific cross-check of expected standings coverage exists yet.
+Remaining M3 acceptance items stay unchecked until their runtime behavior exists.
 
 ### M4: ICPC Mexico
 
@@ -316,16 +352,18 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** record the total Actions job duration in the spike report, then mark M1 done.
-  M2 is complete. The next implementation milestone is M3: source configuration, typed
-  candidates/evidence, reviewed identity aliases, and reconciliation/review proposals. Keep
-  contradictory candidates outside the published archive and preserve existing records.
+- **Next step:** add reviewed source-specific interaction recipes and wire acquisition jobs into
+  the CLI; add bounded season/backfill controls and source-specific fixture-based coverage checks.
+  Record total Actions job duration separately to formally close M1.
 - **Blockers:** only M1 overall Actions job duration remains outstanding; the supplied artifacts
   do not include it, and the run page is inaccessible from this environment. No schedule is enabled.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
   three successful local and three successful hosted Ollama extractions, and failure-handling
-  tests. See the spike report for portable results and limitations. Production site adapters are
-  not implemented. No workflow dispatch, commit, or push was performed by this documentation update.
+  tests. See the spike report for portable results and limitations. M3 source/candidate/identity
+  contracts, dry-run reconciliation, bounded fetching/cache, generic selected-state rendering, an
+  acquisition API/batch, and the offline candidate-file review CLI are implemented. Source-specific
+  adapters and CLI acquisition wiring are not. No workflow dispatch, commit, or push was performed
+  by this documentation update.
 
 ## Progress log
 
@@ -339,6 +377,31 @@ branches were changed by this implementation.
 and 0.53-second model-runner startup. Overall Actions job duration remains pending. Documentation
 verification: `npm run validate` and `git diff --check` passed, including all 296 tests; no
 application behavior changed and no application E2E run was required.
+
+2026-10-28 M3 started: added versioned source and identity registry schemas/configuration,
+explicit stage/season source priorities, edition mapping checks, evidence-backed candidates,
+versioned proposals, publication/completeness gates, and exact reviewed identity resolution.
+The ICPC Global directory and finder share one authority; no unverified edition mapping or
+identity alias was invented. Focused ingestion tests pass. All 335 unit tests, lint, data
+validation, type checking, production build, touched-file formatting, and `git diff --check`
+passed. The aggregate `npm run validate` stopped at its repository-wide formatting step because
+the user-owned, untracked `.vscode/settings.json` is unformatted; that file was left unchanged.
+Follow-up added immutable dry-run reconciliation with row/field conflict and identity reports,
+partial-run isolation, deterministic candidate ordering, a same-origin bounded fetcher with
+explicit failure outcomes, candidate row/pagination coverage gates, a parser-connected bounded
+cache, an acquisition API for fetch/render/parse candidates, `standings:ingest` for candidate
+selection and atomic proposal output, and a generic bounded Playwright selected-state renderer.
+Validation passed for touched-file formatting, repository lint, data validation, type checking,
+all 377 unit tests, production build, and `git diff --check`.
+The aggregate
+`npm run validate` remains blocked only by the untracked, unformatted `.vscode/settings.json`, which
+was not modified. Source-specific rendering/adapters, connected fetch/parse orchestration, and
+cross-source completeness checks remain outstanding.
+
+2026-10-28 M3 acquisition follow-up: added a policy-checked acquisition API and sequential batch
+runner connecting bounded fetch/render, content-keyed parser caching, candidate validation, and
+provenance stamping. Tests cover cache reuse, source-policy rejection, rendered-state parsing,
+wrong-edition output, and partial batches. `npm run validate` passed with 377 tests.
 
 | Date       | Milestone | Update                                                                                                                                                                                                                                         | Verification / reference                                                                                                                                                                       |
 | ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
