@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "icpc-mexico",
+      "authorityId": "icpc-mexico",
+      "name": "ICPC Mexico",
+      "baseUrl": "https://www.icpcmexico.org/contests",
+      "supportedStages": [
+        "fecha-0",
+        "qualifier-1",
+        "qualifier-2",
+        "qualifier-3",
+        "repechage",
+        "final"
+      ],
+      "supportsSeasonStanding": true
+    },
+    {
+      "id": "icpc-global-directory",
+      "authorityId": "icpc-global",
+      "name": "ICPC Global contest directory",
+      "baseUrl": "https://icpc.global/regionals/contests",
+      "supportedStages": ["qualifier-1", "qualifier-2", "qualifier-3", "repechage", "final"],
+      "supportsSeasonStanding": true
+    },
+    {
+      "id": "icpc-global-finder",
+      "authorityId": "icpc-global",
+      "name": "ICPC Global Mexico finder",
+      "baseUrl": "https://icpc.global/regionals/finder/mexico",
+      "supportedStages": ["qualifier-1", "qualifier-2", "qualifier-3", "repechage", "final"],
+      "supportsSeasonStanding": true
+    },
+    {
+      "id": "iteso",
+      "authorityId": "iteso",
+      "name": "ITESO ACM archive",
+      "baseUrl": "https://eventos.iteso.mx/acm/",
+      "supportedStages": [],
+      "supportsSeasonStanding": true
+    },
+    {
+      "id": "scorelatam",
+      "authorityId": "scorelatam",
+      "name": "ScoreLATAM",
+      "baseUrl": "https://scorelatam.naquadah.com.br/",
+      "supportedStages": ["final"],
+      "supportsSeasonStanding": false
+    }
+  ],
+  "preferredSources": [
+    { "stage": "fecha-0", "sourceIds": ["icpc-mexico"] },
+    { "stage": "qualifier-1", "sourceIds": ["icpc-mexico"] },
+    { "stage": "qualifier-2", "sourceIds": ["icpc-mexico"] },
+    { "stage": "qualifier-3", "sourceIds": ["icpc-mexico"] },
+    { "stage": "repechage", "sourceIds": ["icpc-mexico"] },
+    {
+      "stage": "final",
+      "sourceIds": ["icpc-mexico", "icpc-global-directory", "scorelatam"]
+    }
+  ],
+  "overrides": [],
+  "preferredSeasonStandingSources": ["icpc-mexico", "iteso", "icpc-global-directory"],
+  "seasonStandingOverrides": [],
+  "editionMappings": []
+}

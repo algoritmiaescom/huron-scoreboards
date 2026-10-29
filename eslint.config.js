@@ -17,6 +17,7 @@ export default defineConfig([
     'test-results',
     '.standings-spike',
     'scripts/standings-spike/.venv',
+    '.vscode',
   ]),
   {
     files: ['**/*.{ts,tsx}'],

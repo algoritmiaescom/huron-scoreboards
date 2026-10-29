@@ -6,3 +6,4 @@ playwright-report
 test-results
 .standings-spike
 scripts/standings-spike/.venv
+.vscode

@@ -26,3 +26,4 @@ scripts/standings-spike/.venv/
 __pycache__/
 .pytest_cache/
 .standings-spike/
+/scripts/standings-ingestion/.venv/|
