@@ -27,3 +27,4 @@ __pycache__/
 .pytest_cache/
 .standings-spike/
 /scripts/standings-ingestion/.venv/|
+.vscode
