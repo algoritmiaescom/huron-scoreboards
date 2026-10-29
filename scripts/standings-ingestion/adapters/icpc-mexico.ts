@@ -55,6 +55,16 @@ export interface ICPCMexicoSeasonResult {
   stagedLinks: { url: string; linkText: string; reason: string }[];
 }
 
+export type ICPCMexicoScoreboardDiscovery =
+  | { status: 'found'; eventUrl: string; scoreboardUrl: string }
+  | { status: 'missing'; eventUrl: string; scoreboardUrl: null; stagedLinks: [] }
+  | {
+      status: 'staged';
+      eventUrl: string;
+      scoreboardUrl: null;
+      stagedLinks: { url: string; linkText: string; reason: string }[];
+    };
+
 export interface ICPCMexicoScoreboardContext {
   seasonYear: number;
   seriesId: 'gpm' | 'mexico-finals';
@@ -627,5 +637,89 @@ export const discoverICPCMexicoSeason = (
       accumulated.length > 1
         ? accumulated.map((link) => ({ ...link, reason: 'duplicate accumulated standing links' }))
         : [],
+  };
+};
+
+export const discoverICPCMexicoScoreboard = (
+  html: string,
+  eventUrl: string,
+): ICPCMexicoScoreboardDiscovery => {
+  let event: URL;
+  try {
+    event = new URL(eventUrl);
+  } catch {
+    return {
+      status: 'staged',
+      eventUrl,
+      scoreboardUrl: null,
+      stagedLinks: [{ url: eventUrl, linkText: '', reason: 'invalid event URL' }],
+    };
+  }
+  if (
+    event.origin !== CONTESTS_ORIGIN ||
+    event.protocol !== 'https:' ||
+    event.username ||
+    event.password
+  ) {
+    return {
+      status: 'staged',
+      eventUrl,
+      scoreboardUrl: null,
+      stagedLinks: [{ url: event.href, linkText: '', reason: 'event URL is outside ICPC Mexico' }],
+    };
+  }
+
+  const document = parse(html);
+  const links = flattenDocument(document).flatMap((node) => {
+    if (!isElement(node) || node.tagName !== 'a') {
+      return [];
+    }
+    const href = attribute(node, 'href');
+    if (href === undefined) {
+      return [];
+    }
+    let url: URL;
+    try {
+      url = new URL(href, event);
+    } catch {
+      return [];
+    }
+    const linkText = textContent(node);
+    if (!/scoreboard/i.test(linkText) && !/\/scoreboard\/?$/i.test(url.pathname)) {
+      return [];
+    }
+    url.hash = '';
+    return [{ url, linkText }];
+  });
+  const uniqueLinks = [...new Map(links.map((link) => [link.url.href, link])).values()];
+  if (uniqueLinks.length === 0) {
+    return { status: 'missing', eventUrl: event.href, scoreboardUrl: null, stagedLinks: [] };
+  }
+  const invalidLinks = uniqueLinks.filter(
+    ({ url }) =>
+      url.origin !== CONTESTS_ORIGIN ||
+      url.protocol !== 'https:' ||
+      url.username.length > 0 ||
+      url.password.length > 0,
+  );
+  if (invalidLinks.length > 0 || uniqueLinks.length > 1) {
+    return {
+      status: 'staged',
+      eventUrl: event.href,
+      scoreboardUrl: null,
+      stagedLinks: uniqueLinks.map(({ url, linkText }) => ({
+        url: url.href,
+        linkText,
+        reason: invalidLinks.some((link) => link.url.href === url.href)
+          ? 'scoreboard destination is outside ICPC Mexico'
+          : 'multiple scoreboard destinations found',
+      })),
+    };
+  }
+  const destination = uniqueLinks[0];
+  return {
+    status: 'found',
+    eventUrl: event.href,
+    scoreboardUrl: destination.url.href,
   };
 };

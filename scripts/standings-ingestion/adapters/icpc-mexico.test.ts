@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import {
   discoverICPCMexicoIndex,
+  discoverICPCMexicoScoreboard,
   discoverICPCMexicoSeason,
   parseICPCMexicoScoreboard,
 } from './icpc-mexico';
@@ -125,6 +126,49 @@ describe('ICPC Mexico contest index adapter', () => {
         2026,
       ).stagedLinks,
     ).toHaveLength(2);
+  });
+
+  it('resolves one same-origin scoreboard destination and stages absent, external, or ambiguous links', () => {
+    const eventUrl = 'https://www.icpcmexico.org/contests/gpmx-2025-fecha-1';
+    expect(
+      discoverICPCMexicoScoreboard(
+        '<a href="/contests/gpmx-2025-fecha-1/scoreboard">Vista solo scoreboard</a>',
+        eventUrl,
+      ),
+    ).toEqual({
+      status: 'found',
+      eventUrl,
+      scoreboardUrl: `${eventUrl}/scoreboard`,
+    });
+    expect(discoverICPCMexicoScoreboard('<p>No scoreboard link</p>', eventUrl)).toMatchObject({
+      status: 'missing',
+      scoreboardUrl: null,
+    });
+    expect(
+      discoverICPCMexicoScoreboard(
+        '<a href="https://example.com/scoreboard">Scoreboard</a>',
+        eventUrl,
+      ),
+    ).toMatchObject({
+      status: 'staged',
+      scoreboardUrl: null,
+      stagedLinks: [
+        expect.objectContaining({ reason: 'scoreboard destination is outside ICPC Mexico' }),
+      ],
+    });
+    expect(
+      discoverICPCMexicoScoreboard(
+        '<a href="/scoreboard">Scoreboard A</a><a href="/other/scoreboard">Scoreboard B</a>',
+        eventUrl,
+      ),
+    ).toMatchObject({
+      status: 'staged',
+      scoreboardUrl: null,
+      stagedLinks: [
+        expect.objectContaining({ reason: 'multiple scoreboard destinations found' }),
+        expect.objectContaining({ reason: 'multiple scoreboard destinations found' }),
+      ],
+    });
   });
 });
 

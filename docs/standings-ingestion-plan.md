@@ -1,3 +1,16 @@
+The full `npm run validate` gate passed with 386 tests before this resolver change; no live source
+fetch, archive edit, or identity mapping was made.
+The current `npm run validate` gate passes with 390 tests, data validation, formatting, lint, type
+checking, coverage, and production build. Adapter acquisition tests inject all responses; no live
+source fetch, archive edit, or identity mapping was made.
+2026-10-29 M4 follow-up: event-page scoreboard discovery accepts exactly one normalized
+same-origin HTTPS destination and stages missing, external, or ambiguous links. Added the
+`--acquire-icpc-mexico --season YEAR` CLI flow with optional series/stage filters, a 20-contest
+limit, shared bounded acquisition/caching, and proposal-level failure reporting. Offline tests
+cover successful index-to-scoreboard acquisition, external-link rejection, and season bounds.
+`npm run validate` passed with 390 tests; `git diff --check` passed. No source records were
+imported.
+
 # Standings ingestion implementation plan
 
 Status: M2 done; M3 in progress. The hosted M1 benchmark passed; overall Actions job duration remains pending before formal closure.
@@ -219,15 +232,14 @@ renderer restricts page and subresource requests to the configured HTTPS origin,
 explicit click/select/wait sequence, waits for a source-provided ready selector, and captures one
 size-limited selected element. Source-specific interaction recipes are not configured yet.
 `acquireStandingsCandidate` and the bounded sequential `acquireStandingsBatch` enforce preferred
-source/edition policy, fetch or render the selected content, cache parser output, validate requested
-contest identity, and retain provenance. `standings:ingest` still accepts candidate files rather
-than acquisition job descriptions; the acquisition batch and source adapters are not wired into
-the CLI. The CLI applies source/edition filters, validates the real archive, runs the dry-run
-reconciler, and atomically writes a new proposal under ignored
-`.standings-ingestion/proposals/`; it never changes `data/`. Candidate files are supplied by the
-operator and are not fetched or parsed by the CLI. No source-specific interaction adapter, CLI
-acquisition-job input, or source-specific cross-check of expected standings coverage exists yet.
-Remaining M3 acceptance items stay unchecked until their runtime behavior exists.
+source/edition policy, fetch or render selected content, cache parser output, validate requested
+contest identity, and retain provenance. `standings:ingest` supports both operator-supplied
+candidate files and a bounded `--acquire-icpc-mexico --season YEAR` flow; the latter discovers
+contest and scoreboard pages, then feeds parsed candidates into the same dry-run proposal path.
+The CLI validates the real archive and atomically writes proposals under ignored
+`.standings-ingestion/proposals/`; it never changes `data/`. Source edition mappings remain
+review-gated, and source-specific completeness checks beyond the ICPC Mexico row count are not
+implemented. Remaining M3 acceptance items stay unchecked until their runtime behavior exists.
 
 ### M4: ICPC Mexico
 
@@ -255,11 +267,17 @@ separate, retains published place/solved/penalty totals and cell locators, parse
 `minute +N`, and preserves event dates and the penalty rule when present. Unknown cell notation
 stages that row as totals-only; registered-team count mismatches mark row coverage incomplete. The
 source exposes no stable team or school IDs in the inspected scoreboard, so both remain null and
-no identity aliases are proposed. This adapter currently takes operator-supplied HTML and event
-context; event-page scoreboard-link extraction and acquisition-CLI wiring remain outstanding.
-Focused adapter tests cover discovery and synthetic scoreboard fixtures (9 tests). The full
-`npm run validate` gate passed with 386 tests, data validation, formatting, lint, type checking,
-coverage, and production build. No live source fetch, archive edit, or identity mapping was made.
+no identity aliases are proposed. Event-page scoreboard discovery resolves one normalized
+same-origin HTTPS destination and stages missing, external, or ambiguous links. The CLI can now
+fetch the ICPC Mexico index, filter recognized contest links by one required season and optional
+series/stage, resolve scoreboard pages, acquire candidates through the shared bounded cache and
+validation pipeline, and write a review proposal with discovery/acquisition failures retained.
+The mode is capped at 20 contests per run and requires a reviewed source-edition mapping before a
+candidate is accepted. Offline tests cover the index-to-proposal flow and confirm external
+destinations are not fetched. `npm run validate` passes with 390 tests, data validation,
+formatting, lint, type checking, coverage, and production build. Broader multi-season backfill, PDF
+dispatch, additional publication state verification, and source-specific coverage checks remain
+outstanding. No live source fetch, archive edit, or identity mapping was made.
 
 ### M5: ScoreLATAM
 
@@ -366,10 +384,9 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** extract scoreboard destinations from contest pages, connect ICPC Mexico discovery
-  and parsing to acquisition jobs in the CLI, and add bounded season/backfill controls plus
-  source-specific fixture coverage checks. Record total Actions job duration separately to
-  formally close M1.
+- **Next step:** add bounded multi-season/backfill controls, source-specific fixture coverage
+  checks, and broader ICPC Mexico layout/publication tests. Record total Actions job duration
+  separately to formally close M1.
 - **Blockers:** only M1 overall Actions job duration remains outstanding; the supplied artifacts
   do not include it, and the run page is inaccessible from this environment. No schedule is enabled.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
@@ -425,6 +442,14 @@ null because none were found in the inspected page. Nine focused adapter tests a
 validate` passed (386 total tests, including lint, data validation, typecheck, coverage, and
 production build). Event-page scoreboard-link extraction and acquisition-CLI integration remain
 the next implementation steps; no source records were imported.
+
+2026-10-29 M4 follow-up: event-page scoreboard discovery accepts exactly one normalized
+same-origin HTTPS destination and stages missing, external, or ambiguous links. Added the
+`--acquire-icpc-mexico --season YEAR` CLI flow with optional series/stage filters, a 20-contest
+limit, shared bounded acquisition/caching, and proposal-level failure reporting. Offline tests
+cover successful index-to-scoreboard acquisition, external-link rejection, and season bounds.
+`npm run validate` passed with 390 tests; `git diff --check` passed. No source records were
+imported.
 
 | Date       | Milestone | Update                                                                                                                                                                                                                                         | Verification / reference                                                                                                                                                                       |
 | ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

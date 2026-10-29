@@ -81,6 +81,7 @@ export interface AcquisitionRequest {
   promptVersion: string | null;
   model: string | null;
   options: unknown;
+  parse?: (body: Uint8Array, contentType: string | null) => Promise<unknown>;
 }
 
 export interface AcquisitionDependencies {
@@ -254,7 +255,7 @@ export const acquireStandingsCandidate = async (
       identity: cacheIdentity,
       cache: dependencies.cache,
       schema: parsedCandidatePayloadSchema,
-      parse: (body) => dependencies.parse(body, content.contentType),
+      parse: (body) => (request.parse ?? dependencies.parse)(body, content.contentType),
     });
   } catch (error) {
     return failure(
