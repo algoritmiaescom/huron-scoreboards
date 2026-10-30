@@ -116,7 +116,7 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 | M1  | Integration and cost feasibility spike                  | None                     | in progress |
 | M2  | Partial historical standings model and UI               | None                     | done        |
 | M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | in progress |
-| M4  | ICPC Mexico adapter                                     | M3                       | in progress |
+| M4  | ICPC Mexico adapter                                     | M3                       | done        |
 | M5  | ScoreLATAM adapter                                      | M3                       | pending     |
 | M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | pending     |
 | M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | pending     |
@@ -247,37 +247,36 @@ Entry: <https://www.icpcmexico.org/contests>
 
 - [x] Traverse season groups and classify GPM season pages, Fecha 0, qualifiers 1-3, repechage,
       and Mexico Finals.
-- [ ] Exclude training camps, Masters, LATAM championships, and unrelated events.
+- [x] Exclude explicit training camps, Masters, and LATAM championships; stage unknown
+      contest-shaped links rather than acquiring them.
 - [x] Inspect each GPM season page for accumulated standings or outgoing result links; report
       missing standings explicitly rather than producing empty results.
 - [x] Parse DOM/structured data with intact cell boundaries. Do not parse flattened page text
       that merges adjacent numbers.
 - [x] Verify the inspected scoreboard layout's accepted/failed/unattempted notation and penalty
       rule using synthetic table fixtures.
-- [ ] Dispatch linked PDFs through the document pipeline when available; otherwise explicitly
+- [x] Dispatch linked PDFs through the document pipeline when available; otherwise explicitly
       stage those destinations until M6 is complete.
-- [ ] Preserve official participant scope: GPM scoreboards may include non-Mexican schools.
-- [ ] Test representative stages, a missing accumulated result, an external link, provisional
+- [x] Preserve official participant scope: GPM scoreboards may include non-Mexican schools.
+- [x] Test representative stages, a missing accumulated result, an external link, provisional
       data, and a source-layout change.
 
 The source-specific adapter discovers ICPC Mexico season and contest links, distinguishes Fecha 0,
 qualifiers, repechage, and Mexico Finals, and reports accumulated-standing links as missing or
-ambiguous rather than returning an empty result. Its parse5 scoreboard parser keeps each HTML cell
-separate, retains published place/solved/penalty totals and cell locators, parses `·`, `(N)`, and
-`minute +N`, and preserves event dates and the penalty rule when present. Unknown cell notation
-stages that row as totals-only; registered-team count mismatches mark row coverage incomplete. The
-source exposes no stable team or school IDs in the inspected scoreboard, so both remain null and
-no identity aliases are proposed. Event-page scoreboard discovery resolves one normalized
-same-origin HTTPS destination and stages missing, external, or ambiguous links. The CLI can now
-fetch the ICPC Mexico index, filter recognized contest links by one required season and optional
-series/stage, resolve scoreboard pages, acquire candidates through the shared bounded cache and
-validation pipeline, and write a review proposal with discovery/acquisition failures retained.
-The mode is capped at 20 contests per run and requires a reviewed source-edition mapping before a
-candidate is accepted. Offline tests cover the index-to-proposal flow and confirm external
-destinations are not fetched. `npm run validate` passes with 390 tests, data validation,
-formatting, lint, type checking, coverage, and production build. Broader multi-season backfill, PDF
-dispatch, additional publication state verification, and source-specific coverage checks remain
-outstanding. No live source fetch, archive edit, or identity mapping was made.
+ambiguous rather than returning an empty result. Its parse5 scoreboard parser preserves HTML cell
+boundaries, published totals, and cell evidence; unknown notation becomes totals-only and row-count
+mismatches mark coverage incomplete. Source IDs remain null because the inspected scoreboard
+exposes no stable team or school identifiers. The index adapter explicitly excludes training
+camps, Masters, and LATAM championships; unknown contest-shaped links remain staged. Event-page
+discovery resolves one normalized same-origin HTTPS scoreboard destination, stages PDF and external
+destinations, and reports missing or ambiguous links. GPM school rows are not filtered by country.
+The CLI supports one season or inclusive backfills of up to five seasons, caps runs at 20 contests,
+and retains discovery/acquisition failures in the review proposal. Candidate acceptance requires a
+reviewed source-edition mapping. Offline tests cover representative stages, partial/unknown cells,
+row-count mismatches, unsupported layouts, publication states, international participants, PDF
+staging, exclusions, multi-season acquisition, and overflow. `npm run validate` passed with 394
+tests, data validation, formatting, lint, type checking, coverage, and production build. No live
+source fetch, archive edit, or identity mapping was made; PDF parsing remains deferred to M6.
 
 ### M5: ScoreLATAM
 
@@ -384,18 +383,17 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** add bounded multi-season/backfill controls, source-specific fixture coverage
-  checks, and broader ICPC Mexico layout/publication tests. Record total Actions job duration
-  separately to formally close M1.
-- **Blockers:** only M1 overall Actions job duration remains outstanding; the supplied artifacts
-  do not include it, and the run page is inaccessible from this environment. No schedule is enabled.
+- **Next step:** begin M5 ScoreLATAM discovery and determine how the source exposes Mexico-local
+  standings, while preserving the M1 overall Actions job-duration follow-up.
+- **Blockers:** the supplied M1 artifacts do not include overall Actions job duration, and the run
+  page is inaccessible from this environment. No schedule is enabled.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
   three successful local and three successful hosted Ollama extractions, and failure-handling
   tests. See the spike report for portable results and limitations. M3 source/candidate/identity
   contracts, dry-run reconciliation, bounded fetching/cache, generic selected-state rendering, an
-  acquisition API/batch, and the offline candidate-file review CLI are implemented. Source-specific
-  adapters and CLI acquisition wiring are not. No workflow dispatch, commit, or push was performed
-  by this documentation update.
+  acquisition API/batch, and the offline candidate-file review CLI are implemented. The ICPC Mexico
+  adapter and bounded acquisition CLI are complete for the tested HTML source shape; ScoreLATAM,
+  ITESO, and ICPC Global adapters remain outstanding. No workflow dispatch was performed.
 
 ## Progress log
 
@@ -449,6 +447,23 @@ same-origin HTTPS destination and stages missing, external, or ambiguous links. 
 limit, shared bounded acquisition/caching, and proposal-level failure reporting. Offline tests
 cover successful index-to-scoreboard acquisition, external-link rejection, and season bounds.
 `npm run validate` passed with 390 tests; `git diff --check` passed. No source records were
+imported.
+
+2026-10-29 M4 backfill follow-up: added inclusive `--season-from`/`--season-to` discovery capped
+at five consecutive seasons, preserving the existing 20-contest total limit and proposal failure
+reporting. Added offline coverage for a two-season run, invalid/reversed/oversized ranges,
+provisional/live labels, and Masters staging. `npm run validate` passed with 392 tests;
+`git diff --check` passed. No source records were imported.
+
+2026-10-29 M4 cap follow-up: added a synthetic five-season discovery with 25 recognized contests.
+The CLI fetches exactly 20 event pages and 20 scoreboards, writes 20 candidates, and records the
+overflow as a proposal failure. `npm run validate` passed with 393 tests; `git diff --check`
+passed. No source records were imported.
+
+2026-10-29 M4 acceptance follow-up: explicitly excluded Masters and staged same-origin scoreboard
+PDFs until M6; added a regression proving that non-Mexican schools are retained. The complete M4
+acceptance checklist is verified. `npm run validate` passed with 394 tests, including formatting,
+lint, data validation, type checking, coverage, and production build. No source records were
 imported.
 
 | Date       | Milestone | Update                                                                                                                                                                                                                                         | Verification / reference                                                                                                                                                                       |

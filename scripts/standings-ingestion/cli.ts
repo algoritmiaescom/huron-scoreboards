@@ -32,11 +32,13 @@ const MAX_INPUT_BYTES = 64 * 1024 * 1024;
 const MAX_TOTAL_CANDIDATE_BYTES = 256 * 1024 * 1024;
 const MAX_CANDIDATE_RECORDS = 1000;
 const MAX_ICPC_MEXICO_JOBS = 20;
+const MAX_ICPC_MEXICO_BACKFILL_YEARS = 5;
 
 interface CliOptions {
   acquireICPCMexico: boolean;
   sourceId?: string;
   seasonYear?: number;
+  seasonYears?: number[];
   seriesId?: string;
   stage?: string;
   outputDirectory: string;
@@ -56,6 +58,8 @@ const parseCliOptions = (argv: string[]): CliOptions => {
       'acquire-icpc-mexico': { type: 'boolean', default: false },
       source: { type: 'string' },
       season: { type: 'string' },
+      'season-from': { type: 'string' },
+      'season-to': { type: 'string' },
       series: { type: 'string' },
       stage: { type: 'string' },
       'output-dir': { type: 'string', default: '.standings-ingestion/proposals' },
@@ -76,11 +80,42 @@ const parseCliOptions = (argv: string[]): CliOptions => {
     }
     seasonYear = parsedYear.data;
   }
+  const hasSeasonFrom = values['season-from'] !== undefined;
+  const hasSeasonTo = values['season-to'] !== undefined;
+  let seasonYears: number[] | undefined;
+  if (hasSeasonFrom || hasSeasonTo) {
+    if (!hasSeasonFrom || !hasSeasonTo || seasonYear !== undefined) {
+      throw new Error(
+        '--season-from and --season-to must be provided together, instead of --season.',
+      );
+    }
+    const parsedFrom = seasonYearSchema.safeParse(Number(values['season-from']));
+    const parsedTo = seasonYearSchema.safeParse(Number(values['season-to']));
+    if (!parsedFrom.success || !parsedTo.success || parsedFrom.data > parsedTo.data) {
+      throw new Error('--season-from and --season-to must be valid ascending season years.');
+    }
+    const yearCount = parsedTo.data - parsedFrom.data + 1;
+    if (yearCount > MAX_ICPC_MEXICO_BACKFILL_YEARS) {
+      throw new Error(
+        `ICPC Mexico backfill ranges are limited to ${String(MAX_ICPC_MEXICO_BACKFILL_YEARS)} seasons.`,
+      );
+    }
+    seasonYears = Array.from({ length: yearCount }, (_, index) => parsedFrom.data + index);
+  } else if (seasonYear !== undefined) {
+    seasonYears = [seasonYear];
+  }
   if (values.stage !== undefined && !contestStageSchema.safeParse(values.stage).success) {
     throw new Error('--stage must be a supported contest stage.');
   }
   if (acquireICPCMexico && seasonYear === undefined) {
-    throw new Error('--acquire-icpc-mexico requires --season to bound discovery to one edition.');
+    if (seasonYears === undefined) {
+      throw new Error(
+        '--acquire-icpc-mexico requires --season or a bounded --season-from/--season-to range.',
+      );
+    }
+  }
+  if (!acquireICPCMexico && (hasSeasonFrom || hasSeasonTo)) {
+    throw new Error('--season-from/--season-to are only supported with --acquire-icpc-mexico.');
   }
   if (acquireICPCMexico && values.source !== undefined && values.source !== 'icpc-mexico') {
     throw new Error('--acquire-icpc-mexico only supports --source icpc-mexico.');
@@ -89,6 +124,7 @@ const parseCliOptions = (argv: string[]): CliOptions => {
     acquireICPCMexico,
     ...(values.source === undefined ? {} : { sourceId: values.source }),
     ...(seasonYear === undefined ? {} : { seasonYear }),
+    ...(seasonYears === undefined ? {} : { seasonYears }),
     ...(values.series === undefined ? {} : { seriesId: values.series }),
     ...(values.stage === undefined ? {} : { stage: values.stage }),
     outputDirectory: values['output-dir'],
@@ -184,7 +220,7 @@ const icpcMexicoAcquisition = async (
     ): discovery is Extract<ICPCMexicoDiscovery, { status: 'recognized'; kind: 'contest' }> =>
       discovery.status === 'recognized' &&
       discovery.kind === 'contest' &&
-      discovery.seasonYear === options.seasonYear &&
+      options.seasonYears?.includes(discovery.seasonYear) === true &&
       (options.seriesId === undefined || discovery.seriesId === options.seriesId) &&
       (options.stage === undefined || discovery.stage === options.stage),
   );

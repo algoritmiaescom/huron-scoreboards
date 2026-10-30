@@ -20,6 +20,7 @@ const indexHtml = `<!doctype html>
   <a href="/contests/regional-mexico-2026">Final Regional de México</a>
   <a href="/contests/campeonato-latam-2026">Campeonato LATAM</a>
   <a href="/contests/tcmx-2026">Training Camp México</a>
+  <a href="/contests/gpmx-2026-masters">ICPC México Masters</a>
   <a href="/contests/gpmx-2026-coding-cup">Coding Cup</a>
   <a href="https://example.com/contests/gpmx-2026-fecha-1">Imitated external contest</a>
   <a href="/rules">Reglamento</a>
@@ -82,6 +83,13 @@ describe('ICPC Mexico contest index adapter', () => {
     );
     expect(result.discoveries).toContainEqual(
       expect.objectContaining({
+        status: 'excluded',
+        reason: 'masters',
+        linkText: 'ICPC México Masters',
+      }),
+    );
+    expect(result.discoveries).toContainEqual(
+      expect.objectContaining({
         status: 'staged',
         reason: 'unknown-icpc-mexico-event',
         linkText: 'Coding Cup',
@@ -103,6 +111,18 @@ describe('ICPC Mexico contest index adapter', () => {
     expect(
       result.discoveries.some((entry) => 'linkText' in entry && entry.linkText === 'Reglamento'),
     ).toBe(false);
+  });
+
+  it('preserves provisional and live publication labels without treating them as final', () => {
+    const result = discoverICPCMexicoIndex(`
+      <h2>Temporada 2025</h2>
+      <a href="/contests/gpmx-2025-fecha-1">Provisional</a>
+      <a href="/contests/gpmx-2025-fecha-2">En curso</a>`);
+    expect(
+      result.discoveries
+        .filter((entry) => entry.status === 'recognized' && entry.kind === 'contest')
+        .map((entry) => entry.publicationState),
+    ).toEqual(['provisional', 'live']);
   });
 
   it('finds exactly one accumulated-standing link and reports missing or ambiguous links', () => {
@@ -154,6 +174,18 @@ describe('ICPC Mexico contest index adapter', () => {
       scoreboardUrl: null,
       stagedLinks: [
         expect.objectContaining({ reason: 'scoreboard destination is outside ICPC Mexico' }),
+      ],
+    });
+    expect(
+      discoverICPCMexicoScoreboard(
+        '<a href="/contests/gpmx-2025-fecha-1/resultados.pdf">Scoreboard PDF</a>',
+        eventUrl,
+      ),
+    ).toMatchObject({
+      status: 'staged',
+      scoreboardUrl: null,
+      stagedLinks: [
+        expect.objectContaining({ reason: 'PDF destination awaits the document pipeline' }),
       ],
     });
     expect(
@@ -224,6 +256,17 @@ describe('ICPC Mexico scoreboard parser', () => {
       }),
     );
     expect(candidate.rows[0].sourceTeamId).toBeNull();
+  });
+
+  it('preserves non-Mexican participating schools in GPM scoreboards', () => {
+    const internationalHtml = scoreboardHtml().replaceAll(
+      'School Alpha',
+      'Universidad de Costa Rica',
+    );
+    const candidate = parseICPCMexicoScoreboard(internationalHtml, context);
+    expect(candidate.rows).toHaveLength(2);
+    expect(candidate.rows[0].schoolName).toBe('Universidad de Costa Rica');
+    expect(candidate.coverage.rowsComplete).toBe(true);
   });
 
   it('retains totals and reports incomplete problem detail when cell notation is unknown', () => {

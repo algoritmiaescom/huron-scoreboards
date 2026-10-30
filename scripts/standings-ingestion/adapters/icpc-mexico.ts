@@ -29,7 +29,7 @@ export type ICPCMexicoDiscovery =
     }
   | {
       status: 'excluded';
-      reason: 'latam-championship' | 'training-camp';
+      reason: 'latam-championship' | 'training-camp' | 'masters';
       url: string;
       linkText: string;
       sectionYear: number | null;
@@ -471,6 +471,15 @@ const classifyLink = (
       sectionYear,
     };
   }
+  if (/^\/contests\/gpmx-\d{4}-masters$/i.test(path)) {
+    return {
+      status: 'excluded',
+      reason: 'masters',
+      url: normalizedUrl.href,
+      linkText,
+      sectionYear,
+    };
+  }
   if (year === undefined) {
     return {
       status: 'staged',
@@ -717,6 +726,20 @@ export const discoverICPCMexicoScoreboard = (
     };
   }
   const destination = uniqueLinks[0];
+  if (/\.pdf$/i.test(destination.url.pathname)) {
+    return {
+      status: 'staged',
+      eventUrl: event.href,
+      scoreboardUrl: null,
+      stagedLinks: [
+        {
+          url: destination.url.href,
+          linkText: destination.linkText,
+          reason: 'PDF destination awaits the document pipeline',
+        },
+      ],
+    };
+  }
   return {
     status: 'found',
     eventUrl: event.href,
