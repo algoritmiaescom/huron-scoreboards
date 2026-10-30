@@ -37,6 +37,7 @@
       "authorityId": "iteso",
       "name": "ITESO ACM archive",
       "baseUrl": "https://eventos.iteso.mx/acm/",
+      "allowedOrigins": ["https://acm.iteso.mx"],
       "supportedStages": [],
       "supportsSeasonStanding": true
     },

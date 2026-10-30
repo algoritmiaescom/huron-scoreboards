@@ -60,6 +60,23 @@ const sourceConfigurationWithMappedScoreLATAM = {
   ],
 };
 
+const sourceConfigurationWithITESO = {
+  ...sourceConfiguration,
+  sources: [
+    ...sourceConfiguration.sources,
+    {
+      id: 'iteso',
+      authorityId: 'iteso',
+      name: 'ITESO ACM archive',
+      baseUrl: 'https://eventos.iteso.mx/acm/',
+      allowedOrigins: ['https://acm.iteso.mx'],
+      supportedStages: [],
+      supportsSeasonStanding: true,
+    },
+  ],
+  preferredSeasonStandingSources: ['iteso'],
+};
+
 const identityRegistry = { schemaVersion: 1, aliases: [] };
 
 const scoreLATAMIndexHtml = `<!doctype html><html><body>
@@ -302,7 +319,7 @@ const candidate = {
   warnings: [],
 };
 
-const createRoot = async (configuration = sourceConfiguration): Promise<string> => {
+const createRoot = async (configuration: unknown = sourceConfiguration): Promise<string> => {
   const root = await mkdtemp(path.join(tmpdir(), 'huron-standings-cli-'));
   await mkdir(path.join(root, 'config'), { recursive: true });
   await writeFile(path.join(root, 'config/standings-sources.json'), JSON.stringify(configuration));
@@ -649,5 +666,160 @@ describe('standings ingestion CLI', () => {
     await expect(
       runStandingsIngestion(['--acquire-scorelatam', '--season', '2025', '--series', 'gpm']),
     ).rejects.toThrow('--acquire-scorelatam only supports --series mexico-finals');
+  });
+
+  it('stages an ITESO PDF extraction with page evidence and does not request its thumbnail', async () => {
+    const root = await createRoot(sourceConfigurationWithITESO);
+    const archiveHtml = `<section><h2>ICPC México 2025</h2>
+      <a href="/acm/resultados-acumulados-2025/">Resultado Acumulado del Gran Premio 2025</a>
+    </section>`;
+    const resultPageHtml = `<article><a href="http://acm.iteso.mx/share/result.pdf">
+      <img src="https://i0.wp.com/acm.iteso.mx/share/preview.jpg"></a></article>`;
+    const bodies = new Map<string, { body: Uint8Array; contentType: string }>([
+      [
+        'https://eventos.iteso.mx/acm/',
+        { body: new TextEncoder().encode(archiveHtml), contentType: 'text/html' },
+      ],
+      [
+        'https://eventos.iteso.mx/acm/resultados-acumulados-2025/',
+        { body: new TextEncoder().encode(resultPageHtml), contentType: 'text/html' },
+      ],
+      [
+        'https://acm.iteso.mx/share/result.pdf',
+        {
+          body: new TextEncoder().encode('%PDF-1.7 fixture'),
+          contentType: 'application/octet-stream',
+        },
+      ],
+    ]);
+    const requestedUrls: string[] = [];
+    const fetcher = {
+      fetch: (url: string): Promise<SourceFetchResult> => {
+        requestedUrls.push(url);
+        const fixture = bodies.get(url);
+        if (fixture === undefined) {
+          return Promise.resolve({
+            status: 'failed',
+            sourceId: 'iteso',
+            url,
+            kind: 'invalid-url',
+            message: 'Unexpected ITESO request.',
+          });
+        }
+        return Promise.resolve({
+          status: 'fetched',
+          sourceId: 'iteso',
+          discoveryUrl: url,
+          finalUrl: url,
+          httpStatus: 200,
+          contentType: fixture.contentType,
+          body: fixture.body,
+          contentSha256: createHash('sha256').update(fixture.body).digest('hex'),
+          redirects: 0,
+        });
+      },
+    } as unknown as BoundedSourceFetcher;
+    const cacheDirectory = await mkdtemp(path.join(root, 'iteso-cache-'));
+    const document = {
+      version: 1 as const,
+      pageCount: 1,
+      pages: [
+        {
+          pageNumber: 1,
+          method: 'text' as const,
+          text: 'Resultado acumulado',
+          tables: [
+            {
+              rows: [
+                {
+                  cells: ['Lugar', 'Equipo', 'Puntos', 'Clasifica'],
+                  confidences: [null, null, null, null],
+                },
+                {
+                  cells: ['1', 'Equipo Alfa', '12.5', 'Sí'],
+                  confidences: [null, null, null, null],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    };
+    try {
+      const result = await runStandingsIngestion(
+        ['--acquire-iteso', '--season', '2025', '--source', 'iteso'],
+        root,
+        {
+          acquisition: {
+            cache: new BoundedJsonCache({
+              directory: cacheDirectory,
+              ttlMs: 60_000,
+              maxEntries: 10,
+              maxEntryBytes: 1024 * 1024,
+            }),
+            parse: () => Promise.reject(new Error('ITESO uses its document extractor.')),
+            fetcherForSource: () => fetcher,
+          },
+          itesoDocumentExtractor: (body, type) => {
+            expect(new TextDecoder().decode(body)).toContain('%PDF-1.7');
+            expect(type).toBe('pdf');
+            return Promise.resolve(document);
+          },
+        },
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        candidates: unknown[];
+        sourceFailures: { message: string }[];
+      };
+      expect(result.status).toBe('failed');
+      expect(proposal.candidates).toEqual([]);
+      expect(proposal.sourceFailures[0].message).toContain(
+        'shared review-candidate contract does not yet support source-native season standings',
+      );
+      expect(requestedUrls).toEqual([
+        'https://eventos.iteso.mx/acm/',
+        'https://eventos.iteso.mx/acm/resultados-acumulados-2025/',
+        'https://acm.iteso.mx/share/result.pdf',
+      ]);
+      const artifactReference = /staged at (\.standings-ingestion\/staged\/[^ ]+\.json)/.exec(
+        proposal.sourceFailures[0].message,
+      )?.[1];
+      expect(artifactReference).toBeDefined();
+      const artifact = JSON.parse(
+        await readFile(path.join(root, artifactReference ?? ''), 'utf8'),
+      ) as {
+        documentType: string;
+        originalAssetUrl: string;
+        assetUrl: string;
+        extraction: {
+          status: string;
+          scoreUnit: string;
+          rows: { score: number; scoreText: string; qualified: boolean; pageNumber: number }[];
+        };
+      };
+      expect(artifact).toMatchObject({
+        documentType: 'pdf',
+        originalAssetUrl: 'http://acm.iteso.mx/share/result.pdf',
+        assetUrl: 'https://acm.iteso.mx/share/result.pdf',
+        extraction: {
+          status: 'ready',
+          scoreUnit: 'Puntos',
+          rows: [{ score: 12.5, scoreText: '12.5', qualified: true, pageNumber: 1 }],
+        },
+      });
+    } finally {
+      await rm(cacheDirectory, { recursive: true, force: true });
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('requires a single ITESO season and rejects contest-stage filters', async () => {
+    await expect(runStandingsIngestion(['--acquire-iteso'])).rejects.toThrow(
+      '--acquire-iteso requires --season',
+    );
+    await expect(
+      runStandingsIngestion(['--acquire-iteso', '--season', '2025', '--stage', 'final']),
+    ).rejects.toThrow('accumulated season standings, not contest stages');
   });
 });

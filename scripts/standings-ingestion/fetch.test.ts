@@ -102,6 +102,45 @@ describe('bounded source fetcher', () => {
     expect(request).toHaveBeenCalledTimes(1);
   });
 
+  it('allows only explicitly configured HTTPS document origins and keeps redirects manual', async () => {
+    const itesoSource: SourceDefinition = {
+      id: 'iteso',
+      authorityId: 'iteso',
+      name: 'ITESO ACM archive',
+      baseUrl: 'https://eventos.iteso.mx/acm/',
+      allowedOrigins: ['https://acm.iteso.mx'],
+      supportedStages: [],
+      supportsSeasonStanding: true,
+    };
+    const request = fetchMock((url, init) => {
+      expect(init.redirect).toBe('manual');
+      if (url.endsWith('/discovery')) {
+        return new ResponseConstructor(null, {
+          status: 302,
+          headers: { location: 'https://acm.iteso.mx/share/result.pdf' },
+        });
+      }
+      return response('%PDF-test', { 'content-type': 'application/pdf' });
+    });
+    const fetcher = new BoundedSourceFetcher(itesoSource, { ...options, fetchImpl: request });
+    await expect(fetcher.fetch('https://eventos.iteso.mx/acm/discovery')).resolves.toMatchObject({
+      status: 'fetched',
+      finalUrl: 'https://acm.iteso.mx/share/result.pdf',
+      contentType: 'application/pdf',
+      redirects: 1,
+    });
+    for (const url of [
+      'http://acm.iteso.mx/share/result.pdf',
+      'https://i0.wp.com/share/thumbnail.jpg',
+    ]) {
+      await expect(fetcher.fetch(url)).resolves.toMatchObject({
+        status: 'failed',
+        kind: 'invalid-url',
+      });
+    }
+    expect(request).toHaveBeenCalledTimes(2);
+  });
+
   it('reports HTTP, timeout, request-budget, and redirect-limit failures distinctly', async () => {
     const httpFetcher = new BoundedSourceFetcher(source, {
       ...options,

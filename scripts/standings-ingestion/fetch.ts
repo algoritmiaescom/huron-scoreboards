@@ -72,12 +72,12 @@ const isTimeoutError = (error: unknown): boolean =>
   'name' in error &&
   (error.name === 'TimeoutError' || error.name === 'AbortError');
 
-const isValidTarget = (value: string, origin: string): URL | undefined => {
+const isValidTarget = (value: string, origins: ReadonlySet<string>): URL | undefined => {
   try {
     const target = new URL(value);
     if (
       target.protocol !== 'https:' ||
-      target.origin !== origin ||
+      !origins.has(target.origin) ||
       target.username.length > 0 ||
       target.password.length > 0
     ) {
@@ -147,7 +147,7 @@ const readBoundedBody = async (
 
 export class BoundedSourceFetcher {
   private readonly source: SourceDefinition;
-  private readonly origin: string;
+  private readonly origins: ReadonlySet<string>;
   private readonly timeoutMs: number;
   private readonly maxResponseBytes: number;
   private readonly maxRequests: number;
@@ -157,7 +157,10 @@ export class BoundedSourceFetcher {
 
   constructor(source: SourceDefinition, options: SourceFetcherOptions) {
     this.source = sourceDefinitionSchema.parse(source);
-    this.origin = new URL(this.source.baseUrl).origin;
+    this.origins = new Set([
+      new URL(this.source.baseUrl).origin,
+      ...(this.source.allowedOrigins ?? []).map((origin) => new URL(origin).origin),
+    ]);
     if (
       !Number.isSafeInteger(options.timeoutMs) ||
       options.timeoutMs < 1 ||
@@ -199,12 +202,12 @@ export class BoundedSourceFetcher {
 
   fetch = async (targetUrl: string): Promise<SourceFetchResult> => {
     const discoveryUrl = targetUrl;
-    let target = isValidTarget(targetUrl, this.origin);
+    let target = isValidTarget(targetUrl, this.origins);
     if (target === undefined) {
       return this.failure(
         targetUrl,
         'invalid-url',
-        'URL must use the configured source origin over HTTPS.',
+        'URL must use a configured source origin over HTTPS.',
       );
     }
     let redirects = 0;
@@ -256,12 +259,12 @@ export class BoundedSourceFetcher {
             response.status,
           );
         }
-        const nextTarget = isValidTarget(new URL(location, target).href, this.origin);
+        const nextTarget = isValidTarget(new URL(location, target).href, this.origins);
         if (nextTarget === undefined) {
           return this.failure(
             target.href,
             'redirect-blocked',
-            'Redirect left the configured source origin.',
+            'Redirect left the configured source origins.',
             response.status,
           );
         }

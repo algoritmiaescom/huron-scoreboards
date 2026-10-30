@@ -18,9 +18,17 @@ import {
   discoverICPCMexicoScoreboard,
   parseICPCMexicoScoreboard,
 } from './adapters/icpc-mexico';
+import {
+  detectITESODocumentType,
+  discoverITESOAccumulatedPage,
+  discoverITESOArchive,
+  discoverITESOResultAsset,
+} from './adapters/iteso';
+import { parseITESOAccumulatedDocument } from './adapters/iteso-document';
 import { discoverScoreLATAMEditions, parseScoreLATAMMexicoScoreboard } from './adapters/scorelatam';
 import { BoundedJsonCache } from './cache';
 import { BoundedSourceFetcher } from './fetch';
+import { extractITESODocument } from './iteso-document-extractor';
 import { createReviewProposal, writeJsonAtomically, writeProposalAtomically } from './operator';
 
 import type {
@@ -31,6 +39,7 @@ import type {
 import type { ICPCMexicoDiscovery } from './adapters/icpc-mexico';
 import type { ScoreLATAMMexicoScoreboard } from './adapters/scorelatam';
 import type { SourceFetchResult } from './fetch';
+import type { ITESOExtractedDocument } from './iteso-document-extractor';
 import type { JsonFiles } from '@/lib/data/repository';
 
 const MAX_CANDIDATE_FILES = 100;
@@ -43,6 +52,7 @@ const MAX_ICPC_MEXICO_BACKFILL_YEARS = 5;
 interface CliOptions {
   acquireICPCMexico: boolean;
   acquireScoreLATAM: boolean;
+  acquireITESO: boolean;
   sourceId?: string;
   seasonYear?: number;
   seasonYears?: number[];
@@ -54,6 +64,11 @@ interface CliOptions {
 
 export interface StandingsIngestionCliDependencies {
   acquisition?: AcquisitionDependencies;
+  itesoDocumentExtractor?: (
+    body: Uint8Array,
+    type: 'pdf' | 'image',
+    repositoryRoot: string,
+  ) => Promise<ITESOExtractedDocument>;
 }
 
 const parseCliOptions = (argv: string[]): CliOptions => {
@@ -64,6 +79,7 @@ const parseCliOptions = (argv: string[]): CliOptions => {
     options: {
       'acquire-icpc-mexico': { type: 'boolean', default: false },
       'acquire-scorelatam': { type: 'boolean', default: false },
+      'acquire-iteso': { type: 'boolean', default: false },
       source: { type: 'string' },
       season: { type: 'string' },
       'season-from': { type: 'string' },
@@ -75,10 +91,12 @@ const parseCliOptions = (argv: string[]): CliOptions => {
   });
   const acquireICPCMexico = values['acquire-icpc-mexico'];
   const acquireScoreLATAM = values['acquire-scorelatam'];
-  if (acquireICPCMexico && acquireScoreLATAM) {
+  const acquireITESO = values['acquire-iteso'];
+  const acquisitionModes = [acquireICPCMexico, acquireScoreLATAM, acquireITESO].filter(Boolean);
+  if (acquisitionModes.length > 1) {
     throw new Error('Choose only one source-specific acquisition mode per run.');
   }
-  const acquireSource = acquireICPCMexico || acquireScoreLATAM;
+  const acquireSource = acquisitionModes.length === 1;
   if (
     (acquireSource && positionals.length !== 0) ||
     (!acquireSource && (positionals.length === 0 || positionals.length > MAX_CANDIDATE_FILES))
@@ -139,15 +157,25 @@ const parseCliOptions = (argv: string[]): CliOptions => {
   if (acquireScoreLATAM && seasonYear === undefined) {
     throw new Error('--acquire-scorelatam requires --season to select one LATAM edition.');
   }
+  if (acquireITESO && seasonYear === undefined) {
+    throw new Error('--acquire-iteso requires --season to select one ITESO edition.');
+  }
   if (acquireScoreLATAM && values.series !== undefined && values.series !== 'mexico-finals') {
     throw new Error('--acquire-scorelatam only supports --series mexico-finals.');
   }
   if (acquireScoreLATAM && values.stage !== undefined && values.stage !== 'final') {
     throw new Error('--acquire-scorelatam only supports --stage final.');
   }
+  if (acquireITESO && values.source !== undefined && values.source !== 'iteso') {
+    throw new Error('--acquire-iteso only supports --source iteso.');
+  }
+  if (acquireITESO && (values.series !== undefined || values.stage !== undefined)) {
+    throw new Error('--acquire-iteso extracts accumulated season standings, not contest stages.');
+  }
   return {
     acquireICPCMexico,
     acquireScoreLATAM,
+    acquireITESO,
     ...(values.source === undefined ? {} : { sourceId: values.source }),
     ...(seasonYear === undefined ? {} : { seasonYear }),
     ...(seasonYears === undefined ? {} : { seasonYears }),
@@ -569,6 +597,187 @@ const scoreLATAMAcquisition = async (
   };
 };
 
+const itesoAcquisition = async (
+  configuration: ReturnType<typeof sourceConfigurationSchema.parse>,
+  options: CliOptions,
+  root: string,
+  dependencies: StandingsIngestionCliDependencies,
+) => {
+  const source = configuration.sources.find(({ id }) => id === 'iteso');
+  if (source === undefined) {
+    throw new Error('ITESO source is not configured.');
+  }
+  const seasonYear = options.seasonYear;
+  if (seasonYear === undefined) {
+    throw new Error('ITESO acquisition requires a selected season.');
+  }
+  const fetcher =
+    dependencies.acquisition?.fetcherForSource?.(configuration, source.id) ??
+    new BoundedSourceFetcher(source, {
+      timeoutMs: 20_000,
+      maxResponseBytes: 32 * 1024 * 1024,
+      maxRequests: 5,
+      maxRedirects: 3,
+    });
+  const sourceFailure = (message: string) => ({
+    candidates: [],
+    sourceFailures: [{ sourceId: source.id, contest: null, message }],
+  });
+  const indexResult = await fetcher.fetch(source.baseUrl);
+  if (indexResult.status !== 'fetched') {
+    return sourceFailure(
+      `Could not fetch ITESO archive index: ${indexResult.kind}: ${indexResult.message}`,
+    );
+  }
+  const index = discoverITESOArchive(new TextDecoder().decode(indexResult.body));
+  const editions = index.editions.filter((edition) => edition.seasonYear === seasonYear);
+  if (editions.length !== 1) {
+    return sourceFailure(
+      `Expected one ITESO archive entry for season ${String(seasonYear)}, found ${String(editions.length)}.`,
+    );
+  }
+  const edition = editions[0];
+  let accumulatedPageUrl = edition.accumulatedPageUrl;
+  if (accumulatedPageUrl === null) {
+    if (edition.overviewUrl === null) {
+      const stagedReason = edition.stagedLinks.map(({ reason }) => reason).join('; ');
+      return sourceFailure(
+        `ITESO season ${String(seasonYear)} has no discovered overview or accumulated result${stagedReason.length === 0 ? '.' : `: ${stagedReason}`}`,
+      );
+    }
+    const overviewResult = await fetcher.fetch(edition.overviewUrl);
+    if (overviewResult.status !== 'fetched') {
+      return sourceFailure(
+        `Could not fetch ITESO season ${String(seasonYear)} overview: ${overviewResult.kind}: ${overviewResult.message}`,
+      );
+    }
+    const pageDiscovery = discoverITESOAccumulatedPage(
+      new TextDecoder().decode(overviewResult.body),
+      overviewResult.finalUrl,
+      seasonYear,
+    );
+    if (pageDiscovery.status !== 'found') {
+      return sourceFailure(
+        pageDiscovery.status === 'missing'
+          ? `ITESO season ${String(seasonYear)} has no accumulated result page.`
+          : `ITESO accumulated result link requires review: ${pageDiscovery.stagedLinks.map(({ reason, url }) => `${reason} (${url})`).join('; ')}`,
+      );
+    }
+    accumulatedPageUrl = pageDiscovery.accumulatedPageUrl;
+  }
+
+  const resultPageResponse = await fetcher.fetch(accumulatedPageUrl);
+  if (resultPageResponse.status !== 'fetched') {
+    return sourceFailure(
+      `Could not fetch ITESO season ${String(seasonYear)} result page: ${resultPageResponse.kind}: ${resultPageResponse.message}`,
+    );
+  }
+  const allowedOrigins = source.allowedOrigins ?? [];
+  const resultAsset = discoverITESOResultAsset(
+    new TextDecoder().decode(resultPageResponse.body),
+    resultPageResponse.finalUrl,
+    allowedOrigins,
+  );
+  if (resultAsset.status !== 'found') {
+    return sourceFailure(
+      resultAsset.status === 'missing'
+        ? `ITESO season ${String(seasonYear)} result page has no linked document.`
+        : `ITESO result asset requires review: ${resultAsset.candidates.map(({ reason, url }) => `${reason} (${url})`).join('; ')}`,
+    );
+  }
+
+  let asset = resultAsset;
+  let documentResponse = await fetcher.fetch(asset.assetUrl);
+  if (documentResponse.status !== 'fetched') {
+    return sourceFailure(
+      `Could not fetch ITESO result asset: ${documentResponse.kind}: ${documentResponse.message}`,
+    );
+  }
+  let dispatch = detectITESODocumentType(documentResponse.contentType, documentResponse.body);
+  if (dispatch.type === 'html') {
+    const nestedAsset = discoverITESOResultAsset(
+      new TextDecoder().decode(documentResponse.body),
+      documentResponse.finalUrl,
+      allowedOrigins,
+    );
+    if (nestedAsset.status !== 'found' || nestedAsset.assetUrl === asset.assetUrl) {
+      return sourceFailure(
+        'ITESO result asset resolved to HTML without one approved document link.',
+      );
+    }
+    asset = nestedAsset;
+    documentResponse = await fetcher.fetch(asset.assetUrl);
+    if (documentResponse.status !== 'fetched') {
+      return sourceFailure(
+        `Could not fetch nested ITESO result document: ${documentResponse.kind}: ${documentResponse.message}`,
+      );
+    }
+    dispatch = detectITESODocumentType(documentResponse.contentType, documentResponse.body);
+  }
+  if (dispatch.type !== 'pdf' && dispatch.type !== 'image') {
+    return sourceFailure(
+      `ITESO result destination is not a recognized PDF or image (detected ${dispatch.type}).`,
+    );
+  }
+
+  let extractedDocument: ITESOExtractedDocument | null = null;
+  let extractionError: string | null = null;
+  try {
+    extractedDocument = await (dependencies.itesoDocumentExtractor ?? extractITESODocument)(
+      documentResponse.body,
+      dispatch.type,
+      root,
+    );
+  } catch (error) {
+    extractionError = error instanceof Error ? error.message : 'Local PDF/OCR extraction failed.';
+  }
+  const snapshotLabel = [
+    asset.linkText,
+    ...(extractedDocument?.pages ?? []).map(({ text }) => text.slice(0, 2000)),
+  ].join(' ');
+  const extraction =
+    extractedDocument === null
+      ? null
+      : parseITESOAccumulatedDocument(extractedDocument.pages, snapshotLabel);
+  const artifactPath = await writeJsonAtomically(
+    path.join(root, '.standings-ingestion/staged'),
+    `run-${String(Date.now())}-${randomUUID()}-iteso-${String(seasonYear)}.json`,
+    {
+      schemaVersion: 1,
+      sourceId: source.id,
+      authorityId: source.authorityId,
+      seasonYear,
+      editionLabel: edition.editionLabel,
+      discoveryUrl: source.baseUrl,
+      accumulatedPageUrl,
+      resultPageFinalUrl: resultPageResponse.finalUrl,
+      originalAssetUrl: asset.originalUrl,
+      assetUrl: documentResponse.finalUrl,
+      thumbnailUrl: asset.thumbnailUrl,
+      retrievedAt: new Date().toISOString(),
+      discoveryContentSha256: indexResult.contentSha256,
+      contentSha256: documentResponse.contentSha256,
+      contentType: dispatch.declaredContentType,
+      documentType: dispatch.type,
+      signatureMatched: dispatch.signatureMatched,
+      redirects: documentResponse.redirects,
+      extractionError,
+      extractedDocument,
+      extraction,
+      archiveDuplicateOverviewUrls: index.duplicateOverviewUrls,
+    },
+  );
+  const relativeArtifactPath = path.relative(root, artifactPath);
+  const reviewReason =
+    extractionError ??
+    (extraction?.status === 'staged'
+      ? extraction.reason
+      : 'the shared review-candidate contract does not yet support source-native season standings');
+  return sourceFailure(
+    `ITESO season ${String(seasonYear)} document staged at ${relativeArtifactPath}: ${reviewReason}`,
+  );
+};
+
 const loadArchiveFiles = async (root: string): Promise<JsonFiles> => {
   const files: JsonFiles = {};
   const dataDirectory = path.join(root, 'data');
@@ -620,7 +829,7 @@ export const runStandingsIngestion = async (
 ): Promise<{ proposalPath: string; status: string }> => {
   const options = parseCliOptions(argv);
   const candidates =
-    options.acquireICPCMexico || options.acquireScoreLATAM
+    options.acquireICPCMexico || options.acquireScoreLATAM || options.acquireITESO
       ? []
       : await loadCandidateFiles(options.candidateFiles);
   const [sourceConfiguration, identityRegistry] = await Promise.all([
@@ -633,7 +842,9 @@ export const runStandingsIngestion = async (
     ? await icpcMexicoAcquisition(parsedConfiguration, options, root, dependencies.acquisition)
     : options.acquireScoreLATAM
       ? await scoreLATAMAcquisition(parsedConfiguration, options, root, dependencies.acquisition)
-      : { candidates: [], sourceFailures: [] };
+      : options.acquireITESO
+        ? await itesoAcquisition(parsedConfiguration, options, root, dependencies)
+        : { candidates: [], sourceFailures: [] };
   const archiveResult = await createJsonScoreboardsRepository(
     await loadArchiveFiles(root),
     'archive',

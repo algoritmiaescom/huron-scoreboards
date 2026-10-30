@@ -17,6 +17,16 @@ export const sourceDefinitionSchema = z
     authorityId: slugSchema,
     name: z.string().min(1),
     baseUrl: httpsUrlSchema,
+    allowedOrigins: z
+      .array(
+        z
+          .url({ protocol: /^https$/ })
+          .refine(
+            (value) => new URL(value).pathname === '/',
+            'allowed origins must be origin roots',
+          ),
+      )
+      .optional(),
     supportedStages: z.array(contestStageSchema),
     supportsSeasonStanding: z.boolean(),
   })
