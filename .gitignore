@@ -28,3 +28,4 @@ __pycache__/
 .standings-spike/
 /scripts/standings-ingestion/.venv/|
 .vscode
+.standings-ingestion/

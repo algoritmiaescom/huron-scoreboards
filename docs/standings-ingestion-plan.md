@@ -117,7 +117,7 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 | M2  | Partial historical standings model and UI               | None                     | done        |
 | M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | in progress |
 | M4  | ICPC Mexico adapter                                     | M3                       | done        |
-| M5  | ScoreLATAM adapter                                      | M3                       | pending     |
+| M5  | ScoreLATAM adapter                                      | M3                       | done        |
 | M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | pending     |
 | M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | pending     |
 | M8  | Reviewed-PR automation and controlled rollout           | M4, M5, M6, M7           | pending     |
@@ -282,19 +282,43 @@ source fetch, archive edit, or identity mapping was made; PDF parsing remains de
 
 Entry: <https://scorelatam.naquadah.com.br/>
 
-- [ ] Discover editions under LATAM only, excluding PdA and other regional groups.
-- [ ] Preserve edition labels independently of dates played, including the 2020 edition played
+- [x] Discover editions under LATAM only, excluding PdA and other regional groups.
+- [x] Preserve edition labels independently of dates played, including the 2020 edition played
       in 2021.
-- [ ] Apply the Mexico filter and obtain official Mexico-local placement.
-- [ ] Independently verify membership using the exact `/MX` suffix in User/Site.
-- [ ] Stage candidates if filtering retains LATAM ranks or official Mexico placement is
-      unavailable; do not derive replacement places automatically.
-- [ ] Deduplicate repeated table representations by source team identity and parse problem
-      attempts/times and published totals.
-- [ ] Preserve LATAM rank as evidence; confirm event equivalence before mapping Mexican
-      participants to Mexico Finals.
-- [ ] Test mixed countries, duplicate representations, ties, hidden/paginated rows, and absent
-      local ranks.
+- [x] Apply the Mexico group and obtain its official Mexico-local placement separately from
+      overall LATAM rank.
+- [x] Independently verify membership using the exact `/MX` suffix in User/Site.
+- [x] Stage extraction if Mexico-local placement is missing or membership cannot be verified;
+      never derive replacement places from LATAM rank.
+- [x] Deduplicate repeated Mexico-group table representations by source team identity and parse
+      problem attempts/times and published totals.
+- [x] Preserve LATAM rank as evidence and map Mexico-local placement to Mexico Finals only after
+      the maintainer's explicit equivalence approval.
+- [x] Confirm event equivalence before mapping Mexican participants to Mexico Finals.
+- [x] Test mixed countries, duplicate representations, ties, hidden group rows, and absent or
+      invalid local ranks.
+- [x] Detect pagination/incremental-load controls and stage the page rather than claim complete
+      Mexico-group coverage when pagination traversal is unavailable.
+
+The ScoreLATAM edition adapter recognizes `/latam-YYYY/` links only in the exact LATAM section,
+preserving source labels independently from URL edition years and extracting a played year only
+when explicit (for example, edition 2020 played in 2021). The Mexico-score parser selects the
+Mexico toggle group separately from `Global` and `CCL Mexico`, takes local placement from that
+group, and joins global placement by full User/Site identity. Only exact `/MX` suffixes are
+accepted; missing ranks, malformed membership, conflicting duplicate data, or non-standard local
+ranking stage the extraction. Cell evidence retains both ranks and each problem/total value.
+`standings:ingest -- --acquire-scorelatam --season YEAR` uses a three-request same-origin budget,
+writes the extraction and provenance atomically under ignored `.standings-ingestion/staged/`, and
+emits a review proposal linking the artifact. The maintainer approved Mexico Finals equivalence;
+ready extractions now become final-stage candidates using Mexico-local place, with global LATAM
+rank retained only as evidence. Reviewed edition mappings for the LATAM years listed on the
+source index (2019-2025) are in `config/standings-sources.json`; the 2020 edition maps to 2020
+although it was played in 2021. Other/unlisted source labels still require review. Reconciliation
+and identity resolution remain manual. Tests use synthetic tables and injected responses; no
+official ScoreLATAM page is saved as a fixture or imported. The
+inspected static layout has no pagination controls; if `rel="next"`, pagination markers, or
+page-style query controls appear, the adapter stages the extraction with unknown completeness
+rather than omitting later rows silently. It does not yet traverse additional pages.
 
 ### M6: ITESO and document extraction
 
@@ -383,8 +407,9 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** begin M5 ScoreLATAM discovery and determine how the source exposes Mexico-local
-  standings, while preserving the M1 overall Actions job-duration follow-up.
+- **Next step:** continue with M6 ITESO document extraction. Add ScoreLATAM page traversal only if
+  a requested edition exposes pagination; current controls select static score groups. Preserve
+  the M1 overall Actions job-duration follow-up.
 - **Blockers:** the supplied M1 artifacts do not include overall Actions job duration, and the run
   page is inaccessible from this environment. No schedule is enabled.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
@@ -392,8 +417,10 @@ Final acceptance must prove:
   tests. See the spike report for portable results and limitations. M3 source/candidate/identity
   contracts, dry-run reconciliation, bounded fetching/cache, generic selected-state rendering, an
   acquisition API/batch, and the offline candidate-file review CLI are implemented. The ICPC Mexico
-  adapter and bounded acquisition CLI are complete for the tested HTML source shape; ScoreLATAM,
-  ITESO, and ICPC Global adapters remain outstanding. No workflow dispatch was performed.
+  adapter and bounded acquisition CLI are complete for the tested HTML source shape; ScoreLATAM
+  discovery, Mexico-group extraction, staged CLI reporting, reviewer-approved event equivalence,
+  and explicit edition mappings for listed LATAM years are implemented. ITESO and ICPC Global
+  adapters remain outstanding. No workflow dispatch was performed.
 
 ## Progress log
 
@@ -465,6 +492,43 @@ PDFs until M6; added a regression proving that non-Mexican schools are retained.
 acceptance checklist is verified. `npm run validate` passed with 394 tests, including formatting,
 lint, data validation, type checking, coverage, and production build. No source records were
 imported.
+
+2026-10-29 M5 started: added offline ScoreLATAM index discovery for LATAM editions only, preserving
+source labels separately from URL edition years and extracting played years only when explicit.
+Added Mexico-group parsing that separates local and global ranks, verifies `/MX` membership,
+deduplicates repeated source identities, and stages incomplete or invalid local rankings. Event
+equivalence remains explicitly unverified and the extraction is not yet a candidate or wired into
+the CLI. Focused ScoreLATAM tests pass; full validation is pending after this parser change. No
+ScoreLATAM rows were imported.
+
+2026-10-29 M5 acquisition follow-up: added `--acquire-scorelatam --season YEAR` with a bounded
+same-origin fetch and ignored atomic extraction artifact. After maintainer approval of the
+Mexico-local-to-Mexico-Finals equivalence, ready rows can become a `final` candidate; an unmapped
+source edition remains a source failure with the artifact path, and no archive data is changed.
+Offline CLI tests cover both the reviewed edition-mapping gate and mapped candidate construction.
+
+2026-10-29 M5 equivalence approval: the maintainer approved mapping ScoreLATAM's Mexico-local
+ranking to Mexico Finals. Candidate conversion uses Mexico-local places and retains LATAM place as
+source evidence. `npm run validate` passed with 402 tests; `git diff --check` passed. Edition
+mappings remain review-gated and no ScoreLATAM rows were imported.
+
+2026-10-29 M5 completeness follow-up: pagination controls (`rel=next`, pagination/pager markers,
+next/previous labels, or page-style query parameters) now stage the extraction with unknown
+completeness instead of reporting a complete Mexico group. Static hidden group rows remain parsed.
+`npm run validate` passed with 402 tests; `git diff --check` passed. No ScoreLATAM rows were
+imported.
+
+2026-10-29 M5 candidate follow-up: after the maintainer's equivalence approval, ready Mexico-group
+rows now convert to a `mexico-finals`/`final` candidate through shared acquisition validation.
+Mexico-local place is the candidate place; global LATAM rank remains evidence. A reviewed
+per-edition source mapping is still required; an unmapped edition writes the staged extraction and
+proposal failure without a candidate. `npm run validate` passed with 403 tests; `git diff --check`
+passed. No archive data was changed.
+
+2026-10-29 M5 edition-map follow-up: added explicit mappings for the LATAM editions listed by the
+ScoreLATAM index, 2019-2025, including edition 2020 played in 2021. Unlisted labels remain unmapped;
+candidate reconciliation remains review-only. `npm run validate` passed with 403 tests, and
+`git diff --check` passed. No archive data was changed.
 
 | Date       | Milestone | Update                                                                                                                                                                                                                                         | Verification / reference                                                                                                                                                                       |
 | ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

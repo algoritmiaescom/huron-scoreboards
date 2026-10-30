@@ -33,7 +33,50 @@ const sourceConfiguration = {
   ],
 };
 
+const sourceConfigurationWithScoreLATAM = {
+  ...sourceConfiguration,
+  sources: [
+    ...sourceConfiguration.sources,
+    {
+      id: 'scorelatam',
+      authorityId: 'scorelatam',
+      name: 'ScoreLATAM',
+      baseUrl: 'https://scorelatam.naquadah.com.br/',
+      supportedStages: ['final'],
+      supportsSeasonStanding: false,
+    },
+  ],
+  preferredSources: [
+    ...sourceConfiguration.preferredSources,
+    { stage: 'final', sourceIds: ['scorelatam'] },
+  ],
+};
+
+const sourceConfigurationWithMappedScoreLATAM = {
+  ...sourceConfigurationWithScoreLATAM,
+  editionMappings: [
+    ...sourceConfiguration.editionMappings,
+    { sourceId: 'scorelatam', editionLabel: '2025', seasonYear: 2025 },
+  ],
+};
+
 const identityRegistry = { schemaVersion: 1, aliases: [] };
+
+const scoreLATAMIndexHtml = `<!doctype html><html><body>
+  <h2>PdA - Programadores de America</h2><a href="/pda25/">2025</a>
+  <h2>LATAM</h2><a href="/latam-2025/">2025</a>
+</body></html>`;
+
+const scoreLATAMEditionHtml = `<!doctype html><html><body>
+  <a onclick="toggleGroup(1)">Global</a><a onclick="toggleGroup(17)">Mexico</a>
+  <a onclick="toggleGroup(28)">CCL</a><a onclick="toggleGroup(33)">Mexico</a>
+  <h2>Final Scoreboard</h2>
+  <table id="myscoretable"><tbody>
+    <tr><td>#</td><td>User/Site</td><td>Name</td><td>A</td><td>Total</td></tr>
+    <tr class="sitegroup1"><td>10</td><td>teammxmx006 /MX</td><td>[School Alpha] Alpha</td><td>3/144</td><td>1 (184)</td></tr>
+    <tr class="sitegroup17" style="display:none"><td>1</td><td>teammxmx006 /MX</td><td>[School Alpha] Alpha</td><td>3/144</td><td>1 (184)</td></tr>
+  </tbody></table>
+</body></html>`;
 
 const discoveryHtml = `<!doctype html><html><body>
   <h2>Temporada 2024</h2>
@@ -128,6 +171,64 @@ const createAcquisitionDependencies = async (
         maxEntryBytes: 1024 * 1024,
       }),
       parse: () => Promise.reject(new Error('The adapter parser should handle this fixture.')),
+      fetcherForSource: () => fetcher,
+      now: () => new Date('2026-10-29T12:00:00Z'),
+    },
+    requestedUrls,
+    dispose: () => rm(cacheDirectory, { recursive: true, force: true }),
+  };
+};
+
+const createScoreLATAMAcquisitionDependencies = async (
+  root: string,
+): Promise<{
+  dependencies: AcquisitionDependencies;
+  requestedUrls: string[];
+  dispose: () => Promise<void>;
+}> => {
+  const cacheDirectory = await mkdtemp(path.join(root, 'scorelatam-cache-'));
+  const bodies = new Map([
+    ['https://scorelatam.naquadah.com.br/', scoreLATAMIndexHtml],
+    ['https://scorelatam.naquadah.com.br/latam-2025/', scoreLATAMEditionHtml],
+  ]);
+  const requestedUrls: string[] = [];
+  const fetcher = {
+    fetch: (url: string): Promise<SourceFetchResult> => {
+      requestedUrls.push(url);
+      const body = bodies.get(url);
+      if (body === undefined) {
+        return Promise.resolve({
+          status: 'failed',
+          sourceId: 'scorelatam',
+          url,
+          kind: 'http',
+          message: 'Unexpected ScoreLATAM fixture URL.',
+          httpStatus: 404,
+        });
+      }
+      const bytes = new TextEncoder().encode(body);
+      return Promise.resolve({
+        status: 'fetched',
+        sourceId: 'scorelatam',
+        discoveryUrl: url,
+        finalUrl: url,
+        httpStatus: 200,
+        contentType: 'text/html',
+        body: bytes,
+        contentSha256: createHash('sha256').update(bytes).digest('hex'),
+        redirects: 0,
+      });
+    },
+  } as unknown as BoundedSourceFetcher;
+  return {
+    dependencies: {
+      cache: new BoundedJsonCache({
+        directory: cacheDirectory,
+        ttlMs: 60_000,
+        maxEntries: 10,
+        maxEntryBytes: 1024 * 1024,
+      }),
+      parse: () => Promise.reject(new Error('ScoreLATAM extraction uses its source adapter.')),
       fetcherForSource: () => fetcher,
       now: () => new Date('2026-10-29T12:00:00Z'),
     },
@@ -439,5 +540,114 @@ describe('standings ingestion CLI', () => {
       await acquisition.dispose();
       await rm(root, { recursive: true, force: true });
     }
+  });
+
+  it('stages the reviewed ScoreLATAM extraction without emitting a candidate when its edition is unmapped', async () => {
+    const root = await createRoot(sourceConfigurationWithScoreLATAM);
+    const acquisition = await createScoreLATAMAcquisitionDependencies(root);
+    try {
+      const result = await runStandingsIngestion(
+        ['--acquire-scorelatam', '--season', '2025', '--source', 'scorelatam'],
+        root,
+        { acquisition: acquisition.dependencies },
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        candidates: unknown[];
+        additions: unknown[];
+        sourceFailures: { message: string }[];
+      };
+      expect(result.status).toBe('failed');
+      expect(proposal.candidates).toEqual([]);
+      expect(proposal.additions).toEqual([]);
+      expect(proposal.sourceFailures).toHaveLength(1);
+      expect(proposal.sourceFailures[0].message).toContain('has no reviewed season mapping');
+      const artifactReference = /staged at (\.standings-ingestion\/staged\/[^.]+\.json)/.exec(
+        proposal.sourceFailures[0].message,
+      )?.[1];
+      expect(artifactReference).toBeDefined();
+      const artifact = JSON.parse(
+        await readFile(path.join(root, artifactReference ?? ''), 'utf8'),
+      ) as {
+        eventEquivalence: string;
+        extraction: {
+          status: string;
+          rows: { mexicoPlace: number; latamPlace: number; sourceUserSite: string }[];
+        };
+      };
+      expect(artifact).toMatchObject({
+        eventEquivalence: 'reviewer-approved',
+        extraction: {
+          status: 'ready',
+          rows: [{ mexicoPlace: 1, latamPlace: 10, sourceUserSite: 'teammxmx006/MX' }],
+        },
+      });
+      expect(acquisition.requestedUrls).toEqual([
+        'https://scorelatam.naquadah.com.br/',
+        'https://scorelatam.naquadah.com.br/latam-2025/',
+        'https://scorelatam.naquadah.com.br/latam-2025/',
+      ]);
+    } finally {
+      await acquisition.dispose();
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('converts an edition-mapped ScoreLATAM Mexico group into a final-stage candidate', async () => {
+    const root = await createRoot(sourceConfigurationWithMappedScoreLATAM);
+    const acquisition = await createScoreLATAMAcquisitionDependencies(root);
+    try {
+      const result = await runStandingsIngestion(
+        ['--acquire-scorelatam', '--season', '2025', '--stage', 'final'],
+        root,
+        { acquisition: acquisition.dependencies },
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        candidates: {
+          contest: {
+            seasonYear: number;
+            seriesId: string;
+            stage: string;
+            publicationState: string;
+          };
+          rows: { place: number; sourceTeamId: string | null; evidence: { field: string }[] }[];
+          warnings: string[];
+        }[];
+        additions: unknown[];
+      };
+      expect(result.status).toBe('complete');
+      expect(proposal.candidates).toHaveLength(1);
+      const candidate = proposal.candidates[0];
+      expect(candidate.contest).toMatchObject({
+        seasonYear: 2025,
+        seriesId: 'mexico-finals',
+        stage: 'final',
+        publicationState: 'final',
+      });
+      expect(candidate.rows[0].place).toBe(1);
+      expect(candidate.rows[0].sourceTeamId).toBe('teammxmx006');
+      const evidenceFields = candidate.rows[0].evidence.map(({ field }) => field);
+      expect(evidenceFields).toContain('rows[0].place');
+      expect(evidenceFields).toContain('rows[0].latamPlace');
+      expect(
+        candidate.warnings.some((warning) =>
+          warning.includes('Mexico-local places are used for the approved Mexico Finals mapping'),
+        ),
+      ).toBe(true);
+      expect(proposal.additions).toEqual([]);
+    } finally {
+      await acquisition.dispose();
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('requires an explicit ScoreLATAM edition and refuses unreviewed series mapping arguments', async () => {
+    await expect(runStandingsIngestion(['--acquire-scorelatam'])).rejects.toThrow(
+      '--acquire-scorelatam requires --season',
+    );
+    await expect(
+      runStandingsIngestion(['--acquire-scorelatam', '--season', '2025', '--series', 'gpm']),
+    ).rejects.toThrow('--acquire-scorelatam only supports --series mexico-finals');
   });
 });

@@ -63,5 +63,17 @@
   "overrides": [],
   "preferredSeasonStandingSources": ["icpc-mexico", "iteso", "icpc-global-directory"],
   "seasonStandingOverrides": [],
-  "editionMappings": []
+  "editionMappings": [
+    { "sourceId": "scorelatam", "editionLabel": "2019", "seasonYear": 2019 },
+    {
+      "sourceId": "scorelatam",
+      "editionLabel": "2020 (in 2021, REMOTE due to COVID)",
+      "seasonYear": 2020
+    },
+    { "sourceId": "scorelatam", "editionLabel": "2021", "seasonYear": 2021 },
+    { "sourceId": "scorelatam", "editionLabel": "2022", "seasonYear": 2022 },
+    { "sourceId": "scorelatam", "editionLabel": "2023", "seasonYear": 2023 },
+    { "sourceId": "scorelatam", "editionLabel": "2024", "seasonYear": 2024 },
+    { "sourceId": "scorelatam", "editionLabel": "2025", "seasonYear": 2025 }
+  ]
 }

@@ -18,12 +18,18 @@ import {
   discoverICPCMexicoScoreboard,
   parseICPCMexicoScoreboard,
 } from './adapters/icpc-mexico';
+import { discoverScoreLATAMEditions, parseScoreLATAMMexicoScoreboard } from './adapters/scorelatam';
 import { BoundedJsonCache } from './cache';
 import { BoundedSourceFetcher } from './fetch';
-import { createReviewProposal, writeProposalAtomically } from './operator';
+import { createReviewProposal, writeJsonAtomically, writeProposalAtomically } from './operator';
 
-import type { AcquisitionDependencies, AcquisitionRequest } from './acquire';
+import type {
+  AcquisitionDependencies,
+  AcquisitionRequest,
+  SourceCandidatePayload,
+} from './acquire';
 import type { ICPCMexicoDiscovery } from './adapters/icpc-mexico';
+import type { ScoreLATAMMexicoScoreboard } from './adapters/scorelatam';
 import type { SourceFetchResult } from './fetch';
 import type { JsonFiles } from '@/lib/data/repository';
 
@@ -36,6 +42,7 @@ const MAX_ICPC_MEXICO_BACKFILL_YEARS = 5;
 
 interface CliOptions {
   acquireICPCMexico: boolean;
+  acquireScoreLATAM: boolean;
   sourceId?: string;
   seasonYear?: number;
   seasonYears?: number[];
@@ -56,6 +63,7 @@ const parseCliOptions = (argv: string[]): CliOptions => {
     strict: true,
     options: {
       'acquire-icpc-mexico': { type: 'boolean', default: false },
+      'acquire-scorelatam': { type: 'boolean', default: false },
       source: { type: 'string' },
       season: { type: 'string' },
       'season-from': { type: 'string' },
@@ -66,9 +74,14 @@ const parseCliOptions = (argv: string[]): CliOptions => {
     },
   });
   const acquireICPCMexico = values['acquire-icpc-mexico'];
+  const acquireScoreLATAM = values['acquire-scorelatam'];
+  if (acquireICPCMexico && acquireScoreLATAM) {
+    throw new Error('Choose only one source-specific acquisition mode per run.');
+  }
+  const acquireSource = acquireICPCMexico || acquireScoreLATAM;
   if (
-    (acquireICPCMexico && positionals.length !== 0) ||
-    (!acquireICPCMexico && (positionals.length === 0 || positionals.length > MAX_CANDIDATE_FILES))
+    (acquireSource && positionals.length !== 0) ||
+    (!acquireSource && (positionals.length === 0 || positionals.length > MAX_CANDIDATE_FILES))
   ) {
     throw new Error(`Provide between 1 and ${String(MAX_CANDIDATE_FILES)} candidate JSON files.`);
   }
@@ -114,14 +127,27 @@ const parseCliOptions = (argv: string[]): CliOptions => {
       );
     }
   }
-  if (!acquireICPCMexico && (hasSeasonFrom || hasSeasonTo)) {
+  if ((!acquireICPCMexico || acquireScoreLATAM) && (hasSeasonFrom || hasSeasonTo)) {
     throw new Error('--season-from/--season-to are only supported with --acquire-icpc-mexico.');
   }
   if (acquireICPCMexico && values.source !== undefined && values.source !== 'icpc-mexico') {
     throw new Error('--acquire-icpc-mexico only supports --source icpc-mexico.');
   }
+  if (acquireScoreLATAM && values.source !== undefined && values.source !== 'scorelatam') {
+    throw new Error('--acquire-scorelatam only supports --source scorelatam.');
+  }
+  if (acquireScoreLATAM && seasonYear === undefined) {
+    throw new Error('--acquire-scorelatam requires --season to select one LATAM edition.');
+  }
+  if (acquireScoreLATAM && values.series !== undefined && values.series !== 'mexico-finals') {
+    throw new Error('--acquire-scorelatam only supports --series mexico-finals.');
+  }
+  if (acquireScoreLATAM && values.stage !== undefined && values.stage !== 'final') {
+    throw new Error('--acquire-scorelatam only supports --stage final.');
+  }
   return {
     acquireICPCMexico,
+    acquireScoreLATAM,
     ...(values.source === undefined ? {} : { sourceId: values.source }),
     ...(seasonYear === undefined ? {} : { seasonYear }),
     ...(seasonYears === undefined ? {} : { seasonYears }),
@@ -329,6 +355,220 @@ const icpcMexicoAcquisition = async (
   };
 };
 
+const scoreLATAMCandidatePayload = (
+  extraction: ScoreLATAMMexicoScoreboard,
+  stagedArtifactPath: string,
+): SourceCandidatePayload => {
+  if (extraction.status !== 'ready') {
+    throw new Error(extraction.reason ?? 'ScoreLATAM Mexico extraction requires review.');
+  }
+  return {
+    sourceEditionLabel: extraction.sourceEditionLabel,
+    contest: {
+      seasonYear: extraction.editionYear,
+      seriesId: 'mexico-finals',
+      stage: 'final',
+      name: `ScoreLATAM Mexico ${String(extraction.editionYear)} local standings`,
+      publicationState: extraction.publicationState,
+      date: null,
+      durationMinutes: null,
+      penaltyMinutesPerFailedAttempt: null,
+      problemLabels: extraction.problemLabels.map((label) => label.toUpperCase()),
+    },
+    rows: extraction.rows.map((row, rowIndex) => {
+      const sourceEvidence = (field: string) =>
+        row.evidence.find((evidence) => evidence.field === `rows[${String(rowIndex)}].${field}`);
+      const remapEvidence = (sourceField: string, candidateField: string) => {
+        const evidence = sourceEvidence(sourceField);
+        return evidence === undefined ? [] : [{ ...evidence, field: candidateField }];
+      };
+      return {
+        place: row.mexicoPlace,
+        sourceTeamId: row.sourceTeamId,
+        teamName: row.teamName,
+        sourceSchoolId: null,
+        schoolName: row.schoolName,
+        results: row.results,
+        publishedTotals: row.publishedTotals,
+        evidence: [
+          ...row.evidence,
+          ...remapEvidence('mexicoPlace', `rows[${String(rowIndex)}].place`),
+          ...remapEvidence('sourceUserSite', `rows[${String(rowIndex)}].sourceTeamId`),
+          ...remapEvidence('name', `rows[${String(rowIndex)}].teamName`),
+          ...(row.schoolName === null
+            ? []
+            : remapEvidence('name', `rows[${String(rowIndex)}].schoolName`)),
+          ...remapEvidence('publishedTotals', `rows[${String(rowIndex)}].publishedTotals.solved`),
+          ...remapEvidence('publishedTotals', `rows[${String(rowIndex)}].publishedTotals.penalty`),
+        ],
+      };
+    }),
+    coverage: {
+      expectedRowCount: null,
+      rowsComplete: extraction.coverage.rowsComplete,
+      paginationComplete: extraction.coverage.paginationComplete,
+    },
+    warnings: [
+      ...extraction.warnings,
+      `Full source extraction is staged at ${stagedArtifactPath}.`,
+      'Mexico-local places are used for the approved Mexico Finals mapping; global LATAM places remain source evidence only.',
+      'Contest name is a normalized adapter label because the source names the full LATAM contest, not a separate Mexico final.',
+    ],
+  };
+};
+
+const scoreLATAMAcquisition = async (
+  configuration: ReturnType<typeof sourceConfigurationSchema.parse>,
+  options: CliOptions,
+  root: string,
+  injectedDependencies?: AcquisitionDependencies,
+) => {
+  const source = configuration.sources.find(({ id }) => id === 'scorelatam');
+  if (source === undefined) {
+    throw new Error('ScoreLATAM source is not configured.');
+  }
+  const fetcher =
+    injectedDependencies?.fetcherForSource?.(configuration, source.id) ??
+    new BoundedSourceFetcher(source, {
+      timeoutMs: 20_000,
+      maxResponseBytes: 32 * 1024 * 1024,
+      maxRequests: 3,
+      maxRedirects: 2,
+    });
+  const indexResult = await textFromFetch(fetcher, source.baseUrl);
+  if (typeof indexResult === 'string') {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: source.id,
+          contest: null,
+          message: `Could not fetch ScoreLATAM edition index: ${indexResult}`,
+        },
+      ],
+    };
+  }
+  const index = discoverScoreLATAMEditions(new TextDecoder().decode(indexResult.body));
+  const editions = index.editions.filter(({ editionYear }) => editionYear === options.seasonYear);
+  if (editions.length !== 1) {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: source.id,
+          contest: null,
+          message: `Expected one ScoreLATAM LATAM edition ${String(options.seasonYear)}, found ${String(editions.length)}.`,
+        },
+      ],
+    };
+  }
+
+  const edition = editions[0];
+  const scoreboardResponse = await textFromFetch(fetcher, edition.url);
+  if (typeof scoreboardResponse === 'string') {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: source.id,
+          contest: null,
+          message: `Could not fetch ScoreLATAM edition ${String(edition.editionYear)}: ${scoreboardResponse}`,
+        },
+      ],
+    };
+  }
+  const extraction = parseScoreLATAMMexicoScoreboard(
+    new TextDecoder().decode(scoreboardResponse.body),
+    edition,
+  );
+  const artifactName = `run-${String(Date.now())}-${randomUUID()}-scorelatam-${String(edition.editionYear)}.json`;
+  const artifactPath = await writeJsonAtomically(
+    path.join(root, '.standings-ingestion/staged'),
+    artifactName,
+    {
+      schemaVersion: 1,
+      sourceId: source.id,
+      authorityId: source.authorityId,
+      discoveryUrl: source.baseUrl,
+      finalUrl: scoreboardResponse.finalUrl,
+      retrievedAt: new Date().toISOString(),
+      discoveryContentSha256: indexResult.contentSha256,
+      contentSha256: scoreboardResponse.contentSha256,
+      parserVersion: 'scorelatam-mexico-scoregroup-v1',
+      eventEquivalence: extraction.eventEquivalence,
+      extraction,
+    },
+  );
+  const relativeArtifactPath = path.relative(root, artifactPath);
+  if (extraction.status === 'staged') {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: source.id,
+          contest: null,
+          message: `ScoreLATAM extraction staged at ${relativeArtifactPath}: ${extraction.reason ?? 'Mexico group extraction requires review.'}`,
+        },
+      ],
+    };
+  }
+
+  const contestRequest: AcquisitionRequest = {
+    configuration,
+    sourceId: source.id,
+    seasonYear: edition.editionYear,
+    seriesId: 'mexico-finals',
+    stage: 'final',
+    discoveryUrl: source.baseUrl,
+    content: { kind: 'fetch', url: edition.url },
+    parserVersion: 'scorelatam-mexico-scoregroup-v1',
+    promptVersion: null,
+    model: null,
+    options: {
+      adapter: 'scorelatam-mexico-scoregroup-v1',
+      sourceEditionLabel: edition.sourceEditionLabel,
+      eventEquivalence: 'reviewer-approved',
+    },
+    parse: (body) => {
+      const parsedExtraction = parseScoreLATAMMexicoScoreboard(
+        new TextDecoder().decode(body),
+        edition,
+      );
+      if (parsedExtraction.status !== 'ready') {
+        return Promise.reject(
+          new Error(parsedExtraction.reason ?? 'ScoreLATAM Mexico extraction requires review.'),
+        );
+      }
+      return Promise.resolve(scoreLATAMCandidatePayload(parsedExtraction, relativeArtifactPath));
+    },
+  };
+  const defaultAcquisitionDependencies: AcquisitionDependencies = {
+    cache: new BoundedJsonCache({
+      directory: path.join(root, '.standings-ingestion/cache'),
+      ttlMs: 7 * 24 * 60 * 60 * 1000,
+      maxEntries: 1000,
+      maxEntryBytes: 32 * 1024 * 1024,
+    }),
+    parse: () =>
+      Promise.reject(new Error('ScoreLATAM parser was not assigned to its acquisition job.')),
+  };
+  const baseAcquisitionDependencies = injectedDependencies ?? defaultAcquisitionDependencies;
+  const acquisitionDependencies: AcquisitionDependencies = {
+    ...baseAcquisitionDependencies,
+    fetcherForSource: () => fetcher,
+  };
+  const batch = await acquireStandingsBatch([contestRequest], acquisitionDependencies);
+  return {
+    candidates: batch.candidates,
+    sourceFailures: [
+      ...batch.sourceFailures.map((failure) => ({
+        ...failure,
+        message: `${failure.message}; ScoreLATAM extraction staged at ${relativeArtifactPath}.`,
+      })),
+    ],
+  };
+};
+
 const loadArchiveFiles = async (root: string): Promise<JsonFiles> => {
   const files: JsonFiles = {};
   const dataDirectory = path.join(root, 'data');
@@ -379,9 +619,10 @@ export const runStandingsIngestion = async (
   dependencies: StandingsIngestionCliDependencies = {},
 ): Promise<{ proposalPath: string; status: string }> => {
   const options = parseCliOptions(argv);
-  const candidates = options.acquireICPCMexico
-    ? []
-    : await loadCandidateFiles(options.candidateFiles);
+  const candidates =
+    options.acquireICPCMexico || options.acquireScoreLATAM
+      ? []
+      : await loadCandidateFiles(options.candidateFiles);
   const [sourceConfiguration, identityRegistry] = await Promise.all([
     readBoundedJson(path.join(root, 'config/standings-sources.json')),
     readBoundedJson(path.join(root, 'config/standings-identities.json')),
@@ -390,7 +631,9 @@ export const runStandingsIngestion = async (
   const parsedAliases = identityAliasRegistrySchema.parse(identityRegistry);
   const acquisition = options.acquireICPCMexico
     ? await icpcMexicoAcquisition(parsedConfiguration, options, root, dependencies.acquisition)
-    : { candidates: [], sourceFailures: [] };
+    : options.acquireScoreLATAM
+      ? await scoreLATAMAcquisition(parsedConfiguration, options, root, dependencies.acquisition)
+      : { candidates: [], sourceFailures: [] };
   const archiveResult = await createJsonScoreboardsRepository(
     await loadArchiveFiles(root),
     'archive',

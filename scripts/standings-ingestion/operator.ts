@@ -70,17 +70,23 @@ export const writeProposalAtomically = async (
   directory: string,
   fileName: string,
   proposal: ReviewProposal,
+): Promise<string> =>
+  writeJsonAtomically(directory, fileName, reviewProposalSchema.parse(proposal));
+
+export const writeJsonAtomically = async (
+  directory: string,
+  fileName: string,
+  value: unknown,
 ): Promise<string> => {
   if (!PROPOSAL_FILENAME.test(fileName) || fileName.includes('..')) {
-    throw new TypeError('Proposal filename must be a simple JSON filename.');
+    throw new TypeError('Output filename must be a simple JSON filename.');
   }
-  const validated = reviewProposalSchema.parse(proposal);
   await mkdir(directory, { recursive: true });
   const destination = path.join(directory, fileName);
   const temporary = path.join(directory, `.${fileName}.${randomUUID()}.tmp`);
   const handle = await open(temporary, 'wx', 0o600);
   try {
-    await handle.writeFile(`${stableSerialize(validated)}\n`, 'utf8');
+    await handle.writeFile(`${stableSerialize(value)}\n`, 'utf8');
     await handle.sync();
   } finally {
     await handle.close();
