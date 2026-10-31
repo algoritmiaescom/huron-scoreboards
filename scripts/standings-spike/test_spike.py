@@ -1,7 +1,29 @@
 import pytest
-
 import spike
 from spike import EXPECTED, Standings, verify
+
+
+def test_generated_pdf_and_ocr_match_exact_fixture(tmp_path):
+    result = spike.documents(tmp_path)
+    assert result["text"].split() == spike.TABLE.split()
+    assert result["ocr"].split() == spike.TABLE.split()
+    assert result["page"] == 1
+    assert result["ocr_words"]
+
+
+def test_cli_dispatches_offline_run(tmp_path, monkeypatch):
+    monkeypatch.setattr("sys.argv", ["spike", "--output", str(tmp_path), "--offline"])
+    received = []
+    monkeypatch.setattr(spike, "run", lambda *args: received.append(args))
+    spike.main()
+    assert received == [(tmp_path.resolve(), True, 3, 20, 500)]
+
+
+def test_cli_rejects_nonpositive_assumptions(tmp_path, monkeypatch):
+    monkeypatch.setattr("sys.argv", ["spike", "--output", str(tmp_path), "--repetitions", "0"])
+    with pytest.raises(SystemExit) as error:
+        spike.main()
+    assert error.value.code == 2
 
 
 def test_exact_ground_truth():
@@ -70,7 +92,14 @@ def test_model_digest_and_selected_content_boundary(tmp_path, monkeypatch, chang
 
     def fake_request(route, payload=None):
         if route == "/api/tags":
-            return {"models": [{"name": spike.MODEL, "digest": "changed" if changed_digest else spike.MODEL_DIGEST}]}
+            return {
+                "models": [
+                    {
+                        "name": spike.MODEL,
+                        "digest": "changed" if changed_digest else spike.MODEL_DIGEST,
+                    }
+                ]
+            }
         return {"version": "test", "license": "test", "model_info": {}}
 
     monkeypatch.setattr(spike, "extract", fake_extract)

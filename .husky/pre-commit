@@ -1,1 +1,7 @@
+set -e
+
 npx lint-staged --config lint-staged.config.js
+
+if git diff --cached --name-only --diff-filter=ACMR | grep -Eq '(\.py$|(^|/)pyproject\.toml$|(^|/)uv\.lock$)'; then
+	npm run typecheck:python
+fi

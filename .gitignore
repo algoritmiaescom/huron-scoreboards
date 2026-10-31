@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 coverage
+coverage-python
 playwright-report
 test-results
 *.local
@@ -25,6 +26,8 @@ test-results
 scripts/standings-spike/.venv/
 __pycache__/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .standings-spike/
 /scripts/standings-ingestion/.venv/
 .vscode

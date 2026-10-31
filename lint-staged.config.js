@@ -10,6 +10,11 @@ const createCommands = (files, commands) => {
 };
 
 export default {
+  '*.py': (files) =>
+    createCommands(files, [
+      'uv run --locked --project scripts/standings-ingestion ruff check --fix',
+      'uv run --locked --project scripts/standings-ingestion ruff format',
+    ]),
   '*.{js,jsx,ts,tsx}': (files) =>
     createCommands(files, ['eslint --fix --max-warnings 0', 'prettier --write']),
   '*.{css,html,json,md,yaml,yml}': (files) => createCommands(files, ['prettier --write']),

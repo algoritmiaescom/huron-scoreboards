@@ -1,4 +1,5 @@
 coverage
+coverage-python
 dist
 node_modules
 package-lock.json
@@ -7,4 +8,6 @@ test-results
 .standings-spike
 scripts/standings-spike/.venv
 scripts/standings-ingestion/.venv
+.mypy_cache
+.ruff_cache
 .vscode

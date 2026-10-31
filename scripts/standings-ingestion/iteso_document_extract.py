@@ -6,6 +6,7 @@ import re
 import sys
 import unicodedata
 from pathlib import Path
+from typing import TypedDict
 
 import pdfplumber
 import pypdfium2 as pdfium
@@ -32,13 +33,26 @@ HEADER_ALIASES = {
 }
 
 
-def normalize(value):
+class ExtractedWord(TypedDict):
+    x: float
+    y: float
+    x0: float
+    text: str
+    line: object
+    confidence: float | None
+
+
+def normalize(value: str) -> str:
     decomposed = unicodedata.normalize("NFD", value.lower())
-    return re.sub(r"[^a-z0-9#]+", "", "".join(char for char in decomposed if unicodedata.category(char) != "Mn"))
+    return re.sub(
+        r"[^a-z0-9#]+",
+        "",
+        "".join(char for char in decomposed if unicodedata.category(char) != "Mn"),
+    )
 
 
-def group_words(words):
-    lines = []
+def group_words(words: list[ExtractedWord]) -> list[list[ExtractedWord]]:
+    lines: list[list[ExtractedWord]] = []
     for word in sorted(words, key=lambda item: (item["y"], item["x0"])):
         same_ocr_line = (
             isinstance(word.get("line"), tuple)
@@ -52,9 +66,11 @@ def group_words(words):
     return [sorted(line, key=lambda word: word["x0"]) for line in lines]
 
 
-def locate_header(lines):
+def locate_header(
+    lines: list[list[ExtractedWord]],
+) -> tuple[int, list[float], list[str]] | None:
     for line_index, line in enumerate(lines):
-        found = {}
+        found: dict[str, ExtractedWord] = {}
         for word in line:
             value = normalize(word["text"])
             for name, aliases in HEADER_ALIASES.items():
@@ -71,7 +87,9 @@ def locate_header(lines):
 
 
 def split_lines(lines, header, active_centers=None):
-    header_index, centers, header_cells = header if header is not None else (None, active_centers, None)
+    header_index, centers, header_cells = (
+        header if header is not None else (None, active_centers, None)
+    )
     if centers is None:
         return None, None
     rows = []
@@ -82,8 +100,8 @@ def split_lines(lines, header, active_centers=None):
             continue
         if header_index is not None and line_index < header_index:
             continue
-        cells = [[] for _ in centers]
-        scores = [[] for _ in centers]
+        cells: list[list[str]] = [[] for _ in centers]
+        scores: list[list[float]] = [[] for _ in centers]
         for word in line:
             column = min(range(len(centers)), key=lambda index: abs(centers[index] - word["x"]))
             cells[column].append(word["text"])
@@ -97,8 +115,8 @@ def split_lines(lines, header, active_centers=None):
     return rows, centers
 
 
-def pdf_words(page):
-    words = []
+def pdf_words(page: pdfplumber.page.Page) -> list[ExtractedWord]:
+    words: list[ExtractedWord] = []
     for item in page.extract_words():
         x0 = item["x0"]
         x1 = item["x1"]
@@ -117,14 +135,14 @@ def pdf_words(page):
     return words
 
 
-def ocr_words(image):
+def ocr_words(image: Image.Image) -> list[ExtractedWord]:
     data = pytesseract.image_to_data(
         image,
         config="--psm 6",
         timeout=60,
         output_type=pytesseract.Output.DICT,
     )
-    words = []
+    words: list[ExtractedWord] = []
     for index, text in enumerate(data["text"]):
         if not text.strip():
             continue
@@ -196,8 +214,10 @@ def extract_pdf(path):
             for page_index, page in enumerate(document.pages):
                 text = (page.extract_text() or "")[:100_000]
                 method = "text" if len(text.strip()) >= 20 else "ocr"
-                words = pdf_words(page) if method == "text" else ocr_words(
-                    render_pdf_page(raster_document, page_index)
+                words = (
+                    pdf_words(page)
+                    if method == "text"
+                    else ocr_words(render_pdf_page(raster_document, page_index))
                 )
                 lines = group_words(words)
                 header = locate_header(lines)
@@ -232,7 +252,7 @@ def extract_image(path):
             timeout=60,
             output_type=pytesseract.Output.DICT,
         )
-    words = []
+    words: list[ExtractedWord] = []
     for index, text in enumerate(data["text"]):
         if not text.strip():
             continue
