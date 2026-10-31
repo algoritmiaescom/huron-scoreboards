@@ -879,20 +879,36 @@ describe('standings ingestion CLI', () => {
       const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
         status: string;
         candidates: unknown[];
+        seasonStandingCandidates: {
+          sourceId: string;
+          sourceEditionLabel: string;
+          snapshot: string;
+          scoreUnit: string;
+          rows: { score: number; scoreText: string; qualified: boolean; pageNumber: number }[];
+          warnings: string[];
+        }[];
         sourceFailures: { message: string }[];
       };
-      expect(result.status).toBe('failed');
+      expect(result.status).toBe('partial');
       expect(proposal.candidates).toEqual([]);
+      expect(proposal.seasonStandingCandidates).toHaveLength(1);
+      expect(proposal.seasonStandingCandidates[0]).toMatchObject({
+        sourceId: 'iteso',
+        sourceEditionLabel: '2025',
+        snapshot: 'unconfirmed',
+        scoreUnit: 'Puntos',
+        rows: [{ score: 12.5, scoreText: '12.5', qualified: true, pageNumber: 1 }],
+      });
       expect(proposal.sourceFailures[0].message).toContain(
-        'shared review-candidate contract does not yet support source-native season standings',
+        'source edition `2025` has no reviewed season mapping',
       );
       expect(requestedUrls).toEqual([
         'https://eventos.iteso.mx/acm/',
         'https://eventos.iteso.mx/acm/resultados-acumulados-2025/',
         'https://acm.iteso.mx/share/result.pdf',
       ]);
-      const artifactReference = /staged at (\.standings-ingestion\/staged\/[^ ]+\.json)/.exec(
-        proposal.sourceFailures[0].message,
+      const artifactReference = /staged at (\.standings-ingestion\/staged\/[^.\s]+\.json)/.exec(
+        proposal.seasonStandingCandidates[0].warnings.join(' '),
       )?.[1];
       expect(artifactReference).toBeDefined();
       const artifact = JSON.parse(

@@ -5,7 +5,7 @@ import { archive, contest } from '@/test/fixtures/archive';
 import { reconcileCandidates } from './reconcile';
 
 import type { ReviewedIdentityAlias } from './identities';
-import type { SourceConfiguration, StandingsCandidate } from './schemas';
+import type { SeasonStandingCandidate, SourceConfiguration, StandingsCandidate } from './schemas';
 
 const sourceConfiguration: SourceConfiguration = {
   schemaVersion: 1,
@@ -110,17 +110,81 @@ const makeCandidate = (overrides: Partial<StandingsCandidate> = {}): StandingsCa
   ...overrides,
 });
 
+const makeSeasonStandingCandidate = (
+  overrides: Partial<SeasonStandingCandidate> = {},
+): SeasonStandingCandidate => ({
+  candidateId: 'icpc-mexico-2024-gpm-standing-contenthash',
+  sourceId: 'icpc-mexico',
+  authorityId: 'icpc-mexico',
+  discoveryUrl: 'https://icpcmexico.org/contests',
+  finalUrl: 'https://icpcmexico.org/contests/2024/standing.pdf',
+  retrievedAt: '2026-10-28T12:00:00Z',
+  contentSha256: 'b'.repeat(64),
+  parserVersion: 'iteso-season-standing-v1',
+  sourceEditionLabel: '2024',
+  seasonYear: 2024,
+  seriesId: 'gpm',
+  snapshot: 'latest-explicit',
+  scoreUnit: 'points',
+  rows: [
+    {
+      place: 1,
+      sourceTeamId: 'source-alpha',
+      teamName: 'Alpha source name',
+      score: 12.75,
+      scoreText: '12.75',
+      scoreUnit: 'points',
+      qualificationText: 'Sí',
+      qualified: true,
+      pageNumber: 1,
+      confidence: 1,
+      evidence: [
+        {
+          field: 'rows[0].place',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 place',
+          page: 1,
+          excerpt: '1',
+          confidence: 1,
+        },
+        {
+          field: 'rows[0].teamName',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 team name',
+          page: 1,
+          excerpt: 'Alpha source name',
+          confidence: 1,
+        },
+        {
+          field: 'rows[0].score',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 score',
+          page: 1,
+          excerpt: '12.75',
+          confidence: 1,
+        },
+      ],
+    },
+  ],
+  pageNumbers: [1],
+  coverage: { expectedRowCount: 1, rowsComplete: true, pagesComplete: true },
+  warnings: [],
+  ...overrides,
+});
+
 const reconcile = (
   candidates: readonly unknown[],
   options: {
     archive?: typeof archive;
     aliases?: readonly unknown[];
+    seasonStandingCandidates?: readonly unknown[];
     sourceConfiguration?: unknown;
   } = {},
 ) =>
   reconcileCandidates({
     archive: options.archive ?? archive,
     candidates,
+    seasonStandingCandidates: options.seasonStandingCandidates,
     sourceConfiguration: options.sourceConfiguration ?? sourceConfiguration,
     identityAliases: options.aliases ?? identityAliases,
     runId: 'test-run-1',
@@ -197,6 +261,18 @@ describe('dry-run standings reconciliation', () => {
         alternatives: [expect.objectContaining({ value: 'Alpha source name' })],
       }),
     );
+    expect(proposal.identityProposals).toEqual([
+      {
+        candidateId: 'icpc-mexico-2024-q1-contenthash',
+        rowIndex: 0,
+        sourceId: 'icpc-mexico',
+        seasonYear: 2024,
+        sourceTeamId: 'source-alpha',
+        teamName: 'Alpha source name',
+        sourceSchoolId: 'school-unit',
+        schoolName: 'Unit source name',
+      },
+    ]);
   });
 
   it('keeps valid independent additions when another source candidate fails', () => {
@@ -276,6 +352,99 @@ describe('dry-run standings reconciliation', () => {
         field: 'publicationState',
         kind: 'publication-state',
       }),
+    );
+  });
+
+  it('uses reviewed exact team identities to compare season standings with the archive', () => {
+    const candidate = makeSeasonStandingCandidate({
+      rows: [
+        {
+          ...makeSeasonStandingCandidate().rows[0],
+          score: 14,
+          scoreText: '14',
+          evidence: makeSeasonStandingCandidate().rows[0].evidence.map((evidence) =>
+            evidence.field === 'rows[0].score' ? { ...evidence, excerpt: '14' } : evidence,
+          ),
+        },
+      ],
+    });
+    const proposal = reconcile([], { seasonStandingCandidates: [candidate] });
+
+    expect(proposal.status).toBe('complete');
+    expect(proposal.seasonStandingAdditions).toEqual([]);
+    expect(proposal.seasonStandingConflicts).toContainEqual(
+      expect.objectContaining({
+        entityId: '2024-a',
+        field: 'score',
+        kind: 'archive',
+        currentValue: '12.75',
+        alternatives: [
+          expect.objectContaining({ candidateId: candidate.candidateId, value: '14' }),
+        ],
+      }),
+    );
+  });
+
+  it('proposes only complete explicit-final season standings and retains unresolved rows for review', () => {
+    const emptyStandingArchive = { ...archive, seasonStandings: [] };
+    const finalProposal = reconcile([], {
+      archive: emptyStandingArchive,
+      seasonStandingCandidates: [makeSeasonStandingCandidate()],
+    });
+    expect(finalProposal.seasonStandingAdditions).toEqual([
+      { candidateId: 'icpc-mexico-2024-gpm-standing-contenthash', rowIndex: 0 },
+    ]);
+
+    const intermediateProposal = reconcile([], {
+      archive: emptyStandingArchive,
+      seasonStandingCandidates: [makeSeasonStandingCandidate({ snapshot: 'intermediate' })],
+    });
+    expect(intermediateProposal.seasonStandingAdditions).toEqual([]);
+    expect(intermediateProposal.seasonStandingConflicts).toContainEqual(
+      expect.objectContaining({ field: 'snapshot', kind: 'publication-state' }),
+    );
+
+    const unresolvedProposal = reconcile([], {
+      archive: emptyStandingArchive,
+      aliases: [],
+      seasonStandingCandidates: [makeSeasonStandingCandidate()],
+    });
+    expect(unresolvedProposal.seasonStandingAdditions).toEqual([]);
+    expect(unresolvedProposal.seasonStandingConflicts).toContainEqual(
+      expect.objectContaining({ field: 'teamId', kind: 'identity' }),
+    );
+    expect(unresolvedProposal.identityProposals).toEqual([
+      {
+        candidateId: 'icpc-mexico-2024-gpm-standing-contenthash',
+        rowIndex: 0,
+        sourceId: 'icpc-mexico',
+        seasonYear: 2024,
+        sourceTeamId: 'source-alpha',
+        teamName: 'Alpha source name',
+        sourceSchoolId: null,
+        schoolName: null,
+      },
+    ]);
+  });
+
+  it('keeps incomplete season-standing candidates reviewable but blocks additions', () => {
+    const proposal = reconcile([], {
+      archive: { ...archive, seasonStandings: [] },
+      seasonStandingCandidates: [
+        makeSeasonStandingCandidate({
+          coverage: { expectedRowCount: 2, rowsComplete: false, pagesComplete: false },
+        }),
+      ],
+    });
+    expect(proposal.status).toBe('partial');
+    expect(proposal.seasonStandingCandidates).toHaveLength(1);
+    expect(proposal.seasonStandingAdditions).toEqual([]);
+    expect(proposal.sourceFailures.map(({ message }) => message)).toEqual(
+      expect.arrayContaining([
+        'source did not confirm that all season-standing rows were collected',
+        'source document pages are incomplete or unknown',
+        'expected 2 rows but collected 1',
+      ]),
     );
   });
 });

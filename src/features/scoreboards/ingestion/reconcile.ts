@@ -6,19 +6,28 @@ import {
 import {
   candidateCoverageIssues,
   reviewProposalSchema,
+  seasonStandingCandidateCoverageIssues,
+  seasonStandingCandidateSchema,
   sourceConfigurationSchema,
   standingsCandidateSchema,
   validateCandidateSource,
+  validateSeasonStandingCandidateSource,
 } from './schemas';
 import { scoreStandingRow } from '../model/scoring';
 
-import type { CandidateEvidence, ReviewProposal, StandingsCandidate } from './schemas';
+import type {
+  CandidateEvidence,
+  ReviewProposal,
+  SeasonStandingCandidate,
+  StandingsCandidate,
+} from './schemas';
 import type { Contest } from '../model/schemas';
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
 
 interface ReconcileCandidatesInput {
   archive: ScoreboardsArchive;
   candidates: readonly unknown[];
+  seasonStandingCandidates?: readonly unknown[];
   sourceConfiguration: unknown;
   identityAliases: readonly unknown[];
   runId: string;
@@ -65,6 +74,7 @@ const rowEvidence = (row: StandingsCandidate['rows'][number], field: string): Ca
 export const reconcileCandidates = ({
   archive,
   candidates: rawCandidates,
+  seasonStandingCandidates: rawSeasonStandingCandidates = [],
   sourceConfiguration,
   identityAliases,
   runId,
@@ -74,6 +84,19 @@ export const reconcileCandidates = ({
   const sourceFailures: ReviewProposal['sourceFailures'] = [];
   const conflicts: ReviewProposal['conflicts'] = [];
   const additions: ReviewProposal['additions'] = [];
+  const seasonStandingConflicts: ReviewProposal['seasonStandingConflicts'] = [];
+  const seasonStandingAdditions: ReviewProposal['seasonStandingAdditions'] = [];
+  const identityProposals: ReviewProposal['identityProposals'] = [];
+  const addIdentityProposal = (identityProposal: ReviewProposal['identityProposals'][number]) => {
+    if (
+      !identityProposals.some(
+        ({ candidateId, rowIndex }) =>
+          candidateId === identityProposal.candidateId && rowIndex === identityProposal.rowIndex,
+      )
+    ) {
+      identityProposals.push(identityProposal);
+    }
+  };
 
   const parsedConfiguration = sourceConfigurationSchema.safeParse(sourceConfiguration);
   if (!parsedConfiguration.success) {
@@ -135,6 +158,29 @@ export const reconcileCandidates = ({
   });
   candidates.sort((left, right) => left.candidateId.localeCompare(right.candidateId));
 
+  const seasonStandingCandidates: SeasonStandingCandidate[] = [];
+  rawSeasonStandingCandidates.forEach((rawCandidate) => {
+    const parsedCandidate = seasonStandingCandidateSchema.safeParse(rawCandidate);
+    if (!parsedCandidate.success) {
+      sourceFailures.push({
+        sourceId: sourceIdFromUnknown(rawCandidate),
+        contest: null,
+        message: `season-standing candidate validation failed: ${parsedCandidate.error.message}`,
+      });
+      return;
+    }
+    if (seenCandidateIds.has(parsedCandidate.data.candidateId)) {
+      runIssues.push({
+        kind: 'candidate',
+        message: `duplicate candidate id \`${parsedCandidate.data.candidateId}\``,
+      });
+      return;
+    }
+    seenCandidateIds.add(parsedCandidate.data.candidateId);
+    seasonStandingCandidates.push(parsedCandidate.data);
+  });
+  seasonStandingCandidates.sort((left, right) => left.candidateId.localeCompare(right.candidateId));
+
   const candidateFailures = new Set<string>();
   const incompleteCandidates = new Set<string>();
   candidates.forEach((candidate) => {
@@ -152,6 +198,22 @@ export const reconcileCandidates = ({
         contest: candidate.contest,
         message,
       });
+    });
+  });
+
+  const seasonStandingCandidateFailures = new Set<string>();
+  const incompleteSeasonStandingCandidates = new Set<string>();
+  seasonStandingCandidates.forEach((candidate) => {
+    const issues = validateSeasonStandingCandidateSource(candidate, sourceConfig);
+    if (issues.length > 0) {
+      seasonStandingCandidateFailures.add(candidate.candidateId);
+      issues.forEach((message) => {
+        sourceFailures.push({ sourceId: candidate.sourceId, contest: null, message });
+      });
+    }
+    seasonStandingCandidateCoverageIssues(candidate).forEach((message) => {
+      incompleteSeasonStandingCandidates.add(candidate.candidateId);
+      sourceFailures.push({ sourceId: candidate.sourceId, contest: null, message });
     });
   });
 
@@ -184,6 +246,38 @@ export const reconcileCandidates = ({
       ],
     });
   };
+
+  const addSeasonStandingConflict = (
+    candidate: SeasonStandingCandidate,
+    entityId: string,
+    field: string,
+    kind: ReviewProposal['seasonStandingConflicts'][number]['kind'],
+    currentValue: unknown,
+    candidateValue: unknown,
+    evidence: CandidateEvidence[],
+  ) => {
+    seasonStandingConflicts.push({
+      seasonYear: candidate.seasonYear,
+      seriesId: candidate.seriesId,
+      entityId,
+      field,
+      kind,
+      currentValue: serializeValue(currentValue),
+      alternatives: [
+        {
+          candidateId: candidate.candidateId,
+          value: serializeValue(candidateValue),
+          evidence,
+        },
+      ],
+    });
+  };
+
+  const seasonStandingRowEvidence = (
+    row: SeasonStandingCandidate['rows'][number],
+    field: string,
+  ): CandidateEvidence[] =>
+    row.evidence.filter(({ field: evidenceField }) => evidenceField === field);
 
   candidates.forEach((candidate) => {
     if (candidateFailures.has(candidate.candidateId)) {
@@ -280,6 +374,16 @@ export const reconcileCandidates = ({
           row.teamName,
           rowEvidence(row, `rows[${String(rowIndex)}].teamName`),
         );
+        addIdentityProposal({
+          candidateId: candidate.candidateId,
+          rowIndex,
+          sourceId: candidate.sourceId,
+          seasonYear: candidate.contest.seasonYear,
+          sourceTeamId: row.sourceTeamId,
+          teamName: row.teamName,
+          sourceSchoolId: row.sourceSchoolId,
+          schoolName: row.schoolName,
+        });
         return;
       }
       const team = archive.teams.find(
@@ -298,6 +402,16 @@ export const reconcileCandidates = ({
           row.teamName,
           rowEvidence(row, `rows[${String(rowIndex)}].teamName`),
         );
+        addIdentityProposal({
+          candidateId: candidate.candidateId,
+          rowIndex,
+          sourceId: candidate.sourceId,
+          seasonYear: candidate.contest.seasonYear,
+          sourceTeamId: row.sourceTeamId,
+          teamName: row.teamName,
+          sourceSchoolId: row.sourceSchoolId,
+          schoolName: row.schoolName,
+        });
         return;
       }
       if (row.sourceSchoolId !== null) {
@@ -318,6 +432,16 @@ export const reconcileCandidates = ({
             row.schoolName,
             rowEvidence(row, `rows[${String(rowIndex)}].schoolName`),
           );
+          addIdentityProposal({
+            candidateId: candidate.candidateId,
+            rowIndex,
+            sourceId: candidate.sourceId,
+            seasonYear: candidate.contest.seasonYear,
+            sourceTeamId: row.sourceTeamId,
+            teamName: row.teamName,
+            sourceSchoolId: row.sourceSchoolId,
+            schoolName: row.schoolName,
+          });
           return;
         }
         if (schoolIdentity.canonicalId !== team.schoolId) {
@@ -331,6 +455,16 @@ export const reconcileCandidates = ({
             schoolIdentity.canonicalId,
             rowEvidence(row, `rows[${String(rowIndex)}].sourceSchoolId`),
           );
+          addIdentityProposal({
+            candidateId: candidate.candidateId,
+            rowIndex,
+            sourceId: candidate.sourceId,
+            seasonYear: candidate.contest.seasonYear,
+            sourceTeamId: row.sourceTeamId,
+            teamName: row.teamName,
+            sourceSchoolId: row.sourceSchoolId,
+            schoolName: row.schoolName,
+          });
           return;
         }
       }
@@ -443,8 +577,131 @@ export const reconcileCandidates = ({
     });
   });
 
+  seasonStandingCandidates.forEach((candidate) => {
+    if (seasonStandingCandidateFailures.has(candidate.candidateId)) {
+      return;
+    }
+    const matchingStandings = archive.seasonStandings.filter(
+      (standing) =>
+        standing.seasonYear === candidate.seasonYear && standing.seriesId === candidate.seriesId,
+    );
+    if (matchingStandings.length > 1) {
+      sourceFailures.push({
+        sourceId: candidate.sourceId,
+        contest: null,
+        message: 'multiple archive season standings match this year and series',
+      });
+      return;
+    }
+    const existingStanding = matchingStandings.at(0);
+    const canAddRows =
+      candidate.snapshot === 'latest-explicit' &&
+      !incompleteSeasonStandingCandidates.has(candidate.candidateId) &&
+      runIssues.length === 0;
+    if (candidate.snapshot !== 'latest-explicit') {
+      addSeasonStandingConflict(
+        candidate,
+        `${String(candidate.seasonYear)}-${candidate.seriesId}-season-standing`,
+        'snapshot',
+        'publication-state',
+        existingStanding === undefined ? null : 'archived record retained',
+        candidate.snapshot,
+        candidate.rows.flatMap(({ evidence }) => evidence),
+      );
+    }
+    const resolvedTeams = new Set<string>();
+    candidate.rows.forEach((row, rowIndex) => {
+      const identity = resolveReviewedIdentity(usableAliases, {
+        sourceId: candidate.sourceId,
+        entityType: 'team',
+        sourceIdentityId: row.sourceTeamId,
+        seasonYear: candidate.seasonYear,
+      });
+      if (identity.status !== 'resolved') {
+        addSeasonStandingConflict(
+          candidate,
+          row.sourceTeamId ?? `${candidate.candidateId}:row-${String(rowIndex)}`,
+          'teamId',
+          'identity',
+          null,
+          row.teamName,
+          seasonStandingRowEvidence(row, `rows[${String(rowIndex)}].teamName`),
+        );
+        addIdentityProposal({
+          candidateId: candidate.candidateId,
+          rowIndex,
+          sourceId: candidate.sourceId,
+          seasonYear: candidate.seasonYear,
+          sourceTeamId: row.sourceTeamId,
+          teamName: row.teamName,
+          sourceSchoolId: null,
+          schoolName: null,
+        });
+        return;
+      }
+      const team = archive.teams.find(
+        (entry) => entry.id === identity.canonicalId && entry.seasonYear === candidate.seasonYear,
+      );
+      if (team === undefined) {
+        addSeasonStandingConflict(
+          candidate,
+          identity.canonicalId,
+          'teamId',
+          'identity',
+          null,
+          row.teamName,
+          seasonStandingRowEvidence(row, `rows[${String(rowIndex)}].teamName`),
+        );
+        addIdentityProposal({
+          candidateId: candidate.candidateId,
+          rowIndex,
+          sourceId: candidate.sourceId,
+          seasonYear: candidate.seasonYear,
+          sourceTeamId: row.sourceTeamId,
+          teamName: row.teamName,
+          sourceSchoolId: null,
+          schoolName: null,
+        });
+        return;
+      }
+      if (resolvedTeams.has(team.id)) {
+        runIssues.push({
+          kind: 'identity-registry',
+          message: `multiple source rows resolve to team \`${team.id}\` in one season-standing candidate`,
+        });
+        return;
+      }
+      resolvedTeams.add(team.id);
+      const archivedRow = existingStanding?.rows.find(({ teamId }) => teamId === team.id);
+      if (archivedRow === undefined) {
+        if (canAddRows) {
+          seasonStandingAdditions.push({ candidateId: candidate.candidateId, rowIndex });
+        }
+        return;
+      }
+      const fields = [
+        ['place', archivedRow.place, row.place],
+        ['score', archivedRow.score, row.score],
+        ['qualified', archivedRow.qualified, row.qualified],
+      ] as const;
+      fields.forEach(([field, currentValue, candidateValue]) => {
+        if (currentValue !== candidateValue) {
+          addSeasonStandingConflict(
+            candidate,
+            team.id,
+            field,
+            'archive',
+            currentValue,
+            candidateValue,
+            seasonStandingRowEvidence(row, `rows[${String(rowIndex)}].${field}`),
+          );
+        }
+      });
+    });
+  });
+
   const status =
-    candidates.length === 0
+    candidates.length + seasonStandingCandidates.length === 0
       ? 'failed'
       : sourceFailures.length > 0 || runIssues.length > 0
         ? 'partial'
@@ -456,7 +713,11 @@ export const reconcileCandidates = ({
     status,
     candidates,
     additions: runIssues.length > 0 ? [] : additions,
+    seasonStandingCandidates,
+    seasonStandingAdditions: runIssues.length > 0 ? [] : seasonStandingAdditions,
+    identityProposals,
     conflicts,
+    seasonStandingConflicts,
     runIssues,
     sourceFailures,
   };

@@ -3,7 +3,10 @@ import { link, mkdir, open, unlink } from 'node:fs/promises';
 import path from 'node:path';
 
 import { reconcileCandidates } from '@/features/scoreboards/ingestion/reconcile';
-import { standingsCandidateSchema } from '@/features/scoreboards/ingestion/schemas';
+import {
+  seasonStandingCandidateSchema,
+  standingsCandidateSchema,
+} from '@/features/scoreboards/ingestion/schemas';
 import { reviewProposalSchema } from '@/features/scoreboards/ingestion/schemas';
 
 import { stableSerialize } from './cache';
@@ -36,9 +39,26 @@ export const selectCandidateInputs = (
     );
   });
 
+export const selectSeasonStandingCandidateInputs = (
+  rawCandidates: readonly unknown[],
+  selection: CandidateSelection,
+): unknown[] =>
+  rawCandidates.filter((candidate) => {
+    const parsed = seasonStandingCandidateSchema.safeParse(candidate);
+    if (!parsed.success) {
+      return true;
+    }
+    return (
+      (selection.sourceId === undefined || parsed.data.sourceId === selection.sourceId) &&
+      (selection.seasonYear === undefined || parsed.data.seasonYear === selection.seasonYear) &&
+      (selection.seriesId === undefined || parsed.data.seriesId === selection.seriesId)
+    );
+  });
+
 export const createReviewProposal = ({
   archive,
   candidates,
+  seasonStandingCandidates = [],
   sourceConfiguration,
   identityAliases,
   selection = {},
@@ -47,6 +67,7 @@ export const createReviewProposal = ({
 }: {
   archive: ScoreboardsArchive;
   candidates: readonly unknown[];
+  seasonStandingCandidates?: readonly unknown[];
   sourceConfiguration: unknown;
   identityAliases: readonly unknown[];
   selection?: CandidateSelection;
@@ -57,6 +78,10 @@ export const createReviewProposal = ({
     reconcileCandidates({
       archive,
       candidates: selectCandidateInputs(candidates, selection),
+      seasonStandingCandidates: selectSeasonStandingCandidateInputs(
+        seasonStandingCandidates,
+        selection,
+      ),
       sourceConfiguration,
       identityAliases,
       runId,

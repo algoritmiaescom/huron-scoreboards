@@ -80,10 +80,18 @@ const readInputProposal = async (inputPath: string): Promise<ReviewProposal> => 
 export const isPublishableProposal = (proposal: ReviewProposal): boolean =>
   (proposal.candidates.length > 0 ||
     proposal.additions.length > 0 ||
+    proposal.seasonStandingCandidates.length > 0 ||
+    proposal.seasonStandingAdditions.length > 0 ||
+    proposal.identityProposals.length > 0 ||
     proposal.conflicts.length > 0 ||
+    proposal.seasonStandingConflicts.length > 0 ||
     proposal.runIssues.length > 0 ||
     proposal.sourceFailures.length > 0) &&
-  (proposal.status !== 'failed' || proposal.conflicts.length > 0 || proposal.runIssues.length > 0);
+  (proposal.status !== 'failed' ||
+    proposal.conflicts.length > 0 ||
+    proposal.seasonStandingConflicts.length > 0 ||
+    proposal.identityProposals.length > 0 ||
+    proposal.runIssues.length > 0);
 
 const inlineCode = (value: string): string =>
   `\`${value.replace(/[`\r\n]/g, ' ').slice(0, 1000)}\``;
@@ -96,6 +104,7 @@ export const formatProposalPullRequestBody = (
     const sources = [
       ...new Set([
         ...proposal.candidates.map(({ sourceId }) => sourceId),
+        ...proposal.seasonStandingCandidates.map(({ sourceId }) => sourceId),
         ...proposal.sourceFailures.map(({ sourceId }) => sourceId),
       ]),
     ];
@@ -103,10 +112,18 @@ export const formatProposalPullRequestBody = (
       (total, candidate) => total + candidate.rows.length,
       0,
     );
-    const identityConflicts = proposal.conflicts.filter(({ kind }) => kind === 'identity').length;
+    const seasonStandingRowCount = proposal.seasonStandingCandidates.reduce(
+      (total, candidate) => total + candidate.rows.length,
+      0,
+    );
+    const allConflicts = [...proposal.conflicts, ...proposal.seasonStandingConflicts];
+    const identityConflicts = allConflicts.filter(({ kind }) => kind === 'identity').length;
     const warnings = proposal.candidates.reduce(
       (total, candidate) => total + candidate.warnings.length,
-      0,
+      proposal.seasonStandingCandidates.reduce(
+        (candidateTotal, candidate) => candidateTotal + candidate.warnings.length,
+        0,
+      ),
     );
     return [
       `### Run ${inlineCode(proposal.runId)}`,
@@ -114,19 +131,37 @@ export const formatProposalPullRequestBody = (
       `- Edition: ${
         proposal.candidates
           .map(({ contest }) => String(contest.seasonYear))
+          .concat(proposal.seasonStandingCandidates.map(({ seasonYear }) => String(seasonYear)))
           .filter((year, index, years) => years.indexOf(year) === index)
           .join(', ') || 'not resolved'
       }`,
       `- Sources: ${sources.map(inlineCode).join(', ') || 'none'}`,
-      `- Candidate rows: ${String(rowCount)}; proposed additions: ${String(proposal.additions.length)}`,
-      `- Conflicts: ${String(proposal.conflicts.length)} (${String(identityConflicts)} identity); run issues: ${String(proposal.runIssues.length)}`,
+      `- Candidate rows: ${String(rowCount + seasonStandingRowCount)}; contest additions: ${String(proposal.additions.length)}; season-standing additions: ${String(proposal.seasonStandingAdditions.length)}`,
+      `- Identity proposals: ${String(proposal.identityProposals.length)}`,
+      `- Conflicts: ${String(allConflicts.length)} (${String(identityConflicts)} identity); run issues: ${String(proposal.runIssues.length)}`,
       `- Source failures: ${String(proposal.sourceFailures.length)}; candidate warnings: ${String(warnings)}`,
+      ...proposal.seasonStandingCandidates.map((candidate) =>
+        [
+          `#### Season standing ${inlineCode(candidate.candidateId)}`,
+          `- Edition: ${String(candidate.seasonYear)} ${candidate.seriesId}; snapshot: ${candidate.snapshot}`,
+          `- Rows: ${String(candidate.rows.length)}; score unit: ${inlineCode(candidate.scoreUnit)}; rows complete: ${String(candidate.coverage.rowsComplete)}; pages complete: ${String(candidate.coverage.pagesComplete)}`,
+          ...candidate.warnings.map((warning) => `- Warning: ${inlineCode(warning)}`),
+        ].join('\n'),
+      ),
       ...proposal.runIssues.map(
         ({ kind, message }) => `- Run issue (${kind}): ${inlineCode(message)}`,
       ),
       ...proposal.sourceFailures.map(
         ({ sourceId, contest, message }) =>
           `- Source failure (${inlineCode(sourceId)}${contest === null ? '' : `, ${String(contest.seasonYear)} ${contest.seriesId}/${contest.stage}`}): ${inlineCode(message)}`,
+      ),
+      ...proposal.seasonStandingConflicts.map(
+        ({ seasonYear, seriesId, entityId, field, kind, currentValue, alternatives }) =>
+          `- Season-standing conflict (${kind}) ${inlineCode(`${String(seasonYear)}/${seriesId}/${entityId}/${field}`)}: ${inlineCode(currentValue ?? 'none')} -> ${alternatives.map(({ candidateId, value }) => `${inlineCode(candidateId)}=${inlineCode(value ?? 'unknown')}`).join(', ')}`,
+      ),
+      ...proposal.identityProposals.map(
+        ({ sourceId, seasonYear, sourceTeamId, teamName, sourceSchoolId, schoolName }) =>
+          `- Identity review (${inlineCode(sourceId)}, ${String(seasonYear)}): team ${inlineCode(teamName)} [source ID: ${inlineCode(sourceTeamId ?? 'unavailable')}]; school ${inlineCode(schoolName ?? 'unresolved')} [source ID: ${inlineCode(sourceSchoolId ?? 'unavailable')}]`,
       ),
     ].join('\n');
   });
@@ -280,12 +315,16 @@ export const main = async (): Promise<void> => {
   }
 };
 
-if (import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
+export const runCli = async (execute: () => Promise<void> = main): Promise<void> => {
   try {
-    await main();
+    await execute();
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`${process.env.GITHUB_ACTIONS === 'true' ? '::error::' : ''}${message}`);
     process.exitCode = 1;
   }
+};
+
+if (import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
+  await runCli();
 }

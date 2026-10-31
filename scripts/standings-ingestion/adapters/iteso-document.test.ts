@@ -95,6 +95,7 @@ describe('ITESO accumulated document extraction', () => {
   it('classifies only explicit intermediate and final language', () => {
     expect(classifyITESOSnapshot('Standing a la fecha de la segunda fecha')).toBe('intermediate');
     expect(classifyITESOSnapshot('Resultado final oficial')).toBe('latest-explicit');
+    expect(classifyITESOSnapshot('Resultado final')).toBe('unconfirmed');
     expect(classifyITESOSnapshot('Resultado acumulado tercera fecha')).toBe('unconfirmed');
   });
 });

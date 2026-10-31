@@ -6,11 +6,14 @@ import {
   candidateCoverageIssues,
   mapSourceEdition,
   reviewProposalSchema,
+  seasonStandingCandidateCoverageIssues,
+  seasonStandingCandidateSchema,
   selectPreferredSeasonStandingSourceIds,
   selectPreferredSourceIds,
   sourceConfigurationSchema,
   standingsCandidateSchema,
   validateCandidateSource,
+  validateSeasonStandingCandidateSource,
 } from './schemas';
 
 const sourceConfiguration = {
@@ -104,6 +107,65 @@ const candidate = {
     rowsComplete: true,
     paginationComplete: true,
   },
+  warnings: [],
+};
+
+const seasonStandingCandidate = {
+  candidateId: 'iteso-gpm-2025-abc123',
+  sourceId: 'iteso',
+  authorityId: 'iteso',
+  discoveryUrl: 'https://eventos.iteso.mx/acm/',
+  finalUrl: 'https://acm.iteso.mx/share/result.pdf',
+  retrievedAt: '2026-10-31T12:00:00Z',
+  contentSha256: 'b'.repeat(64),
+  parserVersion: 'iteso-season-standing-v1',
+  sourceEditionLabel: '2025',
+  seasonYear: 2025,
+  seriesId: 'gpm',
+  snapshot: 'latest-explicit',
+  scoreUnit: 'Puntos',
+  rows: [
+    {
+      place: 1,
+      sourceTeamId: 'Equipo Alpha',
+      teamName: 'Equipo Alpha',
+      score: 12.5,
+      scoreText: '12.5',
+      scoreUnit: 'Puntos',
+      qualificationText: 'Sí',
+      qualified: true,
+      pageNumber: 1,
+      confidence: 0.96,
+      evidence: [
+        {
+          field: 'rows[0].place',
+          kind: 'pdf-text',
+          locator: 'page 1 table row 1 place',
+          page: 1,
+          excerpt: '1',
+          confidence: 0.96,
+        },
+        {
+          field: 'rows[0].teamName',
+          kind: 'pdf-text',
+          locator: 'page 1 table row 1 teamName',
+          page: 1,
+          excerpt: 'Equipo Alpha',
+          confidence: 0.96,
+        },
+        {
+          field: 'rows[0].score',
+          kind: 'pdf-text',
+          locator: 'page 1 table row 1 score',
+          page: 1,
+          excerpt: '12.5',
+          confidence: 0.96,
+        },
+      ],
+    },
+  ],
+  pageNumbers: [1],
+  coverage: { expectedRowCount: 1, rowsComplete: true, pagesComplete: true },
   warnings: [],
 };
 
@@ -274,6 +336,88 @@ describe('evidence-backed candidates', () => {
   });
 });
 
+describe('season-standing review candidates', () => {
+  it('validates source mappings, page evidence, and row coverage', () => {
+    const mappedConfiguration = sourceConfigurationSchema.parse({
+      ...sourceConfiguration,
+      editionMappings: [
+        ...sourceConfiguration.editionMappings,
+        { sourceId: 'iteso', editionLabel: '2025', seasonYear: 2025 },
+      ],
+    });
+    const parsedCandidate = seasonStandingCandidateSchema.parse(seasonStandingCandidate);
+    expect(validateSeasonStandingCandidateSource(parsedCandidate, mappedConfiguration)).toEqual([]);
+    expect(
+      validateSeasonStandingCandidateSource(
+        { ...parsedCandidate, sourceEditionLabel: '2026' },
+        mappedConfiguration,
+      ),
+    ).toEqual(['source edition `2026` has no reviewed season mapping']);
+    const incomplete = seasonStandingCandidateSchema.parse({
+      ...seasonStandingCandidate,
+      coverage: { ...seasonStandingCandidate.coverage, expectedRowCount: 2 },
+    });
+    expect(seasonStandingCandidateCoverageIssues(incomplete)).toEqual([
+      'expected 2 rows but collected 1',
+    ]);
+    expect(
+      seasonStandingCandidateSchema.safeParse({
+        ...seasonStandingCandidate,
+        rows: [...seasonStandingCandidate.rows, { ...seasonStandingCandidate.rows[0], place: 2 }],
+      }).success,
+    ).toBe(false);
+  });
+
+  it('allows additions only for explicit final snapshots with valid candidate references', () => {
+    const proposal = {
+      schemaVersion: 1,
+      runId: 'run-2026-10-31-season-standing',
+      generatedAt: '2026-10-31T12:01:00Z',
+      status: 'complete',
+      candidates: [],
+      additions: [],
+      seasonStandingCandidates: [seasonStandingCandidate],
+      seasonStandingAdditions: [{ candidateId: seasonStandingCandidate.candidateId, rowIndex: 0 }],
+      identityProposals: [
+        {
+          candidateId: seasonStandingCandidate.candidateId,
+          rowIndex: 0,
+          sourceId: 'iteso',
+          seasonYear: 2025,
+          sourceTeamId: 'Equipo Alpha',
+          teamName: 'Equipo Alpha',
+          sourceSchoolId: null,
+          schoolName: null,
+        },
+      ],
+      conflicts: [],
+      seasonStandingConflicts: [],
+      runIssues: [],
+      sourceFailures: [],
+    };
+    expect(reviewProposalSchema.parse(proposal).seasonStandingAdditions).toEqual(
+      proposal.seasonStandingAdditions,
+    );
+    expect(reviewProposalSchema.parse(proposal).identityProposals).toEqual(
+      proposal.identityProposals,
+    );
+    expect(
+      reviewProposalSchema.safeParse({
+        ...proposal,
+        seasonStandingCandidates: [{ ...seasonStandingCandidate, snapshot: 'intermediate' }],
+      }).success,
+    ).toBe(false);
+    expect(
+      reviewProposalSchema.safeParse({
+        ...proposal,
+        seasonStandingAdditions: [
+          { candidateId: seasonStandingCandidate.candidateId, rowIndex: 1 },
+        ],
+      }).success,
+    ).toBe(false);
+  });
+});
+
 describe('versioned review proposals', () => {
   it('accepts complete proposals with evidence-backed additions and conflicts', () => {
     const proposal = {
@@ -302,7 +446,13 @@ describe('versioned review proposals', () => {
       runIssues: [],
       sourceFailures: [],
     };
-    expect(reviewProposalSchema.parse(proposal)).toEqual(proposal);
+    expect(reviewProposalSchema.parse(proposal)).toEqual({
+      ...proposal,
+      seasonStandingCandidates: [],
+      seasonStandingAdditions: [],
+      identityProposals: [],
+      seasonStandingConflicts: [],
+    });
   });
 
   it('allows independent additions from partial runs, but rejects failed or invalid runs and dangling references', () => {

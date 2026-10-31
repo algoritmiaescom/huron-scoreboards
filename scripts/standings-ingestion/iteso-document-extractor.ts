@@ -58,7 +58,7 @@ export const extractITESODocument = async (
       repositoryRoot,
       'scripts/standings-ingestion/iteso_document_extract.py',
     );
-    const projectPath = path.join(repositoryRoot, 'scripts/standings-spike');
+    const projectPath = path.join(repositoryRoot, 'scripts/standings-ingestion');
     const { stdout } = await runFile(
       'uv',
       [

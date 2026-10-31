@@ -124,7 +124,7 @@ export const classifyITESOSnapshot = (label: string): ITESOSnapshotStatus => {
   if (/\b(?:primera|segunda|1(?:a|ra)?|2(?:a|da)?)\s+fecha\b/.test(normalized)) {
     return 'intermediate';
   }
-  if (/\b(?:resultado|standing)\s+(?:oficial\s+)?final\b/.test(normalized)) {
+  if (/\b(?:resultado|standing)\s+(?:final\s+oficial|oficial\s+final)\b/.test(normalized)) {
     return 'latest-explicit';
   }
   return 'unconfirmed';

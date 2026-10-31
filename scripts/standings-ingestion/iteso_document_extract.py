@@ -7,7 +7,8 @@ import sys
 import unicodedata
 from pathlib import Path
 
-import pymupdf
+import pdfplumber
+import pypdfium2 as pdfium
 import pytesseract
 from PIL import Image
 
@@ -39,7 +40,12 @@ def normalize(value):
 def group_words(words):
     lines = []
     for word in sorted(words, key=lambda item: (item["y"], item["x0"])):
-        if lines and abs(lines[-1][0]["y"] - word["y"]) <= 3:
+        same_ocr_line = (
+            isinstance(word.get("line"), tuple)
+            and lines
+            and word.get("line") == lines[-1][0].get("line")
+        )
+        if lines and (same_ocr_line or abs(lines[-1][0]["y"] - word["y"]) <= 3):
             lines[-1].append(word)
         else:
             lines.append([word])
@@ -93,29 +99,25 @@ def split_lines(lines, header, active_centers=None):
 
 def pdf_words(page):
     words = []
-    for item in page.get_text("words"):
-        x0, y0, x1, y1, text, block, _line, _word = item
+    for item in page.extract_words():
+        x0 = item["x0"]
+        x1 = item["x1"]
+        top = item["top"]
+        bottom = item["bottom"]
         words.append(
             {
                 "x": (x0 + x1) / 2,
-                "y": (y0 + y1) / 2,
+                "y": (top + bottom) / 2,
                 "x0": x0,
-                "text": text,
-                "line": (block, item[6]),
+                "text": item["text"],
+                "line": item.get("doctop"),
                 "confidence": None,
             }
         )
     return words
 
 
-def ocr_words(page):
-    scale = 2
-    if page.rect.width * page.rect.height * scale * scale > MAX_PAGE_PIXELS:
-        scale = 1
-    pixmap = page.get_pixmap(matrix=pymupdf.Matrix(scale, scale), alpha=False)
-    if pixmap.width * pixmap.height > MAX_PAGE_PIXELS:
-        raise ValueError("Rendered page exceeds the OCR pixel limit")
-    image = Image.frombytes("RGB", (pixmap.width, pixmap.height), pixmap.samples)
+def ocr_words(image):
     data = pytesseract.image_to_data(
         image,
         config="--psm 6",
@@ -148,15 +150,28 @@ def ocr_words(page):
     return words
 
 
-def pymupdf_tables(page):
+def render_pdf_page(document, page_index):
+    page = document[page_index]
+    width, height = page.get_size()
+    scale = 2
+    if width * height * scale * scale > MAX_PAGE_PIXELS:
+        scale = 1
+    bitmap = page.render(scale=scale)
+    image = bitmap.to_pil().convert("RGB")
+    if image.width * image.height > MAX_PAGE_PIXELS:
+        raise ValueError("Rendered page exceeds the OCR pixel limit")
+    return image
+
+
+def pdfplumber_tables(page):
     try:
-        finder = page.find_tables()
-    except (AttributeError, RuntimeError):
+        source_tables = page.extract_tables()
+    except (AttributeError, ValueError):
         return []
     tables = []
-    for table in finder.tables:
+    for source_table in source_tables:
         rows = []
-        for source_row in table.extract():
+        for source_row in source_table:
             cells = ["" if value is None else str(value).strip() for value in source_row]
             rows.append({"cells": cells, "confidences": [None] * len(cells)})
         if rows:
@@ -167,32 +182,42 @@ def pymupdf_tables(page):
 def extract_pdf(path):
     if path.stat().st_size > MAX_INPUT_BYTES:
         raise ValueError("Document exceeds the input byte limit")
-    with pymupdf.open(path) as document:
-        if document.page_count < 1 or document.page_count > MAX_PAGES:
+    with pdfplumber.open(path) as document:
+        page_count = len(document.pages)
+        if page_count < 1 or page_count > MAX_PAGES:
             raise ValueError(f"PDF page count must be between 1 and {MAX_PAGES}")
+        raster_document = pdfium.PdfDocument(str(path))
+        if len(raster_document) != page_count:
+            raster_document.close()
+            raise ValueError("PDF text and render page counts disagree")
         pages = []
         active_centers = None
-        for page_index, page in enumerate(document):
-            text = page.get_text("text")[:100_000]
-            method = "text" if len(text.strip()) >= 20 else "ocr"
-            words = pdf_words(page) if method == "text" else ocr_words(page)
-            lines = group_words(words)
-            header = locate_header(lines)
-            if header is not None:
-                active_centers = header[1]
-            tables = pymupdf_tables(page) if method == "text" else []
-            if not tables:
-                rows, active_centers = split_lines(lines, header, active_centers)
-                tables = [] if rows is None else [{"rows": rows}]
-            pages.append(
-                {
-                    "pageNumber": page_index + 1,
-                    "method": method,
-                    "text": text,
-                    "tables": tables,
-                }
-            )
-        return {"version": 1, "pageCount": document.page_count, "pages": pages}
+        try:
+            for page_index, page in enumerate(document.pages):
+                text = (page.extract_text() or "")[:100_000]
+                method = "text" if len(text.strip()) >= 20 else "ocr"
+                words = pdf_words(page) if method == "text" else ocr_words(
+                    render_pdf_page(raster_document, page_index)
+                )
+                lines = group_words(words)
+                header = locate_header(lines)
+                if header is not None:
+                    active_centers = header[1]
+                tables = pdfplumber_tables(page) if method == "text" else []
+                if not tables:
+                    rows, active_centers = split_lines(lines, header, active_centers)
+                    tables = [] if rows is None else [{"rows": rows}]
+                pages.append(
+                    {
+                        "pageNumber": page_index + 1,
+                        "method": method,
+                        "text": text,
+                        "tables": tables,
+                    }
+                )
+        finally:
+            raster_document.close()
+        return {"version": 1, "pageCount": page_count, "pages": pages}
 
 
 def extract_image(path):

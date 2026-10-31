@@ -13,7 +13,7 @@ imported.
 
 # Standings ingestion implementation plan
 
-Status: M2, M4, M5, and M7 done; M1, M3, M6, and M8 remain in progress. The hosted M1 benchmark passed; overall Actions job duration remains pending before formal closure.
+Status: M1, M2, M3, M4, M5, M6, and M7 done; M8 remains in progress pending controlled live rollout.
 
 Created: 2026-10-27. Last updated: 2026-10-31.
 
@@ -113,12 +113,12 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 
 | ID  | Milestone                                               | Prerequisites            | Status      |
 | --- | ------------------------------------------------------- | ------------------------ | ----------- |
-| M1  | Integration and cost feasibility spike                  | None                     | in progress |
+| M1  | Integration and cost feasibility spike                  | None                     | done        |
 | M2  | Partial historical standings model and UI               | None                     | done        |
-| M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | in progress |
+| M3  | Shared candidate, identity, and reconciliation pipeline | M1, M2                   | done        |
 | M4  | ICPC Mexico adapter                                     | M3                       | done        |
 | M5  | ScoreLATAM adapter                                      | M3                       | done        |
-| M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | in progress |
+| M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | done        |
 | M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | done        |
 | M8  | Reviewed-PR automation and controlled rollout           | M4, M5, M6, M7           | in progress |
 
@@ -139,11 +139,14 @@ Implementation and local results are in the [M1 spike report](standings-ingestio
 The manually dispatched hosted benchmark passed on 2026-10-28: all three extractions exactly
 matched the expected rows, inference took 21.86, 8.52, and 8.55 seconds, and peak sampled aggregate
 RSS was approximately 1.72 GiB. Retain the exact-match, 120-second-per-extraction, and 6-GiB gates
+a 129-second Ollama installation timing artifact, a log showing 0.53-second model-runner
 for this synthetic feasibility test only. The supplied report records a 53.23-second harness run,
 not total Actions job duration. The user supplied [run 40640725672](https://github.com/algoritmiaescom/huron-scoreboards/actions/runs/40640725672),
-a 129-second Ollama installation timing artifact, and a log showing 0.53-second model-runner
-startup. The run page returned HTTP 404 from this environment; record the overall job duration
-before marking M1 done. No production schedule is authorized by this result.
+a 129-second Ollama installation timing artifact, a log showing 0.53-second model-runner
+startup, and a total Actions duration of 4m 12s. The run page returned HTTP 404 from this
+environment, so the duration remains user-supplied rather than independently verified. M1's
+synthetic feasibility gates and timing record are complete; no production schedule is authorized
+by this result.
 
 The repository is private: hosted usage consumes the account's included minutes and can incur
 charges beyond its quota. Check current allowance and pricing before rollout. Start without a
@@ -188,21 +191,21 @@ system packages or repository configuration were changed.
 
 ### M3: Shared pipeline
 
-- [ ] Define source configuration, preferred-source/per-edition overrides, edition mappings,
+- [x] Define source configuration, preferred-source/per-edition overrides, edition mappings,
       candidate/evidence schemas, and a versioned review-proposal format.
-- [ ] Add reviewed identity aliases using source IDs where available; handle slug collisions,
+- [x] Add reviewed identity aliases using source IDs where available; handle slug collisions,
       same-name teams, and separately competing academic units without automatic fuzzy merges.
-- [ ] Add bounded fetching/rendering, explicit failure outcomes, stable serialization, and caching
+- [x] Add bounded fetching/rendering, explicit failure outcomes, stable serialization, and caching
       keyed by content plus parser/prompt/model configuration.
-- [ ] Validate table completeness, unique identities, problem counts, row counts, ranks/ties,
+- [x] Validate table completeness, unique identities, problem counts, row counts, ranks/ties,
       published solved totals, and penalties when sufficient evidence exists.
-- [ ] Detect live/frozen/provisional results; do not treat them as final by default.
-- [ ] Implement dry-run, source/edition selection, and bounded backfill controls.
-- [ ] Propose validated new records and required identities atomically; preserve every existing
+- [x] Detect live/frozen/provisional results; do not treat them as final by default.
+- [x] Implement dry-run, source/edition selection, and bounded backfill controls.
+- [x] Propose validated new records and required identities atomically; preserve every existing
       archive record, including when upstream rows disappear or metadata is enriched.
-- [ ] Produce row/field-level conflicts and alternative-source evidence, including conflict-only
+- [x] Produce row/field-level conflicts and alternative-source evidence, including conflict-only
       runs with no archive additions.
-- [ ] Test idempotent reruns, disagreements, incomplete inputs, source removal, and ambiguous
+- [x] Test idempotent reruns, disagreements, incomplete inputs, source removal, and ambiguous
       identities. Independent successful candidates may proceed, but incomplete runs must be
       unmistakable in both workflow status and review reports.
 
@@ -218,8 +221,9 @@ only exact source IDs with reviewer provenance and validates canonical school/te
 ICPC Global directory and finder have distinct source IDs but share one authority ID.
 
 The initial source priorities are in `config/standings-sources.json`; the reviewed alias registry
-starts empty in `config/standings-identities.json`. Edition mappings deliberately remain empty
-until a source label is confirmed and reviewed. `reconcileCandidates` is a dry-run comparison:
+starts empty in `config/standings-identities.json`. Edition mappings and identity aliases remain
+review-gated; the pipeline never invents them from names. Unresolved teams/schools are emitted as
+row-linked identity proposals with exact source identifiers and names. `reconcileCandidates` is a dry-run comparison:
 it emits additions/conflicts by candidate-row reference, never changes the archive, and permits
 independent additions from a partial run only when no run-wide validation issue exists.
 Candidate coverage records expected row count, row completeness, and pagination completion; these
@@ -230,16 +234,19 @@ content hashes and parser/prompt/model settings to the bounded, Zod-validated ca
 inject network responses; the workflow does not contact competition sites. The generic Playwright
 renderer restricts page and subresource requests to the configured HTTPS origin, runs a bounded
 explicit click/select/wait sequence, waits for a source-provided ready selector, and captures one
-size-limited selected element. Source-specific interaction recipes are not configured yet.
+size-limited selected element. Source-specific navigation sequences live in their adapters and
+never rely on inferred clicks or browser-back state.
 `acquireStandingsCandidate` and the bounded sequential `acquireStandingsBatch` enforce preferred
 source/edition policy, fetch or render selected content, cache parser output, validate requested
 contest identity, and retain provenance. `standings:ingest` supports both operator-supplied
 candidate files and a bounded `--acquire-icpc-mexico --season YEAR` flow; the latter discovers
 contest and scoreboard pages, then feeds parsed candidates into the same dry-run proposal path.
-The CLI validates the real archive and atomically writes proposals under ignored
-`.standings-ingestion/proposals/`; it never changes `data/`. Source edition mappings remain
-review-gated, and source-specific completeness checks beyond the ICPC Mexico row count are not
-implemented. Remaining M3 acceptance items stay unchecked until their runtime behavior exists.
+The proposal contract supports both contest and accumulated season-standing candidates, with
+independent row references, evidence-backed conflicts, and identity proposals. Source adapters
+record row/pagination or document-page coverage; incomplete candidates remain reviewable but cannot
+propose additions. The CLI validates the real archive and atomically writes proposals under ignored
+`.standings-ingestion/proposals/`; it never changes `data/`. Edition mappings and identity aliases
+remain review-gated, with no fuzzy merges.
 
 ### M4: ICPC Mexico
 
@@ -333,28 +340,24 @@ Entry: <https://eventos.iteso.mx/acm/>
       headers without losing rows.
 - [x] Run local OCR for scanned PDFs/result images; preserve uncertain cells for review instead
       of silently correcting them.
-- [ ] Preserve accumulated score units and qualification annotations; distinguish intermediate
+- [x] Preserve accumulated score units and qualification annotations; distinguish intermediate
       snapshots from the latest official result.
 - [x] Test text PDFs, scans, multi-page results, linked images, redirects, and ambiguous digits.
+- [x] Keep production PDF/OCR dependencies under reviewed permissive licenses; isolate the M1
+      PyMuPDF dependency from the M6 production extractor.
 
-M6 implementation started: the ITESO adapter discovers season-scoped accumulated-result links,
-follows image-enclosing document anchors, and uses the bounded fetcher with the reviewed
-`acm.iteso.mx` HTTPS origin. `--acquire-iteso --season YEAR` dispatches from response content
-type/signature and atomically stages page text, extracted cells, page references, score units,
-qualification text, OCR confidence, and snapshot wording. The deterministic parser joins
-multi-page tables, skips repeated headers, and stages ambiguous numbers, unknown qualification
-values, inconsistent layouts, and weak OCR confidence. It never writes `data/` or emits a contest
-candidate for a season-standing document. The shared proposal contract currently supports contest
-candidates only, so source-native season-standing reconciliation remains a separate required step.
-Focused synthetic adapter/parser/CLI/fetch tests pass (27 tests), along with TypeScript checking;
-the locked Python harness tests pass (12 tests). `uv 0.9.22` and the locked Python project are
-installed for this user; Tesseract 5.5 and English/OSD data are extracted under `~/.local` without
-system package changes. The ITESO helper was exercised with generated text, scanned, and two-page
-PDFs; the scan retained 0.96 per-cell OCR confidence and all generated rows/page references were
-preserved. The full offline Playwright/PDF/OCR harness passed with the user-local Chromium libraries.
-The shared proposal contract supports contest candidates only, so source-native season-standing
-reconciliation remains necessary. Interpreting which source document is the latest official result
-also remains open; no real competition document was imported.
+M6 is implemented for review-only source-native season standings. The ITESO adapter discovers
+season-scoped accumulated-result links, follows the image-enclosing document anchor, dispatches by
+response signature, and uses the bounded fetcher with the reviewed `acm.iteso.mx` HTTPS origin.
+`--acquire-iteso --season YEAR` creates a versioned season-standing candidate retaining score
+units, qualification text/value, page references, cell evidence, OCR confidence, content hash, and
+snapshot state. Only explicit official-final wording is eligible for additions; intermediate and
+unconfirmed snapshots remain conflicts. Missing edition mappings and exact team aliases also block
+additions, and unresolved source names are emitted as identity proposals. No fuzzy team matching or
+archive write occurs. Production extraction uses a separate locked `pdfplumber`/PDFium environment;
+PyMuPDF remains isolated to the M1 synthetic spike. Generated text-PDF, multi-page, scan, and image
+OCR tests pass with exact cells and at least 0.90 confidence. No real competition document or
+identity mapping was imported.
 
 ### M7: ICPC Global
 
@@ -471,22 +474,23 @@ Final acceptance must prove:
 - **Next step:** run one manual M8 workflow with `dry_run=false` on the default branch, review the
   proposal-only PR and dispatched CI, then try a small historical batch. Keep the weekly schedule
   disabled until that PR is reviewed and merged. Add reviewed ICPC Global mappings only for
-  additional requested historical cycles. Continue the M6 source-native season-standing contract
-  and latest-official verification, and preserve the M1 overall Actions job-duration follow-up.
+  additional requested historical cycles; add ITESO edition mappings and identity aliases only
+  for requested years after source labels and teams are reviewed.
 - **Blockers:** no GitHub workflow dispatch or live PR publication has been performed. The weekly
   schedule remains disabled unless repository variable `STANDINGS_INGESTION_ENABLED` is exactly
-  `true`. The supplied M1 artifacts still lack overall Actions job duration, and the run page is
-  inaccessible from this environment.
+  `true`. M1's 4m12s total duration is user-supplied because its run page is inaccessible here.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
   three successful local and three successful hosted Ollama extractions, and failure-handling
   tests. See the spike report for portable results and limitations. M3 source/candidate/identity
-  contracts, dry-run reconciliation, bounded fetching/cache, generic selected-state rendering, an
-  acquisition API/batch, and the offline candidate-file review CLI are implemented. The ICPC Mexico
+  contracts, contest and season-standing dry-run reconciliation, row-linked identity proposals,
+  bounded fetching/cache, generic selected-state rendering, an acquisition API/batch, and the
+  offline candidate-file review CLI are implemented. The ICPC Mexico
   adapter and bounded acquisition CLI are complete for the tested HTML source shape; ScoreLATAM
   discovery, Mexico-group extraction, staged CLI reporting, reviewer-approved event equivalence,
   and explicit edition mappings for listed LATAM years are implemented. ITESO discovery, bounded
-  document fetching, and staged extraction are in progress; source-native season-standing candidate
-  reconciliation remains open. ICPC Global discovery, totals parsing, bounded history traversal,
+  document fetching, licensed text/PDFium OCR extraction, and source-native season-standing
+  proposals are implemented; concrete edition maps and identity aliases remain review-gated.
+  ICPC Global discovery, totals parsing, bounded history traversal,
   reviewed 2025/2026 mappings, ScoreLATAM alternative candidate fallback, and staged GPM document
   acquisition are implemented. M8's default-branch workflow, disabled-by-default UTC schedule,
   proposal-only stable branch publisher, append-only versioned proposal path, failure artifact
@@ -601,12 +605,14 @@ ScoreLATAM index, 2019-2025, including edition 2020 played in 2021. Unlisted lab
 candidate reconciliation remains review-only. `npm run validate` passed with 403 tests, and
 `git diff --check` passed. No archive data was changed.
 
-| Date       | Milestone | Update                                                                                                                                                                                                                                                                          | Verification / reference                                                                                                                                                                                                                                                                                                   |
-| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                                                              | Documentation only; no ingestion implementation yet.                                                                                                                                                                                                                                                                       |
-| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending.                                  | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md).                                                                                                                                                        |
-| 2026-10-28 | M1        | Recorded the supplied successful hosted benchmark and retained synthetic exact-match, 120-second, and 6-GiB gates. Run URL and installation/overall job timing remain pending; scheduling remains disabled.                                                                     | Supplied hosted report: exact rows in 3/3 runs, 21.86/8.52/8.55-second inference, 1.72-GiB sampled aggregate RSS. See [hosted measurements](standings-ingestion-spike.md#hosted-measurements).                                                                                                                             |
-| 2026-10-29 | M6        | Started ITESO source discovery and bounded PDF/image acquisition, HTTPS origin upgrades, actual-type dispatch, a locked PyMuPDF/Tesseract bridge, deterministic multi-page table parsing, and atomic evidence staging. No season-standing candidate or archive data is emitted. | 27 focused ITESO/fetch/CLI tests, TypeScript checks, and Python syntax compilation passed. The local OCR runtime is unavailable; full validation and locked-Python document tests remain pending.                                                                                                                          |
-| 2026-10-30 | M6        | Installed uv 0.9.22, the locked Python project, and user-local Tesseract 5.5/Chromium runtimes without system package changes. Fixed text-cell grouping and verified generated text, scan, and two-page PDFs through the ITESO helper.                                          | 12 Python tests, 27 focused TypeScript tests, and the full offline Playwright/PDF/OCR harness passed; generated OCR cells retained 0.96 confidence. No system packages or archive data changed.                                                                                                                            |
-| 2026-10-30 | M7        | Completed ICPC Global directory/finder acquisition for the explicitly reviewed 2025/2026 editions, including bounded prior-year traversal, complete-table checks, ScoreLATAM fallback candidacy, and staged GPM document evidence. Unreviewed editions fail closed.             | Live 2025 run emitted a partial proposal with a complete 133-row ScoreLATAM candidate, raw Global Finals HTML with eight unranked rows, and staged GPM extraction; archive unchanged. `npm run validate` passed with 437 tests and 90.03% line coverage.                                                                   |
-| 2026-10-31 | M8        | Added manual dry-run/source/edition dispatch, a variable-gated UTC weekly refresh, bounded dependency setup, proposal artifact retention, and append-only proposal PR publishing on a stable branch. Existing reviewer edits are preserved; no approval or merge occurs.        | Local integration covers stable-branch publishing, reviewer-edit preservation, rerun idempotency, unrelated-change rejection, PR comments, and explicit CI dispatch. `npm run validate` passed with 441 tests and 90.06% line coverage. Live GitHub PR/schedule exercise remains pending; schedule is disabled by default. |
+| Date       | Milestone | Update                                                                                                                                                                                                                                                                                               | Verification / reference                                                                                                                                                                                                                                                                                                   |
+| ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                                                                                   | Documentation only; no ingestion implementation yet.                                                                                                                                                                                                                                                                       |
+| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending.                                                       | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md).                                                                                                                                                        |
+| 2026-10-28 | M1        | Recorded the supplied successful hosted benchmark and retained synthetic exact-match, 120-second, and 6-GiB gates. Run URL and installation/overall job timing remain pending; scheduling remains disabled.                                                                                          | Supplied hosted report: exact rows in 3/3 runs, 21.86/8.52/8.55-second inference, 1.72-GiB sampled aggregate RSS. See [hosted measurements](standings-ingestion-spike.md#hosted-measurements).                                                                                                                             |
+| 2026-10-29 | M6        | Started ITESO source discovery and bounded PDF/image acquisition, HTTPS origin upgrades, actual-type dispatch, a locked PyMuPDF/Tesseract bridge, deterministic multi-page table parsing, and atomic evidence staging. No season-standing candidate or archive data is emitted.                      | 27 focused ITESO/fetch/CLI tests, TypeScript checks, and Python syntax compilation passed. The local OCR runtime is unavailable; full validation and locked-Python document tests remain pending.                                                                                                                          |
+| 2026-10-30 | M6        | Installed uv 0.9.22, the locked Python project, and user-local Tesseract 5.5/Chromium runtimes without system package changes. Fixed text-cell grouping and verified generated text, scan, and two-page PDFs through the ITESO helper.                                                               | 12 Python tests, 27 focused TypeScript tests, and the full offline Playwright/PDF/OCR harness passed; generated OCR cells retained 0.96 confidence. No system packages or archive data changed.                                                                                                                            |
+| 2026-10-30 | M7        | Completed ICPC Global directory/finder acquisition for the explicitly reviewed 2025/2026 editions, including bounded prior-year traversal, complete-table checks, ScoreLATAM fallback candidacy, and staged GPM document evidence. Unreviewed editions fail closed.                                  | Live 2025 run emitted a partial proposal with a complete 133-row ScoreLATAM candidate, raw Global Finals HTML with eight unranked rows, and staged GPM extraction; archive unchanged. `npm run validate` passed with 437 tests and 90.03% line coverage.                                                                   |
+| 2026-10-31 | M8        | Added manual dry-run/source/edition dispatch, a variable-gated UTC weekly refresh, bounded dependency setup, proposal artifact retention, and append-only proposal PR publishing on a stable branch. Existing reviewer edits are preserved; no approval or merge occurs.                             | Local integration covers stable-branch publishing, reviewer-edit preservation, rerun idempotency, unrelated-change rejection, PR comments, and explicit CI dispatch. `npm run validate` passed with 456 tests and 90.03% line coverage. Live GitHub PR/schedule exercise remains pending; schedule is disabled by default. |
+| 2026-10-31 | M1        | Recorded the supplied total Actions job duration of 4m 12s for hosted run 40640725672; the 53.23-second harness time remains separately identified.                                                                                                                                                  | Duration supplied by the user; the run page returned HTTP 404 in this environment, so remote metadata could not be independently checked. Synthetic benchmark gates remain passed; no production schedule is authorized by M1.                                                                                             |
+| 2026-10-31 | M3/M6     | Completed source-native season-standing candidates, exact row-linked identity proposals, explicit snapshot/finality gating, archive comparison, and the locked permissive PDF/text+PDFium OCR runtime. ITESO still requires reviewed source editions and aliases before proposing archive additions. | `npm run validate` passed with 456 tests and 90.03% line coverage. `npm run test:standings-documents` passed generated multi-page text-PDF, scanned-PDF, and image OCR tests with exact cells and >=0.90 confidence. No real competition document or identity mapping was imported.                                        |

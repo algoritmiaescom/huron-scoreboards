@@ -138,11 +138,11 @@ Verification completed locally:
 ## Hosted measurements
 
 Recorded from the user-supplied hosted inference report dated 2026-10-28, with `status: passed`
-and `synthetic: true`, plus the supplied Ollama log and installation timing artifact.
+and `synthetic: true`, plus the supplied Ollama log, installation timing artifact, and overall
+job duration.
 The user identified [Actions run 40640725672](https://github.com/algoritmiaescom/huron-scoreboards/actions/runs/40640725672)
-as the source. The run page returned HTTP 404 from this environment, so remote run metadata
-could not be verified. Overall job duration remains outstanding before closing M1; neither
-the inference report nor the Ollama log includes the complete setup and artifact-upload time.
+as the source. The total duration of 4m 12s is user-supplied because the run page returned HTTP 404
+from this environment; remote run metadata could not be independently verified.
 
 | Item                         | Observed value                                                      |
 | ---------------------------- | ------------------------------------------------------------------- |
@@ -158,7 +158,7 @@ the inference report nor the Ollama log includes the complete setup and artifact
 | PDF / OCR                    | Both matched the fixture; OCR word confidences 92-96                |
 | Peak aggregate RSS           | 1,844,502,528 bytes (approximately 1.72 GiB)                        |
 | Harness elapsed time         | 53.23 seconds, including model pull but excluding tool installation |
-| Overall Actions job duration | Not supplied; cannot be inferred from the Ollama log                |
+| Overall Actions job duration | 4m 12s (user-supplied; run page returned HTTP 404 here)             |
 | 20-page weekly assumption    | 7.29 inference minutes using the slowest observed run               |
 | 500-page backfill assumption | 182.13 inference minutes using the slowest observed run             |
 
@@ -185,8 +185,8 @@ Based on the local baseline and successful hosted measurements, retain:
 - A failing exit status and persisted failure report for an extraction or gate failure.
 
 These are synthetic feasibility gates, not permission to schedule production ingestion. Hosted
-execution satisfies these gates; M1 remains in progress only for the missing overall Actions
-job duration. Real, large scoreboards will need bounded chunking,
+execution satisfies these gates, and the supplied total Actions duration is now recorded; M1 is
+complete as a feasibility milestone. Real, large scoreboards will need bounded chunking,
 row-completeness checks, and fixture coverage in later milestones; a 4096-token context is not
 assumed to fit a complete historical scoreboard.
 
@@ -221,9 +221,11 @@ future schedule. This experiment supplies timing estimates, not a monetary price
 
 PAR Scrape is MIT-licensed. The pulled model reports Apache-2.0 terms; the full returned license
 is retained in each inference report. Confirm the model digest/license again when changing it.
-PyMuPDF uses AGPL/commercial licensing: it is an isolated spike dependency, **not an approved
-production PDF-library decision**. Review licensing or replace it with a suitable alternative
-before adopting/distributing the production document pipeline in M6.
+PyMuPDF uses AGPL/commercial licensing and remains isolated to this synthetic M1 spike. The M6
+production extractor uses `pdfplumber` (MIT) for positioned text/table extraction and `pypdfium2`
+(Apache-2.0/BSD-3-Clause) with PDFium's BSD-style license for rendering scanned pages. Its locked
+environment is separate from this spike; review bundled PDFium dependency notices before any
+binary redistribution.
 
 The harness generates its own clearly synthetic fixture and documents; it never promotes them to
 `data/`. Do not upload real competition documents or private content to external model services.

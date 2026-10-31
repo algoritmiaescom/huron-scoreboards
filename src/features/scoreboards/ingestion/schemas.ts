@@ -409,6 +409,64 @@ export const standingsCandidateSchema = z
     }
   });
 
+const seasonStandingCandidateRowSchema = z.object({
+  place: z.number().int().positive(),
+  sourceTeamId: z.string().min(1).nullable(),
+  teamName: z.string().min(1),
+  score: z.number(),
+  scoreText: z.string().min(1),
+  scoreUnit: z.string().min(1),
+  qualificationText: z.string().nullable(),
+  qualified: z.boolean().nullable(),
+  pageNumber: z.number().int().positive(),
+  confidence: z.number().min(0).max(1).nullable(),
+  evidence: z.array(candidateEvidenceSchema).min(3),
+});
+
+export const seasonStandingCandidateSchema = z
+  .object({
+    candidateId: identifierSchema,
+    sourceId: slugSchema,
+    authorityId: slugSchema,
+    discoveryUrl: httpsUrlSchema,
+    finalUrl: httpsUrlSchema,
+    retrievedAt: z.iso.datetime({ offset: true }),
+    contentSha256: sha256Schema,
+    parserVersion: z.string().min(1),
+    sourceEditionLabel: z.string().min(1),
+    seasonYear: seasonYearSchema,
+    seriesId: slugSchema,
+    snapshot: z.enum(['intermediate', 'latest-explicit', 'unconfirmed']),
+    scoreUnit: z.string().min(1),
+    rows: z.array(seasonStandingCandidateRowSchema).min(1),
+    pageNumbers: z.array(z.number().int().positive()).min(1),
+    coverage: z.object({
+      expectedRowCount: z.number().int().positive().nullable(),
+      rowsComplete: z.boolean(),
+      pagesComplete: z.boolean(),
+    }),
+    warnings: z.array(z.string().min(1)),
+  })
+  .superRefine((candidate, ctx) => {
+    if (!isValidPlaceRanking(candidate.rows.map(({ place }) => place))) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['rows'],
+        message: 'places must use standard competition ranking with ties',
+      });
+    }
+    const sourceTeamIds = candidate.rows.flatMap(({ sourceTeamId }) =>
+      sourceTeamId === null ? [] : [sourceTeamId],
+    );
+    if (new Set(sourceTeamIds).size !== sourceTeamIds.length) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['rows'],
+        message: 'source team identities must be unique within a season-standing candidate',
+      });
+    }
+  });
+
 const proposalReferenceSchema = z.object({
   candidateId: identifierSchema,
   rowIndex: z.number().int().nonnegative(),
@@ -431,6 +489,35 @@ const reviewConflictSchema = z.object({
     .min(1),
 });
 
+const seasonStandingConflictSchema = z.object({
+  seasonYear: seasonYearSchema,
+  seriesId: slugSchema,
+  entityId: z.string().min(1),
+  field: z.string().min(1),
+  kind: z.enum(['archive', 'identity', 'publication-state', 'source', 'validation']),
+  currentValue: z.string().nullable(),
+  alternatives: z
+    .array(
+      z.object({
+        candidateId: identifierSchema,
+        value: z.string().nullable(),
+        evidence: z.array(candidateEvidenceSchema),
+      }),
+    )
+    .min(1),
+});
+
+const identityProposalSchema = z.object({
+  candidateId: identifierSchema,
+  rowIndex: z.number().int().nonnegative(),
+  sourceId: slugSchema,
+  seasonYear: seasonYearSchema,
+  sourceTeamId: z.string().min(1).nullable(),
+  teamName: z.string().min(1),
+  sourceSchoolId: z.string().min(1).nullable(),
+  schoolName: z.string().min(1).nullable(),
+});
+
 export const reviewProposalSchema = z
   .object({
     schemaVersion: z.literal(1),
@@ -439,7 +526,11 @@ export const reviewProposalSchema = z
     status: z.enum(['complete', 'partial', 'failed']),
     candidates: z.array(standingsCandidateSchema),
     additions: z.array(proposalReferenceSchema),
+    seasonStandingCandidates: z.array(seasonStandingCandidateSchema).default([]),
+    seasonStandingAdditions: z.array(proposalReferenceSchema).default([]),
+    identityProposals: z.array(identityProposalSchema).default([]),
     conflicts: z.array(reviewConflictSchema),
+    seasonStandingConflicts: z.array(seasonStandingConflictSchema).default([]),
     runIssues: z.array(
       z.object({
         kind: z.enum(['candidate', 'configuration', 'identity-registry']),
@@ -461,6 +552,16 @@ export const reviewProposalSchema = z
         ctx.addIssue({
           code: 'custom',
           path: ['candidates', index, 'candidateId'],
+          message: 'duplicate candidate id',
+        });
+      }
+      candidateIds.add(candidate.candidateId);
+    });
+    proposal.seasonStandingCandidates.forEach((candidate, index) => {
+      if (candidateIds.has(candidate.candidateId)) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['seasonStandingCandidates', index, 'candidateId'],
           message: 'duplicate candidate id',
         });
       }
@@ -495,7 +596,73 @@ export const reviewProposalSchema = z
         }
       });
     });
-    if (proposal.status === 'failed' && proposal.additions.length > 0) {
+    proposal.seasonStandingAdditions.forEach((addition, index) => {
+      const candidate = proposal.seasonStandingCandidates.find(
+        ({ candidateId }) => candidateId === addition.candidateId,
+      );
+      if (candidate?.rows[addition.rowIndex] === undefined) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['seasonStandingAdditions', index],
+          message: 'addition must reference an existing season-standing candidate row',
+        });
+      } else if (candidate.snapshot !== 'latest-explicit') {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['seasonStandingAdditions', index],
+          message: 'only explicitly final season standings can propose additions',
+        });
+      }
+    });
+    proposal.seasonStandingConflicts.forEach((conflict, conflictIndex) => {
+      conflict.alternatives.forEach((alternative, alternativeIndex) => {
+        if (!candidateIds.has(alternative.candidateId)) {
+          ctx.addIssue({
+            code: 'custom',
+            path: [
+              'seasonStandingConflicts',
+              conflictIndex,
+              'alternatives',
+              alternativeIndex,
+              'candidateId',
+            ],
+            message: 'conflict alternative must reference an existing candidate',
+          });
+        }
+      });
+    });
+    proposal.identityProposals.forEach((identityProposal, index) => {
+      const contestCandidate = proposal.candidates.find(
+        ({ candidateId }) => candidateId === identityProposal.candidateId,
+      );
+      const seasonStandingCandidate = proposal.seasonStandingCandidates.find(
+        ({ candidateId }) => candidateId === identityProposal.candidateId,
+      );
+      const contestRow = contestCandidate?.rows[identityProposal.rowIndex];
+      const seasonStandingRow = seasonStandingCandidate?.rows[identityProposal.rowIndex];
+      if (contestRow === undefined && seasonStandingRow === undefined) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['identityProposals', index],
+          message: 'identity proposal must reference an existing candidate row',
+        });
+        return;
+      }
+      const sourceId = contestCandidate?.sourceId ?? seasonStandingCandidate?.sourceId;
+      const seasonYear =
+        contestCandidate?.contest.seasonYear ?? seasonStandingCandidate?.seasonYear;
+      if (sourceId !== identityProposal.sourceId || seasonYear !== identityProposal.seasonYear) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['identityProposals', index],
+          message: 'identity proposal source and season must match its candidate row',
+        });
+      }
+    });
+    if (
+      proposal.status === 'failed' &&
+      (proposal.additions.length > 0 || proposal.seasonStandingAdditions.length > 0)
+    ) {
       ctx.addIssue({
         code: 'custom',
         path: ['additions'],
@@ -516,7 +683,10 @@ export const reviewProposalSchema = z
         message: 'a complete run cannot contain run-level validation issues',
       });
     }
-    if (proposal.runIssues.length > 0 && proposal.additions.length > 0) {
+    if (
+      proposal.runIssues.length > 0 &&
+      (proposal.additions.length > 0 || proposal.seasonStandingAdditions.length > 0)
+    ) {
       ctx.addIssue({
         code: 'custom',
         path: ['additions'],
@@ -600,7 +770,61 @@ export type SourceDefinition = z.infer<typeof sourceDefinitionSchema>;
 export type SourceConfiguration = z.infer<typeof sourceConfigurationSchema>;
 export type CandidateEvidence = z.infer<typeof candidateEvidenceSchema>;
 export type StandingsCandidate = z.infer<typeof standingsCandidateSchema>;
+export type SeasonStandingCandidate = z.infer<typeof seasonStandingCandidateSchema>;
 export type ReviewProposal = z.infer<typeof reviewProposalSchema>;
+
+export const validateSeasonStandingCandidateSource = (
+  candidate: SeasonStandingCandidate,
+  configuration: SourceConfiguration,
+): string[] => {
+  const source = configuration.sources.find(({ id }) => id === candidate.sourceId);
+  if (source === undefined) {
+    return [`unknown source \`${candidate.sourceId}\``];
+  }
+  const issues: string[] = [];
+  if (source.authorityId !== candidate.authorityId) {
+    issues.push(`authority \`${candidate.authorityId}\` does not match source \`${source.id}\``);
+  }
+  if (!source.supportsSeasonStanding) {
+    issues.push(`source \`${source.id}\` does not support season standings`);
+  }
+  const mappedYear = mapSourceEdition(
+    configuration,
+    candidate.sourceId,
+    candidate.sourceEditionLabel,
+  );
+  if (mappedYear === undefined) {
+    issues.push(
+      `source edition \`${candidate.sourceEditionLabel}\` has no reviewed season mapping`,
+    );
+  } else if (mappedYear !== candidate.seasonYear) {
+    issues.push(
+      `source edition \`${candidate.sourceEditionLabel}\` maps to ${String(mappedYear)}, not ${String(candidate.seasonYear)}`,
+    );
+  }
+  return issues;
+};
+
+export const seasonStandingCandidateCoverageIssues = (
+  candidate: SeasonStandingCandidate,
+): string[] => {
+  const issues: string[] = [];
+  if (!candidate.coverage.rowsComplete) {
+    issues.push('source did not confirm that all season-standing rows were collected');
+  }
+  if (!candidate.coverage.pagesComplete) {
+    issues.push('source document pages are incomplete or unknown');
+  }
+  if (
+    candidate.coverage.expectedRowCount !== null &&
+    candidate.coverage.expectedRowCount !== candidate.rows.length
+  ) {
+    issues.push(
+      `expected ${String(candidate.coverage.expectedRowCount)} rows but collected ${String(candidate.rows.length)}`,
+    );
+  }
+  return issues;
+};
 
 export const candidateCoverageIssues = (candidate: StandingsCandidate): string[] => {
   const issues: string[] = [];

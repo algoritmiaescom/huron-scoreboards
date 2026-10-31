@@ -4,13 +4,14 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import process from 'node:process';
 
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import {
   formatProposalPullRequestBody,
   isPublishableProposal,
   isVersionedProposalPath,
   main,
+  runCli,
 } from './pull-request';
 
 import type { ReviewProposal } from '@/features/scoreboards/ingestion/schemas';
@@ -22,9 +23,72 @@ const completeProposal: ReviewProposal = {
   status: 'complete',
   candidates: [],
   additions: [],
+  seasonStandingCandidates: [],
+  seasonStandingAdditions: [],
+  identityProposals: [],
   conflicts: [],
+  seasonStandingConflicts: [],
   runIssues: [],
   sourceFailures: [],
+};
+
+const seasonStandingCandidate: ReviewProposal['seasonStandingCandidates'][number] = {
+  candidateId: 'iteso-gpm-2025-abc123',
+  sourceId: 'iteso',
+  authorityId: 'iteso',
+  discoveryUrl: 'https://eventos.iteso.mx/acm/',
+  finalUrl: 'https://acm.iteso.mx/share/result.pdf',
+  retrievedAt: '2026-10-31T12:00:00Z',
+  contentSha256: 'b'.repeat(64),
+  parserVersion: 'iteso-season-standing-v1',
+  sourceEditionLabel: '2025',
+  seasonYear: 2025,
+  seriesId: 'gpm',
+  snapshot: 'latest-explicit',
+  scoreUnit: 'Puntos',
+  rows: [
+    {
+      place: 1,
+      sourceTeamId: 'Equipo Alpha',
+      teamName: 'Equipo Alpha',
+      score: 12.5,
+      scoreText: '12.5',
+      scoreUnit: 'Puntos',
+      qualificationText: 'Sí',
+      qualified: true,
+      pageNumber: 1,
+      confidence: 0.96,
+      evidence: [
+        {
+          field: 'rows[0].place',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 place',
+          page: 1,
+          excerpt: '1',
+          confidence: 0.96,
+        },
+        {
+          field: 'rows[0].teamName',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 team name',
+          page: 1,
+          excerpt: 'Equipo Alpha',
+          confidence: 0.96,
+        },
+        {
+          field: 'rows[0].score',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 score',
+          page: 1,
+          excerpt: '12.5',
+          confidence: 0.96,
+        },
+      ],
+    },
+  ],
+  pageNumbers: [1],
+  coverage: { expectedRowCount: 1, rowsComplete: true, pagesComplete: true },
+  warnings: ['OCR confidence is 0.96.'],
 };
 
 const conflictOnlyProposal: ReviewProposal = {
@@ -189,6 +253,27 @@ describe('standings proposal PR publishing', () => {
     ).toBe(false);
   });
 
+  it('publishes season-standing-only conflicts for identity review', () => {
+    expect(
+      isPublishableProposal({
+        ...completeProposal,
+        seasonStandingConflicts: [
+          {
+            seasonYear: 2025,
+            seriesId: 'gpm',
+            entityId: 'Equipo Alpha',
+            field: 'teamId',
+            kind: 'identity',
+            currentValue: null,
+            alternatives: [
+              { candidateId: 'iteso-gpm-2025-id', value: 'Equipo Alpha', evidence: [] },
+            ],
+          },
+        ],
+      }),
+    ).toBe(true);
+  });
+
   it('formats a review body with summary counts, source failures, and artifact link', () => {
     const proposal: ReviewProposal = {
       ...conflictOnlyProposal,
@@ -215,7 +300,7 @@ describe('standings proposal PR publishing', () => {
       'https://github.com/example/repo/actions/runs/123',
     );
     expect(body).toContain('review proposals only');
-    expect(body).toContain('proposed additions: 0');
+    expect(body).toContain('contest additions: 0');
     expect(body).toContain('Candidate rows: 1');
     expect(body).toContain('Conflicts: 1 (1 identity)');
     expect(body).toContain('candidate warnings: 1');
@@ -225,6 +310,20 @@ describe('standings proposal PR publishing', () => {
     expect(body).toContain('Eight rows have no place.');
     expect(body).toContain('https://github.com/example/repo/actions/runs/123');
     expect(body).toContain('approvals and merges are manual');
+  });
+
+  it('formats source-native season-standing candidate details and additions', () => {
+    const proposal: ReviewProposal = {
+      ...completeProposal,
+      seasonStandingCandidates: [seasonStandingCandidate],
+      seasonStandingAdditions: [{ candidateId: seasonStandingCandidate.candidateId, rowIndex: 0 }],
+    };
+    const body = formatProposalPullRequestBody([proposal], 'https://github.com/actions/runs/1');
+    expect(body).toContain('#### Season standing `iteso-gpm-2025-abc123`');
+    expect(body).toContain('2025 gpm; snapshot: latest-explicit');
+    expect(body).toContain('Rows: 1; score unit: `Puntos`');
+    expect(body).toContain('season-standing additions: 1');
+    expect(body).toContain('Warning: `OCR confidence is 0.96.`');
   });
 
   it('rejects proposal inputs outside the input root and directory inputs', async () => {
@@ -249,6 +348,86 @@ describe('standings proposal PR publishing', () => {
       await expect(
         runPublisher(temporaryRoot, ['publish', directoryInput], options),
       ).rejects.toThrow('Proposal input exceeds');
+      const unsafeInput = path.join(
+        temporaryRoot,
+        '.standings-ingestion/proposals/run..unsafe.json',
+      );
+      await writeFile(unsafeInput, JSON.stringify(conflictOnlyProposal));
+      await expect(runPublisher(temporaryRoot, ['publish', unsafeInput], options)).rejects.toThrow(
+        'Proposal file name is not safe to publish',
+      );
+    } finally {
+      await rm(temporaryRoot, { recursive: true, force: true });
+    }
+  });
+
+  it('skips an empty publish invocation without committing or updating a PR', async () => {
+    const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'standings-pr-empty-'));
+    const options: PublisherEnvironment = {
+      fakeBin: temporaryRoot,
+      fakeGhLog: path.join(temporaryRoot, 'gh.log'),
+      fakePrNumber: '',
+      comparison: 'HEAD',
+      githubOutput: path.join(temporaryRoot, 'github-output'),
+      runnerTemp: temporaryRoot,
+    };
+    try {
+      await expect(runPublisher(temporaryRoot, ['publish'], options)).resolves.toBeUndefined();
+    } finally {
+      await rm(temporaryRoot, { recursive: true, force: true });
+    }
+  });
+
+  it('publishes unresolved identity proposals with source identifiers and names', () => {
+    const proposal = {
+      ...completeProposal,
+      identityProposals: [
+        {
+          candidateId: 'iteso-gpm-2025-id',
+          rowIndex: 0,
+          sourceId: 'iteso',
+          seasonYear: 2025,
+          sourceTeamId: 'Equipo Alpha',
+          teamName: 'Equipo Alpha',
+          sourceSchoolId: null,
+          schoolName: null,
+        },
+      ],
+    };
+    expect(isPublishableProposal(proposal)).toBe(true);
+    const body = formatProposalPullRequestBody([proposal], 'https://github.com/actions/runs/1');
+    expect(body).toContain('Identity proposals: 1');
+    expect(body).toContain('Identity review (`iteso`, 2025)');
+    expect(body).toContain('team `Equipo Alpha` [source ID: `Equipo Alpha`]');
+    expect(body).toContain('school `unresolved`');
+  });
+
+  it('fails closed when the proposal output parent is not a directory', async () => {
+    const temporaryRoot = await mkdtemp(path.join(tmpdir(), 'standings-pr-output-path-'));
+    const inputDirectory = path.join(temporaryRoot, '.standings-ingestion/proposals');
+    await mkdir(inputDirectory, { recursive: true });
+    const inputPath = path.join(inputDirectory, 'run-invalid-output.json');
+    await writeFile(
+      inputPath,
+      JSON.stringify({
+        ...completeProposal,
+        status: 'partial',
+        seasonStandingCandidates: [seasonStandingCandidate],
+      }),
+    );
+    await writeFile(path.join(temporaryRoot, 'proposals'), 'not a directory');
+    const options: PublisherEnvironment = {
+      fakeBin: temporaryRoot,
+      fakeGhLog: path.join(temporaryRoot, 'gh.log'),
+      fakePrNumber: '',
+      comparison: 'HEAD',
+      githubOutput: path.join(temporaryRoot, 'github-output'),
+      runnerTemp: temporaryRoot,
+    };
+    try {
+      await expect(runPublisher(temporaryRoot, ['publish', inputPath], options)).rejects.toThrow(
+        /ENOTDIR/,
+      );
     } finally {
       await rm(temporaryRoot, { recursive: true, force: true });
     }
@@ -261,6 +440,47 @@ describe('standings proposal PR publishing', () => {
       await expect(main()).rejects.toThrow('Usage: standings-ingestion/pull-request.ts');
     } finally {
       process.argv = previousArguments;
+    }
+  });
+
+  it('requires publisher environment before preparing a branch', async () => {
+    const previousArguments = process.argv;
+    const previousBaseBranch = process.env.BASE_BRANCH;
+    process.argv = [process.execPath, 'pull-request.ts', 'prepare'];
+    Reflect.deleteProperty(process.env, 'BASE_BRANCH');
+    try {
+      await expect(main()).rejects.toThrow('BASE_BRANCH must be set');
+    } finally {
+      process.argv = previousArguments;
+      if (previousBaseBranch === undefined) {
+        Reflect.deleteProperty(process.env, 'BASE_BRANCH');
+      } else {
+        process.env.BASE_BRANCH = previousBaseBranch;
+      }
+    }
+  });
+
+  it('reports CLI errors using the Actions annotation and sets a failing exit code', async () => {
+    const previousExitCode = process.exitCode;
+    const previousActions = process.env.GITHUB_ACTIONS;
+    const errorOutput = vi.spyOn(console, 'error').mockImplementation(() => undefined);
+    process.env.GITHUB_ACTIONS = 'true';
+    try {
+      await runCli(() => Promise.reject(new Error('publisher failed')));
+      expect(errorOutput).toHaveBeenCalledWith('::error::publisher failed');
+      expect(process.exitCode).toBe(1);
+    } finally {
+      errorOutput.mockRestore();
+      if (previousActions === undefined) {
+        Reflect.deleteProperty(process.env, 'GITHUB_ACTIONS');
+      } else {
+        process.env.GITHUB_ACTIONS = previousActions;
+      }
+      if (previousExitCode === undefined) {
+        Reflect.deleteProperty(process, 'exitCode');
+      } else {
+        process.exitCode = previousExitCode;
+      }
     }
   });
 

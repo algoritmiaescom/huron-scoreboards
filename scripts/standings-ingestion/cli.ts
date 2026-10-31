@@ -7,6 +7,7 @@ import { parseArgs } from 'node:util';
 import { identityAliasRegistrySchema } from '@/features/scoreboards/ingestion/identities';
 import {
   reviewProposalSchema,
+  seasonStandingCandidateSchema,
   sourceConfigurationSchema,
 } from '@/features/scoreboards/ingestion/schemas';
 import { contestStageSchema, seasonYearSchema } from '@/features/scoreboards/model/schemas';
@@ -684,6 +685,7 @@ const itesoAcquisition = async (
     });
   const sourceFailure = (message: string) => ({
     candidates: [],
+    seasonStandingCandidates: [],
     sourceFailures: [{ sourceId: source.id, contest: null, message }],
   });
   const indexResult = await fetcher.fetch(source.baseUrl);
@@ -831,14 +833,71 @@ const itesoAcquisition = async (
     },
   );
   const relativeArtifactPath = path.relative(root, artifactPath);
-  const reviewReason =
-    extractionError ??
-    (extraction?.status === 'staged'
-      ? extraction.reason
-      : 'the shared review-candidate contract does not yet support source-native season standings');
-  return sourceFailure(
-    `ITESO season ${String(seasonYear)} document staged at ${relativeArtifactPath}: ${reviewReason}`,
-  );
+  if (extractionError !== null || extraction === null || extractedDocument === null) {
+    return sourceFailure(
+      `ITESO season ${String(seasonYear)} document staged at ${relativeArtifactPath}: ${extractionError ?? 'document extraction did not produce parsed rows'}`,
+    );
+  }
+  if (extraction.status === 'staged') {
+    return sourceFailure(
+      `ITESO season ${String(seasonYear)} document staged at ${relativeArtifactPath}: ${extraction.reason}`,
+    );
+  }
+  const seasonStandingCandidate = seasonStandingCandidateSchema.parse({
+    candidateId: `iteso-gpm-${String(seasonYear)}-${documentResponse.contentSha256.slice(0, 12)}`,
+    sourceId: source.id,
+    authorityId: source.authorityId,
+    discoveryUrl: source.baseUrl,
+    finalUrl: documentResponse.finalUrl,
+    retrievedAt: new Date().toISOString(),
+    contentSha256: documentResponse.contentSha256,
+    parserVersion: 'iteso-season-standing-v1',
+    sourceEditionLabel: edition.editionLabel,
+    seasonYear,
+    seriesId: 'gpm',
+    snapshot: extraction.snapshot,
+    scoreUnit: extraction.scoreUnit,
+    rows: extraction.rows.map((row, rowIndex) => {
+      const method = extractedDocument.pages.find(
+        ({ pageNumber }) => pageNumber === row.pageNumber,
+      )?.method;
+      return {
+        place: row.place,
+        sourceTeamId: row.teamName,
+        teamName: row.teamName,
+        score: row.score,
+        scoreText: row.scoreText,
+        scoreUnit: row.scoreUnit,
+        qualificationText: row.qualificationText,
+        qualified: row.qualified,
+        pageNumber: row.pageNumber,
+        confidence: row.confidence,
+        evidence: row.evidence.map(({ field, cell }) => ({
+          field: `rows[${String(rowIndex)}].${field}`,
+          kind: method === 'ocr' ? 'ocr' : 'pdf-text',
+          locator: `page ${String(row.pageNumber)} table row ${String(rowIndex + 1)} ${field}`,
+          page: row.pageNumber,
+          excerpt: cell,
+          confidence: row.confidence,
+        })),
+      };
+    }),
+    pageNumbers: extraction.pageNumbers,
+    coverage: {
+      expectedRowCount: null,
+      rowsComplete: true,
+      pagesComplete: extractedDocument.pages.length === extractedDocument.pageCount,
+    },
+    warnings: [
+      ...extraction.warnings,
+      `Detailed extracted document is staged at ${relativeArtifactPath}.`,
+    ],
+  });
+  return {
+    candidates: [],
+    seasonStandingCandidates: [seasonStandingCandidate],
+    sourceFailures: [],
+  };
 };
 
 const icpcGlobalAcquisition = async (
@@ -1730,6 +1789,10 @@ export const runStandingsIngestion = async (
   const baseProposal = createReviewProposal({
     archive: archiveResult.data,
     candidates: [...candidates, ...acquisition.candidates],
+    seasonStandingCandidates:
+      'seasonStandingCandidates' in acquisition
+        ? (acquisition as { seasonStandingCandidates: readonly unknown[] }).seasonStandingCandidates
+        : [],
     sourceConfiguration: parsedConfiguration,
     identityAliases: parsedAliases.aliases,
     selection: {
@@ -1746,7 +1809,7 @@ export const runStandingsIngestion = async (
     status:
       acquisition.sourceFailures.length === 0
         ? baseProposal.status
-        : baseProposal.candidates.length === 0
+        : baseProposal.candidates.length + baseProposal.seasonStandingCandidates.length === 0
           ? 'failed'
           : 'partial',
     sourceFailures: [...baseProposal.sourceFailures, ...acquisition.sourceFailures],

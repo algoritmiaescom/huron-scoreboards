@@ -1,0 +1,17 @@
+[project]
+name = "huron-standings-documents"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+  "pdfplumber==0.11.10",
+  "pypdfium2==5.14.0",
+  "pytesseract==0.3.13",
+  "pillow==12.2.0",
+]
+
+[dependency-groups]
+dev = ["pytest==8.4.2", "reportlab==5.1.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+pythonpath = ["."]

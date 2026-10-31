@@ -6,7 +6,12 @@ import { describe, expect, it } from 'vitest';
 
 import { archive } from '@/test/fixtures/archive';
 
-import { createReviewProposal, selectCandidateInputs, writeProposalAtomically } from './operator';
+import {
+  createReviewProposal,
+  selectCandidateInputs,
+  selectSeasonStandingCandidateInputs,
+  writeProposalAtomically,
+} from './operator';
 
 import type { ReviewProposal } from '@/features/scoreboards/ingestion/schemas';
 
@@ -77,6 +82,65 @@ const candidate = {
   warnings: [],
 };
 
+const seasonStandingCandidate = {
+  candidateId: 'iteso-gpm-2024-standing',
+  sourceId: 'iteso',
+  authorityId: 'iteso',
+  discoveryUrl: 'https://eventos.iteso.mx/acm/',
+  finalUrl: 'https://acm.iteso.mx/share/result.pdf',
+  retrievedAt: '2026-10-28T12:00:00Z',
+  contentSha256: 'b'.repeat(64),
+  parserVersion: 'iteso-season-standing-v1',
+  sourceEditionLabel: '2024',
+  seasonYear: 2024,
+  seriesId: 'gpm',
+  snapshot: 'latest-explicit',
+  scoreUnit: 'Puntos',
+  rows: [
+    {
+      place: 1,
+      sourceTeamId: 'Equipo Alfa',
+      teamName: 'Equipo Alfa',
+      score: 12.5,
+      scoreText: '12.5',
+      scoreUnit: 'Puntos',
+      qualificationText: 'Sí',
+      qualified: true,
+      pageNumber: 1,
+      confidence: 1,
+      evidence: [
+        {
+          field: 'rows[0].place',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 place',
+          page: 1,
+          excerpt: '1',
+          confidence: 1,
+        },
+        {
+          field: 'rows[0].teamName',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 team name',
+          page: 1,
+          excerpt: 'Equipo Alfa',
+          confidence: 1,
+        },
+        {
+          field: 'rows[0].score',
+          kind: 'pdf-text',
+          locator: 'page 1 row 1 score',
+          page: 1,
+          excerpt: '12.5',
+          confidence: 1,
+        },
+      ],
+    },
+  ],
+  pageNumbers: [1],
+  coverage: { expectedRowCount: 1, rowsComplete: true, pagesComplete: true },
+  warnings: [],
+};
+
 const minimalProposal: ReviewProposal = {
   schemaVersion: 1,
   runId: 'run-test-1',
@@ -84,7 +148,11 @@ const minimalProposal: ReviewProposal = {
   status: 'failed',
   candidates: [],
   additions: [],
+  seasonStandingCandidates: [],
+  seasonStandingAdditions: [],
+  identityProposals: [],
   conflicts: [],
+  seasonStandingConflicts: [],
   runIssues: [],
   sourceFailures: [],
 };
@@ -105,6 +173,21 @@ describe('standings ingestion operator', () => {
         stage: 'qualifier-1',
       }),
     ).toEqual([candidate, { sourceId: 'icpc-mexico' }]);
+  });
+
+  it('filters season-standing candidates by exact source, season, and series while retaining invalid inputs', () => {
+    const otherEdition = {
+      ...seasonStandingCandidate,
+      candidateId: 'iteso-gpm-2025-standing',
+      sourceEditionLabel: '2025',
+      seasonYear: 2025,
+    };
+    expect(
+      selectSeasonStandingCandidateInputs(
+        [seasonStandingCandidate, otherEdition, { sourceId: 'iteso' }],
+        { sourceId: 'iteso', seasonYear: 2024, seriesId: 'gpm' },
+      ),
+    ).toEqual([seasonStandingCandidate, { sourceId: 'iteso' }]);
   });
 
   it('creates a validated dry-run proposal from selected evidence and aliases', () => {
