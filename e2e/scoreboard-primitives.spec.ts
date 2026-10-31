@@ -4,6 +4,47 @@ import { expect, test } from '@playwright/test';
 const fixtureUrl = 'http://127.0.0.1:4175/src/test/fixtures/scoreboard-primitives.html';
 
 for (const mode of ['light', 'dark'] as const) {
+  for (const width of [390, 1440]) {
+    test(`partial standings preserve unknown values at ${String(width)}px in ${mode}`, async ({
+      page,
+    }, testInfo) => {
+      await page.addInitScript((themeMode) => {
+        localStorage.setItem('huron-scoreboards.theme-mode', themeMode);
+      }, mode);
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto(`${fixtureUrl}?partial=1`);
+      await expect(page.getByText('Fecha desconocida', { exact: true })).toBeVisible();
+      await expect(page.getByText('Duración desconocida', { exact: true })).toBeVisible();
+      await expect(
+        page.getByText('Regla de penalización desconocida', { exact: true }),
+      ).toBeVisible();
+      await expect(page.getByText('No clasificatoria', { exact: true })).toBeVisible();
+      await expect(
+        page.getByRole('img', { name: /Alpha. Problema A. Detalle no disponible/ }),
+      ).toHaveCount(1);
+      await expect(page.getByRole('img', { name: /primero en resolver/ })).toHaveCount(0);
+      await expect(page.getByText('Clasificación desconocida', { exact: true })).toBeVisible();
+      await expect(page.getByText('Línea de corte de clasificación')).toHaveCount(0);
+      await expect(page.getByText('Desconocida', { exact: true })).toHaveCount(3);
+      expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+      const layout = await page.evaluate(() => ({
+        width: document.documentElement.clientWidth,
+        content: document.documentElement.scrollWidth,
+      }));
+      expect(layout.content).toBeLessThanOrEqual(layout.width);
+      await page.screenshot({ path: testInfo.outputPath('partial-standings.png'), fullPage: true });
+      await page.getByRole('button', { name: 'Resuelto', exact: true }).click();
+      await expect(page.getByRole('status')).toHaveText('3 de 4 equipos');
+      await page.getByRole('combobox', { name: 'Problema', exact: true }).selectOption('A');
+      await expect(page.getByRole('status')).toHaveText('2 de 4 equipos');
+      await expect(page.getByRole('img', { name: /Alpha. Problema/ })).toHaveCount(0);
+      await page.getByRole('button', { name: 'Limpiar todo', exact: true }).click();
+      await expect(page.getByRole('status')).toHaveText('4 de 4 equipos');
+    });
+  }
+}
+
+for (const mode of ['light', 'dark'] as const) {
   test(`primitives preserve semantics and reflow in ${mode}`, async ({ page }) => {
     await page.addInitScript((themeMode) => {
       localStorage.setItem('huron-scoreboards.theme-mode', themeMode);

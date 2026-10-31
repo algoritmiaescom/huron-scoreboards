@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "icpc-mexico",
+      "authorityId": "icpc-mexico",
+      "name": "ICPC Mexico",
+      "baseUrl": "https://www.icpcmexico.org/contests",
+      "supportedStages": [
+        "fecha-0",
+        "qualifier-1",
+        "qualifier-2",
+        "qualifier-3",
+        "repechage",
+        "final"
+      ],
+      "supportsSeasonStanding": true
+    },
+    {
+      "id": "icpc-global-directory",
+      "authorityId": "icpc-global",
+      "name": "ICPC Global contest directory",
+      "baseUrl": "https://icpc.global/regionals/contests",
+      "allowedOrigins": [
+        "https://www.google.com",
+        "https://www.gstatic.com",
+        "https://fonts.googleapis.com",
+        "https://fonts.gstatic.com"
+      ],
+      "supportedStages": ["qualifier-1", "qualifier-2", "qualifier-3", "repechage", "final"],
+      "supportsSeasonStanding": true
+    },
+    {
+      "id": "icpc-global-finder",
+      "authorityId": "icpc-global",
+      "name": "ICPC Global Mexico finder",
+      "baseUrl": "https://icpc.global/regionals/finder/mexico",
+      "allowedOrigins": [
+        "https://www.google.com",
+        "https://www.gstatic.com",
+        "https://fonts.googleapis.com",
+        "https://fonts.gstatic.com"
+      ],
+      "supportedStages": ["qualifier-1", "qualifier-2", "qualifier-3", "repechage", "final"],
+      "supportsSeasonStanding": true
+    },
+    {
+      "id": "iteso",
+      "authorityId": "iteso",
+      "name": "ITESO ACM archive",
+      "baseUrl": "https://eventos.iteso.mx/acm/",
+      "allowedOrigins": ["https://acm.iteso.mx"],
+      "supportedStages": [],
+      "supportsSeasonStanding": true
+    },
+    {
+      "id": "scorelatam",
+      "authorityId": "scorelatam",
+      "name": "ScoreLATAM",
+      "baseUrl": "https://scorelatam.naquadah.com.br/",
+      "supportedStages": ["final"],
+      "supportsSeasonStanding": false
+    }
+  ],
+  "preferredSources": [
+    { "stage": "fecha-0", "sourceIds": ["icpc-mexico"] },
+    { "stage": "qualifier-1", "sourceIds": ["icpc-mexico"] },
+    { "stage": "qualifier-2", "sourceIds": ["icpc-mexico"] },
+    { "stage": "qualifier-3", "sourceIds": ["icpc-mexico"] },
+    { "stage": "repechage", "sourceIds": ["icpc-mexico"] },
+    {
+      "stage": "final",
+      "sourceIds": ["icpc-mexico", "icpc-global-directory", "icpc-global-finder", "scorelatam"]
+    }
+  ],
+  "overrides": [],
+  "preferredSeasonStandingSources": ["icpc-mexico", "iteso", "icpc-global-directory"],
+  "seasonStandingOverrides": [],
+  "editionMappings": [
+    { "sourceId": "icpc-global-directory", "editionLabel": "2025-2026", "seasonYear": 2025 },
+    { "sourceId": "icpc-global-directory", "editionLabel": "2026-2027", "seasonYear": 2026 },
+    { "sourceId": "icpc-global-finder", "editionLabel": "2025", "seasonYear": 2025 },
+    { "sourceId": "icpc-global-finder", "editionLabel": "2026", "seasonYear": 2026 },
+    { "sourceId": "scorelatam", "editionLabel": "2019", "seasonYear": 2019 },
+    {
+      "sourceId": "scorelatam",
+      "editionLabel": "2020 (in 2021, REMOTE due to COVID)",
+      "seasonYear": 2020
+    },
+    { "sourceId": "scorelatam", "editionLabel": "2021", "seasonYear": 2021 },
+    { "sourceId": "scorelatam", "editionLabel": "2022", "seasonYear": 2022 },
+    { "sourceId": "scorelatam", "editionLabel": "2023", "seasonYear": 2023 },
+    { "sourceId": "scorelatam", "editionLabel": "2024", "seasonYear": 2024 },
+    { "sourceId": "scorelatam", "editionLabel": "2025", "seasonYear": 2025 }
+  ]
+}

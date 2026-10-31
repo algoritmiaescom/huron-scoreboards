@@ -46,52 +46,11 @@
     {
       "place": 1,
       "teamId": "2023-unam-fc-gamma",
-      "results": [
-        {
-          "status": "solved",
-          "attempts": 3,
-          "solvedAtMinute": 69
-        },
-        {
-          "status": "solved",
-          "attempts": 2,
-          "solvedAtMinute": 224
-        },
-        {
-          "status": "attempted",
-          "attempts": 1
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 119
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 198
-        },
-        {
-          "status": "solved",
-          "attempts": 1,
-          "solvedAtMinute": 150
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        },
-        {
-          "status": "unattempted"
-        }
-      ]
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": null
+      }
     },
     {
       "place": 2,

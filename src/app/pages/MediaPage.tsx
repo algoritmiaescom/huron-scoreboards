@@ -110,7 +110,7 @@ export const MediaPage = () => {
   const contestOptions = [
     ...contestsWithMedia.map(({ contest }) => contest),
     ...fallbackContests,
-  ].toSorted((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+  ].toSorted((a, b) => (b.date ?? '').localeCompare(a.date ?? '') || a.id.localeCompare(b.id));
   const showContestPicker = contestOptions.length > 1;
   const selectedEvent = feed.status === 'found' ? feed.record.event : undefined;
   const subtitle =

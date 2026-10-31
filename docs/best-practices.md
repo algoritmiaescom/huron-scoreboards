@@ -8,6 +8,22 @@
 - Use type-only imports where applicable.
 - Never ignore a promise without making the decision explicit.
 
+## Python
+
+- Use Python 3.12 and each project's committed uv lockfile. Ruff and mypy are pinned in both
+  Python projects; shared settings live in the root `pyproject.toml`.
+- Run `npm run validate:python` for linting, formatting verification, and type checking. CI runs
+  these checks plus `npm run test:python:coverage` for offline tests, including synthetic PDF/OCR.
+- Each Python project must reach 80% branch-aware coverage independently. CI retains XML reports
+  for seven days. No Ollama server or live competition-site requests are needed by the tests.
+- Run `npm run format:python` to apply formatting. Ruff also checks imports and common bug patterns.
+- Pre-commit runs Ruff linting/formatting on staged Python files, then checks both projects with
+  mypy when Python files, `pyproject.toml`, or `uv.lock` files are staged. Install uv before committing
+  Python changes; the hook uses the committed dependency locks.
+- Mypy checks annotated code and untyped function bodies. Libraries without type information are
+  allowed; this is gradual typing, not a strict requirement that every function be annotated.
+- Run document tests without coverage via `npm run test:standings-documents`.
+
 ## React
 
 - Keep components focused on rendering and interaction.

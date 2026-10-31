@@ -23,15 +23,22 @@ results** so the application has something to render. Mock data is a separate da
 staging area — transcribe results from an official scoreboard into `data/` rather than promoting
 mock files. See [data/README.md](./data/README.md).
 
-- Identify the season, series (GPM or Mexico finals), and stage (qualifier 1-3, repechage, or
+- Identify the season, series (GPM or Mexico finals), and stage (Fecha 0, qualifier 1-3, repechage, or
   final) the change belongs to.
 - Keep team, school, and problem identifiers consistent with existing records so historical
   school pages stay accurate.
 - Record per problem: the number of attempts and, if solved, the minute it was accepted.
   **Attempts count every judged submission, including the accepted one** — a problem solved on
   the first try has 1 attempt, not 0.
-- Do not record first-to-solve, solved counts, or penalty. They are derived from the solve times
-  so they cannot disagree with them.
+- Do not record first-to-solve; it is derived only when every team has problem detail.
+- Preserve source-published totals as `publishedTotals: { solved, penalty }` when available.
+  Computable detailed totals remain authoritative; contradictory observations fail validation.
+- When only totals are available, use `results: null` and require `publishedTotals`. Unknown
+  penalty uses `null`, not zero. Do not invent per-problem attempts or solve times. Mixed-detail
+  standings are supported; detailed rows must still have one result per known problem.
+- Use `null` for unknown contest dates, duration, penalty rules, and accumulated `qualified`
+  flags. Unknown qualification is not `false`. Use `problems: []` only for an unknown problem set
+  with totals-only rows. Keep `fecha-0` separate from qualifying stages.
 - Set the contest's penalty minutes per failed attempt from the official rules for that contest;
   it is not always 20.
 - Record the official place as published, including ties.
@@ -67,6 +74,10 @@ schema and verifies that cross-file references resolve. Run it locally before op
 request; it reports every problem at once with the file and location.
 
 See [data model](docs/data-model.md) for the full entity definitions.
+
+For acquisition, proposal review, identity resolution, and manual archive publication, follow the
+[end-to-end standings ingestion guide](docs/standings-ingestion.md). Proposal PRs contain review
+evidence only; merging one does not publish competition records.
 
 The in-app contribution guide must stay consistent with this section.
 

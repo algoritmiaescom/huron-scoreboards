@@ -52,8 +52,10 @@ export const selectMediaPageData = (
   const contestsWithMedia =
     media.status === 'ready' || media.status === 'empty'
       ? scoreboards.data.contests
-          .filter((contest) => contest.date <= today)
-          .toSorted((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id))
+          .filter((contest) => contest.date !== null && contest.date <= today)
+          .toSorted(
+            (a, b) => (b.date ?? '').localeCompare(a.date ?? '') || a.id.localeCompare(b.id),
+          )
           .flatMap((contest) => {
             const feed = selectContestFeed(media.data, contest.id, today);
             return feed.status === 'found' && feed.record.posts.length > 0
@@ -69,7 +71,9 @@ export const selectMediaPageData = (
     ? undefined
     : requestedContestId === undefined
       ? latestContest
-      : requestedContest?.status === 'found' && requestedContest.record.date <= today
+      : requestedContest?.status === 'found' &&
+          requestedContest.record.date !== null &&
+          requestedContest.record.date <= today
         ? requestedContest.record
         : undefined;
   const selectionError = repeatedSelection

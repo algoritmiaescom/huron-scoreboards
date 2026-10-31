@@ -14,6 +14,38 @@ permissions:
   contents: read
 
 jobs:
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+      - name: Install pinned uv
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 2 --max-time 300 \
+            https://github.com/astral-sh/uv/releases/download/0.9.22/uv-x86_64-unknown-linux-gnu.tar.gz \
+            -o "$RUNNER_TEMP/uv.tar.gz"
+          echo 'e170aed70ac0225feee612e855d3a57ae73c61ffb22c7e52c3fd33b87c286508  uv.tar.gz' > "$RUNNER_TEMP/uv.sha256"
+          (cd "$RUNNER_TEMP" && sha256sum --check uv.sha256)
+          tar -xzf "$RUNNER_TEMP/uv.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/uv-x86_64-unknown-linux-gnu" >> "$GITHUB_PATH"
+      - run: npm run validate:python
+      - name: Install OCR runtime
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-eng fonts-dejavu-core
+      - run: npm run test:python:coverage
+      - name: Upload Python coverage
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: python-coverage
+          path: coverage-python/*.xml
+          if-no-files-found: warn
+          retention-days: 7
+
   validate:
     runs-on: ubuntu-latest
     timeout-minutes: 15

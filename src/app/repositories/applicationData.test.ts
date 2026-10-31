@@ -7,7 +7,15 @@ import {
   selectSeasonStanding,
 } from '@/features/scoreboards';
 import { mexicoCityDate } from '@/lib/dates';
-import { archive, archiveFiles, contest, eventFile, jsonFile } from '@/test/fixtures/archive';
+import {
+  archive,
+  archiveFiles,
+  contest,
+  eventFile,
+  jsonFile,
+  partialContest,
+  partialStanding,
+} from '@/test/fixtures/archive';
 
 import {
   createApplicationRepositories,
@@ -25,6 +33,40 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('loads mixed-detail historical records without losing explicit unknown values', async () => {
+    const files = archiveFiles();
+    files['data/mock/seasons/2024/gpm/qualifier-1.json'] = jsonFile(partialContest);
+    files['data/mock/seasons/2024/gpm/standing.json'] = jsonFile(partialStanding);
+    const result = await createJsonScoreboardsRepository(files, 'mock').load();
+    expect(result).toMatchObject({
+      status: 'ready',
+      data: {
+        contests: [partialContest],
+        seasonStandings: [partialStanding],
+      },
+    });
+  });
+
+  it('rejects published totals that contradict detailed results at the repository boundary', async () => {
+    const files = archiveFiles();
+    files['data/mock/seasons/2024/gpm/qualifier-1.json'] = jsonFile({
+      ...contest,
+      standings: contest.standings.map((row, index) =>
+        index === 0 ? { ...row, publishedTotals: { solved: 1, penalty: 999 } } : row,
+      ),
+    });
+    const result = await createJsonScoreboardsRepository(files, 'mock').load();
+    expect(result.status).toBe('invalid');
+    if (result.status !== 'invalid') {
+      throw new Error('Expected contradictory totals to fail validation');
+    }
+    expect(result.issues).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ location: 'standings[0].publishedTotals.penalty' }),
+      ]),
+    );
+    expect(result).not.toHaveProperty('data');
+  });
   it.each(['mock', 'archive'] as const)(
     'selects %s through the development environment',
     async (source) => {

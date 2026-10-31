@@ -6,6 +6,7 @@ import type { Contest, ContestStage, School, SeasonStanding, Team } from './sche
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
 
 const stageLabels: Record<ContestStage, string> = {
+  'fecha-0': 'Fecha 0',
   'qualifier-1': 'Clasificatoria 1',
   'qualifier-2': 'Clasificatoria 2',
   'qualifier-3': 'Clasificatoria 3',
@@ -42,7 +43,10 @@ export const selectCatalog = (archive: ScoreboardsArchive) => {
           label: seriesLabel(seriesId),
           contests: archive.contests
             .filter((contest) => contest.seasonYear === seasonYear && contest.seriesId === seriesId)
-            .toSorted((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id))
+            .toSorted(
+              (a, b) =>
+                (a.date ?? '9999').localeCompare(b.date ?? '9999') || a.id.localeCompare(b.id),
+            )
             .map((contest) => ({ ...contest, stageLabel: contestStageLabel(contest.stage) })),
           accumulated: archive.seasonStandings.some(
             (standing) => standing.seasonYear === seasonYear && standing.seriesId === seriesId,
@@ -71,8 +75,10 @@ export const selectLatestHeldContest = (
 ): RecordResult<Contest> =>
   findRecord(
     archive.contests
-      .filter((contest) => contest.date <= today)
-      .toSorted((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id))[0],
+      .filter((contest) => contest.date !== null && contest.date <= today)
+      .toSorted(
+        (a, b) => (b.date ?? '').localeCompare(a.date ?? '') || a.id.localeCompare(b.id),
+      )[0],
   );
 
 const requireRecord = <T>(record: T | undefined, description: string): T => {
@@ -144,9 +150,10 @@ export const selectFilteredContestRows = (
       if (filters.school !== undefined && row.school.id !== filters.school) {
         return false;
       }
-      const results = problemIndex === -1 ? row.results : [row.results[problemIndex]];
+      const accepted =
+        problemIndex === -1 ? row.solved > 0 : row.results?.[problemIndex]?.status === 'solved';
       return (
-        (!filters.accepted || results.some((result) => result.status === 'solved')) &&
+        (!filters.accepted || accepted) &&
         (!filters.first ||
           (filters.problem === undefined
             ? row.firstSolvedLabels.length > 0
@@ -162,6 +169,9 @@ export const selectAccumulatedRows = (archive: ScoreboardsArchive, standing: Sea
     .sort((a, b) => a.place - b.place);
 
 export const selectQualificationCut = (standing: SeasonStanding): number | undefined => {
+  if (standing.rows.some((row) => row.qualified === null)) {
+    return undefined;
+  }
   const rows = standing.rows.toSorted((a, b) => a.place - b.place);
   const firstOut = rows.findIndex((row) => !row.qualified);
   if (firstOut <= 0 || rows.slice(firstOut).some((row) => row.qualified)) {
@@ -220,7 +230,8 @@ export const selectSchoolHistory = (
     )
     .sort(
       (a, b) =>
-        a.contest.date.localeCompare(b.contest.date) ||
+        a.contest.seasonYear - b.contest.seasonYear ||
+        (a.contest.date ?? '').localeCompare(b.contest.date ?? '') ||
         a.contest.id.localeCompare(b.contest.id) ||
         a.row.place - b.row.place,
     );

@@ -242,7 +242,10 @@ export const SchoolHistoryPage = () => {
     ({ parentInstitutionId }) => parentInstitutionId === school.id,
   );
   const podiums = history.podiums.toSorted(
-    (a, b) => a.row.place - b.row.place || b.contest.date.localeCompare(a.contest.date),
+    (a, b) =>
+      a.row.place - b.row.place ||
+      b.contest.seasonYear - a.contest.seasonYear ||
+      (b.contest.date ?? '').localeCompare(a.contest.date ?? ''),
   );
   const highlights = podiums.slice(0, 5);
   return (

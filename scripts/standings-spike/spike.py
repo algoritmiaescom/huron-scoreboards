@@ -200,7 +200,7 @@ def run(output, offline=False, repetitions=3, weekly_pages=20, backfill_pages=50
         "backfill_pages_assumption": backfill_pages,
     }
     stop = threading.Event()
-    samples = []
+    samples: list[int] = []
     monitor = threading.Thread(target=sample_memory, args=(stop, samples), daemon=True)
     started = time.monotonic()
     monitor.start()
@@ -220,7 +220,9 @@ def run(output, offline=False, repetitions=3, weekly_pages=20, backfill_pages=50
             models = json_request("/api/tags")["models"]
             report["model_metadata"] = next(model for model in models if model["name"] == MODEL)
             if report["model_metadata"]["digest"] != MODEL_DIGEST:
-                raise ValueError("Model tag changed; review and update the pinned digest before use")
+                raise ValueError(
+                    "Model tag changed; review and update the pinned digest before use"
+                )
             show = json_request("/api/show", {"model": MODEL})
             report["model_license"] = show.get("license")
             report["model_info"] = show.get("model_info")
@@ -238,7 +240,9 @@ def run(output, offline=False, repetitions=3, weekly_pages=20, backfill_pages=50
                 "excludes": "installation, discovery, network, larger tables, PDF/OCR and PR/CI",
             }
             if slowest > 120:
-                raise ValueError("Synthetic-page inference exceeded the provisional 120-second gate")
+                raise ValueError(
+                    "Synthetic-page inference exceeded the provisional 120-second gate"
+                )
             if max(samples, default=0) > 6 * 1024**3:
                 raise ValueError("Benchmark exceeded the provisional 6-GiB aggregate RSS gate")
         report["status"] = "offline-passed" if offline else "passed"
@@ -258,14 +262,22 @@ def run(output, offline=False, repetitions=3, weekly_pages=20, backfill_pages=50
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--offline", action="store_true", help="No Ollama; not an inference benchmark")
+    parser.add_argument(
+        "--offline", action="store_true", help="No Ollama; not an inference benchmark"
+    )
     parser.add_argument("--repetitions", type=int, default=3)
     parser.add_argument("--weekly-pages", type=int, default=20)
     parser.add_argument("--backfill-pages", type=int, default=500)
     args = parser.parse_args()
     if min(args.repetitions, args.weekly_pages, args.backfill_pages) < 1:
         parser.error("repetitions and page assumptions must be positive")
-    run(args.output.resolve(), args.offline, args.repetitions, args.weekly_pages, args.backfill_pages)
+    run(
+        args.output.resolve(),
+        args.offline,
+        args.repetitions,
+        args.weekly_pages,
+        args.backfill_pages,
+    )
 
 
 if __name__ == "__main__":

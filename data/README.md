@@ -37,12 +37,12 @@ The mock dataset is deliberately uneven, because the real archive will be too. O
 sparsely transcribed, recent ones are complete, and the current season is still being played. Every
 optional field is missing somewhere, so rendering code cannot assume it is present.
 
-| Season | What it exercises                                                                                                                                          |
-| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2023   | Oldest record: no rosters at all, no problem titles, only two qualifiers, no repechage, no accumulated standing.                                           |
-| 2024   | Mixed fidelity: some rosters, some problem titles, a shorter contest with a different penalty, a published standing covering only the teams that advanced. |
-| 2025   | Fully documented: complete rosters, problem titles and links, every stage, a rich media feed.                                                              |
-| 2026   | Season in progress: qualifiers played, repechage and final not yet held, an announced event with no posts.                                                 |
+| Season | What it exercises                                                                                                                                                             |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2023   | Partial history: totals-only qualifier 1 with unknown metadata/problem set, mixed-detail qualifier 2 with an unknown penalty; no rosters, repechage, or accumulated standing. |
+| 2024   | Mixed fidelity: some rosters, some problem titles, a shorter contest with a different penalty, a published standing covering only the teams that advanced.                    |
+| 2025   | Fully documented: complete rosters, problem titles and links, every stage, a rich media feed.                                                                                 |
+| 2026   | Season in progress: qualifiers played, repechage and final not yet held, an announced event with no posts.                                                                    |
 
 Edge cases the data covers on purpose:
 
@@ -52,12 +52,22 @@ Edge cases the data covers on purpose:
 - tied places, a problem nobody solved, a problem solved by exactly one team, and two teams
   sharing first-to-solve on the same minute;
 - contests that differ in duration, penalty value and problem count;
+- totals-only rows with preserved solved/penalty totals and explicitly unknown contest metadata;
+- mixed-detail standings with unavailable problem cells and an unknown published penalty;
 - posts with no media, no title, no tags, or an author known only by username, plus an event with
   no location and no linked contest;
 - schools with a committed logo, schools with a remotely hosted one, and ten of fifteen with none.
 
 The 2026 final is announced but unplayed, so its event deliberately has no `contestId`: media can
 reference a contest that does not exist in the archive yet.
+
+Partial-history examples are directly selectable in mock mode:
+
+- `/scoreboards?contest=2023-gpm-qualifier-1`: all 12 teams retain their original synthetic places
+  and totals, but date, duration, penalty rule, and per-problem detail are unavailable.
+- `/scoreboards?contest=2023-gpm-qualifier-2`: the leading team has only its solved total and an
+  explicitly unknown penalty; other teams retain complete problem detail. No first-solve claims
+  are made from this incomplete evidence.
 
 The logos in `public/logos/` are **neutral placeholder monograms**, not the institutions' real
 marks. They exist so the path-based logo branch has files to resolve against. Replace them with a

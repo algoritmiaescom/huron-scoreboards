@@ -5,6 +5,7 @@ import path from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
 
 import { formatIssue } from '@/lib/validation/issues';
+import { archive, partialContest, partialStanding } from '@/test/fixtures/archive';
 
 import { validateDataDirectory } from './data-validation';
 
@@ -154,6 +155,16 @@ afterEach(async () => {
 });
 
 describe('validateDataDirectory', () => {
+  it('validates partial historical records with the same schemas used at runtime', async () => {
+    const root = await createRoot();
+    await validData(root);
+    await writeJson(root, 'data/schools.json', archive.schools);
+    await writeJson(root, 'data/seasons/2024/teams.json', archive.teams);
+    await writeJson(root, 'data/seasons/2024/gpm/qualifier-1.json', partialContest);
+    await writeJson(root, 'data/seasons/2024/gpm/standing.json', partialStanding);
+    const result = await validateDataDirectory(root);
+    expect(result.issues).toEqual([]);
+  });
   it('accepts coherent mocked data', async () => {
     const root = await createRoot();
     await validData(root);

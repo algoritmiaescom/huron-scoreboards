@@ -32,7 +32,10 @@ export const ProblemResults = ({
   firstSolvedLabels: readonly string[];
   teamName: string;
 }) => {
-  if (problems.length !== results.length) {
+  if (results === null && problems.length === 0) {
+    return <Typography color="text.secondary">Detalle por problema no disponible</Typography>;
+  }
+  if (results !== null && problems.length !== results.length) {
     throw new Error('ProblemResults requires one result per problem in contest order.');
   }
   return (
@@ -42,7 +45,7 @@ export const ProblemResults = ({
           <ProblemLabel variant="caption">Problema {problem.label}</ProblemLabel>
           <ProblemResultCell
             problem={problem}
-            result={results[index]}
+            result={results?.[index] ?? null}
             firstToSolve={firstSolvedLabels.includes(problem.label)}
             teamName={teamName}
           />

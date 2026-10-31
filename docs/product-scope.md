@@ -27,7 +27,14 @@ season (year)
 ```
 
 A contest belongs to exactly one season, one series, and one stage. A contest defines an ordered
-set of problems, and each participating team has one result per problem.
+set of problems when known. Detailed teams have one result per problem; historical teams may
+instead have only published solved/penalty totals. Both can coexist in one standing. Fecha 0 is
+a distinct, non-qualifying GPM stage, not qualifier 1.
+
+Unknown dates, duration, penalty rules, problem details, and qualification are displayed as
+unknown, never fabricated as zero, unattempted, or not qualified. An unknown problem set does not
+claim zero problems. Published totals remain observations; inconsistent computable totals block
+publication. Complete records retain their existing behavior.
 
 Other competitions exist — Master Mexico, Donald Knuth, and the Girls Programming Challenge — and
 are out of scope for the first version, but the model treats the series as an open set so they
@@ -62,6 +69,10 @@ Each problem cell communicates:
 Standings can be narrowed by team name, school, problem, accepted results, and first-to-solve
 results. Filter state belongs in route and search parameters so a filtered view is shareable.
 
+Without a selected problem, accepted-result filters can use a published solved count. With a
+selected problem they require observed per-problem results. First-to-solve is suppressed whenever
+any team lacks problem detail, so incomplete evidence cannot produce a first-solver claim.
+
 **Route and selection contract**
 
 The application uses `/scoreboards`, `/schools`, `/schools/:schoolId`, `/media`, and
@@ -71,6 +82,8 @@ recovery rather than another page's content.
 - A contest view uses `/scoreboards?contest=<id>`. Without an explicit selection, choose the
   latest archived contest whose date is not later than today's date in `America/Mexico_City`.
   Break equal-date ties by ascending contest id. If no held contests exist, show an empty archive.
+  Undated historical contests remain explicitly selectable and appear in school histories, but
+  are not eligible for latest-held or dated media selection.
 - Accumulated views use `/scoreboards?season=<year>&series=<id>&view=accumulated`. They select a
   `SeasonStanding`, not a fabricated contest. Conflicting or incomplete selection parameters
   show a recovery message with an explicit action to choose a valid selection.
@@ -104,7 +117,8 @@ URLs show recovery, never a substitute contest.
 Accumulated standings preserve published scores, places (including ties), and qualification
 flags rather than computing an accumulation. Qualified rows have explicit text and icons.
 A single cut is shown only between a qualified prefix and an entirely unqualified suffix,
-never through a shared place or for qualified-only/noncontiguous records. Empty rows have an
+never through a shared place or for qualified-only/noncontiguous records. Unknown qualification
+has its own label and suppresses the cut. Empty rows have an
 explicit state. Contest filters on accumulated URLs show an explanation and an action removing
 only those filters; sharing, reload, and history preserve the accumulated selection. School
 identities link to exact-school histories.

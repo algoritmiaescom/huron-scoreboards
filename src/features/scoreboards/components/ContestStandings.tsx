@@ -83,7 +83,10 @@ export const ContestStandings = ({
                 <DataList
                   items={[
                     { label: 'Resueltos', value: row.solved },
-                    { label: 'Penalización', value: `${String(row.penalty)} min` },
+                    {
+                      label: 'Penalización',
+                      value: row.penalty === null ? 'Desconocida' : `${String(row.penalty)} min`,
+                    },
                   ]}
                 />
                 <ProblemResults
@@ -160,7 +163,7 @@ export const ContestStandings = ({
                 <TableCell key={problem.label}>
                   <ProblemResultCell
                     problem={problem}
-                    result={row.results[index]}
+                    result={row.results?.[index] ?? null}
                     firstToSolve={row.firstSolvedLabels.includes(problem.label)}
                     teamName={row.team.name}
                   />
@@ -170,7 +173,9 @@ export const ContestStandings = ({
                 <Typography variant="data">{row.solved}</Typography>
               </TableCell>
               <TableCell align="right">
-                <Typography variant="data">{row.penalty} min</Typography>
+                <Typography variant="data">
+                  {row.penalty === null ? 'Desconocida' : `${String(row.penalty)} min`}
+                </Typography>
               </TableCell>
             </TableRow>
           ))}

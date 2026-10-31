@@ -1,6 +1,7 @@
 import Bolt from '@mui/icons-material/Bolt';
 import CheckCircle from '@mui/icons-material/CheckCircle';
 import Close from '@mui/icons-material/Close';
+import HelpOutlined from '@mui/icons-material/HelpOutlined';
 import Remove from '@mui/icons-material/Remove';
 import { ClickAwayListener, Tooltip, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -8,7 +9,7 @@ import { useState } from 'react';
 
 import type { Problem, ProblemResult } from '../model/schemas';
 
-type ResultAppearance = ProblemResult['status'] | 'firstSolve';
+type ResultAppearance = ProblemResult['status'] | 'firstSolve' | 'unknown';
 
 const Cell = styled('div', {
   shouldForwardProp: (prop) => prop !== 'appearance',
@@ -21,9 +22,12 @@ const Cell = styled('div', {
   minHeight: theme.spacing(6),
   padding: theme.spacing(0.5),
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: theme.palette.scoreboard[appearance],
+  backgroundColor:
+    appearance === 'unknown'
+      ? theme.palette.background.default
+      : theme.palette.scoreboard[appearance],
   color:
-    appearance === 'unattempted'
+    appearance === 'unattempted' || appearance === 'unknown'
       ? theme.palette.text.secondary
       : theme.palette.scoreboard[`${appearance}Text`],
   border: `2px solid ${appearance === 'firstSolve' ? theme.palette.brand.yellow : 'transparent'}`,
@@ -46,7 +50,7 @@ const FirstSolveLabel = styled('span')(({ theme }) => ({
 
 interface ProblemResultCellProps {
   problem: Problem;
-  result: ProblemResult;
+  result: ProblemResult | null;
   firstToSolve?: boolean;
   teamName?: string;
 }
@@ -58,21 +62,25 @@ export const ProblemResultCell = ({
   teamName,
 }: ProblemResultCellProps) => {
   const [descriptionOpen, setDescriptionOpen] = useState(false);
-  const first = result.status === 'solved' && firstToSolve;
+  const first = result?.status === 'solved' && firstToSolve;
   const problemName = `Problema ${problem.label}${problem.title ? `: ${problem.title}` : ''}`;
   const attempts =
-    result.status === 'unattempted'
+    result === null || result.status === 'unattempted'
       ? ''
       : `${String(result.attempts)} ${result.attempts === 1 ? 'intento' : 'intentos'}`;
   const status =
-    result.status === 'unattempted'
-      ? 'Sin intentar'
-      : result.status === 'attempted'
-        ? `${attempts} ${result.attempts === 1 ? 'fallido' : 'fallidos'}, sin resolver`
-        : `Resuelto en ${attempts} al minuto ${String(result.solvedAtMinute)}; los intentos incluyen el envío aceptado${first ? '; primero en resolver (posible empate)' : ''}`;
+    result === null
+      ? 'Detalle no disponible'
+      : result.status === 'unattempted'
+        ? 'Sin intentar'
+        : result.status === 'attempted'
+          ? `${attempts} ${result.attempts === 1 ? 'fallido' : 'fallidos'}, sin resolver`
+          : `Resuelto en ${attempts} al minuto ${String(result.solvedAtMinute)}; los intentos incluyen el envío aceptado${first ? '; primero en resolver (posible empate)' : ''}`;
   const description = `${teamName ? `${teamName}. ` : ''}${problemName}. ${status}`;
   const icon =
-    result.status === 'unattempted' ? (
+    result === null ? (
+      <HelpOutlined />
+    ) : result.status === 'unattempted' ? (
       <Remove />
     ) : result.status === 'attempted' ? (
       <Close />
@@ -104,7 +112,7 @@ export const ProblemResultCell = ({
           role="img"
           tabIndex={0}
           aria-label={description}
-          appearance={first ? 'firstSolve' : result.status}
+          appearance={first ? 'firstSolve' : (result?.status ?? 'unknown')}
           onClick={() => {
             setDescriptionOpen(true);
           }}
@@ -114,7 +122,7 @@ export const ProblemResultCell = ({
         >
           <ResultLine aria-hidden="true">
             {icon}
-            {result.status !== 'unattempted' && (
+            {result !== null && result.status !== 'unattempted' && (
               <Typography variant="data">
                 {result.attempts}
                 {result.status === 'solved' ? ` · ${String(result.solvedAtMinute)}` : ''}

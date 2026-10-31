@@ -33,6 +33,9 @@ Master Mexico, Donald Knuth, and the Girls Programming Challenge are additional 
 out of scope for the MVP, but `Series` is an open set so they can be added as data rather than as
 new types.
 
+GPM may also include a distinct `fecha-0` contest. Fecha 0 is non-qualifying and must never
+be relabelled as qualifier 1 or used to infer qualification from its results.
+
 ## Identifiers
 
 Identifiers are human-readable slugs, because they appear in routes and in data files and must
@@ -116,11 +119,11 @@ type Contest = {
   id: string;
   seasonYear: number;
   seriesId: string; // 'gpm' | 'mexico-finals'
-  stage: 'qualifier-1' | 'qualifier-2' | 'qualifier-3' | 'repechage' | 'final';
+  stage: 'fecha-0' | 'qualifier-1' | 'qualifier-2' | 'qualifier-3' | 'repechage' | 'final';
   name: string;
-  date: string; // ISO date
-  durationMinutes: number; // typically 300
-  penaltyMinutesPerFailedAttempt: number; // typically 20
+  date: string | null; // ISO date, or explicitly unknown
+  durationMinutes: number | null; // typically 300, or explicitly unknown
+  penaltyMinutesPerFailedAttempt: number | null; // typically 20, or explicitly unknown
   problems: Problem[];
   standings: StandingRow[];
   source: string; // URL of the official scoreboard this data came from
@@ -140,17 +143,36 @@ transcribed from, because the data is community-contributed.
 not been constant across contests. Penalty must always be computed from the contest's own value;
 never hard-code 20 in domain code or components.
 
+Unknown historical metadata is explicitly `null`, not omitted or guessed. `problems: []`
+means the problem set is unavailable, not that the contest had zero problems; only totals-only
+rows are allowed in that case. Existing detailed records remain valid without migration.
+Undated contests remain selectable in the catalog and appear in school history under their
+edition year, but cannot be chosen as the latest held contest or as a dated media selection.
+
 ### Standings and problem results
 
 A problem cell is a discriminated union so that contradictory states — a solve time with no
 attempts, attempts on an unattempted problem — cannot be represented.
 
 ```ts
+type PublishedTotals = {
+  solved: number;
+  penalty: number | null; // null when the published penalty is unavailable
+};
+
 type StandingRow = {
   place: number;
   teamId: string;
-  results: ProblemResult[]; // one per contest problem, in problem order
-};
+} & (
+  | {
+      results: ProblemResult[]; // one per known contest problem, in problem order
+      publishedTotals?: PublishedTotals;
+    }
+  | {
+      results: null; // no per-problem detail available
+      publishedTotals: PublishedTotals;
+    }
+);
 
 type ProblemResult =
   | { status: 'unattempted' }
@@ -162,17 +184,27 @@ type ProblemResult =
 the first try has `attempts: 1`. This definition must appear in the contribution guide; it is the
 field most likely to be entered inconsistently.
 
+Detailed and totals-only teams may coexist in one contest. `results: null` does not mean
+unattempted; no attempt count, acceptance time, or per-problem result is fabricated. A detailed
+row must still contain every known problem; a truncated array is invalid, not partial history.
+
+Published totals are source observations, not replacements for computable values. Validation
+rejects a published solved count that differs from detailed results, a count above the known
+problem count, or a published penalty that disagrees with a computable penalty. Such candidates
+must be corrected or staged for review outside the published archive by the future ingestion
+pipeline; they cannot pass CI or the runtime repository boundary.
+
 ### Stored versus derived
 
-| Value                    | Source  | Rule                                                          |
-| ------------------------ | ------- | ------------------------------------------------------------- |
-| `place`                  | Stored  | Official result. Tie-breaks are not always reproducible.      |
-| `attempts`, solve time   | Stored  | Transcribed from the official scoreboard.                     |
-| Penalty rule             | Stored  | `penaltyMinutesPerFailedAttempt`; it varies between contests. |
-| Solved count             | Derived | Number of `solved` results in the row.                        |
-| Penalty                  | Derived | See the formula below; uses the contest's own penalty rule.   |
-| First to solve           | Derived | Minimum `solvedAtMinute` for that problem across the contest. |
-| GPM accumulated standing | Stored  | Official published result; see below.                         |
+| Value                    | Source            | Rule                                                                            |
+| ------------------------ | ----------------- | ------------------------------------------------------------------------------- |
+| `place`                  | Stored            | Official result. Tie-breaks are not always reproducible.                        |
+| `attempts`, solve time   | Stored            | Transcribed from the official scoreboard.                                       |
+| Penalty rule             | Stored            | `penaltyMinutesPerFailedAttempt`; it varies between contests.                   |
+| Solved count             | Derived or stored | Count detailed solves; otherwise use `publishedTotals.solved`.                  |
+| Penalty                  | Derived or stored | Compute with the known rule; otherwise use the published observation or `null`. |
+| First to solve           | Derived           | Minimum solve time, only when every row has problem detail.                     |
+| GPM accumulated standing | Stored            | Official published result; see below.                                           |
 
 Penalty for a team is the sum, over the problems it solved, of:
 
@@ -184,9 +216,17 @@ solvedAtMinute + penaltyMinutesPerFailedAttempt * (attempts - 1)
 Unsolved problems contribute nothing. The multiplier comes from the contest being displayed, so
 two contests in the same season may rank identical results differently.
 
+If the penalty rule is unknown and a detailed row has solves, use its published penalty when
+available; otherwise its penalty remains unknown. A detailed row with no solves has zero
+penalty even when the rule is unknown. A totals-only row always retains its published totals,
+including an explicitly unknown penalty. No default penalty multiplier is inferred.
+
 First to solve is derived so it cannot drift out of agreement with the solve times. Because
 times are minute-resolution, **ties are possible and the model must allow several first solvers
 on one problem**. Treat it as a set of team IDs per problem, not a boolean on one row.
+
+If any team lacks per-problem detail, first solves are unknown for the whole contest: an
+unobserved solve could be earlier. Do not claim first solves from only the detailed subset.
 
 Derived values are computed in the domain layer, not stored in data files and not recomputed in
 components.
@@ -205,11 +245,14 @@ type SeasonStanding = {
     place: number;
     teamId: string;
     score: number;
-    qualified: boolean;
+    qualified: boolean | null; // explicitly unknown, not equivalent to false
   }[];
   source: string;
 };
 ```
+
+Unknown qualification is labelled explicitly and never highlighted as qualified or excluded.
+A qualification cut is suppressed if any row has unknown qualification.
 
 ## Media
 
@@ -273,7 +316,7 @@ Existing posts and manual edits are preserved. Stable event-scoped IDs allow the
 post to belong to multiple events without violating global uniqueness. Duplicates within an event
 are detected by identity or canonical permalink. Remote media is referenced, not downloaded.
 
-See [ADR 0006](adr/0006-ingest-media-through-reviewed-pull-requests.md) for the integration decision
+See [ADR 0007](adr/0007-ingest-media-through-reviewed-pull-requests.md) for the integration decision
 and [media ingestion](media-ingestion.md) for configuration, limitations, and setup. This does not
 introduce server state into the browser or require an asynchronous state library.
 

@@ -128,7 +128,7 @@ Media posts are collected outside the browser through Juicer and proposed as app
 changes through reviewed pull requests. The media repository reads this validated archive;
 there are no live Juicer calls or credentials in the client. Failed ingestion leaves the published
 snapshot intact. The page must still handle an empty or invalid archive without breaking the rest
-of the site. See [ADR 0006](adr/0006-ingest-media-through-reviewed-pull-requests.md) and the
+of the site. See [ADR 0007](adr/0007-ingest-media-through-reviewed-pull-requests.md) and the
 [operator guide](media-ingestion.md).
 
 ## Future server state
