@@ -1,4 +1,4 @@
-# ADR 0006: Ingest media through reviewed pull requests
+# ADR 0007: Ingest media through reviewed pull requests
 
 ## Status
 

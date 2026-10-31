@@ -316,7 +316,7 @@ Existing posts and manual edits are preserved. Stable event-scoped IDs allow the
 post to belong to multiple events without violating global uniqueness. Duplicates within an event
 are detected by identity or canonical permalink. Remote media is referenced, not downloaded.
 
-See [ADR 0006](adr/0006-ingest-media-through-reviewed-pull-requests.md) for the integration decision
+See [ADR 0007](adr/0007-ingest-media-through-reviewed-pull-requests.md) for the integration decision
 and [media ingestion](media-ingestion.md) for configuration, limitations, and setup. This does not
 introduce server state into the browser or require an asynchronous state library.
 

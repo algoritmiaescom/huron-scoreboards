@@ -2,7 +2,7 @@
 
 The site stays static. A Node script reads Juicer and appends validated posts to real event JSON;
 GitHub Actions proposes those files through a reviewed PR. No token belongs in browser code.
-See [ADR 0006](adr/0006-ingest-media-through-reviewed-pull-requests.md).
+See [ADR 0007](adr/0007-ingest-media-through-reviewed-pull-requests.md).
 
 ## External setup checklist
 
