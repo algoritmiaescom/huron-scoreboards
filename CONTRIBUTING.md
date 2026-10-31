@@ -75,6 +75,10 @@ request; it reports every problem at once with the file and location.
 
 See [data model](docs/data-model.md) for the full entity definitions.
 
+For acquisition, proposal review, identity resolution, and manual archive publication, follow the
+[end-to-end standings ingestion guide](docs/standings-ingestion.md). Proposal PRs contain review
+evidence only; merging one does not publish competition records.
+
 The in-app contribution guide must stay consistent with this section.
 
 ## Pull requests
