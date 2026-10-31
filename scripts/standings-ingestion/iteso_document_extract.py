@@ -246,31 +246,7 @@ def extract_image(path):
     with Image.open(path) as image:
         if image.width * image.height > MAX_PAGE_PIXELS:
             raise ValueError("Image exceeds the OCR pixel limit")
-        data = pytesseract.image_to_data(
-            image.convert("RGB"),
-            config="--psm 6",
-            timeout=60,
-            output_type=pytesseract.Output.DICT,
-        )
-    words: list[ExtractedWord] = []
-    for index, text in enumerate(data["text"]):
-        if not text.strip():
-            continue
-        confidence = float(data["conf"][index]) / 100
-        words.append(
-            {
-                "x": float(data["left"][index]) + float(data["width"][index]) / 2,
-                "y": float(data["top"][index]) + float(data["height"][index]) / 2,
-                "x0": float(data["left"][index]),
-                "text": text,
-                "line": (
-                    int(data["block_num"][index]),
-                    int(data["par_num"][index]),
-                    int(data["line_num"][index]),
-                ),
-                "confidence": max(0, confidence),
-            }
-        )
+        words = ocr_words(image.convert("RGB"))
     lines = group_words(words)
     header = locate_header(lines)
     rows, _centers = split_lines(lines, header)

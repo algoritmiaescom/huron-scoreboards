@@ -210,6 +210,41 @@ describe('dry-run standings reconciliation', () => {
     expect(second).toEqual(first);
   });
 
+  it('sorts candidate types independently without changing proposal order', () => {
+    const firstContest = makeCandidate({ candidateId: 'contest-alpha' });
+    const secondContest = makeCandidate({ candidateId: 'contest-beta' });
+    const firstStanding = makeSeasonStandingCandidate({ candidateId: 'standing-alpha' });
+    const secondStanding = makeSeasonStandingCandidate({ candidateId: 'standing-beta' });
+    expect(
+      reconcile([secondContest, firstContest], {
+        seasonStandingCandidates: [secondStanding, firstStanding],
+      }),
+    ).toEqual(
+      reconcile([firstContest, secondContest], {
+        seasonStandingCandidates: [firstStanding, secondStanding],
+      }),
+    );
+  });
+
+  it('blocks all additions when candidate IDs collide across candidate types', () => {
+    const contestCandidate = makeCandidate();
+    const proposal = reconcile([contestCandidate], {
+      seasonStandingCandidates: [
+        makeSeasonStandingCandidate({ candidateId: contestCandidate.candidateId }),
+      ],
+    });
+    expect(proposal.status).toBe('partial');
+    expect(proposal.runIssues).toEqual([
+      {
+        kind: 'candidate',
+        message: `duplicate candidate id \`${contestCandidate.candidateId}\``,
+      },
+    ]);
+    expect(proposal.additions).toEqual([]);
+    expect(proposal.seasonStandingAdditions).toEqual([]);
+    expect(proposal.seasonStandingCandidates).toEqual([]);
+  });
+
   it('reports changed archived fields without replacing or deleting published rows', () => {
     const existing = {
       ...contest,

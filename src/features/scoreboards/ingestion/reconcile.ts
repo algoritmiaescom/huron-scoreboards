@@ -23,6 +23,7 @@ import type {
 } from './schemas';
 import type { Contest } from '../model/schemas';
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
+import type { ZodType } from 'zod';
 
 interface ReconcileCandidatesInput {
   archive: ScoreboardsArchive;
@@ -68,7 +69,7 @@ const sourceIdFromUnknown = (value: unknown): string => {
   return 'unknown-source';
 };
 
-const rowEvidence = (row: StandingsCandidate['rows'][number], field: string): CandidateEvidence[] =>
+const rowEvidence = (row: { evidence: CandidateEvidence[] }, field: string): CandidateEvidence[] =>
   row.evidence.filter(({ field: evidenceField }) => evidenceField === field);
 
 export const reconcileCandidates = ({
@@ -87,7 +88,21 @@ export const reconcileCandidates = ({
   const seasonStandingConflicts: ReviewProposal['seasonStandingConflicts'] = [];
   const seasonStandingAdditions: ReviewProposal['seasonStandingAdditions'] = [];
   const identityProposals: ReviewProposal['identityProposals'] = [];
-  const addIdentityProposal = (identityProposal: ReviewProposal['identityProposals'][number]) => {
+  const addIdentityProposal = (
+    candidate: StandingsCandidate | SeasonStandingCandidate,
+    rowIndex: number,
+    row: StandingsCandidate['rows'][number] | SeasonStandingCandidate['rows'][number],
+  ) => {
+    const identityProposal = {
+      candidateId: candidate.candidateId,
+      rowIndex,
+      sourceId: candidate.sourceId,
+      seasonYear: 'contest' in candidate ? candidate.contest.seasonYear : candidate.seasonYear,
+      sourceTeamId: row.sourceTeamId,
+      teamName: row.teamName,
+      sourceSchoolId: 'sourceSchoolId' in row ? row.sourceSchoolId : null,
+      schoolName: 'schoolName' in row ? row.schoolName : null,
+    };
     if (
       !identityProposals.some(
         ({ candidateId, rowIndex }) =>
@@ -134,52 +149,69 @@ export const reconcileCandidates = ({
   const usableAliases =
     aliasTargets.length === 0 && parsedAliases.success ? parsedAliases.data.aliases : [];
 
-  const candidates: StandingsCandidate[] = [];
-  const seenCandidateIds = new Set<string>();
-  rawCandidates.forEach((rawCandidate) => {
-    const parsedCandidate = standingsCandidateSchema.safeParse(rawCandidate);
-    if (!parsedCandidate.success) {
-      sourceFailures.push({
-        sourceId: sourceIdFromUnknown(rawCandidate),
-        contest: null,
-        message: `candidate validation failed: ${parsedCandidate.error.message}`,
-      });
-      return;
-    }
-    if (seenCandidateIds.has(parsedCandidate.data.candidateId)) {
-      runIssues.push({
-        kind: 'candidate',
-        message: `duplicate candidate id \`${parsedCandidate.data.candidateId}\``,
-      });
-      return;
-    }
-    seenCandidateIds.add(parsedCandidate.data.candidateId);
-    candidates.push(parsedCandidate.data);
-  });
-  candidates.sort((left, right) => left.candidateId.localeCompare(right.candidateId));
+  const resolveTeam = (
+    candidate: StandingsCandidate | SeasonStandingCandidate,
+    rowIndex: number,
+    row: { sourceTeamId: string | null },
+  ) => {
+    const seasonYear = 'contest' in candidate ? candidate.contest.seasonYear : candidate.seasonYear;
+    const identity = resolveReviewedIdentity(usableAliases, {
+      sourceId: candidate.sourceId,
+      entityType: 'team',
+      sourceIdentityId: row.sourceTeamId,
+      seasonYear,
+    });
+    return {
+      team:
+        identity.status === 'resolved'
+          ? archive.teams.find(
+              (team) => team.id === identity.canonicalId && team.seasonYear === seasonYear,
+            )
+          : undefined,
+      entityId:
+        identity.status === 'resolved'
+          ? identity.canonicalId
+          : (row.sourceTeamId ?? `${candidate.candidateId}:row-${String(rowIndex)}`),
+    };
+  };
 
-  const seasonStandingCandidates: SeasonStandingCandidate[] = [];
-  rawSeasonStandingCandidates.forEach((rawCandidate) => {
-    const parsedCandidate = seasonStandingCandidateSchema.safeParse(rawCandidate);
-    if (!parsedCandidate.success) {
-      sourceFailures.push({
-        sourceId: sourceIdFromUnknown(rawCandidate),
-        contest: null,
-        message: `season-standing candidate validation failed: ${parsedCandidate.error.message}`,
-      });
-      return;
-    }
-    if (seenCandidateIds.has(parsedCandidate.data.candidateId)) {
-      runIssues.push({
-        kind: 'candidate',
-        message: `duplicate candidate id \`${parsedCandidate.data.candidateId}\``,
-      });
-      return;
-    }
-    seenCandidateIds.add(parsedCandidate.data.candidateId);
-    seasonStandingCandidates.push(parsedCandidate.data);
-  });
-  seasonStandingCandidates.sort((left, right) => left.candidateId.localeCompare(right.candidateId));
+  const seenCandidateIds = new Set<string>();
+  const parseCandidates = <Candidate extends { candidateId: string }>(
+    inputs: readonly unknown[],
+    schema: ZodType<Candidate>,
+    label: string,
+  ): Candidate[] => {
+    const parsedCandidates: Candidate[] = [];
+    inputs.forEach((input) => {
+      const result = schema.safeParse(input);
+      if (!result.success) {
+        sourceFailures.push({
+          sourceId: sourceIdFromUnknown(input),
+          contest: null,
+          message: `${label} validation failed: ${result.error.message}`,
+        });
+        return;
+      }
+      if (seenCandidateIds.has(result.data.candidateId)) {
+        runIssues.push({
+          kind: 'candidate',
+          message: `duplicate candidate id \`${result.data.candidateId}\``,
+        });
+        return;
+      }
+      seenCandidateIds.add(result.data.candidateId);
+      parsedCandidates.push(result.data);
+    });
+    return parsedCandidates.sort((left, right) =>
+      left.candidateId.localeCompare(right.candidateId),
+    );
+  };
+  const candidates = parseCandidates(rawCandidates, standingsCandidateSchema, 'candidate');
+  const seasonStandingCandidates = parseCandidates(
+    rawSeasonStandingCandidates,
+    seasonStandingCandidateSchema,
+    'season-standing candidate',
+  );
 
   const candidateFailures = new Set<string>();
   const incompleteCandidates = new Set<string>();
@@ -273,12 +305,6 @@ export const reconcileCandidates = ({
     });
   };
 
-  const seasonStandingRowEvidence = (
-    row: SeasonStandingCandidate['rows'][number],
-    field: string,
-  ): CandidateEvidence[] =>
-    row.evidence.filter(({ field: evidenceField }) => evidenceField === field);
-
   candidates.forEach((candidate) => {
     if (candidateFailures.has(candidate.candidateId)) {
       return;
@@ -357,61 +383,19 @@ export const reconcileCandidates = ({
     }
 
     candidate.rows.forEach((row, rowIndex) => {
-      const teamIdentity = resolveReviewedIdentity(usableAliases, {
-        sourceId: candidate.sourceId,
-        entityType: 'team',
-        sourceIdentityId: row.sourceTeamId,
-        seasonYear: candidate.contest.seasonYear,
-      });
-      if (teamIdentity.status !== 'resolved') {
-        addConflict(
-          candidate,
-          rowIndex,
-          row.sourceTeamId ?? `${candidate.candidateId}:row-${String(rowIndex)}`,
-          'teamId',
-          'identity',
-          null,
-          row.teamName,
-          rowEvidence(row, `rows[${String(rowIndex)}].teamName`),
-        );
-        addIdentityProposal({
-          candidateId: candidate.candidateId,
-          rowIndex,
-          sourceId: candidate.sourceId,
-          seasonYear: candidate.contest.seasonYear,
-          sourceTeamId: row.sourceTeamId,
-          teamName: row.teamName,
-          sourceSchoolId: row.sourceSchoolId,
-          schoolName: row.schoolName,
-        });
-        return;
-      }
-      const team = archive.teams.find(
-        (entry) =>
-          entry.id === teamIdentity.canonicalId &&
-          entry.seasonYear === candidate.contest.seasonYear,
-      );
+      const { team, entityId } = resolveTeam(candidate, rowIndex, row);
       if (team === undefined) {
         addConflict(
           candidate,
           rowIndex,
-          teamIdentity.canonicalId,
+          entityId,
           'teamId',
           'identity',
           null,
           row.teamName,
           rowEvidence(row, `rows[${String(rowIndex)}].teamName`),
         );
-        addIdentityProposal({
-          candidateId: candidate.candidateId,
-          rowIndex,
-          sourceId: candidate.sourceId,
-          seasonYear: candidate.contest.seasonYear,
-          sourceTeamId: row.sourceTeamId,
-          teamName: row.teamName,
-          sourceSchoolId: row.sourceSchoolId,
-          schoolName: row.schoolName,
-        });
+        addIdentityProposal(candidate, rowIndex, row);
         return;
       }
       if (row.sourceSchoolId !== null) {
@@ -432,16 +416,7 @@ export const reconcileCandidates = ({
             row.schoolName,
             rowEvidence(row, `rows[${String(rowIndex)}].schoolName`),
           );
-          addIdentityProposal({
-            candidateId: candidate.candidateId,
-            rowIndex,
-            sourceId: candidate.sourceId,
-            seasonYear: candidate.contest.seasonYear,
-            sourceTeamId: row.sourceTeamId,
-            teamName: row.teamName,
-            sourceSchoolId: row.sourceSchoolId,
-            schoolName: row.schoolName,
-          });
+          addIdentityProposal(candidate, rowIndex, row);
           return;
         }
         if (schoolIdentity.canonicalId !== team.schoolId) {
@@ -455,33 +430,13 @@ export const reconcileCandidates = ({
             schoolIdentity.canonicalId,
             rowEvidence(row, `rows[${String(rowIndex)}].sourceSchoolId`),
           );
-          addIdentityProposal({
-            candidateId: candidate.candidateId,
-            rowIndex,
-            sourceId: candidate.sourceId,
-            seasonYear: candidate.contest.seasonYear,
-            sourceTeamId: row.sourceTeamId,
-            teamName: row.teamName,
-            sourceSchoolId: row.sourceSchoolId,
-            schoolName: row.schoolName,
-          });
+          addIdentityProposal(candidate, rowIndex, row);
           return;
         }
       }
 
-      if (existingContest === undefined) {
-        if (
-          candidate.contest.publicationState === 'final' &&
-          !incompleteCandidates.has(candidate.candidateId) &&
-          !contestConflict &&
-          runIssues.length === 0
-        ) {
-          additions.push({ candidateId: candidate.candidateId, rowIndex });
-        }
-        return;
-      }
-      const archivedRow = existingContest.standings.find(({ teamId }) => teamId === team.id);
-      if (archivedRow === undefined) {
+      const archivedRow = existingContest?.standings.find(({ teamId }) => teamId === team.id);
+      if (existingContest === undefined || archivedRow === undefined) {
         if (
           candidate.contest.publicationState === 'final' &&
           !incompleteCandidates.has(candidate.candidateId) &&
@@ -611,57 +566,18 @@ export const reconcileCandidates = ({
     }
     const resolvedTeams = new Set<string>();
     candidate.rows.forEach((row, rowIndex) => {
-      const identity = resolveReviewedIdentity(usableAliases, {
-        sourceId: candidate.sourceId,
-        entityType: 'team',
-        sourceIdentityId: row.sourceTeamId,
-        seasonYear: candidate.seasonYear,
-      });
-      if (identity.status !== 'resolved') {
-        addSeasonStandingConflict(
-          candidate,
-          row.sourceTeamId ?? `${candidate.candidateId}:row-${String(rowIndex)}`,
-          'teamId',
-          'identity',
-          null,
-          row.teamName,
-          seasonStandingRowEvidence(row, `rows[${String(rowIndex)}].teamName`),
-        );
-        addIdentityProposal({
-          candidateId: candidate.candidateId,
-          rowIndex,
-          sourceId: candidate.sourceId,
-          seasonYear: candidate.seasonYear,
-          sourceTeamId: row.sourceTeamId,
-          teamName: row.teamName,
-          sourceSchoolId: null,
-          schoolName: null,
-        });
-        return;
-      }
-      const team = archive.teams.find(
-        (entry) => entry.id === identity.canonicalId && entry.seasonYear === candidate.seasonYear,
-      );
+      const { team, entityId } = resolveTeam(candidate, rowIndex, row);
       if (team === undefined) {
         addSeasonStandingConflict(
           candidate,
-          identity.canonicalId,
+          entityId,
           'teamId',
           'identity',
           null,
           row.teamName,
-          seasonStandingRowEvidence(row, `rows[${String(rowIndex)}].teamName`),
+          rowEvidence(row, `rows[${String(rowIndex)}].teamName`),
         );
-        addIdentityProposal({
-          candidateId: candidate.candidateId,
-          rowIndex,
-          sourceId: candidate.sourceId,
-          seasonYear: candidate.seasonYear,
-          sourceTeamId: row.sourceTeamId,
-          teamName: row.teamName,
-          sourceSchoolId: null,
-          schoolName: null,
-        });
+        addIdentityProposal(candidate, rowIndex, row);
         return;
       }
       if (resolvedTeams.has(team.id)) {
@@ -693,7 +609,7 @@ export const reconcileCandidates = ({
             'archive',
             currentValue,
             candidateValue,
-            seasonStandingRowEvidence(row, `rows[${String(rowIndex)}].${field}`),
+            rowEvidence(row, `rows[${String(rowIndex)}].${field}`),
           );
         }
       });
