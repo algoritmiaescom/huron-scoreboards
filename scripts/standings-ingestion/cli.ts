@@ -1706,7 +1706,7 @@ const icpcGlobalFinalPayload = (
   ],
 });
 
-const loadArchiveFiles = async (root: string): Promise<JsonFiles> => {
+export const loadArchiveFiles = async (root: string): Promise<JsonFiles> => {
   const files: JsonFiles = {};
   const dataDirectory = path.join(root, 'data');
   const schoolsFile = path.join(dataDirectory, 'schools.json');

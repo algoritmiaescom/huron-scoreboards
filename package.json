@@ -32,6 +32,7 @@
     "media:pull-request": "tsx --tsconfig tsconfig.scripts.json scripts/media-pull-request.ts",
     "standings:ingest": "tsx --tsconfig tsconfig.scripts.json scripts/standings-ingestion/run.ts",
     "standings:pull-request": "tsx --tsconfig tsconfig.scripts.json scripts/standings-ingestion/pull-request.ts",
+    "standings:draft": "tsx --tsconfig tsconfig.scripts.json scripts/standings-ingestion/materialize.ts",
     "test:standings-documents": "uv run --locked --project scripts/standings-ingestion pytest scripts/standings-ingestion",
     "standings:spike": "uv run --locked --project scripts/standings-spike python scripts/standings-spike/spike.py",
     "validate": "npm run format:check && npm run lint && npm run validate:data && npm run typecheck && npm run test:coverage && npm run build",
