@@ -120,6 +120,7 @@ describe('standings ingestion source configuration', () => {
     expect(selectPreferredSourceIds(parsed, 2026, 'mexico-finals', 'final')).toEqual([
       'icpc-mexico',
       'icpc-global-directory',
+      'icpc-global-finder',
       'scorelatam',
     ]);
     expect(selectPreferredSeasonStandingSourceIds(parsed, 2026, 'gpm')).toEqual([

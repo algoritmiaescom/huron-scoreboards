@@ -13,9 +13,9 @@ imported.
 
 # Standings ingestion implementation plan
 
-Status: M2 done; M3 and M6 in progress. The hosted M1 benchmark passed; overall Actions job duration remains pending before formal closure.
+Status: M2, M4, M5, and M7 done; M1, M3, and M6 remain in progress. The hosted M1 benchmark passed; overall Actions job duration remains pending before formal closure.
 
-Created: 2026-10-27. Last updated: 2026-10-28.
+Created: 2026-10-27. Last updated: 2026-10-30.
 
 ## Purpose and use
 
@@ -119,7 +119,7 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 | M4  | ICPC Mexico adapter                                     | M3                       | done        |
 | M5  | ScoreLATAM adapter                                      | M3                       | done        |
 | M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | in progress |
-| M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | pending     |
+| M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | done        |
 | M8  | Reviewed-PR automation and controlled rollout           | M4, M5, M6, M7           | pending     |
 
 ### M1: Integration and cost feasibility spike
@@ -360,29 +360,48 @@ also remains open; no real competition document was imported.
 
 Directory: <https://icpc.global/regionals/contests>
 
-- [ ] Enumerate season choices, select each requested cycle, wait for refreshed content, and
+- [x] Enumerate season choices, select each requested cycle, wait for refreshed content, and
       expand Latin America.
-- [ ] Identify Mexican GPM/Mexico Finals from contest context and metadata, not loose name
+- [x] Identify Mexican GPM/Mexico Finals from contest context and metadata, not loose name
       matching; follow the Standings-column destination when present.
-- [ ] Route recognized HTML, unfamiliar rendered HTML, PDFs, and bounded landing-page discovery
+- [x] Route recognized HTML, unfamiliar rendered HTML, PDFs, and bounded landing-page discovery
       through the shared extractors; report missing buttons explicitly.
 
 Finder: <https://icpc.global/regionals/finder/mexico>
 
-- [ ] Record the displayed edition and collect the main See Standings link and GPM Contest List
+- [x] Record the displayed edition and collect the main See Standings link and GPM Contest List
       entry before visiting children.
-- [ ] Follow the GPM entry to accumulated results, then follow See Prior Year from the saved
+- [x] Follow the GPM entry to accumulated results, then follow See Prior Year from the saved
       edition context rather than relying on browser-back state.
-- [ ] Stop when prior-year navigation is absent; detect repeated URLs/editions and enforce limits.
-- [ ] Exclude Women's League, Masters, and training camps.
+- [x] Stop when prior-year navigation is absent; detect repeated URLs/editions and enforce limits.
+- [x] Exclude Women's League, Masters, and training camps.
 
 Shared acceptance:
 
-- [ ] Map ICPC cycle labels and URL identifiers to Mexican edition years explicitly. The inspected
+- [x] Map inspected ICPC cycle labels and URL identifiers to Mexican edition years explicitly; all
+      unlisted labels require a reviewed configuration mapping. The inspected
       2026 Mexico Finals page links to identifiers ending in `2027`; suffixes are not edition years.
-- [ ] Deduplicate shared destinations discovered through directory and finder.
-- [ ] Test season updates, historical navigation, missing standings, cycle mismatches, loops,
+- [x] Deduplicate shared destinations discovered through directory and finder.
+- [x] Test season updates, historical navigation, missing standings, cycle mismatches, loops,
       unfamiliar external HTML, and PDF destinations.
+
+M7 implemented for the explicitly reviewed 2025 and 2026 Mexico editions: the ICPC Global adapter parses the selected Latin America contest
+table, cross-checks displayed Mexican edition years against consecutive cycle labels and the
+observed `+1` URL identifiers, excludes Masters/Women's League/training camps, and records the
+separate Standings-column destination. Finder pages are rendered from saved edition context;
+traversal is sequential, bounded to 20 pages, and stops on repeated URLs or absent prior-year links.
+Standings capture selects a bounded 1000-row page and waits until the visible range and DOM row count
+agree. Unranked rows stage the Global candidate rather than being dropped. The directory's separate
+ScoreLATAM Mexico Finals URL is fetched and parsed through M5 as an alternative candidate when its
+reviewed edition mapping is present. GPM results are routed through HTML/PDF/image dispatch and the
+M6 extractor, but remain staged because season-standing candidates are not yet in the shared
+proposal schema. Reviewed mappings for 2025 and 2026 are configured; unlisted historical labels fail
+closed until reviewed. The live 2025 run produced a partial proposal with a complete 133-row
+ScoreLATAM candidate, preserved the Global standings HTML containing eight unranked rows, and staged
+the GPM PDF extraction. No archive data changed. Nonessential analytics and the observed Carto map
+style are blocked; other external origins remain subject to the source allowlist. M7 acceptance
+is complete for the reviewed editions; additional historical cycles require their own explicit
+configuration mappings before acquisition.
 
 ### M8: Automation and rollout
 
@@ -426,9 +445,9 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** add a source-native season-standing candidate/reconciliation contract before
-  emitting candidates, and verify how ITESO labels the latest official snapshot. Add ScoreLATAM
-  page traversal only if
+- **Next step:** add reviewed ICPC Global mappings for any additional requested historical cycles.
+  Continue the source-native season-standing contract and ITESO latest-official verification. Add
+  ScoreLATAM page traversal only if
   a requested edition exposes pagination; current controls select static score groups. Preserve
   the M1 overall Actions job-duration follow-up.
 - **Blockers:** the supplied M1 artifacts do not include overall Actions job duration, and the run
@@ -442,8 +461,10 @@ Final acceptance must prove:
   discovery, Mexico-group extraction, staged CLI reporting, reviewer-approved event equivalence,
   and explicit edition mappings for listed LATAM years are implemented. ITESO discovery, bounded
   document fetching, and staged extraction are in progress; source-native season-standing candidate
-  reconciliation and local PDF/OCR runtime verification remain open. ICPC Global adapters remain
-  outstanding. No workflow dispatch was performed.
+  reconciliation remains open. ICPC Global discovery, totals parsing, bounded history traversal,
+  reviewed 2025/2026 mappings, ScoreLATAM alternative candidate fallback, and staged GPM document
+  acquisition are implemented. The live 2025 workflow produced a reviewable partial proposal and
+  changed no archive data. No workflow dispatch was performed.
 
 ## Progress log
 
@@ -553,10 +574,11 @@ ScoreLATAM index, 2019-2025, including edition 2020 played in 2021. Unlisted lab
 candidate reconciliation remains review-only. `npm run validate` passed with 403 tests, and
 `git diff --check` passed. No archive data was changed.
 
-| Date       | Milestone | Update                                                                                                                                                                                                                                                                          | Verification / reference                                                                                                                                                                          |
-| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                                                              | Documentation only; no ingestion implementation yet.                                                                                                                                              |
-| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending.                                  | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md).                               |
-| 2026-10-28 | M1        | Recorded the supplied successful hosted benchmark and retained synthetic exact-match, 120-second, and 6-GiB gates. Run URL and installation/overall job timing remain pending; scheduling remains disabled.                                                                     | Supplied hosted report: exact rows in 3/3 runs, 21.86/8.52/8.55-second inference, 1.72-GiB sampled aggregate RSS. See [hosted measurements](standings-ingestion-spike.md#hosted-measurements).    |
-| 2026-10-29 | M6        | Started ITESO source discovery and bounded PDF/image acquisition, HTTPS origin upgrades, actual-type dispatch, a locked PyMuPDF/Tesseract bridge, deterministic multi-page table parsing, and atomic evidence staging. No season-standing candidate or archive data is emitted. | 27 focused ITESO/fetch/CLI tests, TypeScript checks, and Python syntax compilation passed. The local OCR runtime is unavailable; full validation and locked-Python document tests remain pending. |
-| 2026-10-30 | M6        | Installed uv 0.9.22, the locked Python project, and user-local Tesseract 5.5/Chromium runtimes without system package changes. Fixed text-cell grouping and verified generated text, scan, and two-page PDFs through the ITESO helper.                                          | 12 Python tests, 27 focused TypeScript tests, and the full offline Playwright/PDF/OCR harness passed; generated OCR cells retained 0.96 confidence. No system packages or archive data changed.   |
+| Date       | Milestone | Update                                                                                                                                                                                                                                                                          | Verification / reference                                                                                                                                                                                                                                 |
+| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                                                              | Documentation only; no ingestion implementation yet.                                                                                                                                                                                                     |
+| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending.                                  | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md).                                                                                      |
+| 2026-10-28 | M1        | Recorded the supplied successful hosted benchmark and retained synthetic exact-match, 120-second, and 6-GiB gates. Run URL and installation/overall job timing remain pending; scheduling remains disabled.                                                                     | Supplied hosted report: exact rows in 3/3 runs, 21.86/8.52/8.55-second inference, 1.72-GiB sampled aggregate RSS. See [hosted measurements](standings-ingestion-spike.md#hosted-measurements).                                                           |
+| 2026-10-29 | M6        | Started ITESO source discovery and bounded PDF/image acquisition, HTTPS origin upgrades, actual-type dispatch, a locked PyMuPDF/Tesseract bridge, deterministic multi-page table parsing, and atomic evidence staging. No season-standing candidate or archive data is emitted. | 27 focused ITESO/fetch/CLI tests, TypeScript checks, and Python syntax compilation passed. The local OCR runtime is unavailable; full validation and locked-Python document tests remain pending.                                                        |
+| 2026-10-30 | M6        | Installed uv 0.9.22, the locked Python project, and user-local Tesseract 5.5/Chromium runtimes without system package changes. Fixed text-cell grouping and verified generated text, scan, and two-page PDFs through the ITESO helper.                                          | 12 Python tests, 27 focused TypeScript tests, and the full offline Playwright/PDF/OCR harness passed; generated OCR cells retained 0.96 confidence. No system packages or archive data changed.                                                          |
+| 2026-10-30 | M7        | Completed ICPC Global directory/finder acquisition for the explicitly reviewed 2025/2026 editions, including bounded prior-year traversal, complete-table checks, ScoreLATAM fallback candidacy, and staged GPM document evidence. Unreviewed editions fail closed.             | Live 2025 run emitted a partial proposal with a complete 133-row ScoreLATAM candidate, raw Global Finals HTML with eight unranked rows, and staged GPM extraction; archive unchanged. `npm run validate` passed with 437 tests and 90.03% line coverage. |

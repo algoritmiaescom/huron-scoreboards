@@ -21,6 +21,12 @@
       "authorityId": "icpc-global",
       "name": "ICPC Global contest directory",
       "baseUrl": "https://icpc.global/regionals/contests",
+      "allowedOrigins": [
+        "https://www.google.com",
+        "https://www.gstatic.com",
+        "https://fonts.googleapis.com",
+        "https://fonts.gstatic.com"
+      ],
       "supportedStages": ["qualifier-1", "qualifier-2", "qualifier-3", "repechage", "final"],
       "supportsSeasonStanding": true
     },
@@ -29,6 +35,12 @@
       "authorityId": "icpc-global",
       "name": "ICPC Global Mexico finder",
       "baseUrl": "https://icpc.global/regionals/finder/mexico",
+      "allowedOrigins": [
+        "https://www.google.com",
+        "https://www.gstatic.com",
+        "https://fonts.googleapis.com",
+        "https://fonts.gstatic.com"
+      ],
       "supportedStages": ["qualifier-1", "qualifier-2", "qualifier-3", "repechage", "final"],
       "supportsSeasonStanding": true
     },
@@ -58,13 +70,17 @@
     { "stage": "repechage", "sourceIds": ["icpc-mexico"] },
     {
       "stage": "final",
-      "sourceIds": ["icpc-mexico", "icpc-global-directory", "scorelatam"]
+      "sourceIds": ["icpc-mexico", "icpc-global-directory", "icpc-global-finder", "scorelatam"]
     }
   ],
   "overrides": [],
   "preferredSeasonStandingSources": ["icpc-mexico", "iteso", "icpc-global-directory"],
   "seasonStandingOverrides": [],
   "editionMappings": [
+    { "sourceId": "icpc-global-directory", "editionLabel": "2025-2026", "seasonYear": 2025 },
+    { "sourceId": "icpc-global-directory", "editionLabel": "2026-2027", "seasonYear": 2026 },
+    { "sourceId": "icpc-global-finder", "editionLabel": "2025", "seasonYear": 2025 },
+    { "sourceId": "icpc-global-finder", "editionLabel": "2026", "seasonYear": 2026 },
     { "sourceId": "scorelatam", "editionLabel": "2019", "seasonYear": 2019 },
     {
       "sourceId": "scorelatam",

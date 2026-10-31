@@ -7,6 +7,7 @@ import { describe, expect, it } from 'vitest';
 
 import { BoundedJsonCache } from './cache';
 import { runStandingsIngestion } from './cli';
+import { renderRequestSchema } from './render';
 
 import type { AcquisitionDependencies } from './acquire';
 import type { BoundedSourceFetcher, SourceFetchResult } from './fetch';
@@ -77,6 +78,50 @@ const sourceConfigurationWithITESO = {
   preferredSeasonStandingSources: ['iteso'],
 };
 
+const sourceConfigurationWithICPCGlobal = {
+  ...sourceConfiguration,
+  sources: [
+    ...sourceConfiguration.sources,
+    {
+      id: 'icpc-global-directory',
+      authorityId: 'icpc-global',
+      name: 'ICPC Global contest directory',
+      baseUrl: 'https://icpc.global/regionals/contests',
+      supportedStages: ['final'],
+      supportsSeasonStanding: true,
+    },
+    {
+      id: 'icpc-global-finder',
+      authorityId: 'icpc-global',
+      name: 'ICPC Global Mexico finder',
+      baseUrl: 'https://icpc.global/regionals/finder/mexico',
+      supportedStages: ['final'],
+      supportsSeasonStanding: true,
+    },
+    {
+      id: 'scorelatam',
+      authorityId: 'scorelatam',
+      name: 'ScoreLATAM',
+      baseUrl: 'https://scorelatam.naquadah.com.br/',
+      supportedStages: ['final'],
+      supportsSeasonStanding: false,
+    },
+  ],
+  preferredSources: [
+    ...sourceConfiguration.preferredSources,
+    { stage: 'final', sourceIds: ['icpc-global-finder', 'scorelatam'] },
+  ],
+  preferredSeasonStandingSources: ['icpc-global-directory'],
+  editionMappings: [
+    ...sourceConfiguration.editionMappings,
+    { sourceId: 'icpc-global-directory', editionLabel: '2025-2026', seasonYear: 2025 },
+    { sourceId: 'icpc-global-directory', editionLabel: '2026-2027', seasonYear: 2026 },
+    { sourceId: 'icpc-global-finder', editionLabel: '2025', seasonYear: 2025 },
+    { sourceId: 'icpc-global-finder', editionLabel: '2026', seasonYear: 2026 },
+    { sourceId: 'scorelatam', editionLabel: '2025', seasonYear: 2025 },
+  ],
+};
+
 const identityRegistry = { schemaVersion: 1, aliases: [] };
 
 const scoreLATAMIndexHtml = `<!doctype html><html><body>
@@ -94,6 +139,70 @@ const scoreLATAMEditionHtml = `<!doctype html><html><body>
     <tr class="sitegroup17" style="display:none"><td>1</td><td>teammxmx006 /MX</td><td>[School Alpha] Alpha</td><td>3/144</td><td>1 (184)</td></tr>
   </tbody></table>
 </body></html>`;
+
+const icpcGlobalDirectoryHtml = `<!doctype html><html><body><table>
+  <thead><tr><th>Contest</th><th>Registration</th><th>Standings</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/regionals/finder/mcapgp-2026">The 2025 ICPC Gran Premio de Mexico</a></td><td>Closed</td><td><a href="https://www.icpcmexico.org/contests/gpmx-2025/acumulado">Results</a></td></tr>
+    <tr><td><a href="/regionals/finder/Mexico-2026">The 2025 ICPC Mexico Finals</a></td><td>Closed</td><td><a href="https://scorelatam.naquadah.com.br/latam-2025/">Results</a></td></tr>
+  </tbody>
+</table></body></html>`;
+
+const icpcGlobalDirectoryHtml2026 = `<!doctype html><html><body><table>
+  <thead><tr><th>Contest</th><th>Registration</th><th>Standings</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/regionals/finder/mcapgp-2027">The 2026 ICPC Gran Premio de Mexico</a></td><td>Open</td><td></td></tr>
+    <tr><td><a href="/regionals/finder/Mexico-2027">The 2026 ICPC Mexico Finals</a></td><td>Upcoming</td><td></td></tr>
+  </tbody>
+</table></body></html>`;
+
+const icpcGlobalCurrentFinderHtml = `<html><body><h1>The 2026 ICPC Mexico Finals</h1>
+  <p>Upcoming Contest</p><a href="/regionals/finder/Mexico-2026">See Prior Year</a>
+  <h2>Contest List</h2><a href="/regionals/finder/mcapgp-2027">The 2026 ICPC Gran Premio de Mexico</a>
+</body></html>`;
+
+const icpcGlobalCurrentFinderNoPriorHtml = `<html><body><h1>The 2026 ICPC Mexico Finals</h1>
+  <p>Upcoming Contest</p><a href="/regionals/finder/Mexico-2027/standings">See Standings</a>
+  <h2>Contest List</h2><a href="/regionals/finder/mcapgp-2027">The 2026 ICPC Gran Premio de Mexico</a>
+</body></html>`;
+
+const icpcGlobalGpmFinderNoStandingsHtml = `<html><body><h1>The 2026 ICPC Gran Premio de Mexico</h1>
+  <p>Upcoming Contest</p>
+</body></html>`;
+
+const icpcGlobalMexicoFinderHtml = `<html><body><h1>The 2025 ICPC Mexico Finals</h1>
+  <p>Past Contest</p><a href="/regionals/finder/Mexico-2026/standings">See Standings</a>
+  <h2>Contest List</h2><a href="/regionals/finder/mcapgp-2026">The 2025 ICPC Gran Premio de Mexico</a>
+  <a href="/regionals/finder/Mexico-2025">See Prior Year</a>
+</body></html>`;
+
+const icpcGlobalGpmFinderHtml = `<html><body><h1>The 2025 ICPC Gran Premio de Mexico</h1>
+  <p>Past Contest</p><a href="/regionals/finder/mcapgp-2026/standings">See Standings</a>
+  <a href="/regionals/finder/mcapgp-2025">See Prior Year</a>
+</body></html>`;
+
+const icpcGlobalStandingsHtml = `<html><body><main>
+  <div>Standings for The 2025 ICPC Mexico Finals</div>
+  <table><thead><tr><th>Place</th><th>Institution</th><th>Team</th><th>Problems Solved</th><th>Total Time</th><th>Last Solution</th><th>Citation</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>School Alpha</td><td>Team Alpha</td><td>7</td><td>961</td><td>04:43</td><td></td></tr>
+    <tr><td>2</td><td>School Beta</td><td>Team Beta</td><td>6</td><td>414</td><td>04:31</td><td></td></tr>
+  </tbody></table><p>Rows per page: 1 - 2 of 2</p>
+</main></body></html>`;
+
+const icpcGlobalStandingsHtml2026 = `<html><body><main>
+  <div>Standings for The 2026 ICPC Mexico Finals</div>
+  <table><thead><tr><th>Place</th><th>Institution</th><th>Team</th><th>Problems Solved</th><th>Total Time</th><th>Last Solution</th></tr></thead>
+  <tbody><tr><td>1</td><td>School Gamma</td><td>Team Gamma</td><td>3</td><td>120</td><td>02:00</td></tr></tbody></table>
+  <p>Rows per page: 1000 1-1 of 1</p>
+</main></body></html>`;
+
+const icpcGlobalGpmStandingsHtml = `<html><body><main>
+  <div>Standings for The 2025 ICPC Gran Premio de Mexico</div>
+  <table><thead><tr><th>Place</th><th>Institution</th><th>Team</th><th>Problems Solved</th><th>Total Time</th><th>Last Solution</th></tr></thead>
+  <tbody><tr><td>1</td><td>School Alpha</td><td>Team Alpha</td><td>20</td><td>200</td><td>05:00</td></tr></tbody></table>
+  <p>Rows per page: 1 - 1 of 1</p>
+</main></body></html>`;
 
 const discoveryHtml = `<!doctype html><html><body>
   <h2>Temporada 2024</h2>
@@ -821,5 +930,532 @@ describe('standings ingestion CLI', () => {
     await expect(
       runStandingsIngestion(['--acquire-iteso', '--season', '2025', '--stage', 'final']),
     ).rejects.toThrow('accumulated season standings, not contest stages');
+  });
+
+  it('traverses the ICPC Global directory and saved prior-year finder, then proposes complete Mexico Finals totals', async () => {
+    const root = await createRoot(sourceConfigurationWithICPCGlobal);
+    const cacheDirectory = await mkdtemp(path.join(root, 'icpc-global-cache-'));
+    const bodies = new Map<string, string>([
+      ['https://icpc.global/regionals/finder/mexico', icpcGlobalCurrentFinderHtml],
+      ['https://icpc.global/regionals/finder/Mexico-2026', icpcGlobalMexicoFinderHtml],
+      ['https://icpc.global/regionals/finder/mcapgp-2026', icpcGlobalGpmFinderHtml],
+      ['https://scorelatam.naquadah.com.br/latam-2025/', scoreLATAMEditionHtml],
+      [
+        'https://www.icpcmexico.org/contests/gpmx-2025/acumulado',
+        '<html><body><main><a href="/contests/gpmx-2025/score.pdf">Download results</a></main></body></html>',
+      ],
+      ['https://www.icpcmexico.org/contests/gpmx-2025/score.pdf', '%PDF-1.7 synthetic GPM'],
+    ]);
+    const requestedUrls: string[] = [];
+    const renderCalls: { sourceId: string; url: string; actions: string[] }[] = [];
+    const fetcher = {
+      fetch: (url: string): Promise<SourceFetchResult> => {
+        requestedUrls.push(url);
+        const body = bodies.get(url);
+        if (body === undefined) {
+          return Promise.resolve({
+            status: 'failed',
+            sourceId: url.includes('icpcmexico.org') ? 'icpc-mexico' : 'icpc-global-finder',
+            url,
+            kind: 'http',
+            message: 'Unexpected ICPC Global fixture URL.',
+            httpStatus: 404,
+          });
+        }
+        const bytes = new TextEncoder().encode(body);
+        return Promise.resolve({
+          status: 'fetched',
+          sourceId: url.includes('icpcmexico.org') ? 'icpc-mexico' : 'icpc-global-finder',
+          discoveryUrl: url,
+          finalUrl: url,
+          httpStatus: 200,
+          contentType: url.endsWith('.pdf') ? 'application/pdf' : 'text/html',
+          body: bytes,
+          contentSha256: createHash('sha256').update(bytes).digest('hex'),
+          redirects: 0,
+        });
+      },
+    } as unknown as BoundedSourceFetcher;
+    try {
+      const result = await runStandingsIngestion(
+        ['--acquire-icpc-global', '--season', '2025'],
+        root,
+        {
+          acquisition: {
+            cache: new BoundedJsonCache({
+              directory: cacheDirectory,
+              ttlMs: 60_000,
+              maxEntries: 10,
+              maxEntryBytes: 1024 * 1024,
+            }),
+            parse: () => Promise.reject(new Error('ICPC Global uses its source adapter.')),
+            fetcherForSource: () => fetcher,
+            render: (source, rawRequest) => {
+              const request = renderRequestSchema.parse(rawRequest);
+              renderCalls.push({
+                sourceId: source.id,
+                url: request.url,
+                actions: request.actions.map((action) =>
+                  'selector' in action
+                    ? action.selector
+                    : `${action.tableSelector}|${action.summarySelector}`,
+                ),
+              });
+              const html =
+                source.id === 'icpc-global-directory'
+                  ? icpcGlobalDirectoryHtml
+                  : request.url === 'https://icpc.global/regionals/finder/mexico'
+                    ? icpcGlobalCurrentFinderHtml
+                    : request.url.endsWith('/Mexico-2026')
+                      ? icpcGlobalMexicoFinderHtml
+                      : request.url.endsWith('/mcapgp-2026/standings')
+                        ? icpcGlobalGpmStandingsHtml
+                        : request.url.endsWith('/mcapgp-2026')
+                          ? icpcGlobalGpmFinderHtml
+                          : icpcGlobalStandingsHtml;
+              const bytes = new TextEncoder().encode(html);
+              return Promise.resolve({
+                sourceId: source.id,
+                discoveryUrl: request.url,
+                finalUrl: request.url,
+                capturedAt: '2026-10-30T12:00:00Z',
+                html,
+                contentSha256: createHash('sha256').update(bytes).digest('hex'),
+                requests: 4,
+              });
+            },
+            now: () => new Date('2026-10-30T12:00:00Z'),
+          },
+          itesoDocumentExtractor: (body, type) => {
+            expect(type).toBe('pdf');
+            expect(new TextDecoder().decode(body)).toContain('%PDF-1.7');
+            return Promise.resolve({
+              version: 1,
+              pageCount: 1,
+              pages: [
+                {
+                  pageNumber: 1,
+                  method: 'text',
+                  text: 'Resultado acumulado',
+                  tables: [
+                    {
+                      rows: [
+                        {
+                          cells: ['Lugar', 'Equipo', 'Puntos', 'Clasifica'],
+                          confidences: [null, null, null, null],
+                        },
+                        {
+                          cells: ['1', 'Equipo Alfa', '12.5', 'Sí'],
+                          confidences: [null, null, null, null],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            });
+          },
+        },
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        candidates: {
+          sourceId: string;
+          sourceEditionLabel: string;
+          contest: { seasonYear: number; seriesId: string; stage: string };
+          rows: {
+            place: number;
+            teamName: string;
+            schoolName: string;
+            publishedTotals: { solved: number; penalty: number };
+          }[];
+        }[];
+        sourceFailures: { message: string }[];
+      };
+      expect(result.status).toBe('partial');
+      expect(proposal.candidates).toHaveLength(2);
+      expect(proposal.candidates[0]).toMatchObject({
+        sourceId: 'icpc-global-finder',
+        sourceEditionLabel: '2025',
+        contest: { seasonYear: 2025, seriesId: 'mexico-finals', stage: 'final' },
+        rows: [
+          {
+            place: 1,
+            teamName: 'Team Alpha',
+            schoolName: 'School Alpha',
+            publishedTotals: { solved: 7, penalty: 961 },
+          },
+          {
+            place: 2,
+            teamName: 'Team Beta',
+            schoolName: 'School Beta',
+            publishedTotals: { solved: 6, penalty: 414 },
+          },
+        ],
+      });
+      expect(proposal.candidates[1]).toMatchObject({
+        sourceId: 'scorelatam',
+        sourceEditionLabel: '2025',
+        contest: { seasonYear: 2025, seriesId: 'mexico-finals', stage: 'final' },
+      });
+      expect(renderCalls.map(({ sourceId, url }) => `${sourceId}:${url}`)).toEqual([
+        'icpc-global-directory:https://icpc.global/regionals/contests',
+        'icpc-global-finder:https://icpc.global/regionals/finder/mexico',
+        'icpc-global-finder:https://icpc.global/regionals/finder/Mexico-2026',
+        'icpc-global-finder:https://icpc.global/regionals/finder/mcapgp-2026',
+        'icpc-global-finder:https://icpc.global/regionals/finder/mcapgp-2026/standings',
+        'icpc-global-finder:https://icpc.global/regionals/finder/Mexico-2026/standings',
+      ]);
+      expect(renderCalls[0].actions).toEqual([
+        '[data-test="select_year"]',
+        '[role="option"]:has-text("2025-2026")',
+        'button:has-text("The 2025-2026 ICPC Latin America Contests")',
+      ]);
+      expect(requestedUrls).toEqual([
+        'https://scorelatam.naquadah.com.br/latam-2025/',
+        'https://www.icpcmexico.org/contests/gpmx-2025/acumulado',
+        'https://www.icpcmexico.org/contests/gpmx-2025/score.pdf',
+        'https://scorelatam.naquadah.com.br/latam-2025/',
+      ]);
+      expect(
+        proposal.sourceFailures.some(({ message }) => message.includes('season-standing')),
+      ).toBe(true);
+      const artifactReference = /staged at (\.standings-ingestion\/staged\/[^ ]+\.json)/.exec(
+        proposal.sourceFailures[0].message,
+      )?.[1];
+      expect(artifactReference).toBeDefined();
+      const artifact = JSON.parse(
+        await readFile(path.join(root, artifactReference ?? ''), 'utf8'),
+      ) as {
+        cycleLabel: string;
+        finderHistory: { discovery: { editionYear: number } }[];
+        gpmStandingsResults: unknown[];
+        finalAlternativeResults: {
+          sourceId: string;
+          extraction: { status: string };
+        }[];
+        primaryFinalStandingsCapture: { html: string } | null;
+      };
+      expect(artifact).toMatchObject({
+        cycleLabel: '2025-2026',
+        finderHistory: [{ discovery: { editionYear: 2026 } }, { discovery: { editionYear: 2025 } }],
+      });
+      expect(artifact.gpmStandingsResults).toHaveLength(2);
+      expect(artifact.finalAlternativeResults).toMatchObject([
+        { sourceId: 'scorelatam', extraction: { status: 'ready' } },
+      ]);
+      expect(artifact.primaryFinalStandingsCapture?.html).toContain(
+        'Standings for The 2025 ICPC Mexico Finals',
+      );
+    } finally {
+      await rm(cacheDirectory, { recursive: true, force: true });
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('stops at the current Mexico Finals edition when no prior year exists', async () => {
+    const root = await createRoot(sourceConfigurationWithICPCGlobal);
+    const cacheDirectory = await mkdtemp(path.join(root, 'icpc-global-current-cache-'));
+    const bodies = new Map([
+      ['https://icpc.global/regionals/finder/mcapgp-2027', icpcGlobalGpmFinderNoStandingsHtml],
+    ]);
+    const requestedUrls: string[] = [];
+    const renderCalls: string[] = [];
+    const fetcher = {
+      fetch: (url: string): Promise<SourceFetchResult> => {
+        requestedUrls.push(url);
+        const body = bodies.get(url);
+        if (body === undefined) {
+          return Promise.resolve({
+            status: 'failed',
+            sourceId: 'icpc-global-finder',
+            url,
+            kind: 'http',
+            message: 'Unexpected current-edition fixture URL.',
+            httpStatus: 404,
+          });
+        }
+        const bytes = new TextEncoder().encode(body);
+        return Promise.resolve({
+          status: 'fetched',
+          sourceId: 'icpc-global-finder',
+          discoveryUrl: url,
+          finalUrl: url,
+          httpStatus: 200,
+          contentType: 'text/html',
+          body: bytes,
+          contentSha256: createHash('sha256').update(bytes).digest('hex'),
+          redirects: 0,
+        });
+      },
+    } as unknown as BoundedSourceFetcher;
+    try {
+      const result = await runStandingsIngestion(
+        ['--acquire-icpc-global', '--season', '2026'],
+        root,
+        {
+          acquisition: {
+            cache: new BoundedJsonCache({
+              directory: cacheDirectory,
+              ttlMs: 60_000,
+              maxEntries: 10,
+              maxEntryBytes: 1024 * 1024,
+            }),
+            parse: () => Promise.reject(new Error('ICPC Global uses its source adapter.')),
+            fetcherForSource: () => fetcher,
+            render: (source, rawRequest) => {
+              const request = renderRequestSchema.parse(rawRequest);
+              renderCalls.push(`${source.id}:${request.url}`);
+              const html =
+                source.id === 'icpc-global-directory'
+                  ? icpcGlobalDirectoryHtml2026
+                  : request.url.endsWith('/mcapgp-2027')
+                    ? icpcGlobalGpmFinderNoStandingsHtml
+                    : request.url.endsWith('/Mexico-2027/standings')
+                      ? icpcGlobalStandingsHtml2026
+                      : icpcGlobalCurrentFinderNoPriorHtml;
+              const bytes = new TextEncoder().encode(html);
+              return Promise.resolve({
+                sourceId: source.id,
+                discoveryUrl: request.url,
+                finalUrl: request.url,
+                capturedAt: '2026-10-30T12:00:00Z',
+                html,
+                contentSha256: createHash('sha256').update(bytes).digest('hex'),
+                requests: 4,
+              });
+            },
+          },
+        },
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        candidates: { sourceId: string; contest: { seasonYear: number }; rows: unknown[] }[];
+      };
+      expect(result.status).toBe('partial');
+      expect(proposal.candidates).toHaveLength(1);
+      expect(proposal.candidates[0]).toMatchObject({
+        sourceId: 'icpc-global-finder',
+        contest: { seasonYear: 2026 },
+        rows: [{ place: 1, teamName: 'Team Gamma' }],
+      });
+      expect(renderCalls).toEqual([
+        'icpc-global-directory:https://icpc.global/regionals/contests',
+        'icpc-global-finder:https://icpc.global/regionals/finder/mexico',
+        'icpc-global-finder:https://icpc.global/regionals/finder/mcapgp-2027',
+        'icpc-global-finder:https://icpc.global/regionals/finder/Mexico-2027/standings',
+      ]);
+      expect(requestedUrls).toEqual([]);
+    } finally {
+      await rm(cacheDirectory, { recursive: true, force: true });
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('requires an explicit ICPC Global cycle mapping before rendering', async () => {
+    const root = await createRoot(sourceConfigurationWithICPCGlobal);
+    try {
+      const result = await runStandingsIngestion(
+        ['--acquire-icpc-global', '--season', '2024'],
+        root,
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        sourceFailures: { message: string }[];
+      };
+      expect(result.status).toBe('failed');
+      expect(proposal.sourceFailures[0].message).toContain(
+        'has no matching reviewed edition mapping',
+      );
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('fails closed when the ICPC Global sources are not configured', async () => {
+    const root = await createRoot();
+    try {
+      await expect(
+        runStandingsIngestion(['--acquire-icpc-global', '--season', '2025'], root),
+      ).rejects.toThrow('Both ICPC Global directory and finder sources must be configured');
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('stages an unfamiliar rendered directory without starting finder traversal', async () => {
+    const root = await createRoot(sourceConfigurationWithICPCGlobal);
+    const cacheDirectory = await mkdtemp(path.join(root, 'icpc-global-directory-error-'));
+    try {
+      const renderCalls: string[] = [];
+      const result = await runStandingsIngestion(
+        ['--acquire-icpc-global', '--season', '2025'],
+        root,
+        {
+          acquisition: {
+            cache: new BoundedJsonCache({
+              directory: cacheDirectory,
+              ttlMs: 60_000,
+              maxEntries: 10,
+              maxEntryBytes: 1024 * 1024,
+            }),
+            parse: () => Promise.reject(new Error('ICPC Global uses its source adapter.')),
+            render: (source, rawRequest) => {
+              const request = renderRequestSchema.parse(rawRequest);
+              renderCalls.push(source.id);
+              const html = '<html><body><main>Directory layout changed</main></body></html>';
+              const bytes = new TextEncoder().encode(html);
+              return Promise.resolve({
+                sourceId: source.id,
+                discoveryUrl: request.url,
+                finalUrl: request.url,
+                capturedAt: '2026-10-30T12:00:00Z',
+                html,
+                contentSha256: createHash('sha256').update(bytes).digest('hex'),
+                requests: 4,
+              });
+            },
+          },
+        },
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        candidates: unknown[];
+        sourceFailures: { message: string }[];
+      };
+      expect(result.status).toBe('failed');
+      expect(proposal.candidates).toEqual([]);
+      expect(proposal.sourceFailures[0].message).toContain('directory discovery requires review');
+      expect(renderCalls).toEqual(['icpc-global-directory']);
+    } finally {
+      await rm(cacheDirectory, { recursive: true, force: true });
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('requires one ICPC Global season and reports a bounded directory-render failure', async () => {
+    await expect(runStandingsIngestion(['--acquire-icpc-global'])).rejects.toThrow(
+      '--acquire-icpc-global requires --season',
+    );
+    await expect(
+      runStandingsIngestion([
+        '--acquire-icpc-global',
+        '--season',
+        '2025',
+        '--source',
+        'icpc-global-finder',
+      ]),
+    ).rejects.toThrow('collects the directory and finder together');
+    await expect(
+      runStandingsIngestion(['--acquire-icpc-global', '--season', '2025', '--stage', 'final']),
+    ).rejects.toThrow('acquires Mexico Finals and GPM discovery together');
+
+    const root = await createRoot(sourceConfigurationWithICPCGlobal);
+    const cacheDirectory = await mkdtemp(path.join(root, 'icpc-global-render-error-'));
+    try {
+      const result = await runStandingsIngestion(
+        ['--acquire-icpc-global', '--season', '2025'],
+        root,
+        {
+          acquisition: {
+            cache: new BoundedJsonCache({
+              directory: cacheDirectory,
+              ttlMs: 60_000,
+              maxEntries: 10,
+              maxEntryBytes: 1024 * 1024,
+            }),
+            parse: () => Promise.reject(new Error('ICPC Global uses its source adapter.')),
+            render: () => Promise.reject(new Error('blocked by source policy')),
+          },
+        },
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        sourceFailures: { message: string }[];
+      };
+      expect(result.status).toBe('failed');
+      expect(proposal.sourceFailures[0].message).toContain(
+        'Could not render ICPC Global cycle 2025-2026: blocked by source policy',
+      );
+    } finally {
+      await rm(cacheDirectory, { recursive: true, force: true });
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('stops and reports a repeated ICPC Global prior-year URL', async () => {
+    const root = await createRoot(sourceConfigurationWithICPCGlobal);
+    const cacheDirectory = await mkdtemp(path.join(root, 'icpc-global-loop-cache-'));
+    const loopHtml = `<html><body><h1>The 2026 ICPC Mexico Finals</h1>
+      <a href="/regionals/finder/mexico">See Prior Year</a>
+      <a href="/regionals/finder/mcapgp-2027">The 2026 ICPC Gran Premio de Mexico</a>
+    </body></html>`;
+    const requestedUrls: string[] = [];
+    const renderedUrls: string[] = [];
+    const fetcher = {
+      fetch: (url: string): Promise<SourceFetchResult> => {
+        requestedUrls.push(url);
+        const bytes = new TextEncoder().encode(loopHtml);
+        return Promise.resolve({
+          status: 'fetched',
+          sourceId: 'icpc-global-finder',
+          discoveryUrl: url,
+          finalUrl: url,
+          httpStatus: 200,
+          contentType: 'text/html',
+          body: bytes,
+          contentSha256: createHash('sha256').update(bytes).digest('hex'),
+          redirects: 0,
+        });
+      },
+    } as unknown as BoundedSourceFetcher;
+    try {
+      const result = await runStandingsIngestion(
+        ['--acquire-icpc-global', '--season', '2025'],
+        root,
+        {
+          acquisition: {
+            cache: new BoundedJsonCache({
+              directory: cacheDirectory,
+              ttlMs: 60_000,
+              maxEntries: 10,
+              maxEntryBytes: 1024 * 1024,
+            }),
+            parse: () => Promise.reject(new Error('ICPC Global uses its source adapter.')),
+            fetcherForSource: () => fetcher,
+            render: (source, rawRequest) => {
+              const request = renderRequestSchema.parse(rawRequest);
+              renderedUrls.push(request.url);
+              const html =
+                source.id === 'icpc-global-directory' ? icpcGlobalDirectoryHtml : loopHtml;
+              const bytes = new TextEncoder().encode(html);
+              return Promise.resolve({
+                sourceId: source.id,
+                discoveryUrl: request.url,
+                finalUrl: request.url,
+                capturedAt: '2026-10-30T12:00:00Z',
+                html,
+                contentSha256: createHash('sha256').update(bytes).digest('hex'),
+                requests: 4,
+              });
+            },
+          },
+        },
+      );
+      const proposal = JSON.parse(await readFile(result.proposalPath, 'utf8')) as {
+        status: string;
+        sourceFailures: { message: string }[];
+      };
+      expect(result.status).toBe('failed');
+      expect(proposal.sourceFailures[0].message).toContain('prior-year navigation repeated');
+      expect(renderedUrls).toEqual([
+        'https://icpc.global/regionals/contests',
+        'https://icpc.global/regionals/finder/mexico',
+      ]);
+      expect(requestedUrls).toEqual([]);
+    } finally {
+      await rm(cacheDirectory, { recursive: true, force: true });
+      await rm(root, { recursive: true, force: true });
+    }
   });
 });

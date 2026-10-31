@@ -21,6 +21,11 @@ export const renderActionSchema = z.discriminatedUnion('kind', [
   z.object({ kind: z.literal('click'), selector: selectorSchema }),
   z.object({ kind: z.literal('select'), selector: selectorSchema, value: z.string().max(512) }),
   z.object({ kind: z.literal('wait'), selector: selectorSchema }),
+  z.object({
+    kind: z.literal('waitForPagination'),
+    tableSelector: selectorSchema,
+    summarySelector: selectorSchema,
+  }),
 ]);
 
 export const renderRequestSchema = z.object({
@@ -52,8 +57,36 @@ export interface RenderedSourceState {
 
 interface CaptureLocator {
   count: () => Promise<number>;
-  evaluate: (expression: string) => Promise<unknown>;
+  evaluate: (expression: (element: { outerHTML: string }) => string) => Promise<unknown>;
 }
+
+interface PaginationElement {
+  innerText: string;
+  querySelector: (selector: string) => PaginationElement | null;
+  querySelectorAll: (selector: string) => { length: number };
+}
+
+interface PaginationDocument {
+  querySelector: (selector: string) => PaginationElement | null;
+}
+
+export const isPaginationComplete = (
+  selectors: { tableSelector: string; summarySelector: string },
+  documentRoot?: PaginationDocument,
+): boolean => {
+  const root = documentRoot ?? (globalThis as unknown as { document: PaginationDocument }).document;
+  const container = root.querySelector(selectors.summarySelector);
+  const table = root.querySelector(selectors.tableSelector);
+  const summary = container?.innerText ?? '';
+  const matches = [...summary.matchAll(/\b(\d+)\s*[-–]\s*(\d+)\s+of\s+(\d+)\b/gi)];
+  if (table === null || matches.length !== 1) {
+    return false;
+  }
+  const first = Number(matches[0][1]);
+  const last = Number(matches[0][2]);
+  const total = Number(matches[0][3]);
+  return first === 1 && last === total && table.querySelectorAll('tbody tr').length === total;
+};
 
 export class SourceRenderError extends Error {
   constructor(message: string) {
@@ -113,13 +146,48 @@ export const validateRenderLimits = (limits: RenderLimits): void => {
   }
 };
 
-export const isAllowedSourceRequest = (value: string, origin: string): boolean => {
+export const isAllowedSourceRequest = (
+  value: string,
+  allowedOrigins: string | ReadonlySet<string>,
+): boolean => {
   if (value.startsWith('data:') || value.startsWith('blob:') || value === 'about:blank') {
     return true;
   }
   try {
     const url = new URL(value);
-    return url.protocol === 'https:' && url.origin === origin;
+    const origins = typeof allowedOrigins === 'string' ? new Set([allowedOrigins]) : allowedOrigins;
+    return url.protocol === 'https:' && origins.has(url.origin);
+  } catch {
+    return false;
+  }
+};
+
+export const isNonessentialTrackingRequest = (value: string): boolean => {
+  try {
+    const url = new URL(value);
+    if (url.protocol !== 'https:') {
+      return false;
+    }
+    return (
+      (url.origin === 'https://www.googletagmanager.com' && url.pathname === '/gtag/js') ||
+      (url.origin === 'https://www.google-analytics.com' && url.pathname === '/g/collect')
+    );
+  } catch {
+    return false;
+  }
+};
+
+export const isNonessentialPageResource = (value: string): boolean => {
+  if (isNonessentialTrackingRequest(value)) {
+    return true;
+  }
+  try {
+    const url = new URL(value);
+    return (
+      url.protocol === 'https:' &&
+      url.origin === 'https://basemaps.cartocdn.com' &&
+      url.pathname === '/gl/positron-gl-style/style.json'
+    );
   } catch {
     return false;
   }
@@ -139,13 +207,18 @@ export const performRenderActions = async (
   timeoutMs: number,
 ): Promise<void> => {
   for (const action of actions) {
-    const locator = page.locator(action.selector);
     if (action.kind === 'click') {
-      await locator.click({ timeout: timeoutMs });
+      await page.locator(action.selector).click({ timeout: timeoutMs });
     } else if (action.kind === 'select') {
-      await locator.selectOption(action.value, { timeout: timeoutMs });
+      await page.locator(action.selector).selectOption(action.value, { timeout: timeoutMs });
+    } else if (action.kind === 'wait') {
+      await page.locator(action.selector).waitFor({ state: 'visible', timeout: timeoutMs });
     } else {
-      await locator.waitFor({ state: 'visible', timeout: timeoutMs });
+      await page.waitForFunction(
+        isPaginationComplete,
+        { tableSelector: action.tableSelector, summarySelector: action.summarySelector },
+        { timeout: timeoutMs },
+      );
     }
   }
 };
@@ -157,7 +230,10 @@ export const renderSelectedSourceState = async (
 ): Promise<RenderedSourceState> => {
   const request = validateRenderRequest(source, rawRequest);
   validateRenderLimits(limits);
-  const origin = new URL(source.baseUrl).origin;
+  const allowedOrigins = new Set([
+    new URL(source.baseUrl).origin,
+    ...(source.allowedOrigins ?? []).map((origin) => new URL(origin).origin),
+  ]);
   const browser = await chromium.launch({ headless: true });
   try {
     const context = await browser.newContext({
@@ -176,7 +252,11 @@ export const renderSelectedSourceState = async (
         await route.abort('blockedbyclient');
         return;
       }
-      if (!isAllowedSourceRequest(requestUrl, origin)) {
+      if (isNonessentialPageResource(requestUrl)) {
+        await route.abort('blockedbyclient');
+        return;
+      }
+      if (!isAllowedSourceRequest(requestUrl, allowedOrigins)) {
         blockedReason = `Browser request left the configured source origin: ${requestUrl}`;
         await route.abort('blockedbyclient');
         return;
@@ -196,7 +276,7 @@ export const renderSelectedSourceState = async (
       if ((await capture.count()) !== 1) {
         throw new SourceRenderError('Capture selector must match exactly one rendered element.');
       }
-      const capturedHtml = await capture.evaluate('element => element.outerHTML');
+      const capturedHtml = await capture.evaluate((element) => element.outerHTML);
       if (typeof capturedHtml !== 'string') {
         throw new SourceRenderError('Selected rendered element did not return HTML text.');
       }

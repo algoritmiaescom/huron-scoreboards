@@ -14,6 +14,14 @@ import { createJsonScoreboardsRepository } from '@/features/scoreboards/reposito
 
 import { acquireStandingsBatch } from './acquire';
 import {
+  classifyICPCGlobalDocument,
+  deduplicateICPCGlobalDestinations,
+  discoverICPCGlobalDirectory,
+  discoverICPCGlobalFinder,
+  discoverICPCGlobalStandingsLink,
+  parseICPCGlobalStandings,
+} from './adapters/icpc-global';
+import {
   discoverICPCMexicoIndex,
   discoverICPCMexicoScoreboard,
   parseICPCMexicoScoreboard,
@@ -30,16 +38,23 @@ import { BoundedJsonCache } from './cache';
 import { BoundedSourceFetcher } from './fetch';
 import { extractITESODocument } from './iteso-document-extractor';
 import { createReviewProposal, writeJsonAtomically, writeProposalAtomically } from './operator';
+import { renderRequestSchema, renderSelectedSourceState } from './render';
 
 import type {
   AcquisitionDependencies,
   AcquisitionRequest,
   SourceCandidatePayload,
 } from './acquire';
+import type {
+  ICPCGlobalFinderDiscovery,
+  ICPCGlobalStandingsExtraction,
+} from './adapters/icpc-global';
 import type { ICPCMexicoDiscovery } from './adapters/icpc-mexico';
-import type { ScoreLATAMMexicoScoreboard } from './adapters/scorelatam';
+import type { ITESOAccumulatedExtraction } from './adapters/iteso-document';
+import type { ScoreLATAMEdition, ScoreLATAMMexicoScoreboard } from './adapters/scorelatam';
 import type { SourceFetchResult } from './fetch';
 import type { ITESOExtractedDocument } from './iteso-document-extractor';
+import type { RenderedSourceState, RenderLimits, RenderRequest } from './render';
 import type { JsonFiles } from '@/lib/data/repository';
 
 const MAX_CANDIDATE_FILES = 100;
@@ -48,11 +63,13 @@ const MAX_TOTAL_CANDIDATE_BYTES = 256 * 1024 * 1024;
 const MAX_CANDIDATE_RECORDS = 1000;
 const MAX_ICPC_MEXICO_JOBS = 20;
 const MAX_ICPC_MEXICO_BACKFILL_YEARS = 5;
+const MAX_ICPC_GLOBAL_PRIOR_YEARS = 20;
 
 interface CliOptions {
   acquireICPCMexico: boolean;
   acquireScoreLATAM: boolean;
   acquireITESO: boolean;
+  acquireICPCGlobal: boolean;
   sourceId?: string;
   seasonYear?: number;
   seasonYears?: number[];
@@ -80,6 +97,7 @@ const parseCliOptions = (argv: string[]): CliOptions => {
       'acquire-icpc-mexico': { type: 'boolean', default: false },
       'acquire-scorelatam': { type: 'boolean', default: false },
       'acquire-iteso': { type: 'boolean', default: false },
+      'acquire-icpc-global': { type: 'boolean', default: false },
       source: { type: 'string' },
       season: { type: 'string' },
       'season-from': { type: 'string' },
@@ -92,7 +110,13 @@ const parseCliOptions = (argv: string[]): CliOptions => {
   const acquireICPCMexico = values['acquire-icpc-mexico'];
   const acquireScoreLATAM = values['acquire-scorelatam'];
   const acquireITESO = values['acquire-iteso'];
-  const acquisitionModes = [acquireICPCMexico, acquireScoreLATAM, acquireITESO].filter(Boolean);
+  const acquireICPCGlobal = values['acquire-icpc-global'];
+  const acquisitionModes = [
+    acquireICPCMexico,
+    acquireScoreLATAM,
+    acquireITESO,
+    acquireICPCGlobal,
+  ].filter(Boolean);
   if (acquisitionModes.length > 1) {
     throw new Error('Choose only one source-specific acquisition mode per run.');
   }
@@ -160,6 +184,9 @@ const parseCliOptions = (argv: string[]): CliOptions => {
   if (acquireITESO && seasonYear === undefined) {
     throw new Error('--acquire-iteso requires --season to select one ITESO edition.');
   }
+  if (acquireICPCGlobal && seasonYear === undefined) {
+    throw new Error('--acquire-icpc-global requires --season to select one Mexican edition.');
+  }
   if (acquireScoreLATAM && values.series !== undefined && values.series !== 'mexico-finals') {
     throw new Error('--acquire-scorelatam only supports --series mexico-finals.');
   }
@@ -172,10 +199,19 @@ const parseCliOptions = (argv: string[]): CliOptions => {
   if (acquireITESO && (values.series !== undefined || values.stage !== undefined)) {
     throw new Error('--acquire-iteso extracts accumulated season standings, not contest stages.');
   }
+  if (acquireICPCGlobal && values.source !== undefined) {
+    throw new Error(
+      '--acquire-icpc-global collects the directory and finder together; omit --source.',
+    );
+  }
+  if (acquireICPCGlobal && (values.series !== undefined || values.stage !== undefined)) {
+    throw new Error('--acquire-icpc-global acquires Mexico Finals and GPM discovery together.');
+  }
   return {
     acquireICPCMexico,
     acquireScoreLATAM,
     acquireITESO,
+    acquireICPCGlobal,
     ...(values.source === undefined ? {} : { sourceId: values.source }),
     ...(seasonYear === undefined ? {} : { seasonYear }),
     ...(seasonYears === undefined ? {} : { seasonYears }),
@@ -231,6 +267,33 @@ const textFromFetch = async (
 ): Promise<Extract<SourceFetchResult, { status: 'fetched' }> | string> => {
   const result = await fetcher.fetch(url);
   return result.status === 'fetched' ? result : `${result.kind}: ${result.message}`;
+};
+
+const fetchFromConfiguredOrigin = async (
+  targetUrl: string,
+  configuration: ReturnType<typeof sourceConfigurationSchema.parse>,
+  dependencies?: AcquisitionDependencies,
+) => {
+  const target = new URL(targetUrl);
+  const source = configuration.sources.find(({ baseUrl, allowedOrigins }) => {
+    const origins = [
+      new URL(baseUrl).origin,
+      ...(allowedOrigins ?? []).map((origin) => new URL(origin).origin),
+    ];
+    return origins.includes(target.origin);
+  });
+  if (source === undefined) {
+    return null;
+  }
+  const fetcher =
+    dependencies?.fetcherForSource?.(configuration, source.id) ??
+    new BoundedSourceFetcher(source, {
+      timeoutMs: 20_000,
+      maxResponseBytes: 32 * 1024 * 1024,
+      maxRequests: 5,
+      maxRedirects: 3,
+    });
+  return { source, result: await fetcher.fetch(target.href) };
 };
 
 const icpcMexicoAcquisition = async (
@@ -419,7 +482,7 @@ const scoreLATAMCandidatePayload = (
         results: row.results,
         publishedTotals: row.publishedTotals,
         evidence: [
-          ...row.evidence,
+          ...row.evidence.filter(({ excerpt }) => excerpt.trim().length > 0),
           ...remapEvidence('mexicoPlace', `rows[${String(rowIndex)}].place`),
           ...remapEvidence('sourceUserSite', `rows[${String(rowIndex)}].sourceTeamId`),
           ...remapEvidence('name', `rows[${String(rowIndex)}].teamName`),
@@ -522,7 +585,7 @@ const scoreLATAMAcquisition = async (
       retrievedAt: new Date().toISOString(),
       discoveryContentSha256: indexResult.contentSha256,
       contentSha256: scoreboardResponse.contentSha256,
-      parserVersion: 'scorelatam-mexico-scoregroup-v1',
+      parserVersion: 'scorelatam-mexico-scoregroup-v2',
       eventEquivalence: extraction.eventEquivalence,
       extraction,
     },
@@ -549,11 +612,11 @@ const scoreLATAMAcquisition = async (
     stage: 'final',
     discoveryUrl: source.baseUrl,
     content: { kind: 'fetch', url: edition.url },
-    parserVersion: 'scorelatam-mexico-scoregroup-v1',
+    parserVersion: 'scorelatam-mexico-scoregroup-v2',
     promptVersion: null,
     model: null,
     options: {
-      adapter: 'scorelatam-mexico-scoregroup-v1',
+      adapter: 'scorelatam-mexico-scoregroup-v2',
       sourceEditionLabel: edition.sourceEditionLabel,
       eventEquivalence: 'reviewer-approved',
     },
@@ -778,6 +841,812 @@ const itesoAcquisition = async (
   );
 };
 
+const icpcGlobalAcquisition = async (
+  configuration: ReturnType<typeof sourceConfigurationSchema.parse>,
+  options: CliOptions,
+  root: string,
+  dependencies: StandingsIngestionCliDependencies,
+) => {
+  const seasonYear = options.seasonYear;
+  if (seasonYear === undefined) {
+    throw new Error('ICPC Global acquisition requires a selected season.');
+  }
+  const directorySource = configuration.sources.find(({ id }) => id === 'icpc-global-directory');
+  const finderSource = configuration.sources.find(({ id }) => id === 'icpc-global-finder');
+  if (directorySource?.id === undefined || finderSource?.id === undefined) {
+    throw new Error('Both ICPC Global directory and finder sources must be configured.');
+  }
+  const cycleLabel = `${String(seasonYear)}-${String(seasonYear + 1)}`;
+  const directoryMapping = configuration.editionMappings.find(
+    ({ sourceId, editionLabel }) => sourceId === directorySource.id && editionLabel === cycleLabel,
+  );
+  if (directoryMapping?.seasonYear !== seasonYear) {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: directorySource.id,
+          contest: null,
+          message: `ICPC Global cycle ${cycleLabel} has no matching reviewed edition mapping.`,
+        },
+      ],
+    };
+  }
+
+  const render = dependencies.acquisition?.render ?? renderSelectedSourceState;
+  const renderLimits: RenderLimits = {
+    navigationTimeoutMs: 30_000,
+    actionTimeoutMs: 30_000,
+    maxRequests: 250,
+    maxCaptureBytes: 16 * 1024 * 1024,
+  };
+  const directoryRequest: RenderRequest = {
+    url: directorySource.baseUrl,
+    actions: [
+      { kind: 'click', selector: '[data-test="select_year"]' },
+      { kind: 'click', selector: `[role="option"]:has-text("${cycleLabel}")` },
+      {
+        kind: 'click',
+        selector: `button:has-text("The ${cycleLabel} ICPC Latin America Contests")`,
+      },
+    ],
+    readySelector: '[role="region"] table',
+    captureSelector: '[role="region"] table',
+  };
+  let renderedDirectory: RenderedSourceState;
+  try {
+    renderedDirectory = await render(directorySource, directoryRequest, renderLimits);
+  } catch (error) {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: directorySource.id,
+          contest: null,
+          message: `Could not render ICPC Global cycle ${cycleLabel}: ${error instanceof Error ? error.message : 'render failed'}`,
+        },
+      ],
+    };
+  }
+  const directory = discoverICPCGlobalDirectory(
+    renderedDirectory.html,
+    cycleLabel,
+    renderedDirectory.finalUrl,
+  );
+  const directoryGpm = directory.contests.filter(({ kind }) => kind === 'gpm');
+  const directoryFinals = directory.contests.filter(({ kind }) => kind === 'mexico-finals');
+  if (
+    directory.editionYear !== seasonYear ||
+    directoryGpm.length !== 1 ||
+    directoryFinals.length !== 1 ||
+    directory.stagedLinks.length > 0
+  ) {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: directorySource.id,
+          contest: null,
+          message: `ICPC Global directory discovery requires review: ${directory.stagedLinks.map(({ reason }) => reason).join('; ') || `expected one Mexican GPM and one Mexico Finals row for ${String(seasonYear)}`}`,
+        },
+      ],
+    };
+  }
+
+  const finderHistory: {
+    requestedUrl: string;
+    finalUrl: string;
+    contentSha256: string;
+    discovery: ICPCGlobalFinderDiscovery;
+  }[] = [];
+  const visitedFinderUrls = new Set<string>();
+  let currentFinderUrl = finderSource.baseUrl;
+  let selectedFinder: ICPCGlobalFinderDiscovery | undefined;
+  let selectedFinderUrl: string | undefined;
+  for (let index = 0; index < MAX_ICPC_GLOBAL_PRIOR_YEARS; index += 1) {
+    if (visitedFinderUrls.has(currentFinderUrl)) {
+      return {
+        candidates: [],
+        sourceFailures: [
+          {
+            sourceId: finderSource.id,
+            contest: null,
+            message: `ICPC Global prior-year navigation repeated ${currentFinderUrl}.`,
+          },
+        ],
+      };
+    }
+    visitedFinderUrls.add(currentFinderUrl);
+    let renderedFinder: RenderedSourceState;
+    try {
+      renderedFinder = await render(
+        finderSource,
+        icpcGlobalFinderRenderRequest(currentFinderUrl),
+        renderLimits,
+      );
+    } catch (error) {
+      return {
+        candidates: [],
+        sourceFailures: [
+          {
+            sourceId: finderSource.id,
+            contest: null,
+            message: `Could not render ICPC Global finder page ${currentFinderUrl}: ${error instanceof Error ? error.message : 'render failed'}`,
+          },
+        ],
+      };
+    }
+    const discovery = discoverICPCGlobalFinder(renderedFinder.html, renderedFinder.finalUrl);
+    finderHistory.push({
+      requestedUrl: currentFinderUrl,
+      finalUrl: renderedFinder.finalUrl,
+      contentSha256: renderedFinder.contentSha256,
+      discovery,
+    });
+    if (discovery.eventKind !== 'mexico-finals' || discovery.editionYear === null) {
+      return {
+        candidates: [],
+        sourceFailures: [
+          {
+            sourceId: finderSource.id,
+            contest: null,
+            message: `ICPC Global finder did not display a recognized Mexico Finals edition at ${renderedFinder.finalUrl}.`,
+          },
+        ],
+      };
+    }
+    if (discovery.editionYear === seasonYear) {
+      selectedFinder = discovery;
+      selectedFinderUrl = renderedFinder.finalUrl;
+      break;
+    }
+    if (discovery.editionYear < seasonYear || discovery.priorYearUrl === null) {
+      break;
+    }
+    currentFinderUrl = discovery.priorYearUrl;
+  }
+  if (selectedFinder === undefined || selectedFinderUrl === undefined) {
+    const visitedEditions = finderHistory
+      .map(
+        ({ finalUrl, discovery }) =>
+          `${finalUrl} (${discovery.title ?? 'no title'}; edition ${String(discovery.editionYear ?? 'unknown')}; prior ${discovery.priorYearUrl ?? 'none'})`,
+      )
+      .join('; ');
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: finderSource.id,
+          contest: null,
+          message: `ICPC Global finder did not reach Mexican edition ${String(seasonYear)} within ${String(MAX_ICPC_GLOBAL_PRIOR_YEARS)} saved prior-year pages. Visited: ${visitedEditions || 'none'}.`,
+        },
+      ],
+    };
+  }
+  const finderMapping = configuration.editionMappings.find(
+    ({ sourceId, editionLabel }) =>
+      sourceId === finderSource.id && editionLabel === selectedFinder.sourceEditionLabel,
+  );
+  if (finderMapping?.seasonYear !== seasonYear) {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: finderSource.id,
+          contest: null,
+          message: `ICPC Global finder label ${selectedFinder.sourceEditionLabel ?? ''} has no matching reviewed edition mapping.`,
+        },
+      ],
+    };
+  }
+  const finalsDirectoryContest = directoryFinals[0];
+  const gpmDirectoryContest = directoryGpm[0];
+  const finalsDirectoryPath = new URL(finalsDirectoryContest.contestUrl).pathname.toLowerCase();
+  const selectedFinderPath = new URL(selectedFinderUrl).pathname.toLowerCase();
+  const isCurrentFinderAlias =
+    selectedFinderPath === new URL(finderSource.baseUrl).pathname.toLowerCase();
+  const finalsStandingsDestinations = deduplicateICPCGlobalDestinations([
+    selectedFinder.standingsUrl,
+    finalsDirectoryContest.standingsUrl,
+  ]);
+  if (
+    (finalsDirectoryPath !== selectedFinderPath && !isCurrentFinderAlias) ||
+    selectedFinder.title === null ||
+    selectedFinder.standingsUrl === null ||
+    finalsStandingsDestinations.length === 0 ||
+    selectedFinder.gpmContestUrl === null ||
+    selectedFinder.stagedLinks.length > 0
+  ) {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: finderSource.id,
+          contest: null,
+          message: `ICPC Global Mexico Finals finder page requires review: ${selectedFinder.stagedLinks.map(({ reason }) => reason).join('; ') || 'missing or mismatched standings/GPM links'}`,
+        },
+      ],
+    };
+  }
+  if (
+    new URL(gpmDirectoryContest.contestUrl).pathname.toLowerCase() !==
+    new URL(selectedFinder.gpmContestUrl).pathname.toLowerCase()
+  ) {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: finderSource.id,
+          contest: null,
+          message:
+            'ICPC Global directory and Mexico Finals finder disagree on the GPM contest destination.',
+        },
+      ],
+    };
+  }
+
+  const primaryFinalStandingsUrl = selectedFinder.standingsUrl;
+  const finalAlternativeResults: {
+    url: string;
+    sourceId: string;
+    contentSha256: string;
+    documentType: string;
+    extraction:
+      | ScoreLATAMMexicoScoreboard
+      | ICPCGlobalStandingsExtraction
+      | ITESOAccumulatedExtraction
+      | null;
+  }[] = [];
+  const pendingFinalReviews: { sourceId: string; message: string }[] = [];
+  let readyScoreLATAMAlternative: {
+    url: string;
+    extraction: ScoreLATAMMexicoScoreboard & { status: 'ready' };
+  } | null = null;
+  for (const alternativeUrl of finalsStandingsDestinations.filter(
+    (url) => url !== primaryFinalStandingsUrl,
+  )) {
+    const configuredFetch = await fetchFromConfiguredOrigin(
+      alternativeUrl,
+      configuration,
+      dependencies.acquisition,
+    );
+    if (configuredFetch === null) {
+      pendingFinalReviews.push({
+        sourceId: directorySource.id,
+        message: `Directory Finals Standings destination has no configured source origin: ${alternativeUrl}`,
+      });
+      continue;
+    }
+    if (configuredFetch.result.status !== 'fetched') {
+      pendingFinalReviews.push({
+        sourceId: configuredFetch.source.id,
+        message: `Could not fetch directory Finals Standings alternative ${alternativeUrl}: ${configuredFetch.result.kind}: ${configuredFetch.result.message}`,
+      });
+      continue;
+    }
+    const fetched = configuredFetch.result;
+    const documentType = classifyICPCGlobalDocument(fetched.contentType, fetched.body);
+    let extraction:
+      | ScoreLATAMMexicoScoreboard
+      | ICPCGlobalStandingsExtraction
+      | ITESOAccumulatedExtraction
+      | null = null;
+    if (configuredFetch.source.id === 'scorelatam' && documentType === 'html') {
+      const sourceEditionLabel = String(seasonYear);
+      const hasReviewedMapping = configuration.editionMappings.some(
+        (mapping: { sourceId: string; editionLabel: string; seasonYear: number }) =>
+          mapping.sourceId === configuredFetch.source.id &&
+          mapping.editionLabel === sourceEditionLabel &&
+          mapping.seasonYear === seasonYear,
+      );
+      if (hasReviewedMapping) {
+        const edition: ScoreLATAMEdition = {
+          editionYear: seasonYear,
+          playedYear: null,
+          sourceEditionLabel,
+          url: fetched.finalUrl,
+        };
+        const scoreLATAMExtraction = parseScoreLATAMMexicoScoreboard(
+          new TextDecoder().decode(fetched.body),
+          edition,
+        );
+        extraction = scoreLATAMExtraction;
+        if (scoreLATAMExtraction.status === 'ready') {
+          readyScoreLATAMAlternative = {
+            url: fetched.finalUrl,
+            extraction: { ...scoreLATAMExtraction, status: 'ready' },
+          };
+        }
+      }
+      pendingFinalReviews.push({
+        sourceId: configuredFetch.source.id,
+        message:
+          extraction !== null && extraction.status === 'ready'
+            ? `Directory links to a parsed ScoreLATAM Finals alternative; it is retained as comparison evidence beside the ICPC Global candidate.`
+            : `Directory ScoreLATAM Finals alternative requires review: ${hasReviewedMapping ? (extraction?.reason ?? 'scoreboard extraction was unavailable') : 'no matching reviewed season mapping'}`,
+      });
+    } else if (documentType === 'html') {
+      extraction = parseICPCGlobalStandings(new TextDecoder().decode(fetched.body));
+      pendingFinalReviews.push({
+        sourceId: configuredFetch.source.id,
+        message: `Directory Finals alternative was fetched and retained separately (${documentType}).`,
+      });
+    } else if (documentType === 'pdf' || documentType === 'image') {
+      try {
+        const document = await (dependencies.itesoDocumentExtractor ?? extractITESODocument)(
+          fetched.body,
+          documentType,
+          root,
+        );
+        extraction = parseITESOAccumulatedDocument(document.pages, selectedFinder.title);
+        pendingFinalReviews.push({
+          sourceId: configuredFetch.source.id,
+          message: `Directory Finals document alternative was extracted and staged separately (${documentType}).`,
+        });
+      } catch (error) {
+        pendingFinalReviews.push({
+          sourceId: configuredFetch.source.id,
+          message: `Directory Finals document alternative requires review: ${error instanceof Error ? error.message : 'document extraction failed'}`,
+        });
+      }
+    } else {
+      pendingFinalReviews.push({
+        sourceId: configuredFetch.source.id,
+        message: `Directory Finals alternative has an unrecognized document type: ${alternativeUrl}`,
+      });
+    }
+    finalAlternativeResults.push({
+      url: fetched.finalUrl,
+      sourceId: configuredFetch.source.id,
+      contentSha256: fetched.contentSha256,
+      documentType,
+      extraction,
+    });
+  }
+
+  let gpmFinderRendered: RenderedSourceState;
+  try {
+    gpmFinderRendered = await render(
+      finderSource,
+      icpcGlobalFinderRenderRequest(selectedFinder.gpmContestUrl),
+      renderLimits,
+    );
+  } catch (error) {
+    return {
+      candidates: [],
+      sourceFailures: [
+        {
+          sourceId: finderSource.id,
+          contest: null,
+          message: `Could not render the ICPC Global GPM finder entry: ${error instanceof Error ? error.message : 'render failed'}`,
+        },
+      ],
+    };
+  }
+  const gpmFinder = discoverICPCGlobalFinder(gpmFinderRendered.html, gpmFinderRendered.finalUrl);
+  const gpmMapping = configuration.editionMappings.find(
+    ({ sourceId, editionLabel }) =>
+      sourceId === finderSource.id && editionLabel === gpmFinder.sourceEditionLabel,
+  );
+  const finderFailures: { sourceId: string; contest: null; message: string }[] = [];
+  if (
+    gpmFinder.eventKind !== 'gpm' ||
+    gpmFinder.editionYear !== seasonYear ||
+    gpmMapping?.seasonYear !== seasonYear ||
+    gpmFinder.standingsUrl === null
+  ) {
+    finderFailures.push({
+      sourceId: finderSource.id,
+      contest: null,
+      message: `ICPC Global GPM page requires review: ${gpmFinder.stagedLinks.map(({ reason }) => reason).join('; ') || 'edition or See Standings link is missing'}`,
+    });
+  }
+
+  const pendingGpmReviews: { sourceId: string; message: string }[] = [];
+  const gpmStandingsResults: {
+    url: string;
+    sourceId: string;
+    contentSha256: string | null;
+    documentType: string;
+    extraction: ICPCGlobalStandingsExtraction | ITESOAccumulatedExtraction | null;
+    document: ITESOExtractedDocument | null;
+  }[] = [];
+  const gpmDestinations = deduplicateICPCGlobalDestinations([
+    gpmFinder.standingsUrl,
+    gpmDirectoryContest.standingsUrl,
+  ]);
+  for (const destination of gpmDestinations) {
+    if (new URL(destination).origin === new URL(finderSource.baseUrl).origin) {
+      try {
+        const rendered = await render(
+          finderSource,
+          icpcGlobalStandingsRenderRequest(destination),
+          renderLimits,
+        );
+        const extraction = parseICPCGlobalStandings(rendered.html);
+        gpmStandingsResults.push({
+          url: rendered.finalUrl,
+          sourceId: finderSource.id,
+          contentSha256: rendered.contentSha256,
+          documentType: 'html',
+          extraction,
+          document: null,
+        });
+        pendingGpmReviews.push({
+          sourceId: finderSource.id,
+          message:
+            extraction.status === 'ready' &&
+            gpmFinder.title !== null &&
+            extraction.title.toLowerCase().includes(gpmFinder.title.toLowerCase())
+              ? 'GPM accumulated results were extracted but remain staged because season-standing candidates are not supported.'
+              : `GPM accumulated results require review: ${extraction.status === 'staged' ? extraction.reason : 'standings title does not match the selected GPM edition'}`,
+        });
+      } catch (error) {
+        pendingGpmReviews.push({
+          sourceId: finderSource.id,
+          message: `Could not render GPM standings ${destination}: ${error instanceof Error ? error.message : 'render failed'}`,
+        });
+      }
+      continue;
+    }
+    const configuredFetch = await fetchFromConfiguredOrigin(
+      destination,
+      configuration,
+      dependencies.acquisition,
+    );
+    if (configuredFetch === null) {
+      pendingGpmReviews.push({
+        sourceId: directorySource.id,
+        message: `Directory Standings destination has no configured source origin: ${destination}`,
+      });
+      continue;
+    }
+    let activeSource = configuredFetch.source;
+    if (configuredFetch.result.status !== 'fetched') {
+      pendingGpmReviews.push({
+        sourceId: directorySource.id,
+        message: `Could not follow directory Standings destination ${destination}: ${configuredFetch.result.kind}: ${configuredFetch.result.message}`,
+      });
+      continue;
+    }
+    let fetched: Extract<SourceFetchResult, { status: 'fetched' }> = configuredFetch.result;
+    let documentType = classifyICPCGlobalDocument(fetched.contentType, fetched.body);
+    let document: ITESOExtractedDocument | null = null;
+    let extraction: ICPCGlobalStandingsExtraction | ITESOAccumulatedExtraction | null = null;
+    let htmlExtraction: ICPCGlobalStandingsExtraction | null = null;
+    if (documentType === 'html') {
+      htmlExtraction = parseICPCGlobalStandings(new TextDecoder().decode(fetched.body));
+      extraction = htmlExtraction;
+      if (
+        htmlExtraction.status === 'staged' &&
+        htmlExtraction.reason ===
+          'recognized Mexico Finals title or totals standings table was not found'
+      ) {
+        const landingLink = discoverICPCGlobalStandingsLink(
+          new TextDecoder().decode(fetched.body),
+          fetched.finalUrl,
+        );
+        if (landingLink.status === 'found' && landingLink.url !== fetched.finalUrl) {
+          const nextFetch = await fetchFromConfiguredOrigin(
+            landingLink.url,
+            configuration,
+            dependencies.acquisition,
+          );
+          if (nextFetch !== null) {
+            activeSource = nextFetch.source;
+            if (nextFetch.result.status !== 'fetched') {
+              pendingGpmReviews.push({
+                sourceId: activeSource.id,
+                message: `Could not follow landing-page standings link ${landingLink.url}: ${nextFetch.result.kind}: ${nextFetch.result.message}`,
+              });
+              continue;
+            }
+            fetched = nextFetch.result;
+            documentType = classifyICPCGlobalDocument(fetched.contentType, fetched.body);
+            htmlExtraction =
+              documentType === 'html'
+                ? parseICPCGlobalStandings(new TextDecoder().decode(fetched.body))
+                : null;
+            extraction = htmlExtraction;
+          }
+        } else {
+          pendingGpmReviews.push({
+            sourceId: activeSource.id,
+            message:
+              landingLink.status === 'staged'
+                ? `ICPC Global result landing page requires review: ${landingLink.candidates.map(({ reason }) => reason).join('; ')}`
+                : `ICPC Global result landing page has no standings link: ${fetched.finalUrl}`,
+          });
+        }
+      }
+    }
+    if (documentType === 'pdf' || documentType === 'image') {
+      try {
+        document = await (dependencies.itesoDocumentExtractor ?? extractITESODocument)(
+          fetched.body,
+          documentType,
+          root,
+        );
+        extraction = parseITESOAccumulatedDocument(
+          document.pages,
+          gpmFinder.title ?? gpmDirectoryContest.name,
+        );
+      } catch (error) {
+        pendingGpmReviews.push({
+          sourceId: activeSource.id,
+          message: `ICPC Global GPM document requires local extraction review: ${error instanceof Error ? error.message : 'document extraction failed'}`,
+        });
+      }
+    }
+    if (documentType === 'html' && htmlExtraction !== null) {
+      const titleMatches =
+        htmlExtraction.status === 'ready' &&
+        gpmFinder.title !== null &&
+        htmlExtraction.title.toLowerCase().includes(gpmFinder.title.toLowerCase());
+      pendingGpmReviews.push({
+        sourceId: activeSource.id,
+        message: titleMatches
+          ? 'Followed the GPM Standings link; season results remain staged because season-standing candidates are not supported.'
+          : `GPM HTML standings require review: ${htmlExtraction.status === 'staged' ? htmlExtraction.reason : 'standings title does not match the selected GPM edition'}`,
+      });
+    } else if (documentType === 'unknown') {
+      pendingGpmReviews.push({
+        sourceId: activeSource.id,
+        message: `Directory Standings destination has unrecognized document type: ${destination}`,
+      });
+    }
+    gpmStandingsResults.push({
+      url: fetched.finalUrl,
+      sourceId: activeSource.id,
+      contentSha256: fetched.contentSha256,
+      documentType,
+      extraction,
+      document,
+    });
+  }
+
+  const request: AcquisitionRequest = {
+    configuration,
+    sourceId: finderSource.id,
+    seasonYear,
+    seriesId: 'mexico-finals',
+    stage: 'final',
+    discoveryUrl: finderSource.baseUrl,
+    content: {
+      ...(new URL(primaryFinalStandingsUrl).origin === new URL(finderSource.baseUrl).origin
+        ? {
+            kind: 'render' as const,
+            request: icpcGlobalStandingsRenderRequest(primaryFinalStandingsUrl),
+            limits: renderLimits,
+          }
+        : { kind: 'fetch' as const, url: primaryFinalStandingsUrl }),
+    },
+    parserVersion: 'icpc-global-mexico-finals-v1',
+    promptVersion: null,
+    model: null,
+    options: {
+      adapter: 'icpc-global-mexico-finals-v1',
+      sourceEditionLabel: selectedFinder.sourceEditionLabel,
+      publicationState: selectedFinder.publicationState,
+    },
+    parse: (body) => {
+      const extraction = parseICPCGlobalStandings(new TextDecoder().decode(body));
+      if (extraction.status !== 'ready') {
+        return Promise.reject(new Error(extraction.reason));
+      }
+      if (!extraction.title.toLowerCase().includes(selectedFinder.title?.toLowerCase() ?? '')) {
+        return Promise.reject(
+          new Error('Standings title does not match the selected Mexico Finals edition.'),
+        );
+      }
+      return Promise.resolve(icpcGlobalFinalPayload(extraction, selectedFinder));
+    },
+  };
+  const artifactName = `run-${String(Date.now())}-${randomUUID()}-icpc-global-${String(seasonYear)}.json`;
+  const stagedArtifactPath = path.relative(
+    root,
+    path.join(root, '.standings-ingestion/staged', artifactName),
+  );
+  const alternativeRequests: AcquisitionRequest[] = [];
+  const scoreLATAMSource = configuration.sources.find(({ id }) => id === 'scorelatam');
+  if (readyScoreLATAMAlternative !== null && scoreLATAMSource !== undefined) {
+    const extraction = readyScoreLATAMAlternative.extraction;
+    const edition: ScoreLATAMEdition = {
+      editionYear: extraction.editionYear,
+      playedYear: extraction.playedYear,
+      sourceEditionLabel: extraction.sourceEditionLabel,
+      url: readyScoreLATAMAlternative.url,
+    };
+    alternativeRequests.push({
+      configuration,
+      sourceId: scoreLATAMSource.id,
+      seasonYear,
+      seriesId: 'mexico-finals',
+      stage: 'final',
+      discoveryUrl: scoreLATAMSource.baseUrl,
+      content: { kind: 'fetch', url: readyScoreLATAMAlternative.url },
+      parserVersion: 'scorelatam-mexico-scoregroup-v2',
+      promptVersion: null,
+      model: null,
+      options: {
+        adapter: 'scorelatam-mexico-scoregroup-v2',
+        sourceEditionLabel: edition.sourceEditionLabel,
+        eventEquivalence: 'reviewer-approved',
+      },
+      parse: (body) => {
+        const parsed = parseScoreLATAMMexicoScoreboard(new TextDecoder().decode(body), edition);
+        if (parsed.status !== 'ready') {
+          return Promise.reject(
+            new Error(parsed.reason ?? 'ScoreLATAM Mexico Finals alternative requires review.'),
+          );
+        }
+        return Promise.resolve(scoreLATAMCandidatePayload(parsed, stagedArtifactPath));
+      },
+    });
+  }
+  let finalStandingsCapture: RenderedSourceState | null = null;
+  const renderWithStandingsEvidence: typeof render = async (source, rawRequest, limits) => {
+    const renderRequest = renderRequestSchema.parse(rawRequest);
+    const rendered = await render(source, renderRequest, limits);
+    if (source.id === finderSource.id && rendered.discoveryUrl === primaryFinalStandingsUrl) {
+      finalStandingsCapture = rendered;
+    }
+    return rendered;
+  };
+  const defaultAcquisitionDependencies: AcquisitionDependencies = {
+    cache: new BoundedJsonCache({
+      directory: path.join(root, '.standings-ingestion/cache'),
+      ttlMs: 7 * 24 * 60 * 60 * 1000,
+      maxEntries: 1000,
+      maxEntryBytes: 32 * 1024 * 1024,
+    }),
+    parse: () =>
+      Promise.reject(new Error('ICPC Global parser was not assigned to its acquisition job.')),
+  };
+  const acquisitionDependencies = {
+    ...(dependencies.acquisition ?? defaultAcquisitionDependencies),
+    render: renderWithStandingsEvidence,
+  };
+  const batch = await acquireStandingsBatch(
+    [request, ...alternativeRequests],
+    acquisitionDependencies,
+  );
+  const artifactPath = await writeJsonAtomically(
+    path.join(root, '.standings-ingestion/staged'),
+    artifactName,
+    {
+      schemaVersion: 1,
+      sourceIds: [directorySource.id, finderSource.id],
+      authorityId: directorySource.authorityId,
+      seasonYear,
+      cycleLabel,
+      directory: {
+        url: renderedDirectory.finalUrl,
+        contentSha256: renderedDirectory.contentSha256,
+        contests: directory.contests,
+        excludedContestLabels: directory.excludedContestLabels,
+        stagedLinks: directory.stagedLinks,
+      },
+      finderHistory,
+      mexicoFinals: selectedFinder,
+      directoryFinalStandingsUrl: finalsDirectoryContest.standingsUrl,
+      finalAlternativeResults,
+      primaryFinalStandingsCapture: finalStandingsCapture,
+      gpmFinder: {
+        url: gpmFinderRendered.finalUrl,
+        contentSha256: gpmFinderRendered.contentSha256,
+        discovery: gpmFinder,
+      },
+      gpmStandingsResults,
+      finalStandingsUrl: primaryFinalStandingsUrl,
+    },
+  );
+  const relativeArtifactPath = path.relative(root, artifactPath);
+  const sourceFailures = [
+    ...finderFailures,
+    ...pendingFinalReviews.map(({ sourceId, message }) => ({
+      sourceId,
+      contest: null,
+      message: `${message} Evidence staged at ${relativeArtifactPath}.`,
+    })),
+    ...pendingGpmReviews.map(({ sourceId, message }) => ({
+      sourceId,
+      contest: null,
+      message: `${message} Evidence staged at ${relativeArtifactPath}.`,
+    })),
+    ...batch.sourceFailures.map((failure) => ({
+      ...failure,
+      contest: failure.contest,
+      message: `${failure.message}; ICPC Global evidence staged at ${relativeArtifactPath}.`,
+    })),
+  ];
+  if (batch.candidates.length === 0 && sourceFailures.length === 0) {
+    sourceFailures.push({
+      sourceId: finderSource.id,
+      contest: null,
+      message: `ICPC Global Mexico Finals extraction produced no candidate. Evidence staged at ${relativeArtifactPath}.`,
+    });
+  }
+  return { candidates: batch.candidates, sourceFailures };
+};
+
+const icpcGlobalStandingsRenderRequest = (url: string): RenderRequest => ({
+  url,
+  actions: [
+    { kind: 'click', selector: '[role="combobox"]' },
+    { kind: 'click', selector: '[role="option"]:has-text("1000")' },
+    {
+      kind: 'waitForPagination',
+      tableSelector: 'main table',
+      summarySelector: 'main',
+    },
+  ],
+  readySelector: 'table thead tr:first-of-type',
+  captureSelector: 'main',
+});
+
+const icpcGlobalFinderRenderRequest = (url: string): RenderRequest => ({
+  url,
+  actions: [],
+  readySelector: 'main a:has-text("See Prior Year")',
+  captureSelector: 'main',
+});
+
+const icpcGlobalFinalPayload = (
+  extraction: ICPCGlobalStandingsExtraction & { status: 'ready' },
+  finder: ICPCGlobalFinderDiscovery,
+): SourceCandidatePayload => ({
+  sourceEditionLabel: finder.sourceEditionLabel ?? String(finder.editionYear),
+  contest: {
+    seasonYear: finder.editionYear ?? 0,
+    seriesId: 'mexico-finals',
+    stage: 'final',
+    name: finder.title ?? 'ICPC Mexico Finals',
+    publicationState: finder.publicationState,
+    date: null,
+    durationMinutes: null,
+    penaltyMinutesPerFailedAttempt: null,
+    problemLabels: [],
+  },
+  rows: extraction.rows.map((row, rowIndex) => {
+    const rowIndexText = String(rowIndex);
+    const evidence = (field: string, value: string) => ({
+      field: `rows[${rowIndexText}].${field}`,
+      kind: 'html-cell' as const,
+      locator: row.locator,
+      page: null,
+      excerpt: value,
+      confidence: 1,
+    });
+    return {
+      place: row.place,
+      sourceTeamId: null,
+      teamName: row.team,
+      sourceSchoolId: null,
+      schoolName: row.institution,
+      results: null,
+      publishedTotals: { solved: row.solved, penalty: row.totalTime },
+      evidence: [
+        evidence('place', String(row.place)),
+        evidence('teamName', row.team),
+        evidence('schoolName', row.institution),
+        evidence('publishedTotals.solved', String(row.solved)),
+        evidence('publishedTotals.penalty', String(row.totalTime)),
+        ...(row.lastSolution === null ? [] : [evidence('lastSolution', row.lastSolution)]),
+      ],
+    };
+  }),
+  coverage: {
+    expectedRowCount: extraction.expectedRowCount,
+    rowsComplete: extraction.rowsComplete,
+    paginationComplete: extraction.rowsComplete,
+  },
+  warnings: [
+    ...extraction.warnings,
+    'ICPC Global publishes totals-only Mexico Finals standings; per-problem results are not inferred.',
+  ],
+});
+
 const loadArchiveFiles = async (root: string): Promise<JsonFiles> => {
   const files: JsonFiles = {};
   const dataDirectory = path.join(root, 'data');
@@ -829,7 +1698,10 @@ export const runStandingsIngestion = async (
 ): Promise<{ proposalPath: string; status: string }> => {
   const options = parseCliOptions(argv);
   const candidates =
-    options.acquireICPCMexico || options.acquireScoreLATAM || options.acquireITESO
+    options.acquireICPCMexico ||
+    options.acquireScoreLATAM ||
+    options.acquireITESO ||
+    options.acquireICPCGlobal
       ? []
       : await loadCandidateFiles(options.candidateFiles);
   const [sourceConfiguration, identityRegistry] = await Promise.all([
@@ -844,7 +1716,9 @@ export const runStandingsIngestion = async (
       ? await scoreLATAMAcquisition(parsedConfiguration, options, root, dependencies.acquisition)
       : options.acquireITESO
         ? await itesoAcquisition(parsedConfiguration, options, root, dependencies)
-        : { candidates: [], sourceFailures: [] };
+        : options.acquireICPCGlobal
+          ? await icpcGlobalAcquisition(parsedConfiguration, options, root, dependencies)
+          : { candidates: [], sourceFailures: [] };
   const archiveResult = await createJsonScoreboardsRepository(
     await loadArchiveFiles(root),
     'archive',
