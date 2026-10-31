@@ -5,8 +5,8 @@ evidence, inspect run artifacts, and create a proposal PR. This guide uses the G
 GitHub CLI commands are optional. You do not need a local Node/Python/OCR setup to dispatch a run.
 This guide assumes the workflow is installed on the default branch and repository permissions are
 already configured.
-See the [data model](data-model.md) for field meanings and the
-[implementation plan](standings-ingestion-plan.md) for milestone history.
+See the [data model](data-model.md) for field meanings and
+[ADR 0008](adr/0008-ingest-standings-through-reviewed-proposals.md) for the ingestion architecture.
 
 ## What the pipeline does
 
