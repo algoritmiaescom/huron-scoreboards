@@ -1,0 +1,203 @@
+name: Ingest standings
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: Source adapter to run
+        type: choice
+        required: true
+        default: icpc-mexico
+        options:
+          - icpc-mexico
+          - icpc-global
+          - scorelatam
+          - iteso
+      season:
+        description: One Mexican edition year (required except for an ICPC Mexico range)
+        type: string
+        required: false
+      season_from:
+        description: ICPC Mexico backfill start (inclusive, at most five years)
+        type: string
+        required: false
+      season_to:
+        description: ICPC Mexico backfill end (inclusive, at most five years)
+        type: string
+        required: false
+      dry_run:
+        description: Upload proposals only; do not create or update a review PR
+        type: boolean
+        required: true
+        default: true
+  schedule:
+    - cron: '0 7 * * 1'
+
+concurrency:
+  group: standings-ingestion
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ingest:
+    if: >-
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch) &&
+      (github.event_name != 'schedule' || vars.STANDINGS_INGESTION_ENABLED == 'true')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    env:
+      GH_REPO: ${{ github.repository }}
+      BASE_BRANCH: ${{ github.event.repository.default_branch }}
+      STANDINGS_BRANCH: automation/standings-ingestion
+      HUSKY: '0'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Install bounded document and browser tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-eng fonts-dejavu-core
+          curl --fail --location --retry 2 --max-time 300 \
+            https://github.com/astral-sh/uv/releases/download/0.9.22/uv-x86_64-unknown-linux-gnu.tar.gz \
+            -o "$RUNNER_TEMP/uv.tar.gz"
+          echo 'e170aed70ac0225feee612e855d3a57ae73c61ffb22c7e52c3fd33b87c286508  uv.tar.gz' > "$RUNNER_TEMP/uv.sha256"
+          (cd "$RUNNER_TEMP" && sha256sum --check uv.sha256)
+          tar -xzf "$RUNNER_TEMP/uv.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/uv-x86_64-unknown-linux-gnu" >> "$GITHUB_PATH"
+          uv sync --locked --project scripts/standings-spike
+          npx playwright install --with-deps chromium
+      - name: Preserve an existing standings proposal PR
+        id: previous
+        if: github.event_name == 'schedule' || inputs.dry_run == false
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: npm run standings:pull-request -- prepare
+      - name: Acquire bounded source proposals
+        id: collect
+        shell: bash
+        env:
+          SOURCE: ${{ inputs.source }}
+          SEASON: ${{ inputs.season }}
+          SEASON_FROM: ${{ inputs.season_from }}
+          SEASON_TO: ${{ inputs.season_to }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          paths_file="$RUNNER_TEMP/standings-proposal-paths.txt"
+          : > "$paths_file"
+          failures=false
+          index=0
+
+          run_one() {
+            local log_file="$RUNNER_TEMP/standings-ingestion-${index}.log"
+            local command_status=0
+            if npm run --silent standings:ingest -- "$@" --output-dir .standings-ingestion/proposals 2>&1 | tee "$log_file"; then
+              command_status=0
+            else
+              command_status=$?
+            fi
+            local proposal_path
+            proposal_path="$(awk '/^Review proposal written:/ { sub(/^Review proposal written: /, ""); proposal=$0 } END { print proposal }' "$log_file")"
+            local run_status
+            run_status="$(awk '/^Run status:/ { sub(/^Run status: /, ""); sub(/;.*/, ""); status=$0 } END { print status }' "$log_file")"
+            if [[ -z "$proposal_path" ]]; then
+              echo "No review proposal path was reported for acquisition ${index}." >&2
+              failures=true
+            else
+              printf '%s\n' "$proposal_path" >> "$paths_file"
+            fi
+            if [[ "$command_status" -ne 0 || "$run_status" != 'complete' ]]; then
+              failures=true
+            fi
+            index=$((index + 1))
+          }
+
+          if [[ "$EVENT_NAME" == 'schedule' ]]; then
+            current_year="$(date -u +%Y)"
+            previous_year=$((current_year - 1))
+            run_one --acquire-icpc-mexico --season-from "$previous_year" --season-to "$current_year"
+            run_one --acquire-icpc-global --season "$previous_year"
+            run_one --acquire-icpc-global --season "$current_year"
+          else
+            case "$SOURCE" in
+              icpc-mexico)
+                if [[ -n "$SEASON_FROM" || -n "$SEASON_TO" ]]; then
+                  if [[ -z "$SEASON_FROM" || -z "$SEASON_TO" || -n "$SEASON" ]]; then
+                    echo 'Provide both season_from and season_to, or one season.' >&2
+                    exit 2
+                  fi
+                  run_one --acquire-icpc-mexico --season-from "$SEASON_FROM" --season-to "$SEASON_TO"
+                else
+                  if [[ -z "$SEASON" ]]; then
+                    echo 'A season is required for this source.' >&2
+                    exit 2
+                  fi
+                  run_one --acquire-icpc-mexico --season "$SEASON"
+                fi
+                ;;
+              icpc-global)
+                [[ -n "$SEASON" ]] || { echo 'A season is required for this source.' >&2; exit 2; }
+                run_one --acquire-icpc-global --season "$SEASON"
+                ;;
+              scorelatam)
+                [[ -n "$SEASON" ]] || { echo 'A season is required for this source.' >&2; exit 2; }
+                run_one --acquire-scorelatam --season "$SEASON" --source scorelatam
+                ;;
+              iteso)
+                [[ -n "$SEASON" ]] || { echo 'A season is required for this source.' >&2; exit 2; }
+                run_one --acquire-iteso --season "$SEASON" --source iteso
+                ;;
+              *)
+                echo "Unsupported source: $SOURCE" >&2
+                exit 2
+                ;;
+            esac
+          fi
+          echo "proposal_paths_file=$paths_file" >> "$GITHUB_OUTPUT"
+          echo "source_failures=$failures" >> "$GITHUB_OUTPUT"
+      - name: Validate repository and published archive
+        run: npm run validate
+      - name: Upload proposal and source evidence
+        if: always()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5
+        with:
+          name: standings-ingestion-${{ github.run_id }}
+          include-hidden-files: true
+          path: |
+            .standings-ingestion/proposals/
+            .standings-ingestion/staged/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Publish append-only review proposals
+        if: >-
+          success() &&
+          (github.event_name == 'schedule' || inputs.dry_run == false) &&
+          steps.collect.outputs.proposal_paths_file != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMPARISON: ${{ steps.previous.outputs.comparison }}
+          PR_NUMBER: ${{ steps.previous.outputs.number }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t proposal_paths < "${{ steps.collect.outputs.proposal_paths_file }}"
+          npm run standings:pull-request -- publish "${proposal_paths[@]}"
+      - name: Report failed source acquisitions
+        if: steps.collect.outputs.source_failures == 'true'
+        run: exit 1

@@ -13,9 +13,9 @@ imported.
 
 # Standings ingestion implementation plan
 
-Status: M2, M4, M5, and M7 done; M1, M3, and M6 remain in progress. The hosted M1 benchmark passed; overall Actions job duration remains pending before formal closure.
+Status: M2, M4, M5, and M7 done; M1, M3, M6, and M8 remain in progress. The hosted M1 benchmark passed; overall Actions job duration remains pending before formal closure.
 
-Created: 2026-10-27. Last updated: 2026-10-30.
+Created: 2026-10-27. Last updated: 2026-10-31.
 
 ## Purpose and use
 
@@ -120,7 +120,7 @@ Keep Ollama local to the execution environment and GitHub credentials out of ext
 | M5  | ScoreLATAM adapter                                      | M3                       | done        |
 | M6  | ITESO adapter and PDF/OCR extraction                    | M3                       | in progress |
 | M7  | ICPC Global directory and finder adapters               | M3, M6 document pipeline | done        |
-| M8  | Reviewed-PR automation and controlled rollout           | M4, M5, M6, M7           | pending     |
+| M8  | Reviewed-PR automation and controlled rollout           | M4, M5, M6, M7           | in progress |
 
 ### M1: Integration and cost feasibility spike
 
@@ -405,22 +405,45 @@ configuration mappings before acquisition.
 
 ### M8: Automation and rollout
 
-- [ ] Add manual dispatch with source/edition filters, dry-run, and bounded backfill controls.
-- [ ] Add a weekly schedule for current/previous editions, disabled by a repository variable until
+- [x] Add manual dispatch with source/edition filters, dry-run, and bounded backfill controls.
+- [x] Add a weekly schedule for current/previous editions, disabled by a repository variable until
       rollout passes; define the edition-boundary/timezone behavior explicitly.
-- [ ] Use trusted default-branch execution, pinned dependencies/actions, scoped permissions,
+- [x] Use trusted default-branch execution, pinned dependencies/actions, scoped permissions,
       concurrency control, timeouts, and bounded artifact retention.
-- [ ] Reuse the media workflow's reviewed-PR patterns where appropriate, after checking helpers
+- [x] Reuse the media workflow's reviewed-PR patterns where appropriate, after checking helpers
       for actual compatibility rather than assuming they are generic.
-- [ ] Maintain a stable automation branch/PR without overwriting reviewer edits.
-- [ ] Publish conflict-only proposals as well as additions. Include coverage, source failures,
+- [x] Maintain a stable automation branch/PR without overwriting reviewer edits.
+- [x] Publish conflict-only proposals as well as additions. Include coverage, source failures,
       existing/proposed values, alternatives, partial-data/OCR warnings, unresolved identities,
       and evidence/version details in the PR.
-- [ ] Validate proposed data and explicitly trigger required CI when token-generated events do
+- [x] Validate proposed data and explicitly trigger required CI when token-generated events do
       not start it. Never approve or auto-merge.
 - [ ] Verify a manual end-to-end PR, then small historical batches, then the weekly schedule.
-- [ ] Document setup, cost controls, recovery, reruns, conflict resolution, and how to disable
+- [x] Document setup, cost controls, recovery, reruns, conflict resolution, and how to disable
       scheduling without changing or deleting archived data.
+
+M8 implementation: [.github/workflows/ingest-standings.yml](../.github/workflows/ingest-standings.yml)
+runs only on the default branch. Manual dispatch selects one source and edition; ICPC Mexico alone
+accepts inclusive ranges capped at five years and 20 contests. `dry_run` defaults to true: it uploads
+the proposal and staged evidence but does not publish a PR. Set it to false to publish reviewable
+proposals. The Monday 07:00 UTC schedule is gated by repository variable
+`STANDINGS_INGESTION_ENABLED == 'true'`; it derives the current and previous edition years from the
+UTC calendar year, runs one bounded ICPC Mexico range and one ICPC Global acquisition per year. The
+schedule remains disabled until an operator enables that variable.
+
+The workflow uses Node 24/npm 11, pinned checkout/setup/upload actions, locked uv 0.9.22 Python
+dependencies, Tesseract English OCR, Chromium, a 60-minute job timeout, a non-cancelling concurrency
+group, and 14-day evidence artifacts. Source request, page, response, and traversal limits remain in
+the adapters. The publisher validates proposal JSON, writes only append-only files under
+`proposals/standings-ingestion/`, and refuses any other changed path. It prepares stable branch
+`automation/standings-ingestion` by merging only an existing proposal-only PR branch; concurrent or
+unrelated changes fail rather than being force-pushed. Existing proposal files and PR bodies are
+preserved; new run summaries are added as comments. Every publication explicitly dispatches `ci.yml`; approval and merge
+remain manual. Failed-only runs are retained as workflow artifacts, while complete, partial, and
+conflict-only proposals can be reviewed. To disable scheduling, unset or set
+`STANDINGS_INGESTION_ENABLED` to anything other than `true`; manual dry runs remain available.
+Recovery is to inspect the failed run's proposal/evidence artifact, correct source configuration or
+parser logic, and rerun the same source/edition. Do not copy staged values into `data/` without review.
 
 ## Verification and completion gate
 
@@ -445,13 +468,15 @@ Final acceptance must prove:
 
 ## Current handoff
 
-- **Next step:** add reviewed ICPC Global mappings for any additional requested historical cycles.
-  Continue the source-native season-standing contract and ITESO latest-official verification. Add
-  ScoreLATAM page traversal only if
-  a requested edition exposes pagination; current controls select static score groups. Preserve
-  the M1 overall Actions job-duration follow-up.
-- **Blockers:** the supplied M1 artifacts do not include overall Actions job duration, and the run
-  page is inaccessible from this environment. No schedule is enabled.
+- **Next step:** run one manual M8 workflow with `dry_run=false` on the default branch, review the
+  proposal-only PR and dispatched CI, then try a small historical batch. Keep the weekly schedule
+  disabled until that PR is reviewed and merged. Add reviewed ICPC Global mappings only for
+  additional requested historical cycles. Continue the M6 source-native season-standing contract
+  and latest-official verification, and preserve the M1 overall Actions job-duration follow-up.
+- **Blockers:** no GitHub workflow dispatch or live PR publication has been performed. The weekly
+  schedule remains disabled unless repository variable `STANDINGS_INGESTION_ENABLED` is exactly
+  `true`. The supplied M1 artifacts still lack overall Actions job duration, and the run page is
+  inaccessible from this environment.
 - **Implementation evidence:** locked Python environment, synthetic rendered-state/PDF/OCR checks,
   three successful local and three successful hosted Ollama extractions, and failure-handling
   tests. See the spike report for portable results and limitations. M3 source/candidate/identity
@@ -463,8 +488,10 @@ Final acceptance must prove:
   document fetching, and staged extraction are in progress; source-native season-standing candidate
   reconciliation remains open. ICPC Global discovery, totals parsing, bounded history traversal,
   reviewed 2025/2026 mappings, ScoreLATAM alternative candidate fallback, and staged GPM document
-  acquisition are implemented. The live 2025 workflow produced a reviewable partial proposal and
-  changed no archive data. No workflow dispatch was performed.
+  acquisition are implemented. M8's default-branch workflow, disabled-by-default UTC schedule,
+  proposal-only stable branch publisher, append-only versioned proposal path, failure artifact
+  upload, and explicit CI dispatch are implemented. The live 2025 M7 workflow produced a reviewable
+  partial proposal and changed no archive data. M8 has not been dispatched against GitHub.
 
 ## Progress log
 
@@ -574,11 +601,12 @@ ScoreLATAM index, 2019-2025, including edition 2020 played in 2021. Unlisted lab
 candidate reconciliation remains review-only. `npm run validate` passed with 403 tests, and
 `git diff --check` passed. No archive data was changed.
 
-| Date       | Milestone | Update                                                                                                                                                                                                                                                                          | Verification / reference                                                                                                                                                                                                                                 |
-| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                                                              | Documentation only; no ingestion implementation yet.                                                                                                                                                                                                     |
-| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending.                                  | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md).                                                                                      |
-| 2026-10-28 | M1        | Recorded the supplied successful hosted benchmark and retained synthetic exact-match, 120-second, and 6-GiB gates. Run URL and installation/overall job timing remain pending; scheduling remains disabled.                                                                     | Supplied hosted report: exact rows in 3/3 runs, 21.86/8.52/8.55-second inference, 1.72-GiB sampled aggregate RSS. See [hosted measurements](standings-ingestion-spike.md#hosted-measurements).                                                           |
-| 2026-10-29 | M6        | Started ITESO source discovery and bounded PDF/image acquisition, HTTPS origin upgrades, actual-type dispatch, a locked PyMuPDF/Tesseract bridge, deterministic multi-page table parsing, and atomic evidence staging. No season-standing candidate or archive data is emitted. | 27 focused ITESO/fetch/CLI tests, TypeScript checks, and Python syntax compilation passed. The local OCR runtime is unavailable; full validation and locked-Python document tests remain pending.                                                        |
-| 2026-10-30 | M6        | Installed uv 0.9.22, the locked Python project, and user-local Tesseract 5.5/Chromium runtimes without system package changes. Fixed text-cell grouping and verified generated text, scan, and two-page PDFs through the ITESO helper.                                          | 12 Python tests, 27 focused TypeScript tests, and the full offline Playwright/PDF/OCR harness passed; generated OCR cells retained 0.96 confidence. No system packages or archive data changed.                                                          |
-| 2026-10-30 | M7        | Completed ICPC Global directory/finder acquisition for the explicitly reviewed 2025/2026 editions, including bounded prior-year traversal, complete-table checks, ScoreLATAM fallback candidacy, and staged GPM document evidence. Unreviewed editions fail closed.             | Live 2025 run emitted a partial proposal with a complete 133-row ScoreLATAM candidate, raw Global Finals HTML with eight unranked rows, and staged GPM extraction; archive unchanged. `npm run validate` passed with 437 tests and 90.03% line coverage. |
+| Date       | Milestone | Update                                                                                                                                                                                                                                                                          | Verification / reference                                                                                                                                                                                                                                                                                                   |
+| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-27 | Planning  | Recorded agreed policies, source adapters, dependencies, acceptance criteria, and cross-machine handoff procedure.                                                                                                                                                              | Documentation only; no ingestion implementation yet.                                                                                                                                                                                                                                                                       |
+| 2026-10-27 | M1        | Added locked integration harness, exact-value tests, offline CI checks, and manual hosted benchmark workflow; verified local DOM selection, text PDF, scanned PDF OCR, and three local Ollama extractions. Hosted measurements remain pending.                                  | 12 Python tests, final offline harness, workflow shell syntax, `npm run validate`, and `git diff --check` passed. See [spike report](standings-ingestion-spike.md).                                                                                                                                                        |
+| 2026-10-28 | M1        | Recorded the supplied successful hosted benchmark and retained synthetic exact-match, 120-second, and 6-GiB gates. Run URL and installation/overall job timing remain pending; scheduling remains disabled.                                                                     | Supplied hosted report: exact rows in 3/3 runs, 21.86/8.52/8.55-second inference, 1.72-GiB sampled aggregate RSS. See [hosted measurements](standings-ingestion-spike.md#hosted-measurements).                                                                                                                             |
+| 2026-10-29 | M6        | Started ITESO source discovery and bounded PDF/image acquisition, HTTPS origin upgrades, actual-type dispatch, a locked PyMuPDF/Tesseract bridge, deterministic multi-page table parsing, and atomic evidence staging. No season-standing candidate or archive data is emitted. | 27 focused ITESO/fetch/CLI tests, TypeScript checks, and Python syntax compilation passed. The local OCR runtime is unavailable; full validation and locked-Python document tests remain pending.                                                                                                                          |
+| 2026-10-30 | M6        | Installed uv 0.9.22, the locked Python project, and user-local Tesseract 5.5/Chromium runtimes without system package changes. Fixed text-cell grouping and verified generated text, scan, and two-page PDFs through the ITESO helper.                                          | 12 Python tests, 27 focused TypeScript tests, and the full offline Playwright/PDF/OCR harness passed; generated OCR cells retained 0.96 confidence. No system packages or archive data changed.                                                                                                                            |
+| 2026-10-30 | M7        | Completed ICPC Global directory/finder acquisition for the explicitly reviewed 2025/2026 editions, including bounded prior-year traversal, complete-table checks, ScoreLATAM fallback candidacy, and staged GPM document evidence. Unreviewed editions fail closed.             | Live 2025 run emitted a partial proposal with a complete 133-row ScoreLATAM candidate, raw Global Finals HTML with eight unranked rows, and staged GPM extraction; archive unchanged. `npm run validate` passed with 437 tests and 90.03% line coverage.                                                                   |
+| 2026-10-31 | M8        | Added manual dry-run/source/edition dispatch, a variable-gated UTC weekly refresh, bounded dependency setup, proposal artifact retention, and append-only proposal PR publishing on a stable branch. Existing reviewer edits are preserved; no approval or merge occurs.        | Local integration covers stable-branch publishing, reviewer-edit preservation, rerun idempotency, unrelated-change rejection, PR comments, and explicit CI dispatch. `npm run validate` passed with 441 tests and 90.06% line coverage. Live GitHub PR/schedule exercise remains pending; schedule is disabled by default. |
