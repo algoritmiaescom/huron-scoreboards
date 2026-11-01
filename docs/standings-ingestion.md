@@ -347,16 +347,17 @@ archive records. Scheduled proposals still require human review and manual archi
 
 ## Troubleshooting
 
-| Symptom                                  | Next step                                                                                                                     |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Missing reviewed edition mapping         | Inspect the official label/context, add only the verified mapping, and rerun                                                  |
-| Zero additions or unresolved identities  | Review `identityProposals`, create canonical records, then add exact reviewed aliases where source IDs exist                  |
-| Low-confidence OCR or ambiguous digits   | Inspect the source document/page and staged extraction; repair the parser or transcribe manually with evidence                |
-| Incomplete/paginated/unranked rows       | Keep the extraction staged; do not drop rows, invent places, or claim completeness                                            |
-| Tool installation failure                | Inspect the workflow installation logs; check runner/network/package availability and rerun after fixing setup                |
-| Browser origin/request-budget rejection  | Inspect the URL and source policy; do not bypass allowlists or source access challenges                                       |
-| No proposal PR appears                   | Confirm `dry_run=false`, default-branch execution, successful repository validation, permissions, and proposal publishability |
-| Stable branch contains unrelated changes | Resolve branch state manually; keep archive transcription on a separate branch                                                |
+| Symptom                                     | Next step                                                                                                                                                                                                 |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Missing reviewed edition mapping            | Inspect the official label/context, add only the verified mapping, and rerun                                                                                                                              |
+| Zero additions or unresolved identities     | Review `identityProposals`, create canonical records, then add exact reviewed aliases where source IDs exist                                                                                              |
+| Low-confidence OCR or ambiguous digits      | Inspect the source document/page and staged extraction; repair the parser or transcribe manually with evidence                                                                                            |
+| Incomplete/paginated/unranked rows          | Keep the extraction staged; do not drop rows, invent places, or claim completeness                                                                                                                        |
+| Tool installation failure                   | Inspect the workflow installation logs; check runner/network/package availability and rerun after fixing setup                                                                                            |
+| `uv: command not found` during installation | The installation step must export the extracted uv directory to `PATH` for same-step commands; `GITHUB_PATH` only affects later steps. Merge the workflow fix and start a new run from the default branch |
+| Browser origin/request-budget rejection     | Inspect the URL and source policy; do not bypass allowlists or source access challenges                                                                                                                   |
+| No proposal PR appears                      | Confirm `dry_run=false`, default-branch execution, successful repository validation, permissions, and proposal publishability                                                                             |
+| Stable branch contains unrelated changes    | Resolve branch state manually; keep archive transcription on a separate branch                                                                                                                            |
 
 Keep failed proposals and staged evidence for diagnosis. No guide command automatically applies
 results, approves a PR, merges a PR, or changes the scheduling variable.
