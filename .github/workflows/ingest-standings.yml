@@ -171,7 +171,12 @@ jobs:
                 ;;
             esac
           fi
-          echo "proposal_paths_file=$paths_file" >> "$GITHUB_OUTPUT"
+          if [[ -s "$paths_file" ]]; then
+            echo "proposal_paths_file=$paths_file" >> "$GITHUB_OUTPUT"
+          else
+            echo '::error::Acquisition produced no saved proposals. Inspect the acquisition logs before retrying.'
+            failures=true
+          fi
           echo "source_failures=$failures" >> "$GITHUB_OUTPUT"
       - name: Validate repository and published archive
         run: npm run validate
@@ -192,6 +197,7 @@ jobs:
             .standings-ingestion/proposals/
             .standings-ingestion/staged/
             .standings-ingestion/drafts/
+            ${{ runner.temp }}/standings-ingestion-*.log
           if-no-files-found: warn
           retention-days: 14
       - name: Publish append-only review proposals
@@ -210,4 +216,6 @@ jobs:
           npm run standings:pull-request -- publish "${proposal_paths[@]}"
       - name: Report failed source acquisitions
         if: steps.collect.outputs.source_failures == 'true'
-        run: exit 1
+        run: |
+          echo '::error::One or more source acquisitions failed. Inspect acquisition logs and any saved proposals in the artifact.'
+          exit 1

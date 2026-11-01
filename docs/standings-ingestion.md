@@ -106,11 +106,13 @@ unsuccessful after retaining evidence and, when applicable, publishing eligible 
 
 On the run's summary page, find **Artifacts** and download `standings-ingestion-<RUN_ID>` after the
 run finishes. Extract the ZIP and open the proposal JSON and staged evidence. The artifact contains
-the collected proposal/staged directories and draft bundles, including hidden files; it is retained
-for 14 days. Draft generation runs after repository validation, so an earlier validation failure
-can leave proposals/staged evidence without drafts.
-Inspect artifacts even when the run is red. If installation or acquisition failed before any
-evidence was written, there may be no artifact; inspect the failed step's logs instead.
+the collected proposal/staged directories, draft bundles, and acquisition logs, including hidden
+files; it is retained for 14 days. Draft generation runs after repository validation, so an earlier
+validation failure can leave proposals/staged evidence without drafts. If acquisition saves no
+proposal, draft generation and proposal publication are skipped; the run still reports acquisition
+failure and uploads available logs.
+Inspect artifacts even when the run is red. If installation failed before acquisition started,
+there may be no artifact; inspect the failed step's logs instead.
 
 | Proposal field                         | Review task                                                                                             |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------- |
