@@ -80,6 +80,7 @@ jobs:
           (cd "$RUNNER_TEMP" && sha256sum --check uv.sha256)
           tar -xzf "$RUNNER_TEMP/uv.tar.gz" -C "$RUNNER_TEMP"
           echo "$RUNNER_TEMP/uv-x86_64-unknown-linux-gnu" >> "$GITHUB_PATH"
+          export PATH="$RUNNER_TEMP/uv-x86_64-unknown-linux-gnu:$PATH"
           uv sync --locked --project scripts/standings-spike
           uv sync --locked --project scripts/standings-ingestion
           npx playwright install --with-deps chromium
