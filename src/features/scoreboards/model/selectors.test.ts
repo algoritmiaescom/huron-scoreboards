@@ -45,13 +45,32 @@ describe('scoring and joins', () => {
       firstSolvedLabels: ['A'],
     });
     expect(rows[0].team.members).toBeUndefined();
-    expect(rows[0].school.logo).toBeUndefined();
+    expect(rows[0].school?.logo).toBeUndefined();
     expect(contest.standings.map(({ teamId }) => teamId)).toEqual([
       '2024-a',
       '2024-b',
       '2024-c',
       '2024-d',
     ]);
+  });
+
+  it('retains a team whose source did not identify its school', () => {
+    const contestWithUnknownSchool = { ...contest, standings: [contest.standings[0]] };
+    const archiveWithUnknownSchool = {
+      ...archive,
+      teams: archive.teams.map((team) =>
+        team.id === contest.standings[0].teamId ? { ...team, schoolId: null } : team,
+      ),
+    };
+
+    expect(selectContestRows(archiveWithUnknownSchool, contestWithUnknownSchool)[0].school).toBe(
+      null,
+    );
+    expect(
+      selectFilteredContestRows(archiveWithUnknownSchool, contestWithUnknownSchool, {
+        school: 'unit',
+      }),
+    ).toMatchObject({ rows: [] });
   });
 
   it('fails explicitly if a caller bypasses repository reference validation', () => {

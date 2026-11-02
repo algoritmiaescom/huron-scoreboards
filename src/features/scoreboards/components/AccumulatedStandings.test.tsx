@@ -13,14 +13,16 @@ afterEach(() => {
 });
 
 describe.each([false, true])('accumulated presentation (desktop=%s)', (desktop) => {
-  const renderStanding = (rows = standing.rows) => {
+  const renderStanding = (rows = standing.rows, overrides: Partial<typeof standing> = {}) => {
     vi.stubGlobal('matchMedia', (query: string) => ({
       matches: desktop && query.includes('min-width:900px'),
       media: query,
       addEventListener: vi.fn(),
       removeEventListener: vi.fn(),
     }));
-    return renderApp(<AccumulatedStandings archive={archive} standing={{ ...standing, rows }} />);
+    return renderApp(
+      <AccumulatedStandings archive={archive} standing={{ ...standing, ...overrides, rows }} />,
+    );
   };
 
   it('labels unknown qualification without treating it as excluded or drawing a cut', () => {
@@ -48,6 +50,20 @@ describe.each([false, true])('accumulated presentation (desktop=%s)', (desktop) 
         within(results).getByRole('columnheader', { name: 'Puntaje publicado' }),
       ).toBeInTheDocument();
     }
+  });
+
+  it('labels an unconfirmed snapshot before showing its published rows', () => {
+    renderStanding(standing.rows, {
+      scoreUnit: 'Puntos',
+      snapshot: 'unconfirmed',
+      snapshotLabel: 'Acumulado hasta la tercera fecha',
+    });
+    expect(screen.getByRole('alert')).toHaveTextContent(
+      'Acumulado hasta la tercera fecha. La fuente no confirma explícitamente que sea el resultado final.',
+    );
+    expect(screen.getAllByText('Puntaje publicado (Puntos)')).toHaveLength(
+      desktop ? 1 : standing.rows.length,
+    );
   });
 
   it.each(['qualified-only', 'unqualified-only', 'noncontiguous', 'tied-boundary'] as const)(

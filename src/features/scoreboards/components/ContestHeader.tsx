@@ -1,3 +1,4 @@
+import { Alert } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import { formatCalendarDate } from '@/lib/dates';
@@ -70,5 +71,10 @@ export const ContestHeader = ({
       </li>
       {contest.stage === 'fecha-0' && <li>No clasificatoria</li>}
     </Metadata>
+    {contest.publicationNotes?.map((note) => (
+      <Alert severity="warning" key={note}>
+        {note}
+      </Alert>
+    ))}
   </StandingsHeader>
 );

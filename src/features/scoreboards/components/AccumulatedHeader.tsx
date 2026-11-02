@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Alert, Typography } from '@mui/material';
 
 import { StandingsHeader } from './StandingsHeader';
 import { seriesLabel } from '../model/selectors';
@@ -30,5 +30,10 @@ export const AccumulatedHeader = ({
         ? 'Los puntajes y estados de clasificación de esta demostración son inventados.'
         : 'Puntajes y estados de clasificación publicados en la fuente. Huron Scoreboards no calcula estos puntajes.'}
     </Typography>
+    {standing.publicationNotes?.map((note) => (
+      <Alert severity="warning" key={note}>
+        {note}
+      </Alert>
+    ))}
   </StandingsHeader>
 );

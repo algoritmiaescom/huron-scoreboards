@@ -138,7 +138,7 @@ const validateTeams = (
           message: `season ${String(team.seasonYear)} does not match the season ${String(location.seasonYear)} in the file path`,
         });
       }
-      if (!schoolIds.has(team.schoolId)) {
+      if (team.schoolId !== null && !schoolIds.has(team.schoolId)) {
         issues.push({
           file,
           location: `[${String(index)}].schoolId`,

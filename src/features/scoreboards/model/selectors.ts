@@ -1,5 +1,6 @@
 import { findRecord, type RecordResult } from '@/lib/data/repository';
 
+import { bestKnownPlace, comparePlaces, isPodiumPlace } from './ranking';
 import { scoreStandingRow, selectFirstSolves } from './scoring';
 
 import type { Contest, ContestStage, School, SeasonStanding, Team } from './schemas';
@@ -88,32 +89,39 @@ const requireRecord = <T>(record: T | undefined, description: string): T => {
   return record;
 };
 
-const joinTeam = (archive: ScoreboardsArchive, teamId: string, seasonYear: number) => {
-  const team = requireRecord(
-    archive.teams.find(
-      (candidate) => candidate.id === teamId && candidate.seasonYear === seasonYear,
-    ),
-    `team ${teamId} in season ${String(seasonYear)}`,
-  );
-  const school = requireRecord(
-    archive.schools.find((candidate) => candidate.id === team.schoolId),
-    `school ${team.schoolId}`,
-  );
+const joinTeam = (
+  teamId: string,
+  seasonYear: number,
+  teamsById: ReadonlyMap<string, Team>,
+  schoolsById: ReadonlyMap<string, School>,
+) => {
+  const team = requireRecord(teamsById.get(teamId), `team ${teamId}`);
+  if (team.seasonYear !== seasonYear) {
+    throw new Error(
+      `Unresolved team ${teamId} in season ${String(seasonYear)}; selectors require a validated archive.`,
+    );
+  }
+  const school =
+    team.schoolId === null
+      ? null
+      : requireRecord(schoolsById.get(team.schoolId), `school ${team.schoolId}`);
   return { team, school };
 };
 
 export const selectContestRows = (archive: ScoreboardsArchive, contest: Contest) => {
   const firstSolves = selectFirstSolves(contest);
+  const teamsById = new Map(archive.teams.map((team) => [team.id, team]));
+  const schoolsById = new Map(archive.schools.map((school) => [school.id, school]));
   return contest.standings
     .map((row) => ({
       ...row,
-      ...joinTeam(archive, row.teamId, contest.seasonYear),
+      ...joinTeam(row.teamId, contest.seasonYear, teamsById, schoolsById),
       ...scoreStandingRow(row, contest.penaltyMinutesPerFailedAttempt),
       firstSolvedLabels: contest.problems
         .filter(({ label }) => firstSolves.get(label)?.has(row.teamId))
         .map(({ label }) => label),
     }))
-    .sort((a, b) => a.place - b.place);
+    .sort((a, b) => comparePlaces(a.place, b.place));
 };
 
 export interface StandingsFilters {
@@ -147,7 +155,7 @@ export const selectFilteredContestRows = (
       ) {
         return false;
       }
-      if (filters.school !== undefined && row.school.id !== filters.school) {
+      if (filters.school !== undefined && row.school?.id !== filters.school) {
         return false;
       }
       const accepted =
@@ -163,10 +171,16 @@ export const selectFilteredContestRows = (
   };
 };
 
-export const selectAccumulatedRows = (archive: ScoreboardsArchive, standing: SeasonStanding) =>
-  standing.rows
-    .map((row) => ({ ...row, ...joinTeam(archive, row.teamId, standing.seasonYear) }))
+export const selectAccumulatedRows = (archive: ScoreboardsArchive, standing: SeasonStanding) => {
+  const teamsById = new Map(archive.teams.map((team) => [team.id, team]));
+  const schoolsById = new Map(archive.schools.map((school) => [school.id, school]));
+  return standing.rows
+    .map((row) => ({
+      ...row,
+      ...joinTeam(row.teamId, standing.seasonYear, teamsById, schoolsById),
+    }))
     .sort((a, b) => a.place - b.place);
+};
 
 export const selectQualificationCut = (standing: SeasonStanding): number | undefined => {
   if (standing.rows.some((row) => row.qualified === null)) {
@@ -207,7 +221,7 @@ export const selectSchoolScope = (
     record: {
       school,
       schools: archive.schools.filter(({ id }) => ids.has(id)),
-      teams: archive.teams.filter(({ schoolId: id }) => ids.has(id)),
+      teams: archive.teams.filter(({ schoolId: id }) => id !== null && ids.has(id)),
     },
   };
 };
@@ -233,7 +247,7 @@ export const selectSchoolHistory = (
         a.contest.seasonYear - b.contest.seasonYear ||
         (a.contest.date ?? '').localeCompare(b.contest.date ?? '') ||
         a.contest.id.localeCompare(b.contest.id) ||
-        a.row.place - b.row.place,
+        comparePlaces(a.row.place, b.row.place),
     );
   const accumulated = archive.seasonStandings.flatMap((standing) =>
     selectAccumulatedRows(archive, standing)
@@ -254,9 +268,8 @@ export const selectSchoolHistory = (
         seasonYear,
         teams: new Set([...entries, ...published].map(({ row }) => row.teamId)).size,
         contests: new Set(entries.map(({ contest }) => contest.id)).size,
-        bestPlace:
-          entries.length === 0 ? undefined : Math.min(...entries.map(({ row }) => row.place)),
-        podiums: entries.filter(({ row }) => row.place <= 3).length,
+        bestPlace: bestKnownPlace(entries.map(({ row }) => row.place)),
+        podiums: entries.filter(({ row }) => isPodiumPlace(row.place)).length,
       };
     });
   return {
