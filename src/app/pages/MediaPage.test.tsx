@@ -64,6 +64,29 @@ const renderMedia = (data: MediaPageData, initialEntry = '/media') => {
 };
 
 describe('media page', () => {
+  it.each([undefined, 'Media title'])(
+    'renders captionless media without an empty body block (title: %s)',
+    async (title) => {
+      const post: Post = {
+        ...eventFile.posts[0],
+        body: '',
+        title,
+        media: [{ type: 'image', url: 'https://example.com/photo.jpg', alt: 'Contest photo' }],
+        tags: [],
+      };
+      renderMedia(createPageData([post]));
+      const article = await screen.findByRole('article');
+      expect(within(article).getByRole('img', { name: 'Contest photo' })).toBeVisible();
+      expect(
+        within(article).getByRole('link', { name: 'Ver publicación original' }),
+      ).toHaveAttribute('href', post.permalink);
+      expect(article.querySelectorAll('p:empty')).toHaveLength(0);
+      if (title !== undefined) {
+        expect(within(article).getByRole('heading', { name: title })).toBeVisible();
+      }
+    },
+  );
+
   it('renders archived posts, optional metadata, tags and original permalinks', async () => {
     const post: Post = {
       ...eventFile.posts[0],

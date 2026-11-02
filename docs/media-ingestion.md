@@ -201,6 +201,9 @@ overwritten.
 - Juicer link attachments are not image/video media and are omitted; the post's message and
   permalink remain. The importer never treats article URLs as image URLs, renders HTML, or
   downloads binaries. Remote media URLs can expire.
+- Null or blank Juicer messages become `body: ""` for posts containing images or videos;
+  their media and attribution are preserved, and the UI omits the empty body text block.
+  Posts with neither nonblank text nor image/video media fail validation.
 - No invented body, author, timestamp, or attribution fills missing required fields. Such
   records fail ingestion and must be investigated rather than silently discarded.
 - Existing posts are never refreshed or automatically removed when upstream data disappears.

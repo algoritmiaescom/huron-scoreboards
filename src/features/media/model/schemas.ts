@@ -22,17 +22,22 @@ export const postMediaSchema = z.object({
   alt: z.string(),
 });
 
-export const postSchema = z.object({
-  id: mediaIdSchema,
-  source: postSourceSchema,
-  author: postAuthorSchema,
-  postedAt: z.iso.datetime({ offset: true }),
-  title: z.string().min(1).optional(),
-  body: z.string().min(1),
-  media: z.array(postMediaSchema),
-  permalink: z.url(),
-  tags: z.array(z.string().min(1)),
-});
+export const postSchema = z
+  .object({
+    id: mediaIdSchema,
+    source: postSourceSchema,
+    author: postAuthorSchema,
+    postedAt: z.iso.datetime({ offset: true }),
+    title: z.string().min(1).optional(),
+    body: z.string(),
+    media: z.array(postMediaSchema),
+    permalink: z.url(),
+    tags: z.array(z.string().min(1)),
+  })
+  .refine((post) => post.body.trim().length > 0 || post.media.length > 0, {
+    path: ['body'],
+    message: 'must contain text or image/video media',
+  });
 
 export const hashtagSchema = z.string().regex(/^#[\w]+$/, 'must be a hashtag such as `#GPM2024`');
 

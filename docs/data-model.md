@@ -299,6 +299,8 @@ Notes on the shape:
 
 - Social posts have a body, not a title/subtitle/description triple. `title` is optional and only
   for sources that genuinely have one.
+- `body` is a required string but may be empty for image/video-only posts. Posts must contain
+  nonblank text or at least one media item. The UI omits empty body text blocks.
 - `media` and `tags` are arrays: posts carry carousels and several hashtags.
 - **`alt` is a required string but may be empty.** Ingestion preserves upstream descriptions and
   uses `""` when unavailable; contributors can improve them. Empty descriptions do not mean
