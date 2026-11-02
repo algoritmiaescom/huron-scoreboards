@@ -1,0 +1,5954 @@
+[
+  {
+    "id": "anahuac-mexico",
+    "officialName": "Universidad Anáhuac México",
+    "shortName": "Universidad Anáhuac México"
+  },
+  {
+    "id": "anahuac-oaxaca",
+    "officialName": "Universidad Anáhuac Oaxaca",
+    "shortName": "Universidad Anahuac Campus Oaxaca"
+  },
+  {
+    "id": "buap",
+    "officialName": "Benemérita Universidad Autónoma de Puebla",
+    "shortName": "Benemérita Universidad Autónoma de Puebla"
+  },
+  {
+    "id": "buap-mx",
+    "officialName": "Benemérita Universidad Autónoma de Puebla (BUAP)",
+    "shortName": "BUAP"
+  },
+  {
+    "id": "cbtis-217",
+    "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 217",
+    "shortName": "CBTIS 217"
+  },
+  {
+    "id": "ccl",
+    "officialName": "CCL",
+    "shortName": "CCL"
+  },
+  {
+    "id": "cefetmg",
+    "officialName": "Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG) — historical name; institution renamed Universidade Federal de Ciência e Inovação de Minas Gerais (UFCIMG)",
+    "shortName": "CEFET-MG/C2"
+  },
+  {
+    "id": "cetys-universidad",
+    "officialName": "CETYS Universidad",
+    "shortName": "CETYS Universidad"
+  },
+  {
+    "id": "cualtos-udg-mx",
+    "officialName": "Universidad de Guadalajara, Centro Universitario de los Altos (CUAltos)",
+    "shortName": "UdG CUALTOS"
+  },
+  {
+    "id": "cujae",
+    "officialName": "Universidad Tecnológica de La Habana José Antonio Echeverría (CUJAE)",
+    "shortName": "CUJAE"
+  },
+  {
+    "id": "cuvalles-udg-mx",
+    "officialName": "Centro Universitario de los Valles, Universidad de Guadalajara",
+    "shortName": "Universidad de Guadalajara CUVALLES"
+  },
+  {
+    "id": "dom-helder",
+    "officialName": "Centro Universitário Dom Helder Câmara",
+    "shortName": "Dom Helder"
+  },
+  {
+    "id": "eafit",
+    "officialName": "Universidad EAFIT",
+    "shortName": "EAFIT"
+  },
+  {
+    "id": "eia-colombia",
+    "officialName": "Universidad EIA",
+    "shortName": "EIA"
+  },
+  {
+    "id": "emi-bolivia",
+    "officialName": "Escuela Militar de Ingeniería (EMI)",
+    "shortName": "EMI"
+  },
+  {
+    "id": "emi-sistemas",
+    "officialName": "Escuela Militar de Ingeniería - Ingeniería de Sistemas",
+    "shortName": "EMI-Sistemas",
+    "parentInstitutionId": "emi-bolivia"
+  },
+  {
+    "id": "enes-morelia",
+    "officialName": "Escuela Nacional de Estudios Superiores, Unidad Morelia (ENES Morelia)",
+    "shortName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "esan-pe",
+    "officialName": "Universidad ESAN (ESAN Graduate School of Business)",
+    "shortName": "ESAN"
+  },
+  {
+    "id": "esen",
+    "officialName": "Escuela Superior de Economía y Negocios (ESEN)",
+    "shortName": "Escuela Superior de Economía y Negocios"
+  },
+  {
+    "id": "etitc",
+    "officialName": "Escuela Tecnológica Instituto Técnico Central",
+    "shortName": "ETITC"
+  },
+  {
+    "id": "facape",
+    "officialName": "Faculdade de Ciências Aplicadas e Sociais de Petrolina",
+    "shortName": "FACAPE"
+  },
+  {
+    "id": "fagoc",
+    "officialName": "Centro Universitário UNIFAGOC (Fundação Educacional Machado de Assis / FAGOC)",
+    "shortName": "FAGOC"
+  },
+  {
+    "id": "fatec-bauru",
+    "officialName": "Faculdade de Tecnologia de Bauru (FATEC Bauru)",
+    "shortName": "FATEC/BAURU"
+  },
+  {
+    "id": "fatec-cruzeiro",
+    "officialName": "FATEC Cruzeiro",
+    "shortName": "FATEC Cruzeiro"
+  },
+  {
+    "id": "fatec-garca",
+    "officialName": "FATEC Garça",
+    "shortName": "FATEC/Garça"
+  },
+  {
+    "id": "fatec-itapetininga",
+    "officialName": "FATEC Itapetininga",
+    "shortName": "FATEC/Itapetininga"
+  },
+  {
+    "id": "fatec-mogi-das-cruzes",
+    "officialName": "FATEC Mogi das Cruzes",
+    "shortName": "Fatec/Mogi das Cruzes"
+  },
+  {
+    "id": "fatec-ourinhos",
+    "officialName": "FATEC Ourinhos",
+    "shortName": "FATEC/Ourinhos"
+  },
+  {
+    "id": "fatec-sao-jose-dos-campos",
+    "officialName": "Faculdade de Tecnologia de São José dos Campos",
+    "shortName": "FATEC/São José dos Campos"
+  },
+  {
+    "id": "fatec-sorocaba",
+    "officialName": "Faculdade de Tecnologia (Fatec) Sorocaba, Centro Paula Souza",
+    "shortName": "FATEC/Sorocaba"
+  },
+  {
+    "id": "fce-unlp",
+    "officialName": "Facultad de Ciencias Económicas, Universidad Nacional de La Plata",
+    "shortName": "FCE - UNLP",
+    "parentInstitutionId": "unlp"
+  },
+  {
+    "id": "fceia-unr",
+    "officialName": "Facultad de Ciencias Exactas, Ingeniería y Agrimensura - Universidad Nacional de Rosario",
+    "shortName": "FCEIA-UNR"
+  },
+  {
+    "id": "fecap",
+    "officialName": "Fundação Escola de Comércio Álvares Penteado (FECAP)",
+    "shortName": "FECAP"
+  },
+  {
+    "id": "fei-br",
+    "officialName": "Centro Universitário FEI",
+    "shortName": "FEI"
+  },
+  {
+    "id": "fes-acatlan",
+    "officialName": "Facultad de Estudios Superiores Acatlán",
+    "shortName": "Facultad de Estudios Superiores Acatlán - UNAM",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "fgv",
+    "officialName": "Fundação Getulio Vargas (FGV)",
+    "shortName": "FGV"
+  },
+  {
+    "id": "fi-unju",
+    "officialName": "Facultad de Ingeniería - Universidad Nacional de Jujuy",
+    "shortName": "FI UNJU"
+  },
+  {
+    "id": "fich-unl",
+    "officialName": "Facultad de Ingeniería y Ciencias Hídricas (FICH), Universidad Nacional del Litoral (UNL)",
+    "shortName": "FICH-UNL"
+  },
+  {
+    "id": "furg",
+    "officialName": "Universidade Federal do Rio Grande",
+    "shortName": "FURG"
+  },
+  {
+    "id": "ib-ar",
+    "officialName": "Instituto Balseiro",
+    "shortName": "IB"
+  },
+  {
+    "id": "ibilce-unesp",
+    "officialName": "Instituto de Biociências, Letras e Ciências Exatas - UNESP (Câmpus de São José do Rio Preto)",
+    "shortName": "UNESP/IBILCE"
+  },
+  {
+    "id": "icesi",
+    "officialName": "Universidad Icesi",
+    "shortName": "ICESI"
+  },
+  {
+    "id": "iesb",
+    "officialName": "Centro Universitário IESB",
+    "shortName": "IESB"
+  },
+  {
+    "id": "ifac",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia do Acre",
+    "shortName": "IFAC"
+  },
+  {
+    "id": "ifal",
+    "officialName": "Instituto Federal de Alagoas",
+    "shortName": "IFAL"
+  },
+  {
+    "id": "ifam-parintins",
+    "officialName": "Instituto Federal do Amazonas - Campus Parintins",
+    "shortName": "IFAM - Parintins"
+  },
+  {
+    "id": "ifb",
+    "officialName": "Instituto Federal de Brasília",
+    "shortName": "IFB"
+  },
+  {
+    "id": "ifce",
+    "officialName": "Instituto Federal do Ceará (IFCE)",
+    "shortName": "IFCE/Aracati"
+  },
+  {
+    "id": "ifce-crato",
+    "officialName": "Instituto Federal do Ceará - Campus Crato",
+    "shortName": "IFCE/Campus Crato",
+    "parentInstitutionId": "ifce"
+  },
+  {
+    "id": "ifce-fortaleza",
+    "officialName": "Instituto Federal do Ceará - Campus Fortaleza",
+    "shortName": "IFCE/Fortaleza",
+    "parentInstitutionId": "ifce"
+  },
+  {
+    "id": "ifce-maracanau",
+    "officialName": "Instituto Federal do Ceará - Campus Maracanaú",
+    "shortName": "IFCE/Maracanaú",
+    "parentInstitutionId": "ifce"
+  },
+  {
+    "id": "ifce-tiangua",
+    "officialName": "Instituto Federal do Ceará - Campus Tianguá",
+    "shortName": "IFCE/Tianguá",
+    "parentInstitutionId": "ifce"
+  },
+  {
+    "id": "ifes",
+    "officialName": "Instituto Federal do Espírito Santo",
+    "shortName": "IFES"
+  },
+  {
+    "id": "ifgoiano-rio-verde",
+    "officialName": "Instituto Federal Goiano - Campus Rio Verde",
+    "shortName": "IFGoiano/Rio Verde"
+  },
+  {
+    "id": "ifma",
+    "officialName": "Instituto Federal do Maranhão",
+    "shortName": "IFMA"
+  },
+  {
+    "id": "ifmg",
+    "officialName": "Instituto Federal de Minas Gerais (IFMG)",
+    "shortName": "IFMG/Ouro Branco"
+  },
+  {
+    "id": "ifms",
+    "officialName": "Instituto Federal de Mato Grosso do Sul",
+    "shortName": "IFMS"
+  },
+  {
+    "id": "ifnmg",
+    "officialName": "Instituto Federal do Norte de Minas Gerais (IFNMG)",
+    "shortName": "IFNMG/Campus Monte"
+  },
+  {
+    "id": "ifnmg-pirapora",
+    "officialName": "Instituto Federal do Norte de Minas Gerais - Campus Pirapora",
+    "shortName": "IFNMG/Pirapora",
+    "parentInstitutionId": "ifnmg"
+  },
+  {
+    "id": "ifpa",
+    "officialName": "Instituto Federal do Pará (IFPA)",
+    "shortName": "IFPA/Paragominas"
+  },
+  {
+    "id": "ifpb",
+    "officialName": "Instituto Federal da Paraíba",
+    "shortName": "IFPB"
+  },
+  {
+    "id": "ifpb-cajazeiras",
+    "officialName": "Instituto Federal da Paraíba - Campus Cajazeiras",
+    "shortName": "IFPB/Cajazeiras",
+    "parentInstitutionId": "ifpb"
+  },
+  {
+    "id": "ifpb-campina-grande",
+    "officialName": "Instituto Federal da Paraíba - Campus Campina Grande",
+    "shortName": "IFPB/Campina Grande",
+    "parentInstitutionId": "ifpb"
+  },
+  {
+    "id": "ifpb-joao-pessoa",
+    "officialName": "Instituto Federal da Paraíba - Campus João Pessoa",
+    "shortName": "IFPB/João Pessoa",
+    "parentInstitutionId": "ifpb"
+  },
+  {
+    "id": "ifpi",
+    "officialName": "Instituto Federal do Piauí",
+    "shortName": "IFPI"
+  },
+  {
+    "id": "ifpi-parnaiba",
+    "officialName": "Instituto Federal do Piauí - Campus Parnaíba",
+    "shortName": "IFPI - Parnaíba",
+    "parentInstitutionId": "ifpi"
+  },
+  {
+    "id": "ifpi-picos",
+    "officialName": "Instituto Federal do Piauí - Campus Picos",
+    "shortName": "IFPI/Picos",
+    "parentInstitutionId": "ifpi"
+  },
+  {
+    "id": "ifrn-natal-central",
+    "officialName": "Instituto Federal do Rio Grande do Norte - Campus Natal-Central",
+    "shortName": "IFRN/Natal-Central"
+  },
+  {
+    "id": "ifsp-barretos",
+    "officialName": "Instituto Federal de São Paulo - Campus Barretos",
+    "shortName": "IFSP/Barretos"
+  },
+  {
+    "id": "ifsp-birigui",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP), Câmpus Birigui",
+    "shortName": "IFSP/Birigui"
+  },
+  {
+    "id": "ifsp-piracicaba",
+    "officialName": "Instituto Federal de São Paulo - Campus Piracicaba",
+    "shortName": "IFSP/Piracicaba"
+  },
+  {
+    "id": "ifsp-salto",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP), Câmpus Salto",
+    "shortName": "IFSP - Salto"
+  },
+  {
+    "id": "ifsudestemg",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais (IFSUDESTEMG)",
+    "shortName": "IFSUDESTEMG/Manhuacu"
+  },
+  {
+    "id": "ifsudestemg-manhuacu",
+    "officialName": "Instituto Federal do Sudeste de Minas Gerais - Campus Manhuaçu",
+    "shortName": "IFSUDESTEMGMan",
+    "parentInstitutionId": "ifsudestemg"
+  },
+  {
+    "id": "ifsul-passo-fundo",
+    "officialName": "Instituto Federal Sul-rio-grandense - Campus Passo Fundo",
+    "shortName": "IFSUL - PF"
+  },
+  {
+    "id": "ifsuldeminas-machado",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais - Campus Machado",
+    "shortName": "IFSULMG/Machado"
+  },
+  {
+    "id": "ifsuldeminas-muzambinho",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais - Campus Muzambinho",
+    "shortName": "IFSULMG/Muzambinho"
+  },
+  {
+    "id": "ifsuldeminas-passos",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais - Campus Passos",
+    "shortName": "IFSULMG/Passos"
+  },
+  {
+    "id": "ifsuldeminas-pocos-de-caldas",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais - Campus Poços de Caldas",
+    "shortName": "IFSULMG/Poços de Caldas"
+  },
+  {
+    "id": "iftm",
+    "officialName": "Instituto Federal do Triângulo Mineiro (IFTM)",
+    "shortName": "IFTM/Paracatu"
+  },
+  {
+    "id": "iftm-ituiutaba",
+    "officialName": "Instituto Federal do Triângulo Mineiro - Campus Ituiutaba",
+    "shortName": "IFTM/Ituiutaba",
+    "parentInstitutionId": "iftm"
+  },
+  {
+    "id": "iftm-patrocinio",
+    "officialName": "Instituto Federal do Triângulo Mineiro - Campus Patrocínio",
+    "shortName": "IFTM Campus Patrocín",
+    "parentInstitutionId": "iftm"
+  },
+  {
+    "id": "iftm-uberaba",
+    "officialName": "Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro (IFTM), Campus Uberaba",
+    "shortName": "IFTM/Uberaba",
+    "parentInstitutionId": "iftm"
+  },
+  {
+    "id": "imepac-araguari",
+    "officialName": "Instituto Master de Ensino Presidente Antônio Carlos - Araguari",
+    "shortName": "IMEPAC/ARAGUARI"
+  },
+  {
+    "id": "impa-br",
+    "officialName": "Instituto de Matemática Pura e Aplicada (IMPA)",
+    "shortName": "IMPA"
+  },
+  {
+    "id": "inatel-br",
+    "officialName": "Instituto Nacional de Telecomunicações (Inatel)",
+    "shortName": "INATEL"
+  },
+  {
+    "id": "info-unlp-ar",
+    "officialName": "Facultad de Informática, Universidad Nacional de La Plata",
+    "shortName": "INFO UNLP",
+    "parentInstitutionId": "unlp"
+  },
+  {
+    "id": "ing-unlp",
+    "officialName": "Facultad de Ingeniería - Universidad Nacional de La Plata",
+    "shortName": "ING UNLP",
+    "parentInstitutionId": "unlp"
+  },
+  {
+    "id": "insper",
+    "officialName": "Insper - Instituto de Ensino e Pesquisa",
+    "shortName": "Insper"
+  },
+  {
+    "id": "instec",
+    "officialName": "Instituto Superior de Tecnologías y Ciencias Aplicadas (InSTEC)",
+    "shortName": "INSTEC"
+  },
+  {
+    "id": "intec-rd",
+    "officialName": "Instituto Tecnológico de Santo Domingo",
+    "shortName": "INTEC"
+  },
+  {
+    "id": "ipn",
+    "officialName": "Instituto Politécnico Nacional",
+    "shortName": "IPN"
+  },
+  {
+    "id": "ipn-cnymyn",
+    "officialName": "Centro de Nanociencias y Micro y Nanotecnologías",
+    "shortName": "CNyMyN",
+    "parentInstitutionId": "ipn"
+  },
+  {
+    "id": "ipn-escom",
+    "officialName": "Escuela Superior de Cómputo",
+    "shortName": "ESCOM IPN",
+    "parentInstitutionId": "ipn"
+  },
+  {
+    "id": "ipn-esfm",
+    "officialName": "Escuela Superior de Física y Matemáticas",
+    "shortName": "ESFM IPN",
+    "parentInstitutionId": "ipn"
+  },
+  {
+    "id": "ipn-esime-culhuacan",
+    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica, Unidad Culhuacán",
+    "shortName": "ESIME Culhuacán",
+    "parentInstitutionId": "ipn"
+  },
+  {
+    "id": "ipn-upiiz",
+    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería, Campus Zacatecas",
+    "shortName": "UPIIZ - IPN",
+    "parentInstitutionId": "ipn"
+  },
+  {
+    "id": "it-cd-cuauhtemoc",
+    "officialName": "Instituto Tecnológico de Cd. Cuauhtémoc",
+    "shortName": "Instituto Tecnológico de Cd. Cuauhtémoc"
+  },
+  {
+    "id": "it-cd-jimenez",
+    "officialName": "Instituto Tecnológico de Cd. Jiménez",
+    "shortName": "ITCDJ"
+  },
+  {
+    "id": "it-cd-juarez",
+    "officialName": "Instituto Tecnológico de Ciudad Juárez (TecNM Campus Cd. Juárez)",
+    "shortName": "ITCJ"
+  },
+  {
+    "id": "it-ciudad-madero",
+    "officialName": "Instituto Tecnológico de Ciudad Madero",
+    "shortName": "ITCM"
+  },
+  {
+    "id": "it-huetamo",
+    "officialName": "Instituto Tecnológico Superior de Huetamo",
+    "shortName": "Tec Huetamo"
+  },
+  {
+    "id": "it-matamoros",
+    "officialName": "Instituto Tecnológico de Matamoros",
+    "shortName": "IT Matamoros"
+  },
+  {
+    "id": "it-morelia",
+    "officialName": "Instituto Tecnológico de Morelia",
+    "shortName": "Instituto Technologico de Morelia"
+  },
+  {
+    "id": "it-oaxaca",
+    "officialName": "Instituto Tecnológico de Oaxaca",
+    "shortName": "ITO"
+  },
+  {
+    "id": "it-orizaba",
+    "officialName": "Instituto Tecnológico de Orizaba",
+    "shortName": "IT Orizaba"
+  },
+  {
+    "id": "it-pachuca",
+    "officialName": "Instituto Tecnológico de Pachuca",
+    "shortName": "IT Pachuca"
+  },
+  {
+    "id": "it-queretaro",
+    "officialName": "Instituto Tecnológico de Querétaro",
+    "shortName": "Instituto Tecnológico de Querétaro"
+  },
+  {
+    "id": "it-saltillo",
+    "officialName": "Instituto Tecnológico de Saltillo",
+    "shortName": "Tec Saltillo"
+  },
+  {
+    "id": "it-veracruz",
+    "officialName": "Instituto Tecnológico de Veracruz",
+    "shortName": "Instituto Tecnológico de Veracruz"
+  },
+  {
+    "id": "it-zacatepec",
+    "officialName": "Instituto Tecnológico de Zacatepec",
+    "shortName": "Instituto Tecnológico de Zacatepec"
+  },
+  {
+    "id": "ita-brasil",
+    "officialName": "Instituto Tecnológico de Aeronáutica (ITA)",
+    "shortName": "ITA"
+  },
+  {
+    "id": "ital-br",
+    "officialName": "Instituto de Tecnologia de Alimentos (Ital)",
+    "shortName": "ITAL"
+  },
+  {
+    "id": "itam",
+    "officialName": "Instituto Tecnológico Autónomo de México (ITAM)",
+    "shortName": "ITAM"
+  },
+  {
+    "id": "itba",
+    "officialName": "Instituto Tecnológico de Buenos Aires",
+    "shortName": "ITBA"
+  },
+  {
+    "id": "itc-celaya",
+    "officialName": "Instituto Tecnológico de Celaya (TecNM en Celaya)",
+    "shortName": "Instituto Tecnologico de Celaya"
+  },
+  {
+    "id": "itcr",
+    "officialName": "Instituto Tecnológico de Costa Rica",
+    "shortName": "ITCR"
+  },
+  {
+    "id": "itescam",
+    "officialName": "Instituto Tecnológico Superior de Calkiní en el Estado de Campeche (ITESCAM / TecNM Campus Calkiní)",
+    "shortName": "ITS Calkini"
+  },
+  {
+    "id": "itesg",
+    "officialName": "Instituto Tecnológico Superior de Guanajuato (TecNM campus Guanajuato)",
+    "shortName": "ITESG"
+  },
+  {
+    "id": "itesm-cem",
+    "officialName": "Tecnológico de Monterrey, Campus Estado de México",
+    "shortName": "ITESM CEM"
+  },
+  {
+    "id": "itesm-cuernavaca",
+    "officialName": "Tecnológico de Monterrey - Campus Cuernavaca",
+    "shortName": "ITESM Cuernavaca"
+  },
+  {
+    "id": "itesm-monterrey",
+    "officialName": "Tecnológico de Monterrey",
+    "shortName": "ITESM Monterrey"
+  },
+  {
+    "id": "iteso",
+    "officialName": "Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO)",
+    "shortName": "ITESO"
+  },
+  {
+    "id": "iteso-preparatoria",
+    "officialName": "Preparatoria ITESO",
+    "shortName": "PrepaITESO",
+    "parentInstitutionId": "iteso"
+  },
+  {
+    "id": "itl",
+    "officialName": "Instituto Tecnologico de la Laguna",
+    "shortName": "Instituto Tecnologico de la Laguna"
+  },
+  {
+    "id": "itlac",
+    "officialName": "Instituto Tecnológico de Lázaro Cárdenas (ITLAC)",
+    "shortName": "Instituto Tecnológico de Lázaro Cárdenas"
+  },
+  {
+    "id": "itm-medellin",
+    "officialName": "Instituto Tecnológico Metropolitano (ITM)",
+    "shortName": "ITM"
+  },
+  {
+    "id": "itnl",
+    "officialName": "Instituto Tecnológico de Nuevo León",
+    "shortName": "ITNL"
+  },
+  {
+    "id": "itpinotepa",
+    "officialName": "Instituto Tecnológico de Pinotepa (TecNM Campus Pinotepa)",
+    "shortName": "ITPN"
+  },
+  {
+    "id": "its-lerdo",
+    "officialName": "Instituto Tecnológico Superior de Lerdo",
+    "shortName": "Instituto Tecnologico Superior de Lerdo"
+  },
+  {
+    "id": "its-nuevo-casas-grandes",
+    "officialName": "Instituto Tecnológico Superior de Nuevo Casas Grandes",
+    "shortName": "ITSNCG"
+  },
+  {
+    "id": "its-poza-rica",
+    "officialName": "Instituto Tecnológico Superior de Poza Rica",
+    "shortName": "ITS POZA RICA"
+  },
+  {
+    "id": "its-san-luis-potosi",
+    "officialName": "Instituto Tecnológico Superior de San Luis Potosí",
+    "shortName": "TECNM/ITSLP"
+  },
+  {
+    "id": "its-zongolica",
+    "officialName": "Instituto Tecnológico Superior de Zongolica",
+    "shortName": "ITSZ TECNM"
+  },
+  {
+    "id": "itsantiago-edu-mx",
+    "officialName": "Instituto Tecnológico Superior de Santiago Papasquiaro",
+    "shortName": "ITSSP"
+  },
+  {
+    "id": "itsav",
+    "officialName": "Instituto Tecnológico Superior de Alvarado",
+    "shortName": "ITSAV"
+  },
+  {
+    "id": "itsmante",
+    "officialName": "Instituto Tecnológico Superior de El Mante",
+    "shortName": "ITSMANTE"
+  },
+  {
+    "id": "itsoeh",
+    "officialName": "Instituto Tecnológico Superior del Occidente del Estado de Hidalgo",
+    "shortName": "ITSOEH"
+  },
+  {
+    "id": "itspa",
+    "officialName": "Instituto Tecnológico Superior de Pátzcuaro (ITSPA)",
+    "shortName": "ITSPA"
+  },
+  {
+    "id": "itsur",
+    "officialName": "Instituto Tecnológico Superior del Sur de Guanajuato (ITSUR)",
+    "shortName": "ITSUR"
+  },
+  {
+    "id": "itszn-mx",
+    "officialName": "Instituto Tecnológico Superior Zacatecas Norte",
+    "shortName": "ITSZN"
+  },
+  {
+    "id": "itver",
+    "officialName": "Instituto Tecnológico de Veracruz (TecNM Veracruz)",
+    "shortName": "ITVer"
+  },
+  {
+    "id": "key-institute",
+    "officialName": "Instituto Key de Ingeniería y Ciencias",
+    "shortName": "Instituto Key de Ingeniería y Ciencias"
+  },
+  {
+    "id": "konrad-lorenz",
+    "officialName": "Fundación Universitaria Konrad Lorenz",
+    "shortName": "FUKL"
+  },
+  {
+    "id": "mackenzie",
+    "officialName": "Universidade Presbiteriana Mackenzie",
+    "shortName": "Mackenzie"
+  },
+  {
+    "id": "marista-guadalajara",
+    "officialName": "Universidad Marista de Guadalajara",
+    "shortName": "Universidad Marista de Guadalajara"
+  },
+  {
+    "id": "marista-merida-mx",
+    "officialName": "Universidad Marista de Mérida",
+    "shortName": "Universidad Marista de Mérida"
+  },
+  {
+    "id": "omijal",
+    "officialName": "Olimpiada Mexicana de Informática Jalisco",
+    "shortName": "OMIJAL"
+  },
+  {
+    "id": "ort-uy",
+    "officialName": "Universidad ORT Uruguay",
+    "shortName": "ORT"
+  },
+  {
+    "id": "poli-co",
+    "officialName": "Politécnico Grancolombiano",
+    "shortName": "PoliGran"
+  },
+  {
+    "id": "puc-goias",
+    "officialName": "Pontifícia Universidade Católica de Goiás",
+    "shortName": "PUC-GO"
+  },
+  {
+    "id": "puc-rio",
+    "officialName": "Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)",
+    "shortName": "PUC Rio de Janeiro"
+  },
+  {
+    "id": "pucminas",
+    "officialName": "Pontifícia Universidade Católica de Minas Gerais (PUC Minas) - Instituto de Ciências Exatas e Informática (ICEI)",
+    "shortName": "PUC-MG/ICEI"
+  },
+  {
+    "id": "pucmm-csd",
+    "officialName": "Pontificia Universidad Católica Madre y Maestra (PUCMM), Campus de Santo Domingo (CSD)",
+    "shortName": "PUCMM-CSD"
+  },
+  {
+    "id": "pucmm-santiago",
+    "officialName": "Pontificia Universidad Católica Madre y Maestra, Campus Santiago",
+    "shortName": "PUCMM-CSTI"
+  },
+  {
+    "id": "pucp",
+    "officialName": "Pontificia Universidad Católica del Perú",
+    "shortName": "PUCP"
+  },
+  {
+    "id": "puj-bogota",
+    "officialName": "Pontificia Universidad Javeriana, sede Bogotá",
+    "shortName": "PUJ-Bog"
+  },
+  {
+    "id": "puj-cali",
+    "officialName": "Pontificia Universidad Javeriana, Seccional Cali",
+    "shortName": "PUJ-Cali"
+  },
+  {
+    "id": "senai-cimatec",
+    "officialName": "SENAI CIMATEC (Centro Integrado de Manufatura e Tecnologia)",
+    "shortName": "SENAI SIMATEC"
+  },
+  {
+    "id": "source-label-anahuac-67e7daab10",
+    "officialName": "Anahuac",
+    "shortName": "Anahuac"
+  },
+  {
+    "id": "source-label-cavanis-5b019bc33a",
+    "officialName": "CAVANIS",
+    "shortName": "CAVANIS"
+  },
+  {
+    "id": "source-label-ccl-br-989f407cbb",
+    "officialName": "CCL-BR",
+    "shortName": "CCL-BR"
+  },
+  {
+    "id": "source-label-ccl-cu-78ea5a32a8",
+    "officialName": "CCL-CU",
+    "shortName": "CCL-CU"
+  },
+  {
+    "id": "source-label-ccl-vcl-44a76e32a4",
+    "officialName": "CCL-VCL",
+    "shortName": "CCL-VCL"
+  },
+  {
+    "id": "source-label-cefet-rj-petropolis-06ba531ff2",
+    "officialName": "CEFET/RJ Petrópolis",
+    "shortName": "CEFET/RJ Petrópolis"
+  },
+  {
+    "id": "source-label-cefet-rj-petropolis-db9cc3ea92",
+    "officialName": "CEFET-RJ/Petrópolis",
+    "shortName": "CEFET-RJ/Petrópolis"
+  },
+  {
+    "id": "source-label-cei-e81d4d924b",
+    "officialName": "CEI",
+    "shortName": "CEI"
+  },
+  {
+    "id": "source-label-cetys-u-321516536c",
+    "officialName": "CETYS U.",
+    "shortName": "CETYS U."
+  },
+  {
+    "id": "source-label-chapeco-ea806e9a93",
+    "officialName": "Chapecó",
+    "shortName": "Chapecó"
+  },
+  {
+    "id": "source-label-clubes-de-programacion-competitiva-5d6e8c8d8e",
+    "officialName": "Clubes de Programación Competitiva",
+    "shortName": "Clubes de Programación Competitiva"
+  },
+  {
+    "id": "source-label-descomplica-4b30f1b9b2",
+    "officialName": "Descomplica",
+    "shortName": "Descomplica"
+  },
+  {
+    "id": "source-label-dicisug-ea29ee24e6",
+    "officialName": "DICISUG",
+    "shortName": "DICISUG"
+  },
+  {
+    "id": "source-label-ean-2311f6a1d6",
+    "officialName": "EAN",
+    "shortName": "EAN"
+  },
+  {
+    "id": "source-label-ecci-c6c3e6eb44",
+    "officialName": "ECCI",
+    "shortName": "ECCI"
+  },
+  {
+    "id": "source-label-eci-e098f79a76",
+    "officialName": "ECI",
+    "shortName": "ECI"
+  },
+  {
+    "id": "source-label-eep-b5a19c77a0",
+    "officialName": "EEP",
+    "shortName": "EEP"
+  },
+  {
+    "id": "source-label-eet1-5a016fa5f4",
+    "officialName": "EET1",
+    "shortName": "EET1"
+  },
+  {
+    "id": "source-label-eliminados-f72046f172",
+    "officialName": "ELIMINADOS",
+    "shortName": "ELIMINADOS"
+  },
+  {
+    "id": "source-label-emdic-3d17d72e0b",
+    "officialName": "EMdIC",
+    "shortName": "EMdIC"
+  },
+  {
+    "id": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "officialName": "Escuela Superior De Computo Instituto Politecnico Nacional",
+    "shortName": "Escuela Superior De Computo Instituto Politecnico Nacional"
+  },
+  {
+    "id": "source-label-espm-8a88abee7e",
+    "officialName": "ESPM",
+    "shortName": "ESPM"
+  },
+  {
+    "id": "source-label-exactas-8e3f953c22",
+    "officialName": "Exactas",
+    "shortName": "Exactas"
+  },
+  {
+    "id": "source-label-faculmontes-279b6cd485",
+    "officialName": "FACULMONTES",
+    "shortName": "FACULMONTES"
+  },
+  {
+    "id": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "officialName": "Facultad de Ciencias-Universidad Nacional Autónoma de México",
+    "shortName": "Facultad de Ciencias-Universidad Nacional Autónoma de México"
+  },
+  {
+    "id": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "officialName": "Facultad de Estudios Superiores Acatlán - UNAM",
+    "shortName": "Facultad de Estudios Superiores Acatlán - UNAM"
+  },
+  {
+    "id": "source-label-fai-80d0e12571",
+    "officialName": "FAI",
+    "shortName": "FAI"
+  },
+  {
+    "id": "source-label-fap-17503276f6",
+    "officialName": "FAP",
+    "shortName": "FAP"
+  },
+  {
+    "id": "source-label-fatec-ourinhos-7efad438dd",
+    "officialName": "Fatec Ourinhos",
+    "shortName": "Fatec Ourinhos"
+  },
+  {
+    "id": "source-label-fcen-0f01e9672c",
+    "officialName": "FCEN",
+    "shortName": "FCEN"
+  },
+  {
+    "id": "source-label-fe-unam-7a4403ea09",
+    "officialName": "FE-UNAM",
+    "shortName": "FE-UNAM"
+  },
+  {
+    "id": "source-label-fib-d99c045aea",
+    "officialName": "FIB",
+    "shortName": "FIB"
+  },
+  {
+    "id": "source-label-flf-d5e887275b",
+    "officialName": "FLF",
+    "shortName": "FLF"
+  },
+  {
+    "id": "source-label-gatuno-mx-fd6f16211a",
+    "officialName": "Gatuno.mx",
+    "shortName": "Gatuno.mx"
+  },
+  {
+    "id": "source-label-horus-8282a9445e",
+    "officialName": "Horus",
+    "shortName": "Horus"
+  },
+  {
+    "id": "source-label-horus-pinhalzinho-72e296aa8f",
+    "officialName": "Horus-Pinhalzinho",
+    "shortName": "Horus-Pinhalzinho"
+  },
+  {
+    "id": "source-label-i-e-s-no-7-a172506eb6",
+    "officialName": "I.E.S. Nº 7",
+    "shortName": "I.E.S. Nº 7"
+  },
+  {
+    "id": "source-label-i-t-s-c-52da1bab10",
+    "officialName": "I.T.S.C.",
+    "shortName": "I.T.S.C."
+  },
+  {
+    "id": "source-label-ifam-afbf514eac",
+    "officialName": "IFAM",
+    "shortName": "IFAM"
+  },
+  {
+    "id": "source-label-ifc-7e743842e5",
+    "officialName": "IFC",
+    "shortName": "IFC"
+  },
+  {
+    "id": "source-label-ifce-41d6ff4887",
+    "officialName": "IFCE",
+    "shortName": "IFCE"
+  },
+  {
+    "id": "source-label-ifg-morrinhos-075b822ea6",
+    "officialName": "IFG-Morrinhos",
+    "shortName": "IFG-Morrinhos"
+  },
+  {
+    "id": "source-label-ifmg-sje-05e58ab462",
+    "officialName": "IFMG-SJE",
+    "shortName": "IFMG-SJE"
+  },
+  {
+    "id": "source-label-ifpa-campus-paragominas-0114de9e79",
+    "officialName": "IFPA Campus Paragominas",
+    "shortName": "IFPA Campus Paragominas"
+  },
+  {
+    "id": "source-label-ifpe-e67e1a67bc",
+    "officialName": "IFPE",
+    "shortName": "IFPE"
+  },
+  {
+    "id": "source-label-ifrn-aa3bb1c3e6",
+    "officialName": "IFRN",
+    "shortName": "IFRN"
+  },
+  {
+    "id": "source-label-ifsp-c38814678b",
+    "officialName": "IFSP",
+    "shortName": "IFSP"
+  },
+  {
+    "id": "source-label-ifsudestemgjf-0423de23ac",
+    "officialName": "ifsudestemgJF",
+    "shortName": "ifsudestemgJF"
+  },
+  {
+    "id": "source-label-ifsulmgifs-bc7dd3bdfc",
+    "officialName": "IFSULMGIfs",
+    "shortName": "IFSULMGIfs"
+  },
+  {
+    "id": "source-label-iftm-campus-upt-b4130603cb",
+    "officialName": "IFTM campus UPT",
+    "shortName": "IFTM campus UPT"
+  },
+  {
+    "id": "source-label-ime-b6cebba598",
+    "officialName": "IME",
+    "shortName": "IME"
+  },
+  {
+    "id": "source-label-instituto-tecnologic-fdfaee32a4",
+    "officialName": "Instituto Tecnologic",
+    "shortName": "Instituto Tecnologic"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "officialName": "Instituto Tecnológico Autónomo de México",
+    "shortName": "Instituto Tecnológico Autónomo de México"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-de-acapulco-a168c5e4e0",
+    "officialName": "Instituto Tecnologico de Acapulco",
+    "shortName": "Instituto Tecnologico de Acapulco"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-de-altamira-1cd8f26342",
+    "officialName": "Instituto Tecnológico de Altamira",
+    "shortName": "Instituto Tecnológico de Altamira"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-de-ciudad-guzman-205610a590",
+    "officialName": "Instituto Tecnológico de Ciudad Guzmán",
+    "shortName": "Instituto Tecnológico de Ciudad Guzmán"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-de-lazaro-cardenas-9aa9278bcb",
+    "officialName": "Instituto Tecnológico de Lázaro Cárdenas",
+    "shortName": "Instituto Tecnológico de Lázaro Cárdenas"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-de-tehuacan-b0ba945552",
+    "officialName": "Instituto Tecnológico de Tehuacán",
+    "shortName": "Instituto Tecnológico de Tehuacán"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-de-zacatecas-1d641c63dc",
+    "officialName": "Instituto Tecnológico de Zacatecas",
+    "shortName": "Instituto Tecnológico de Zacatecas"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-del-parral-78ad9ed749",
+    "officialName": "Instituto Tecnológico del Parral",
+    "shortName": "Instituto Tecnológico del Parral"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-calkini-0181dc3c42",
+    "officialName": "Instituto Tecnológico Superior de Calkiní",
+    "shortName": "Instituto Tecnológico Superior de Calkiní"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-ciudad-acuna-2bf6f10cff",
+    "officialName": "Instituto Tecnológico Superior De Ciudad Acuña",
+    "shortName": "Instituto Tecnológico Superior De Ciudad Acuña"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-ciudad-hidalgo-ea3e5aedd8",
+    "officialName": "Instituto Tecnológico Superior de Ciudad Hidalgo",
+    "shortName": "Instituto Tecnológico Superior de Ciudad Hidalgo"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-el-grullo-4c9f506293",
+    "officialName": "Instituto Tecnológico Superior de El Grullo",
+    "shortName": "Instituto Tecnológico Superior de El Grullo"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-guanajuato-6e4bd02ed9",
+    "officialName": "Instituto Tecnológico Superior de Guanajuato",
+    "shortName": "Instituto Tecnológico Superior de Guanajuato"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "officialName": "Instituto Tecnologico Superior de Lerdo",
+    "shortName": "Instituto Tecnologico Superior de Lerdo"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-los-reyes-f14f0cc6fa",
+    "officialName": "Instituto Tecnologico Superior de Los Reyes",
+    "shortName": "Instituto Tecnologico Superior de Los Reyes"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-patzcuaro-17c2feb4da",
+    "officialName": "Instituto Tecnológico Superior de Pátzcuaro",
+    "shortName": "Instituto Tecnológico Superior de Pátzcuaro"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-san-pedro-2c34436536",
+    "officialName": "Instituto Tecnologico Superior de San Pedro",
+    "shortName": "Instituto Tecnologico Superior de San Pedro"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-zapopan-456a899f35",
+    "officialName": "Instituto Tecnológico Superior de Zapopan",
+    "shortName": "Instituto Tecnológico Superior de Zapopan"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-de-zapotlanejo-ea3c99be23",
+    "officialName": "Instituto Tecnológico Superior de Zapotlanejo",
+    "shortName": "Instituto Tecnológico Superior de Zapotlanejo"
+  },
+  {
+    "id": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "officialName": "Instituto Tecnológico Superior del Sur de Guanajuato",
+    "shortName": "Instituto Tecnológico Superior del Sur de Guanajuato"
+  },
+  {
+    "id": "source-label-inteli-976400aaac",
+    "officialName": "Inteli",
+    "shortName": "Inteli"
+  },
+  {
+    "id": "source-label-ipt-8e3773a0e8",
+    "officialName": "IPT",
+    "shortName": "IPT"
+  },
+  {
+    "id": "source-label-it-mexicali-577ede54be",
+    "officialName": "IT Mexicali",
+    "shortName": "IT Mexicali"
+  },
+  {
+    "id": "source-label-itat-b60b7aa0ac",
+    "officialName": "ITat",
+    "shortName": "ITat"
+  },
+  {
+    "id": "source-label-itb-d5dec79b3c",
+    "officialName": "ITB",
+    "shortName": "ITB"
+  },
+  {
+    "id": "source-label-itcc-07309325f4",
+    "officialName": "ITCC",
+    "shortName": "ITCC"
+  },
+  {
+    "id": "source-label-itcv1-2af8a175f6",
+    "officialName": "ITCV1",
+    "shortName": "ITCV1"
+  },
+  {
+    "id": "source-label-ite-7f08bbfc91",
+    "officialName": "ITE",
+    "shortName": "ITE"
+  },
+  {
+    "id": "source-label-itescham-aa568e3600",
+    "officialName": "Itescham",
+    "shortName": "Itescham"
+  },
+  {
+    "id": "source-label-iteshu-092c0c8052",
+    "officialName": "ITESHU",
+    "shortName": "ITESHU"
+  },
+  {
+    "id": "source-label-itesm-ags-80a859139e",
+    "officialName": "ITESM Ags",
+    "shortName": "ITESM Ags"
+  },
+  {
+    "id": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "officialName": "ITESM Campus Chihuahua",
+    "shortName": "ITESM Campus Chihuahua"
+  },
+  {
+    "id": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "officialName": "ITESM Campus Ciudad de Mexico",
+    "shortName": "ITESM Campus Ciudad de Mexico"
+  },
+  {
+    "id": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "officialName": "ITESM Campus Cuernavaca",
+    "shortName": "ITESM Campus Cuernavaca"
+  },
+  {
+    "id": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "officialName": "ITESM Campus Estado de Mexico",
+    "shortName": "ITESM Campus Estado de Mexico"
+  },
+  {
+    "id": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "officialName": "ITESM Campus Guadalajara",
+    "shortName": "ITESM Campus Guadalajara"
+  },
+  {
+    "id": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "officialName": "ITESM Campus Monterrey",
+    "shortName": "ITESM Campus Monterrey"
+  },
+  {
+    "id": "source-label-itesm-campus-puebla-ee3242fade",
+    "officialName": "ITESM Campus Puebla",
+    "shortName": "ITESM Campus Puebla"
+  },
+  {
+    "id": "source-label-itesm-campus-queretaro-3c252201a2",
+    "officialName": "ITESM Campus Queretaro",
+    "shortName": "ITESM Campus Queretaro"
+  },
+  {
+    "id": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "officialName": "ITESM Campus Santa Fe",
+    "shortName": "ITESM Campus Santa Fe"
+  },
+  {
+    "id": "source-label-itesm-campus-tampico-63b99f7f21",
+    "officialName": "ITESM Campus Tampico",
+    "shortName": "ITESM Campus Tampico"
+  },
+  {
+    "id": "source-label-itesm-ccm-751cd280d0",
+    "officialName": "ITESM/CCM",
+    "shortName": "ITESM/CCM"
+  },
+  {
+    "id": "source-label-itesm-cem-8e86cfbbf8",
+    "officialName": "ITESM/CEM",
+    "shortName": "ITESM/CEM"
+  },
+  {
+    "id": "source-label-itesm-chihuahua-472b156865",
+    "officialName": "ITESM/CHIHUAHUA",
+    "shortName": "ITESM/CHIHUAHUA"
+  },
+  {
+    "id": "source-label-itesm-csf-4fd7f9f9a0",
+    "officialName": "ITESM/CSF",
+    "shortName": "ITESM/CSF"
+  },
+  {
+    "id": "source-label-itesm-cuernavaca-0f48505f61",
+    "officialName": "ITESM/Cuernavaca",
+    "shortName": "ITESM/Cuernavaca"
+  },
+  {
+    "id": "source-label-itesm-gda-6bc76b2ed9",
+    "officialName": "ITESM/GDA",
+    "shortName": "ITESM/GDA"
+  },
+  {
+    "id": "source-label-itesm-monterrey-f8acc60b08",
+    "officialName": "ITESM/Monterrey",
+    "shortName": "ITESM/Monterrey"
+  },
+  {
+    "id": "source-label-itesm-puebla-e566c4d955",
+    "officialName": "ITESM/Puebla",
+    "shortName": "ITESM/Puebla"
+  },
+  {
+    "id": "source-label-iteso-university-f66d759f69",
+    "officialName": "ITESO University",
+    "shortName": "ITESO University"
+  },
+  {
+    "id": "source-label-itess-67f1abda56",
+    "officialName": "ITESS",
+    "shortName": "ITESS"
+  },
+  {
+    "id": "source-label-itlac-fd604f4044",
+    "officialName": "Itlac",
+    "shortName": "Itlac"
+  },
+  {
+    "id": "source-label-itmaii-7aed115dd7",
+    "officialName": "ITMAII",
+    "shortName": "ITMAII"
+  },
+  {
+    "id": "source-label-itmerida-8c9146327d",
+    "officialName": "Itmerida",
+    "shortName": "Itmerida"
+  },
+  {
+    "id": "source-label-itq-74f3e71ff4",
+    "officialName": "ITQ",
+    "shortName": "ITQ"
+  },
+  {
+    "id": "source-label-its-teziutlan-ee61f09271",
+    "officialName": "ITS Teziutlán",
+    "shortName": "ITS Teziutlán"
+  },
+  {
+    "id": "source-label-its-uruapan-6e11d603f8",
+    "officialName": "ITS Uruapan",
+    "shortName": "ITS Uruapan"
+  },
+  {
+    "id": "source-label-itsa-ca2430cb03",
+    "officialName": "ITSA",
+    "shortName": "ITSA"
+  },
+  {
+    "id": "source-label-itsao-a08eb62f6b",
+    "officialName": "ITSAO",
+    "shortName": "ITSAO"
+  },
+  {
+    "id": "source-label-itscec-o-f083c762e4",
+    "officialName": "ITSCEC - O",
+    "shortName": "ITSCEC - O"
+  },
+  {
+    "id": "source-label-itsch-a6e75f8059",
+    "officialName": "ITSCH",
+    "shortName": "ITSCH"
+  },
+  {
+    "id": "source-label-itsfcp-2a17cc39c3",
+    "officialName": "ITSFCP",
+    "shortName": "ITSFCP"
+  },
+  {
+    "id": "source-label-itsh-211cec7139",
+    "officialName": "ITSH",
+    "shortName": "ITSH"
+  },
+  {
+    "id": "source-label-itsjr-dacfdd7f75",
+    "officialName": "ITSJR",
+    "shortName": "ITSJR"
+  },
+  {
+    "id": "source-label-itslibres-ecd4a0e4fa",
+    "officialName": "ITSLibres",
+    "shortName": "ITSLibres"
+  },
+  {
+    "id": "source-label-itsmisantla-1a3a447a2c",
+    "officialName": "ITSMISANTLA",
+    "shortName": "ITSMISANTLA"
+  },
+  {
+    "id": "source-label-itspp-5dd96ddd17",
+    "officialName": "ITSPP",
+    "shortName": "ITSPP"
+  },
+  {
+    "id": "source-label-itsrv-d2c79d529e",
+    "officialName": "ITSRV",
+    "shortName": "ITSRV"
+  },
+  {
+    "id": "source-label-itssmt-ae99b5d920",
+    "officialName": "ITSSMT",
+    "shortName": "ITSSMT"
+  },
+  {
+    "id": "source-label-itssszo-1cc3164bde",
+    "officialName": "ITSSSZO",
+    "shortName": "ITSSSZO"
+  },
+  {
+    "id": "source-label-itst-e6fd7813c8",
+    "officialName": "ITST",
+    "shortName": "ITST"
+  },
+  {
+    "id": "source-label-itsta-56efde19d2",
+    "officialName": "ITSTA",
+    "shortName": "ITSTA"
+  },
+  {
+    "id": "source-label-itste-0cd8277c2f",
+    "officialName": "ITSTE",
+    "shortName": "ITSTE"
+  },
+  {
+    "id": "source-label-itszas-c326a4e09e",
+    "officialName": "ITSZaS",
+    "shortName": "ITSZaS"
+  },
+  {
+    "id": "source-label-itszo-c9e4da8bb7",
+    "officialName": "ITSZO",
+    "shortName": "ITSZO"
+  },
+  {
+    "id": "source-label-ittizimin-d10b022176",
+    "officialName": "ITTIZIMIN",
+    "shortName": "ITTIZIMIN"
+  },
+  {
+    "id": "source-label-iujo-cad5c883c3",
+    "officialName": "IUJO",
+    "shortName": "IUJO"
+  },
+  {
+    "id": "source-label-kabul-education-university-of-rabbani-b3713fc927",
+    "officialName": "Kabul Education University of Rabbani",
+    "shortName": "Kabul Education University of Rabbani"
+  },
+  {
+    "id": "source-label-label-8a8de823d5",
+    "officialName": "?",
+    "shortName": "?"
+  },
+  {
+    "id": "source-label-loyola-a2a83ee2dc",
+    "officialName": "Loyola",
+    "shortName": "Loyola"
+  },
+  {
+    "id": "source-label-maristamerida-2037f34583",
+    "officialName": "maristamerida",
+    "shortName": "maristamerida"
+  },
+  {
+    "id": "source-label-mesogt-70d1111049",
+    "officialName": "MesoGT",
+    "shortName": "MesoGT"
+  },
+  {
+    "id": "source-label-mined-8f5e47628c",
+    "officialName": "MINED",
+    "shortName": "MINED"
+  },
+  {
+    "id": "source-label-my-passion-body-utalca-ing-bcd27703d5",
+    "officialName": "my passion}]: <body/> [UTalca/Ing",
+    "shortName": "my passion}]: <body/> [UTalca/Ing"
+  },
+  {
+    "id": "source-label-ofmi-ddfd501221",
+    "officialName": "OFMI",
+    "shortName": "OFMI"
+  },
+  {
+    "id": "source-label-oieg-5d3f19f209",
+    "officialName": "OIEG",
+    "shortName": "OIEG"
+  },
+  {
+    "id": "source-label-omi-9e28e57582",
+    "officialName": "OMI",
+    "shortName": "OMI"
+  },
+  {
+    "id": "source-label-omi-cdmx-edomex-1edd439818",
+    "officialName": "OMI-CDMX-EDOMEX",
+    "shortName": "OMI-CDMX-EDOMEX"
+  },
+  {
+    "id": "source-label-omi-yucatan-d93b0855fa",
+    "officialName": "OMI Yucatán",
+    "shortName": "OMI Yucatán"
+  },
+  {
+    "id": "source-label-omiags-a0b0d1a186",
+    "officialName": "OMIAGS",
+    "shortName": "OMIAGS"
+  },
+  {
+    "id": "source-label-omich-9169f2dab8",
+    "officialName": "OMICH",
+    "shortName": "OMICH"
+  },
+  {
+    "id": "source-label-omizac-0fc23c25b9",
+    "officialName": "OMIZAC",
+    "shortName": "OMIZAC"
+  },
+  {
+    "id": "source-label-puc-campinas-5ef3e55fa7",
+    "officialName": "PUC Campinas",
+    "shortName": "PUC Campinas"
+  },
+  {
+    "id": "source-label-puc-e43e69c8d9",
+    "officialName": "PUC",
+    "shortName": "PUC"
+  },
+  {
+    "id": "source-label-puc-go-e2aac6937e",
+    "officialName": "PUC/GO",
+    "shortName": "PUC/GO"
+  },
+  {
+    "id": "source-label-puc-ing-18cb93b230",
+    "officialName": "PUC-Ing",
+    "shortName": "PUC-Ing"
+  },
+  {
+    "id": "source-label-puc-mat-dc8bf6731e",
+    "officialName": "PUC-Mat",
+    "shortName": "PUC-Mat"
+  },
+  {
+    "id": "source-label-puc-rj-fe883476e1",
+    "officialName": "PUC/RJ",
+    "shortName": "PUC/RJ"
+  },
+  {
+    "id": "source-label-pucmm-csd-b52a91ecff",
+    "officialName": "PUCMM/CSD",
+    "shortName": "PUCMM/CSD"
+  },
+  {
+    "id": "source-label-puj-bog-d074f9ad47",
+    "officialName": "PUJ/Bog",
+    "shortName": "PUJ/Bog"
+  },
+  {
+    "id": "source-label-puj-cali-49842f2e98",
+    "officialName": "PUJ/Cali",
+    "shortName": "PUJ/Cali"
+  },
+  {
+    "id": "source-label-senai-cimatec-eebe9d6039",
+    "officialName": "SENAI CIMATEC",
+    "shortName": "SENAI CIMATEC"
+  },
+  {
+    "id": "source-label-senai-cimatic-14250e4d55",
+    "officialName": "Senai Cimatic",
+    "shortName": "Senai Cimatic"
+  },
+  {
+    "id": "source-label-srounsa-373bcb4636",
+    "officialName": "SROUNSA",
+    "shortName": "SROUNSA"
+  },
+  {
+    "id": "source-label-tec-4e03be678c",
+    "officialName": "TEC",
+    "shortName": "TEC"
+  },
+  {
+    "id": "source-label-tec-alajuela-457bd3c236",
+    "officialName": "TEC/Alajuela",
+    "shortName": "TEC/Alajuela"
+  },
+  {
+    "id": "source-label-tec-alajuela-5dd02c5f4e",
+    "officialName": "TEC Alajuela",
+    "shortName": "TEC Alajuela"
+  },
+  {
+    "id": "source-label-tecnm-a31c2f77f5",
+    "officialName": "TecNM",
+    "shortName": "TecNM"
+  },
+  {
+    "id": "source-label-tecnm-celaya-1737d72cdc",
+    "officialName": "TECNM/CELAYA",
+    "shortName": "TECNM/CELAYA"
+  },
+  {
+    "id": "source-label-tesh-c81108c4eb",
+    "officialName": "TESH",
+    "shortName": "TESH"
+  },
+  {
+    "id": "source-label-tesji-8ea05dec5c",
+    "officialName": "TESJI",
+    "shortName": "TESJI"
+  },
+  {
+    "id": "source-label-uab-353ca215ba",
+    "officialName": "UAB",
+    "shortName": "UAB"
+  },
+  {
+    "id": "source-label-uab-la-paz-4fbc675528",
+    "officialName": "UAB-La Paz",
+    "shortName": "UAB-La Paz"
+  },
+  {
+    "id": "source-label-uadeo-8cdca20690",
+    "officialName": "UAdeO",
+    "shortName": "UAdeO"
+  },
+  {
+    "id": "source-label-uam-azcapotzalco-05ac505704",
+    "officialName": "UAM/Azcapotzalco",
+    "shortName": "UAM/Azcapotzalco"
+  },
+  {
+    "id": "source-label-uan-064ec95fd0",
+    "officialName": "UAN",
+    "shortName": "UAN"
+  },
+  {
+    "id": "source-label-uao-oaxaca-30b9f398d8",
+    "officialName": "UAO/Oaxaca",
+    "shortName": "UAO/Oaxaca"
+  },
+  {
+    "id": "source-label-uap-8a800c8c33",
+    "officialName": "UAP",
+    "shortName": "UAP"
+  },
+  {
+    "id": "source-label-uaq-dbf6df3a31",
+    "officialName": "UAQ",
+    "shortName": "UAQ"
+  },
+  {
+    "id": "source-label-uatf-is-5cb1da0089",
+    "officialName": "UATF-IS",
+    "shortName": "UATF-IS"
+  },
+  {
+    "id": "source-label-uba-fcen-3f39b45ec8",
+    "officialName": "UBA/FCEN",
+    "shortName": "UBA/FCEN"
+  },
+  {
+    "id": "source-label-ubb-conce-2971f795c3",
+    "officialName": "UBB-Conce",
+    "shortName": "UBB-Conce"
+  },
+  {
+    "id": "source-label-ubi-6c2c1c536c",
+    "officialName": "UBI",
+    "shortName": "UBI"
+  },
+  {
+    "id": "source-label-uc-93bb321984",
+    "officialName": "UC",
+    "shortName": "UC"
+  },
+  {
+    "id": "source-label-uca-96533bf408",
+    "officialName": "] [UCA",
+    "shortName": "] [UCA"
+  },
+  {
+    "id": "source-label-ucart-6ca5a388c9",
+    "officialName": "UCart",
+    "shortName": "UCart"
+  },
+  {
+    "id": "source-label-ucb-c2b4b7f319",
+    "officialName": "UCB",
+    "shortName": "UCB"
+  },
+  {
+    "id": "source-label-ucb-cochabamba-99330c5888",
+    "officialName": "UCB/Cochabamba",
+    "shortName": "UCB/Cochabamba"
+  },
+  {
+    "id": "source-label-ucc-bf0a1c9598",
+    "officialName": "UCC",
+    "shortName": "UCC"
+  },
+  {
+    "id": "source-label-ucentral-974575dd56",
+    "officialName": "UCentral",
+    "shortName": "UCentral"
+  },
+  {
+    "id": "source-label-uclv-cp-0bfe3181f2",
+    "officialName": "UCLV-CP",
+    "shortName": "UCLV-CP"
+  },
+  {
+    "id": "source-label-ucm-77b08067f6",
+    "officialName": "UCM",
+    "shortName": "UCM"
+  },
+  {
+    "id": "source-label-ucn-aeba039663",
+    "officialName": "UCN",
+    "shortName": "UCN"
+  },
+  {
+    "id": "source-label-ucp-6db36b7b77",
+    "officialName": "ucp",
+    "shortName": "ucp"
+  },
+  {
+    "id": "source-label-ucp-f31c845370",
+    "officialName": "UCP",
+    "shortName": "UCP"
+  },
+  {
+    "id": "source-label-ucsm-74dfa8de13",
+    "officialName": "UCSM",
+    "shortName": "UCSM"
+  },
+  {
+    "id": "source-label-uct-c3c86464d0",
+    "officialName": "UCT",
+    "shortName": "UCT"
+  },
+  {
+    "id": "source-label-ucv-294962d46d",
+    "officialName": "UCV",
+    "shortName": "UCV"
+  },
+  {
+    "id": "source-label-udabol-oruro-259c942a03",
+    "officialName": "UDABOL-Oruro",
+    "shortName": "UDABOL-Oruro"
+  },
+  {
+    "id": "source-label-udec-06a1d4f639",
+    "officialName": "UdeC",
+    "shortName": "UdeC"
+  },
+  {
+    "id": "source-label-udenar-b93635fd12",
+    "officialName": "UdeNar",
+    "shortName": "UdeNar"
+  },
+  {
+    "id": "source-label-udesc-96d14c7095",
+    "officialName": "UDesc",
+    "shortName": "UDesc"
+  },
+  {
+    "id": "source-label-udg-cucei-86b0833dc5",
+    "officialName": "UdG/CUCEI",
+    "shortName": "UdG/CUCEI"
+  },
+  {
+    "id": "source-label-udi-c785c709be",
+    "officialName": "UDI",
+    "shortName": "UDI"
+  },
+  {
+    "id": "source-label-udla-341db081bf",
+    "officialName": "UDLA",
+    "shortName": "UDLA"
+  },
+  {
+    "id": "source-label-uds-potosi-6c0e65a5d5",
+    "officialName": "UDS-Potosi",
+    "shortName": "UDS-Potosi"
+  },
+  {
+    "id": "source-label-ueb-2ce06bc9e3",
+    "officialName": "UEB",
+    "shortName": "UEB"
+  },
+  {
+    "id": "source-label-uespi-teresina-fe00737a90",
+    "officialName": "UESPI - Teresina",
+    "shortName": "UESPI - Teresina"
+  },
+  {
+    "id": "source-label-ufam-icomp-56b7131a94",
+    "officialName": "UFAM/IComp",
+    "shortName": "UFAM/IComp"
+  },
+  {
+    "id": "source-label-ufc-crateus-4013b6ff59",
+    "officialName": "UFC - Crateús",
+    "shortName": "UFC - Crateús"
+  },
+  {
+    "id": "source-label-ufes-ceunes-ea01165093",
+    "officialName": "UFES/Ceunes",
+    "shortName": "UFES/Ceunes"
+  },
+  {
+    "id": "source-label-uff-4919f3c383",
+    "officialName": "UFF",
+    "shortName": "UFF"
+  },
+  {
+    "id": "source-label-ufg-inf-0a8b13106d",
+    "officialName": "UFG/INF",
+    "shortName": "UFG/INF"
+  },
+  {
+    "id": "source-label-ufma-32b21fe64f",
+    "officialName": "UFMA",
+    "shortName": "UFMA"
+  },
+  {
+    "id": "source-label-ufmt-ddbafe646b",
+    "officialName": "UFMT",
+    "shortName": "UFMT"
+  },
+  {
+    "id": "source-label-ufpel-3e503500e6",
+    "officialName": "UFPel",
+    "shortName": "UFPel"
+  },
+  {
+    "id": "source-label-ufps-cucuta-77ea7e318b",
+    "officialName": "UFPS/Cucuta",
+    "shortName": "UFPS/Cucuta"
+  },
+  {
+    "id": "source-label-ufps-ocana-bf3cb39f83",
+    "officialName": "UFPS/Ocaña",
+    "shortName": "UFPS/Ocaña"
+  },
+  {
+    "id": "source-label-ufra-845c695b7c",
+    "officialName": "UFRA",
+    "shortName": "UFRA"
+  },
+  {
+    "id": "source-label-ufrpe-f4057cf139",
+    "officialName": "UFRPE",
+    "shortName": "UFRPE"
+  },
+  {
+    "id": "source-label-ufrr-3374fb6a57",
+    "officialName": "UFRR",
+    "shortName": "UFRR"
+  },
+  {
+    "id": "source-label-ufsc-ara-4bc6cc94ff",
+    "officialName": "UFSC-ARA",
+    "shortName": "UFSC-ARA"
+  },
+  {
+    "id": "source-label-ufv-dpi-dbdbc9642e",
+    "officialName": "UFV/DPI",
+    "shortName": "UFV/DPI"
+  },
+  {
+    "id": "source-label-ug-becc2c3e15",
+    "officialName": "UG",
+    "shortName": "UG"
+  },
+  {
+    "id": "source-label-ugb-7eceea3de6",
+    "officialName": "UGB",
+    "shortName": "UGB"
+  },
+  {
+    "id": "source-label-ugtodcea-5905408f94",
+    "officialName": "UGTODCEA",
+    "shortName": "UGTODCEA"
+  },
+  {
+    "id": "source-label-ugtodcne-5945f3f915",
+    "officialName": "UGTODCNE",
+    "shortName": "UGTODCNE"
+  },
+  {
+    "id": "source-label-uh-ff-edd08b2c9b",
+    "officialName": "UH-FF",
+    "shortName": "UH-FF"
+  },
+  {
+    "id": "source-label-uis-ea6ea1f152",
+    "officialName": "UIS",
+    "shortName": "UIS"
+  },
+  {
+    "id": "source-label-ula-3c37d69a5c",
+    "officialName": "ULA",
+    "shortName": "ULA"
+  },
+  {
+    "id": "source-label-ult-a6729e9f80",
+    "officialName": "ULT",
+    "shortName": "ULT"
+  },
+  {
+    "id": "source-label-um-d3cd680850",
+    "officialName": "UM",
+    "shortName": "UM"
+  },
+  {
+    "id": "source-label-umsa-inf-82f1c14387",
+    "officialName": "UMSA-INF",
+    "shortName": "UMSA-INF"
+  },
+  {
+    "id": "source-label-una-51072ac1a6",
+    "officialName": "UNA",
+    "shortName": "UNA"
+  },
+  {
+    "id": "source-label-unal-bogota-bfe791c995",
+    "officialName": "UNAL/Bogotá",
+    "shortName": "UNAL/Bogotá"
+  },
+  {
+    "id": "source-label-unam-enes-morelia-a4d37af5d6",
+    "officialName": "UNAM/ENES Morelia",
+    "shortName": "UNAM/ENES Morelia"
+  },
+  {
+    "id": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "officialName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia",
+    "shortName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia"
+  },
+  {
+    "id": "source-label-unam-fc-f6c1204110",
+    "officialName": "UNAM/FC",
+    "shortName": "UNAM/FC"
+  },
+  {
+    "id": "source-label-unam-fes-acatlan-04beda8ec8",
+    "officialName": "UNAM/FES Acatlan",
+    "shortName": "UNAM/FES Acatlan"
+  },
+  {
+    "id": "source-label-unan-managua-373da2ab3e",
+    "officialName": "UNAN/Managua",
+    "shortName": "UNAN/Managua"
+  },
+  {
+    "id": "source-label-unap-6ca9750bc9",
+    "officialName": "UNAP",
+    "shortName": "UNAP"
+  },
+  {
+    "id": "source-label-unc-famac-58abe10a12",
+    "officialName": "UNC/FAMAC",
+    "shortName": "UNC/FAMAC"
+  },
+  {
+    "id": "source-label-unc-famaf-ea0fe7138f",
+    "officialName": "UNC-FaMAF",
+    "shortName": "UNC-FaMAF"
+  },
+  {
+    "id": "source-label-undav-a1590a58d4",
+    "officialName": "UNDAV",
+    "shortName": "UNDAV"
+  },
+  {
+    "id": "source-label-undec-3bca6b835f",
+    "officialName": "UNdeC",
+    "shortName": "UNdeC"
+  },
+  {
+    "id": "source-label-unesc-3fe11e3e2c",
+    "officialName": "UNESC",
+    "shortName": "UNESC"
+  },
+  {
+    "id": "source-label-ungs-ic-a8a0e140da",
+    "officialName": "UNGS-IC",
+    "shortName": "UNGS-IC"
+  },
+  {
+    "id": "source-label-uni-fc-847d66a5e3",
+    "officialName": "UNI/FC",
+    "shortName": "UNI/FC"
+  },
+  {
+    "id": "source-label-uni-fiee-d08cf74a2a",
+    "officialName": "UNI-FIEE",
+    "shortName": "UNI-FIEE"
+  },
+  {
+    "id": "source-label-uni-fiee-e8b41df7b5",
+    "officialName": "UNI/FIEE",
+    "shortName": "UNI/FIEE"
+  },
+  {
+    "id": "source-label-uni-fiis-530d59b32b",
+    "officialName": "UNI/FIIS",
+    "shortName": "UNI/FIIS"
+  },
+  {
+    "id": "source-label-uni-fim-39bbe3a669",
+    "officialName": "UNI/FIM",
+    "shortName": "UNI/FIM"
+  },
+  {
+    "id": "source-label-uni-fim-e75012792b",
+    "officialName": "UNI-FIM",
+    "shortName": "UNI-FIM"
+  },
+  {
+    "id": "source-label-uniandes-9ef0f0f29f",
+    "officialName": "Uniandes",
+    "shortName": "Uniandes"
+  },
+  {
+    "id": "source-label-uniararas-9fef8dd270",
+    "officialName": "UNIARARAS",
+    "shortName": "UNIARARAS"
+  },
+  {
+    "id": "source-label-unicamp-ft-887732b35f",
+    "officialName": "Unicamp/FT",
+    "shortName": "Unicamp/FT"
+  },
+  {
+    "id": "source-label-unicaribe-9246e7a67e",
+    "officialName": "Unicaribe",
+    "shortName": "Unicaribe"
+  },
+  {
+    "id": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "officialName": "Unidad Profesional Interdisciplinaria de Ingenieria Campus Zacatecas",
+    "shortName": "Unidad Profesional Interdisciplinaria de Ingenieria Campus Zacatecas"
+  },
+  {
+    "id": "source-label-unifacef-85c8edb673",
+    "officialName": "UNIFACEF",
+    "shortName": "UNIFACEF"
+  },
+  {
+    "id": "source-label-unifacisa-96e4bb6631",
+    "officialName": "Unifacisa",
+    "shortName": "Unifacisa"
+  },
+  {
+    "id": "source-label-unifagoc-6b93b154f3",
+    "officialName": "UNIFAGOC",
+    "shortName": "UNIFAGOC"
+  },
+  {
+    "id": "source-label-unifap-ace17cb69f",
+    "officialName": "UNIFAP",
+    "shortName": "UNIFAP"
+  },
+  {
+    "id": "source-label-unijui-622d3cdcf3",
+    "officialName": "UNIJUI",
+    "shortName": "UNIJUI"
+  },
+  {
+    "id": "source-label-unileste-fc81a6cf97",
+    "officialName": "Unileste",
+    "shortName": "Unileste"
+  },
+  {
+    "id": "source-label-unimar-6d8f73be63",
+    "officialName": "Unimar",
+    "shortName": "Unimar"
+  },
+  {
+    "id": "source-label-uniminuto-70a4a1ee39",
+    "officialName": "Uniminuto",
+    "shortName": "Uniminuto"
+  },
+  {
+    "id": "source-label-uninassau-olinda-6c276628c5",
+    "officialName": "UNINASSAU Olinda",
+    "shortName": "UNINASSAU Olinda"
+  },
+  {
+    "id": "source-label-uninorte-97d02d7600",
+    "officialName": "UNINORTE",
+    "shortName": "UNINORTE"
+  },
+  {
+    "id": "source-label-uninorte-eeaa605de2",
+    "officialName": "UniNorte",
+    "shortName": "UniNorte"
+  },
+  {
+    "id": "source-label-unior-16be4b98ca",
+    "officialName": "UNIOR",
+    "shortName": "UNIOR"
+  },
+  {
+    "id": "source-label-unir-536bdfae93",
+    "officialName": "UNIR",
+    "shortName": "UNIR"
+  },
+  {
+    "id": "source-label-unis-007134b188",
+    "officialName": "UNIS",
+    "shortName": "UNIS"
+  },
+  {
+    "id": "source-label-unisabana-ca51b45ae5",
+    "officialName": "UNISABANA",
+    "shortName": "UNISABANA"
+  },
+  {
+    "id": "source-label-unisangil-95143545b1",
+    "officialName": "UNISANGIL",
+    "shortName": "UNISANGIL"
+  },
+  {
+    "id": "source-label-uniss-a41319ff01",
+    "officialName": "UNISS",
+    "shortName": "UNISS"
+  },
+  {
+    "id": "source-label-univalle-91ad6ed309",
+    "officialName": "Univalle",
+    "shortName": "Univalle"
+  },
+  {
+    "id": "source-label-univem-2925dedb04",
+    "officialName": "UNIVEM",
+    "shortName": "UNIVEM"
+  },
+  {
+    "id": "source-label-universidad-anahuac-campus-oaxaca-c48468344b",
+    "officialName": "Universidad Anahuac Campus Oaxaca",
+    "shortName": "Universidad Anahuac Campus Oaxaca"
+  },
+  {
+    "id": "source-label-universidad-anahuac-mayab-1a0277c33d",
+    "officialName": "Universidad Anahuac Mayab",
+    "shortName": "Universidad Anahuac Mayab"
+  },
+  {
+    "id": "source-label-universidad-autonoma-de-coahuila-unidad-saltillo-10ca097d5e",
+    "officialName": "Universidad Autonoma de Coahuila Unidad Saltillo",
+    "shortName": "Universidad Autonoma de Coahuila Unidad Saltillo"
+  },
+  {
+    "id": "source-label-universidad-autonoma-de-queretaro-7dcf156e94",
+    "officialName": "Universidad Autónoma de Querétaro",
+    "shortName": "Universidad Autónoma de Querétaro"
+  },
+  {
+    "id": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "officialName": "Universidad Autónoma de San Luis Potosi",
+    "shortName": "Universidad Autónoma de San Luis Potosi"
+  },
+  {
+    "id": "source-label-universidad-autonoma-de-sinaloa-0a5a019280",
+    "officialName": "Universidad Autónoma de Sinaloa",
+    "shortName": "Universidad Autónoma de Sinaloa"
+  },
+  {
+    "id": "source-label-universidad-autonoma-de-tlaxcala-d9b6e9ecf4",
+    "officialName": "Universidad Autónoma de Tlaxcala",
+    "shortName": "Universidad Autónoma de Tlaxcala"
+  },
+  {
+    "id": "source-label-universidad-autonoma-de-yucatan-campus-tizimin-c2eaff1976",
+    "officialName": "Universidad Autónoma de Yucatán Campus Tizimín",
+    "shortName": "Universidad Autónoma de Yucatán Campus Tizimín"
+  },
+  {
+    "id": "source-label-universidad-autonoma-de-yucatan-facultad-de-matematicas-28ee179500",
+    "officialName": "Universidad Autonoma de Yucatan - Facultad de Matemáticas",
+    "shortName": "Universidad Autonoma de Yucatan - Facultad de Matemáticas"
+  },
+  {
+    "id": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "officialName": "Universidad Autónoma de Zacatecas",
+    "shortName": "Universidad Autónoma de Zacatecas"
+  },
+  {
+    "id": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "officialName": "Universidad Autónoma Metropolitana Azcapotzalco",
+    "shortName": "Universidad Autónoma Metropolitana Azcapotzalco"
+  },
+  {
+    "id": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
+    "officialName": "Universidad de Guadalajara CUALTOS",
+    "shortName": "Universidad de Guadalajara CUALTOS"
+  },
+  {
+    "id": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "officialName": "Universidad de Guadalajara CUCEI",
+    "shortName": "Universidad de Guadalajara CUCEI"
+  },
+  {
+    "id": "source-label-universidad-de-guadalajara-cucosta-d01f8e1f2c",
+    "officialName": "Universidad de Guadalajara CUCOSTA",
+    "shortName": "Universidad de Guadalajara CUCOSTA"
+  },
+  {
+    "id": "source-label-universidad-de-guadalajara-cunorte-019f81fc29",
+    "officialName": "Universidad de Guadalajara CUNORTE",
+    "shortName": "Universidad de Guadalajara CUNORTE"
+  },
+  {
+    "id": "source-label-universidad-de-guadalajara-cusur-b598b1471b",
+    "officialName": "Universidad de Guadalajara CUSUR",
+    "shortName": "Universidad de Guadalajara CUSUR"
+  },
+  {
+    "id": "source-label-universidad-de-guadalajara-cutonala-7e8a75f556",
+    "officialName": "Universidad de Guadalajara CUTONALA",
+    "shortName": "Universidad de Guadalajara CUTONALA"
+  },
+  {
+    "id": "source-label-universidad-de-guadalajara-cuvalles-7e16c1bcc4",
+    "officialName": "Universidad de Guadalajara CUVALLES",
+    "shortName": "Universidad de Guadalajara CUVALLES"
+  },
+  {
+    "id": "source-label-universidad-de-guanajuato-dcne-f00dc1f3f7",
+    "officialName": "Universidad de Guanajuato - DCNE",
+    "shortName": "Universidad de Guanajuato - DCNE"
+  },
+  {
+    "id": "source-label-universidad-de-guanajuato-dicis-6ceb1551a0",
+    "officialName": "Universidad de Guanajuato - DICIS",
+    "shortName": "Universidad de Guanajuato - DICIS"
+  },
+  {
+    "id": "source-label-universidad-de-occidente-unidad-culiacan-9ab0f40650",
+    "officialName": "Universidad de Occidente, Unidad Culiacán",
+    "shortName": "Universidad de Occidente, Unidad Culiacán"
+  },
+  {
+    "id": "source-label-universidad-del-caribe-1bab45109d",
+    "officialName": "Universidad del Caribe",
+    "shortName": "Universidad del Caribe"
+  },
+  {
+    "id": "source-label-universidad-nacional-903022448b",
+    "officialName": "Universidad Nacional",
+    "shortName": "Universidad Nacional"
+  },
+  {
+    "id": "source-label-universidad-nacional-de-colombia-bogota-3f821f7a99",
+    "officialName": "Universidad Nacional de Colombia - Bogotá",
+    "shortName": "Universidad Nacional de Colombia - Bogotá"
+  },
+  {
+    "id": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "officialName": "Universidad Panamericana Campus Bonaterra",
+    "shortName": "Universidad Panamericana Campus Bonaterra"
+  },
+  {
+    "id": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "officialName": "Universidad Panamericana Campus Guadalajara",
+    "shortName": "Universidad Panamericana Campus Guadalajara"
+  },
+  {
+    "id": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
+    "officialName": "Universidad Tecnológica de la Mixteca",
+    "shortName": "Universidad Tecnológica de la Mixteca"
+  },
+  {
+    "id": "source-label-univo-afb29a5a37",
+    "officialName": "UNIVO",
+    "shortName": "UNIVO"
+  },
+  {
+    "id": "source-label-unju-fi-741e733e7a",
+    "officialName": "UNju/FI",
+    "shortName": "UNju/FI"
+  },
+  {
+    "id": "source-label-unjui-24990d4806",
+    "officialName": "UNJUI",
+    "shortName": "UNJUI"
+  },
+  {
+    "id": "source-label-unlp-fce-89b60d3f50",
+    "officialName": "UNLP/FCE",
+    "shortName": "UNLP/FCE"
+  },
+  {
+    "id": "source-label-unlp-ing-346cb52aba",
+    "officialName": "UNLP/ING",
+    "shortName": "UNLP/ING"
+  },
+  {
+    "id": "source-label-uno-med-1a02792163",
+    "officialName": "UNO-MED",
+    "shortName": "UNO-MED"
+  },
+  {
+    "id": "source-label-unsa-cc-01d00a7fa7",
+    "officialName": "UNSA-CC",
+    "shortName": "UNSA-CC"
+  },
+  {
+    "id": "source-label-unsa-cs-5c773769a5",
+    "officialName": "UNSA/CS",
+    "shortName": "UNSA/CS"
+  },
+  {
+    "id": "source-label-unsa-cs-b44fc0523e",
+    "officialName": "UNSA-CS",
+    "shortName": "UNSA-CS"
+  },
+  {
+    "id": "source-label-unsa-ea66aac76d",
+    "officialName": "UNSA",
+    "shortName": "UNSA"
+  },
+  {
+    "id": "source-label-unse-64141fa852",
+    "officialName": "UNSE",
+    "shortName": "UNSE"
+  },
+  {
+    "id": "source-label-uo-sam-bad14bb3c2",
+    "officialName": "UO/SAM",
+    "shortName": "UO/SAM"
+  },
+  {
+    "id": "source-label-uo-sam-d9f38cc3ec",
+    "officialName": "UO-SAM",
+    "shortName": "UO-SAM"
+  },
+  {
+    "id": "source-label-uo-sjam-15497272d8",
+    "officialName": "UO/SJAM",
+    "shortName": "UO/SJAM"
+  },
+  {
+    "id": "source-label-uo-sjam-2518620e00",
+    "officialName": "UO-SJAM",
+    "shortName": "UO-SJAM"
+  },
+  {
+    "id": "source-label-uoh-d8048a465e",
+    "officialName": "UOH",
+    "shortName": "UOH"
+  },
+  {
+    "id": "source-label-up-42cb4e6f84",
+    "officialName": "UP",
+    "shortName": "UP"
+  },
+  {
+    "id": "source-label-up-bonaterra-8c52d5b992",
+    "officialName": "UP/Bonaterra",
+    "shortName": "UP/Bonaterra"
+  },
+  {
+    "id": "source-label-upb-buc-f54cbcb8d7",
+    "officialName": "UPB/Buc",
+    "shortName": "UPB/Buc"
+  },
+  {
+    "id": "source-label-upblp-aa5c09945f",
+    "officialName": "UPBLP",
+    "shortName": "UPBLP"
+  },
+  {
+    "id": "source-label-upblp-if-8c97df5b76",
+    "officialName": "UPBLP-IF",
+    "shortName": "UPBLP-IF"
+  },
+  {
+    "id": "source-label-upblp-isc-2c1b68d337",
+    "officialName": "UPBLP-ISC",
+    "shortName": "UPBLP-ISC"
+  },
+  {
+    "id": "source-label-upc-bog-011cc14016",
+    "officialName": "UPC/Bog",
+    "shortName": "UPC/Bog"
+  },
+  {
+    "id": "source-label-upc-e44b982403",
+    "officialName": "UPC",
+    "shortName": "UPC"
+  },
+  {
+    "id": "source-label-updstja-is-a3e517d7fc",
+    "officialName": "UPDSTJA/IS",
+    "shortName": "UPDSTJA/IS"
+  },
+  {
+    "id": "source-label-upf-f8f9f357e6",
+    "officialName": "UPF",
+    "shortName": "UPF"
+  },
+  {
+    "id": "source-label-upr-by-31940a3466",
+    "officialName": "UPR-BY",
+    "shortName": "UPR-BY"
+  },
+  {
+    "id": "source-label-upz-8c7fa73052",
+    "officialName": "UPZ",
+    "shortName": "UPZ"
+  },
+  {
+    "id": "source-label-uq-33abe804f4",
+    "officialName": "UQ",
+    "shortName": "UQ"
+  },
+  {
+    "id": "source-label-usa-aa5ab35a91",
+    "officialName": "USA",
+    "shortName": "USA"
+  },
+  {
+    "id": "source-label-usach-ing-94044172b8",
+    "officialName": "USACH-Ing",
+    "shortName": "USACH-Ing"
+  },
+  {
+    "id": "source-label-usc-3dde180d1d",
+    "officialName": "USC",
+    "shortName": "USC"
+  },
+  {
+    "id": "source-label-uscg-cd17725146",
+    "officialName": "USCG",
+    "shortName": "USCG"
+  },
+  {
+    "id": "source-label-usf-be233f80c0",
+    "officialName": "USF",
+    "shortName": "USF"
+  },
+  {
+    "id": "source-label-usfa-611f73ae7c",
+    "officialName": "USFA",
+    "shortName": "USFA"
+  },
+  {
+    "id": "source-label-usfj-sede-12759839e4",
+    "officialName": "USFJ - SEDE",
+    "shortName": "USFJ - SEDE"
+  },
+  {
+    "id": "source-label-uta-8fb9737adc",
+    "officialName": "UTA",
+    "shortName": "UTA"
+  },
+  {
+    "id": "source-label-utadeo-b1c0135ab7",
+    "officialName": "UTadeo",
+    "shortName": "UTadeo"
+  },
+  {
+    "id": "source-label-utfpr-ct-5b6514b4a4",
+    "officialName": "UTFPR/CT",
+    "shortName": "UTFPR/CT"
+  },
+  {
+    "id": "source-label-utfsm-santiago-ffe8859bef",
+    "officialName": "UTFSM-Santiago",
+    "shortName": "UTFSM-Santiago"
+  },
+  {
+    "id": "source-label-utm-1e14cd101c",
+    "officialName": "UTM",
+    "shortName": "UTM"
+  },
+  {
+    "id": "source-label-utn-frba-0fc0a35ae0",
+    "officialName": "UTN/FRBA",
+    "shortName": "UTN/FRBA"
+  },
+  {
+    "id": "source-label-utn-frlr-1b6481cee6",
+    "officialName": "UTN/FRLR",
+    "shortName": "UTN/FRLR"
+  },
+  {
+    "id": "source-label-utn-santa-fe-08d9ebd4ab",
+    "officialName": "UTN/Santa Fe",
+    "shortName": "UTN/Santa Fe"
+  },
+  {
+    "id": "source-label-uto-huanuni-22ca254e10",
+    "officialName": "UTO/Huanuni",
+    "shortName": "UTO/Huanuni"
+  },
+  {
+    "id": "source-label-utp-f8d556ed41",
+    "officialName": "UTP",
+    "shortName": "UTP"
+  },
+  {
+    "id": "source-label-utpsc-005b7c77cd",
+    "officialName": "UTPSC",
+    "shortName": "UTPSC"
+  },
+  {
+    "id": "source-label-uv-027fcbbc3e",
+    "officialName": "UV",
+    "shortName": "UV"
+  },
+  {
+    "id": "source-label-uv-la-paz-f420799980",
+    "officialName": "UV-La Paz",
+    "shortName": "UV-La Paz"
+  },
+  {
+    "id": "source-label-uv-trinidad-2571996911",
+    "officialName": "UV-Trinidad",
+    "shortName": "UV-Trinidad"
+  },
+  {
+    "id": "source-label-uva-8109e94fb5",
+    "officialName": "UVA",
+    "shortName": "UVA"
+  },
+  {
+    "id": "source-label-uvm-guadalajata-sur-2abeeffc57",
+    "officialName": "UVM Guadalajata Sur",
+    "shortName": "UVM Guadalajata Sur"
+  },
+  {
+    "id": "source-label-uwi-fic-54de1e6bf3",
+    "officialName": "UWI-FIC",
+    "shortName": "UWI-FIC"
+  },
+  {
+    "id": "source-label-uwi-tto-027a45250e",
+    "officialName": "UWI/TTO",
+    "shortName": "UWI/TTO"
+  },
+  {
+    "id": "source-school-0149ac9523a7",
+    "officialName": "Facultad de Ingenieria - Universidad Nacional Autónoma de México",
+    "shortName": "Facultad de Ingenieria - Universidad Nacional Autónoma de México"
+  },
+  {
+    "id": "source-school-0161a1267336",
+    "officialName": "ITCancún",
+    "shortName": "ITCancún"
+  },
+  {
+    "id": "source-school-0223f623eaba",
+    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Naciona",
+    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Naciona"
+  },
+  {
+    "id": "source-school-068741c53129",
+    "officialName": "Universidad Tecnica Nacional de Costa Rica",
+    "shortName": "Universidad Tecnica Nacional de Costa Rica"
+  },
+  {
+    "id": "source-school-0835dc54967a",
+    "officialName": "Facultad de Estudios Superiores Cuautitlán - UNAM",
+    "shortName": "Facultad de Estudios Superiores Cuautitlán - UNAM"
+  },
+  {
+    "id": "source-school-086bf4f4b3fa",
+    "officialName": "Bachillerato_Bivalente",
+    "shortName": "Bachillerato_Bivalente"
+  },
+  {
+    "id": "source-school-095c79af0d43",
+    "officialName": "Centro de Bachillerato Tecnologico No.55",
+    "shortName": "Centro de Bachillerato Tecnologico No.55"
+  },
+  {
+    "id": "source-school-09cf6406c1b0",
+    "officialName": "Tec Parral",
+    "shortName": "Tec Parral"
+  },
+  {
+    "id": "source-school-0c4ad61b0a3b",
+    "officialName": "Tec de Monterrey Campus Ciudad de México",
+    "shortName": "Tec de Monterrey Campus Ciudad de México"
+  },
+  {
+    "id": "source-school-0d2c7fc1b4d4",
+    "officialName": "Colegio de Bachilleres del Estado de Michoacán",
+    "shortName": "Colegio de Bachilleres del Estado de Michoacán"
+  },
+  {
+    "id": "source-school-0e9d2c830e30",
+    "officialName": "Tecnológico Salesiano Carlos Gómez",
+    "shortName": "Tecnológico Salesiano Carlos Gómez"
+  },
+  {
+    "id": "source-school-0f5310b0efc8",
+    "officialName": "Univesidad Autonoma de Yucatán",
+    "shortName": "Univesidad Autonoma de Yucatán"
+  },
+  {
+    "id": "source-school-0f8e1e27e205",
+    "officialName": "ITESM CCM",
+    "shortName": "ITESM CCM"
+  },
+  {
+    "id": "source-school-0fdad3b95a45",
+    "officialName": "Tec de Monterrey Campus Monterrey",
+    "shortName": "Tec de Monterrey Campus Monterrey"
+  },
+  {
+    "id": "source-school-10b2f3d59c0d",
+    "officialName": "Instituto Tecnológico Superior de Villa La Venta",
+    "shortName": "Instituto Tecnológico Superior de Villa La Venta"
+  },
+  {
+    "id": "source-school-1147382c633b",
+    "officialName": "Universidad Centroamericana \"José Simeón Cañas\"",
+    "shortName": "Universidad Centroamericana \"José Simeón Cañas\""
+  },
+  {
+    "id": "source-school-11997ef012d8",
+    "officialName": "Fundación Universidad de las Amércias Puebla",
+    "shortName": "Fundación Universidad de las Amércias Puebla"
+  },
+  {
+    "id": "source-school-133f3a82bc60",
+    "officialName": "ITNL",
+    "shortName": "ITNL"
+  },
+  {
+    "id": "source-school-137e4d05bc5c",
+    "officialName": "Universidad Tecnológica de La Habana \"José Antonio Echeverría\"",
+    "shortName": "Universidad Tecnológica de La Habana \"José Antonio Echeverría\""
+  },
+  {
+    "id": "source-school-1389d6b7512a",
+    "officialName": "BUAP",
+    "shortName": "BUAP"
+  },
+  {
+    "id": "source-school-153d29e75bbd",
+    "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 198",
+    "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 198"
+  },
+  {
+    "id": "source-school-16f24e4704a7",
+    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN",
+    "shortName": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN"
+  },
+  {
+    "id": "source-school-175644cc58e8",
+    "officialName": "Universidad de Granma - Bayamo",
+    "shortName": "Universidad de Granma - Bayamo"
+  },
+  {
+    "id": "source-school-1a27feee9528",
+    "officialName": "Instituto Tecnológico del Valle del Guadiana",
+    "shortName": "Instituto Tecnológico del Valle del Guadiana"
+  },
+  {
+    "id": "source-school-1c1d9d112fce",
+    "officialName": "Colegio de Estudios Científicos y Tecnológicos del Estado de Querétaro",
+    "shortName": "Colegio de Estudios Científicos y Tecnológicos del Estado de Querétaro"
+  },
+  {
+    "id": "source-school-1da7c5f35145",
+    "officialName": "ITS Calkini",
+    "shortName": "ITS Calkini"
+  },
+  {
+    "id": "source-school-1dfbdc981808",
+    "officialName": "Universidad de Pinar del Río",
+    "shortName": "Universidad de Pinar del Río"
+  },
+  {
+    "id": "source-school-1e0da49fd864",
+    "officialName": "Universidad Autonoma de Coahuila Unidad Torreon",
+    "shortName": "Universidad Autonoma de Coahuila Unidad Torreon"
+  },
+  {
+    "id": "source-school-1e1b60a69bf2",
+    "officialName": "Universidad Veracruzana",
+    "shortName": "Universidad Veracruzana"
+  },
+  {
+    "id": "source-school-1e495eaa39fa",
+    "officialName": "ITESM-Puebla",
+    "shortName": "ITESM-Puebla"
+  },
+  {
+    "id": "source-school-1f6766a910a3",
+    "officialName": "UdG CUVALLES",
+    "shortName": "UdG CUVALLES"
+  },
+  {
+    "id": "source-school-1f882c110093",
+    "officialName": "UACJ",
+    "shortName": "UACJ"
+  },
+  {
+    "id": "source-school-1faeb5584083",
+    "officialName": "CETYSMexicali",
+    "shortName": "CETYSMexicali"
+  },
+  {
+    "id": "source-school-1fce1378f60e",
+    "officialName": "Universidad de Guadalajara CUCSUR",
+    "shortName": "Universidad de Guadalajara CUCSUR"
+  },
+  {
+    "id": "source-school-1ffa2ceeda41",
+    "officialName": "ITESM Campus León",
+    "shortName": "ITESM Campus León"
+  },
+  {
+    "id": "source-school-2129812f9b28",
+    "officialName": "TECNOLOGICO NACIONAL DE MEXICO CAMPUS MORELIA",
+    "shortName": "TECNOLOGICO NACIONAL DE MEXICO CAMPUS MORELIA"
+  },
+  {
+    "id": "source-school-23203f7743a5",
+    "officialName": "ESCOM IPN",
+    "shortName": "ESCOM IPN"
+  },
+  {
+    "id": "source-school-2422e48e0a1a",
+    "officialName": "Universidad Nacional de Costa Rica Campus Chorotega",
+    "shortName": "Universidad Nacional de Costa Rica Campus Chorotega"
+  },
+  {
+    "id": "source-school-254fc4ed9920",
+    "officialName": "Universidad Politécnica de Zacatecas",
+    "shortName": "Universidad Politécnica de Zacatecas"
+  },
+  {
+    "id": "source-school-25b3dd443154",
+    "officialName": "Universidad Centroamericana",
+    "shortName": "Universidad Centroamericana"
+  },
+  {
+    "id": "source-school-26d80743abcd",
+    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas",
+    "shortName": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas"
+  },
+  {
+    "id": "source-school-275a4aead4c3",
+    "officialName": "Universidad Nacional Autónoma de México ENES Morelia",
+    "shortName": "Universidad Nacional Autónoma de México ENES Morelia"
+  },
+  {
+    "id": "source-school-27740a8f1201",
+    "officialName": "CETYS Universidad Campus Mexicali",
+    "shortName": "CETYS Universidad Campus Mexicali"
+  },
+  {
+    "id": "source-school-28283e8d307b",
+    "officialName": "Instituto Tecnologico De Villa La Venta",
+    "shortName": "Instituto Tecnologico De Villa La Venta"
+  },
+  {
+    "id": "source-school-28495a711d47",
+    "officialName": "Olimpiada Mexicana de Informatica en Aguascalientes",
+    "shortName": "Olimpiada Mexicana de Informatica en Aguascalientes"
+  },
+  {
+    "id": "source-school-28eee24967c1",
+    "officialName": "Universidad Politécnica de Chiapas",
+    "shortName": "Universidad Politécnica de Chiapas"
+  },
+  {
+    "id": "source-school-2a0732136c29",
+    "officialName": "Universidad Tecnologica de Panama",
+    "shortName": "Universidad Tecnologica de Panama"
+  },
+  {
+    "id": "source-school-2a365bb14d52",
+    "officialName": "Universidad Veracruzana Campus Coatzacoalcos",
+    "shortName": "Universidad Veracruzana Campus Coatzacoalcos"
+  },
+  {
+    "id": "source-school-2a5213107e97",
+    "officialName": "UADY",
+    "shortName": "UADY"
+  },
+  {
+    "id": "source-school-2a720e035241",
+    "officialName": "Universidad Autónoma de Coahuila",
+    "shortName": "Universidad Autónoma de Coahuila"
+  },
+  {
+    "id": "source-school-2a7a9a57b191",
+    "officialName": "Universidad de Camagüey",
+    "shortName": "Universidad de Camagüey"
+  },
+  {
+    "id": "source-school-2aa62198db0f",
+    "officialName": "Corporacion Universitaria Unitec",
+    "shortName": "Corporacion Universitaria Unitec"
+  },
+  {
+    "id": "source-school-2ac219571c53",
+    "officialName": "Universidad de Matanzas",
+    "shortName": "Universidad de Matanzas"
+  },
+  {
+    "id": "source-school-2b2c16b8bc7f",
+    "officialName": "Ucol",
+    "shortName": "Ucol"
+  },
+  {
+    "id": "source-school-2b50cc652ddf",
+    "officialName": "ITSZN",
+    "shortName": "ITSZN"
+  },
+  {
+    "id": "source-school-2b8eae93b571",
+    "officialName": "Universidad de Guantánamo",
+    "shortName": "Universidad de Guantánamo"
+  },
+  {
+    "id": "source-school-2c790d74f17b",
+    "officialName": "UdG CUCOSTA",
+    "shortName": "UdG CUCOSTA"
+  },
+  {
+    "id": "source-school-2cdabdf1ac3e",
+    "officialName": "Universidad del Papaloapan",
+    "shortName": "Universidad del Papaloapan"
+  },
+  {
+    "id": "source-school-2da98b8bebec",
+    "officialName": "Olimpiada Sinaloense de Informática",
+    "shortName": "Olimpiada Sinaloense de Informática"
+  },
+  {
+    "id": "source-school-2ec4c4de537c",
+    "officialName": "ULSA",
+    "shortName": "ULSA"
+  },
+  {
+    "id": "source-school-318679454525",
+    "officialName": "UPIICSA",
+    "shortName": "UPIICSA"
+  },
+  {
+    "id": "source-school-3196809a1ca6",
+    "officialName": "Universidad de las Americas-Puebla",
+    "shortName": "Universidad de las Americas-Puebla"
+  },
+  {
+    "id": "source-school-327fbac41501",
+    "officialName": "Instituto Tecnológico de León",
+    "shortName": "Instituto Tecnológico de León"
+  },
+  {
+    "id": "source-school-335eeed7195d",
+    "officialName": "Instituto Tecnológico Superior de Páztcuaro",
+    "shortName": "Instituto Tecnológico Superior de Páztcuaro"
+  },
+  {
+    "id": "source-school-3425fe5f96c0",
+    "officialName": "Universidad de Panama",
+    "shortName": "Universidad de Panama"
+  },
+  {
+    "id": "source-school-35812fde05b7",
+    "officialName": "Instituto Tecnológico Superior de Loreto",
+    "shortName": "Instituto Tecnológico Superior de Loreto"
+  },
+  {
+    "id": "source-school-36dd3f015eef",
+    "officialName": "ITESM Monterrey",
+    "shortName": "ITESM Monterrey"
+  },
+  {
+    "id": "source-school-37806e2c8f27",
+    "officialName": "Escuela Superior de Cómputo IPN",
+    "shortName": "Escuela Superior de Cómputo IPN"
+  },
+  {
+    "id": "source-school-389761cad6a1",
+    "officialName": "Universidad de Oriente - Sede Julio Antonio Mella",
+    "shortName": "Universidad de Oriente - Sede Julio Antonio Mella"
+  },
+  {
+    "id": "source-school-38e13c96eec3",
+    "officialName": "Universidad Politécnica de Victoria",
+    "shortName": "Universidad Politécnica de Victoria"
+  },
+  {
+    "id": "source-school-393d64e30952",
+    "officialName": "TEC Milenio - Las Torres",
+    "shortName": "TEC Milenio - Las Torres"
+  },
+  {
+    "id": "source-school-3999b6144a49",
+    "officialName": "Universidad de Guanajuato - CIMAT",
+    "shortName": "Universidad de Guanajuato - CIMAT"
+  },
+  {
+    "id": "source-school-39d5e4a5d475",
+    "officialName": "Instituto Tecnlogico de la Laguna",
+    "shortName": "Instituto Tecnlogico de la Laguna"
+  },
+  {
+    "id": "source-school-39faaece2b9b",
+    "officialName": "Universidad Politécnica de Pénjamo",
+    "shortName": "Universidad Politécnica de Pénjamo"
+  },
+  {
+    "id": "source-school-3a45010d69b0",
+    "officialName": "Universidad Nacional Autónoma de México Facultad de Ingenierías",
+    "shortName": "Universidad Nacional Autónoma de México Facultad de Ingenierías"
+  },
+  {
+    "id": "source-school-3a4ea71a63f4",
+    "officialName": "Facultad de Ciencias - UNAM",
+    "shortName": "Facultad de Ciencias - UNAM"
+  },
+  {
+    "id": "source-school-3a8a3f9f2cce",
+    "officialName": "UABC",
+    "shortName": "UABC"
+  },
+  {
+    "id": "source-school-3cea92827703",
+    "officialName": "Instituto Tecnológico Superior de Álamo Tempache",
+    "shortName": "Instituto Tecnológico Superior de Álamo Tempache"
+  },
+  {
+    "id": "source-school-3d0d29b27a85",
+    "officialName": "Universidad Abierta y a Distancia de México",
+    "shortName": "Universidad Abierta y a Distancia de México"
+  },
+  {
+    "id": "source-school-3d63324424c0",
+    "officialName": "Universidad Politecnica de Sinaloa",
+    "shortName": "Universidad Politecnica de Sinaloa"
+  },
+  {
+    "id": "source-school-3d66aae6e433",
+    "officialName": "Tecnológico de Costa Rica",
+    "shortName": "Tecnológico de Costa Rica"
+  },
+  {
+    "id": "source-school-3e017bf58ae3",
+    "officialName": "Universidad de Guanajuato DCNE",
+    "shortName": "Universidad de Guanajuato DCNE"
+  },
+  {
+    "id": "source-school-3fbfe7180155",
+    "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No.255",
+    "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No.255"
+  },
+  {
+    "id": "source-school-40fbd05cee85",
+    "officialName": "Escuela Superior de Física y Matemáticas del IPN",
+    "shortName": "Escuela Superior de Física y Matemáticas del IPN"
+  },
+  {
+    "id": "source-school-41239e5c8a3b",
+    "officialName": "ITESM León",
+    "shortName": "ITESM León"
+  },
+  {
+    "id": "source-school-42fdce5c49e5",
+    "officialName": "Instituto Tecnológico Superior de Uruapan",
+    "shortName": "Instituto Tecnológico Superior de Uruapan"
+  },
+  {
+    "id": "source-school-4419039ab70b",
+    "officialName": "Universidad Nacional de Ingeniería, Nicaragua",
+    "shortName": "Universidad Nacional de Ingeniería, Nicaragua"
+  },
+  {
+    "id": "source-school-442ff88963bc",
+    "officialName": "Tecnológico Nacional de México, Instituto Tecnológico de León",
+    "shortName": "Tecnológico Nacional de México, Instituto Tecnológico de León"
+  },
+  {
+    "id": "source-school-44cc991d7bdf",
+    "officialName": "Instituto Tecnológico Superior de Comalcalco",
+    "shortName": "Instituto Tecnológico Superior de Comalcalco"
+  },
+  {
+    "id": "source-school-4509fd5dafbc",
+    "officialName": "Escuela Nacional de Estudios Superiores Unidad Morelia - UNAM",
+    "shortName": "Escuela Nacional de Estudios Superiores Unidad Morelia - UNAM"
+  },
+  {
+    "id": "source-school-465388a6b0c1",
+    "officialName": "UNAM CFATA Campus Juriquilla",
+    "shortName": "UNAM CFATA Campus Juriquilla"
+  },
+  {
+    "id": "source-school-48649350a9b2",
+    "officialName": "Instituto Tecnológico Superior de Apatzingan",
+    "shortName": "Instituto Tecnológico Superior de Apatzingan"
+  },
+  {
+    "id": "source-school-4b7df1e11eab",
+    "officialName": "INSTITUTO TECNOLÓGICO SUPERIOR DE ZACAPOAXTLA",
+    "shortName": "INSTITUTO TECNOLÓGICO SUPERIOR DE ZACAPOAXTLA"
+  },
+  {
+    "id": "source-school-4d325234238f",
+    "officialName": "Universidad Autónoma Metropolitana - Unidad Cuajimalpa",
+    "shortName": "Universidad Autónoma Metropolitana - Unidad Cuajimalpa"
+  },
+  {
+    "id": "source-school-4d39bf22bef7",
+    "officialName": "FMAT",
+    "shortName": "FMAT"
+  },
+  {
+    "id": "source-school-4db57e7a476e",
+    "officialName": "U de Guanajuato",
+    "shortName": "U de Guanajuato"
+  },
+  {
+    "id": "source-school-4eb7211dfff1",
+    "officialName": "ESCOM Instituto Politecnico Nacional",
+    "shortName": "ESCOM Instituto Politecnico Nacional"
+  },
+  {
+    "id": "source-school-4f7c9598af91",
+    "officialName": "Instituto Tecnológico de Las Américas",
+    "shortName": "Instituto Tecnológico de Las Américas"
+  },
+  {
+    "id": "source-school-4fefa5c30256",
+    "officialName": "INSTITUTO TECNOLOGICO SUPERIOR DE JUAN RODRIGUEZ CLARA",
+    "shortName": "INSTITUTO TECNOLOGICO SUPERIOR DE JUAN RODRIGUEZ CLARA"
+  },
+  {
+    "id": "source-school-5143fc756511",
+    "officialName": "ITVer",
+    "shortName": "ITVer"
+  },
+  {
+    "id": "source-school-516d80476120",
+    "officialName": "Escuela Superior de Física y Matemáticas del Instituto Politécnico Nacional",
+    "shortName": "Escuela Superior de Física y Matemáticas del Instituto Politécnico Nacional"
+  },
+  {
+    "id": "source-school-51b132f7b9a7",
+    "officialName": "Universidad Panamericana Guadalajara",
+    "shortName": "Universidad Panamericana Guadalajara"
+  },
+  {
+    "id": "source-school-520749ecba08",
+    "officialName": "IT Culiacan",
+    "shortName": "IT Culiacan"
+  },
+  {
+    "id": "source-school-5248b87401e8",
+    "officialName": "ITESM Campus Central de Veracruz",
+    "shortName": "ITESM Campus Central de Veracruz"
+  },
+  {
+    "id": "source-school-52e4eec73ada",
+    "officialName": "Escuela de Talentos Guanajuato Azteca NMS",
+    "shortName": "Escuela de Talentos Guanajuato Azteca NMS"
+  },
+  {
+    "id": "source-school-53058cac2b10",
+    "officialName": "Instituto Tecnológico Superior de Puruándiro",
+    "shortName": "Instituto Tecnológico Superior de Puruándiro"
+  },
+  {
+    "id": "source-school-542bb7095a0a",
+    "officialName": "UdG CUALTOS",
+    "shortName": "UdG CUALTOS"
+  },
+  {
+    "id": "source-school-551acbe0bd4a",
+    "officialName": "Instituto Tecnológico Superior Sombrerete Zacatecas Occidente",
+    "shortName": "Instituto Tecnológico Superior Sombrerete Zacatecas Occidente"
+  },
+  {
+    "id": "source-school-5525168c90ce",
+    "officialName": "ITESM Puebla",
+    "shortName": "ITESM Puebla"
+  },
+  {
+    "id": "source-school-55403a1cda92",
+    "officialName": "UAEH",
+    "shortName": "UAEH"
+  },
+  {
+    "id": "source-school-555956d082d6",
+    "officialName": "Universidad La Salle Mexico",
+    "shortName": "Universidad La Salle Mexico"
+  },
+  {
+    "id": "source-school-55b613d4e91a",
+    "officialName": "Universidad de las Ciencias Informáticas - Facultad Regional de Artemisa",
+    "shortName": "Universidad de las Ciencias Informáticas - Facultad Regional de Artemisa"
+  },
+  {
+    "id": "source-school-56a2e9b576c2",
+    "officialName": "Universidad de Guadalajara CULAGOS",
+    "shortName": "Universidad de Guadalajara CULAGOS"
+  },
+  {
+    "id": "source-school-56f63a6d413f",
+    "officialName": "ITESO",
+    "shortName": "ITESO"
+  },
+  {
+    "id": "source-school-570cf4e18f36",
+    "officialName": "Universidad Tecnológica de la Huasteca Hidalguense",
+    "shortName": "Universidad Tecnológica de la Huasteca Hidalguense"
+  },
+  {
+    "id": "source-school-585c1af57950",
+    "officialName": "ITCJ",
+    "shortName": "ITCJ"
+  },
+  {
+    "id": "source-school-594dfe9b6746",
+    "officialName": "Instituto Technologico de Comitan",
+    "shortName": "Instituto Technologico de Comitan"
+  },
+  {
+    "id": "source-school-5983c6a7c761",
+    "officialName": "Universidad del Valle de Mexico Campus Guadalajara Sur",
+    "shortName": "Universidad del Valle de Mexico Campus Guadalajara Sur"
+  },
+  {
+    "id": "source-school-59ba94c9e01e",
+    "officialName": "Universidad Tecnológica de Morelia",
+    "shortName": "Universidad Tecnológica de Morelia"
+  },
+  {
+    "id": "source-school-59f606403952",
+    "officialName": "ITL",
+    "shortName": "ITL"
+  },
+  {
+    "id": "source-school-5a0ef5d09a6b",
+    "officialName": "Instituto Tecnológico Superior de Tacámbaro",
+    "shortName": "Instituto Tecnológico Superior de Tacámbaro"
+  },
+  {
+    "id": "source-school-5a48786dc0c1",
+    "officialName": "Universidad Iberoamericana León",
+    "shortName": "Universidad Iberoamericana León"
+  },
+  {
+    "id": "source-school-5a52a6c70126",
+    "officialName": "Universidad Nacional Autónoma de Nicaragua, Managua",
+    "shortName": "Universidad Nacional Autónoma de Nicaragua, Managua"
+  },
+  {
+    "id": "source-school-5aa147c84039",
+    "officialName": "Instituto Tecnológico Superior de Irapuato Campus Purísima del Rincon",
+    "shortName": "Instituto Tecnológico Superior de Irapuato Campus Purísima del Rincon"
+  },
+  {
+    "id": "source-school-5b30fd95c616",
+    "officialName": "UP CDMX",
+    "shortName": "UP CDMX"
+  },
+  {
+    "id": "source-school-5b3266f2ec11",
+    "officialName": "UACH",
+    "shortName": "UACH"
+  },
+  {
+    "id": "source-school-5d06059e7144",
+    "officialName": "Benemérica Universidad Autónoma de Puebla",
+    "shortName": "Benemérica Universidad Autónoma de Puebla"
+  },
+  {
+    "id": "source-school-5e34206154c6",
+    "officialName": "Instituto Tecnológico Superior de Teposcolula",
+    "shortName": "Instituto Tecnológico Superior de Teposcolula"
+  },
+  {
+    "id": "source-school-5e513d63414f",
+    "officialName": "ITC",
+    "shortName": "ITC"
+  },
+  {
+    "id": "source-school-5f34e226e4d7",
+    "officialName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México",
+    "shortName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México"
+  },
+  {
+    "id": "source-school-628390b14281",
+    "officialName": "Instituto Tecnologico de Piedras Negras",
+    "shortName": "Instituto Tecnologico de Piedras Negras"
+  },
+  {
+    "id": "source-school-633c53baa9d8",
+    "officialName": "Centro Universitario de Occidente",
+    "shortName": "Centro Universitario de Occidente"
+  },
+  {
+    "id": "source-school-634899c39ce2",
+    "officialName": "ITESM Cuernavaca",
+    "shortName": "ITESM Cuernavaca"
+  },
+  {
+    "id": "source-school-64985288ecac",
+    "officialName": "ITESM Campus Aguascalientes",
+    "shortName": "ITESM Campus Aguascalientes"
+  },
+  {
+    "id": "source-school-651ab7cb3fc0",
+    "officialName": "Universidad Nacional Autónoma de México Facultad de Ciencias",
+    "shortName": "Universidad Nacional Autónoma de México Facultad de Ciencias"
+  },
+  {
+    "id": "source-school-65fa55ecf399",
+    "officialName": "Tec de Monterrey Campus Puebla",
+    "shortName": "Tec de Monterrey Campus Puebla"
+  },
+  {
+    "id": "source-school-675e4c30a948",
+    "officialName": "Universidad de Artes Digitales",
+    "shortName": "Universidad de Artes Digitales"
+  },
+  {
+    "id": "source-school-6869a4dfaead",
+    "officialName": "Instituto Tecnológico de Celaya",
+    "shortName": "Instituto Tecnológico de Celaya"
+  },
+  {
+    "id": "source-school-68c426c8f3bc",
+    "officialName": "Tecnológico Nacional de México , Instituto Tecnológico de León",
+    "shortName": "Tecnológico Nacional de México , Instituto Tecnológico de León"
+  },
+  {
+    "id": "source-school-6993759cca4b",
+    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del IPN Unidad Azcapotzalco",
+    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del IPN Unidad Azcapotzalco"
+  },
+  {
+    "id": "source-school-6a220b20176f",
+    "officialName": "Universidad de las Ciencias Informáticas - Facultad Regional de Ciego",
+    "shortName": "Universidad de las Ciencias Informáticas - Facultad Regional de Ciego"
+  },
+  {
+    "id": "source-school-6a8c5028941e",
+    "officialName": "Instituto Superior de Ciudad Hidalgo",
+    "shortName": "Instituto Superior de Ciudad Hidalgo"
+  },
+  {
+    "id": "source-school-6b0fa63dc523",
+    "officialName": "Universidad Politécnica de Quintana Roo",
+    "shortName": "Universidad Politécnica de Quintana Roo"
+  },
+  {
+    "id": "source-school-6b8ec4c9c3a1",
+    "officialName": "Tecnológico de Estudios Superiores de Jilotepec",
+    "shortName": "Tecnológico de Estudios Superiores de Jilotepec"
+  },
+  {
+    "id": "source-school-6cb6971090e9",
+    "officialName": "ITAM",
+    "shortName": "ITAM"
+  },
+  {
+    "id": "source-school-6ce9594c0bd4",
+    "officialName": "IT Morelia",
+    "shortName": "IT Morelia"
+  },
+  {
+    "id": "source-school-6cf673e7a45a",
+    "officialName": "Universidad de las Ciencias Informáticas - Facultad Regional de Granma",
+    "shortName": "Universidad de las Ciencias Informáticas - Facultad Regional de Granma"
+  },
+  {
+    "id": "source-school-6f1f4082133f",
+    "officialName": "Instituto Tecnológico de Cancún",
+    "shortName": "Instituto Tecnológico de Cancún"
+  },
+  {
+    "id": "source-school-71a354703cad",
+    "officialName": "Instituto Tecnologico Superior de Loreto",
+    "shortName": "Instituto Tecnologico Superior de Loreto"
+  },
+  {
+    "id": "source-school-71e10e0656ca",
+    "officialName": "Universidad de Guanajuato - DCEA",
+    "shortName": "Universidad de Guanajuato - DCEA"
+  },
+  {
+    "id": "source-school-72c048cb5100",
+    "officialName": "UAT",
+    "shortName": "UAT"
+  },
+  {
+    "id": "source-school-72cb8c53d49e",
+    "officialName": "Universidad de Cienfuegos",
+    "shortName": "Universidad de Cienfuegos"
+  },
+  {
+    "id": "source-school-742fd898cd47",
+    "officialName": "ITESM Campus Morelia",
+    "shortName": "ITESM Campus Morelia"
+  },
+  {
+    "id": "source-school-7497c97aa05f",
+    "officialName": "UPALT",
+    "shortName": "UPALT"
+  },
+  {
+    "id": "source-school-74b6abdf6be3",
+    "officialName": "Instituto Tecnológico de Estudios Superiores de Huixquilucan",
+    "shortName": "Instituto Tecnológico de Estudios Superiores de Huixquilucan"
+  },
+  {
+    "id": "source-school-7503ca7a5711",
+    "officialName": "UAM Iztapalapa",
+    "shortName": "UAM Iztapalapa"
+  },
+  {
+    "id": "source-school-751fdf1568f6",
+    "officialName": "ESIME Azcapotzalco",
+    "shortName": "ESIME Azcapotzalco"
+  },
+  {
+    "id": "source-school-773893f7149c",
+    "officialName": "UPAEP",
+    "shortName": "UPAEP"
+  },
+  {
+    "id": "source-school-7874dd81ab17",
+    "officialName": "Bachillerato Bivalente de Talentos",
+    "shortName": "Bachillerato Bivalente de Talentos"
+  },
+  {
+    "id": "source-school-7881094928a7",
+    "officialName": "Universidad TecMilenio Toluca",
+    "shortName": "Universidad TecMilenio Toluca"
+  },
+  {
+    "id": "source-school-79772a921bac",
+    "officialName": "IT Leon",
+    "shortName": "IT Leon"
+  },
+  {
+    "id": "source-school-7a2289b9dded",
+    "officialName": "UdG CUSUR",
+    "shortName": "UdG CUSUR"
+  },
+  {
+    "id": "source-school-7aa06b6cb0bd",
+    "officialName": "Unidad Profesional Interdisciplinaria de Ingenieria Zacatecas IPN",
+    "shortName": "Unidad Profesional Interdisciplinaria de Ingenieria Zacatecas IPN"
+  },
+  {
+    "id": "source-school-7b42cb77e9ee",
+    "officialName": "UANL",
+    "shortName": "UANL"
+  },
+  {
+    "id": "source-school-7c0a0a825e92",
+    "officialName": "Tec de Monterrey Campus Toluca",
+    "shortName": "Tec de Monterrey Campus Toluca"
+  },
+  {
+    "id": "source-school-7c8bf8374a91",
+    "officialName": "Universidad Politécnica de Atlacomulco",
+    "shortName": "Universidad Politécnica de Atlacomulco"
+  },
+  {
+    "id": "source-school-7f68d375a192",
+    "officialName": "Tec Saltillo",
+    "shortName": "Tec Saltillo"
+  },
+  {
+    "id": "source-school-81261a73feaa",
+    "officialName": "Instituto  Tecnológico de Estudios Superiores de Zamora ",
+    "shortName": "Instituto  Tecnológico de Estudios Superiores de Zamora "
+  },
+  {
+    "id": "source-school-8129d3404595",
+    "officialName": "Instituto Tecnológico de Zitácuaro",
+    "shortName": "Instituto Tecnológico de Zitácuaro"
+  },
+  {
+    "id": "source-school-81c9c53b50d4",
+    "officialName": "Instituto Tecnológico Superior de Pánuco",
+    "shortName": "Instituto Tecnológico Superior de Pánuco"
+  },
+  {
+    "id": "source-school-81ca1789760e",
+    "officialName": "Universidad de Guadalajara Campus CUTONALA",
+    "shortName": "Universidad de Guadalajara Campus CUTONALA"
+  },
+  {
+    "id": "source-school-81d7f674f4d9",
+    "officialName": "OMI Queretaro",
+    "shortName": "OMI Queretaro"
+  },
+  {
+    "id": "source-school-81f743589a90",
+    "officialName": "Olimpiada Mexicana de Informatica en Jalisco",
+    "shortName": "Olimpiada Mexicana de Informatica en Jalisco"
+  },
+  {
+    "id": "source-school-83c10a3c73d3",
+    "officialName": "Universidad del Istmo, Campus Tehuantepec",
+    "shortName": "Universidad del Istmo, Campus Tehuantepec"
+  },
+  {
+    "id": "source-school-84fe5610e0ce",
+    "officialName": "UNAM ENES Morelia",
+    "shortName": "UNAM ENES Morelia"
+  },
+  {
+    "id": "source-school-8605d7dea947",
+    "officialName": "Universidad Gerardo Barrios",
+    "shortName": "Universidad Gerardo Barrios"
+  },
+  {
+    "id": "source-school-87392873a345",
+    "officialName": "Facultad de Ciencias-UNAM",
+    "shortName": "Facultad de Ciencias-UNAM"
+  },
+  {
+    "id": "source-school-8783f41bc328",
+    "officialName": "Instituto Tecnologico de Celaya",
+    "shortName": "Instituto Tecnologico de Celaya"
+  },
+  {
+    "id": "source-school-886ba0c7da35",
+    "officialName": "Universidad de Gualajara CUSUR",
+    "shortName": "Universidad de Gualajara CUSUR"
+  },
+  {
+    "id": "source-school-88ccd66b1bf5",
+    "officialName": "Centros de Estudios Tecnológicos Industrial y de Servicios 120",
+    "shortName": "Centros de Estudios Tecnológicos Industrial y de Servicios 120"
+  },
+  {
+    "id": "source-school-8a7dcde1f5ce",
+    "officialName": "FIUADY",
+    "shortName": "FIUADY"
+  },
+  {
+    "id": "source-school-8ab679b712fd",
+    "officialName": "UAM A",
+    "shortName": "UAM A"
+  },
+  {
+    "id": "source-school-8ba089c20cf9",
+    "officialName": "Instituto Tecnológico José Mario Molina Pasquel y Henríquez campus Zapopan",
+    "shortName": "Instituto Tecnológico José Mario Molina Pasquel y Henríquez campus Zapopan"
+  },
+  {
+    "id": "source-school-8c5a943bd665",
+    "officialName": "Escuela del Nivel Medio Superior de Salvatierra",
+    "shortName": "Escuela del Nivel Medio Superior de Salvatierra"
+  },
+  {
+    "id": "source-school-8cd62a39cb8f",
+    "officialName": "Instituto Tecnologico Superior Sombrerete Zacatecas Occidente",
+    "shortName": "Instituto Tecnologico Superior Sombrerete Zacatecas Occidente"
+  },
+  {
+    "id": "source-school-8cd84f4d1524",
+    "officialName": "ITESM Campus Zacatecas",
+    "shortName": "ITESM Campus Zacatecas"
+  },
+  {
+    "id": "source-school-8d0e27ac4fd7",
+    "officialName": "Facultad de Informática Mazatlán UAS",
+    "shortName": "Facultad de Informática Mazatlán UAS"
+  },
+  {
+    "id": "source-school-8e894d40da50",
+    "officialName": "Universidad Mariano Galvez de Guatemala Campus Chiquimulilla",
+    "shortName": "Universidad Mariano Galvez de Guatemala Campus Chiquimulilla"
+  },
+  {
+    "id": "source-school-906870b344a0",
+    "officialName": "Instituto Tecnológico Superior de Lerdo",
+    "shortName": "Instituto Tecnológico Superior de Lerdo"
+  },
+  {
+    "id": "source-school-9099d00ba203",
+    "officialName": "Instituto Tecnologico Superior de Coalcoman",
+    "shortName": "Instituto Tecnologico Superior de Coalcoman"
+  },
+  {
+    "id": "source-school-916879c519a1",
+    "officialName": "Universidad de Oriente - Sede Antonio Maceo",
+    "shortName": "Universidad de Oriente - Sede Antonio Maceo"
+  },
+  {
+    "id": "source-school-916d69c5ec90",
+    "officialName": "Universidad Autonoma de Coahuila Unidad Norte",
+    "shortName": "Universidad Autonoma de Coahuila Unidad Norte"
+  },
+  {
+    "id": "source-school-9175d02370a4",
+    "officialName": "Universidad Tecnológica de la Zona Metropolitana de Guadalajara",
+    "shortName": "Universidad Tecnológica de la Zona Metropolitana de Guadalajara"
+  },
+  {
+    "id": "source-school-91f6e4436bd9",
+    "officialName": "Universidad Panamericana Ciudad de México",
+    "shortName": "Universidad Panamericana Ciudad de México"
+  },
+  {
+    "id": "source-school-92183a1f39cc",
+    "officialName": "Instituto Tecnológico de Estudios Superiores de Zamora",
+    "shortName": "Instituto Tecnológico de Estudios Superiores de Zamora"
+  },
+  {
+    "id": "source-school-922f3f7d5dd0",
+    "officialName": "ITSZ TECNM",
+    "shortName": "ITSZ TECNM"
+  },
+  {
+    "id": "source-school-9281b200011a",
+    "officialName": "Universidad de las Ciencias Informáticas",
+    "shortName": "Universidad de las Ciencias Informáticas"
+  },
+  {
+    "id": "source-school-9321a2f2d26e",
+    "officialName": "Universidad Nacional Autónoma de México CNyMyN",
+    "shortName": "Universidad Nacional Autónoma de México CNyMyN"
+  },
+  {
+    "id": "source-school-93bef2438b23",
+    "officialName": "Politécnica de Santa Rosa Jáuregui",
+    "shortName": "Politécnica de Santa Rosa Jáuregui"
+  },
+  {
+    "id": "source-school-940ac9035f2c",
+    "officialName": "Tec de Monterrey Campus Cuernavaca",
+    "shortName": "Tec de Monterrey Campus Cuernavaca"
+  },
+  {
+    "id": "source-school-9439bca48746",
+    "officialName": "Universidad del Valle de Mexico Campus San Rafael",
+    "shortName": "Universidad del Valle de Mexico Campus San Rafael"
+  },
+  {
+    "id": "source-school-94c62f520f58",
+    "officialName": "Instituto Tecnológico de Aguascalientes",
+    "shortName": "Instituto Tecnológico de Aguascalientes"
+  },
+  {
+    "id": "source-school-95d04191fe16",
+    "officialName": "Tec de Monterrey Campus Estado de México",
+    "shortName": "Tec de Monterrey Campus Estado de México"
+  },
+  {
+    "id": "source-school-96d0fe5212e7",
+    "officialName": "Universidad de Guadalajara CUCIENEGA",
+    "shortName": "Universidad de Guadalajara CUCIENEGA"
+  },
+  {
+    "id": "source-school-972b58bc4f32",
+    "officialName": "Olimpiada de Informatica de la Ciudad de Mexico",
+    "shortName": "Olimpiada de Informatica de la Ciudad de Mexico"
+  },
+  {
+    "id": "source-school-972dd61094d2",
+    "officialName": "University of Technology- Jamaica",
+    "shortName": "University of Technology- Jamaica"
+  },
+  {
+    "id": "source-school-974208957e60",
+    "officialName": "FI-UNAM",
+    "shortName": "FI-UNAM"
+  },
+  {
+    "id": "source-school-97d7e30bc553",
+    "officialName": "Colegio de Estudios Cientificos y Tecnologicos del Estado de Michoacan",
+    "shortName": "Colegio de Estudios Cientificos y Tecnologicos del Estado de Michoacan"
+  },
+  {
+    "id": "source-school-991fa4ba5252",
+    "officialName": "ESIME del Instituto Politecnico Nacional Azcapotzalco",
+    "shortName": "ESIME del Instituto Politecnico Nacional Azcapotzalco"
+  },
+  {
+    "id": "source-school-9abdb58ab272",
+    "officialName": "Escuela Superior de Economía y Negocios",
+    "shortName": "Escuela Superior de Economía y Negocios"
+  },
+  {
+    "id": "source-school-9b5ad0dc0fbb",
+    "officialName": "Universidad Autonoma De Baja California Sur",
+    "shortName": "Universidad Autonoma De Baja California Sur"
+  },
+  {
+    "id": "source-school-9c3c73687f43",
+    "officialName": "Instituto Tecnológico Superior de Coatzacoalcos",
+    "shortName": "Instituto Tecnológico Superior de Coatzacoalcos"
+  },
+  {
+    "id": "source-school-9cb342157ed5",
+    "officialName": "Universidad del Istmo de Guatemala",
+    "shortName": "Universidad del Istmo de Guatemala"
+  },
+  {
+    "id": "source-school-9e12e710636d",
+    "officialName": "Universidad Autónoma Metropolitana Unidad Iztapalapa",
+    "shortName": "Universidad Autónoma Metropolitana Unidad Iztapalapa"
+  },
+  {
+    "id": "source-school-9fb0a30c8929",
+    "officialName": "FES Cuautitlan - UNAM",
+    "shortName": "FES Cuautitlan - UNAM"
+  },
+  {
+    "id": "source-school-a0e44fb98d65",
+    "officialName": "Tecnológico de Estudios Superiores de Chalco",
+    "shortName": "Tecnológico de Estudios Superiores de Chalco"
+  },
+  {
+    "id": "source-school-a158d0cf230d",
+    "officialName": "Olimpiada Mexicana de Informática Puebla",
+    "shortName": "Olimpiada Mexicana de Informática Puebla"
+  },
+  {
+    "id": "source-school-a1d86e8b5f12",
+    "officialName": "Centro de Bachillerato Tecnológico Agropecuario No. 113",
+    "shortName": "Centro de Bachillerato Tecnológico Agropecuario No. 113"
+  },
+  {
+    "id": "source-school-a2d29cb32a1d",
+    "officialName": "ITZacatepec",
+    "shortName": "ITZacatepec"
+  },
+  {
+    "id": "source-school-a384166e1a21",
+    "officialName": "Universidad Enrique Díaz de León",
+    "shortName": "Universidad Enrique Díaz de León"
+  },
+  {
+    "id": "source-school-a48bd42dfe0f",
+    "officialName": "Universidad de Guadalajara Campus CUCEI",
+    "shortName": "Universidad de Guadalajara Campus CUCEI"
+  },
+  {
+    "id": "source-school-a55b1b0808de",
+    "officialName": "Universidad Tecnológica de Zacatecas",
+    "shortName": "Universidad Tecnológica de Zacatecas"
+  },
+  {
+    "id": "source-school-a672e2ae998c",
+    "officialName": "Instituto Tecnológico de Costa Rica campus San José",
+    "shortName": "Instituto Tecnológico de Costa Rica campus San José"
+  },
+  {
+    "id": "source-school-a688106bf88b",
+    "officialName": "Instituto Tecnologico Superior de Álamo Temapache",
+    "shortName": "Instituto Tecnologico Superior de Álamo Temapache"
+  },
+  {
+    "id": "source-school-a719d0fa8ddb",
+    "officialName": "Instituto Tecnológico Superior de Huichapan",
+    "shortName": "Instituto Tecnológico Superior de Huichapan"
+  },
+  {
+    "id": "source-school-a76a58e8c7f1",
+    "officialName": "Instituto Tecnológico Superior de Tantoyuca",
+    "shortName": "Instituto Tecnológico Superior de Tantoyuca"
+  },
+  {
+    "id": "source-school-a9f56c77ddba",
+    "officialName": "Universidad Americana",
+    "shortName": "Universidad Americana"
+  },
+  {
+    "id": "source-school-aa2a43de1753",
+    "officialName": "Universidad Panamericana Bonaterra",
+    "shortName": "Universidad Panamericana Bonaterra"
+  },
+  {
+    "id": "source-school-ac35ddd18166",
+    "officialName": "Universidad de Costa Rica campus Pacífico",
+    "shortName": "Universidad de Costa Rica campus Pacífico"
+  },
+  {
+    "id": "source-school-ac5afbcfd1fa",
+    "officialName": "ITESM Campus Saltillo",
+    "shortName": "ITESM Campus Saltillo"
+  },
+  {
+    "id": "source-school-ac9b7d38153c",
+    "officialName": "Instituto Tecnológico de Cajeme",
+    "shortName": "Instituto Tecnológico de Cajeme"
+  },
+  {
+    "id": "source-school-aed40d6dcc4d",
+    "officialName": "Instituto Tecnológico de Costa Rica campus Limón",
+    "shortName": "Instituto Tecnológico de Costa Rica campus Limón"
+  },
+  {
+    "id": "source-school-af13892124a2",
+    "officialName": "Facultad de Ingenierías - UNAM",
+    "shortName": "Facultad de Ingenierías - UNAM"
+  },
+  {
+    "id": "source-school-b057236ebacb",
+    "officialName": "Facultad de Ingeniería y Tecnología Campus Apizaquito",
+    "shortName": "Facultad de Ingeniería y Tecnología Campus Apizaquito"
+  },
+  {
+    "id": "source-school-b14e0aab814e",
+    "officialName": "Universidad La Salle Oaxaca",
+    "shortName": "Universidad La Salle Oaxaca"
+  },
+  {
+    "id": "source-school-b217b22b1aba",
+    "officialName": "Instituto Tecnológico de Costa Rica Campus Limón",
+    "shortName": "Instituto Tecnológico de Costa Rica Campus Limón"
+  },
+  {
+    "id": "source-school-b335126c10d3",
+    "officialName": "Instituto Tecnológico de Cuautla",
+    "shortName": "Instituto Tecnológico de Cuautla"
+  },
+  {
+    "id": "source-school-b3582dc11390",
+    "officialName": "Instituto Tecnologico de Comitan",
+    "shortName": "Instituto Tecnologico de Comitan"
+  },
+  {
+    "id": "source-school-b4299c29a8da",
+    "officialName": "Universidad Politécnica de Tlaxcala",
+    "shortName": "Universidad Politécnica de Tlaxcala"
+  },
+  {
+    "id": "source-school-b452914c0ee7",
+    "officialName": "Universidad Nacional Autónoma de México FES Acatlán",
+    "shortName": "Universidad Nacional Autónoma de México FES Acatlán"
+  },
+  {
+    "id": "source-school-b4d27b58e7e2",
+    "officialName": "UP GDL",
+    "shortName": "UP GDL"
+  },
+  {
+    "id": "source-school-b5487600068d",
+    "officialName": "Tec Huetamo",
+    "shortName": "Tec Huetamo"
+  },
+  {
+    "id": "source-school-b6b754b7a6a8",
+    "officialName": "CBTis 217 Salvador Urrutia",
+    "shortName": "CBTis 217 Salvador Urrutia"
+  },
+  {
+    "id": "source-school-b71fbe062024",
+    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional Unidad Culhuacán",
+    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional Unidad Culhuacán"
+  },
+  {
+    "id": "source-school-b7d0815fb289",
+    "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 172",
+    "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 172"
+  },
+  {
+    "id": "source-school-b8c81406d99f",
+    "officialName": "Universidad de San Carlos de Guatemala",
+    "shortName": "Universidad de San Carlos de Guatemala"
+  },
+  {
+    "id": "source-school-b8f07d166c31",
+    "officialName": "Intituto Tecnologico de Lázaro Cárdenas",
+    "shortName": "Intituto Tecnologico de Lázaro Cárdenas"
+  },
+  {
+    "id": "source-school-b985fd84d0b8",
+    "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas - UNAM",
+    "shortName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas - UNAM"
+  },
+  {
+    "id": "source-school-b9c2c80cbc65",
+    "officialName": "Universidad Nacional de Costa Rica",
+    "shortName": "Universidad Nacional de Costa Rica"
+  },
+  {
+    "id": "source-school-ba5aa12b39ad",
+    "officialName": "FIMAZ",
+    "shortName": "FIMAZ"
+  },
+  {
+    "id": "source-school-bac1a836d628",
+    "officialName": "Universidad Autonoma de Coahuila Facultad de Sistemas Unidad Saltillo",
+    "shortName": "Universidad Autonoma de Coahuila Facultad de Sistemas Unidad Saltillo"
+  },
+  {
+    "id": "source-school-bd755128e841",
+    "officialName": "FES Acatlan UNAM",
+    "shortName": "FES Acatlan UNAM"
+  },
+  {
+    "id": "source-school-bd7a82d5ebbd",
+    "officialName": "UPIICSA Instituto Politécnico Nacional",
+    "shortName": "UPIICSA Instituto Politécnico Nacional"
+  },
+  {
+    "id": "source-school-beed31ec1ef8",
+    "officialName": "Tec de Monterrey Campus Chihuahua",
+    "shortName": "Tec de Monterrey Campus Chihuahua"
+  },
+  {
+    "id": "source-school-bf33e0d06c3a",
+    "officialName": "Centro de Enseñanza Tecnica Industrial  - Plantel Tonala",
+    "shortName": "Centro de Enseñanza Tecnica Industrial  - Plantel Tonala"
+  },
+  {
+    "id": "source-school-bf6ff41867ad",
+    "officialName": "Instituto Tecnológico de Parral",
+    "shortName": "Instituto Tecnológico de Parral"
+  },
+  {
+    "id": "source-school-bfbf9a1e6d0a",
+    "officialName": "Universidad del Valle de Atemajac",
+    "shortName": "Universidad del Valle de Atemajac"
+  },
+  {
+    "id": "source-school-bfcfeb8363f7",
+    "officialName": "BUAP Facultad de Ciencias de la Computación",
+    "shortName": "BUAP Facultad de Ciencias de la Computación"
+  },
+  {
+    "id": "source-school-c2bf2f06324f",
+    "officialName": "UAA",
+    "shortName": "UAA"
+  },
+  {
+    "id": "source-school-c2fcc9c2bf35",
+    "officialName": "Universidad Autónoma Metropolitana Azcatpozalco",
+    "shortName": "Universidad Autónoma Metropolitana Azcatpozalco"
+  },
+  {
+    "id": "source-school-c674b5b4faae",
+    "officialName": "Universidad Internacional de Ciencia y Tecnología",
+    "shortName": "Universidad Internacional de Ciencia y Tecnología"
+  },
+  {
+    "id": "source-school-c81c4e48c8ed",
+    "officialName": "ITESM Toluca",
+    "shortName": "ITESM Toluca"
+  },
+  {
+    "id": "source-school-c9017650908b",
+    "officialName": "ESFM IPN",
+    "shortName": "ESFM IPN"
+  },
+  {
+    "id": "source-school-ca31779b34e7",
+    "officialName": "Centros de Estudios Tecnológicos Industrial y de Servicios 77",
+    "shortName": "Centros de Estudios Tecnológicos Industrial y de Servicios 77"
+  },
+  {
+    "id": "source-school-cb711c869268",
+    "officialName": "UDEM",
+    "shortName": "UDEM"
+  },
+  {
+    "id": "source-school-cb8aece785ce",
+    "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas-UNAM",
+    "shortName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas-UNAM"
+  },
+  {
+    "id": "source-school-cbe370566f4c",
+    "officialName": "UPIIZ - IPN",
+    "shortName": "UPIIZ - IPN"
+  },
+  {
+    "id": "source-school-cc60902d90be",
+    "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 148",
+    "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 148"
+  },
+  {
+    "id": "source-school-ccd13ba3aeb4",
+    "officialName": "Facultad de Economia - Universidad Nacional Autonoma de Mexico",
+    "shortName": "Facultad de Economia - Universidad Nacional Autonoma de Mexico"
+  },
+  {
+    "id": "source-school-cd42395ecd92",
+    "officialName": "Universidad de Costa Rica",
+    "shortName": "Universidad de Costa Rica"
+  },
+  {
+    "id": "source-school-cf711fffc42c",
+    "officialName": "UPIIZ Instituto Politécnico Nacional Campus Zacatecas",
+    "shortName": "UPIIZ Instituto Politécnico Nacional Campus Zacatecas"
+  },
+  {
+    "id": "source-school-cfd585fc5d93",
+    "officialName": "Olimpiada Mexicana de Informática en Yucatán",
+    "shortName": "Olimpiada Mexicana de Informática en Yucatán"
+  },
+  {
+    "id": "source-school-d02f1199a0d9",
+    "officialName": "Universidad Loyola del Pacifico",
+    "shortName": "Universidad Loyola del Pacifico"
+  },
+  {
+    "id": "source-school-d04db20e2326",
+    "officialName": "Universidad Vasco de Quiroga",
+    "shortName": "Universidad Vasco de Quiroga"
+  },
+  {
+    "id": "source-school-d0a0b175c12e",
+    "officialName": "Facultad de Ciencias UNAM",
+    "shortName": "Facultad de Ciencias UNAM"
+  },
+  {
+    "id": "source-school-d0d329114035",
+    "officialName": "ITESM Campus Laguna",
+    "shortName": "ITESM Campus Laguna"
+  },
+  {
+    "id": "source-school-d117a0d9ef38",
+    "officialName": "ITSSP",
+    "shortName": "ITSSP"
+  },
+  {
+    "id": "source-school-d172e86ae35a",
+    "officialName": "Instituto Tecnológico de Costa Rica campus Alajuela",
+    "shortName": "Instituto Tecnológico de Costa Rica campus Alajuela"
+  },
+  {
+    "id": "source-school-d22414b1cca8",
+    "officialName": "Instituto Tecnologico Superior de Arandas",
+    "shortName": "Instituto Tecnologico Superior de Arandas"
+  },
+  {
+    "id": "source-school-d2a548191dfa",
+    "officialName": "ITESM Campus Toluca",
+    "shortName": "ITESM Campus Toluca"
+  },
+  {
+    "id": "source-school-d372694af067",
+    "officialName": "CETI Colomos",
+    "shortName": "CETI Colomos"
+  },
+  {
+    "id": "source-school-d3e436108bee",
+    "officialName": "UMG",
+    "shortName": "UMG"
+  },
+  {
+    "id": "source-school-d43a21a22a2b",
+    "officialName": "UAO",
+    "shortName": "UAO"
+  },
+  {
+    "id": "source-school-d494ba6a91ac",
+    "officialName": "Universidad de Guadalajara Campus CUALTOS",
+    "shortName": "Universidad de Guadalajara Campus CUALTOS"
+  },
+  {
+    "id": "source-school-d4d0e6085388",
+    "officialName": "Universidad de Costa Rica campus Pacifico",
+    "shortName": "Universidad de Costa Rica campus Pacifico"
+  },
+  {
+    "id": "source-school-d4f33bd3e746",
+    "officialName": "Instituto Tecnologico de Cd. Juarez",
+    "shortName": "Instituto Tecnologico de Cd. Juarez"
+  },
+  {
+    "id": "source-school-d61c41a82877",
+    "officialName": "ITESM CEM",
+    "shortName": "ITESM CEM"
+  },
+  {
+    "id": "source-school-d63cda88798a",
+    "officialName": "Instituto Tecnológico Superior de Puerto Vallarta",
+    "shortName": "Instituto Tecnológico Superior de Puerto Vallarta"
+  },
+  {
+    "id": "source-school-d71e1c0db7ee",
+    "officialName": "Tec de Monterrey Campus Guadalajara",
+    "shortName": "Tec de Monterrey Campus Guadalajara"
+  },
+  {
+    "id": "source-school-d9b08bdc1ade",
+    "officialName": "Instituto Tecnológico de Ocotlán",
+    "shortName": "Instituto Tecnológico de Ocotlán"
+  },
+  {
+    "id": "source-school-dae99e5ba1fe",
+    "officialName": "Universidad Autonoma de Coahuila",
+    "shortName": "Universidad Autonoma de Coahuila"
+  },
+  {
+    "id": "source-school-dbbad4801b26",
+    "officialName": "Universidad Interamericana para el Desarrollo Campus Guadalajara",
+    "shortName": "Universidad Interamericana para el Desarrollo Campus Guadalajara"
+  },
+  {
+    "id": "source-school-dc6ffe8c02b3",
+    "officialName": "The American School Foundation of Guadalajara",
+    "shortName": "The American School Foundation of Guadalajara"
+  },
+  {
+    "id": "source-school-dd6482761508",
+    "officialName": "Instituto Tecnológico Superior de Jerez",
+    "shortName": "Instituto Tecnológico Superior de Jerez"
+  },
+  {
+    "id": "source-school-de496dacad4e",
+    "officialName": "Instituto Tecnologico de Tuxtla Gutierrez",
+    "shortName": "Instituto Tecnologico de Tuxtla Gutierrez"
+  },
+  {
+    "id": "source-school-dec505bbb795",
+    "officialName": "UdG CUCEI",
+    "shortName": "UdG CUCEI"
+  },
+  {
+    "id": "source-school-df455a712d91",
+    "officialName": "Universidad Michoacana de San Nicolás de Hidalgo",
+    "shortName": "Universidad Michoacana de San Nicolás de Hidalgo"
+  },
+  {
+    "id": "source-school-df58178ae3e5",
+    "officialName": "UASLP",
+    "shortName": "UASLP"
+  },
+  {
+    "id": "source-school-df77f8c4e06f",
+    "officialName": "ITESM CSF",
+    "shortName": "ITESM CSF"
+  },
+  {
+    "id": "source-school-e02dd402e70d",
+    "officialName": "ITSJRC",
+    "shortName": "ITSJRC"
+  },
+  {
+    "id": "source-school-e0819f018bde",
+    "officialName": "Escuela Superior De Computo IPN",
+    "shortName": "Escuela Superior De Computo IPN"
+  },
+  {
+    "id": "source-school-e0bf1360c164",
+    "officialName": "Universidad Iberoamericana Ciudad de Mexico",
+    "shortName": "Universidad Iberoamericana Ciudad de Mexico"
+  },
+  {
+    "id": "source-school-e0c43152252e",
+    "officialName": "Insituto Tecnologico Superior de Poza Rica",
+    "shortName": "Insituto Tecnologico Superior de Poza Rica"
+  },
+  {
+    "id": "source-school-e17f76fff302",
+    "officialName": "Instituto Tecnologico de Mexicali",
+    "shortName": "Instituto Tecnologico de Mexicali"
+  },
+  {
+    "id": "source-school-e1fb333bae37",
+    "officialName": "FC-UNAM",
+    "shortName": "FC-UNAM"
+  },
+  {
+    "id": "source-school-e21d04dd0199",
+    "officialName": "Universidad Tecnologica de Durango",
+    "shortName": "Universidad Tecnologica de Durango"
+  },
+  {
+    "id": "source-school-e27aedd0c5e7",
+    "officialName": "Universidad Michoacana de San Nicolas de Hidalgo",
+    "shortName": "Universidad Michoacana de San Nicolas de Hidalgo"
+  },
+  {
+    "id": "source-school-e31227559e23",
+    "officialName": "Universidad de la Isla de la Juventud",
+    "shortName": "Universidad de la Isla de la Juventud"
+  },
+  {
+    "id": "source-school-e332ec0658a8",
+    "officialName": "Instituto Tecnologico Superior de Fresnillo",
+    "shortName": "Instituto Tecnologico Superior de Fresnillo"
+  },
+  {
+    "id": "source-school-e4524732ebf2",
+    "officialName": "UDLAP",
+    "shortName": "UDLAP"
+  },
+  {
+    "id": "source-school-e70b40dc7fd1",
+    "officialName": "UNITEC",
+    "shortName": "UNITEC"
+  },
+  {
+    "id": "source-school-e79635334dd7",
+    "officialName": "Instituto Tecnológico de Ciudad Juárez",
+    "shortName": "Instituto Tecnológico de Ciudad Juárez"
+  },
+  {
+    "id": "source-school-e8a1f92f2f4e",
+    "officialName": "UAZ",
+    "shortName": "UAZ"
+  },
+  {
+    "id": "source-school-e8c5ec3c04b9",
+    "officialName": "Instituto Tecnológico de Tijuana",
+    "shortName": "Instituto Tecnológico de Tijuana"
+  },
+  {
+    "id": "source-school-e92490c822fa",
+    "officialName": "Universidad Autonoma de Zacatecas Campus Jalpa",
+    "shortName": "Universidad Autonoma de Zacatecas Campus Jalpa"
+  },
+  {
+    "id": "source-school-eac8bea18c92",
+    "officialName": "ITESM GDA",
+    "shortName": "ITESM GDA"
+  },
+  {
+    "id": "source-school-ec22a89bfec7",
+    "officialName": "ITESM Campus San Luis",
+    "shortName": "ITESM Campus San Luis"
+  },
+  {
+    "id": "source-school-ecd179a196c7",
+    "officialName": "Universidad Politécnica de Gomez Palacios",
+    "shortName": "Universidad Politécnica de Gomez Palacios"
+  },
+  {
+    "id": "source-school-ee5be640fc26",
+    "officialName": "Instituto Tecnológico Superior P'urhépecha",
+    "shortName": "Instituto Tecnológico Superior P'urhépecha"
+  },
+  {
+    "id": "source-school-ee6a8f499286",
+    "officialName": "Universidad Autónoma de Guadalajara",
+    "shortName": "Universidad Autónoma de Guadalajara"
+  },
+  {
+    "id": "source-school-ef4797e02280",
+    "officialName": "UNAM ENES Unidad Morelia",
+    "shortName": "UNAM ENES Unidad Morelia"
+  },
+  {
+    "id": "source-school-ef5b207f46fc",
+    "officialName": "Colegio Nacional de Educación Profesional Técnica Moroleon",
+    "shortName": "Colegio Nacional de Educación Profesional Técnica Moroleon"
+  },
+  {
+    "id": "source-school-efa104e08024",
+    "officialName": "Universidad de Costa Rica Campus Pacífico",
+    "shortName": "Universidad de Costa Rica Campus Pacífico"
+  },
+  {
+    "id": "source-school-f00f1f3e2d58",
+    "officialName": "UP Bonaterra",
+    "shortName": "UP Bonaterra"
+  },
+  {
+    "id": "source-school-f05d9b78be9b",
+    "officialName": "Instituto Tecnologico Superior de Tantoyuca",
+    "shortName": "Instituto Tecnologico Superior de Tantoyuca"
+  },
+  {
+    "id": "source-school-f0d014db1ad5",
+    "officialName": "Universidad de Holguín",
+    "shortName": "Universidad de Holguín"
+  },
+  {
+    "id": "source-school-f0f08a679ebb",
+    "officialName": "Instituto Tecnológico de Zacatecas Sur",
+    "shortName": "Instituto Tecnológico de Zacatecas Sur"
+  },
+  {
+    "id": "source-school-f176dfc85d3d",
+    "officialName": "Universidad de las Américas",
+    "shortName": "Universidad de las Américas"
+  },
+  {
+    "id": "source-school-f2de4f1865d3",
+    "officialName": "UDGCUTONALA",
+    "shortName": "UDGCUTONALA"
+  },
+  {
+    "id": "source-school-f39f947df18b",
+    "officialName": "Universidad Autónoma de Baja California",
+    "shortName": "Universidad Autónoma de Baja California"
+  },
+  {
+    "id": "source-school-f473268edfb5",
+    "officialName": "Instituto Tecnológico Superior de Irapuato",
+    "shortName": "Instituto Tecnológico Superior de Irapuato"
+  },
+  {
+    "id": "source-school-f50c23c25b73",
+    "officialName": "Universidad de Guadalajara CUCEA",
+    "shortName": "Universidad de Guadalajara CUCEA"
+  },
+  {
+    "id": "source-school-f512b4d3b560",
+    "officialName": "ESIME Culhuacán",
+    "shortName": "ESIME Culhuacán"
+  },
+  {
+    "id": "source-school-f6a6eb9fe115",
+    "officialName": "Universidad de Gualajara CUALTOS",
+    "shortName": "Universidad de Gualajara CUALTOS"
+  },
+  {
+    "id": "source-school-f7216a0611b9",
+    "officialName": "Universidad Nacional Autónoma de México IIMAS",
+    "shortName": "Universidad Nacional Autónoma de México IIMAS"
+  },
+  {
+    "id": "source-school-f8a66d8f4c32",
+    "officialName": "ITESM Queretaro",
+    "shortName": "ITESM Queretaro"
+  },
+  {
+    "id": "source-school-f96ce82ce333",
+    "officialName": "ITSUR",
+    "shortName": "ITSUR"
+  },
+  {
+    "id": "source-school-f994082eaba8",
+    "officialName": "Centro de Nanociencias y Micro y Nanotecnologías - UNAM",
+    "shortName": "Centro de Nanociencias y Micro y Nanotecnologías - UNAM"
+  },
+  {
+    "id": "source-school-fb0785c61132",
+    "officialName": "Escuela Superior de Física y Matemáticas IPN",
+    "shortName": "Escuela Superior de Física y Matemáticas IPN"
+  },
+  {
+    "id": "source-school-fb880f1b0a52",
+    "officialName": "Instituto Tecnologico Superior de Chapala",
+    "shortName": "Instituto Tecnologico Superior de Chapala"
+  },
+  {
+    "id": "source-school-fbea08bea8c1",
+    "officialName": "Instituto Tecnológico de Ciudad Cuauhtémoc",
+    "shortName": "Instituto Tecnológico de Ciudad Cuauhtémoc"
+  },
+  {
+    "id": "source-school-fc943e5e48c9",
+    "officialName": "Universidad Politécnica de Querétaro",
+    "shortName": "Universidad Politécnica de Querétaro"
+  },
+  {
+    "id": "source-school-fd73f8e00035",
+    "officialName": "Instituto Technologico de Morelia",
+    "shortName": "Instituto Technologico de Morelia"
+  },
+  {
+    "id": "source-school-fde155b3f35c",
+    "officialName": "Instituto Tecnológico Superior de Purísima del Rincón",
+    "shortName": "Instituto Tecnológico Superior de Purísima del Rincón"
+  },
+  {
+    "id": "source-school-fec01e035a41",
+    "officialName": "CETYS U",
+    "shortName": "CETYS U"
+  },
+  {
+    "id": "source-school-fef678b4ce4a",
+    "officialName": "Universidad de Guanajuato, Sede YURIRIA",
+    "shortName": "Universidad de Guanajuato, Sede YURIRIA"
+  },
+  {
+    "id": "tec-aguascalientes",
+    "officialName": "Tecnológico de Monterrey, Campus Aguascalientes",
+    "shortName": "ITESMAgua"
+  },
+  {
+    "id": "tec-ciudad-de-mexico",
+    "officialName": "Tecnológico de Monterrey, Campus Ciudad de México",
+    "shortName": "ITESM Campus Ciudad de Mexico"
+  },
+  {
+    "id": "tec-costa-rica",
+    "officialName": "Instituto Tecnológico de Costa Rica (TEC)",
+    "shortName": "Tecnológico de Costa Rica"
+  },
+  {
+    "id": "tec-costa-rica-alajuela",
+    "officialName": "Instituto Tecnológico de Costa Rica, Campus Alajuela",
+    "shortName": "Instituto Tecnológico de Costa Rica campus Alajuela",
+    "parentInstitutionId": "tec-costa-rica"
+  },
+  {
+    "id": "tec-costa-rica-limon",
+    "officialName": "Instituto Tecnológico de Costa Rica, Campus Limón",
+    "shortName": "Instituto Tecnológico de Costa Rica Campus Limón",
+    "parentInstitutionId": "tec-costa-rica"
+  },
+  {
+    "id": "tec-guadalajara",
+    "officialName": "Tecnológico de Monterrey, Campus Guadalajara",
+    "shortName": "ITESM GDA"
+  },
+  {
+    "id": "tec-monterrey-toluca",
+    "officialName": "Tecnológico de Monterrey, Campus Toluca",
+    "shortName": "ITESM Toluca"
+  },
+  {
+    "id": "tec-mx",
+    "officialName": "Tecnológico de Monterrey (Instituto Tecnológico y de Estudios Superiores de Monterrey)",
+    "shortName": "ITESM Queretaro"
+  },
+  {
+    "id": "tec-puebla",
+    "officialName": "Tecnológico de Monterrey, Campus Puebla",
+    "shortName": "ITESM-Puebla"
+  },
+  {
+    "id": "tec-queretaro",
+    "officialName": "Tecnológico de Monterrey, Campus Querétaro",
+    "shortName": "ITESM Campus Queretaro"
+  },
+  {
+    "id": "tec-santa-fe",
+    "officialName": "Tecnológico de Monterrey, Campus Santa Fe",
+    "shortName": "ITESM Campus Santa Fe"
+  },
+  {
+    "id": "tec-tepexi-de-rodriguez",
+    "officialName": "Tecnológico de Tepexi de Rodríguez",
+    "shortName": "TEC TEPEXI"
+  },
+  {
+    "id": "tecmilenio",
+    "officialName": "Universidad Tecmilenio",
+    "shortName": "TECMILENIO"
+  },
+  {
+    "id": "tecmilenio-las-torres",
+    "officialName": "Universidad Tecmilenio - Campus Las Torres",
+    "shortName": "TEC Milenio - Las Torres",
+    "parentInstitutionId": "tecmilenio"
+  },
+  {
+    "id": "tecnm-cancun",
+    "officialName": "Instituto Tecnológico de Cancún (TecNM Campus Cancún)",
+    "shortName": "ITCancún"
+  },
+  {
+    "id": "tecnm-culiacan",
+    "officialName": "Instituto Tecnológico de Culiacán",
+    "shortName": "IT Culiacan"
+  },
+  {
+    "id": "tecnm-its-lerdo",
+    "officialName": "Instituto Tecnológico Superior de Lerdo",
+    "shortName": "ITS Lerdo"
+  },
+  {
+    "id": "tecnm-lazaro-cardenas",
+    "officialName": "Tecnológico Nacional de México, Campus Lázaro Cárdenas (ITLAC)",
+    "shortName": "ITLAC"
+  },
+  {
+    "id": "tecnm-leon",
+    "officialName": "Instituto Tecnológico de León (TecNM Campus León)",
+    "shortName": "ITL"
+  },
+  {
+    "id": "tecnm-parral",
+    "officialName": "Instituto Tecnológico de Parral (TecNM Campus Parral)",
+    "shortName": "Tec Parral"
+  },
+  {
+    "id": "tecnm-purisima-del-rincon",
+    "officialName": "Instituto Tecnológico Superior de Purísima del Rincón (ITSPR / TecNM Campus Purísima del Rincón)",
+    "shortName": "ITSPR"
+  },
+  {
+    "id": "tecnm-salvatierra",
+    "officialName": "Instituto Tecnológico Superior de Salvatierra",
+    "shortName": "Instituto Tecnológico Superior de Salvatierra"
+  },
+  {
+    "id": "tecnm-san-andres-tuxtla",
+    "officialName": "Instituto Tecnológico Superior de San Andrés Tuxtla (TecNM Campus San Andrés Tuxtla)",
+    "shortName": "ITSSAT"
+  },
+  {
+    "id": "tecnm-zacapoaxtla",
+    "officialName": "Instituto Tecnológico Superior de Zacapoaxtla (TecNM Campus Zacapoaxtla)",
+    "shortName": "INSTITUTO TECNOLÓGICO SUPERIOR DE ZACAPOAXTLA"
+  },
+  {
+    "id": "tesjo",
+    "officialName": "Tecnológico de Estudios Superiores de Jocotitlán",
+    "shortName": "Tesjo"
+  },
+  {
+    "id": "uaa-aguascalientes",
+    "officialName": "Universidad Autónoma de Aguascalientes",
+    "shortName": "UAA"
+  },
+  {
+    "id": "uabc",
+    "officialName": "Universidad Autónoma de Baja California (UABC)",
+    "shortName": "Universidad Autónoma de Baja California"
+  },
+  {
+    "id": "uach-chihuahua",
+    "officialName": "Universidad Autónoma de Chihuahua",
+    "shortName": "UACH"
+  },
+  {
+    "id": "uacj",
+    "officialName": "Universidad Autónoma de Ciudad Juárez",
+    "shortName": "UACJ"
+  },
+  {
+    "id": "uade",
+    "officialName": "Universidad Argentina de la Empresa",
+    "shortName": "UADE"
+  },
+  {
+    "id": "uady",
+    "officialName": "Universidad Autónoma de Yucatán",
+    "shortName": "Universidad Autónoma de Yucatán"
+  },
+  {
+    "id": "uady-fmat",
+    "officialName": "Facultad de Matemáticas, Universidad Autónoma de Yucatán",
+    "shortName": "FMAT",
+    "parentInstitutionId": "uady"
+  },
+  {
+    "id": "uady-tizimin",
+    "officialName": "Universidad Autónoma de Yucatán - Campus Tizimín",
+    "shortName": "UADY_TIZIMIN",
+    "parentInstitutionId": "uady"
+  },
+  {
+    "id": "uaeh",
+    "officialName": "Universidad Autónoma del Estado de Hidalgo",
+    "shortName": "Universidad Autónoma del Estado de Hidalgo"
+  },
+  {
+    "id": "uagrm",
+    "officialName": "Universidad Autónoma Gabriel René Moreno (UAGRM)",
+    "shortName": "UAGRM"
+  },
+  {
+    "id": "uajms",
+    "officialName": "Universidad Autónoma Juan Misael Saracho",
+    "shortName": "UAJMS"
+  },
+  {
+    "id": "uajms-bermejo",
+    "officialName": "Universidad Autónoma Juan Misael Saracho, Facultad Bermejo",
+    "shortName": "UAJMS BERMEJO",
+    "parentInstitutionId": "uajms"
+  },
+  {
+    "id": "uam-azcapotzalco",
+    "officialName": "Universidad Autónoma Metropolitana, Unidad Azcapotzalco",
+    "shortName": "UAM A"
+  },
+  {
+    "id": "uam-iztapalapa",
+    "officialName": "Universidad Autónoma Metropolitana - Unidad Iztapalapa",
+    "shortName": "UAM Iztapalapa"
+  },
+  {
+    "id": "uandes",
+    "officialName": "Universidad de los Andes (Chile)",
+    "shortName": "UANDES"
+  },
+  {
+    "id": "uanl",
+    "officialName": "Universidad Autónoma de Nuevo León",
+    "shortName": "UANL"
+  },
+  {
+    "id": "uao-colombia",
+    "officialName": "Universidad Autónoma de Occidente",
+    "shortName": "UAO"
+  },
+  {
+    "id": "uapa",
+    "officialName": "Universidad Abierta para Adultos (UAPA)",
+    "shortName": "UAPA"
+  },
+  {
+    "id": "uas-fimaz",
+    "officialName": "Facultad de Informática Mazatlán, Universidad Autónoma de Sinaloa (UAS)",
+    "shortName": "FIMAZ",
+    "parentInstitutionId": "uas-mx"
+  },
+  {
+    "id": "uas-mx",
+    "officialName": "Universidad Autónoma de Sinaloa (UAS)",
+    "shortName": "UAS"
+  },
+  {
+    "id": "uaslp",
+    "officialName": "Universidad Autónoma de San Luis Potosí (UASLP)",
+    "shortName": "UASLP"
+  },
+  {
+    "id": "uat",
+    "officialName": "Universidad Autónoma de Tamaulipas",
+    "shortName": "UAT"
+  },
+  {
+    "id": "uatf",
+    "officialName": "Universidad Autónoma Tomás Frías",
+    "shortName": "UATF"
+  },
+  {
+    "id": "uatf-informatica",
+    "officialName": "Universidad Autónoma Tomás Frías - Informática",
+    "shortName": "UATF-Inf",
+    "parentInstitutionId": "uatf"
+  },
+  {
+    "id": "uaz",
+    "officialName": "Universidad Autónoma de Zacatecas (UAZ)",
+    "shortName": "UAZ"
+  },
+  {
+    "id": "uba",
+    "officialName": "Universidad de Buenos Aires",
+    "shortName": "UBA"
+  },
+  {
+    "id": "uba-fcen",
+    "officialName": "Facultad de Ciencias Exactas y Naturales",
+    "shortName": "UBA - FCEN"
+  },
+  {
+    "id": "uca-el-salvador",
+    "officialName": "Universidad Centroamericana José Simeón Cañas",
+    "shortName": "UCA"
+  },
+  {
+    "id": "ucab-venezuela",
+    "officialName": "Universidad Católica Andrés Bello",
+    "shortName": "UCAB"
+  },
+  {
+    "id": "ucatec",
+    "officialName": "Universidad Católica Boliviana 'UCATEC' / Universidad Católica Técnica (UCATEC)",
+    "shortName": "Ucatec"
+  },
+  {
+    "id": "ucb-cochabamba",
+    "officialName": "Universidad Católica Boliviana \"San Pablo\", Sede Cochabamba",
+    "shortName": "UCB-Cochabamba"
+  },
+  {
+    "id": "ucb-santa-cruz",
+    "officialName": "Universidad Católica Boliviana \"San Pablo\", Sede Santa Cruz",
+    "shortName": "UCB-Santa Cruz"
+  },
+  {
+    "id": "ucb-tarija",
+    "officialName": "Universidad Católica Boliviana \"San Pablo\", Sede Tarija",
+    "shortName": "UCB-Tarija"
+  },
+  {
+    "id": "ucenfotec",
+    "officialName": "Universidad Cenfotec",
+    "shortName": "Universidad Cenfotec"
+  },
+  {
+    "id": "ucenfotec-cr",
+    "officialName": "Universidad Cenfotec (Ucenfotec)",
+    "shortName": "UCenfo"
+  },
+  {
+    "id": "ucentral-cl",
+    "officialName": "Universidad Central de Chile",
+    "shortName": "UCEN"
+  },
+  {
+    "id": "uceva",
+    "officialName": "Unidad Central del Valle del Cauca",
+    "shortName": "UCEVA"
+  },
+  {
+    "id": "uchile",
+    "officialName": "Universidad de Chile",
+    "shortName": "UChile"
+  },
+  {
+    "id": "uci-cuba",
+    "officialName": "Universidad de las Ciencias Informáticas (UCI)",
+    "shortName": "UCI"
+  },
+  {
+    "id": "uclv",
+    "officialName": "Universidad Central \"Marta Abreu\" de Las Villas",
+    "shortName": "UCLV"
+  },
+  {
+    "id": "ucne",
+    "officialName": "Universidad Católica Nordestana",
+    "shortName": "UCNE"
+  },
+  {
+    "id": "ucol",
+    "officialName": "Universidad de Colima",
+    "shortName": "Ucol"
+  },
+  {
+    "id": "ucr",
+    "officialName": "Universidad de Costa Rica",
+    "shortName": "cr,CR] int hongos[903"
+  },
+  {
+    "id": "ucr-costa-rica",
+    "officialName": "Universidad de Costa Rica",
+    "shortName": "UCR"
+  },
+  {
+    "id": "ucsal",
+    "officialName": "Universidade Católica do Salvador",
+    "shortName": "UCSAL"
+  },
+  {
+    "id": "ucsc-cl",
+    "officialName": "Universidad Católica de la Santísima Concepción (UCSC)",
+    "shortName": "UCSC"
+  },
+  {
+    "id": "ucsp-pe",
+    "officialName": "Universidad Católica San Pablo",
+    "shortName": "UCSP"
+  },
+  {
+    "id": "ucu-uy",
+    "officialName": "Universidad Católica del Uruguay",
+    "shortName": "UCU"
+  },
+  {
+    "id": "udabol",
+    "officialName": "Universidad De Aquino Bolivia",
+    "shortName": "UDABOL"
+  },
+  {
+    "id": "udabol-la-paz",
+    "officialName": "Universidad De Aquino Bolivia - Campus La Paz",
+    "shortName": "UDABOL-La Paz",
+    "parentInstitutionId": "udabol"
+  },
+  {
+    "id": "udb-sv",
+    "officialName": "Universidad Don Bosco",
+    "shortName": "UDB"
+  },
+  {
+    "id": "udec-facatativa",
+    "officialName": "Universidad de Cundinamarca - Extensión Facatativá",
+    "shortName": "UDEC Facatativá"
+  },
+  {
+    "id": "udelar-inco",
+    "officialName": "Instituto de Computación, Facultad de Ingeniería, Universidad de la República",
+    "shortName": "In.Co."
+  },
+  {
+    "id": "udem-monterrey",
+    "officialName": "Universidad de Monterrey",
+    "shortName": "UDEM"
+  },
+  {
+    "id": "udesa",
+    "officialName": "Universidad de San Andrés",
+    "shortName": "UDESA"
+  },
+  {
+    "id": "udesc",
+    "officialName": "Universidade do Estado de Santa Catarina",
+    "shortName": "UDESC"
+  },
+  {
+    "id": "udg",
+    "officialName": "Universidad de Guadalajara",
+    "shortName": "U de G"
+  },
+  {
+    "id": "udg-cucei",
+    "officialName": "Centro Universitario de Ciencias Exactas e Ingenierías",
+    "shortName": "UdG CUCEI",
+    "parentInstitutionId": "udg"
+  },
+  {
+    "id": "udg-cucosta",
+    "officialName": "Centro Universitario de la Costa",
+    "shortName": "UdG CUCOSTA",
+    "parentInstitutionId": "udg"
+  },
+  {
+    "id": "udg-cusur",
+    "officialName": "Universidad de Guadalajara - Centro Universitario del Sur",
+    "shortName": "UdG CUSUR",
+    "parentInstitutionId": "udg"
+  },
+  {
+    "id": "udg-cutonala",
+    "officialName": "Centro Universitario de Tonalá",
+    "shortName": "Universidad de Guadalajara CUTONALA",
+    "parentInstitutionId": "udg"
+  },
+  {
+    "id": "udg-cuvalles",
+    "officialName": "Universidad de Guadalajara, Centro Universitario de los Valles (CUVALLES)",
+    "shortName": "UdG CUVALLES",
+    "parentInstitutionId": "udg"
+  },
+  {
+    "id": "udistrital",
+    "officialName": "Universidad Distrital Francisco José de Caldas",
+    "shortName": "UDist"
+  },
+  {
+    "id": "udlap",
+    "officialName": "Universidad de las Américas Puebla (UDLAP)",
+    "shortName": "Universidad de las Americas-Puebla"
+  },
+  {
+    "id": "udp",
+    "officialName": "Universidad Diego Portales (UDP)",
+    "shortName": "UDP"
+  },
+  {
+    "id": "uea-amazonas",
+    "officialName": "Universidade do Estado do Amazonas (UEA)",
+    "shortName": "UEA"
+  },
+  {
+    "id": "uece",
+    "officialName": "Universidade Estadual do Ceará (UECE)",
+    "shortName": "UECE"
+  },
+  {
+    "id": "uefs",
+    "officialName": "Universidade Estadual de Feira de Santana",
+    "shortName": "UEFS"
+  },
+  {
+    "id": "uel",
+    "officialName": "Universidade Estadual de Londrina",
+    "shortName": "UEL"
+  },
+  {
+    "id": "uem-maringa",
+    "officialName": "Universidade Estadual de Maringá (UEM)",
+    "shortName": "UEM"
+  },
+  {
+    "id": "uems",
+    "officialName": "Universidade Estadual de Mato Grosso do Sul",
+    "shortName": "UEMS"
+  },
+  {
+    "id": "uepa",
+    "officialName": "Universidade do Estado do Pará",
+    "shortName": "UEPA"
+  },
+  {
+    "id": "uepa-parauapebas",
+    "officialName": "Universidade do Estado do Pará - Campus Parauapebas",
+    "shortName": "UEPA - Parauapebas",
+    "parentInstitutionId": "uepa"
+  },
+  {
+    "id": "uepb",
+    "officialName": "Universidade Estadual da Paraíba",
+    "shortName": "UEPB"
+  },
+  {
+    "id": "uerj",
+    "officialName": "Universidade do Estado do Rio de Janeiro",
+    "shortName": "UERJ"
+  },
+  {
+    "id": "ues",
+    "officialName": "Universidad de El Salvador",
+    "shortName": "Universidad de El Salvador"
+  },
+  {
+    "id": "uesb",
+    "officialName": "Universidade Estadual do Sudoeste da Bahia",
+    "shortName": "UESB"
+  },
+  {
+    "id": "uesc",
+    "officialName": "Universidade Estadual de Santa Cruz (UESC)",
+    "shortName": "UESC"
+  },
+  {
+    "id": "uespi",
+    "officialName": "Universidade Estadual do Piauí",
+    "shortName": "UESPI"
+  },
+  {
+    "id": "uespi-piripiri",
+    "officialName": "Universidade Estadual do Piauí - Campus Piripiri",
+    "shortName": "UESPI/Piripiri",
+    "parentInstitutionId": "uespi"
+  },
+  {
+    "id": "ufabc",
+    "officialName": "Universidade Federal do ABC",
+    "shortName": "UFABC"
+  },
+  {
+    "id": "ufac",
+    "officialName": "Universidade Federal do Acre",
+    "shortName": "UFAC"
+  },
+  {
+    "id": "ufal",
+    "officialName": "Universidade Federal de Alagoas",
+    "shortName": "UFAL"
+  },
+  {
+    "id": "ufal-arapiraca",
+    "officialName": "Universidade Federal de Alagoas - Campus Arapiraca",
+    "shortName": "UFAL Arapiraca",
+    "parentInstitutionId": "ufal"
+  },
+  {
+    "id": "ufam-br",
+    "officialName": "Universidade Federal do Amazonas",
+    "shortName": "UFAM"
+  },
+  {
+    "id": "ufam-icomp",
+    "officialName": "Instituto de Computação, Universidade Federal do Amazonas",
+    "shortName": "IComp/UFAM",
+    "parentInstitutionId": "ufam-br"
+  },
+  {
+    "id": "ufba",
+    "officialName": "Universidade Federal da Bahia",
+    "shortName": "UFBA"
+  },
+  {
+    "id": "ufc",
+    "officialName": "Universidade Federal do Ceará (UFC)",
+    "shortName": "UFC"
+  },
+  {
+    "id": "ufc-quixada",
+    "officialName": "Universidade Federal do Ceará - Campus Quixadá",
+    "shortName": "UFC/Quixadá",
+    "parentInstitutionId": "ufc"
+  },
+  {
+    "id": "ufca",
+    "officialName": "Universidade Federal do Cariri",
+    "shortName": "UFCA"
+  },
+  {
+    "id": "ufcg",
+    "officialName": "Universidade Federal de Campina Grande",
+    "shortName": "UFCG"
+  },
+  {
+    "id": "ufersa",
+    "officialName": "Universidade Federal Rural do Semi-Árido",
+    "shortName": "UFERSA"
+  },
+  {
+    "id": "ufes",
+    "officialName": "Universidade Federal do Espírito Santo",
+    "shortName": "UFES"
+  },
+  {
+    "id": "ufes-ceunes",
+    "officialName": "Centro Universitário Norte do Espírito Santo",
+    "shortName": "Ceunes UFES",
+    "parentInstitutionId": "ufes"
+  },
+  {
+    "id": "uff",
+    "officialName": "UFF Rio das Ostras",
+    "shortName": "0] = \"danilions\" [UFF/Rio das Ostras"
+  },
+  {
+    "id": "uff-rio-das-ostras",
+    "officialName": "Universidade Federal Fluminense - Campus Rio das Ostras",
+    "shortName": "UFF/Rio das Ostras",
+    "parentInstitutionId": "uff"
+  },
+  {
+    "id": "uffs",
+    "officialName": "Universidade Federal da Fronteira Sul",
+    "shortName": "UFFS"
+  },
+  {
+    "id": "ufg",
+    "officialName": "Universidade Federal de Goiás",
+    "shortName": "UFG"
+  },
+  {
+    "id": "ufg-sv",
+    "officialName": "Universidad Francisco Gavidia",
+    "shortName": "Universidad Francisco Gavidia"
+  },
+  {
+    "id": "ufidelitas",
+    "officialName": "Universidad Fidélitas",
+    "shortName": "UFide"
+  },
+  {
+    "id": "ufmg",
+    "officialName": "Universidade Federal de Minas Gerais",
+    "shortName": "UFMG"
+  },
+  {
+    "id": "ufms-cppp",
+    "officialName": "Universidade Federal de Mato Grosso do Sul - Campus de Ponta Porã (CPPP)",
+    "shortName": "CPPP - UFMS"
+  },
+  {
+    "id": "ufms-facom",
+    "officialName": "Faculdade de Computação, Universidade Federal de Mato Grosso do Sul",
+    "shortName": "UFMS/FACOM"
+  },
+  {
+    "id": "ufmt",
+    "officialName": "Universidade Federal de Mato Grosso",
+    "shortName": "UFMT/Cuiabá"
+  },
+  {
+    "id": "ufmt-cuiaba",
+    "officialName": "Universidade Federal de Mato Grosso - Câmpus Cuiabá",
+    "shortName": "UFMT - Cuiabá",
+    "parentInstitutionId": "ufmt"
+  },
+  {
+    "id": "ufopa",
+    "officialName": "Universidade Federal do Oeste do Pará (UFOPA)",
+    "shortName": "UFOPA"
+  },
+  {
+    "id": "ufopa-oriximina",
+    "officialName": "Universidade Federal do Oeste do Pará - Campus Oriximiná",
+    "shortName": "UFOPA/Oriximina",
+    "parentInstitutionId": "ufopa"
+  },
+  {
+    "id": "ufpa",
+    "officialName": "Universidade Federal do Pará (UFPA)",
+    "shortName": "UFPA"
+  },
+  {
+    "id": "ufpb",
+    "officialName": "Universidade Federal da Paraíba",
+    "shortName": "UFPB"
+  },
+  {
+    "id": "ufpe",
+    "officialName": "Universidade Federal de Pernambuco",
+    "shortName": "UFPE"
+  },
+  {
+    "id": "ufpi",
+    "officialName": "Universidade Federal do Piauí",
+    "shortName": "UFPI"
+  },
+  {
+    "id": "ufpi-picos",
+    "officialName": "Universidade Federal do Piauí - Campus Picos",
+    "shortName": "UFPI/Picos",
+    "parentInstitutionId": "ufpi"
+  },
+  {
+    "id": "ufpr",
+    "officialName": "Universidade Federal do Paraná",
+    "shortName": "UFPR"
+  },
+  {
+    "id": "ufps-cucuta",
+    "officialName": "Universidad Francisco de Paula Santander - Cúcuta",
+    "shortName": "UFPS - Cucuta"
+  },
+  {
+    "id": "ufpso",
+    "officialName": "Universidad Francisco de Paula Santander Ocaña",
+    "shortName": "UFPSO"
+  },
+  {
+    "id": "ufrgs",
+    "officialName": "Universidade Federal do Rio Grande do Sul",
+    "shortName": "UFRGS"
+  },
+  {
+    "id": "ufrj",
+    "officialName": "Universidade Federal do Rio de Janeiro (UFRJ)",
+    "shortName": "UFRJ"
+  },
+  {
+    "id": "ufrn",
+    "officialName": "Universidade Federal do Rio Grande do Norte",
+    "shortName": "UFRN"
+  },
+  {
+    "id": "ufrrj",
+    "officialName": "Universidade Federal Rural do Rio de Janeiro",
+    "shortName": "UFRRJ"
+  },
+  {
+    "id": "ufs",
+    "officialName": "Universidade Federal de Sergipe",
+    "shortName": "U Federal de Sergipe"
+  },
+  {
+    "id": "ufs-br",
+    "officialName": "Universidade Federal de Sergipe",
+    "shortName": "UFS"
+  },
+  {
+    "id": "ufsc",
+    "officialName": "Universidade Federal de Santa Catarina (UFSC)",
+    "shortName": "UFSC"
+  },
+  {
+    "id": "ufsc-joinville",
+    "officialName": "Universidade Federal de Santa Catarina - Campus Joinville",
+    "shortName": "UFSC - Joinville",
+    "parentInstitutionId": "ufsc"
+  },
+  {
+    "id": "ufscar",
+    "officialName": "Universidade Federal de São Carlos",
+    "shortName": "UFSCar"
+  },
+  {
+    "id": "ufscar-sorocaba",
+    "officialName": "Universidade Federal de São Carlos - Campus Sorocaba",
+    "shortName": "UFSCar/Sorocaba",
+    "parentInstitutionId": "ufscar"
+  },
+  {
+    "id": "ufsj",
+    "officialName": "Universidade Federal de São João del-Rei",
+    "shortName": "UFSJ"
+  },
+  {
+    "id": "ufsm-br",
+    "officialName": "Universidade Federal de Santa Maria",
+    "shortName": "UFSM"
+  },
+  {
+    "id": "uft",
+    "officialName": "Universidade Federal do Tocantins",
+    "shortName": "UFT"
+  },
+  {
+    "id": "uftm",
+    "officialName": "Universidade Federal do Triângulo Mineiro",
+    "shortName": "UFTM"
+  },
+  {
+    "id": "ufu",
+    "officialName": "Universidade Federal de Uberlândia",
+    "shortName": "UFU"
+  },
+  {
+    "id": "ufu-monte-carmelo",
+    "officialName": "Universidade Federal de Uberlândia - Campus Monte Carmelo",
+    "shortName": "UFU/Monte Carmelo",
+    "parentInstitutionId": "ufu"
+  },
+  {
+    "id": "ufv",
+    "officialName": "Universidade Federal de Viçosa",
+    "shortName": "UFV"
+  },
+  {
+    "id": "ufv-dpi",
+    "officialName": "Departamento de Informática, Universidade Federal de Viçosa",
+    "shortName": "DPI-UFV",
+    "parentInstitutionId": "ufv"
+  },
+  {
+    "id": "ufv-florestal",
+    "officialName": "Universidade Federal de Viçosa - Campus Florestal",
+    "shortName": "UFV/Florestal",
+    "parentInstitutionId": "ufv"
+  },
+  {
+    "id": "ufv-rio-paranaiba",
+    "officialName": "Universidade Federal de Viçosa - Campus Rio Paranaíba",
+    "shortName": "UFV/Rio Paranaiba",
+    "parentInstitutionId": "ufv"
+  },
+  {
+    "id": "ug-cimat",
+    "officialName": "Universidad de Guanajuato / Centro de Investigación en Matemáticas",
+    "shortName": "UG-CIMAT"
+  },
+  {
+    "id": "ugto",
+    "officialName": "Universidad de Guanajuato",
+    "shortName": "U de Guanajuato"
+  },
+  {
+    "id": "uh",
+    "officialName": "Universidad de La Habana",
+    "shortName": "UH"
+  },
+  {
+    "id": "uho",
+    "officialName": "Universidad de Holguín (UHo)",
+    "shortName": "UHO"
+  },
+  {
+    "id": "ujed-fica",
+    "officialName": "Facultad de Ingeniería, Ciencias y Arquitectura, Universidad Juárez del Estado de Durango",
+    "shortName": "Facultad de Ingeniería, Ciencias y Arquitectura, Universidad Juarez del Estado de Durango"
+  },
+  {
+    "id": "ulima",
+    "officialName": "Universidad de Lima",
+    "shortName": "ULIMA"
+  },
+  {
+    "id": "umg-gt",
+    "officialName": "Universidad Mariano Gálvez de Guatemala",
+    "shortName": "UMG"
+  },
+  {
+    "id": "umsa",
+    "officialName": "Universidad Mayor de San Andrés",
+    "shortName": "UMSA"
+  },
+  {
+    "id": "umss",
+    "officialName": "Universidad Mayor de San Simón",
+    "shortName": "UMSS"
+  },
+  {
+    "id": "una-cr",
+    "officialName": "Universidad Nacional de Costa Rica (UNA)",
+    "shortName": "Universidad Nacional de Costa Rica"
+  },
+  {
+    "id": "unadmexico",
+    "officialName": "Universidad Abierta y a Distancia de México (UnADM)",
+    "shortName": "UnADM"
+  },
+  {
+    "id": "unal-bogota",
+    "officialName": "Universidad Nacional de Colombia, Sede Bogotá",
+    "shortName": "UNAL Bogotá"
+  },
+  {
+    "id": "unal-medellin",
+    "officialName": "Universidad Nacional de Colombia, Sede Medellín",
+    "shortName": "UN-Med"
+  },
+  {
+    "id": "unam",
+    "officialName": "Universidad Nacional Autónoma de México",
+    "shortName": "Universidad Nacional Autónoma de México"
+  },
+  {
+    "id": "unam-enes-morelia",
+    "officialName": "Escuela Nacional de Estudios Superiores (ENES), Unidad Morelia",
+    "shortName": "UNAM ENES Morelia",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "unam-fciencias",
+    "officialName": "Facultad de Ciencias",
+    "shortName": "FC-UNAM",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "unam-fes-acatlan",
+    "officialName": "Facultad de Estudios Superiores Acatlán",
+    "shortName": "FES Acatlan UNAM",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "unam-fes-cuautitlan",
+    "officialName": "Facultad de Estudios Superiores Cuautitlán",
+    "shortName": "Facultad de Estudios Superiores Cuautitlán - UNAM",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "unam-fi",
+    "officialName": "Facultad de Ingeniería, Universidad Nacional Autónoma de México",
+    "shortName": "Facultad de Ingenieria"
+  },
+  {
+    "id": "unam-iimas",
+    "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas",
+    "shortName": "IIMAS",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "unam-ingenieria",
+    "officialName": "Facultad de Ingeniería",
+    "shortName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "unb",
+    "officialName": "Universidade de Brasília",
+    "shortName": "UnB"
+  },
+  {
+    "id": "unb-fga",
+    "officialName": "Universidade de Brasília, Faculdade do Gama (FGA)",
+    "shortName": "UnB/FGA",
+    "parentInstitutionId": "unb"
+  },
+  {
+    "id": "unbosque",
+    "officialName": "Universidad El Bosque",
+    "shortName": "UBosq"
+  },
+  {
+    "id": "unc-famaf",
+    "officialName": "Facultad de Matemática, Astronomía, Física y Computación",
+    "shortName": "FAMAF - UNC"
+  },
+  {
+    "id": "unesp-bauru",
+    "officialName": "Universidade Estadual Paulista - Câmpus de Bauru",
+    "shortName": "UNESP/Bauru"
+  },
+  {
+    "id": "unesp-rio-claro",
+    "officialName": "Universidade Estadual Paulista - Câmpus de Rio Claro",
+    "shortName": "UNESP-RC"
+  },
+  {
+    "id": "uni-fc-pe",
+    "officialName": "Facultad de Ciencias, Universidad Nacional de Ingeniería",
+    "shortName": "UNI-FC"
+  },
+  {
+    "id": "uni-fiis-pe",
+    "officialName": "Facultad de Ingeniería Industrial y de Sistemas, Universidad Nacional de Ingeniería",
+    "shortName": "UNI-FIIS"
+  },
+  {
+    "id": "uniamazonia-co",
+    "officialName": "Universidad de la Amazonia",
+    "shortName": "Uniamazonia"
+  },
+  {
+    "id": "unibalsas",
+    "officialName": "Faculdade União de Balsas (UNIBALSAS)",
+    "shortName": "UNIBALSAS"
+  },
+  {
+    "id": "unibe-do",
+    "officialName": "Universidad Iberoamericana (UNIBE)",
+    "shortName": "UNIBE"
+  },
+  {
+    "id": "unicaes-sv",
+    "officialName": "Universidad Católica de El Salvador (UNICAES)",
+    "shortName": "Universidad Católica de El Salvador"
+  },
+  {
+    "id": "unicamp",
+    "officialName": "Universidade Estadual de Campinas",
+    "shortName": "UNICAMP"
+  },
+  {
+    "id": "unicap",
+    "officialName": "Universidade Católica de Pernambuco",
+    "shortName": "UNICAP"
+  },
+  {
+    "id": "unicentro-pr",
+    "officialName": "Universidade Estadual do Centro-Oeste",
+    "shortName": "UNICENTRO"
+  },
+  {
+    "id": "uniceub",
+    "officialName": "Centro Universitário de Brasília (UniCEUB / CEUB)",
+    "shortName": "UniCEUB"
+  },
+  {
+    "id": "unid-guadalajara",
+    "officialName": "Universidad Interamericana para el Desarrollo (UNID) - Campus Guadalajara",
+    "shortName": ":]- [Universidad Interamericana para el Desarrollo Campus Guadalajara"
+  },
+  {
+    "id": "uniesp",
+    "officialName": "Centro Universitário UNIESP",
+    "shortName": "UNIESP"
+  },
+  {
+    "id": "unifacef",
+    "officialName": "Centro Universitário Municipal de Franca (Unifacef)",
+    "shortName": "Uni-FACEF"
+  },
+  {
+    "id": "unifacens-br",
+    "officialName": "Centro Universitário Facens (UniFacens)",
+    "shortName": "FACENS"
+  },
+  {
+    "id": "unifacs",
+    "officialName": "Universidade Salvador (UNIFACS)",
+    "shortName": "UNIFACS"
+  },
+  {
+    "id": "unifei",
+    "officialName": "Universidade Federal de Itajubá",
+    "shortName": "UNIFEI/Itajubá"
+  },
+  {
+    "id": "unifei-itabira",
+    "officialName": "Universidade Federal de Itajubá - Campus Itabira",
+    "shortName": "UNIFEI/Itabira",
+    "parentInstitutionId": "unifei"
+  },
+  {
+    "id": "unifeso",
+    "officialName": "Centro Universitário Serra dos Órgãos (UNIFESO)",
+    "shortName": "UNIFESO"
+  },
+  {
+    "id": "unifesp",
+    "officialName": "Universidade Federal de São Paulo",
+    "shortName": "UNIFESP"
+  },
+  {
+    "id": "unifesspa",
+    "officialName": "Universidade Federal do Sul e Sudeste do Pará",
+    "shortName": "UNIFESSPA"
+  },
+  {
+    "id": "unifipmoc",
+    "officialName": "Centro Universitário FIPMoc",
+    "shortName": "UNIFIPMOC"
+  },
+  {
+    "id": "unifranz",
+    "officialName": "Universidad Franz Tamayo (UNIFRANZ)",
+    "shortName": "UNIFRANZ"
+  },
+  {
+    "id": "unime",
+    "officialName": "Centro Universitário UNIME",
+    "shortName": "UNIME"
+  },
+  {
+    "id": "unimet-venezuela",
+    "officialName": "Universidad Metropolitana",
+    "shortName": "UNIMET"
+  },
+  {
+    "id": "unimontes",
+    "officialName": "Universidade Estadual de Montes Claros",
+    "shortName": "UNIMONTES"
+  },
+  {
+    "id": "uninove",
+    "officialName": "Universidade Nove de Julho (Uninove)",
+    "shortName": "UNINOVE"
+  },
+  {
+    "id": "unioeste",
+    "officialName": "Universidade Estadual do Oeste do Paraná",
+    "shortName": "UNIOESTE"
+  },
+  {
+    "id": "unipe-jp",
+    "officialName": "Centro Universitário de João Pessoa (UNIPÊ)",
+    "shortName": "UNIPÊ"
+  },
+  {
+    "id": "unis-gt",
+    "officialName": "Universidad del Istmo",
+    "shortName": "Universidad del Istmo de Guatemala"
+  },
+  {
+    "id": "unisalesiano",
+    "officialName": "Centro Universitário Católico Salesiano Auxilium (Unisalesiano)",
+    "shortName": "Unisalesiano"
+  },
+  {
+    "id": "unisantos",
+    "officialName": "Universidade Católica de Santos",
+    "shortName": "UniSantos"
+  },
+  {
+    "id": "unisinos",
+    "officialName": "Universidade do Vale do Rio dos Sinos (UNISINOS)",
+    "shortName": "UNISINOS"
+  },
+  {
+    "id": "unisociesc",
+    "officialName": "Centro Universitário UNISOCIESC",
+    "shortName": "UNISOCIESC"
+  },
+  {
+    "id": "unison",
+    "officialName": "Universidad de Sonora",
+    "shortName": "UNISON"
+  },
+  {
+    "id": "unitau",
+    "officialName": "Universidade de Taubaté",
+    "shortName": "UNITAU"
+  },
+  {
+    "id": "unitepc",
+    "officialName": "Universidad Técnica Privada Cosmos (UNITEPC)",
+    "shortName": "UNITEPC"
+  },
+  {
+    "id": "uniube-uberaba",
+    "officialName": "Universidade de Uberaba (Uniube), Uberaba campuses",
+    "shortName": "UNIUBE/Uberaba"
+  },
+  {
+    "id": "univalle-co",
+    "officialName": "Universidad del Valle",
+    "shortName": "UniValle"
+  },
+  {
+    "id": "univalle-santa-cruz",
+    "officialName": "Universidad Privada del Valle - Campus Santa Cruz",
+    "shortName": "Univalle Scz"
+  },
+  {
+    "id": "univap",
+    "officialName": "Universidade do Vale do Paraíba (Univap)",
+    "shortName": "UNIVAP"
+  },
+  {
+    "id": "univas",
+    "officialName": "Universidade do Vale do Sapucaí (Univás)",
+    "shortName": "UNIVAS"
+  },
+  {
+    "id": "univasf",
+    "officialName": "Universidade Federal do Vale do São Francisco",
+    "shortName": "UNIVASF"
+  },
+  {
+    "id": "universidad-galileo",
+    "officialName": "Universidad Galileo",
+    "shortName": "Universidad Galileo"
+  },
+  {
+    "id": "univille",
+    "officialName": "Universidade da Região de Joinville (Univille)",
+    "shortName": "UNIVILLE"
+  },
+  {
+    "id": "unjbg",
+    "officialName": "Universidad Nacional Jorge Basadre Grohmann",
+    "shortName": "UNJBG"
+  },
+  {
+    "id": "unjfsc",
+    "officialName": "Universidad Nacional José Faustino Sánchez Carrión (UNJFSC)",
+    "shortName": "UNJFSC"
+  },
+  {
+    "id": "unju-escuela-de-minas",
+    "officialName": "Escuela de Minas, Universidad Nacional de Jujuy",
+    "shortName": "EscM-UNJu"
+  },
+  {
+    "id": "unlam",
+    "officialName": "Universidad Nacional de La Matanza",
+    "shortName": "UNLaM"
+  },
+  {
+    "id": "unlp",
+    "officialName": "Universidad Nacional de La Plata",
+    "shortName": "UNLP"
+  },
+  {
+    "id": "unlp-ar",
+    "officialName": "Universidad Nacional de La Plata",
+    "shortName": "UN La Plata"
+  },
+  {
+    "id": "unmsm",
+    "officialName": "Universidad Nacional Mayor de San Marcos",
+    "shortName": "UNMSM"
+  },
+  {
+    "id": "unne",
+    "officialName": "Universidad Nacional del Nordeste",
+    "shortName": "UNNE"
+  },
+  {
+    "id": "unoesc",
+    "officialName": "Universidade do Oeste de Santa Catarina",
+    "shortName": "UNOESC"
+  },
+  {
+    "id": "unoesc-chapeco",
+    "officialName": "Universidade do Oeste de Santa Catarina (UNOESC), Campus Chapecó",
+    "shortName": "UNOESC/Chapecó",
+    "parentInstitutionId": "unoesc"
+  },
+  {
+    "id": "unoesc-sao-miguel",
+    "officialName": "Universidade do Oeste de Santa Catarina - Campus São Miguel do Oeste",
+    "shortName": "UNOESC - São Miguel",
+    "parentInstitutionId": "unoesc"
+  },
+  {
+    "id": "unoeste-br",
+    "officialName": "Universidade do Oeste Paulista (Unoeste)",
+    "shortName": "UNOESTE"
+  },
+  {
+    "id": "unr-rosario",
+    "officialName": "Universidad Nacional de Rosario",
+    "shortName": "UNR"
+  },
+  {
+    "id": "unrc-ar",
+    "officialName": "Universidad Nacional de Río Cuarto",
+    "shortName": "UNRC"
+  },
+  {
+    "id": "unrn-ar",
+    "officialName": "Universidad Nacional de Río Negro",
+    "shortName": "UNRN"
+  },
+  {
+    "id": "uns-bahia-blanca",
+    "officialName": "Universidad Nacional del Sur (UNS)",
+    "shortName": "UN del Sur"
+  },
+  {
+    "id": "unsa-arequipa",
+    "officialName": "Universidad Nacional de San Agustín de Arequipa",
+    "shortName": "UNSA-IS"
+  },
+  {
+    "id": "unsa-salta",
+    "officialName": "Universidad Nacional de Salta",
+    "shortName": "UNSa"
+  },
+  {
+    "id": "unsaac",
+    "officialName": "Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)",
+    "shortName": "UNSAAC"
+  },
+  {
+    "id": "unsxx",
+    "officialName": "Universidad Nacional Siglo XX",
+    "shortName": "UNSXX- II"
+  },
+  {
+    "id": "unt",
+    "officialName": "Universidad Nacional de Tucumán (UNT)",
+    "shortName": "UNT"
+  },
+  {
+    "id": "up-aguascalientes",
+    "officialName": "Universidad Panamericana, Campus Aguascalientes",
+    "shortName": "UP Bonaterra"
+  },
+  {
+    "id": "up-ciudad-de-mexico",
+    "officialName": "Universidad Panamericana, Campus Ciudad de México",
+    "shortName": "Universidad Panamericana Ciudad de México"
+  },
+  {
+    "id": "up-guadalajara",
+    "officialName": "Universidad Panamericana, Campus Guadalajara",
+    "shortName": "UPGDL"
+  },
+  {
+    "id": "upaep",
+    "officialName": "Universidad Popular Autónoma del Estado de Puebla",
+    "shortName": "UPAEP"
+  },
+  {
+    "id": "upalt",
+    "officialName": "Universidad Politécnica de Altamira",
+    "shortName": "Universidad Politecnica de Altamira"
+  },
+  {
+    "id": "upb-bolivia",
+    "officialName": "Universidad Privada Boliviana - Sede Santa Cruz",
+    "shortName": "UPB Santa Cruz"
+  },
+  {
+    "id": "upb-bucaramanga",
+    "officialName": "Universidad Pontificia Bolivariana - Seccional Bucaramanga",
+    "shortName": "UPB-Buc"
+  },
+  {
+    "id": "upb-cochabamba",
+    "officialName": "Universidad Privada Boliviana - Sede Cochabamba",
+    "shortName": "UPB - Cbba"
+  },
+  {
+    "id": "upds-santa-cruz",
+    "officialName": "Universidad Privada Domingo Savio (UPDS), Santa Cruz",
+    "shortName": "UPDS"
+  },
+  {
+    "id": "upds-tarija",
+    "officialName": "Universidad Privada Domingo Savio - Tarija",
+    "shortName": "UPDS-Tarija"
+  },
+  {
+    "id": "updurango",
+    "officialName": "Universidad Politécnica de Durango",
+    "shortName": "Universidad Politecnica de Durango"
+  },
+  {
+    "id": "upe",
+    "officialName": "Universidade de Pernambuco",
+    "shortName": "UPE"
+  },
+  {
+    "id": "upea",
+    "officialName": "Universidad Pública de El Alto",
+    "shortName": "UPEA"
+  },
+  {
+    "id": "uppuebla",
+    "officialName": "Universidad Politécnica de Puebla",
+    "shortName": "UPPue"
+  },
+  {
+    "id": "upr-arecibo",
+    "officialName": "Universidad de Puerto Rico, Recinto de Arecibo (UPR-Arecibo)",
+    "shortName": "UPR-A"
+  },
+  {
+    "id": "upr-bayamon",
+    "officialName": "University of Puerto Rico, Bayamón Campus (UPR-Bayamón)",
+    "shortName": "UPR-B"
+  },
+  {
+    "id": "upr-pr",
+    "officialName": "Universidad de Puerto Rico (UPR)",
+    "shortName": "UPR"
+  },
+  {
+    "id": "uprm-pr",
+    "officialName": "Universidad de Puerto Rico, Recinto Universitario de Mayagüez (RUM)",
+    "shortName": "UPR-M",
+    "parentInstitutionId": "upr-pr"
+  },
+  {
+    "id": "uprrp-edu",
+    "officialName": "Universidad de Puerto Rico, Recinto de Río Piedras",
+    "shortName": "UPR-RP"
+  },
+  {
+    "id": "upsa-bolivia",
+    "officialName": "Universidad Privada de Santa Cruz de la Sierra (UPSA)",
+    "shortName": "UPSA"
+  },
+  {
+    "id": "upslp",
+    "officialName": "Universidad Politécnica de San Luis Potosí",
+    "shortName": "UPSLP"
+  },
+  {
+    "id": "upslp-mx",
+    "officialName": "Universidad Politécnica de San Luis Potosí (UPSLP)",
+    "shortName": "Universidad Politécnica de San Luis Potosi"
+  },
+  {
+    "id": "uptc",
+    "officialName": "Universidad Pedagógica y Tecnológica de Colombia",
+    "shortName": "UPTC"
+  },
+  {
+    "id": "upz-mx",
+    "officialName": "Universidad Politécnica de Zacatecas (UPZ)",
+    "shortName": "Universidad Politécnica de Zacatecas"
+  },
+  {
+    "id": "uri-erechim",
+    "officialName": "Universidade Regional Integrada do Alto Uruguai e das Missões - Campus Erechim",
+    "shortName": "URI - Erechim"
+  },
+  {
+    "id": "url-guatemala",
+    "officialName": "Universidad Rafael Landívar",
+    "shortName": "Universidad Rafael Landívar"
+  },
+  {
+    "id": "url-rafael-landivar",
+    "officialName": "Universidad Rafael Landívar (URL)",
+    "shortName": "URL"
+  },
+  {
+    "id": "usac",
+    "officialName": "Universidad de San Carlos de Guatemala (USAC)",
+    "shortName": "Universidad de San Carlos de Guatemala"
+  },
+  {
+    "id": "usb-venezuela",
+    "officialName": "Universidad Simón Bolívar",
+    "shortName": "USB"
+  },
+  {
+    "id": "usfx",
+    "officialName": "Universidad Mayor, Real y Pontificia de San Francisco Xavier de Chuquisaca (USFX)",
+    "shortName": "USFX-Chuquisaca"
+  },
+  {
+    "id": "usm-cl",
+    "officialName": "Universidad Técnica Federico Santa María",
+    "shortName": "USM"
+  },
+  {
+    "id": "usp",
+    "officialName": "Universidade de São Paulo",
+    "shortName": "USP"
+  },
+  {
+    "id": "usp-each",
+    "officialName": "Universidade de São Paulo - Escola de Artes, Ciências e Humanidades (EACH-USP)",
+    "shortName": "USP/EACH",
+    "parentInstitutionId": "usp"
+  },
+  {
+    "id": "usp-ffclrp",
+    "officialName": "Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto",
+    "shortName": "FFCLRP-USP",
+    "parentInstitutionId": "usp"
+  },
+  {
+    "id": "usp-sao-carlos",
+    "officialName": "Universidade de São Paulo, Campus São Carlos",
+    "shortName": "USP/São Carlos",
+    "parentInstitutionId": "usp"
+  },
+  {
+    "id": "utags",
+    "officialName": "Universidad Tecnológica de Aguascalientes",
+    "shortName": "UTAGS"
+  },
+  {
+    "id": "utalca-ingenieria",
+    "officialName": "Facultad de Ingeniería, Universidad de Talca",
+    "shortName": "UTalca-Ing"
+  },
+  {
+    "id": "utdt-ar",
+    "officialName": "Universidad Torcuato Di Tella",
+    "shortName": "UTDT"
+  },
+  {
+    "id": "utec-peru",
+    "officialName": "Universidad de Ingeniería y Tecnología (UTEC)",
+    "shortName": "UTEC"
+  },
+  {
+    "id": "utepsa-bo",
+    "officialName": "Universidad Tecnológica Privada de Santa Cruz de la Sierra (UTEPSA)",
+    "shortName": "UTEPSA"
+  },
+  {
+    "id": "utesa",
+    "officialName": "Universidad Tecnológica de Santiago",
+    "shortName": "UTESA"
+  },
+  {
+    "id": "utesa-dajabon",
+    "officialName": "Universidad Tecnológica de Santiago - Recinto Dajabón",
+    "shortName": "UTESA-DAJ",
+    "parentInstitutionId": "utesa"
+  },
+  {
+    "id": "utesa-santiago",
+    "officialName": "Universidad Tecnológica de Santiago - Campus Santiago",
+    "shortName": "UTESA-STI",
+    "parentInstitutionId": "utesa"
+  },
+  {
+    "id": "utfpr-curitiba",
+    "officialName": "Universidade Tecnológica Federal do Paraná - Campus Curitiba",
+    "shortName": "UTFPR/Curitiba"
+  },
+  {
+    "id": "utfpr-dois-vizinhos",
+    "officialName": "Universidade Tecnológica Federal do Paraná - Campus Dois Vizinhos",
+    "shortName": "UTFPR-DV"
+  },
+  {
+    "id": "utfpr-toledo",
+    "officialName": "Universidade Tecnológica Federal do Paraná - Campus Toledo",
+    "shortName": "UTFPR/Toledo"
+  },
+  {
+    "id": "utfsm",
+    "officialName": "Universidad Técnica Federico Santa María",
+    "shortName": "UTFSM"
+  },
+  {
+    "id": "utj",
+    "officialName": "Universidad Tecnológica de Jalisco",
+    "shortName": "Universidad Tecnológica de Jalisco"
+  },
+  {
+    "id": "utn-ar",
+    "officialName": "Universidad Tecnológica Nacional",
+    "shortName": "UTN"
+  },
+  {
+    "id": "utn-frba",
+    "officialName": "Universidad Tecnológica Nacional - Facultad Regional Buenos Aires",
+    "shortName": "UTN - FRBA",
+    "parentInstitutionId": "utn-ar"
+  },
+  {
+    "id": "utn-frc",
+    "officialName": "Universidad Tecnológica Nacional - Facultad Regional Córdoba",
+    "shortName": "FRC - UTN",
+    "parentInstitutionId": "utn-ar"
+  },
+  {
+    "id": "utn-frd",
+    "officialName": "Universidad Tecnológica Nacional - Facultad Regional Delta",
+    "shortName": "UTN - FRD",
+    "parentInstitutionId": "utn-ar"
+  },
+  {
+    "id": "utn-frre",
+    "officialName": "Universidad Tecnológica Nacional - Facultad Regional Resistencia",
+    "shortName": "UTN - FRRe"
+  },
+  {
+    "id": "utn-frro",
+    "officialName": "Universidad Tecnológica Nacional, Facultad Regional Rosario (UTN-FRRo)",
+    "shortName": "UTN-Rosario",
+    "parentInstitutionId": "utn-ar"
+  },
+  {
+    "id": "utn-frsf",
+    "officialName": "Universidad Tecnológica Nacional, Facultad Regional Santa Fe",
+    "shortName": "UTN Argentina - Santa Fe"
+  },
+  {
+    "id": "uto-bolivia",
+    "officialName": "Universidad Técnica de Oruro",
+    "shortName": "UTO"
+  },
+  {
+    "id": "uto-challapata",
+    "officialName": "Universidad Técnica de Oruro - Unidad Académica Challapata",
+    "shortName": "UTO - Challapata"
+  },
+  {
+    "id": "uto-huanuni",
+    "officialName": "Universidad Técnica de Oruro - Unidad Huanuni",
+    "shortName": "UTO-Huanuni",
+    "parentInstitutionId": "uto-bolivia"
+  },
+  {
+    "id": "uto-informatica",
+    "officialName": "Universidad Técnica de Oruro - Informática",
+    "shortName": "UTO-Inf",
+    "parentInstitutionId": "uto-bolivia"
+  },
+  {
+    "id": "uto-ingenieria-mecatronica",
+    "officialName": "Universidad Técnica de Oruro - Ingeniería Mecatrónica",
+    "shortName": "Universidad Tecnica de Oruro - Ingenieria Mecatronica",
+    "parentInstitutionId": "uto-bolivia"
+  },
+  {
+    "id": "uto-ingenieria-sistemas",
+    "officialName": "Universidad Técnica de Oruro - Ingeniería de Sistemas",
+    "shortName": "UTO-IS",
+    "parentInstitutionId": "uto-bolivia"
+  },
+  {
+    "id": "uto-kakachaca",
+    "officialName": "Universidad Técnica de Oruro - Unidad Kakachaca",
+    "shortName": "UTO-Kakachaca",
+    "parentInstitutionId": "uto-bolivia"
+  },
+  {
+    "id": "utzac",
+    "officialName": "Universidad Tecnológica del Estado de Zacatecas (UTZAC)",
+    "shortName": "Universidad Tecnologica del Estado de Zacatecas"
+  },
+  {
+    "id": "uvg-guatemala",
+    "officialName": "Universidad del Valle de Guatemala",
+    "shortName": "Universidad del Valle de Guatemala"
+  },
+  {
+    "id": "uvm",
+    "officialName": "Universidad del Valle de México",
+    "shortName": "UVM"
+  },
+  {
+    "id": "uvm-guadalajara-sur",
+    "officialName": "Universidad del Valle de México - Campus Guadalajara Sur",
+    "shortName": "Universidad del Valle de Mexico Campus Guadalajara Sur",
+    "parentInstitutionId": "uvm"
+  },
+  {
+    "id": "uwi-st-augustine",
+    "officialName": "The University of the West Indies, St. Augustine Campus",
+    "shortName": "UWI-TTO"
+  }
+]

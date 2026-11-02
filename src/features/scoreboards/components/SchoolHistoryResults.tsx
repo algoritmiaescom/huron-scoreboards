@@ -8,6 +8,7 @@ import { formatCalendarDate } from '@/lib/dates';
 
 import { SchoolIdentity } from './SchoolIdentity';
 import { TeamIdentity } from './TeamIdentity';
+import { formatPlace } from '../model/ranking';
 import { contestStageLabel, seriesLabel } from '../model/selectors';
 
 import type { SchoolHistory } from '../model/schoolHistory';
@@ -70,7 +71,7 @@ export const SchoolHistoryResults = ({
               <Stack spacing={1}>
                 <DataList
                   items={[
-                    { label: 'Puesto', value: `#${String(row.place)}` },
+                    { label: 'Puesto', value: formatPlace(row.place) },
                     { label: 'Resueltos', value: row.solved },
                     {
                       label: 'Penalización',

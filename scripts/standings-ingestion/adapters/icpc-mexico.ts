@@ -92,13 +92,7 @@ export interface ICPCMexicoScoreboardPayload {
     teamName: string;
     sourceSchoolId: null;
     schoolName: string | null;
-    results:
-      | {
-          status: 'unattempted' | 'attempted' | 'solved';
-          attempts?: number;
-          solvedAtMinute?: number;
-        }[]
-      | null;
+    results: ICPCMexicoProblemResult[] | null;
     publishedTotals: { solved: number; penalty: number | null };
     evidence: {
       field: string;
@@ -117,9 +111,10 @@ export interface ICPCMexicoScoreboardPayload {
   warnings: string[];
 }
 
-type ICPCMexicoProblemResult = NonNullable<
-  ICPCMexicoScoreboardPayload['rows'][number]['results']
->[number];
+type ICPCMexicoProblemResult =
+  | { status: 'unattempted' }
+  | { status: 'attempted'; attempts: number }
+  | { status: 'solved'; attempts: number; solvedAtMinute: number };
 
 type HtmlNode = DefaultTreeAdapterTypes.Node;
 type HtmlElement = DefaultTreeAdapterTypes.Element;
@@ -234,6 +229,14 @@ const makeCellEvidence = (
   confidence: 1 as const,
 });
 
+const parseTaggedTeamName = (value: string): { teamName: string; schoolName: string } | null => {
+  const match = /^\[([^\]]+)\]\[[a-z]{2},[A-Z]{2}\]\s+(.+)$/u.exec(value);
+  if (match === null) {
+    return null;
+  }
+  return { schoolName: match[1], teamName: match[2] };
+};
+
 export const parseICPCMexicoScoreboard = (
   html: string,
   context: ICPCMexicoScoreboardContext,
@@ -247,7 +250,7 @@ export const parseICPCMexicoScoreboard = (
     }
     const labels = elementChildren(firstRow, 'th').map((cell) => textContent(cell));
     return (
-      labels.length >= 5 &&
+      labels.length >= 4 &&
       labels[0] === '#' &&
       labels[1] === 'Equipo' &&
       labels[2] === '✓' &&
@@ -266,7 +269,7 @@ export const parseICPCMexicoScoreboard = (
   const headers = elementChildren(headerRow, 'th');
   const problemHeaders = headers.slice(4);
   const problemLabels = problemHeaders.map((header) => textContent(header));
-  if (problemLabels.length === 0 || problemLabels.some((label) => !/^[A-Z][0-9]?$/.test(label))) {
+  if (problemLabels.some((label) => !/^[A-Z][0-9]?$/.test(label))) {
     throw new Error('ICPC Mexico scoreboard has missing or unrecognized problem labels.');
   }
   const penaltyRuleTitle = attribute(headers[3], 'title') ?? '';
@@ -291,6 +294,11 @@ export const parseICPCMexicoScoreboard = (
   }
   const date = parseSpanishDate(pageText);
   const warnings: string[] = [];
+  if (problemLabels.length === 0) {
+    warnings.push(
+      'The source publishes totals only; problem labels and per-problem detail are unavailable.',
+    );
+  }
   if (penaltyMinutesPerFailedAttempt === null) {
     warnings.push('Penalty rule was not recognized from the scoreboard heading.');
   }
@@ -326,21 +334,48 @@ export const parseICPCMexicoScoreboard = (
     const teamCellParagraphs = elements(cells[1], 'p');
     const teamNameCell = teamCellParagraphs.at(0);
     const schoolNameCell = teamCellParagraphs.at(1);
-    const teamName = teamNameCell === undefined ? '' : textContent(teamNameCell);
-    const schoolName = schoolNameCell === undefined ? null : textContent(schoolNameCell);
+    const rawTeamName = teamNameCell === undefined ? '' : textContent(teamNameCell);
+    const taggedTeam = schoolNameCell === undefined ? parseTaggedTeamName(rawTeamName) : null;
+    const teamName = taggedTeam?.teamName ?? rawTeamName;
+    const schoolName =
+      schoolNameCell === undefined ? (taggedTeam?.schoolName ?? null) : textContent(schoolNameCell);
     if (teamName.length === 0) {
       throw new Error(`Scoreboard row ${String(rowIndex + 1)} has no team name.`);
     }
     const parsedResults = cells.slice(4).map((cell) => parseProblemCell(textContent(cell)));
-    const resultsAreComplete = parsedResults.every((result) => result !== null);
-    if (!resultsAreComplete) {
+    const resultsAreComplete =
+      problemLabels.length > 0 && parsedResults.every((result) => result !== null);
+    if (problemLabels.length > 0 && !resultsAreComplete) {
       warnings.push(
         `Problem detail for scoreboard row ${String(rowIndex + 1)} is incomplete; published totals were retained.`,
       );
     }
+    const solvedCount = parsedResults.filter((result) => result?.status === 'solved').length;
+    const computedPenalty =
+      penaltyMinutesPerFailedAttempt === null
+        ? null
+        : parsedResults.reduce(
+            (total, result) =>
+              result?.status === 'solved'
+                ? total +
+                  result.solvedAtMinute +
+                  penaltyMinutesPerFailedAttempt * (result.attempts - 1)
+                : total,
+            0,
+          );
+    const totalsAgree =
+      resultsAreComplete &&
+      solvedCount === solved &&
+      (computedPenalty === null || computedPenalty === penalty);
+    if (resultsAreComplete && !totalsAgree) {
+      warnings.push(
+        `Problem detail was omitted for scoreboard row ${String(rowIndex + 1)} because extracted results disagree with published totals.`,
+      );
+    }
     const evidence = [
       makeCellEvidence(rowIndex, 'place', 0, placeText),
-      makeCellEvidence(rowIndex, 'teamName', 1, teamName),
+      makeCellEvidence(rowIndex, 'teamName', 1, rawTeamName),
+      ...(taggedTeam === null ? [] : [makeCellEvidence(rowIndex, 'schoolName', 1, rawTeamName)]),
       makeCellEvidence(rowIndex, 'publishedTotals.solved', 2, solvedText),
       makeCellEvidence(rowIndex, 'publishedTotals.penalty', 3, penaltyText),
       ...cells
@@ -360,7 +395,7 @@ export const parseICPCMexicoScoreboard = (
       teamName,
       sourceSchoolId: null,
       schoolName,
-      results: resultsAreComplete ? parsedResults : null,
+      results: totalsAgree ? parsedResults : null,
       publishedTotals: { solved, penalty },
       evidence,
     };

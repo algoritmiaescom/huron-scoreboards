@@ -1,0 +1,2113 @@
+{
+  "seasonYear": 2020,
+  "seriesId": "gpm",
+  "rows": [
+    {
+      "place": 1,
+      "teamId": "2020-gpm-iteso-464446-escuela-superior-de-comedia",
+      "score": 429,
+      "qualified": null
+    },
+    {
+      "place": 2,
+      "teamId": "2020-gpm-iteso-468823-legendary-grand-newbies",
+      "score": 426,
+      "qualified": null
+    },
+    {
+      "place": 3,
+      "teamId": "2020-gpm-iteso-464302-pumomm",
+      "score": 416,
+      "qualified": null
+    },
+    {
+      "place": 4,
+      "teamId": "2020-gpm-iteso-468673-upsolving",
+      "score": 410,
+      "qualified": null
+    },
+    {
+      "place": 5,
+      "teamId": "2020-gpm-iteso-463581-foundthebug-itsme",
+      "score": 394,
+      "qualified": null
+    },
+    {
+      "place": 6,
+      "teamId": "2020-gpm-iteso-454257-leones-0-0-0",
+      "score": 392,
+      "qualified": null
+    },
+    {
+      "place": 7,
+      "teamId": "2020-gpm-iteso-464448-camara-ya-subelo-asi-w",
+      "score": 369,
+      "qualified": null
+    },
+    {
+      "place": 8,
+      "teamId": "2020-gpm-iteso-469432-eee",
+      "score": 360,
+      "qualified": null
+    },
+    {
+      "place": 9,
+      "teamId": "2020-gpm-iteso-454477-the-empire-strikes-back",
+      "score": 345,
+      "qualified": null
+    },
+    {
+      "place": 10,
+      "teamId": "2020-gpm-iteso-469431-ug-es",
+      "score": 325,
+      "qualified": null
+    },
+    {
+      "place": 11,
+      "teamId": "2020-gpm-iteso-462217-ac-holics",
+      "score": 321,
+      "qualified": null
+    },
+    {
+      "place": 12,
+      "teamId": "2020-gpm-iteso-465200-pumas",
+      "score": 317,
+      "qualified": null
+    },
+    {
+      "place": 13,
+      "teamId": "2020-gpm-iteso-468784-panpanaderos",
+      "score": 282,
+      "qualified": null
+    },
+    {
+      "place": 14,
+      "teamId": "2020-gpm-iteso-463929-ravioli",
+      "score": 255,
+      "qualified": null
+    },
+    {
+      "place": 15,
+      "teamId": "2020-gpm-iteso-464447-los-hermanos-computadores-de-paine",
+      "score": 250,
+      "qualified": null
+    },
+    {
+      "place": 16,
+      "teamId": "2020-gpm-iteso-463594-nullptr",
+      "score": 241,
+      "qualified": null
+    },
+    {
+      "place": 17,
+      "teamId": "2020-gpm-iteso-465171-coachella",
+      "score": 224,
+      "qualified": null
+    },
+    {
+      "place": 18,
+      "teamId": "2020-gpm-iteso-468731-icpcrikos",
+      "score": 224,
+      "qualified": null
+    },
+    {
+      "place": 19,
+      "teamId": "2020-gpm-iteso-469357-too-lazy-to-propagate",
+      "score": 223,
+      "qualified": null
+    },
+    {
+      "place": 20,
+      "teamId": "2020-gpm-iteso-469730-include-uaz",
+      "score": 216,
+      "qualified": null
+    },
+    {
+      "place": 21,
+      "teamId": "2020-gpm-iteso-462343-o-1",
+      "score": 192,
+      "qualified": null
+    },
+    {
+      "place": 22,
+      "teamId": "2020-gpm-iteso-466685-lavanda-nortena",
+      "score": 181,
+      "qualified": null
+    },
+    {
+      "place": 23,
+      "teamId": "2020-gpm-iteso-470314-lonches-ahogados",
+      "score": 170,
+      "qualified": null
+    },
+    {
+      "place": 24,
+      "teamId": "2020-gpm-iteso-461788-b11",
+      "score": 162,
+      "qualified": null
+    },
+    {
+      "place": 25,
+      "teamId": "2020-gpm-iteso-469833-ac-forever",
+      "score": 159,
+      "qualified": null
+    },
+    {
+      "place": 26,
+      "teamId": "2020-gpm-iteso-465287-hijos-de-turing",
+      "score": 155,
+      "qualified": null
+    },
+    {
+      "place": 27,
+      "teamId": "2020-gpm-iteso-466692-utf-8",
+      "score": 137,
+      "qualified": null
+    },
+    {
+      "place": 28,
+      "teamId": "2020-mexico-finals-final-row-0121-are-ya-winning-son",
+      "score": 133,
+      "qualified": null
+    },
+    {
+      "place": 29,
+      "teamId": "2020-gpm-iteso-466496-tec-gdl-10",
+      "score": 130,
+      "qualified": null
+    },
+    {
+      "place": 30,
+      "teamId": "2020-mexico-finals-final-row-0076-triada",
+      "score": 125,
+      "qualified": null
+    },
+    {
+      "place": 31,
+      "teamId": "2020-gpm-iteso-454995-wolves",
+      "score": 123,
+      "qualified": null
+    },
+    {
+      "place": 32,
+      "teamId": "2020-mexico-finals-final-row-0092-caguaa",
+      "score": 118,
+      "qualified": null
+    },
+    {
+      "place": 33,
+      "teamId": "2020-gpm-iteso-469723-jjl",
+      "score": 112,
+      "qualified": null
+    },
+    {
+      "place": 34,
+      "teamId": "2020-mexico-finals-final-row-0134-olympiac",
+      "score": 112,
+      "qualified": null
+    },
+    {
+      "place": 35,
+      "teamId": "2020-gpm-iteso-469358-010-girls-001-mike",
+      "score": 101,
+      "qualified": null
+    },
+    {
+      "place": 36,
+      "teamId": "2020-gpm-iteso-456894-los-que-no-vinieron",
+      "score": 100,
+      "qualified": null
+    },
+    {
+      "place": 37,
+      "teamId": "2020-gpm-iteso-469685-jojojo-s",
+      "score": 92,
+      "qualified": null
+    },
+    {
+      "place": 38,
+      "teamId": "2020-mexico-finals-final-row-0154-a-verdad-me-engane",
+      "score": 86,
+      "qualified": null
+    },
+    {
+      "place": 39,
+      "teamId": "2020-gpm-iteso-469683-deep-think",
+      "score": 72,
+      "qualified": null
+    },
+    {
+      "place": 40,
+      "teamId": "2020-gpm-iteso-463535-awadeuwu",
+      "score": 49,
+      "qualified": null
+    },
+    {
+      "place": 41,
+      "teamId": "2020-gpm-iteso-463383-ansiosos",
+      "score": 49,
+      "qualified": null
+    },
+    {
+      "place": 42,
+      "teamId": "2020-gpm-iteso-467477-coders-council",
+      "score": 48,
+      "qualified": null
+    },
+    {
+      "place": 43,
+      "teamId": "2020-mexico-finals-final-row-0171-los-testigos-de-aaron-aaron",
+      "score": 47,
+      "qualified": null
+    },
+    {
+      "place": 44,
+      "teamId": "2020-gpm-iteso-455556-caribbeancoders",
+      "score": 46,
+      "qualified": null
+    },
+    {
+      "place": 45,
+      "teamId": "2020-mexico-finals-final-row-0126-3loko",
+      "score": 43,
+      "qualified": null
+    },
+    {
+      "place": 46,
+      "teamId": "2020-gpm-iteso-463740-los-de-arriba-son-tramposos",
+      "score": 43,
+      "qualified": null
+    },
+    {
+      "place": 47,
+      "teamId": "2020-gpm-iteso-464310-b-i-o-s",
+      "score": 39,
+      "qualified": null
+    },
+    {
+      "place": 48,
+      "teamId": "2020-gpm-iteso-470616-oblivion",
+      "score": 39,
+      "qualified": null
+    },
+    {
+      "place": 49,
+      "teamId": "2020-gpm-iteso-462429-uamitosplusplus",
+      "score": 37,
+      "qualified": null
+    },
+    {
+      "place": 50,
+      "teamId": "2020-gpm-iteso-454994-bruwus",
+      "score": 35,
+      "qualified": null
+    },
+    {
+      "place": 51,
+      "teamId": "2020-gpm-iteso-466712-alcachofis",
+      "score": 34,
+      "qualified": null
+    },
+    {
+      "place": 52,
+      "teamId": "2020-gpm-iteso-469402-coronacoders",
+      "score": 33,
+      "qualified": null
+    },
+    {
+      "place": 53,
+      "teamId": "2020-gpm-iteso-462150-bathtub-coding",
+      "score": 27,
+      "qualified": null
+    },
+    {
+      "place": 54,
+      "teamId": "2020-gpm-iteso-462341-predators",
+      "score": 22,
+      "qualified": null
+    },
+    {
+      "place": 55,
+      "teamId": "2020-gpm-iteso-470007-drimtimicp",
+      "score": 19,
+      "qualified": null
+    },
+    {
+      "place": 56,
+      "teamId": "2020-gpm-iteso-454993-bff-brute-force-friend-s-tle-v",
+      "score": 18,
+      "qualified": null
+    },
+    {
+      "place": 57,
+      "teamId": "2020-gpm-iteso-454991-void-guys",
+      "score": 15,
+      "qualified": null
+    },
+    {
+      "place": 58,
+      "teamId": "2020-gpm-iteso-455505-assassin-bugs",
+      "score": 13,
+      "qualified": null
+    },
+    {
+      "place": 59,
+      "teamId": "2020-gpm-iteso-463449-dunkel",
+      "score": 13,
+      "qualified": null
+    },
+    {
+      "place": 60,
+      "teamId": "2020-gpm-iteso-469868-pitones-2-7",
+      "score": 10,
+      "qualified": null
+    },
+    {
+      "place": 61,
+      "teamId": "2020-gpm-iteso-469412-los-picateclas",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 62,
+      "teamId": "2020-gpm-iteso-470158-problem-3n-1",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 63,
+      "teamId": "2020-gpm-iteso-462131-roborregos-code",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 64,
+      "teamId": "2020-gpm-iteso-470159-m-c-nificas",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 65,
+      "teamId": "2020-gpm-iteso-478808-jrm-e",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 66,
+      "teamId": "2020-gpm-iteso-466656-panalerasquad",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 67,
+      "teamId": "2020-gpm-iteso-469856-patodalavida",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 68,
+      "teamId": "2020-gpm-iteso-469379-a-s-last-chance",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 69,
+      "teamId": "2020-gpm-iteso-462331-riko-pollo",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 70,
+      "teamId": "2020-gpm-iteso-470230-wajakos",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 71,
+      "teamId": "2020-gpm-iteso-462151-tam",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 72,
+      "teamId": "2020-gpm-iteso-469864-root-scramblers",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 73,
+      "teamId": "2020-gpm-iteso-454321-si-no-gano-me-corren",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 74,
+      "teamId": "2020-gpm-iteso-463733-fenix",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 75,
+      "teamId": "2020-gpm-iteso-467399-codebreakers",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 76,
+      "teamId": "2020-gpm-iteso-466718-return-t-d-a",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 77,
+      "teamId": "2020-gpm-iteso-469835-gunters",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 78,
+      "teamId": "2020-gpm-iteso-462243-che",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 79,
+      "teamId": "2020-gpm-iteso-468800-base16",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 80,
+      "teamId": "2020-gpm-iteso-470580-brocode",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 81,
+      "teamId": "2020-gpm-iteso-469834-the-master",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 82,
+      "teamId": "2020-gpm-iteso-469754-newbies",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 83,
+      "teamId": "2020-gpm-iteso-468492-sudo-programmers",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 84,
+      "teamId": "2020-gpm-iteso-454752-zero",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 85,
+      "teamId": "2020-gpm-iteso-466708-bugmakers",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 86,
+      "teamId": "2020-gpm-iteso-469837-include-abd",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 87,
+      "teamId": "2020-gpm-iteso-469874-yippee-ki-yay-python-coders",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 88,
+      "teamId": "2020-gpm-iteso-464449-el-holandes-errante",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 89,
+      "teamId": "2020-gpm-iteso-464450-tle",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 90,
+      "teamId": "2020-gpm-iteso-469882-fullstack",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 91,
+      "teamId": "2020-gpm-iteso-469953-lf-freacks",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 92,
+      "teamId": "2020-gpm-iteso-466709-asd",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 93,
+      "teamId": "2020-gpm-iteso-469883-los-funados",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 94,
+      "teamId": "2020-gpm-iteso-469887-sadbois-inc",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 95,
+      "teamId": "2020-gpm-iteso-469866-not-found",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 96,
+      "teamId": "2020-gpm-iteso-469755-snk",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 97,
+      "teamId": "2020-gpm-iteso-462374-final-spark",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 98,
+      "teamId": "2020-gpm-iteso-465286-pumasds",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 99,
+      "teamId": "2020-gpm-iteso-465283-include-victory-h",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 100,
+      "teamId": "2020-gpm-iteso-465206-chicas-superpoderosas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 101,
+      "teamId": "2020-gpm-iteso-466220-tec-gdl-3",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 102,
+      "teamId": "2020-gpm-iteso-464444-quarantined-code",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 103,
+      "teamId": "2020-gpm-iteso-463687-say-my-name",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 104,
+      "teamId": "2020-gpm-iteso-469785-las-pistas-de-nullptr",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 105,
+      "teamId": "2020-gpm-iteso-465259-i",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 106,
+      "teamId": "2020-gpm-iteso-464851-saj-cpp",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 107,
+      "teamId": "2020-gpm-iteso-464855-oaxacode",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 108,
+      "teamId": "2020-gpm-iteso-463641-pandilla-de-la-puerta",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 109,
+      "teamId": "2020-gpm-iteso-465215-elementary-my-dear-watson",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 110,
+      "teamId": "2020-gpm-iteso-466222-tec-gdl-4",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 111,
+      "teamId": "2020-gpm-iteso-469891-weepycoders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 112,
+      "teamId": "2020-gpm-iteso-465177-formato-apa",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 113,
+      "teamId": "2020-gpm-iteso-465652-hard-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 114,
+      "teamId": "2020-gpm-iteso-454996-montadioses",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 115,
+      "teamId": "2020-gpm-iteso-463800-tecbots",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 116,
+      "teamId": "2020-gpm-iteso-465613-oozma-kappa",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 117,
+      "teamId": "2020-gpm-iteso-465578-coderregos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 118,
+      "teamId": "2020-gpm-iteso-462422-omega",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 119,
+      "teamId": "2020-gpm-iteso-465212-tecosdecanasta",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 120,
+      "teamId": "2020-gpm-iteso-469403-l3s-ax0l0tls",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 121,
+      "teamId": "2020-gpm-iteso-461662-las-javas-bravas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 122,
+      "teamId": "2020-gpm-iteso-463227-code-impostors",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 123,
+      "teamId": "2020-gpm-iteso-465186-valhalla",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 124,
+      "teamId": "2020-gpm-iteso-455557-los-mariks",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 125,
+      "teamId": "2020-gpm-iteso-469786-d3dsec-exe",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 126,
+      "teamId": "2020-gpm-iteso-463414-chichen-int-za",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 127,
+      "teamId": "2020-gpm-iteso-470283-octagon",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 128,
+      "teamId": "2020-gpm-iteso-466224-tec-gdl-5",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 129,
+      "teamId": "2020-gpm-iteso-463684-infocompas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 130,
+      "teamId": "2020-gpm-iteso-465615-exceloverflow",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 131,
+      "teamId": "2020-gpm-iteso-464950-roadtogold",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 132,
+      "teamId": "2020-gpm-iteso-464965-javasonicos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 133,
+      "teamId": "2020-gpm-iteso-464524-quantum-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 134,
+      "teamId": "2020-gpm-iteso-469935-arranederris",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 135,
+      "teamId": "2020-gpm-iteso-467365-grafossolution",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 136,
+      "teamId": "2020-gpm-iteso-464522-faav-team",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 137,
+      "teamId": "2020-gpm-iteso-464550-anothercreativename",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 138,
+      "teamId": "2020-gpm-iteso-465505-eszett",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 139,
+      "teamId": "2020-gpm-iteso-469771-bigo",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 140,
+      "teamId": "2020-gpm-iteso-463393-las-hoppers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 141,
+      "teamId": "2020-gpm-iteso-465306-segmentation-fault",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 142,
+      "teamId": "2020-gpm-iteso-454982-0-de-iq",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 143,
+      "teamId": "2020-gpm-iteso-469769-jitomates",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 144,
+      "teamId": "2020-gpm-iteso-464301-estesilesgusta-c",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 145,
+      "teamId": "2020-gpm-iteso-465301-braxad",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 146,
+      "teamId": "2020-gpm-iteso-466482-tec-gdl-6",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 147,
+      "teamId": "2020-gpm-iteso-469788-icppn-was-not-declared",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 148,
+      "teamId": "2020-gpm-iteso-465311-stc",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 149,
+      "teamId": "2020-gpm-iteso-465478-packeros",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 150,
+      "teamId": "2020-gpm-iteso-469677-infinabyte",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 151,
+      "teamId": "2020-gpm-iteso-462245-patos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 152,
+      "teamId": "2020-gpm-iteso-466487-tec-gdl-8",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 153,
+      "teamId": "2020-gpm-iteso-454251-legion",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 154,
+      "teamId": "2020-gpm-iteso-469838-su-e-cloud",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 155,
+      "teamId": "2020-gpm-iteso-463394-holmes",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 156,
+      "teamId": "2020-gpm-iteso-470014-upgdl05",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 157,
+      "teamId": "2020-gpm-iteso-459745-trivial-itesco",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 158,
+      "teamId": "2020-gpm-iteso-463914-echo-coding",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 159,
+      "teamId": "2020-gpm-iteso-467839-equipo-tres",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 160,
+      "teamId": "2020-gpm-iteso-465514-char-mander",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 161,
+      "teamId": "2020-gpm-iteso-469774-equipo-m-a-l",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 162,
+      "teamId": "2020-gpm-iteso-463537-escuadron-de-movimiento-perpetuo",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 163,
+      "teamId": "2020-gpm-iteso-464296-uamkanda",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 164,
+      "teamId": "2020-gpm-iteso-462340-blue-pythons",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 165,
+      "teamId": "2020-gpm-iteso-469780-los-pixies-2-0",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 166,
+      "teamId": "2020-gpm-iteso-464313-undefined",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 167,
+      "teamId": "2020-gpm-iteso-466208-tec-gdl-1",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 168,
+      "teamId": "2020-gpm-iteso-469815-c",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 169,
+      "teamId": "2020-gpm-iteso-465143-vipoc-syc",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 170,
+      "teamId": "2020-gpm-iteso-469859-syntaxerror",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 171,
+      "teamId": "2020-gpm-iteso-463308-bits-team",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 172,
+      "teamId": "2020-gpm-iteso-469411-8bit",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 173,
+      "teamId": "2020-gpm-iteso-462320-tec-80ti",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 174,
+      "teamId": "2020-gpm-iteso-469784-los-programadores",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 175,
+      "teamId": "2020-gpm-iteso-469414-pink-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 176,
+      "teamId": "2020-gpm-iteso-464166-mc-y-los-malacopa-de-michoacan",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 177,
+      "teamId": "2020-gpm-iteso-470006-timelimitexceeded",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 178,
+      "teamId": "2020-gpm-iteso-464941-spacetacular",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 179,
+      "teamId": "2020-gpm-iteso-465612-the-good-the-bad-the-programmer",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 180,
+      "teamId": "2020-gpm-iteso-465516-las-neuronas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 181,
+      "teamId": "2020-gpm-iteso-463161-pmg",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 182,
+      "teamId": "2020-gpm-iteso-465748-the-hackers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 183,
+      "teamId": "2020-gpm-iteso-465954-doom-patrol",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 184,
+      "teamId": "2020-gpm-iteso-469401-las-pistas-del-bug",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 185,
+      "teamId": "2020-gpm-iteso-464543-developtecs",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 186,
+      "teamId": "2020-gpm-iteso-465486-axolototl",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 187,
+      "teamId": "2020-gpm-iteso-463529-di-b-ing-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 188,
+      "teamId": "2020-gpm-iteso-464536-trouble-hunters",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 189,
+      "teamId": "2020-gpm-iteso-469463-cheemtos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 190,
+      "teamId": "2020-gpm-iteso-467529-windiit",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 191,
+      "teamId": "2020-gpm-iteso-462237-coding-wizards",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 192,
+      "teamId": "2020-gpm-iteso-466784-lascuries",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 193,
+      "teamId": "2020-gpm-iteso-469890-splendorcrescit",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 194,
+      "teamId": "2020-gpm-iteso-465303-tec-coder-s",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 195,
+      "teamId": "2020-gpm-iteso-471103-the-untouchables",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 196,
+      "teamId": "2020-gpm-iteso-464167-itsahackers-jr",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 197,
+      "teamId": "2020-gpm-iteso-454977-macboy-s",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 198,
+      "teamId": "2020-gpm-iteso-465440-fsociety",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 199,
+      "teamId": "2020-gpm-iteso-469888-herminiotienelaculpa",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 200,
+      "teamId": "2020-gpm-iteso-465614-cout-hola",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 201,
+      "teamId": "2020-gpm-iteso-455558-los-gatos-de-schrodinger",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 202,
+      "teamId": "2020-gpm-iteso-454989-stringproductions",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 203,
+      "teamId": "2020-gpm-iteso-468212-prolux",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 204,
+      "teamId": "2020-gpm-iteso-463228-ctnos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 205,
+      "teamId": "2020-gpm-iteso-464163-michexotic-s",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 206,
+      "teamId": "2020-gpm-iteso-469799-isw-pros",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 207,
+      "teamId": "2020-gpm-iteso-463902-anime-bois",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 208,
+      "teamId": "2020-gpm-iteso-462326-guayeral",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 209,
+      "teamId": "2020-gpm-iteso-455559-mariachi",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 210,
+      "teamId": "2020-gpm-iteso-454992-the-gauss-fellows",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 211,
+      "teamId": "2020-gpm-iteso-464974-bichologos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 212,
+      "teamId": "2020-gpm-iteso-462377-offline-mode",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 213,
+      "teamId": "2020-gpm-iteso-467337-tec-gdl-17",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 214,
+      "teamId": "2020-gpm-iteso-469405-mictlantecuhtli",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 215,
+      "teamId": "2020-gpm-iteso-471958-tec-gdl-9",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 216,
+      "teamId": "2020-gpm-iteso-462216-earth-wind-and-fire",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 217,
+      "teamId": "2020-gpm-iteso-464005-devsoc",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 218,
+      "teamId": "2020-gpm-iteso-462132-quark",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 219,
+      "teamId": "2020-gpm-iteso-469869-your-socialist-hacker",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 220,
+      "teamId": "2020-gpm-iteso-462142-uwu",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 221,
+      "teamId": "2020-gpm-iteso-463644-alpaca-cult",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 222,
+      "teamId": "2020-gpm-iteso-469860-los-ponches-sin-ponche",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 223,
+      "teamId": "2020-gpm-iteso-466100-itchads",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 224,
+      "teamId": "2020-gpm-iteso-467335-tec-gdl-16",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 225,
+      "teamId": "2020-gpm-iteso-465989-segmentation-fault",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 226,
+      "teamId": "2020-gpm-iteso-465442-out-of-bounds",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 227,
+      "teamId": "2020-gpm-iteso-469761-valedores",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 228,
+      "teamId": "2020-gpm-iteso-465473-pumabytes",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 229,
+      "teamId": "2020-gpm-iteso-468466-gwalker",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 230,
+      "teamId": "2020-gpm-iteso-465594-ghost",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 231,
+      "teamId": "2020-gpm-iteso-462322-whiletrue",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 232,
+      "teamId": "2020-gpm-iteso-470303-nautilus-phi",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 233,
+      "teamId": "2020-gpm-iteso-463238-equipo-dinamita-arn",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 234,
+      "teamId": "2020-gpm-iteso-467607-is-uaz-shinobis",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 235,
+      "teamId": "2020-gpm-iteso-462327-terkos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 236,
+      "teamId": "2020-gpm-iteso-466823-01mrrobot",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 237,
+      "teamId": "2020-gpm-iteso-464303-debuggers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 238,
+      "teamId": "2020-gpm-iteso-465651-brainarys",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 239,
+      "teamId": "2020-gpm-iteso-468278-rayo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 240,
+      "teamId": "2020-gpm-iteso-454974-ada-team",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 241,
+      "teamId": "2020-gpm-iteso-469094-akatsuki",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 242,
+      "teamId": "2020-gpm-iteso-461806-steminists",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 243,
+      "teamId": "2020-gpm-iteso-464953-interconexion-de-redes",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 244,
+      "teamId": "2020-gpm-iteso-464692-screenprint",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 245,
+      "teamId": "2020-gpm-iteso-469948-camisas-rojas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 246,
+      "teamId": "2020-gpm-iteso-465282-script-cuantico",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 247,
+      "teamId": "2020-gpm-iteso-464938-string-nameteam",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 248,
+      "teamId": "2020-gpm-iteso-465617-aguilas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 249,
+      "teamId": "2020-gpm-iteso-469958-outatime",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 250,
+      "teamId": "2020-gpm-iteso-463913-minute-men",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 251,
+      "teamId": "2020-gpm-iteso-465217-schottkies",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 252,
+      "teamId": "2020-gpm-iteso-471088-team-name-rookies",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 253,
+      "teamId": "2020-gpm-iteso-469957-world-execute-me",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 254,
+      "teamId": "2020-gpm-iteso-468268-faze-pepe",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 255,
+      "teamId": "2020-gpm-iteso-465759-troubleshooters-itver-tsi",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 256,
+      "teamId": "2020-gpm-iteso-464185-tinthas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 257,
+      "teamId": "2020-gpm-iteso-468671-rocket-code",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 258,
+      "teamId": "2020-gpm-iteso-465161-tgang",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 259,
+      "teamId": "2020-gpm-iteso-468158-pitones",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 260,
+      "teamId": "2020-gpm-iteso-471357-the-last",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 261,
+      "teamId": "2020-gpm-iteso-465650-los-coyotes",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 262,
+      "teamId": "2020-gpm-iteso-469881-salsa5",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 263,
+      "teamId": "2020-gpm-iteso-469782-lsd",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 264,
+      "teamId": "2020-gpm-iteso-465727-code-gang",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 265,
+      "teamId": "2020-gpm-iteso-469886-flama",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 266,
+      "teamId": "2020-gpm-iteso-469772-new-era",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 267,
+      "teamId": "2020-gpm-iteso-479062-legotaco",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 268,
+      "teamId": "2020-gpm-iteso-477346-acm-amo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 269,
+      "teamId": "2020-gpm-iteso-471803-arf",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 270,
+      "teamId": "2020-gpm-iteso-465504-jonathan-inc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 271,
+      "teamId": "2020-gpm-iteso-455560-apostol-cahazu",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 272,
+      "teamId": "2020-gpm-iteso-471919-evilmachine",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 273,
+      "teamId": "2020-gpm-iteso-468811-visual-dim",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 274,
+      "teamId": "2020-gpm-iteso-471555-ckt",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 275,
+      "teamId": "2020-gpm-iteso-455561-traficantes-de-s",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 276,
+      "teamId": "2020-gpm-iteso-471889-goribytes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 277,
+      "teamId": "2020-gpm-iteso-465992-codebreakers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 278,
+      "teamId": "2020-gpm-iteso-469777-team-emperador",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 279,
+      "teamId": "2020-gpm-iteso-463642-los-panas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 280,
+      "teamId": "2020-gpm-iteso-465817-sinonymous",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 281,
+      "teamId": "2020-gpm-iteso-465717-cly",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 282,
+      "teamId": "2020-gpm-iteso-466651-promised-rinascimento",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 283,
+      "teamId": "2020-gpm-iteso-462376-equipo-dinamita-doble",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 284,
+      "teamId": "2020-gpm-iteso-468218-error-404",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 285,
+      "teamId": "2020-gpm-iteso-468665-tucanes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 286,
+      "teamId": "2020-gpm-iteso-471058-urania-fcfm",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 287,
+      "teamId": "2020-gpm-iteso-464693-michitos-tristes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 288,
+      "teamId": "2020-gpm-iteso-454983-quetzalcoatl",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 289,
+      "teamId": "2020-gpm-iteso-463685-timeforce",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 290,
+      "teamId": "2020-gpm-iteso-465226-luigi-vampa",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 291,
+      "teamId": "2020-gpm-iteso-471644-deadly-strike-raccoons",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 292,
+      "teamId": "2020-gpm-iteso-469875-hellogoodbyte",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 293,
+      "teamId": "2020-gpm-iteso-471662-game-of-codes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 294,
+      "teamId": "2020-gpm-iteso-462143-2-jaibas-1-cocodrilo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 295,
+      "teamId": "2020-gpm-iteso-479110-equipoumt2",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 296,
+      "teamId": "2020-gpm-iteso-471472-gavilanes-itcg",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 297,
+      "teamId": "2020-gpm-iteso-471035-binaryfox",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 298,
+      "teamId": "2020-gpm-iteso-469813-null",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 299,
+      "teamId": "2020-gpm-iteso-477401-ulsaoax-jaguar-cosmico",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 300,
+      "teamId": "2020-gpm-iteso-465616-duck-bang",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 301,
+      "teamId": "2020-gpm-iteso-465180-the-powerpuff-girls",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 302,
+      "teamId": "2020-gpm-iteso-471848-tec-gdl-15",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 303,
+      "teamId": "2020-gpm-iteso-471807-dexter",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 304,
+      "teamId": "2020-gpm-iteso-471614-bro",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 305,
+      "teamId": "2020-gpm-iteso-465192-code-compilers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 306,
+      "teamId": "2020-gpm-iteso-463930-3xploit3rs",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 307,
+      "teamId": "2020-gpm-iteso-465302-chicharron-rar",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 308,
+      "teamId": "2020-gpm-iteso-466213-tec-gdl-2",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 309,
+      "teamId": "2020-gpm-iteso-469900-the-bestest",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 310,
+      "teamId": "2020-gpm-iteso-466747-1helloworld",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 311,
+      "teamId": "2020-gpm-iteso-465724-megalomaniacos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 312,
+      "teamId": "2020-gpm-iteso-459746-recursivos-itesco",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 313,
+      "teamId": "2020-gpm-iteso-465754-los-mm",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 314,
+      "teamId": "2020-gpm-iteso-465799-bam",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 315,
+      "teamId": "2020-gpm-iteso-468417-los-chavis",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 316,
+      "teamId": "2020-gpm-iteso-468463-titan",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 317,
+      "teamId": "2020-gpm-iteso-465218-ases",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 318,
+      "teamId": "2020-gpm-iteso-471612-duo-picafresa",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 319,
+      "teamId": "2020-gpm-iteso-468832-oldcodeagain",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 320,
+      "teamId": "2020-gpm-iteso-455555-adictos-a-las-lineas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 321,
+      "teamId": "2020-gpm-iteso-463517-spooky-code",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 322,
+      "teamId": "2020-gpm-iteso-462375-amirus",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 323,
+      "teamId": "2020-gpm-iteso-471566-itsm-impact",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 324,
+      "teamId": "2020-gpm-iteso-467786-blue",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 325,
+      "teamId": "2020-gpm-iteso-465134-visual-strong",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 326,
+      "teamId": "2020-gpm-iteso-477400-ulsaoax-gatitos-tristes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 327,
+      "teamId": "2020-gpm-iteso-469810-vacilon",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 328,
+      "teamId": "2020-gpm-iteso-479279-syntaxerror",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 329,
+      "teamId": "2020-gpm-iteso-462244-equipo-dinamita",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 330,
+      "teamId": "2020-gpm-iteso-469876-felixlink",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 331,
+      "teamId": "2020-gpm-iteso-468219-la-dinastia-nortena",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 332,
+      "teamId": "2020-gpm-iteso-465649-tech-squadron",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 333,
+      "teamId": "2020-gpm-iteso-470013-roosters",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 334,
+      "teamId": "2020-gpm-iteso-464606-peripateticos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 335,
+      "teamId": "2020-gpm-iteso-467329-tec-gdl-14",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 336,
+      "teamId": "2020-gpm-iteso-463536-codebuds",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 337,
+      "teamId": "2020-gpm-iteso-471026-software-libre",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 338,
+      "teamId": "2020-gpm-iteso-465168-rem",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 339,
+      "teamId": "2020-gpm-iteso-467611-ieee-cs-patzware",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 340,
+      "teamId": "2020-gpm-iteso-469789-awa-de-uwu-sabor-owo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 341,
+      "teamId": "2020-gpm-iteso-462328-kemonitos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 342,
+      "teamId": "2020-gpm-iteso-471605-vadhir",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 343,
+      "teamId": "2020-gpm-iteso-463051-los-solovinos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 344,
+      "teamId": "2020-gpm-iteso-469831-the-best-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 345,
+      "teamId": "2020-gpm-iteso-463484-w1ldc4tssr-1",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 346,
+      "teamId": "2020-gpm-iteso-465602-iced",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 347,
+      "teamId": "2020-gpm-iteso-471022-alpha",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 348,
+      "teamId": "2020-gpm-iteso-468216-code-not-found",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 349,
+      "teamId": "2020-gpm-iteso-465798-akatsuki",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 350,
+      "teamId": "2020-gpm-iteso-479304-las-3-inges",
+      "score": 1,
+      "qualified": null
+    }
+  ],
+  "source": "https://acm.iteso.mx/share/gp2020_resultados_acumulados_11.pdf",
+  "scoreUnit": "Puntos",
+  "snapshot": "unconfirmed",
+  "snapshotLabel": "Acumulado publicado en el documento oficial de 2020",
+  "publicationNotes": [
+    "Se conserva el acumulado publicado por ITESO; no se recalculan puntajes ni se infiere quién clasificó."
+  ]
+}

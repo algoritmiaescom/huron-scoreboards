@@ -20,6 +20,7 @@ import { SchoolLogo } from '@/features/scoreboards/components/SchoolLogo';
 import { SchoolParticipationChart } from '@/features/scoreboards/components/SchoolParticipationChart';
 import { SchoolTrendChart } from '@/features/scoreboards/components/SchoolTrendChart';
 import { TeamIdentity } from '@/features/scoreboards/components/TeamIdentity';
+import { comparePlaces, formatPlace } from '@/features/scoreboards/model/ranking';
 import { selectSchoolHistoryPresentation } from '@/features/scoreboards/model/schoolHistory';
 
 import type { ScoreboardsArchive } from '@/features/scoreboards';
@@ -243,7 +244,7 @@ export const SchoolHistoryPage = () => {
   );
   const podiums = history.podiums.toSorted(
     (a, b) =>
-      a.row.place - b.row.place ||
+      comparePlaces(a.row.place, b.row.place) ||
       b.contest.seasonYear - a.contest.seasonYear ||
       (b.contest.date ?? '').localeCompare(a.contest.date ?? ''),
   );
@@ -406,8 +407,8 @@ export const SchoolHistoryPage = () => {
                     </Typography>
                     <Typography color="text.secondary">
                       {season.teams} equipos · {season.contests} concursos · {season.results}{' '}
-                      participaciones · {season.podiums.length} podios · mejor puesto #
-                      {season.bestPlace}
+                      participaciones · {season.podiums.length} podios · mejor puesto{' '}
+                      {formatPlace(season.bestPlace)}
                     </Typography>
                   </SeasonCard>
                 ))}

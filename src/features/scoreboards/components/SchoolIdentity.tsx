@@ -24,7 +24,7 @@ export const SchoolIdentity = ({
   stretchLink = false,
   heading,
 }: {
-  school: School;
+  school: School | null;
   href?: string;
   /** Stretch the link over the enclosing card so the whole card is clickable. */
   stretchLink?: boolean;
@@ -32,10 +32,11 @@ export const SchoolIdentity = ({
 }) => {
   const [failedLogo, setFailedLogo] = useState<string>();
   const Anchor = stretchLink ? CardLink : TextLink;
-  const name = href ? <Anchor to={href}>{school.shortName}</Anchor> : school.shortName;
+  const shortName = school?.shortName ?? 'Institución no identificada';
+  const name = href && school ? <Anchor to={href}>{shortName}</Anchor> : shortName;
   return (
     <Identity>
-      <SchoolLogo school={school} onUnavailable={setFailedLogo} />
+      {school !== null && <SchoolLogo school={school} onUnavailable={setFailedLogo} />}
       <IdentityText>
         <Typography
           component={heading ?? 'p'}
@@ -43,18 +44,22 @@ export const SchoolIdentity = ({
         >
           {name}
         </Typography>
-        <Typography variant="caption" color="text.secondary">
-          {school.officialName}
-        </Typography>
-        {(school.city !== undefined || school.state !== undefined) && (
-          <Typography variant="caption" component="p" color="text.secondary">
-            {[school.city, school.state].filter((part) => part !== undefined).join(', ')}
-          </Typography>
-        )}
-        {school.logo !== undefined && failedLogo === school.logo && (
-          <Typography variant="caption" component="p" color="text.secondary">
-            Logo no disponible
-          </Typography>
+        {school !== null && (
+          <>
+            <Typography variant="caption" color="text.secondary">
+              {school.officialName}
+            </Typography>
+            {(school.city !== undefined || school.state !== undefined) && (
+              <Typography variant="caption" component="p" color="text.secondary">
+                {[school.city, school.state].filter((part) => part !== undefined).join(', ')}
+              </Typography>
+            )}
+            {school.logo !== undefined && failedLogo === school.logo && (
+              <Typography variant="caption" component="p" color="text.secondary">
+                Logo no disponible
+              </Typography>
+            )}
+          </>
         )}
       </IdentityText>
     </Identity>

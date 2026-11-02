@@ -5,6 +5,20 @@ import { archive, contest, standing } from '@/test/fixtures/archive';
 import { filterSchoolDirectory, selectSchoolDirectory } from './schoolDirectory';
 
 describe('school directory summaries', () => {
+  it('includes unranked participation without counting it as a best place', () => {
+    const source = {
+      ...archive,
+      contests: [
+        { ...contest, standings: contest.standings.map((row) => ({ ...row, place: null })) },
+      ],
+    };
+    expect(selectSchoolDirectory(source).find(({ school }) => school.id === 'unit')).toMatchObject({
+      results: 2,
+      contests: 1,
+      bestPlace: undefined,
+    });
+  });
+
   it('aggregates institution descendants once and keeps units exact', () => {
     const summaries = selectSchoolDirectory(archive);
     expect(summaries.find(({ school }) => school.id === 'uni')).toMatchObject({

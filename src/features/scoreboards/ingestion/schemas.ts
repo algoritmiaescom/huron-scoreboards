@@ -413,6 +413,7 @@ const seasonStandingCandidateRowSchema = z.object({
   place: z.number().int().positive(),
   sourceTeamId: z.string().min(1).nullable(),
   teamName: z.string().min(1),
+  schoolName: z.string().min(1).nullable().default(null),
   score: z.number(),
   scoreText: z.string().min(1),
   scoreUnit: z.string().min(1),

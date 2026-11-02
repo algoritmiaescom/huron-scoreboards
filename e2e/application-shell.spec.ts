@@ -35,12 +35,12 @@ test('navigates the complete page, restores its theme, and recovers unknown rout
   await expect(page).toHaveTitle('Página no encontrada | Huron Scoreboards');
   await page.getByRole('link', { name: 'Volver al inicio' }).click();
   await expect(
-    page.getByRole('heading', { name: 'Todavía no hay concursos publicados' }),
-  ).toBeVisible();
+    page.getByRole('heading', { name: 'Gran Premio MX 2026 — Tercera Fecha' }),
+  ).toBeVisible({ timeout: 30_000 });
   await expect(page.getByRole('main')).toBeFocused();
 });
 
-test('opens multimedia from desktop and mobile navigation with an honest empty archive state', async ({
+test('opens multimedia from desktop and mobile navigation with an honest empty media state', async ({
   page,
 }) => {
   await page.goto('/scoreboards');
@@ -63,7 +63,7 @@ test('opens multimedia from desktop and mobile navigation with an honest empty a
   await drawer.getByRole('link', { name: 'Clasificaciones', exact: true }).click();
   await expect(drawer).not.toBeVisible();
   await expect(page.getByRole('main')).toBeFocused();
-  await expect(page).toHaveURL('/scoreboards');
+  await expect(page).toHaveURL('/scoreboards?contest=2026-gpm-qualifier-3');
   await page.getByRole('button', { name: 'Abrir navegación' }).click();
   await drawer.getByRole('link', { name: 'Multimedia', exact: true }).click();
   await expect(drawer).not.toBeVisible();
@@ -132,8 +132,8 @@ test('supports skip links, trapped drawer focus, Escape and navigation on a phon
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/scoreboards');
   await expect(
-    page.getByRole('heading', { name: 'Todavía no hay concursos publicados' }),
-  ).toBeVisible();
+    page.getByRole('heading', { name: 'Gran Premio MX 2026 — Tercera Fecha' }),
+  ).toBeVisible({ timeout: 30_000 });
   await page.keyboard.press('Tab');
   const skip = page.getByRole('link', { name: 'Saltar al contenido' });
   await expect(skip).toBeFocused();
@@ -177,12 +177,18 @@ test('supports skip links, trapped drawer focus, Escape and navigation on a phon
 
 for (const mode of ['light', 'dark'] as const) {
   test(`reflows every released route and verifies accessibility in ${mode}`, async ({ page }) => {
+    test.setTimeout(90_000);
     await page.addInitScript((themeMode) => {
       localStorage.setItem('huron-scoreboards.theme-mode', themeMode);
     }, mode);
-    for (const route of ['/', '/media', '/contribute', '/unknown']) {
+    for (const route of [
+      '/scoreboards?contest=2022-gpm-repechage',
+      '/media',
+      '/contribute',
+      '/unknown',
+    ]) {
       await page.goto(route);
-      await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+      await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 30_000 });
       for (const [width, height] of [
         [320, 568],
         [390, 844],

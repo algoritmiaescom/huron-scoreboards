@@ -184,6 +184,8 @@ export const materializeProposal = ({
             qualified: row.qualified,
           })),
           source: candidate.finalUrl,
+          scoreUnit: candidate.scoreUnit,
+          snapshot: candidate.snapshot,
         });
     report.files.push({ path: target, candidateId: candidate.candidateId, record });
     report.warnings.push(...candidate.warnings);

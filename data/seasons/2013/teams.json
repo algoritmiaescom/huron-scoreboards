@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "2013-mexico-finals-global-row-0001-hurones-pwneadores",
+    "name": "Hurones Pwneadores",
+    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0002-peludos",
+    "name": "Peludos",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0003-los-chidory",
+    "name": "Los Chidory",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0004-locos",
+    "name": "Locos",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0005-pu",
+    "name": "PU++",
+    "schoolId": "unam",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0006-kernel-paaaaanic",
+    "name": "Kernel Paaaaanic!",
+    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0007-en-la-line",
+    "name": "En la line",
+    "schoolId": "uanl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0008-itsur-mixlang-coders",
+    "name": "ITSUR-MIXLANG CODERS",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0009-mictlan-guardians",
+    "name": "Mictlan Guardians",
+    "schoolId": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0010-burst-programming",
+    "name": "Burst Programming",
+    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0011-nautilus",
+    "name": "Nautilus",
+    "schoolId": "source-school-3999b6144a49",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0012-hackermafia",
+    "name": "HackerMafia",
+    "schoolId": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0013-cembitshifters",
+    "name": "CEMbitshifters",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0014-fismateros",
+    "name": "Fismateros",
+    "schoolId": "source-school-df455a712d91",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0015-astrum",
+    "name": "Astrum",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0016-epsilon",
+    "name": "Épsilon",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0017-tecmorelia2",
+    "name": "TecMorelia2",
+    "schoolId": "source-school-fd73f8e00035",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0018-leviathan",
+    "name": "Leviathan",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0019-modelo-entidad-relacion",
+    "name": "Modelo entidad-relación",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0020-l-kipo-reinforced",
+    "name": "L kipo reinforced",
+    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0021-algoritmo",
+    "name": "Algoritmo",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0022-lerak-team",
+    "name": "Lerak Team",
+    "schoolId": "source-school-df455a712d91",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0023-dirtybit",
+    "name": "dirtyBit",
+    "schoolId": "source-school-3d66aae6e433",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0024-los-ases",
+    "name": "Los Ases",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0025-uam-azcapotzalco-xxvi",
+    "name": "UAM Azcapotzalco XXVI",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0026-dudes",
+    "name": "Dudes",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0027-the-roberts",
+    "name": "The Roberts",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0028-automatoes",
+    "name": "Automatoes",
+    "schoolId": "source-label-iteso-university-f66d759f69",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0029-tsm",
+    "name": "TSM",
+    "schoolId": "uanl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0030-logic-bytes",
+    "name": "Logic Bytes",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0031-yhwh",
+    "name": "YHWH",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0032-floyd",
+    "name": "Floyd",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0033-los-forloops",
+    "name": "Los Forloops",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0034-developers",
+    "name": "Developers",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0035-krieger",
+    "name": "Krieger",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0036-codigueros",
+    "name": "CodiguerOS",
+    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0037-dragones",
+    "name": "Dragones",
+    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0038-rockrola",
+    "name": "RockRola",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0039-dynamic",
+    "name": "Dynamic",
+    "schoolId": "tecnm-culiacan",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0040-greedies",
+    "name": "Greedies",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0041-los-hijos-de-piza",
+    "name": "Los hijos de Piza",
+    "schoolId": "source-label-iteso-university-f66d759f69",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0042-java-knights",
+    "name": "java knights",
+    "schoolId": "source-school-48649350a9b2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0043-rule34",
+    "name": "Rule34",
+    "schoolId": "itnl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0044-trinomio",
+    "name": "Trinomio",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0045-coyotes-alpha",
+    "name": "Coyotes Alpha",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-los-reyes-f14f0cc6fa",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0046-los-dones",
+    "name": "los_dones",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0047-uam-azcapotzalco-xxvii",
+    "name": "UAM Azcapotzalco XXVII",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0048-los-chimpas-felices",
+    "name": "Los Chimpas Felices",
+    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0049-itsur-2",
+    "name": "ITSUR 2",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0050-missingnos",
+    "name": "MissingNos",
+    "schoolId": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0051-tribonacci",
+    "name": "Tribonacci",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0052-linces",
+    "name": "Linces",
+    "schoolId": "itsantiago-edu-mx",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0053-lti-builders",
+    "name": "LTI-BUILDERS",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0054-los-grenuditos",
+    "name": "Los Greñuditos",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0055-los-logicos",
+    "name": "Los lógicos",
+    "schoolId": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0056-mapaches",
+    "name": "Mapaches",
+    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0057-human-compilers",
+    "name": "Human Compilers",
+    "schoolId": "source-school-b9c2c80cbc65",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0058-perrys",
+    "name": "Perrys",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0059-pm4l",
+    "name": "PM4L",
+    "schoolId": "tecnm-culiacan",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0060-el-santo-blue-demon-y-bulldog",
+    "name": "El Santo, Blue Demon y Bulldog",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0061-javadabadoo",
+    "name": "JavaDabaDoo",
+    "schoolId": "it-ciudad-madero",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0062-overflow",
+    "name": "Overflow",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0063-uam-azcapotzalco-xxviii",
+    "name": "UAM Azcapotzalco XXVIII",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0064-univa2",
+    "name": "Univa2",
+    "schoolId": "source-school-bfbf9a1e6d0a",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0065-error-418",
+    "name": "Error 418",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0066-el-equipo-rocket",
+    "name": "El Equipo Rocket",
+    "schoolId": "it-veracruz",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0067-kawabonga",
+    "name": "Kawabonga",
+    "schoolId": "source-school-2a720e035241",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0068-string-tokenizer",
+    "name": "String Tokenizer",
+    "schoolId": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0069-thewhileloops",
+    "name": "TheWhileLoops",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0070-acm1pt",
+    "name": "ACM1PT",
+    "schoolId": "it-veracruz",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0071-dioses-piratas",
+    "name": "Dioses piratas",
+    "schoolId": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0072-code-hunters",
+    "name": "Code Hunters",
+    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0073-fatal-error",
+    "name": "Fatal Error",
+    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0074-tecmorelia1",
+    "name": "TecMorelia1",
+    "schoolId": "source-school-fd73f8e00035",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0075-prototype",
+    "name": "Prototype",
+    "schoolId": "itnl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0076-los-apostoles",
+    "name": "Los Apóstoles",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-patzcuaro-17c2feb4da",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0077-sparky",
+    "name": "Sparky",
+    "schoolId": "uady",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0078-aio",
+    "name": "AIO",
+    "schoolId": "source-school-64985288ecac",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0079-am-jai",
+    "name": "AM JAI",
+    "schoolId": "source-label-universidad-autonoma-de-tlaxcala-d9b6e9ecf4",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0080-monkey-error",
+    "name": "Monkey Error",
+    "schoolId": "source-school-81261a73feaa",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0081-utmadre",
+    "name": "UTMadre",
+    "schoolId": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0082-multicore",
+    "name": "MultiCore",
+    "schoolId": "buap",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0083-turingers",
+    "name": "Turingers",
+    "schoolId": "source-school-1e1b60a69bf2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0084-tpython",
+    "name": "++TPython",
+    "schoolId": "source-school-e17f76fff302",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0085-coyotes-betha",
+    "name": "Coyotes Betha",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-los-reyes-f14f0cc6fa",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0086-los-viajeros-del-itsp",
+    "name": "Los viajeros del ITSP",
+    "schoolId": "source-school-81c9c53b50d4",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0087-ubicuo",
+    "name": "Ubicuo",
+    "schoolId": "uat",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0088-hashtable",
+    "name": "HashTable",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-calkini-0181dc3c42",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0089-programmers-of-the-death",
+    "name": "Programmers of the Death",
+    "schoolId": "itnl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0090-hyvent",
+    "name": "HyVent",
+    "schoolId": "it-ciudad-madero",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0091-uam-cuajimalpa-2013",
+    "name": "UAM CUAJIMALPA 2013",
+    "schoolId": "source-school-4d325234238f",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0092-kebabs",
+    "name": "Kebabs",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0093-encoded",
+    "name": "Encoded",
+    "schoolId": "source-school-94c62f520f58",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0094-overrideitslv",
+    "name": "OverrideITSLV",
+    "schoolId": "source-school-10b2f3d59c0d",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0095-noobs",
+    "name": "Noobs",
+    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0096-joyaja",
+    "name": "JoYaJa",
+    "schoolId": "it-saltillo",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0097-freecode",
+    "name": "FreeCode",
+    "schoolId": "itsmante",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0098-ncodersqro",
+    "name": "nCodersQro",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0099-sistecmas",
+    "name": "Sistecmas",
+    "schoolId": "it-saltillo",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0100-skynett",
+    "name": "Skynett",
+    "schoolId": "itsmante",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0101-los-paralelos",
+    "name": "Los Paralelos",
+    "schoolId": "source-school-11997ef012d8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0102-shark",
+    "name": "SHARK",
+    "schoolId": "source-school-f05d9b78be9b",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0103-nemesis",
+    "name": "Nemesis",
+    "schoolId": "its-poza-rica",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0104-spartans",
+    "name": "Spartans",
+    "schoolId": "source-school-53058cac2b10",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0105-why-not",
+    "name": "why_not?",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-ciudad-hidalgo-ea3e5aedd8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0106-itst",
+    "name": "ITST-",
+    "schoolId": "source-school-5a0ef5d09a6b",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0107-somosleyenda",
+    "name": "SomosLeyenda",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-calkini-0181dc3c42",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0108-codebreakers",
+    "name": "Codebreakers",
+    "schoolId": "it-saltillo",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0109-upalt-soldiers",
+    "name": "Upalt Soldiers",
+    "schoolId": "upalt",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0110-error-404-programmers-nf",
+    "name": "Error 404 Programmers NF",
+    "schoolId": "source-label-instituto-tecnologico-de-lazaro-cardenas-9aa9278bcb",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0111-uvaq-2",
+    "name": "UVAQ 2",
+    "schoolId": "source-school-d04db20e2326",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0112-the-avengers",
+    "name": "The Avengers",
+    "schoolId": "source-school-f473268edfb5",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0113-acm1pt",
+    "name": "ACM1PT.",
+    "schoolId": "source-label-universidad-autonoma-de-tlaxcala-d9b6e9ecf4",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0114-worng-answer",
+    "name": "worng answer",
+    "schoolId": "source-school-81261a73feaa",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0115-tec-laguna-1",
+    "name": "Tec Laguna 1",
+    "schoolId": "itl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0116-digi-code",
+    "name": "Digi Code",
+    "schoolId": "itnl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0117-kappa",
+    "name": "kappa",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-patzcuaro-17c2feb4da",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0118-mugiwara",
+    "name": "Mugiwara",
+    "schoolId": "source-school-48649350a9b2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0119-get-wrappers",
+    "name": "get_wrappers",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-ciudad-hidalgo-ea3e5aedd8",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0120-upa",
+    "name": "UPA",
+    "schoolId": "source-school-7c8bf8374a91",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0121-polybius",
+    "name": "Polybius",
+    "schoolId": "uanl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0122-crux",
+    "name": "CRUX",
+    "schoolId": "source-school-ee5be640fc26",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0123-errordesintaxis",
+    "name": "#ErrorDeSintaxis",
+    "schoolId": "source-school-e92490c822fa",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0124-deltaumg",
+    "name": "DeltaUMG",
+    "schoolId": "marista-guadalajara",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0125-itst",
+    "name": "ITST",
+    "schoolId": "source-school-5a0ef5d09a6b",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0126-galvantulas",
+    "name": "Galvantulas",
+    "schoolId": "source-school-a688106bf88b",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0127-upv1",
+    "name": "UPV1",
+    "schoolId": "source-school-38e13c96eec3",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0128-gama",
+    "name": "GAMA",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-los-reyes-f14f0cc6fa",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0129-novatos",
+    "name": "Novatos",
+    "schoolId": "source-school-53058cac2b10",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0130-full-time-programmers",
+    "name": "Full-Time Programmers",
+    "schoolId": "itsmante",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0131-los-bastardos",
+    "name": "los bastardos",
+    "schoolId": "source-school-48649350a9b2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0132-itesz03",
+    "name": "ITESZ03",
+    "schoolId": "source-school-81261a73feaa",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0133-the-three-amigos",
+    "name": "The three amigos",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0134-uvaq-1",
+    "name": "UVAQ 1",
+    "schoolId": "source-school-d04db20e2326",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0135-uptgold",
+    "name": "UPTGold",
+    "schoolId": "source-school-b4299c29a8da",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0136-los-jack-s",
+    "name": "Los Jack's",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-patzcuaro-17c2feb4da",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0137-colibries",
+    "name": "Colibries",
+    "schoolId": "source-school-5a0ef5d09a6b",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0138-bot",
+    "name": "Bot",
+    "schoolId": "it-ciudad-madero",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0139-java",
+    "name": "!Java",
+    "schoolId": "itsmante",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0140-error-404",
+    "name": "Error 404",
+    "schoolId": "its-poza-rica",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0141-teamwork",
+    "name": "TeamWork",
+    "schoolId": "uat",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0142-insyst",
+    "name": "InSyst",
+    "schoolId": "uat",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0143-tec-laguna-2",
+    "name": "Tec Laguna 2",
+    "schoolId": "itl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0144-3-cell",
+    "name": "3 Cell",
+    "schoolId": "source-school-53058cac2b10",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0145-null",
+    "name": "NULL",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0146-los-comelonches",
+    "name": "Los comelonches",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-zapopan-456a899f35",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0147-plugins",
+    "name": "Plugins",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0148-bugkillers",
+    "name": "BugKillers",
+    "schoolId": "source-school-1e1b60a69bf2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0149-cpp",
+    "name": "CPP",
+    "schoolId": "source-school-2a720e035241",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0150-404-notfound",
+    "name": "404-NotFound",
+    "schoolId": "source-label-universidad-autonoma-de-tlaxcala-d9b6e9ecf4",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0151-lti-uaandroides",
+    "name": "LTI-UAANDROIDES",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0152-kaus",
+    "name": "Kaus",
+    "schoolId": "source-school-ee5be640fc26",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0153-death-or-alive",
+    "name": "Death Or Alive",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0154-recyclers-coders",
+    "name": "Recyclers Coders",
+    "schoolId": "source-label-instituto-tecnologico-de-lazaro-cardenas-9aa9278bcb",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0155-lazy-boys",
+    "name": "Lazy Boys",
+    "schoolId": "source-school-53058cac2b10",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0156-upv2",
+    "name": "UPV2",
+    "schoolId": "source-school-38e13c96eec3",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0157-anonymous",
+    "name": "Anonymous",
+    "schoolId": "it-ciudad-madero",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0158-fmat-coders",
+    "name": "FMAT Coders",
+    "schoolId": "uady",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0159-hardcoders",
+    "name": "Hardcoders",
+    "schoolId": "uanl",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0160-kuinikes",
+    "name": "KUINIKES",
+    "schoolId": "source-label-instituto-tecnologico-de-lazaro-cardenas-9aa9278bcb",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0161-lyon-programing",
+    "name": "Lyon Programing",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0162-kl",
+    "name": "KL",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0163-pok",
+    "name": "POK",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0164-burros",
+    "name": "Burros",
+    "schoolId": "it-saltillo",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0165-ibero-leon",
+    "name": "ibero leon",
+    "schoolId": "source-school-5a48786dc0c1",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0166-polaris",
+    "name": "POLARIS",
+    "schoolId": "source-school-ee5be640fc26",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0167-priviets",
+    "name": "Priviets",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-zapopan-456a899f35",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0168-upv3",
+    "name": "UPV3",
+    "schoolId": "source-school-38e13c96eec3",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0169-los-tordos",
+    "name": "Los tordos",
+    "schoolId": "source-school-570cf4e18f36",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0170-itsu01",
+    "name": "itsu01",
+    "schoolId": "source-school-42fdce5c49e5",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0171-system-gc",
+    "name": "System.GC",
+    "schoolId": "uat",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0172-object",
+    "name": "object",
+    "schoolId": "it-ciudad-madero",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0173-minions",
+    "name": "minions",
+    "schoolId": "source-school-48649350a9b2",
+    "seasonYear": 2013
+  },
+  {
+    "id": "2013-mexico-finals-global-row-0174-what-more",
+    "name": "What_More?",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-ciudad-hidalgo-ea3e5aedd8",
+    "seasonYear": 2013
+  }
+]

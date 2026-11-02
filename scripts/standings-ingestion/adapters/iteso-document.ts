@@ -13,6 +13,7 @@ export interface ITESOExtractedPage {
 export interface ITESOAccumulatedRow {
   place: number;
   teamName: string;
+  schoolName: string | null;
   score: number;
   scoreText: string;
   scoreUnit: string;
@@ -45,6 +46,7 @@ export type ITESOAccumulatedExtraction =
 interface TableColumns {
   place: number;
   team: number;
+  school: number | null;
   score: number;
   qualification: number | null;
   scoreUnit: string;
@@ -68,10 +70,27 @@ const normalizedCell = (value: string): string =>
 const findColumn = (cells: readonly string[], pattern: RegExp): number =>
   cells.findIndex((cell) => pattern.test(normalizedCell(cell)));
 
-const columnsFromHeader = (row: ITESOExtractedTableRow): TableColumns | undefined => {
-  const place = findColumn(row.cells, /^(?:#|lugar|posicion|puesto|place|rank)$/);
-  const team = findColumn(row.cells, /^(?:equipo|team|school|universidad|institucion)$/);
-  const score = findColumn(row.cells, /^(?:puntos?|points?|puntaje|score|acumulado)$/);
+const columnsFromHeader = (
+  row: ITESOExtractedTableRow,
+  followingRow?: ITESOExtractedTableRow,
+): TableColumns | undefined => {
+  const place = findColumn(row.cells, /^(?:#|no\.?|lugar|posicion|puesto|place|rank)$/);
+  const explicitTeam = findColumn(row.cells, /^(?:equipo|team)$/);
+  const team =
+    explicitTeam < 0 ? findColumn(row.cells, /^(?:school|universidad|institucion)$/) : explicitTeam;
+  const school = findColumn(
+    row.cells,
+    /^(?:institucion|instiucion|institution|school|centro universitario)$/,
+  );
+  const scorePattern = /^(?:puntos?|points?|puntaje|score|acumulado)$/;
+  const scoreHeader =
+    findColumn(row.cells, scorePattern) < 0 &&
+    followingRow !== undefined &&
+    (followingRow.cells[place]?.trim() ?? '').length === 0 &&
+    (followingRow.cells[team]?.trim() ?? '').length === 0
+      ? followingRow
+      : row;
+  const score = findColumn(scoreHeader.cells, scorePattern);
   const qualification = findColumn(
     row.cells,
     /^(?:clasifica(?:cion)?|califica(?:cion)?|qualified|qualification|avanza)$/,
@@ -82,11 +101,30 @@ const columnsFromHeader = (row: ITESOExtractedTableRow): TableColumns | undefine
   return {
     place,
     team,
+    school: school < 0 || school === team ? null : school,
     score,
     qualification: qualification < 0 ? null : qualification,
-    scoreUnit: row.cells[score].trim(),
+    scoreUnit: scoreHeader.cells[score].trim(),
     fingerprint: row.cells.map(normalizedCell).join('|'),
   };
+};
+
+const isHeaderContinuationRow = (row: ITESOExtractedTableRow, columns: TableColumns): boolean => {
+  if (
+    (row.cells[columns.place]?.trim() ?? '').length > 0 ||
+    (row.cells[columns.team]?.trim() ?? '').length > 0
+  ) {
+    return false;
+  }
+  const values = row.cells.map(normalizedCell).filter((cell) => cell.length > 0);
+  return (
+    values.length > 0 &&
+    values.every(
+      (cell) =>
+        /^(?:puntos?|problemas|tiempo|acumulado)$/.test(cell) ||
+        /^(?:\d{1,2} de [a-z]+(?: de \d{4})?|[a-z]+ de \d{4})$/.test(cell),
+    )
+  );
 };
 
 const numericCell = (value: string): number | undefined => {
@@ -120,7 +158,10 @@ const qualificationValue = (value: string): boolean | null | undefined => {
 };
 
 export const classifyITESOSnapshot = (label: string): ITESOSnapshotStatus => {
-  const normalized = normalizedCell(label);
+  const normalized = normalizedCell(label).replace(
+    /\bprimera fecha\s+segunda fecha(?:\s+tercera fecha)?(?:\s+cuarta fecha)?\b/g,
+    '',
+  );
   if (/\b(?:primera|segunda|1(?:a|ra)?|2(?:a|da)?)\s+fecha\b/.test(normalized)) {
     return 'intermediate';
   }
@@ -144,7 +185,7 @@ export const parseITESOAccumulatedDocument = (
   for (const page of pages) {
     for (const table of page.tables) {
       const tableHeaders = table.rows
-        .map((row, index) => ({ columns: columnsFromHeader(row), index }))
+        .map((row, index) => ({ columns: columnsFromHeader(row, table.rows[index + 1]), index }))
         .filter(
           (entry): entry is { columns: TableColumns; index: number } => entry.columns !== undefined,
         );
@@ -155,12 +196,23 @@ export const parseITESOAccumulatedDocument = (
       const header = tableHeaders.at(0);
       let startIndex = 0;
       if (header !== undefined) {
-        activeColumns = header.columns;
+        const scoreUnit = table.rows
+          .slice(header.index + 1)
+          .map(({ cells }) => cells[header.columns.score]?.trim() ?? '')
+          .find((cell) => /^(?:puntos?|points?|puntaje|score)$/.test(normalizedCell(cell)));
+        activeColumns = {
+          ...header.columns,
+          scoreUnit:
+            normalizedCell(header.columns.scoreUnit) === 'acumulado' && scoreUnit !== undefined
+              ? scoreUnit
+              : header.columns.scoreUnit,
+        };
         headerFingerprints.add(header.columns.fingerprint);
         startIndex = header.index + 1;
       } else if (activeColumns === undefined) {
         continue;
       }
+      const columns = activeColumns;
       for (const [index, row] of table.rows.entries()) {
         if (index < startIndex || row.cells.every((cell) => cell.trim().length === 0)) {
           continue;
@@ -168,11 +220,26 @@ export const parseITESOAccumulatedDocument = (
         if (columnsFromHeader(row)?.fingerprint !== undefined) {
           continue;
         }
+        if (isHeaderContinuationRow(row, columns)) {
+          continue;
+        }
+        const annotation = row.cells[columns.team]?.trim() ?? '';
+        if (
+          /^(?:envie correo\b|en (?:primera|segunda|tercera|cuarta) fecha,)/.test(
+            normalizedCell(annotation),
+          ) &&
+          row.cells.every(
+            (cell, cellIndex) => cellIndex === columns.team || cell.trim().length === 0,
+          )
+        ) {
+          warnings.push(`Source annotation on page ${String(page.pageNumber)}: ${annotation}`);
+          continue;
+        }
         rows.push({
           pageNumber: page.pageNumber,
           method: page.method,
           row,
-          columns: activeColumns,
+          columns,
         });
       }
     }
@@ -192,6 +259,7 @@ export const parseITESOAccumulatedDocument = (
     const { row, columns } = entry;
     const placeText = row.cells[columns.place]?.trim() ?? '';
     const teamName = row.cells[columns.team]?.trim() ?? '';
+    const schoolName = columns.school === null ? null : row.cells[columns.school]?.trim() || null;
     const scoreText = row.cells[columns.score]?.trim() ?? '';
     const place = numericCell(placeText);
     const score = numericCell(scoreText);
@@ -208,7 +276,6 @@ export const parseITESOAccumulatedDocument = (
     }
     if (seenPlaces.has(place)) {
       failures.push(`place ${String(place)} appears more than once`);
-      continue;
     }
     seenPlaces.add(place);
     const qualificationText =
@@ -241,6 +308,7 @@ export const parseITESOAccumulatedDocument = (
     extractedRows.push({
       place,
       teamName,
+      schoolName,
       score,
       scoreText,
       scoreUnit: columns.scoreUnit,
@@ -251,6 +319,7 @@ export const parseITESOAccumulatedDocument = (
       evidence: [
         { field: 'place', cell: placeText },
         { field: 'teamName', cell: teamName },
+        ...(schoolName === null ? [] : [{ field: 'schoolName', cell: schoolName }]),
         { field: 'score', cell: scoreText },
         ...(qualificationText === null
           ? []

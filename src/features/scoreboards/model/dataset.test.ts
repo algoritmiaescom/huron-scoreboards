@@ -109,6 +109,29 @@ const dataset: ScoreboardsDataset = {
 };
 
 describe('validateScoreboardsReferences', () => {
+  it('accepts a team whose source did not provide a school identity', () => {
+    const result = validateScoreboardsReferences({
+      schools: [],
+      teams: [
+        {
+          file: 'data/seasons/2024/teams.json',
+          record: [
+            {
+              id: '2024-unidentified',
+              name: 'Team without a school label',
+              schoolId: null,
+              seasonYear: 2024,
+            },
+          ],
+        },
+      ],
+      contests: [],
+      seasonStandings: [],
+    });
+
+    expect(result).toEqual([]);
+  });
+
   it('reports cross-file problems', () => {
     expect(validateScoreboardsReferences(dataset)).toEqual(
       expect.arrayContaining([

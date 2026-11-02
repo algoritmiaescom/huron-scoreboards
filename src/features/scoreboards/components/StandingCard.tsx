@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 
 import { SchoolIdentity } from './SchoolIdentity';
 import { TeamIdentity } from './TeamIdentity';
+import { formatPlace } from '../model/ranking';
 
 import type { School, Team } from '../model/schemas';
 import type { CardProps } from '@mui/material';
@@ -19,9 +20,11 @@ export const StandingCard = ({
   row,
   children,
   ...props
-}: CardProps & { row: { place: number; team: Team; school: School } }) => (
+}: CardProps & { row: { place: number | null; team: Team; school: School | null } }) => (
   <Root {...props}>
-    <Typography variant="data">Puesto #{row.place}</Typography>
+    <Typography variant="data">
+      {row.place === null ? 'Puesto no publicado' : `Puesto ${formatPlace(row.place)}`}
+    </Typography>
     <TeamIdentity team={row.team} />
     <SchoolIdentity school={row.school} />
     {children}

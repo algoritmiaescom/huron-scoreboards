@@ -1,6 +1,12 @@
 import { describe, expect, it } from 'vitest';
 
-import { contestSchema, contestStageSchema, schoolSchema, standingRowSchema } from './schemas';
+import {
+  contestSchema,
+  contestStageSchema,
+  schoolSchema,
+  seasonStandingSchema,
+  standingRowSchema,
+} from './schemas';
 import { scoreStandingRow, selectFirstSolves } from './scoring';
 import { contestStageLabel } from './selectors';
 
@@ -9,6 +15,56 @@ describe('contest stages', () => {
     expect(contestStageSchema.parse('fecha-0')).toBe('fecha-0');
     expect(contestStageLabel('fecha-0')).toBe('Fecha 0');
     expect(contestStageLabel('qualifier-1')).toBe('Clasificatoria 1');
+  });
+});
+
+describe('season standing snapshots', () => {
+  const standing = {
+    seasonYear: 2019,
+    seriesId: 'gpm',
+    rows: [{ place: 1, teamId: '2019-alpha', score: 10, qualified: null }],
+    source: 'https://example.com/standing.pdf',
+  };
+
+  it('preserves dense source ties only when explicitly selected', () => {
+    const rows = [1, 2, 2, 3].map((place, index) => ({
+      place,
+      teamId: `2015-team-${String(index)}`,
+      score: 10,
+      qualified: null,
+    }));
+    expect(seasonStandingSchema.safeParse({ ...standing, rows }).success).toBe(false);
+    expect(seasonStandingSchema.safeParse({ ...standing, rows, ranking: 'dense' }).success).toBe(
+      true,
+    );
+    expect(
+      seasonStandingSchema.safeParse({
+        ...standing,
+        rows: rows.map((row, index) => ({ ...row, place: index + 2 })),
+        ranking: 'dense',
+      }).success,
+    ).toBe(false);
+  });
+
+  it('requires an explicit label for non-final snapshots and retains the score unit', () => {
+    const result = seasonStandingSchema.parse({
+      ...standing,
+      scoreUnit: 'Puntos',
+      snapshot: 'unconfirmed',
+      snapshotLabel: 'Acumulado hasta la tercera fecha',
+    });
+
+    expect(result.scoreUnit).toBe('Puntos');
+    expect(result.snapshot).toBe('unconfirmed');
+    expect(seasonStandingSchema.safeParse({ ...standing, snapshot: 'unconfirmed' }).success).toBe(
+      false,
+    );
+    expect(
+      seasonStandingSchema.safeParse({
+        ...standing,
+        snapshotLabel: 'Acumulado hasta la tercera fecha',
+      }).success,
+    ).toBe(false);
   });
 });
 
@@ -29,6 +85,30 @@ const historicalContest = {
 };
 
 describe('partial historical standings', () => {
+  it('requires a publication warning before accepting unknown or irregular published places', () => {
+    const standings = [
+      { ...historicalContest.standings[0], place: 2 },
+      { ...historicalContest.standings[0], teamId: '2000-beta', place: null },
+    ];
+    expect(contestSchema.safeParse({ ...historicalContest, standings }).success).toBe(false);
+    expect(
+      contestSchema.safeParse({ ...historicalContest, standings, ranking: 'published' }).success,
+    ).toBe(false);
+    const result = contestSchema.parse({
+      ...historicalContest,
+      standings,
+      ranking: 'published',
+      publicationNotes: ['La fuente omite puestos y deja equipos sin clasificación.'],
+    });
+    expect(result.standings.map(({ place }) => place)).toEqual([2, null]);
+    expect(
+      contestSchema.safeParse({
+        ...result,
+        standings: [...standings, standings[0]],
+      }).success,
+    ).toBe(false);
+  });
+
   it('uses a published penalty when the rule is unknown, without inventing a rule', () => {
     const contest = contestSchema.parse({
       ...historicalContest,

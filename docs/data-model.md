@@ -101,7 +101,7 @@ contests, so a contest can be published without them.
 type Team = {
   id: string;
   name: string;
-  schoolId: string;
+  schoolId: string | null;
   seasonYear: number;
   members?: TeamMember[];
 };
@@ -111,6 +111,11 @@ type TeamMember = {
   role?: 'contestant' | 'coach';
 };
 ```
+
+When a scoreboard supplies a school label but its institutional identity is unresolved, preserve
+that exact label as a separate school record; do not expand or merge it by guesswork. When the
+source supplies no school label, `schoolId` is `null`. The UI displays an explicit unidentified
+institution label, and those teams are excluded from school histories and school filters.
 
 ### Contest
 
@@ -127,6 +132,8 @@ type Contest = {
   problems: Problem[];
   standings: StandingRow[];
   source: string; // URL of the official scoreboard this data came from
+  ranking?: 'competition' | 'dense' | 'published';
+  publicationNotes?: string[];
 };
 
 type Problem = {
@@ -161,7 +168,7 @@ type PublishedTotals = {
 };
 
 type StandingRow = {
-  place: number;
+  place: number | null; // null only for explicitly documented as-published contest rankings
   teamId: string;
 } & (
   | {
@@ -187,6 +194,18 @@ field most likely to be entered inconsistently.
 Detailed and totals-only teams may coexist in one contest. `results: null` does not mean
 unattempted; no attempt count, acceptance time, or per-problem result is fabricated. A detailed
 row must still contain every known problem; a truncated array is invalid, not partial history.
+
+Default ranking remains standard competition ranking (`1, 2, 2, 4`). A source explicitly using
+dense ties (`1, 2, 2, 3`) can select `ranking: 'dense'`; places are never renumbered to fit the model.
+Irregular historical tables with gaps or unranked teams require `ranking: 'published'` and
+non-empty `publicationNotes` explaining the source limitations. Only that explicit mode permits
+`place: null`; an unknown place is never zero or an inferred last place. Numeric places remain
+positive integers, and duplicate team IDs remain invalid in every mode.
+
+Publication notes are displayed with the scoreboard. Unranked rows sort after ranked rows,
+retain their source order relative to one another, and count as participation without affecting
+podium counts or best-place statistics. Trends omit unknown values rather than drawing a point
+at zero; school history still shows the original unranked result.
 
 Published totals are source observations, not replacements for computable values. Validation
 rejects a published solved count that differs from detailed results, a count above the known
@@ -248,11 +267,25 @@ type SeasonStanding = {
     qualified: boolean | null; // explicitly unknown, not equivalent to false
   }[];
   source: string;
+  scoreUnit?: string; // source-published unit, when available
+  snapshot?: 'intermediate' | 'latest-explicit' | 'unconfirmed';
+  snapshotLabel?: string;
+  ranking?: 'competition' | 'dense' | 'published';
+  publicationNotes?: string[];
 };
 ```
 
 Unknown qualification is labelled explicitly and never highlighted as qualified or excluded.
 A qualification cut is suppressed if any row has unknown qualification.
+When the source does not explicitly identify its snapshot as final, `snapshot: 'unconfirmed'`
+requires a `snapshotLabel`; the accumulated-results view displays a warning with that label rather
+than presenting the table as a confirmed final result.
+Store the source's score unit when available so the published score is displayed without assuming
+that every season uses the same unit.
+Accumulated places remain positive integers. Dense ranking is supported explicitly for historical
+sources such as 2015; publication notes preserve duplicate-registration explanations and document
+annotations. Identical names and institutions are not proof that two source registrations are the
+same team. Preserve distinct source IDs, or separate source rows when no IDs exist.
 
 ## Media
 
@@ -408,7 +441,7 @@ Per record, within one file:
 These span files and cannot be expressed in a single schema, so the script runs them after
 parsing everything:
 
-- every `schoolId` on a team resolves to a school in `data/schools.json`;
+- every non-null `schoolId` on a team resolves to a school in `data/schools.json`;
 - every `parentInstitutionId` resolves to a school, and no cycles exist;
 - every `teamId` in a standing resolves to a team registered in that season;
 - every `contestId` and `postId` reference resolves;

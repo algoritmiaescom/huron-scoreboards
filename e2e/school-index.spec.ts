@@ -59,15 +59,18 @@ test('searches stable identities and locations with reloadable URLs and honest r
   await expect(list.getByRole('article')).toHaveCount(15);
 });
 
-test('uses only real data in production and exposes index navigation without unavailable histories', async ({
+test('uses the real archive in production and exposes current institution navigation', async ({
   page,
 }) => {
   await page.goto('/schools');
+  await expect(page.getByRole('status')).toHaveText('1174 de 1174 instituciones y unidades');
+  await expect(page.getByRole('article', { name: 'CCL', exact: true })).toBeVisible();
   await expect(
-    page.getByText('Todavía no hay instituciones publicadas en este archivo.'),
+    page
+      .getByRole('article', { name: 'ESCOM IPN', exact: true })
+      .filter({ has: page.locator('a[href="/schools/ipn-escom"]') }),
   ).toBeVisible();
-  await expect(page.getByRole('article')).toHaveCount(0);
-  await expect(page.getByRole('textbox')).toHaveCount(0);
+  await expect(page.getByRole('textbox', { name: searchLabel })).toBeVisible();
   await expect(page.getByText(/inventados/)).toHaveCount(0);
   await expect(page.getByRole('link', { name: 'Instituciones', exact: true })).toHaveAttribute(
     'aria-current',

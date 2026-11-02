@@ -1,0 +1,3872 @@
+[
+  {
+    "id": "2020-mexico-finals-final-row-0001-uh-top",
+    "name": "UH Top",
+    "schoolId": "uh",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0002-legendary-grand-newbies",
+    "name": "Legendary Grand Newbies",
+    "schoolId": "source-label-itesm-monterrey-f8acc60b08",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0003-pumomm",
+    "name": "PumOMM",
+    "schoolId": "source-label-unam-fc-f6c1204110",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0004-o-amarelo-e-impostor",
+    "name": "O amarelo é impostor",
+    "schoolId": "ufcg",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0005-namae-wa",
+    "name": "namae wa??",
+    "schoolId": "unicamp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0006-uh",
+    "name": "UH++",
+    "schoolId": "uh",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0007-uniao-fiasco",
+    "name": "União Fiasco",
+    "schoolId": "ufba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0008-alt-4f",
+    "name": "Alt 4F",
+    "schoolId": "source-label-unc-famac-58abe10a12",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0009-deitando-no-gramado",
+    "name": "deitando no gramado",
+    "schoolId": "usp-sao-carlos",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0010-prim-floyd",
+    "name": "Prim Floyd",
+    "schoolId": "source-label-uba-fcen-3f39b45ec8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0011-que-perdio",
+    "name": "Que perdio",
+    "schoolId": "umss",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0012-kondzhila",
+    "name": "KondZhiLa",
+    "schoolId": "usp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0013-que-time",
+    "name": "Que time?",
+    "schoolId": "ufrj",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0014-xerebelerebebis",
+    "name": "Xerebêlerebébis",
+    "schoolId": "ufmg",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0015-hoje-tem-ac-do-ribamar",
+    "name": "Hoje tem AC do Ribamar",
+    "schoolId": "usp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0016-fast-and-fourier",
+    "name": "Fast and Fourier",
+    "schoolId": "eafit",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0017-gta-grover-s-street-algorithms",
+    "name": "GTA: Grover's Street Algorithms",
+    "schoolId": "ufmg",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0018-monkeys",
+    "name": "Monkeys",
+    "schoolId": "source-label-ufg-inf-0a8b13106d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0019-benja-y-el-resto",
+    "name": "Benja y el resto",
+    "schoolId": "source-label-puc-e43e69c8d9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0020-beto-was-ejected",
+    "name": "Beto was ejected",
+    "schoolId": "ufpe",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0021-la-bomba-de-tenedores",
+    "name": "La bomba de tenedores",
+    "schoolId": "usb-venezuela",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0022-ultra-fast-parrot",
+    "name": ":ultra_fast_parrot:",
+    "schoolId": "ufc-quixada",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0023-wa-em-o-1",
+    "name": "WA em O(1)",
+    "schoolId": "source-label-ime-b6cebba598",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0024-noguarananofun",
+    "name": "NoGuaranaNoFun",
+    "schoolId": "source-label-uni-fiis-530d59b32b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0025-salchicherny",
+    "name": "SalChiCherny",
+    "schoolId": "source-label-uba-fcen-3f39b45ec8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0026-utp-lucas",
+    "name": "UTP - Lucas",
+    "schoolId": "source-label-utp-f8d556ed41",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0027-javamos-de-salida",
+    "name": "Javamos de salida",
+    "schoolId": "source-label-uniandes-9ef0f0f29f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0028-vae-victis",
+    "name": "vae victis",
+    "schoolId": "ufcg",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0029-anarap-1",
+    "name": "anarap+1",
+    "schoolId": "source-label-utn-santa-fe-08d9ebd4ab",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0030-the-droids-you-are-looking-for",
+    "name": "The droids you are looking for",
+    "schoolId": "unifei",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0031-estufa-en-piloto",
+    "name": "Estufa En Piloto",
+    "schoolId": "source-label-unlp-fce-89b60d3f50",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0032-inkaqueues",
+    "name": "InkaQueues",
+    "schoolId": "pucp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0033-sevieneelkino",
+    "name": "SeVieneElKino",
+    "schoolId": "pucp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0034-tsunami",
+    "name": "tsUNami",
+    "schoolId": "source-label-unal-bogota-bfe791c995",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0035-foundthebug-itsme",
+    "name": "FoundTheBug.ItsMe",
+    "schoolId": "itam",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0036-code-zwang",
+    "name": "Code Zwang",
+    "schoolId": "inatel-br",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0037-descomundial",
+    "name": "descomUNdiAL",
+    "schoolId": "source-label-unal-bogota-bfe791c995",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0038-leones-0-0-0",
+    "name": "Leones(0,0,0)",
+    "schoolId": "source-label-udg-cucei-86b0833dc5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0039-wa",
+    "name": "$wa",
+    "schoolId": "unicamp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0040-upsolving",
+    "name": "UPsolving",
+    "schoolId": "source-label-up-bonaterra-8c52d5b992",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0041-samuraisdeluwu",
+    "name": "SamuraisDelUwu",
+    "schoolId": "utec-peru",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0042-eee",
+    "name": "EEE",
+    "schoolId": "source-label-ugtodcne-5945f3f915",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0043-math-c-h-e-e-s-e",
+    "name": "Math&C.H.E.E.S.E",
+    "schoolId": "uh",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0044-dorime",
+    "name": "Dorime",
+    "schoolId": "ufs-br",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0045-ulimit",
+    "name": "ulimit",
+    "schoolId": "usb-venezuela",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0046-go-n-reloaded-equipo",
+    "name": "go(n) reloaded(equipo)",
+    "schoolId": "source-label-ufps-cucuta-77ea7e318b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0047-camara-ya-subelo-asi-w",
+    "name": "Cámara Ya Súbelo Asi w",
+    "schoolId": "ipn-escom",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0048-jugo-de-naranja",
+    "name": "Jugo De Naranja",
+    "schoolId": "source-label-uba-fcen-3f39b45ec8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0049-freestyle",
+    "name": "FreesTyle",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0050-f-team",
+    "name": "F Team",
+    "schoolId": "source-label-puc-e43e69c8d9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0051-elfita-no-te-baias-v",
+    "name": "Elfita no te baias :v",
+    "schoolId": "umsa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0052-cuscuz-com-cachaca",
+    "name": "cuscuz com cachaça",
+    "schoolId": "usp-sao-carlos",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0053-neomasters-v",
+    "name": "NEOmasters :v",
+    "schoolId": "source-label-uni-fiee-e8b41df7b5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0054-ggg",
+    "name": "GGG",
+    "schoolId": "ita-brasil",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0055-wccari-land",
+    "name": "WcCari Land",
+    "schoolId": "source-label-puc-e43e69c8d9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0056-javalimospython",
+    "name": "JavalimosPython",
+    "schoolId": "uto-bolivia",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0057-np-lucia",
+    "name": "NP-Lúcia",
+    "schoolId": "source-label-puc-rj-fe883476e1",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0058-escuela-superior-de-comedia",
+    "name": "Escuela Superior de Comedia",
+    "schoolId": "ipn-escom",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0059-home-off-c",
+    "name": "Home Off C++",
+    "schoolId": "ufu",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0060-rock-lee-casado-nao-vai-pra-pago",
+    "name": "Rock Lee Casado Não Vai + Pra Pagode",
+    "schoolId": "unb",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0061-tres-caras-numa-moto",
+    "name": "Três caras numa moto",
+    "schoolId": "ufpi",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0062-bagre-branco-branco-bagre",
+    "name": "Bagre Branco, Branco Bagre",
+    "schoolId": "source-label-ufv-dpi-dbdbc9642e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0063-miracle-g",
+    "name": "Miracle G",
+    "schoolId": "source-label-uni-fim-39bbe3a669",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0064-the-last-dance",
+    "name": "The Last Dance",
+    "schoolId": "source-label-pucmm-csd-b52a91ecff",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0065-backtrack-or-feed",
+    "name": "Backtrack or Feed",
+    "schoolId": "source-label-uni-fc-847d66a5e3",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0066-mensageiros-do-a-main",
+    "name": "Mensageiros do à main",
+    "schoolId": "unb-fga",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0067-2-matematicos-e-2-flamenguistas",
+    "name": "2 matemáticos e 2 flamenguistas",
+    "schoolId": "ifpb-joao-pessoa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0068-coachella",
+    "name": "Coachella++",
+    "schoolId": "itam",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0069-valknut",
+    "name": "VALKNUT",
+    "schoolId": "source-label-uo-sam-bad14bb3c2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0070-a-query-ta-on",
+    "name": "A query tá on",
+    "schoolId": "ufal",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0071-que-bixiga-e-essa",
+    "name": "Que bixiga é essa?",
+    "schoolId": "ufrn",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0072-voce-e-fraco-te-falta-o-1",
+    "name": "Você é fraco, te falta O(1)",
+    "schoolId": "uea-amazonas",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0073-perdi",
+    "name": "Perdí",
+    "schoolId": "source-label-uba-fcen-3f39b45ec8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0074-quero-cafe",
+    "name": "Quero café",
+    "schoolId": "ufms-facom",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0075-mews-lovers",
+    "name": "Mews Lovers",
+    "schoolId": "udesc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0076-triada",
+    "name": "TriAda",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0077-sem-tle-irmao",
+    "name": "Sem TLE irmão",
+    "schoolId": "ufpa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0078-balloonfield",
+    "name": "BalloonField",
+    "schoolId": "source-label-puc-go-e2aac6937e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0079-ug-es",
+    "name": "UG + es;",
+    "schoolId": "source-label-ugtodcne-5945f3f915",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0080-c3",
+    "name": "C3",
+    "schoolId": "utec-peru",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0081-los-que-no-vinieron",
+    "name": "Los que no vinieron",
+    "schoolId": "source-label-itesm-cuernavaca-0f48505f61",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0082-a-cin-y-se-cout",
+    "name": "A-cin y se-cout",
+    "schoolId": "source-label-udec-06a1d4f639",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0083-generaciondel99",
+    "name": "GeneraciónDel99",
+    "schoolId": "pucp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0084-brainstorm",
+    "name": "BrainStorm",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0085-benjamin-rubio",
+    "name": "Benjamín Rubio",
+    "schoolId": "source-label-puc-e43e69c8d9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0086-3n1-m4",
+    "name": "3N1?M4",
+    "schoolId": "uclv",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0087-man-java",
+    "name": "man java",
+    "schoolId": "ufes",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0088-nullptr",
+    "name": "!nullptr",
+    "schoolId": "uaslp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0089-the-empire-strikes-back",
+    "name": "The Empire Strikes Back",
+    "schoolId": "source-label-udg-cucei-86b0833dc5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0090-ac-wa",
+    "name": "AC(¬‿¬)WA",
+    "schoolId": "ufc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0091-o-f-ck",
+    "name": "O(f*ck)",
+    "schoolId": "cefetmg",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0092-caguaa",
+    "name": "cagUAA++",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0093-argi-pop",
+    "name": "Argi.pop()",
+    "schoolId": "unr-rosario",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0094-cpa-carregados-pelo-alyson",
+    "name": "CPA - Carregados Pelo Alyson",
+    "schoolId": "source-label-ifce-41d6ff4887",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0095-trololololo",
+    "name": "Trololololo",
+    "schoolId": "ipn-escom",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0096-panpanaderos",
+    "name": "PanPanaderos",
+    "schoolId": "source-label-up-bonaterra-8c52d5b992",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0097-volan-team",
+    "name": "Volan{Team}",
+    "schoolId": "uchile",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0098-os-k-esimos",
+    "name": "Os k-ésimos",
+    "schoolId": "ufal-arapiraca",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0099-qual-o-nome-do-time",
+    "name": "Qual o nome do time?",
+    "schoolId": "uesb",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0100-acholics",
+    "name": "AC’Holics",
+    "schoolId": "source-label-itesm-monterrey-f8acc60b08",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0101-bolonhesa",
+    "name": "Bolonhesa",
+    "schoolId": "ufsc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0102-define-project-mayhem-322121300",
+    "name": "#define Project_Mayhem 322121300",
+    "schoolId": "unsaac",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0103-alcachofis",
+    "name": "Alcachofis",
+    "schoolId": "source-label-utm-1e14cd101c",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0104-covid",
+    "name": "Covid++",
+    "schoolId": "uclv",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0105-thenewcompetitors",
+    "name": "TheNewCompetitors",
+    "schoolId": "uh",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0106-pd-pa",
+    "name": "PD pá",
+    "schoolId": "source-label-cefet-rj-petropolis-db9cc3ea92",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0107-jump-forces",
+    "name": "Jump Forces",
+    "schoolId": "poli-co",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0108-pumas",
+    "name": "Pumas+",
+    "schoolId": "source-label-unam-fc-f6c1204110",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0109-wolves",
+    "name": "Wolves",
+    "schoolId": "source-label-dicisug-ea29ee24e6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0110-jjl",
+    "name": "JJL",
+    "schoolId": "source-label-uao-oaxaca-30b9f398d8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0111-chayotes-ucr",
+    "name": "Chayotes UCR",
+    "schoolId": "ucr-costa-rica",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0112-kwain",
+    "name": "Kwain",
+    "schoolId": "unr-rosario",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0113-jala-penos",
+    "name": "Jala-Peños",
+    "schoolId": "usb-venezuela",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0114-arrempujados",
+    "name": "ArremPUJados",
+    "schoolId": "source-label-puj-bog-d074f9ad47",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0115-nome-do-time",
+    "name": "[nome_do_time]",
+    "schoolId": "ufrgs",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0116-ravioli",
+    "name": "Ravioli",
+    "schoolId": "source-label-itesm-monterrey-f8acc60b08",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0117-lonches-ahogados",
+    "name": "Lonches Ahogados",
+    "schoolId": "source-label-udg-cucei-86b0833dc5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0118-everythingisbinarysearch",
+    "name": "EverythingIsBinarySearch",
+    "schoolId": "source-label-ufps-cucuta-77ea7e318b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0119-wetooka3reak",
+    "name": "WeTookA3reak",
+    "schoolId": "icesi",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0120-dogetothemoon",
+    "name": "DogeToTheMoon",
+    "schoolId": "pucp",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0121-are-ya-winning-son",
+    "name": "Are ya winning son?",
+    "schoolId": "uach-chihuahua",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0122-pina-colada",
+    "name": "Piña Colada",
+    "schoolId": "source-label-udec-06a1d4f639",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0123-programadores-continue",
+    "name": "Programadores: continue",
+    "schoolId": "source-label-utfpr-ct-5b6514b4a4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0124-assassin-bugs",
+    "name": "Assassin Bugs",
+    "schoolId": "source-label-itesm-csf-4fd7f9f9a0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0125-puebla5",
+    "name": "Puebla5",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0126-3loko",
+    "name": "3Loko",
+    "schoolId": "uach-chihuahua",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0127-hijos-de-turing",
+    "name": "Hijos de Turing",
+    "schoolId": "ipn-cnymyn",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0128-time-limit",
+    "name": "Time Limit",
+    "schoolId": "source-label-puj-cali-49842f2e98",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0129-cin-miedo",
+    "name": "cin >> miedo",
+    "schoolId": "source-label-uniandes-9ef0f0f29f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0130-010-girls-001-mike",
+    "name": "010 girls & 001 Mike",
+    "schoolId": "itsur",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0131-youshallnot-stay",
+    "name": "YouShallNot.stay",
+    "schoolId": "ufpr",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0132-teamazo",
+    "name": "Teamazo",
+    "schoolId": "unr-rosario",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0133-include-uaz",
+    "name": "#include<uaz>",
+    "schoolId": "uaz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0134-olympiac",
+    "name": "OlympiAC",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0135-dlinpieza",
+    "name": "Dlinpieza",
+    "schoolId": "umss",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0136-deep-think",
+    "name": "Deep Think",
+    "schoolId": "source-label-ugtodcne-5945f3f915",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0137-20-23-x-61",
+    "name": "20 + 23 + x = 61",
+    "schoolId": "ucsp-pe",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0138-adhockers",
+    "name": "ADHOCKERS",
+    "schoolId": "source-label-uni-fiis-530d59b32b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0139-lavanda-nortena",
+    "name": "Lavanda Norteña",
+    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0140-mobius",
+    "name": "Mobius",
+    "schoolId": "ucr-costa-rica",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0141-tec-gdl-10",
+    "name": "Tec GDL 10",
+    "schoolId": "source-label-itesm-gda-6bc76b2ed9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0142-long-long-long-is-too-long",
+    "name": "'long long long' is too long",
+    "schoolId": "utfsm",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0143-palomas-del-mal",
+    "name": "PALomas del MAL",
+    "schoolId": "source-label-uni-fc-847d66a5e3",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0144-amigos-da-aracele",
+    "name": "Amigos da Aracele",
+    "schoolId": "ifsuldeminas-muzambinho",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0145-bruwus",
+    "name": "BrUwUs",
+    "schoolId": "source-label-itesm-ccm-751cd280d0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0146-np-compeixe",
+    "name": "NP-Compeixe",
+    "schoolId": "source-label-ufam-icomp-56b7131a94",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0147-sir-lock-221b",
+    "name": "Sir Lock 221B",
+    "schoolId": "source-label-utn-santa-fe-08d9ebd4ab",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0148-too-lazy-to-propagate",
+    "name": "Too lazy to propagate",
+    "schoolId": "itsur",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0149-void-guys",
+    "name": "Void Guys",
+    "schoolId": "ipn-esfm",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0150-panalerasquad",
+    "name": "PañaleraSquad",
+    "schoolId": "source-label-itq-74f3e71ff4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0151-seila",
+    "name": "seila",
+    "schoolId": "ufv-florestal",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0152-tech-inc",
+    "name": "Tech Inc",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0153-no-main-no-gain",
+    "name": "No Main No Gain",
+    "schoolId": "fatec-sorocaba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0154-a-verdad-me-engane",
+    "name": "A verdad me engañe",
+    "schoolId": "itnl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0155-universe",
+    "name": "UniVerse",
+    "schoolId": "univalle-co",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0156-alquimistas",
+    "name": "Alquimistas",
+    "schoolId": "unoeste-br",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0157-las-pistas-de-nullptr",
+    "name": "Las pistas de nullptr",
+    "schoolId": "ipn-upiiz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0158-lemniscata",
+    "name": "Lemniscata",
+    "schoolId": "poli-co",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0159-r2j",
+    "name": "R2J",
+    "schoolId": "source-label-unsa-cs-5c773769a5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0160-linkedlist-park",
+    "name": "Linkedlist Park",
+    "schoolId": "eafit",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0161-kfc",
+    "name": "KFC",
+    "schoolId": "source-label-utadeo-b1c0135ab7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0162-automatas",
+    "name": "Autómatas",
+    "schoolId": "source-label-ula-3c37d69a5c",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0163-s-asa-a",
+    "name": "S -> aSa | a",
+    "schoolId": "ufscar",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0164-ucab-guayana",
+    "name": "UCAB-Guayana",
+    "schoolId": "ucab-venezuela",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0165-while-one-break",
+    "name": "While one Break",
+    "schoolId": "source-label-utn-santa-fe-08d9ebd4ab",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0166-anarquia-as-8",
+    "name": "anarquia às 8",
+    "schoolId": "ufabc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0167-competencia-cpp-1-1-error-invali",
+    "name": "competencia.cpp:1:1 error: invalid team",
+    "schoolId": "source-label-utn-santa-fe-08d9ebd4ab",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0168-iconoesingenieria",
+    "name": "#ICONoEsIngenieria",
+    "schoolId": "source-label-ucb-c2b4b7f319",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0169-do-you-fala-espanhol",
+    "name": "do_you_fala_espanhol?",
+    "schoolId": "ucsp-pe",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0170-tar-bomb",
+    "name": ".tar bomb",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0171-los-testigos-de-aaron-aaron",
+    "name": "Los testigos de Aarón - Aarón",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0172-unesprpm",
+    "name": "UnespRPM",
+    "schoolId": "unesp-bauru",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0173-los-de-arriba-son-tramposos",
+    "name": "Los de arriba son tramposos",
+    "schoolId": "source-label-unam-enes-morelia-a4d37af5d6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0174-stackoverflow",
+    "name": "Stackoverflow",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0175-codebreakers",
+    "name": "<CodeBreakers/>",
+    "schoolId": "itver",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0176-bff-brute-force-friend-s-tle-v",
+    "name": "BFF (Brute Force Friend's) TLE :'v",
+    "schoolId": "ipn-esfm",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0177-uamitosplusplus",
+    "name": "UAMitosPlusPlus",
+    "schoolId": "source-label-uam-azcapotzalco-05ac505704",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0178-losroundingerrors",
+    "name": "losROuNDingERrOrS",
+    "schoolId": "utec-peru",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0179-breed",
+    "name": "Breed",
+    "schoolId": "umsa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0180-mbc",
+    "name": "MBC",
+    "schoolId": "umsa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0181-soviet-union-find",
+    "name": "Soviet Union Find",
+    "schoolId": "utfsm",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0182-doitforchalo",
+    "name": "DoItForChalo",
+    "schoolId": "utfsm",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0183-easy",
+    "name": "Easy",
+    "schoolId": "upr-pr",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0184-magikarp",
+    "name": "MagiKarp",
+    "schoolId": "konrad-lorenz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0185-pitones-2-7",
+    "name": "Pitones 2.7",
+    "schoolId": "source-label-itesm-cem-8e86cfbbf8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0186-hamawt-a",
+    "name": "Hamawt´a",
+    "schoolId": "ulima",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0187-este-mismo",
+    "name": "Este mismo!!",
+    "schoolId": "source-label-uo-sam-bad14bb3c2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0188-ufma-time-1",
+    "name": "UFMA Time 1",
+    "schoolId": "source-label-ufma-32b21fe64f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0189-abacate-atomico",
+    "name": "Abacate Atômico",
+    "schoolId": "uece",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0190-stacks-duracell",
+    "name": "Stacks Duracell",
+    "schoolId": "source-label-puj-cali-49842f2e98",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0191-oblivion",
+    "name": "Oblivion",
+    "schoolId": "source-label-itesm-puebla-e566c4d955",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0192-codebreaker",
+    "name": "CodeBreaker();",
+    "schoolId": "uniamazonia-co",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0193-puraperso",
+    "name": "Puraperso",
+    "schoolId": "source-label-udec-06a1d4f639",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0194-k3rn3l-p4n-c",
+    "name": "K3rN3l P4n!C!",
+    "schoolId": "source-label-ucv-294962d46d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0195-vamu-vense",
+    "name": "Vamu vense",
+    "schoolId": "ufmt",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0196-qualified",
+    "name": "qUAlified",
+    "schoolId": "uniamazonia-co",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0197-trojan-horse",
+    "name": "Trojan Horse",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0198-utp-neocode-generation",
+    "name": "UTP - NeoCode Generation",
+    "schoolId": "source-label-utp-f8d556ed41",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0199-vacaciones-ohh-senor",
+    "name": "Vacaciones... ohh Señor",
+    "schoolId": "source-label-ucm-77b08067f6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0200-slightly-sleepy",
+    "name": "Slightly Sleepy",
+    "schoolId": "source-label-uwi-tto-027a45250e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0201-fernet-s-theorem",
+    "name": "Fernet's Theorem",
+    "schoolId": "source-label-updstja-is-a3e517d7fc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0202-smartcode",
+    "name": "SmartCode",
+    "schoolId": "uclv",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0203-believe",
+    "name": "Believe!",
+    "schoolId": "source-label-unan-managua-373da2ab3e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0204-code-distancing",
+    "name": "Code Distancing",
+    "schoolId": "source-label-unesc-3fe11e3e2c",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0205-wrong-answer-1000",
+    "name": "Wrong Answer 1000%",
+    "schoolId": "ufac",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0206-simple-name",
+    "name": "Simple Name",
+    "schoolId": "source-label-ean-2311f6a1d6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0207-cubitos-dubidu",
+    "name": "Cubitos Dubidu",
+    "schoolId": "source-label-unsa-cs-5c773769a5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0208-return-t-d-a",
+    "name": "return t + d + a;",
+    "schoolId": "ipn-escom",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0209-caribbeancoders",
+    "name": "CaribbeanCoders",
+    "schoolId": "source-label-unicaribe-9246e7a67e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0210-yamete-kudasai",
+    "name": "YAMETE KUDASAI",
+    "schoolId": "emi-bolivia",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0211-rgb-ifsp-arq-team",
+    "name": "RGB IFSP-ARQ Team",
+    "schoolId": "source-label-ifsp-c38814678b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0212-projectc",
+    "name": "ProjectC++",
+    "schoolId": "source-label-ucp-f31c845370",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0213-pan-con-malloc",
+    "name": "pan con malloc",
+    "schoolId": "utfsm",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0214-bbsitabblin",
+    "name": "bBsitaBblin",
+    "schoolId": "unr-rosario",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0215-e-team",
+    "name": "e-Team",
+    "schoolId": "source-label-uo-sam-bad14bb3c2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0216-iterandociclos",
+    "name": "IterandoCiclos",
+    "schoolId": "source-label-ucp-f31c845370",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0217-ab-model",
+    "name": "ab model",
+    "schoolId": "unsaac",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0218-codevid",
+    "name": "CodeVid",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0219-vem-tranquilo-afoba-nao",
+    "name": "Vêm tranquilo, afoba não",
+    "schoolId": "uefs",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0220-sarscode",
+    "name": "SarsCode",
+    "schoolId": "source-label-upb-buc-f54cbcb8d7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0221-probrah",
+    "name": "ProBrah",
+    "schoolId": "source-label-udec-06a1d4f639",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0222-utf-8",
+    "name": "UTF-8",
+    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0223-teoria-de-la-compota",
+    "name": "Teoría de la Compota",
+    "schoolId": "uchile",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0224-agirlhasnowa",
+    "name": "AGirlHasNoWA",
+    "schoolId": "source-label-tec-alajuela-457bd3c236",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0225-fiis",
+    "name": "FIIS",
+    "schoolId": "source-label-uni-fiis-530d59b32b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0226-drimtimicp",
+    "name": "DrimTimICP",
+    "schoolId": "up-guadalajara",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0227-fastlle0mega",
+    "name": "fastlle0mega",
+    "schoolId": "uclv",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0228-ratsel",
+    "name": "Rätsel",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0229-altf4",
+    "name": "AltF4",
+    "schoolId": "source-label-undec-3bca6b835f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0230-panino-fritto-wurstel-patatine",
+    "name": "panino fritto wurstel patatine",
+    "schoolId": "source-label-puc-e43e69c8d9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0231-overlordteam",
+    "name": "OverlordTeam",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0232-the-fockers",
+    "name": "The Fockers",
+    "schoolId": "source-label-ucb-cochabamba-99330c5888",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0233-county-coders",
+    "name": "County Coders",
+    "schoolId": "source-label-ufps-ocana-bf3cb39f83",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0234-overclock",
+    "name": "Overclock",
+    "schoolId": "source-label-univem-2925dedb04",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0235-coderregos",
+    "name": "CODErregos",
+    "schoolId": "source-label-itesm-chihuahua-472b156865",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0236-matematikos",
+    "name": "MatemátiKos",
+    "schoolId": "konrad-lorenz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0237-vamo-a-googlearlo",
+    "name": "VAMO A GOOGLEARLO",
+    "schoolId": "emi-bolivia",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0238-japycmonos",
+    "name": "JaPyCmonos",
+    "schoolId": "source-label-ecci-c6c3e6eb44",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0239-ragnarok",
+    "name": "Ragnarok",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0240-sketch",
+    "name": "Sketch",
+    "schoolId": "ulima",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0241-lcd",
+    "name": "LCD",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0242-coco-coco",
+    "name": "Coco Coco",
+    "schoolId": "source-label-unlp-fce-89b60d3f50",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0243-em3-1415na",
+    "name": "EM3.1415NA",
+    "schoolId": "source-label-unir-536bdfae93",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0244-los-he-hes",
+    "name": "Los He'Hes",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0245-riko-pollo",
+    "name": "Riko Pollo",
+    "schoolId": "source-label-itesm-monterrey-f8acc60b08",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0246-ccenti9",
+    "name": "Ccenti9",
+    "schoolId": "source-label-pucmm-csd-b52a91ecff",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0247-chicas-superpoderosas",
+    "name": "Chicas Superpoderosas",
+    "schoolId": "source-label-unam-fc-f6c1204110",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0248-body-var-progaming",
+    "name": "<body> var progaming == {",
+    "schoolId": "source-label-my-passion-body-utalca-ing-bcd27703d5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0249-2sublimes-1atom",
+    "name": "2sublimes&&1Atom",
+    "schoolId": "umsa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0250-uho-01",
+    "name": "UHO-01",
+    "schoolId": "uho",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0251-los-turingneitors",
+    "name": "Los Turingneitors",
+    "schoolId": "source-label-uis-ea6ea1f152",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0252-hll",
+    "name": "Hll++",
+    "schoolId": "source-label-uo-sam-bad14bb3c2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0253-los-hormigas",
+    "name": "Los Hormigas",
+    "schoolId": "source-label-unsa-cs-5c773769a5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0254-ribal",
+    "name": "RIBAL",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0255-newbies",
+    "name": "Newbies",
+    "schoolId": "uaz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0256-valoreme-el-esfuerzo",
+    "name": "Valoreme el esfuerzo",
+    "schoolId": "source-label-utadeo-b1c0135ab7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0257-sudorm-rf",
+    "name": "SudoRM -rf",
+    "schoolId": "source-label-iujo-cad5c883c3",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0258-print-qvola",
+    "name": "print(\"qvola\")",
+    "schoolId": "uclv",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0259-intec-near",
+    "name": "INTEC Near",
+    "schoolId": "intec-rd",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0260-a-team",
+    "name": "a Team",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0261-pie-de-kingkong",
+    "name": "Pie de KingKong",
+    "schoolId": "ulima",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0262-la-pacha",
+    "name": "La Pacha++",
+    "schoolId": "source-label-unju-fi-741e733e7a",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0263-tle-plus",
+    "name": "TLE_PLUS",
+    "schoolId": "source-label-uo-sjam-15497272d8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0264-insertname",
+    "name": "-InsertName-",
+    "schoolId": "source-label-puj-bog-d074f9ad47",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0265-siri",
+    "name": "SIRI",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0266-3th-day",
+    "name": "3th day",
+    "schoolId": "source-label-uto-huanuni-22ca254e10",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0267-alcaravan",
+    "name": "Alcaravan",
+    "schoolId": "source-label-unisangil-95143545b1",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0268-bite-the-dust",
+    "name": "Bite_The_Dust",
+    "schoolId": "uci-cuba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0269-cds",
+    "name": "CDS",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0270-ctrl-alt-elite",
+    "name": "CTRL+ALT+ELITE",
+    "schoolId": "source-label-uwi-tto-027a45250e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0271-codevid",
+    "name": "CodeVid",
+    "schoolId": "source-label-upb-buc-f54cbcb8d7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0272-conexao-tucuju-aqui-o-caixeiro-c",
+    "name": "Conexão Tucuju: aqui o caixeiro chegou de barco",
+    "schoolId": "source-label-unifap-ace17cb69f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0273-county-coders-reloaded",
+    "name": "County Coders Reloaded",
+    "schoolId": "ufpso",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0274-cyberdelta",
+    "name": "CyberDelta",
+    "schoolId": "source-label-undec-3bca6b835f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0275-codigotruko119",
+    "name": "Códigotruko119",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0276-hello-world",
+    "name": "Hello world",
+    "schoolId": "source-label-upc-bog-011cc14016",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0277-intec-mello",
+    "name": "INTEC Mello",
+    "schoolId": "intec-rd",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0278-init-0",
+    "name": "Init 0",
+    "schoolId": "source-label-tec-alajuela-457bd3c236",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0279-java-compilar",
+    "name": "Java Compilar",
+    "schoolId": "unsaac",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0280-juwuniors",
+    "name": "Juwuniors",
+    "schoolId": "source-label-unlp-ing-346cb52aba",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0281-klm",
+    "name": "KLM",
+    "schoolId": "source-label-ufrr-3374fb6a57",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0282-kb-19",
+    "name": "Kb-19",
+    "schoolId": "source-label-una-51072ac1a6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0283-las-3-inges",
+    "name": "Las 3 inges",
+    "schoolId": "uaz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0284-llano-lindo",
+    "name": "Llano Lindo",
+    "schoolId": "source-label-unisangil-95143545b1",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0285-m-c-nificas",
+    "name": "M@C'nificas",
+    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0286-many-underpaid-millennials-m-u-m",
+    "name": "Many Underpaid Millennials (M.U.M)",
+    "schoolId": "source-label-uwi-tto-027a45250e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0287-pcerdos",
+    "name": "PCerdos",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0288-pd-jc",
+    "name": "PD&JC",
+    "schoolId": "ucne",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0289-polish-cow",
+    "name": "Polish Cow",
+    "schoolId": "uchile",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0290-programming-fellas",
+    "name": "Programming Fellas",
+    "schoolId": "source-label-upc-bog-011cc14016",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0291-rocket",
+    "name": "Rocket",
+    "schoolId": "uca-el-salvador",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0292-suanfonson",
+    "name": "Suanfonsón",
+    "schoolId": "source-label-tec-alajuela-457bd3c236",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0293-tisa",
+    "name": "TISA",
+    "schoolId": "source-label-utn-frba-0fc0a35ae0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0294-team-nma-new-team",
+    "name": "Team NMA = new Team();",
+    "schoolId": "source-label-ecci-c6c3e6eb44",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0295-the-apache-guys",
+    "name": "The Apache Guys",
+    "schoolId": "source-label-una-51072ac1a6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0296-triad",
+    "name": "Triad",
+    "schoolId": "source-label-uwi-tto-027a45250e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0297-try-again",
+    "name": "Try Again",
+    "schoolId": "source-label-uniminuto-70a4a1ee39",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0298-uho-02",
+    "name": "UHO-02",
+    "schoolId": "uho",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0299-under-the-wire",
+    "name": "UNDER THE WIRE",
+    "schoolId": "source-label-utn-frlr-1b6481cee6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0300-udenar-exe",
+    "name": "Udenar.exe",
+    "schoolId": "source-label-udenar-b93635fd12",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0301-undefined-v2",
+    "name": "Undefined_V2",
+    "schoolId": "icesi",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-mexico-finals-final-row-0302-la-menudencia",
+    "name": "la_menudencia",
+    "schoolId": "ucsp-pe",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464446-escuela-superior-de-comedia",
+    "name": "Escuela Superior de Comedia",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468823-legendary-grand-newbies",
+    "name": "Legendary Grand Newbies",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464302-pumomm",
+    "name": "PumOMM",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468673-upsolving",
+    "name": "UPsolving",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463581-foundthebug-itsme",
+    "name": "FoundTheBug.ItsMe",
+    "schoolId": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454257-leones-0-0-0",
+    "name": "Leones(0,0,0)",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464448-camara-ya-subelo-asi-w",
+    "name": "Cámara Ya Súbelo Asi w",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469432-eee",
+    "name": "EEE",
+    "schoolId": "source-label-universidad-de-guanajuato-dcne-f00dc1f3f7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454477-the-empire-strikes-back",
+    "name": "The Empire Strikes Back",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469431-ug-es",
+    "name": "UG + es;",
+    "schoolId": "source-label-universidad-de-guanajuato-dcne-f00dc1f3f7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462217-ac-holics",
+    "name": "AC’Holics",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465200-pumas",
+    "name": "Pumas+",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468784-panpanaderos",
+    "name": "PanPanaderos",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463929-ravioli",
+    "name": "Ravioli",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464447-los-hermanos-computadores-de-paine",
+    "name": "Los Hermanos Computadores de Paine",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463594-nullptr",
+    "name": "!nullptr",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465171-coachella",
+    "name": "Coachella++",
+    "schoolId": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468731-icpcrikos",
+    "name": "ICPCrikos",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469357-too-lazy-to-propagate",
+    "name": "Too lazy to propagate",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469730-include-uaz",
+    "name": "#include<uaz>",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462343-o-1",
+    "name": "O(1)",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466685-lavanda-nortena",
+    "name": "Lavanda Norteña",
+    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470314-lonches-ahogados",
+    "name": "Lonches Ahogados",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-461788-b11",
+    "name": "B11",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469833-ac-forever",
+    "name": "AC Forever",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465287-hijos-de-turing",
+    "name": "Hijos de Turing",
+    "schoolId": "source-school-f994082eaba8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466692-utf-8",
+    "name": "UTF-8",
+    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466496-tec-gdl-10",
+    "name": "Tec GDL 10",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454995-wolves",
+    "name": "Wolves",
+    "schoolId": "source-label-universidad-de-guanajuato-dicis-6ceb1551a0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469723-jjl",
+    "name": "JJL",
+    "schoolId": "source-label-universidad-anahuac-campus-oaxaca-c48468344b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469358-010-girls-001-mike",
+    "name": "010 girls & 001 Mike",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-456894-los-que-no-vinieron",
+    "name": "Los que no vinieron",
+    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469685-jojojo-s",
+    "name": "JoJoJo's",
+    "schoolId": "source-label-universidad-de-guanajuato-dcne-f00dc1f3f7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469683-deep-think",
+    "name": "Deep Think",
+    "schoolId": "source-label-universidad-de-guanajuato-dcne-f00dc1f3f7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463535-awadeuwu",
+    "name": "awadeuwu",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463383-ansiosos",
+    "name": "ANSIosos",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467477-coders-council",
+    "name": "Coders Council",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-455556-caribbeancoders",
+    "name": "CaribbeanCoders",
+    "schoolId": "source-label-universidad-del-caribe-1bab45109d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463740-los-de-arriba-son-tramposos",
+    "name": "Los de arriba son tramposos",
+    "schoolId": "source-school-4509fd5dafbc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464310-b-i-o-s",
+    "name": "B.I.O.S",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470616-oblivion",
+    "name": "Oblivion",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462429-uamitosplusplus",
+    "name": "UAMitosPlusPlus",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454994-bruwus",
+    "name": "BrUwUs",
+    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466712-alcachofis",
+    "name": "Alcachofis",
+    "schoolId": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469402-coronacoders",
+    "name": "CoronaCoders",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462150-bathtub-coding",
+    "name": "Bathtub Coding",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462341-predators",
+    "name": "Predators",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470007-drimtimicp",
+    "name": "DrimTimICP",
+    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454993-bff-brute-force-friend-s-tle-v",
+    "name": "BFF (Brute Force Friend's) TLE :'v",
+    "schoolId": "source-school-40fbd05cee85",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454991-void-guys",
+    "name": "Void Guys",
+    "schoolId": "source-school-40fbd05cee85",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-455505-assassin-bugs",
+    "name": "Assassin Bugs",
+    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463449-dunkel",
+    "name": "Dunkel",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469868-pitones-2-7",
+    "name": "Pitones 2.7",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469412-los-picateclas",
+    "name": "Los picateclas",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470158-problem-3n-1",
+    "name": "Problem 3n - 1",
+    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462131-roborregos-code",
+    "name": "Roborregos Code",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470159-m-c-nificas",
+    "name": "M@C'nificas",
+    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-478808-jrm-e",
+    "name": "JRM-E",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466656-panalerasquad",
+    "name": "PañaleraSquad",
+    "schoolId": "it-queretaro",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469856-patodalavida",
+    "name": "PatodaLaVida",
+    "schoolId": "uach-chihuahua",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469379-a-s-last-chance",
+    "name": "A's Last Chance",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462331-riko-pollo",
+    "name": "Riko Pollo",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470230-wajakos",
+    "name": "WAJAKOS",
+    "schoolId": "uach-chihuahua",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462151-tam",
+    "name": "TAM++",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469864-root-scramblers",
+    "name": "root@scramblers",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454321-si-no-gano-me-corren",
+    "name": "Si no gano, me corren",
+    "schoolId": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463733-fenix",
+    "name": "FENIX",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467399-codebreakers",
+    "name": "<CodeBreakers/>",
+    "schoolId": "it-veracruz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466718-return-t-d-a",
+    "name": "return t + d + a;",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469835-gunters",
+    "name": "Gunters",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462243-che",
+    "name": "Che$$",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468800-base16",
+    "name": "base16",
+    "schoolId": "source-label-instituto-tecnologico-de-lazaro-cardenas-9aa9278bcb",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470580-brocode",
+    "name": "BroCode",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469834-the-master",
+    "name": "THE MASTER",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469754-newbies",
+    "name": "Newbies",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468492-sudo-programmers",
+    "name": "Sudo Programmers",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454752-zero",
+    "name": "Zero",
+    "schoolId": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466708-bugmakers",
+    "name": "BugMakers",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469837-include-abd",
+    "name": "#include<ABD>",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469874-yippee-ki-yay-python-coders",
+    "name": "Yippee ki-yay Python Coders",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464449-el-holandes-errante",
+    "name": "El holandés errante",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464450-tle",
+    "name": "TLE",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469882-fullstack",
+    "name": "FullStack",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469953-lf-freacks",
+    "name": "LF.Freacks",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466709-asd",
+    "name": "asd",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469883-los-funados",
+    "name": "Los Funados",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469887-sadbois-inc",
+    "name": "SadBois Inc",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469866-not-found",
+    "name": "Not Found",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469755-snk",
+    "name": "SNK",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462374-final-spark",
+    "name": "Final Spark",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465286-pumasds",
+    "name": "PumasDS",
+    "schoolId": "source-school-b985fd84d0b8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465283-include-victory-h",
+    "name": "#include <victory.h>",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465206-chicas-superpoderosas",
+    "name": "Chicas Superpoderosas",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466220-tec-gdl-3",
+    "name": "Tec GDL 3",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464444-quarantined-code",
+    "name": "Quarantined Code",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463687-say-my-name",
+    "name": "Say my name",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469785-las-pistas-de-nullptr",
+    "name": "Las pistas de nullptr",
+    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465259-i",
+    "name": "i++",
+    "schoolId": "source-school-b985fd84d0b8",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464851-saj-cpp",
+    "name": "SAJ.cpp",
+    "schoolId": "source-label-universidad-anahuac-campus-oaxaca-c48468344b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464855-oaxacode",
+    "name": "oaxaCode();",
+    "schoolId": "source-label-universidad-anahuac-campus-oaxaca-c48468344b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463641-pandilla-de-la-puerta",
+    "name": "Pandilla de la puerta",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465215-elementary-my-dear-watson",
+    "name": "Elementary, my dear Watson!",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466222-tec-gdl-4",
+    "name": "Tec GDL 4",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469891-weepycoders",
+    "name": "WeepyCoders",
+    "schoolId": "uach-chihuahua",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465177-formato-apa",
+    "name": "Formato APA",
+    "schoolId": "upaep",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465652-hard-coders",
+    "name": "Hard Coders",
+    "schoolId": "uacj",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454996-montadioses",
+    "name": "Montadioses",
+    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463800-tecbots",
+    "name": "TecBots",
+    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465613-oozma-kappa",
+    "name": "Oozma Kappa",
+    "schoolId": "source-label-universidad-autonoma-de-coahuila-unidad-saltillo-10ca097d5e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465578-coderregos",
+    "name": "CODErregos",
+    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462422-omega",
+    "name": "OMEGA",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465212-tecosdecanasta",
+    "name": "TECosDeCanasta",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469403-l3s-ax0l0tls",
+    "name": "l3s ax0l0tls",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-461662-las-javas-bravas",
+    "name": "Las javas bravas",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463227-code-impostors",
+    "name": "Code-Impostors",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465186-valhalla",
+    "name": "Valhalla",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-455557-los-mariks",
+    "name": "Los Mariks",
+    "schoolId": "source-label-universidad-del-caribe-1bab45109d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469786-d3dsec-exe",
+    "name": "D3dSec.exe",
+    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463414-chichen-int-za",
+    "name": "Chichén <int> zá",
+    "schoolId": "source-label-universidad-anahuac-mayab-1a0277c33d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470283-octagon",
+    "name": "Octagon",
+    "schoolId": "udem-monterrey",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466224-tec-gdl-5",
+    "name": "Tec GDL 5",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463684-infocompas",
+    "name": "Infocompas",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465615-exceloverflow",
+    "name": "ExcelOverFlow",
+    "schoolId": "source-label-universidad-autonoma-de-coahuila-unidad-saltillo-10ca097d5e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464950-roadtogold",
+    "name": "RoadToGold",
+    "schoolId": "source-school-2a365bb14d52",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464965-javasonicos",
+    "name": "Javasonicos",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464524-quantum-coders",
+    "name": "Quantum Coders",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469935-arranederris",
+    "name": "ArraneDerris",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467365-grafossolution",
+    "name": "GrafosSolution",
+    "schoolId": "it-veracruz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464522-faav-team",
+    "name": "FAAV team",
+    "schoolId": "source-school-bfcfeb8363f7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464550-anothercreativename",
+    "name": "AnotherCreativeName",
+    "schoolId": "source-school-1e1b60a69bf2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465505-eszett",
+    "name": "Eszett",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469771-bigo",
+    "name": "BigO",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463393-las-hoppers",
+    "name": "Las Hoppers",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465306-segmentation-fault",
+    "name": "Segmentation Fault",
+    "schoolId": "itsmante",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454982-0-de-iq",
+    "name": "0 de IQ",
+    "schoolId": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469769-jitomates",
+    "name": "Jitomates",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464301-estesilesgusta-c",
+    "name": "EsteSiLesGusta?>:c",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465301-braxad",
+    "name": "BRAXAD",
+    "schoolId": "source-school-af13892124a2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466482-tec-gdl-6",
+    "name": "Tec GDL 6",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469788-icppn-was-not-declared",
+    "name": "ICPPN was not declared",
+    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465311-stc",
+    "name": "STC",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465478-packeros",
+    "name": "Packeros",
+    "schoolId": "source-school-8ba089c20cf9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469677-infinabyte",
+    "name": "Infinabyte",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462245-patos",
+    "name": "Patos",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466487-tec-gdl-8",
+    "name": "Tec GDL 8",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454251-legion",
+    "name": "Legión",
+    "schoolId": "source-school-93bef2438b23",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469838-su-e-cloud",
+    "name": "Süße Cloud",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463394-holmes",
+    "name": "Holmes",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470014-upgdl05",
+    "name": "UPGDL05",
+    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-459745-trivial-itesco",
+    "name": "Trivial ITESCO",
+    "schoolId": "source-school-9c3c73687f43",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463914-echo-coding",
+    "name": "Echo Coding",
+    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467839-equipo-tres",
+    "name": "Equipo Tres",
+    "schoolId": "udem-monterrey",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465514-char-mander",
+    "name": "char mander",
+    "schoolId": "source-label-instituto-tecnologico-de-lazaro-cardenas-9aa9278bcb",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469774-equipo-m-a-l",
+    "name": "Equipo M.A.L.",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463537-escuadron-de-movimiento-perpetuo",
+    "name": "Escuadrón de movimiento perpetuo",
+    "schoolId": "buap",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464296-uamkanda",
+    "name": "UAMKanda",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462340-blue-pythons",
+    "name": "Blue Pythons",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469780-los-pixies-2-0",
+    "name": "Los pixies 2.0",
+    "schoolId": "source-school-4509fd5dafbc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464313-undefined",
+    "name": "Undefined",
+    "schoolId": "source-school-4509fd5dafbc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466208-tec-gdl-1",
+    "name": "Tec GDL 1",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469815-c",
+    "name": "C - -",
+    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465143-vipoc-syc",
+    "name": "VIPOC SYC",
+    "schoolId": "source-school-68c426c8f3bc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469859-syntaxerror",
+    "name": "SyntaxError",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463308-bits-team",
+    "name": "Bits/Team",
+    "schoolId": "upaep",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469411-8bit",
+    "name": "8bit",
+    "schoolId": "source-school-68c426c8f3bc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462320-tec-80ti",
+    "name": "Tec 80ti",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469784-los-programadores",
+    "name": "Los PROgramadores",
+    "schoolId": "itszn-mx",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469414-pink-coders",
+    "name": "pink coders",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464166-mc-y-los-malacopa-de-michoacan",
+    "name": "MC y los malacopa de michoacan",
+    "schoolId": "source-school-4509fd5dafbc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470006-timelimitexceeded",
+    "name": "TimeLimitExceeded",
+    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464941-spacetacular",
+    "name": "Spacetacular",
+    "schoolId": "source-school-bf6ff41867ad",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465612-the-good-the-bad-the-programmer",
+    "name": "The good, the bad & the programmer",
+    "schoolId": "source-label-universidad-autonoma-de-coahuila-unidad-saltillo-10ca097d5e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465516-las-neuronas",
+    "name": "Las neuronas",
+    "schoolId": "source-school-4509fd5dafbc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463161-pmg",
+    "name": "PMG",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465748-the-hackers",
+    "name": "The Hackers",
+    "schoolId": "it-veracruz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465954-doom-patrol",
+    "name": "Doom Patrol",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469401-las-pistas-del-bug",
+    "name": "Las pistas del bug",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464543-developtecs",
+    "name": "DevelopTecs",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465486-axolototl",
+    "name": "Axolototl",
+    "schoolId": "source-school-8ba089c20cf9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463529-di-b-ing-coders",
+    "name": "di:b^-ing coders",
+    "schoolId": "upaep",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464536-trouble-hunters",
+    "name": "Trouble hunters",
+    "schoolId": "source-school-1e1b60a69bf2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469463-cheemtos",
+    "name": "Cheemtos",
+    "schoolId": "source-label-universidad-de-guanajuato-dcne-f00dc1f3f7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467529-windiit",
+    "name": "WINDIIT",
+    "schoolId": "uacj",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462237-coding-wizards",
+    "name": "Coding Wizards",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466784-lascuries",
+    "name": "lasCuries",
+    "schoolId": "source-school-e0819f018bde",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469890-splendorcrescit",
+    "name": "SplendorCrescit",
+    "schoolId": "uach-chihuahua",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465303-tec-coder-s",
+    "name": "Tec Coder's",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471103-the-untouchables",
+    "name": "The Untouchables",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464167-itsahackers-jr",
+    "name": "ITSAHACKERS.JR",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-ciudad-acuna-2bf6f10cff",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454977-macboy-s",
+    "name": "Macboy´s",
+    "schoolId": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465440-fsociety",
+    "name": "Fsociety",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469888-herminiotienelaculpa",
+    "name": "HerminioTieneLaCulpa",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465614-cout-hola",
+    "name": "cout << \"Hola\";",
+    "schoolId": "source-label-universidad-autonoma-de-coahuila-unidad-saltillo-10ca097d5e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-455558-los-gatos-de-schrodinger",
+    "name": "Los Gatos de Schrödinger",
+    "schoolId": "source-label-universidad-del-caribe-1bab45109d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454989-stringproductions",
+    "name": "StringProductions",
+    "schoolId": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468212-prolux",
+    "name": "Prolux",
+    "schoolId": "source-school-a0e44fb98d65",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463228-ctnos",
+    "name": "ctNOS",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464163-michexotic-s",
+    "name": "MichExoTic's",
+    "schoolId": "source-school-4509fd5dafbc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469799-isw-pros",
+    "name": "ISW PRoS",
+    "schoolId": "updurango",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463902-anime-bois",
+    "name": "Anime Bois",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462326-guayeral",
+    "name": "Guayeral",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-455559-mariachi",
+    "name": "Mariachi",
+    "schoolId": "source-label-universidad-del-caribe-1bab45109d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454992-the-gauss-fellows",
+    "name": "The Gauss' Fellows",
+    "schoolId": "source-school-40fbd05cee85",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464974-bichologos",
+    "name": "Bichologos",
+    "schoolId": "source-school-bf6ff41867ad",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462377-offline-mode",
+    "name": "offline mode",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467337-tec-gdl-17",
+    "name": "Tec GDL 17",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469405-mictlantecuhtli",
+    "name": "Mictlantecuhtli",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471958-tec-gdl-9",
+    "name": "Tec GDL 9",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462216-earth-wind-and-fire",
+    "name": "Earth Wind and Fire",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464005-devsoc",
+    "name": "DEVSOC",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462132-quark",
+    "name": "Quark",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469869-your-socialist-hacker",
+    "name": "Your Socialist Hacker",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462142-uwu",
+    "name": "uwu",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463644-alpaca-cult",
+    "name": "Alpaca Cult",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469860-los-ponches-sin-ponche",
+    "name": "Los Ponches sin Ponche",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466100-itchads",
+    "name": "ITChads",
+    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467335-tec-gdl-16",
+    "name": "Tec GDL 16",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465989-segmentation-fault",
+    "name": "Segmentation fault",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465442-out-of-bounds",
+    "name": "Out of Bounds",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469761-valedores",
+    "name": "Valedores",
+    "schoolId": "source-label-universidad-de-guanajuato-dcne-f00dc1f3f7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465473-pumabytes",
+    "name": "PumaBytes",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468466-gwalker",
+    "name": "GWalker",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465594-ghost",
+    "name": "Ghost",
+    "schoolId": "source-school-5e34206154c6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462322-whiletrue",
+    "name": "WhileTrue",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470303-nautilus-phi",
+    "name": "Nautilus Phi",
+    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463238-equipo-dinamita-arn",
+    "name": "Equipo dinamita ARN",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467607-is-uaz-shinobis",
+    "name": "IS UAZ Shinobis",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462327-terkos",
+    "name": "TERKOS",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466823-01mrrobot",
+    "name": "01MrRobot",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-calkini-0181dc3c42",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464303-debuggers",
+    "name": "Debuggers",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465651-brainarys",
+    "name": "Brainarys",
+    "schoolId": "uacj",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468278-rayo",
+    "name": "Rayo",
+    "schoolId": "udem-monterrey",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454974-ada-team",
+    "name": "ADA TEAM",
+    "schoolId": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469094-akatsuki",
+    "name": "Akatsuki",
+    "schoolId": "source-label-universidad-autonoma-de-tlaxcala-d9b6e9ecf4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-461806-steminists",
+    "name": "Steminists",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464953-interconexion-de-redes",
+    "name": "Interconexion de Redes",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464692-screenprint",
+    "name": "Screenprint",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469948-camisas-rojas",
+    "name": "Camisas Rojas",
+    "schoolId": "source-school-bf6ff41867ad",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465282-script-cuantico",
+    "name": "Script Cuántico",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464938-string-nameteam",
+    "name": "String nameTeam;",
+    "schoolId": "source-label-universidad-anahuac-campus-oaxaca-c48468344b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465617-aguilas",
+    "name": "Aguilas",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469958-outatime",
+    "name": "OUTATIME",
+    "schoolId": "source-label-universidad-autonoma-de-yucatan-campus-tizimin-c2eaff1976",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463913-minute-men",
+    "name": "Minute Men",
+    "schoolId": "source-school-d2a548191dfa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465217-schottkies",
+    "name": "Schottkies",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471088-team-name-rookies",
+    "name": "Team.Name(\"Rookies\")",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469957-world-execute-me",
+    "name": "world.execute(me);",
+    "schoolId": "source-label-universidad-autonoma-de-coahuila-unidad-saltillo-10ca097d5e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468268-faze-pepe",
+    "name": "FaZe PePe",
+    "schoolId": "udem-monterrey",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465759-troubleshooters-itver-tsi",
+    "name": "TroubleShooters Itver(TSI)",
+    "schoolId": "it-veracruz",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464185-tinthas",
+    "name": "Tinthas",
+    "schoolId": "source-school-d2a548191dfa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468671-rocket-code",
+    "name": "Rocket Code",
+    "schoolId": "source-school-1e1b60a69bf2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465161-tgang",
+    "name": "TGang",
+    "schoolId": "source-school-8ba089c20cf9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468158-pitones",
+    "name": "Pitones",
+    "schoolId": "source-label-universidad-autonoma-de-coahuila-unidad-saltillo-10ca097d5e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471357-the-last",
+    "name": "The last",
+    "schoolId": "source-school-39faaece2b9b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465650-los-coyotes",
+    "name": "Los Coyotes",
+    "schoolId": "uacj",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469881-salsa5",
+    "name": "Salsa5",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469782-lsd",
+    "name": "LSD",
+    "schoolId": "itszn-mx",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465727-code-gang",
+    "name": "Code gang",
+    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469886-flama",
+    "name": "Flama",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469772-new-era",
+    "name": "New Era",
+    "schoolId": "updurango",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-479062-legotaco",
+    "name": "Legotaco",
+    "schoolId": "cetys-universidad",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-477346-acm-amo",
+    "name": "ACM amo",
+    "schoolId": "ucol",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471803-arf",
+    "name": "ARF",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465504-jonathan-inc",
+    "name": "Jonathan, Inc",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-455560-apostol-cahazu",
+    "name": "Apóstol Cahazu",
+    "schoolId": "source-label-universidad-del-caribe-1bab45109d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471919-evilmachine",
+    "name": "Evilmachine",
+    "schoolId": "source-label-universidad-de-guadalajara-cusur-b598b1471b",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468811-visual-dim",
+    "name": "VISUAL DIM",
+    "schoolId": "source-school-2129812f9b28",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471555-ckt",
+    "name": "CKT",
+    "schoolId": "itsmante",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-455561-traficantes-de-s",
+    "name": "Traficantes de #'s",
+    "schoolId": "source-label-universidad-del-caribe-1bab45109d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471889-goribytes",
+    "name": "#GoriBytes",
+    "schoolId": "it-matamoros",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465992-codebreakers",
+    "name": "CodeBreakers",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469777-team-emperador",
+    "name": "Team Emperador",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463642-los-panas",
+    "name": "Los Panas",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465817-sinonymous",
+    "name": "Sinonymous",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465717-cly",
+    "name": "CLY",
+    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466651-promised-rinascimento",
+    "name": "Promised Rinascimento",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-guanajuato-6e4bd02ed9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462376-equipo-dinamita-doble",
+    "name": "Equipo Dinamita Doble",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468218-error-404",
+    "name": "Error 404",
+    "schoolId": "source-school-ac9b7d38153c",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468665-tucanes",
+    "name": "Tucanes",
+    "schoolId": "source-school-6f1f4082133f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471058-urania-fcfm",
+    "name": "Urania FCFM",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464693-michitos-tristes",
+    "name": "Michitos tristes",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-454983-quetzalcoatl",
+    "name": "Quetzalcóatl",
+    "schoolId": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463685-timeforce",
+    "name": "timeForce",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465226-luigi-vampa",
+    "name": "Luigi Vampa",
+    "schoolId": "source-school-3a4ea71a63f4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471644-deadly-strike-raccoons",
+    "name": "Deadly strike Raccoons",
+    "schoolId": "uady",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469875-hellogoodbyte",
+    "name": "helloGoodByte",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471662-game-of-codes",
+    "name": "Game of Codes",
+    "schoolId": "uanl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462143-2-jaibas-1-cocodrilo",
+    "name": "2 jaibas, 1 cocodrilo",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-479110-equipoumt2",
+    "name": "EquipoUMT2",
+    "schoolId": "source-label-universidad-autonoma-de-yucatan-campus-tizimin-c2eaff1976",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471472-gavilanes-itcg",
+    "name": "Gavilanes ITCG",
+    "schoolId": "source-label-instituto-tecnologico-de-ciudad-guzman-205610a590",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471035-binaryfox",
+    "name": "BinaryFox",
+    "schoolId": "its-nuevo-casas-grandes",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469813-null",
+    "name": "null",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-477401-ulsaoax-jaguar-cosmico",
+    "name": "ULSAOAX Jaguar Cósmico",
+    "schoolId": "source-school-b14e0aab814e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465616-duck-bang",
+    "name": "Duck Bang",
+    "schoolId": "source-label-universidad-autonoma-de-coahuila-unidad-saltillo-10ca097d5e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465180-the-powerpuff-girls",
+    "name": "The Powerpuff Girls",
+    "schoolId": "source-label-instituto-tecnologico-de-lazaro-cardenas-9aa9278bcb",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471848-tec-gdl-15",
+    "name": "Tec GDL 15",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471807-dexter",
+    "name": "Dexter",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471614-bro",
+    "name": "Bro++",
+    "schoolId": "itsmante",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465192-code-compilers",
+    "name": "Code compilers",
+    "schoolId": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463930-3xploit3rs",
+    "name": "3xploit3rs",
+    "schoolId": "source-school-d2a548191dfa",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465302-chicharron-rar",
+    "name": "chicharron.rar",
+    "schoolId": "itsmante",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466213-tec-gdl-2",
+    "name": "Tec GDL 2",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469900-the-bestest",
+    "name": "The Bestest",
+    "schoolId": "uach-chihuahua",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-466747-1helloworld",
+    "name": "1HelloWorld",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-calkini-0181dc3c42",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465724-megalomaniacos",
+    "name": "Megalomaniacos",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-459746-recursivos-itesco",
+    "name": "Recursivos ITESCO",
+    "schoolId": "source-school-9c3c73687f43",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465754-los-mm",
+    "name": "Los MM",
+    "schoolId": "source-school-d9b08bdc1ade",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465799-bam",
+    "name": "BAM",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468417-los-chavis",
+    "name": "Los chavis",
+    "schoolId": "source-school-5e34206154c6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468463-titan",
+    "name": "Titan",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465218-ases",
+    "name": "Ases",
+    "schoolId": "source-school-68c426c8f3bc",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471612-duo-picafresa",
+    "name": "Duo picafresa",
+    "schoolId": "itsmante",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468832-oldcodeagain",
+    "name": "OldCodeAgain",
+    "schoolId": "updurango",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-455555-adictos-a-las-lineas",
+    "name": "Adictos a las Líneas",
+    "schoolId": "source-label-universidad-del-caribe-1bab45109d",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463517-spooky-code",
+    "name": "Spooky Code",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462375-amirus",
+    "name": "Amirus",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471566-itsm-impact",
+    "name": "ITSM Impact",
+    "schoolId": "itsmante",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467786-blue",
+    "name": "Blue",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465134-visual-strong",
+    "name": "Visual Strong",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-477400-ulsaoax-gatitos-tristes",
+    "name": "ULSAOAX Gatitos Tristes",
+    "schoolId": "source-school-b14e0aab814e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469810-vacilon",
+    "name": "Vacilón",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-479279-syntaxerror",
+    "name": "SyntaxError",
+    "schoolId": "uady",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462244-equipo-dinamita",
+    "name": "Equipo Dinamita",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469876-felixlink",
+    "name": "FelixLink",
+    "schoolId": "updurango",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468219-la-dinastia-nortena",
+    "name": "La dinastia Norteña",
+    "schoolId": "source-school-ac9b7d38153c",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465649-tech-squadron",
+    "name": "Tech Squadron",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-470013-roosters",
+    "name": "Roosters",
+    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-464606-peripateticos",
+    "name": "Peripatéticos",
+    "schoolId": "source-school-8ba089c20cf9",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467329-tec-gdl-14",
+    "name": "Tec GDL 14",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463536-codebuds",
+    "name": "CodeBuds",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471026-software-libre",
+    "name": "Software Libre",
+    "schoolId": "itnl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465168-rem",
+    "name": "REM",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-467611-ieee-cs-patzware",
+    "name": "IEEE CS Pátzware",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-patzcuaro-17c2feb4da",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469789-awa-de-uwu-sabor-owo",
+    "name": "AwA de UwU sabor OwO",
+    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-462328-kemonitos",
+    "name": "Kemonitos",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471605-vadhir",
+    "name": "VADhir",
+    "schoolId": "itsmante",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463051-los-solovinos",
+    "name": "Los Solovinos",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-469831-the-best-team",
+    "name": "The Best Team",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-463484-w1ldc4tssr-1",
+    "name": "{W1LDC4TSSR} 1",
+    "schoolId": "source-school-9439bca48746",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465602-iced",
+    "name": "ICED",
+    "schoolId": "source-school-5e34206154c6",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-471022-alpha",
+    "name": "Alpha",
+    "schoolId": "itnl",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-468216-code-not-found",
+    "name": "Code not found",
+    "schoolId": "source-school-ac9b7d38153c",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-465798-akatsuki",
+    "name": "akatsuki",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2020
+  },
+  {
+    "id": "2020-gpm-iteso-479304-las-3-inges",
+    "name": "Las 3 inges",
+    "schoolId": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
+    "seasonYear": 2020
+  }
+]

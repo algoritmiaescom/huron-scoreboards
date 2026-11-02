@@ -43,9 +43,9 @@ different concepts; do not assume they are interchangeable.
 
 | Source mode | Current coverage and limitations                                                                           |
 | ----------- | ---------------------------------------------------------------------------------------------------------- |
-| ICPC Mexico | Recognized Fecha 0, qualifiers, repechage, and Finals; no committed edition mappings yet                   |
+| ICPC Mexico | Recognized Fecha 0, qualifiers, repechage, and Finals; reviewed 2019–2026 mappings                         |
 | ScoreLATAM  | Reviewed LATAM labels for 2019-2025; Mexico-local placement maps to Mexico Finals, not LATAM rank          |
-| ITESO       | Accumulated GPM PDF/image evidence and season-standing candidates; no committed edition mappings yet       |
+| ITESO       | Accumulated GPM PDF/image evidence and season-standing candidates; reviewed 2015–2026 mappings             |
 | ICPC Global | Directory and finder together, with reviewed 2025/2026 mappings; GPM results remain staged in this adapter |
 
 An error such as `source edition 2025 has no reviewed season mapping` is a policy gate, not proof
@@ -62,6 +62,53 @@ ITESO uses source ID `iteso`. Global directory labels use cycles such as `2025-2
 use editions such as `2025`. Keep existing mappings intact, avoid duplicate source/label entries,
 and include the supporting source URL and review reasoning in your configuration PR. Resolve and
 merge mapping changes before running default-branch automation that depends on them.
+
+### Historical discovery beyond season overview links
+
+The ITESO index lists 2015–2026, but some overviews omit accumulated-result links. The ICPC
+Global directory supplies direct ITESO document links for 2020–2025 and a migrated result page
+for 2015. The historical survey recovered accumulated documents for every year from 2015 through 2025. A missing overview link is therefore a discovery limitation, not evidence that no standing
+exists. The standard ITESO acquisition command still starts from that overview; these additional
+direct links require separate document acquisition and review.
+
+For source audits, ICPC Global exposes the same public directory data through
+`https://icpc.global/api/contest/public/regionals/<cycle-ending-year>` and
+`https://icpc.global/api/contest/public/regional-tree/<region-id>`. Its cycle selector lists
+1976–1977 through 2026–2027. Use the actual region labels returned by the selected cycle:
+older Latin America labels contain a single year rather than the full cycle.
+Inspect the contest title and source context before mapping an edition; registration dates and
+cycle-ending years are not substitutes for the Mexican edition label.
+
+Native Global standings can be audited at
+`https://icpc.global/api/contest/public/search/contest/<contest-id>` using the public projection
+`q=proj:rank,institution,teamName,problemsSolved,totalTime,lastProblemTime,medalCitation;`
+and `page`/`size` parameters. Compare all fetched pages with the corresponding `/count` endpoint.
+This is a discovery/audit path, not a new workflow input. Registration counts and GPM native rows
+must not be treated as accumulated-point standings. Preserve disagreements with linked PDFs as
+separate evidence, and keep incomplete rows and uncertain historical contest scopes for review.
+Never infer absent external results from an empty native table.
+
+The reviewed archive now includes the 2015–2025 ITESO accumulated documents and the 2009–2018
+Global regional Finals. Publication preserves source-specific exceptions explicitly: dense 2015
+ties, distinct same-name registrations, the intermediate 2023 accumulated table, and the 2013
+Finals' missing and unknown places. This manual source review does not relax automatic
+reconciliation/materialization gates for non-final or irregular candidates. Native Global GPM
+tables are not substituted for accumulated-point PDFs; differing 2019–2025 native Finals tables
+do not overwrite existing ICPC Mexico archive records.
+
+ICPC Mexico also publishes four-column totals-only tables, as for qualifier 3 in 2026. The adapter
+preserves solved/penalty observations with an unknown problem set and `results: null`; it does not
+infer missing detail. If the registered-team count is absent, coverage stays unknown and automatic
+publication remains blocked. A manually reviewed archive record must disclose that limitation
+instead of changing coverage flags to imply completeness.
+
+For 2026, ICPC Mexico's season page links to a separate `/contests/gpmx-2026/acumulado`
+HTML table. The reviewed archive preserves its 614 ranked rows, not just the 509 teams
+with points mentioned in the header. The 14 separately listed guests have no accumulated
+place or score. Explicit quota numbers support 70 positive qualification flags; missing
+quotas remain unknown, and the header's conflicting count of 71 is disclosed. This
+manually reviewed season-standing candidate does not add accumulated acquisition to the
+contest-only `--acquire-icpc-mexico` command or relax the final-snapshot review gate.
 
 ## 2. Dispatch an artifact-only run
 

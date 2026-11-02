@@ -1,0 +1,1363 @@
+{
+  "seasonYear": 2021,
+  "seriesId": "gpm",
+  "rows": [
+    {
+      "place": 1,
+      "teamId": "2021-gpm-iteso-551774-leones-0-0-0-udg-cucei",
+      "score": 430,
+      "qualified": null
+    },
+    {
+      "place": 2,
+      "teamId": "2021-gpm-iteso-554285-owo-ugtodcne",
+      "score": 410,
+      "qualified": null
+    },
+    {
+      "place": 3,
+      "teamId": "2021-gpm-iteso-554318-discipulos-de-marckess-escom-ipn",
+      "score": 394,
+      "qualified": null
+    },
+    {
+      "place": 4,
+      "teamId": "2021-gpm-iteso-553438-nullptr-uaslp",
+      "score": 375,
+      "qualified": null
+    },
+    {
+      "place": 5,
+      "teamId": "2021-gpm-iteso-554384-easy-pc-up-bonaterra",
+      "score": 372,
+      "qualified": null
+    },
+    {
+      "place": 6,
+      "teamId": "2021-gpm-iteso-551914-ac-holics-itesm-monterrey",
+      "score": 351,
+      "qualified": null
+    },
+    {
+      "place": 7,
+      "teamId": "2021-gpm-iteso-554381-icpcrikos-up-bonaterra",
+      "score": 350,
+      "qualified": null
+    },
+    {
+      "place": 8,
+      "teamId": "2021-gpm-iteso-555340-radical-sweep-itam",
+      "score": 348,
+      "qualified": null
+    },
+    {
+      "place": 9,
+      "teamId": "2021-gpm-iteso-554353-descomulgados-by-marckess-escom-ipn",
+      "score": 343,
+      "qualified": null
+    },
+    {
+      "place": 10,
+      "teamId": "2021-gpm-iteso-554348-ug-es-ugtodcne",
+      "score": 336,
+      "qualified": null
+    },
+    {
+      "place": 11,
+      "teamId": "2021-gpm-iteso-555387-triada-uanl",
+      "score": 329,
+      "qualified": null
+    },
+    {
+      "place": 12,
+      "teamId": "2021-gpm-iteso-554315-jojojo-s-ugtodcne",
+      "score": 317,
+      "qualified": null
+    },
+    {
+      "place": 13,
+      "teamId": "2021-gpm-iteso-555107-f-tle-itesm-cem",
+      "score": 291,
+      "qualified": null
+    },
+    {
+      "place": 14,
+      "teamId": "2021-gpm-iteso-551777-a-new-hope-udg-cucei",
+      "score": 282,
+      "qualified": null
+    },
+    {
+      "place": 15,
+      "teamId": "2021-gpm-iteso-554380-chilakillers-up-bonaterra",
+      "score": 270,
+      "qualified": null
+    },
+    {
+      "place": 16,
+      "teamId": "2021-gpm-iteso-555390-pumas-fc-unam",
+      "score": 264,
+      "qualified": null
+    },
+    {
+      "place": 17,
+      "teamId": "2021-gpm-iteso-551753-b11-itesm-monterrey",
+      "score": 239,
+      "qualified": null
+    },
+    {
+      "place": 18,
+      "teamId": "2021-gpm-iteso-553822-ac-forever-escom-ipn",
+      "score": 232,
+      "qualified": null
+    },
+    {
+      "place": 19,
+      "teamId": "2021-gpm-iteso-553594-los-que-no-vinieron-itesm-cuernavaca",
+      "score": 215,
+      "qualified": null
+    },
+    {
+      "place": 20,
+      "teamId": "2021-gpm-iteso-579956-chilaquiles-con-pollo-escom-ipn",
+      "score": 200,
+      "qualified": null
+    },
+    {
+      "place": 21,
+      "teamId": "2021-gpm-iteso-569957-yo-no-se-manana-udg-cucei",
+      "score": 179,
+      "qualified": null
+    },
+    {
+      "place": 22,
+      "teamId": "2021-gpm-iteso-551776-la-tercera-es-la-vencida-udg-cucei",
+      "score": 171,
+      "qualified": null
+    },
+    {
+      "place": 23,
+      "teamId": "2021-gpm-iteso-555391-pumasds-iimas",
+      "score": 166,
+      "qualified": null
+    },
+    {
+      "place": 24,
+      "teamId": "2021-gpm-iteso-554216-o-3-bugs-itesm-monterrey",
+      "score": 151,
+      "qualified": null
+    },
+    {
+      "place": 25,
+      "teamId": "2021-gpm-iteso-554414-la-tremenda-chimichanga-unam-enes-morelia",
+      "score": 149,
+      "qualified": null
+    },
+    {
+      "place": 26,
+      "teamId": "2021-gpm-iteso-555372-include-uaz-uaz",
+      "score": 141,
+      "qualified": null
+    },
+    {
+      "place": 27,
+      "teamId": "2021-gpm-iteso-553371-team-puzzles-uaa",
+      "score": 138,
+      "qualified": null
+    },
+    {
+      "place": 28,
+      "teamId": "2021-gpm-iteso-554383-coronacoders-up-bonaterra",
+      "score": 138,
+      "qualified": null
+    },
+    {
+      "place": 29,
+      "teamId": "2021-gpm-iteso-554546-dynamic-pumas-fc-unam",
+      "score": 129,
+      "qualified": null
+    },
+    {
+      "place": 30,
+      "teamId": "2021-gpm-iteso-571388-acmamo-udgcutonala",
+      "score": 126,
+      "qualified": null
+    },
+    {
+      "place": 31,
+      "teamId": "2021-gpm-iteso-555454-hash-pixies-ugtodcne",
+      "score": 118,
+      "qualified": null
+    },
+    {
+      "place": 32,
+      "teamId": "2021-gpm-iteso-551908-010-girls-001-mike-itsur",
+      "score": 112,
+      "qualified": null
+    },
+    {
+      "place": 33,
+      "teamId": "2021-gpm-iteso-555469-patodalavida-uach",
+      "score": 94,
+      "qualified": null
+    },
+    {
+      "place": 34,
+      "teamId": "2021-gpm-iteso-554316-bourbaki-ugtodcne",
+      "score": 92,
+      "qualified": null
+    },
+    {
+      "place": 35,
+      "teamId": "2021-gpm-iteso-553455-utf-8-fes-acatlan-unam",
+      "score": 92,
+      "qualified": null
+    },
+    {
+      "place": 36,
+      "teamId": "2021-gpm-iteso-554052-utmiitas-utm",
+      "score": 86,
+      "qualified": null
+    },
+    {
+      "place": 37,
+      "teamId": "2021-gpm-iteso-551907-too-lazy-to-propagate-itsur",
+      "score": 84,
+      "qualified": null
+    },
+    {
+      "place": 38,
+      "teamId": "2021-gpm-iteso-555386-sereno-el-fullereno-cnymyn",
+      "score": 78,
+      "qualified": null
+    },
+    {
+      "place": 39,
+      "teamId": "2021-gpm-iteso-555441-brute-force-fc-unam",
+      "score": 78,
+      "qualified": null
+    },
+    {
+      "place": 40,
+      "teamId": "2021-gpm-iteso-554357-algoteam-uacj",
+      "score": 63,
+      "qualified": null
+    },
+    {
+      "place": 41,
+      "teamId": "2021-gpm-iteso-555403-los-pininos-esfm-ipn",
+      "score": 62,
+      "qualified": null
+    },
+    {
+      "place": 42,
+      "teamId": "2021-gpm-iteso-554382-panpanaderos-up-bonaterra",
+      "score": 54,
+      "qualified": null
+    },
+    {
+      "place": 43,
+      "teamId": "2021-gpm-iteso-554876-o-1-itesm-monterrey",
+      "score": 52,
+      "qualified": null
+    },
+    {
+      "place": 44,
+      "teamId": "2021-gpm-iteso-555405-void-guys-esfm-ipn",
+      "score": 50,
+      "qualified": null
+    },
+    {
+      "place": 45,
+      "teamId": "2021-gpm-iteso-570386-ludus-g-it-culiacan",
+      "score": 48,
+      "qualified": null
+    },
+    {
+      "place": 46,
+      "teamId": "2021-gpm-iteso-555437-dna-fc-unam",
+      "score": 43,
+      "qualified": null
+    },
+    {
+      "place": 47,
+      "teamId": "2021-gpm-iteso-554359-redstone-engineers-escom-ipn",
+      "score": 42,
+      "qualified": null
+    },
+    {
+      "place": 48,
+      "teamId": "2021-gpm-iteso-555399-mojibake-upgdl",
+      "score": 37,
+      "qualified": null
+    },
+    {
+      "place": 49,
+      "teamId": "2021-gpm-iteso-555446-cyberdemons-escom-ipn",
+      "score": 34,
+      "qualified": null
+    },
+    {
+      "place": 50,
+      "teamId": "2021-gpm-iteso-542921-include-uam-h-uam-a",
+      "score": 33,
+      "qualified": null
+    },
+    {
+      "place": 51,
+      "teamId": "2021-gpm-iteso-555470-wajakos-uach",
+      "score": 31,
+      "qualified": null
+    },
+    {
+      "place": 52,
+      "teamId": "2021-gpm-iteso-542925-los-wansos-uam-a",
+      "score": 31,
+      "qualified": null
+    },
+    {
+      "place": 53,
+      "teamId": "2021-gpm-iteso-555388-los-seguidores-de-karel-itesm-gda",
+      "score": 31,
+      "qualified": null
+    },
+    {
+      "place": 54,
+      "teamId": "2021-gpm-iteso-555438-los-tres-paleteros-uanl",
+      "score": 31,
+      "qualified": null
+    },
+    {
+      "place": 55,
+      "teamId": "2021-gpm-iteso-555451-tec-gdl-6-itesm-gda",
+      "score": 31,
+      "qualified": null
+    },
+    {
+      "place": 56,
+      "teamId": "2021-gpm-iteso-555934-la-sosiedad-itesm-monterrey",
+      "score": 29,
+      "qualified": null
+    },
+    {
+      "place": 57,
+      "teamId": "2021-gpm-iteso-571096-deltawing-udg-cucei",
+      "score": 26,
+      "qualified": null
+    },
+    {
+      "place": 58,
+      "teamId": "2021-gpm-iteso-555444-booleanos-uanl",
+      "score": 25,
+      "qualified": null
+    },
+    {
+      "place": 59,
+      "teamId": "2021-gpm-iteso-553788-return-t-d-a-escom-ipn",
+      "score": 22,
+      "qualified": null
+    },
+    {
+      "place": 60,
+      "teamId": "2021-gpm-iteso-555397-2-boys-1-dog-itesm-chihuahua",
+      "score": 21,
+      "qualified": null
+    },
+    {
+      "place": 61,
+      "teamId": "2021-gpm-iteso-585142-0xbests-itnl",
+      "score": 21,
+      "qualified": null
+    },
+    {
+      "place": 62,
+      "teamId": "2021-gpm-iteso-554349-purple-haze-ugtodcne",
+      "score": 17,
+      "qualified": null
+    },
+    {
+      "place": 63,
+      "teamId": "2021-gpm-iteso-553460-los-panaceas-fes-acatlan-unam",
+      "score": 16,
+      "qualified": null
+    },
+    {
+      "place": 64,
+      "teamId": "2021-gpm-iteso-554777-tec-gdl-5-itesm-gda",
+      "score": 13,
+      "qualified": null
+    },
+    {
+      "place": 65,
+      "teamId": "2021-gpm-iteso-555471-srirbsobdb-progra-uach",
+      "score": 11,
+      "qualified": null
+    },
+    {
+      "place": 66,
+      "teamId": "2021-gpm-iteso-554358-ansiosos-escom-ipn",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 67,
+      "teamId": "2021-gpm-iteso-552830-riko-pollo-itesm-monterrey",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 68,
+      "teamId": "2021-gpm-iteso-554388-los-taqueros-up-bonaterra",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 69,
+      "teamId": "2021-gpm-iteso-554711-tec-gdl-1-itesm-gda",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 70,
+      "teamId": "2021-gpm-iteso-542928-compumundohipermegared-uam-a",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 71,
+      "teamId": "2021-gpm-iteso-554386-nanup-up-bonaterra",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 72,
+      "teamId": "2021-gpm-iteso-555392-backendneko-fc-unam",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 73,
+      "teamId": "2021-gpm-iteso-551909-los-picateclas-itsur",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 74,
+      "teamId": "2021-gpm-iteso-551775-alfabuenamaravillaondadinamitaescuadronlobo-upgdl",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 75,
+      "teamId": "2021-gpm-iteso-553427-bughunteraddicts-itesm-toluca",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 76,
+      "teamId": "2021-gpm-iteso-555404-mme-py-esfm-ipn",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 77,
+      "teamId": "2021-gpm-iteso-555393-chicas-superpoderosas-fc-unam",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 78,
+      "teamId": "2021-gpm-iteso-554249-0-de-iq-udg-cualtos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 79,
+      "teamId": "2021-gpm-iteso-555384-echo-coding-itesm-ccm",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 80,
+      "teamId": "2021-gpm-iteso-553421-oaxacode-uao",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 81,
+      "teamId": "2021-gpm-iteso-555966-los-charlies-de-angel-upiiz-ipn",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 82,
+      "teamId": "2021-gpm-iteso-554183-zero-udg-cualtos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 83,
+      "teamId": "2021-gpm-iteso-555448-anti-coding-coding-club-escom-ipn",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 84,
+      "teamId": "2021-gpm-iteso-553456-m-c-nificas-fes-acatlan-unam",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 85,
+      "teamId": "2021-gpm-iteso-551873-codeadores-tumbados-itesm-monterrey",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 86,
+      "teamId": "2021-gpm-iteso-553433-los-changoleones-udem",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 87,
+      "teamId": "2021-gpm-iteso-554385-panas-up-bonaterra",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 88,
+      "teamId": "2021-gpm-iteso-555965-d3dsecexe-upiiz-ipn",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 89,
+      "teamId": "2021-gpm-iteso-553399-oasis-udem",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 90,
+      "teamId": "2021-gpm-iteso-555406-bffs-brute-force-friends-3-esfm-ipn",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 91,
+      "teamId": "2021-gpm-iteso-553457-mateatletas-fes-acatlan-unam",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 92,
+      "teamId": "2021-gpm-iteso-553464-data-pirates-upgdl",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 93,
+      "teamId": "2021-gpm-iteso-553259-super-coders-pro-itsur",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 94,
+      "teamId": "2021-gpm-iteso-552599-sudo-programmers-uaz",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 95,
+      "teamId": "2021-gpm-iteso-551906-alt-f4-tec-parral",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 96,
+      "teamId": "2021-gpm-iteso-555140-o-nice-itesm-cem",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 97,
+      "teamId": "2021-gpm-iteso-554317-bits-team-h-upaep",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 98,
+      "teamId": "2021-gpm-iteso-551939-timelimitexceeded-itesm-monterrey",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 99,
+      "teamId": "2021-gpm-iteso-555074-peter-o-clown-itsur",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 100,
+      "teamId": "2021-gpm-iteso-555459-syntax-error-uanl",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 101,
+      "teamId": "2021-gpm-iteso-555485-against-all-odds-uach",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 102,
+      "teamId": "2021-gpm-iteso-555207-artemisa-itesm-cem",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 103,
+      "teamId": "2021-gpm-iteso-552500-fsocietymx-itesm-monterrey",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 104,
+      "teamId": "2021-gpm-iteso-554387-tinmarin-up-bonaterra",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 105,
+      "teamId": "2021-gpm-iteso-553325-los-estafados-de-talan-itsur",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 106,
+      "teamId": "2021-gpm-iteso-553416-cpu-upaep",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 107,
+      "teamId": "2021-gpm-iteso-553787-lascuries-escom-ipn",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 108,
+      "teamId": "2021-gpm-iteso-555338-las-bichotas-unam-enes-morelia",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 109,
+      "teamId": "2021-gpm-iteso-554150-hello-world-udem",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 110,
+      "teamId": "2021-gpm-iteso-556130-donkeysquad-escom-ipn",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 111,
+      "teamId": "2021-gpm-iteso-559661-jaguares-uady",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 112,
+      "teamId": "2021-gpm-iteso-553459-el-pollogato-de-uwu-fes-acatlan-unam",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 113,
+      "teamId": "2021-gpm-iteso-555464-lf-freacks-uaz",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 114,
+      "teamId": "2021-gpm-iteso-555461-backpropagated-poets-iimas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 115,
+      "teamId": "2021-gpm-iteso-555410-hornet-esfm-ipn",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 116,
+      "teamId": "2021-gpm-iteso-553526-tartarus-udem",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 117,
+      "teamId": "2021-gpm-iteso-555413-turingcompletists-itesm-chihuahua",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 118,
+      "teamId": "2021-gpm-iteso-554778-leonas-udg-cualtos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 119,
+      "teamId": "2021-gpm-iteso-555394-floppasoft-uaz",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 120,
+      "teamId": "2021-gpm-iteso-572267-norbertos-ciberneticos-escom-ipn",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 121,
+      "teamId": "2021-gpm-iteso-571128-g2-its-lerdo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 122,
+      "teamId": "2021-gpm-iteso-555472-efesios-uach",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 123,
+      "teamId": "2021-gpm-iteso-555439-valhalla-fc-unam",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 124,
+      "teamId": "2021-gpm-iteso-571310-zandunga-it-culiacan",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 125,
+      "teamId": "2021-gpm-iteso-554059-vacilon-uaz",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 126,
+      "teamId": "2021-gpm-iteso-571089-ajolotechs-itesm-toluca",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 127,
+      "teamId": "2021-gpm-iteso-570504-nan-uaslp",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 128,
+      "teamId": "2021-gpm-iteso-553919-syntax-error-upgdl",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 129,
+      "teamId": "2021-gpm-iteso-553398-chamoy-udem",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 130,
+      "teamId": "2021-gpm-iteso-551913-popotes-upgdl",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 131,
+      "teamId": "2021-gpm-iteso-554909-tec-gdl-3-itesm-gda",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 132,
+      "teamId": "2021-gpm-iteso-555442-aes-fc-unam",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 133,
+      "teamId": "2021-gpm-iteso-555449-bryxend-facultad-de-ingenieria",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 134,
+      "teamId": "2021-gpm-iteso-572238-angstroms-cnymyn",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 135,
+      "teamId": "2021-gpm-iteso-554352-red-bool-ugtodcne",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 136,
+      "teamId": "2021-gpm-iteso-553465-programadioses-itesm-puebla",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 137,
+      "teamId": "2021-gpm-iteso-570890-flotantes-unadm",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 138,
+      "teamId": "2021-gpm-iteso-555389-etas-uanl",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 139,
+      "teamId": "2021-gpm-iteso-555570-dinamitasoft-uaz",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 140,
+      "teamId": "2021-gpm-iteso-570353-hijos-de-honor-it-culiacan",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 141,
+      "teamId": "2021-gpm-iteso-554513-develoopers-udg-cucei",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 142,
+      "teamId": "2021-gpm-iteso-554058-hakka-uaz",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 143,
+      "teamId": "2021-gpm-iteso-542933-kernel-panic-uam-a",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 144,
+      "teamId": "2021-gpm-iteso-571123-rtngs-uach",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 145,
+      "teamId": "2021-gpm-iteso-571129-arsgoetia-it-culiacan",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 146,
+      "teamId": "2021-gpm-iteso-555173-las-chicas-superpoderosas-itesm-cem",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 147,
+      "teamId": "2021-gpm-iteso-553463-los-asciiados-upgdl",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 148,
+      "teamId": "2021-gpm-iteso-571090-calacas-programadoras-uaz",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 149,
+      "teamId": "2021-gpm-iteso-553432-speed-force-udem",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 150,
+      "teamId": "2021-gpm-iteso-554843-deltacode-itesm-monterrey",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 151,
+      "teamId": "2021-gpm-iteso-571244-bal-force-iteso",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 152,
+      "teamId": "2021-gpm-iteso-571387-lemsw-uaz",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 153,
+      "teamId": "2021-gpm-iteso-571085-8bit-itleon",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 154,
+      "teamId": "2021-gpm-iteso-595696-three-ocean-its-poza-rica",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 155,
+      "teamId": "2021-gpm-iteso-594632-cimarron-zen-itcc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 156,
+      "teamId": "2021-gpm-iteso-594058-knd-los-chicos-sin-barrio-itlac",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 157,
+      "teamId": "2021-gpm-iteso-555491-loonganizas-fc-unam",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 158,
+      "teamId": "2021-gpm-iteso-553292-los-cracks-itsur",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 159,
+      "teamId": "2021-gpm-iteso-554712-los-httpotters-itesm-monterrey",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 160,
+      "teamId": "2021-gpm-iteso-555467-los-devastadores-fc-unam",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 161,
+      "teamId": "2021-gpm-iteso-551911-dreamteam-upgdl",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 162,
+      "teamId": "2021-gpm-iteso-555395-codiboys-itesm-chihuahua",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 163,
+      "teamId": "2021-gpm-iteso-556065-syntax-error-2-upgdl",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 164,
+      "teamId": "2021-gpm-iteso-554389-jat-itesm-toluca",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 165,
+      "teamId": "2021-gpm-iteso-553396-equipo-tres-udem",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 166,
+      "teamId": "2021-gpm-iteso-599407-univa1-univa",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 167,
+      "teamId": "2021-gpm-iteso-551751-404-itesm-monterrey",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 168,
+      "teamId": "2021-gpm-iteso-570371-team-diff-itesm-monterrey",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 169,
+      "teamId": "2021-gpm-iteso-554390-ranas-tacticas-itesm-toluca",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 170,
+      "teamId": "2021-gpm-iteso-555409-aquino-esfm-ipn",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 171,
+      "teamId": "2021-gpm-iteso-571510-salchipulpos-it-culiacan",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 172,
+      "teamId": "2021-gpm-iteso-555407-runtime-error-itesm-chihuahua",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 173,
+      "teamId": "2021-gpm-iteso-571408-neko-beast-iteso",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 174,
+      "teamId": "2021-gpm-iteso-551750-alfa-lobo-buena-onda-dinamita-itesm-monterrey",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 175,
+      "teamId": "2021-gpm-iteso-555445-truen-t-fc-unam",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 176,
+      "teamId": "2021-gpm-iteso-555453-tec-gdl-7-itesm-gda",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 177,
+      "teamId": "2021-gpm-iteso-555481-pink-uach",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 178,
+      "teamId": "2021-gpm-iteso-571088-los-empresaurios-itesm-cem",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 179,
+      "teamId": "2021-gpm-iteso-568154-sin-pisto-no-existo-itsmante",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 180,
+      "teamId": "2021-gpm-iteso-552368-los-bugeados-uaz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 181,
+      "teamId": "2021-gpm-iteso-553462-nopers-uaslp",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 182,
+      "teamId": "2021-gpm-iteso-554283-matlabers-itesm-monterrey",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 183,
+      "teamId": "2021-gpm-iteso-602095-espadas-argenteas-uaz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 184,
+      "teamId": "2021-gpm-iteso-551915-code101-itesm-monterrey",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 185,
+      "teamId": "2021-gpm-iteso-569364-onecodeman-itsmante",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 186,
+      "teamId": "2021-gpm-iteso-571091-the-last-sons-of-chago-uaz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 187,
+      "teamId": "2021-gpm-iteso-556098-pms-buap",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 188,
+      "teamId": "2021-gpm-iteso-555305-oceano-atlantico-itesm-puebla",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 189,
+      "teamId": "2021-gpm-iteso-555383-time-limit-exceeded-itsur",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 190,
+      "teamId": "2021-gpm-iteso-592731-los-3-reyes-magos-itq",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 191,
+      "teamId": "2021-gpm-iteso-553424-syntax-error-jpj-uao",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 192,
+      "teamId": "2021-gpm-iteso-553821-no-nos-funen-plox-escom-ipn",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 193,
+      "teamId": "2021-gpm-iteso-571412-anmol-camacho-y-sus-plebes-del-rancho-iteso",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 194,
+      "teamId": "2021-gpm-iteso-568155-romasaci-itsmante",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 195,
+      "teamId": "2021-gpm-iteso-568152-genbu-itsmante",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 196,
+      "teamId": "2021-gpm-iteso-570889-star-bot-iteso",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 197,
+      "teamId": "2021-gpm-iteso-554379-rocket-code-uv",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 198,
+      "teamId": "2021-gpm-iteso-569913-01-mrrobot-its-calkini",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 199,
+      "teamId": "2021-gpm-iteso-571475-cheetos-flaming-hot-itsmante",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 200,
+      "teamId": "2021-gpm-iteso-552764-helloworld-tec-itesm-monterrey",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 201,
+      "teamId": "2021-gpm-iteso-554360-cimacoders-uabc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 202,
+      "teamId": "2021-gpm-iteso-555401-incoders-up-bonaterra",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 203,
+      "teamId": "2021-gpm-iteso-573357-losprogramadores-itcm",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 204,
+      "teamId": "2021-gpm-iteso-555466-hanami-gumi-uaz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 205,
+      "teamId": "2021-gpm-iteso-562550-pcf-team-its-lerdo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 206,
+      "teamId": "2021-gpm-iteso-570485-namenotfoundexception-uaslp",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 207,
+      "teamId": "2021-gpm-iteso-568162-itsm-euphoria-itsmante",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 208,
+      "teamId": "2021-gpm-iteso-555239-aba-itesm-cem",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 209,
+      "teamId": "2021-gpm-iteso-571393-poros-programadores-udgcutonala",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 210,
+      "teamId": "2021-gpm-iteso-568159-grandchilds-sad-itsmante",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 211,
+      "teamId": "2021-gpm-iteso-571069-spiderteam-it-culiacan",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 212,
+      "teamId": "2021-gpm-iteso-555536-the-changes-itnl",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 213,
+      "teamId": "2021-gpm-iteso-601935-las-chicas-superpoderosas-uaz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 214,
+      "teamId": "2021-gpm-iteso-592595-team-pdf-ito",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 215,
+      "teamId": "2021-gpm-iteso-553397-dkh3-udem",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 216,
+      "teamId": "2021-gpm-iteso-571087-gcoders-itesm-cem",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 217,
+      "teamId": "2021-gpm-iteso-555468-arcadian-dream-fc-unam",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 218,
+      "teamId": "2021-gpm-iteso-554117-crazy-math-scientists-itesm-monterrey",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 219,
+      "teamId": "2021-gpm-iteso-595364-raslt-ragnarok-itspa",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 220,
+      "teamId": "2021-gpm-iteso-555455-tec-gdl-8-itesm-gda",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 221,
+      "teamId": "2021-gpm-iteso-594449-raslt-dedsec-itspa",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 222,
+      "teamId": "2021-gpm-iteso-554810-tec-gdl-2-itesm-gda",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 223,
+      "teamId": "2021-gpm-iteso-571418-red-squadron-iteso",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 224,
+      "teamId": "2021-gpm-iteso-587975-ultra-magnus-team-itsur",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 225,
+      "teamId": "2021-gpm-iteso-571382-beesechurger-it-culiacan",
+      "score": 1,
+      "qualified": null
+    }
+  ],
+  "source": "https://acm.iteso.mx/share/gp2021_03_resultados_acumulados.pdf",
+  "scoreUnit": "Puntos",
+  "snapshot": "unconfirmed",
+  "snapshotLabel": "Acumulado hasta la tercera fecha",
+  "publicationNotes": [
+    "Se conserva el acumulado publicado por ITESO; no se recalculan puntajes ni se infiere quién clasificó."
+  ]
+}
