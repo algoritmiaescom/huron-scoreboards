@@ -79,6 +79,9 @@ The application uses `/scoreboards`, `/schools`, `/schools/:schoolId`, `/media`,
 `/contribute`. Once standings are released, `/` redirects to `/scoreboards`; unknown paths show
 recovery rather than another page's content.
 
+These are client routes under the URL hash on GitHub Pages; for example, the public school
+index is `/huron-scoreboards/#/schools?q=UNAM`.
+
 - A contest view uses `/scoreboards?contest=<id>`. Without an explicit selection, choose the
   latest archived contest whose date is not later than today's date in `America/Mexico_City`.
   Break equal-date ties by ascending contest id. If no held contests exist, show an empty archive.
@@ -195,4 +198,3 @@ The theme derives from the club logo and the ICPC logo. The palette is tracked i
 - Live or in-contest scoring.
 - Authentication, roles, and in-app data editing.
 - A backend service or hosted database.
-- Hosting and deployment configuration.

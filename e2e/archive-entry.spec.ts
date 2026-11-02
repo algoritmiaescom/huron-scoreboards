@@ -1,16 +1,61 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
+test('serves shared hash links and assets under the Pages prefix', async ({ page, baseURL }) => {
+  if (baseURL === undefined) {
+    throw new Error('Expected the production preview URL');
+  }
+  const outsideBase: string[] = [];
+  const failedResponses: string[] = [];
+  page.on('request', (request) => {
+    if (new URL(request.url()).origin === new URL(baseURL).origin) {
+      if (!request.url().startsWith(baseURL)) {
+        outsideBase.push(request.url());
+      }
+    }
+  });
+  page.on('response', (response) => {
+    if (response.status() >= 400) {
+      failedResponses.push(response.url());
+    }
+  });
+  const response = await page.goto('./#/contribute');
+  expect(response?.status()).toBe(200);
+  await expect(page).toHaveTitle('Contribuir | Huron Scoreboards');
+  await page.reload();
+  await expect(page).toHaveTitle('Contribuir | Huron Scoreboards');
+  const sharedURL = page.url();
+  await page.getByRole('link', { name: 'Saltar al contenido' }).focus();
+  await page.keyboard.press('Enter');
+  await expect(page.getByRole('main')).toBeFocused();
+  expect(page.url()).toBe(sharedURL);
+  await page.getByRole('link', { name: 'Clasificaciones', exact: true }).click();
+  await expect(
+    page.getByRole('heading', { name: 'Gran Premio MX 2026 — Tercera Fecha' }),
+  ).toBeVisible({ timeout: 30_000 });
+  for (const name of ['Huron Scoreboards, inicio', 'ICPC Masters México']) {
+    await expect
+      .poll(() =>
+        page.getByRole('img', { name, exact: true }).evaluate((image: HTMLImageElement) => {
+          return image.complete && image.naturalWidth > 0;
+        }),
+      )
+      .toBe(true);
+  }
+  expect(outsideBase).toEqual([]);
+  expect(failedResponses).toEqual([]);
+});
+
 test('redirects to the production archive and renders the reviewed contest accessibly', async ({
   page,
 }) => {
-  await page.goto('/');
+  await page.goto('./');
 
   await expect(
     page.getByRole('heading', { name: 'Gran Premio MX 2026 — Tercera Fecha' }),
   ).toBeVisible({ timeout: 30_000 });
-  await expect(page).toHaveURL('/scoreboards?contest=2026-gpm-qualifier-3');
-  await page.goto('/scoreboards?contest=2022-gpm-repechage');
+  await expect(page).toHaveURL('./#/scoreboards?contest=2026-gpm-qualifier-3');
+  await page.goto('./#/scoreboards?contest=2022-gpm-repechage');
   await expect(page.getByRole('heading', { name: 'Repechaje Gran Premio MX 2022' })).toBeVisible();
   await expect(
     page
@@ -27,7 +72,7 @@ test('preserves unidentified schools and published totals in the 2023 repechage'
 }) => {
   test.setTimeout(60_000);
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.goto('/scoreboards?contest=2023-gpm-repechage');
+  await page.goto('./#/scoreboards?contest=2023-gpm-repechage');
   await expect(page.getByRole('heading', { name: 'Repechaje Gran Premio MX 2023' })).toBeVisible({
     timeout: 60_000,
   });
@@ -53,7 +98,7 @@ test('loads all 2026 GPM qualifiers and discloses the third table coverage limit
     ['qualifier-2', 'Segunda Fecha', 702],
     ['qualifier-3', 'Tercera Fecha', 611],
   ] as const) {
-    await page.goto(`/scoreboards?contest=2026-gpm-${stage}`);
+    await page.goto(`./#/scoreboards?contest=2026-gpm-${stage}`);
     const table = page.getByRole('table', {
       name: `Clasificación de Gran Premio MX 2026 — ${name}`,
     });
@@ -78,11 +123,11 @@ test('preserves all 2026 accumulated scores and only explicit quota assignments'
   page,
 }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.goto('/scoreboards?contest=2026-gpm-qualifier-3');
+  await page.goto('./#/scoreboards?contest=2026-gpm-qualifier-3');
   await page
     .getByRole('combobox', { name: 'Clasificación', exact: true })
     .selectOption('accumulated');
-  await expect(page).toHaveURL('/scoreboards?season=2026&series=gpm&view=accumulated');
+  await expect(page).toHaveURL('./#/scoreboards?season=2026&series=gpm&view=accumulated');
   const table = page.getByRole('table', { name: 'Clasificación acumulada 2026' });
   await expect(table.getByRole('row')).toHaveCount(615);
   await expect(table.getByRole('cell', { name: '#510', exact: true })).toHaveCount(105);
@@ -106,7 +151,7 @@ test('preserves all 2026 accumulated scores and only explicit quota assignments'
 
 test('loads the complete 2019 and 2020 Mexico Finals from the real archive', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.goto('/scoreboards?contest=2019-mexico-finals-final');
+  await page.goto('./#/scoreboards?contest=2019-mexico-finals-final');
   await expect(page.getByRole('heading', { name: 'Final Regional de México 2019' })).toBeVisible();
 
   const finals2019 = page.getByRole('table', {
@@ -116,7 +161,7 @@ test('loads the complete 2019 and 2020 Mexico Finals from the real archive', asy
   const unidentified = finals2019.getByRole('row').filter({ hasText: 'Leones(0,0,0); []' });
   await expect(unidentified.getByText('Institución no identificada')).toBeVisible();
 
-  await page.goto('/scoreboards?contest=2020-mexico-finals-final');
+  await page.goto('./#/scoreboards?contest=2020-mexico-finals-final');
   await expect(page.getByRole('heading', { name: 'Final Regional de México 2020' })).toBeVisible();
   await expect(
     page
@@ -127,7 +172,7 @@ test('loads the complete 2019 and 2020 Mexico Finals from the real archive', asy
 
 test('labels the unconfirmed 2019 GPM accumulated snapshot', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.goto('/scoreboards?season=2019&series=gpm&view=accumulated');
+  await page.goto('./#/scoreboards?season=2019&series=gpm&view=accumulated');
 
   const snapshotWarning = page
     .getByRole('alert')
@@ -147,19 +192,19 @@ test('preserves dense 2015 ties and distinct 2024 registrations in the published
   page,
 }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.goto('/scoreboards?season=2015&series=gpm&view=accumulated');
+  await page.goto('./#/scoreboards?season=2015&series=gpm&view=accumulated');
   const dense = page.getByRole('table', { name: 'Clasificación acumulada 2015' });
   await expect(dense.getByRole('row')).toHaveCount(307);
   await expect(dense.getByRole('cell', { name: '#239', exact: true })).toHaveCount(51);
   await expect(dense.getByRole('row').filter({ hasText: 'FGZ' })).toHaveCount(2);
   await expect(page.getByRole('alert').filter({ hasText: 'puestos densos' })).toBeVisible();
-  await page.goto('/scoreboards?season=2024&series=gpm&view=accumulated');
+  await page.goto('./#/scoreboards?season=2024&series=gpm&view=accumulated');
   const modern = page.getByRole('table', { name: 'Clasificación acumulada 2024' });
   await expect(modern.getByRole('row')).toHaveCount(483);
   for (const name of ['GooseFarmers', 'Timbits']) {
     await expect(modern.getByRole('row').filter({ hasText: name })).toHaveCount(2);
   }
-  await page.goto('/scoreboards?season=2023&series=gpm&view=accumulated');
+  await page.goto('./#/scoreboards?season=2023&series=gpm&view=accumulated');
   await expect(
     page.getByRole('alert').filter({ hasText: 'Acumulado hasta la segunda fecha' }),
   ).toBeVisible();
@@ -169,7 +214,7 @@ test('shows every 2013 Finals row without inventing missing places on desktop an
   page,
 }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.goto('/scoreboards?contest=2013-mexico-finals-final');
+  await page.goto('./#/scoreboards?contest=2013-mexico-finals-final');
   const results = page.getByRole('table', { name: /Clasificación de The 2013/ });
   await expect(results.getByRole('row')).toHaveCount(175);
   await expect(results.getByRole('cell', { name: 'No publicado', exact: true })).toHaveCount(81);
@@ -183,7 +228,7 @@ test('shows every 2013 Finals row without inventing missing places on desktop an
 });
 
 test('shows an honest empty media archive in production', async ({ page }) => {
-  await page.goto('/media');
+  await page.goto('./#/media');
   await expect(page).toHaveTitle('Comunidad | Huron Scoreboards');
   await expect(
     page.getByRole('heading', { name: 'Aún no hay publicaciones archivadas' }),
@@ -196,7 +241,7 @@ test('shows an honest empty media archive in production', async ({ page }) => {
 });
 
 test('restores a saved theme across reloads', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await page.evaluate(() => {
     localStorage.setItem('huron-scoreboards.theme-mode', 'dark');
   });
@@ -219,11 +264,11 @@ test('loads fonts locally and uses its initial light palette', async ({ page }) 
     }
   });
 
-  await page.goto('/');
+  await page.goto('./');
   await expect(
     page.getByRole('heading', { name: 'Gran Premio MX 2026 — Tercera Fecha' }),
   ).toBeVisible({ timeout: 30_000 });
-  await page.goto('/scoreboards?contest=2022-gpm-repechage');
+  await page.goto('./#/scoreboards?contest=2022-gpm-repechage');
   await expect(page.getByRole('heading', { name: 'Repechaje Gran Premio MX 2022' })).toBeVisible();
 
   const typography = await page.evaluate(async () => {
@@ -244,7 +289,7 @@ test('loads fonts locally and uses its initial light palette', async ({ page }) 
 });
 
 test('reflows the real contest across the responsive verification matrix', async ({ page }) => {
-  await page.goto('/scoreboards?contest=2022-gpm-repechage');
+  await page.goto('./#/scoreboards?contest=2022-gpm-repechage');
   const heading = page.getByRole('heading', { name: 'Repechaje Gran Premio MX 2022' });
   await expect(heading).toBeVisible();
 

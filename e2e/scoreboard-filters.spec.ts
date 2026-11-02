@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 
 const origin = 'http://127.0.0.1:4175';
 const contestId = '2024-gpm-qualifier-1';
-const contestUrl = `${origin}/scoreboards?contest=${contestId}`;
+const contestUrl = `${origin}/#/scoreboards?contest=${contestId}`;
 
 test.beforeEach(async ({ page }) => {
   await page.route('https://example.com/**', (route) => route.abort());
@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
 for (const width of [390, 1440]) {
   test(`loads partial mock history through the archive at ${String(width)}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
-    await page.goto(`${origin}/scoreboards?contest=2023-gpm-qualifier-1`);
+    await page.goto(`${origin}/#/scoreboards?contest=2023-gpm-qualifier-1`);
     await expect(page.getByText('Fecha desconocida', { exact: true })).toBeVisible();
     await expect(page.getByText('Duración desconocida', { exact: true })).toBeVisible();
     await expect(
@@ -33,7 +33,9 @@ for (const width of [390, 1440]) {
     await expect(page.getByRole('status')).toHaveText('9 de 12 equipos');
     expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
 
-    await page.goto(`${origin}/scoreboards?contest=2023-gpm-qualifier-2&school=unam-fc&accepted=1`);
+    await page.goto(
+      `${origin}/#/scoreboards?contest=2023-gpm-qualifier-2&school=unam-fc&accepted=1`,
+    );
     await expect(page.getByRole('status')).toContainText('1 de ');
     await expect(page.getByText('Desconocida', { exact: true })).toBeVisible();
     await expect(page.getByRole('img', { name: /Problema A. Detalle no disponible/ })).toHaveCount(
@@ -63,7 +65,7 @@ test('discovers sparse seasons and series and exposes honest source and correcti
   );
   await expect(page.getByText(/resultados inventados/)).toBeVisible();
   await page.getByRole('link', { name: 'Cómo corregir estos datos' }).click();
-  await expect(page).toHaveURL(`${origin}/contribute`);
+  await expect(page).toHaveURL(`${origin}/#/contribute`);
 });
 
 test('filters the actual contest, shares its URL, and restores reload and history state', async ({
@@ -99,7 +101,7 @@ test('filters the actual contest, shares its URL, and restores reload and histor
   await page
     .getByRole('combobox', { name: 'Clasificación', exact: true })
     .selectOption('2024-gpm-qualifier-2');
-  await expect(page).toHaveURL(`${origin}/scoreboards?contest=2024-gpm-qualifier-2`);
+  await expect(page).toHaveURL(`${origin}/#/scoreboards?contest=2024-gpm-qualifier-2`);
   await expect(name).toHaveValue('');
   await page.goBack();
   await expect(page).toHaveURL(filteredUrl);
@@ -111,8 +113,8 @@ test('filters the actual contest, shares its URL, and restores reload and histor
   await expect(page.getByRole('combobox', { name: 'Problema', exact: true })).toHaveValue('A');
   await page.getByRole('button', { name: 'Quitar filtro Equipo: UNAM FC delta' }).click();
   await expect(page.getByRole('textbox', { name: 'Nombre del equipo' })).toHaveValue('');
-  expect(new URL(page.url()).searchParams.has('team')).toBe(false);
-  expect(new URL(page.url()).searchParams.get('problem')).toBe('A');
+  expect(new URL(page.url().split('#')[1], origin).searchParams.has('team')).toBe(false);
+  expect(new URL(page.url().split('#')[1], origin).searchParams.get('problem')).toBe('A');
   await page.getByRole('button', { name: 'Limpiar todo' }).click();
   await expect(page).toHaveURL(contestUrl);
   await expect(page.getByText('Vista filtrada')).not.toBeVisible();
@@ -132,7 +134,7 @@ test('explains invalid filters, empty matches, and missing contests without subs
   await expect(page.getByText('No hay equipos que coincidan con estos filtros.')).toBeVisible();
   await page.getByRole('button', { name: 'Limpiar filtros' }).click();
   await expect(page.getByRole('table')).toBeVisible();
-  await page.goto(`${origin}/scoreboards?contest=not-a-contest`);
+  await page.goto(`${origin}/#/scoreboards?contest=not-a-contest`);
   await expect(page.getByRole('alert')).toContainText('No existe un concurso');
   await page.getByRole('button', { name: 'Ver el último concurso' }).click();
   await expect(page.getByRole('table')).toBeVisible();

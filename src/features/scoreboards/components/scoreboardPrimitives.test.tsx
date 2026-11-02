@@ -199,27 +199,35 @@ describe('team and school identities', () => {
     expect(screen.queryByRole('img')).not.toBeInTheDocument();
   });
 
-  it('supports explicit school links, root-relative logos and complete location', () => {
-    renderApp(
-      <MemoryRouter>
-        <SchoolIdentity
-          school={{
-            ...archive.schools[1],
-            logo: 'logos/unit.svg',
-            city: 'Ciudad',
-            state: 'Estado',
-          }}
-          href="/schools/unit"
-        />
-      </MemoryRouter>,
-    );
-    expect(screen.getByRole('link', { name: 'UNIT' })).toHaveAttribute('href', '/schools/unit');
-    expect(screen.getByRole('img', { name: 'Logo de Unit' })).toHaveAttribute(
-      'src',
-      '/logos/unit.svg',
-    );
-    expect(screen.getByText('Ciudad, Estado')).toBeInTheDocument();
-  });
+  it.each(['/', '/huron-scoreboards/'])(
+    'supports explicit school links, logos under %s and complete location',
+    (base) => {
+      vi.stubEnv('BASE_URL', base);
+      try {
+        renderApp(
+          <MemoryRouter>
+            <SchoolIdentity
+              school={{
+                ...archive.schools[1],
+                logo: 'logos/unit.svg',
+                city: 'Ciudad',
+                state: 'Estado',
+              }}
+              href="/schools/unit"
+            />
+          </MemoryRouter>,
+        );
+        expect(screen.getByRole('link', { name: 'UNIT' })).toHaveAttribute('href', '/schools/unit');
+        expect(screen.getByRole('img', { name: 'Logo de Unit' })).toHaveAttribute(
+          'src',
+          `${base}logos/unit.svg`,
+        );
+        expect(screen.getByText('Ciudad, Estado')).toBeInTheDocument();
+      } finally {
+        vi.unstubAllEnvs();
+      }
+    },
+  );
 
   it('reports a failed remote logo visibly and retries when the school changes', () => {
     const log = vi.spyOn(console, 'error').mockImplementation(() => undefined);

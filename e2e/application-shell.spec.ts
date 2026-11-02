@@ -4,12 +4,12 @@ import { expect, test } from '@playwright/test';
 test('navigates the complete page, restores its theme, and recovers unknown routes', async ({
   page,
 }) => {
-  await page.goto('/');
+  await page.goto('./');
   await page
     .getByRole('navigation', { name: 'Navegación principal' })
     .getByRole('link', { name: 'Contribuir' })
     .click();
-  await expect(page).toHaveURL('/contribute');
+  await expect(page).toHaveURL('./#/contribute');
   await expect(page).toHaveTitle('Contribuir | Huron Scoreboards');
   await expect(page.getByRole('main')).toBeFocused();
   await expect(page.getByRole('link', { name: 'Contribuir', exact: true })).toHaveAttribute(
@@ -31,7 +31,7 @@ test('navigates the complete page, restores its theme, and recovers unknown rout
     page.getByRole('button', { name: 'Cambiar al tema claro', exact: true }),
   ).toBeVisible();
   await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(7, 24, 35)');
-  await page.goto('/does-not-exist');
+  await page.goto('./#/does-not-exist');
   await expect(page).toHaveTitle('Página no encontrada | Huron Scoreboards');
   await page.getByRole('link', { name: 'Volver al inicio' }).click();
   await expect(
@@ -43,9 +43,9 @@ test('navigates the complete page, restores its theme, and recovers unknown rout
 test('opens multimedia from desktop and mobile navigation with an honest empty media state', async ({
   page,
 }) => {
-  await page.goto('/scoreboards');
+  await page.goto('./#/scoreboards');
   await page.getByRole('link', { name: 'Multimedia', exact: true }).click();
-  await expect(page).toHaveURL('/media');
+  await expect(page).toHaveURL('./#/media');
   await expect(page).toHaveTitle('Comunidad | Huron Scoreboards');
   await expect(page.getByRole('heading', { name: 'Más allá de la clasificación.' })).toBeVisible();
   await expect(
@@ -63,12 +63,12 @@ test('opens multimedia from desktop and mobile navigation with an honest empty m
   await drawer.getByRole('link', { name: 'Clasificaciones', exact: true }).click();
   await expect(drawer).not.toBeVisible();
   await expect(page.getByRole('main')).toBeFocused();
-  await expect(page).toHaveURL('/scoreboards?contest=2026-gpm-qualifier-3');
+  await expect(page).toHaveURL('./#/scoreboards?contest=2026-gpm-qualifier-3');
   await page.getByRole('button', { name: 'Abrir navegación' }).click();
   await drawer.getByRole('link', { name: 'Multimedia', exact: true }).click();
   await expect(drawer).not.toBeVisible();
   await expect(page.getByRole('main')).toBeFocused();
-  await expect(page).toHaveURL('/media');
+  await expect(page).toHaveURL('./#/media');
 });
 
 for (const mode of ['light', 'dark'] as const) {
@@ -78,12 +78,12 @@ for (const mode of ['light', 'dark'] as const) {
     await page.addInitScript((themeMode) => {
       localStorage.setItem('huron-scoreboards.theme-mode', themeMode);
     }, mode);
-    await page.goto('http://127.0.0.1:4175/media');
+    await page.goto('http://127.0.0.1:4175/#/media');
     const picker = page.getByLabel('Ver publicaciones de otra competencia');
     await expect(picker).toBeVisible();
     await picker.selectOption('2025-mexico-finals');
 
-    await expect(page).toHaveURL('http://127.0.0.1:4175/media?contest=2025-mexico-finals');
+    await expect(page).toHaveURL('http://127.0.0.1:4175/#/media?contest=2025-mexico-finals');
     await expect(
       page.getByText(
         'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
@@ -96,13 +96,15 @@ for (const mode of ['light', 'dark'] as const) {
       await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
         '2025-mexico-finals',
       );
-      const dimensions = await page.evaluate(() => ({
-        viewport: document.documentElement.clientWidth,
-        content: document.documentElement.scrollWidth,
-      }));
-      expect(dimensions.content, `${mode} ${String(width)}px media overflow`).toBeLessThanOrEqual(
-        dimensions.viewport,
-      );
+      await expect
+        .poll(
+          () =>
+            page.evaluate(
+              () => document.documentElement.scrollWidth <= document.documentElement.clientWidth,
+            ),
+          { message: `${mode} ${String(width)}px media overflow` },
+        )
+        .toBe(true);
     }
     for (const width of [390, 1440]) {
       await page.setViewportSize({ width, height: 900 });
@@ -119,7 +121,7 @@ for (const mode of ['light', 'dark'] as const) {
       ),
     ).toBeVisible();
     await page.goBack();
-    await expect(page).toHaveURL('http://127.0.0.1:4175/media');
+    await expect(page).toHaveURL('http://127.0.0.1:4175/#/media');
     await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
       '2026-gpm-qualifier-3',
     );
@@ -130,15 +132,17 @@ test('supports skip links, trapped drawer focus, Escape and navigation on a phon
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/scoreboards');
+  await page.goto('./#/scoreboards');
   await expect(
     page.getByRole('heading', { name: 'Gran Premio MX 2026 — Tercera Fecha' }),
   ).toBeVisible({ timeout: 30_000 });
   await page.keyboard.press('Tab');
   const skip = page.getByRole('link', { name: 'Saltar al contenido' });
   await expect(skip).toBeFocused();
+  const currentURL = page.url();
   await page.keyboard.press('Enter');
   await expect(page.getByRole('main')).toBeFocused();
+  expect(page.url()).toBe(currentURL);
   const open = page.getByRole('button', { name: 'Abrir navegación', includeHidden: true });
   await open.click();
   const drawer = page.getByRole('dialog', { name: 'Menú de navegación' });
@@ -155,7 +159,7 @@ test('supports skip links, trapped drawer focus, Escape and navigation on a phon
   await expect(open).toBeFocused();
   await open.click();
   await drawer.getByRole('link', { name: 'Contribuir' }).click();
-  await expect(page).toHaveURL('/contribute');
+  await expect(page).toHaveURL('./#/contribute');
   await expect(drawer).not.toBeVisible();
   await expect(page.getByRole('main')).toBeFocused();
   await page.getByRole('button', { name: 'Cambiar al tema oscuro', exact: true }).click();
@@ -182,10 +186,10 @@ for (const mode of ['light', 'dark'] as const) {
       localStorage.setItem('huron-scoreboards.theme-mode', themeMode);
     }, mode);
     for (const route of [
-      '/scoreboards?contest=2022-gpm-repechage',
-      '/media',
-      '/contribute',
-      '/unknown',
+      './#/scoreboards?contest=2022-gpm-repechage',
+      './#/media',
+      './#/contribute',
+      './#/unknown',
     ]) {
       await page.goto(route);
       await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 30_000 });
@@ -238,7 +242,7 @@ test('keeps mobile navigation usable in short landscape and across a desktop res
 }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.setViewportSize({ width: 844, height: 390 });
-  await page.goto('/contribute');
+  await page.goto('./#/contribute');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   await page.getByRole('button', { name: 'Abrir navegación' }).click();
   const drawer = page.getByRole('dialog', { name: 'Menú de navegación' });
@@ -264,7 +268,7 @@ test('announces loading while a page chunk is pending', async ({ page }) => {
     await pending;
     await route.continue();
   });
-  await page.goto('/');
+  await page.goto('./');
   await page.getByRole('link', { name: 'Contribuir', exact: true }).click();
   try {
     await expect(page.getByRole('status')).toContainText('Cargando página');
@@ -278,7 +282,7 @@ test('announces loading while a page chunk is pending', async ({ page }) => {
 });
 
 test('surfaces a failed page chunk and reloads successfully on retry', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('./');
   await page.route('**/assets/ContributePage-*.js', (route) => route.abort('failed'));
   await page.getByRole('link', { name: 'Contribuir', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'No pudimos cargar esta página' })).toBeVisible();
@@ -297,10 +301,10 @@ test.describe('touch navigation', () => {
 
   test('opens and closes navigation and changes themes with touch', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto('/');
+    await page.goto('./');
     await page.getByRole('button', { name: 'Abrir navegación' }).tap();
     await page.getByRole('dialog').getByRole('link', { name: 'Contribuir' }).tap();
-    await expect(page).toHaveURL('/contribute');
+    await expect(page).toHaveURL('./#/contribute');
     await page.getByRole('button', { name: 'Cambiar al tema oscuro', exact: true }).tap();
     await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(7, 24, 35)');
     await page.getByRole('button', { name: 'Abrir navegación' }).tap();
@@ -311,7 +315,7 @@ test.describe('touch navigation', () => {
 
 test('preserves focus rings, reduced motion, and enlarged-text reflow', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/contribute');
+  await page.goto('./#/contribute');
   const action = page.getByRole('link', { name: 'GitHub: enlace provisional', exact: true });
   await action.focus();
   const focus = await action.evaluate((element) => ({
@@ -325,9 +329,11 @@ test('preserves focus rings, reduced motion, and enlarged-text reflow', async ({
   await page.evaluate(() => {
     document.documentElement.style.fontSize = '200%';
   });
-  const layout = await page.evaluate(() => ({
-    content: document.documentElement.scrollWidth,
-    viewport: document.documentElement.clientWidth,
-  }));
-  expect(layout.content).toBeLessThanOrEqual(layout.viewport);
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () => document.documentElement.scrollWidth <= document.documentElement.clientWidth,
+      ),
+    )
+    .toBe(true);
 });

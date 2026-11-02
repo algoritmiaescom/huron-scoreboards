@@ -11,7 +11,7 @@ latest contest, and a guide for correcting the data through GitHub. See
 The application uses React 19, TypeScript, Vite, and Material UI. React Compiler is enabled in
 the Vite build.
 
-`main.tsx` mounts application providers. `App.tsx` mounts React Router's browser router;
+`main.tsx` mounts application providers. `App.tsx` mounts React Router's hash router;
 `src/app/routes.tsx` owns the released route tree. The root redirects to `/scoreboards`;
 `/contribute` loads the contribution guide, and unmatched paths render recovery. The standings
 page selects contest or accumulated results from URL parameters. The lazy `/schools` index and
@@ -135,9 +135,17 @@ of the site. See [ADR 0007](adr/0007-ingest-media-through-reviewed-pull-requests
 
 When a backend is introduced, add a remote repository implementation and an asynchronous state
 tool such as TanStack Query. Do not use Zustand as a server cache. Record the backend and
-deployment decisions in ADRs before coupling the application to them; see
+integration decisions in ADRs before coupling the application to them; see
 [ADR 0005](adr/0005-serve-repository-data-without-a-backend.md) for the current decision and
 [adr/README.md](adr/README.md) for what qualifies as an ADR.
+
+## Hosting
+
+GitHub Pages serves the validated static build at the repository subdirectory. CI deploys
+`main` only after all quality gates succeed. Hash routing keeps direct links and refreshes
+working without server rewrites, and public asset URLs use Vite's configured base path.
+See [ADR 0009](adr/0009-deploy-to-github-pages.md) and the
+[setup instructions](../README.md#deployment).
 
 ## Error policy
 

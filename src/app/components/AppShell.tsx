@@ -97,8 +97,10 @@ export const AppShell = ({ children }: { children?: ReactNode }) => {
     <Root>
       <SkipLink
         href="#main-content"
-        onClick={() => {
+        onClick={(event) => {
+          event.preventDefault();
           main.current?.focus();
+          main.current?.scrollIntoView();
         }}
       >
         Saltar al contenido
@@ -107,7 +109,10 @@ export const AppShell = ({ children }: { children?: ReactNode }) => {
         <Container maxWidth="xl">
           <HeaderToolbar disableGutters>
             <Brand to="/">
-              <BrandImage src="/brand/huron-club.jpg" alt="Huron Scoreboards, inicio" />
+              <BrandImage
+                src={`${import.meta.env.BASE_URL}brand/huron-club.jpg`}
+                alt="Huron Scoreboards, inicio"
+              />
               <BrandText>
                 <BrandEyebrow>CLUB DE ALGORITMIA ESCOM</BrandEyebrow>
                 <BrandName>

@@ -14,6 +14,6 @@ describe('App', () => {
     renderApp(<App />);
 
     await screen.findByRole('heading', { name: 'Contest' }, { timeout: 5000 });
-    expect(window.location.pathname).toBe('/scoreboards');
+    expect(window.location.hash.split('?')[0]).toBe('#/scoreboards');
   });
 });
