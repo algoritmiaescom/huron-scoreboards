@@ -6,14 +6,14 @@ dependencies = [
   "par-scrape==0.11.0",
   "par-ai-core[all]==0.5.9",
   "playwright==1.64.1",
-  "pymupdf==1.26.5",
+  "pymupdf==1.26.7",
   "pytesseract==0.3.13",
-  "pillow==12.0.0",
+  "pillow==13.0.0",
   "psutil==7.1.2",
 ]
 
 [dependency-groups]
-dev = ["pytest==8.4.2", "pytest-cov==7.0.0", "ruff==0.14.3", "mypy==1.18.2"]
+dev = ["pytest==9.0.3", "pytest-cov==7.0.0", "ruff==0.14.3", "mypy==1.18.2"]
 
 [tool.pytest.ini_options]
 testpaths = ["."]
