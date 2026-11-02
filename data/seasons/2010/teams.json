@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "2010-mexico-finals-global-row-0001-manowar",
+    "name": "Manowar",
+    "schoolId": "source-school-3999b6144a49",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0002-olimpo",
+    "name": "Olimpo",
+    "schoolId": "source-school-9281b200011a",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0003-uh",
+    "name": "UH++",
+    "schoolId": "uh",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0004-bankai",
+    "name": "Bankai",
+    "schoolId": "source-school-9281b200011a",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0005-los-punteros",
+    "name": "Los Punteros",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0006-acm-problem-solvers",
+    "name": "ACM Problem Solvers",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0007-itesm-pointers",
+    "name": "ITESM Pointers",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0008-granja",
+    "name": "Granja",
+    "schoolId": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0009-dragon-kurve",
+    "name": "Dragon Kurve",
+    "schoolId": "ugto",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0010-ades",
+    "name": "ADEs",
+    "schoolId": "uclv",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0011-elecujae2",
+    "name": "EleCUJAE2",
+    "schoolId": "source-school-137e4d05bc5c",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0012-cem-42",
+    "name": "CEM 42",
+    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0013-lol",
+    "name": "LOL",
+    "schoolId": "source-label-iteso-university-f66d759f69",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0014-dinamacion-programica",
+    "name": "Dinamacion Programica",
+    "schoolId": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0015-shishibukai",
+    "name": "Shishibukai",
+    "schoolId": "source-school-916879c519a1",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0016-los-colaos",
+    "name": "Los Colaos",
+    "schoolId": "uclv",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0017-itamitas",
+    "name": "Itamitas",
+    "schoolId": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0018-ftw",
+    "name": "FTW",
+    "schoolId": "source-school-742fd898cd47",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0019-fcmc-uo-12",
+    "name": "FCMC-UO-12",
+    "schoolId": "source-school-916879c519a1",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0020-es-team-a2-2",
+    "name": "Es team a2 2",
+    "schoolId": "buap",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0021-olimpicos",
+    "name": "Olimpicos",
+    "schoolId": "source-label-iteso-university-f66d759f69",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0022-uh23",
+    "name": "UH23",
+    "schoolId": "uh",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0023-k-boom",
+    "name": "K-Boom",
+    "schoolId": "uclv",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0024-code-raiders-of-chaos",
+    "name": "Code Raiders of Chaos",
+    "schoolId": "intec-rd",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0025-geekstra",
+    "name": "Geekstra",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0026-pura-creatividad",
+    "name": "Pura Creatividad",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0027-nomen-nescio",
+    "name": "Nomen nescio",
+    "schoolId": "source-school-28495a711d47",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0028-villanos-favoritos",
+    "name": "Villanos Favoritos",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0029-big-blue-team",
+    "name": "Big Blue Team",
+    "schoolId": "source-school-64985288ecac",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0030-terkianos-2",
+    "name": "Terkianos 2",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0031-uam-azcapotzalco-xvii",
+    "name": "UAM Azcapotzalco XVII",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0032-elecujae3",
+    "name": "EleCUJAE3",
+    "schoolId": "source-school-137e4d05bc5c",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0033-los-parsers",
+    "name": "Los Parsers",
+    "schoolId": "uanl",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0034-team",
+    "name": "(>^.^)> ((°\\(^,^)/°)) <(^.^<)",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0035-javangelists",
+    "name": "Javangelists",
+    "schoolId": "source-school-d04db20e2326",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0036-los-no-primos",
+    "name": "Los No Primos",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0037-lol",
+    "name": "LOL++",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0038-haka-itq",
+    "name": "Haka - ITQ",
+    "schoolId": "it-queretaro",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0039-itspr-3",
+    "name": "ITSPR-3",
+    "schoolId": "source-school-e0c43152252e",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0040-c-mita",
+    "name": "C-mita",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0041-dekus",
+    "name": "Dekus",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0042-lobos-iii",
+    "name": "LOBOS III",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-zapopan-456a899f35",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0043-itesz01",
+    "name": "ITESZ01",
+    "schoolId": "source-school-81261a73feaa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0044-ttteam",
+    "name": "TTTeam",
+    "schoolId": "source-school-d2a548191dfa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0045-umcc2",
+    "name": "UMCC2",
+    "schoolId": "source-school-2ac219571c53",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0046-uh21",
+    "name": "UH21",
+    "schoolId": "uh",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0047-the-coppers",
+    "name": "The Coppers",
+    "schoolId": "source-school-3d66aae6e433",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0048-la-gerencia",
+    "name": "La Gerencia",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0049-the-fad",
+    "name": "THE  FAD",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0050-machine-gun",
+    "name": "Machine Gun",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0051-spartans",
+    "name": "Spartans!",
+    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0052-unicoders",
+    "name": "Unicoders",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0053-uci-frc-3",
+    "name": "UCI-FRC-3",
+    "schoolId": "source-school-6a220b20176f",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0054-hot-code",
+    "name": "Hot Code",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0055-los-primos",
+    "name": "Los Primos",
+    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0056-tequilas-team",
+    "name": "Tequilas Team",
+    "schoolId": "source-label-universidad-autonoma-de-queretaro-7dcf156e94",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0057-uho-01",
+    "name": "UHo-01",
+    "schoolId": "source-school-f0d014db1ad5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0058-el-santo-contra-las-momias",
+    "name": "El Santo contra las Momias",
+    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0059-bloques-de-lego",
+    "name": "Bloques de Lego",
+    "schoolId": "itnl",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0060-dev-null",
+    "name": "/dev/null",
+    "schoolId": "uanl",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0061-equipo-2-quinto",
+    "name": "Equipo 2 - Quinto",
+    "schoolId": "source-school-2a7a9a57b191",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0062-itnl-java",
+    "name": "ITNL Java",
+    "schoolId": "itnl",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0063-inf-cujae2",
+    "name": "Inf-CUJAE2",
+    "schoolId": "source-school-137e4d05bc5c",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0064-ajax",
+    "name": "Ajax",
+    "schoolId": "source-school-9281b200011a",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0065-uho-soap",
+    "name": "UHo-Soap",
+    "schoolId": "source-school-f0d014db1ad5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0066-the-expendables",
+    "name": "The Expendables",
+    "schoolId": "source-school-ac5afbcfd1fa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0067-quien-sabe",
+    "name": "\"Quién sabe\"",
+    "schoolId": "buap",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0068-linces",
+    "name": "LINCES",
+    "schoolId": "itsantiago-edu-mx",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0069-three-little-bits",
+    "name": "Three Little Bits",
+    "schoolId": "tecnm-culiacan",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0070-c-ke-tu",
+    "name": "c++ ke tu",
+    "schoolId": "itnl",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0071-frg07",
+    "name": "FRG07",
+    "schoolId": "source-school-6cf673e7a45a",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0072-s-t-dio-h",
+    "name": "S_T_DIO.h",
+    "schoolId": "unam",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0073-ucf-helloworld",
+    "name": "UCF-HelloWorld!",
+    "schoolId": "source-school-72cb8c53d49e",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0074-ne-ne-isc",
+    "name": "Ne_Ne!_ISC",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0075-tezcaltlipoca",
+    "name": "Tezcaltlipoca",
+    "schoolId": "source-label-iteso-university-f66d759f69",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0076-los-aprendices",
+    "name": "Los aprendices",
+    "schoolId": "source-school-ac5afbcfd1fa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0077-ccv-dp",
+    "name": "CCV DP",
+    "schoolId": "source-school-5248b87401e8",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0078-umcc4",
+    "name": "UMCC4",
+    "schoolId": "source-school-2ac219571c53",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0079-u",
+    "name": "~U()",
+    "schoolId": "unam",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0080-success",
+    "name": "Success",
+    "schoolId": "source-school-b335126c10d3",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0081-los-batillos",
+    "name": "Los batillos",
+    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0082-aureo",
+    "name": "Áureo",
+    "schoolId": "unam",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0083-crazy-coders",
+    "name": "Crazy Coders",
+    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0084-itesz02",
+    "name": "ITESZ02",
+    "schoolId": "source-school-81261a73feaa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0085-fldsmdfr",
+    "name": "FLDSMDFR",
+    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0086-equipo-t",
+    "name": "equipo<T>",
+    "schoolId": "source-label-instituto-tecnologico-autonomo-de-mexico-47fc8d1883",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0087-itic-zac-1",
+    "name": "ITIC ZAC 1",
+    "schoolId": "source-school-8cd84f4d1524",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0088-coyotes-alpha",
+    "name": "Coyotes Alpha",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-los-reyes-f14f0cc6fa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0089-fismateros",
+    "name": "fismateros",
+    "schoolId": "source-school-df455a712d91",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0090-unreal-coders",
+    "name": "Unreal Coders",
+    "schoolId": "tecnm-culiacan",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0091-itesz03",
+    "name": "ITESZ03",
+    "schoolId": "source-school-81261a73feaa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0092-equipo-1-quinto",
+    "name": "Equipo 1 - Quinto",
+    "schoolId": "source-school-2a7a9a57b191",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0093-marista-three",
+    "name": "Marista Three",
+    "schoolId": "marista-guadalajara",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0094-los-bien-vestidos",
+    "name": "Los bien vestidos",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0095-malandros",
+    "name": "Malandros",
+    "schoolId": "it-queretaro",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0096-british-steel",
+    "name": "British steel",
+    "schoolId": "source-school-42fdce5c49e5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0097-nibblesoft",
+    "name": "NibbleSOFt",
+    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0098-fs-148-212-19-18",
+    "name": "FS - 148.212.19.18",
+    "schoolId": "source-school-bac1a836d628",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0099-sapna-pony",
+    "name": "SAPNA-PONY",
+    "schoolId": "source-school-972dd61094d2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0100-los3reyesmagos",
+    "name": "Los3ReyesMagos",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0101-exquisofrenia-ii",
+    "name": "Exquisofrenia II",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-zapopan-456a899f35",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0102-itm-2",
+    "name": "ITM 2",
+    "schoolId": "source-school-fd73f8e00035",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0103-simpus-itsa",
+    "name": "simpus_itsa",
+    "schoolId": "source-school-48649350a9b2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0104-fire-code",
+    "name": "FIRE CODE",
+    "schoolId": "source-label-universidad-autonoma-de-tlaxcala-d9b6e9ecf4",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0105-ka-tet",
+    "name": "Ka-Tet",
+    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0106-automatas",
+    "name": "Autómatas",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-calkini-0181dc3c42",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0107-pycaro",
+    "name": "Pycaro",
+    "schoolId": "source-school-55b613d4e91a",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0108-code-killers",
+    "name": "CODE KILLERS",
+    "schoolId": "it-saltillo",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0109-coyotes-omega",
+    "name": "Coyotes Omega",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-los-reyes-f14f0cc6fa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0110-itm1",
+    "name": "ITM1",
+    "schoolId": "source-school-fd73f8e00035",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0111-gatos-salvajes",
+    "name": "Gatos Salvajes",
+    "schoolId": "source-school-e332ec0658a8",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0112-nisc",
+    "name": "NISC",
+    "schoolId": "source-school-48649350a9b2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0113-uam-azcapotzalco-xviii",
+    "name": "UAM Azcapotzalco XVIII",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0114-stone-code",
+    "name": "STONE CODE",
+    "schoolId": "source-label-instituto-tecnologico-de-ciudad-guzman-205610a590",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0115-vg-software",
+    "name": "VG software",
+    "schoolId": "source-school-9175d02370a4",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0116-1os-bytecode",
+    "name": "1os ByteCode",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-calkini-0181dc3c42",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0117-ucf-sudden",
+    "name": "UCF-Sudden",
+    "schoolId": "source-school-72cb8c53d49e",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0118-itsaltillo",
+    "name": "ITSaltillo",
+    "schoolId": "it-saltillo",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0119-programming-for-a-dream",
+    "name": "programming for a dream",
+    "schoolId": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0120-overcloaked",
+    "name": "Overcloaked",
+    "schoolId": "source-label-iteso-university-f66d759f69",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0121-bubulubu-fi-unam",
+    "name": "Bubulubu FI UNAM",
+    "schoolId": "unam",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0122-fredos-slash",
+    "name": "Fredos Slash",
+    "schoolId": "it-queretaro",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0123-ispjam-02",
+    "name": "ISPJAM-02",
+    "schoolId": "source-school-389761cad6a1",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0124-los-borregos-de-san-luis",
+    "name": "Los Borregos de San Luis",
+    "schoolId": "source-school-ec22a89bfec7",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0125-fcmc-uo-05",
+    "name": "FCMC-UO-05",
+    "schoolId": "source-school-916879c519a1",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0126-mibarraespaciadoranosirve",
+    "name": "MIBARRAESPACIADORANOSIRVE",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-patzcuaro-17c2feb4da",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0127-ceti-guan",
+    "name": "CETI Guan",
+    "schoolId": "source-school-d372694af067",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0128-neo-cuantic",
+    "name": "NEO_CUANTIC",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-patzcuaro-17c2feb4da",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0129-buhos-blancos-isc",
+    "name": "Buhos Blancos ISC",
+    "schoolId": "source-school-f473268edfb5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0130-itzit2",
+    "name": "ITZit2",
+    "schoolId": "source-school-8129d3404595",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0131-itsur-1",
+    "name": "ITSUR-1",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0132-gsh",
+    "name": "GSH",
+    "schoolId": "unam",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0133-itspr-1",
+    "name": "ITSPR-1",
+    "schoolId": "source-school-e0c43152252e",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0134-itsur-2",
+    "name": "ITSUR-2",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0135-quantum-team",
+    "name": "Quantum Team",
+    "schoolId": "source-school-42fdce5c49e5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0136-espartan",
+    "name": "ESPARTAN",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-patzcuaro-17c2feb4da",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0137-gameover-laguna",
+    "name": "GameOver Laguna",
+    "schoolId": "source-school-d0d329114035",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0138-itzit1",
+    "name": "ITZit1",
+    "schoolId": "source-school-8129d3404595",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0139-itzit3",
+    "name": "ITZit3",
+    "schoolId": "source-school-8129d3404595",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0140-ici",
+    "name": "ICI",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0141-los-novatos",
+    "name": "LOS NOVATOS",
+    "schoolId": "source-school-e332ec0658a8",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0142-fs-rootkits",
+    "name": "FS - Rootkits",
+    "schoolId": "source-school-bac1a836d628",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0143-uam-azcapotzalco-xix",
+    "name": "UAM Azcapotzalco XIX",
+    "schoolId": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0144-acapella",
+    "name": "Acapella",
+    "schoolId": "source-school-d04db20e2326",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0145-gallos-uaa",
+    "name": "gallos uaa",
+    "schoolId": "uaa-aguascalientes",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0146-wolf-developers",
+    "name": "Wolf Developers",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-zapopan-456a899f35",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0147-zergs",
+    "name": "Zergs",
+    "schoolId": "source-school-742fd898cd47",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0148-ccv-ttls",
+    "name": "CCV TTLS",
+    "schoolId": "source-school-5248b87401e8",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0149-alu",
+    "name": "ALU",
+    "schoolId": "source-label-universidad-autonoma-de-tlaxcala-d9b6e9ecf4",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0150-umcc1",
+    "name": "UMCC1",
+    "schoolId": "source-school-2ac219571c53",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0151-triforce",
+    "name": "TriForce",
+    "schoolId": "source-label-universidad-de-guadalajara-cuvalles-7e16c1bcc4",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0152-geeksquad",
+    "name": "GEEKSQUAD",
+    "schoolId": "it-saltillo",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0153-itspr-2",
+    "name": "ITSPR-2",
+    "schoolId": "source-school-e0c43152252e",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0154-itesu001",
+    "name": "ITESU001",
+    "schoolId": "source-school-42fdce5c49e5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0155-los-caballeros-de-java",
+    "name": "Los caballeros de Java",
+    "schoolId": "source-school-48649350a9b2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0156-digital-fortress",
+    "name": "Digital Fortress",
+    "schoolId": "source-school-48649350a9b2",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0157-fs-e-link",
+    "name": "FS - E-link",
+    "schoolId": "source-school-bac1a836d628",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0158-m",
+    "name": "¶M@",
+    "schoolId": "unam",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0159-omijal-preparatoria",
+    "name": "OMIJal - Preparatoria",
+    "schoolId": "source-school-81f743589a90",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0160-qlan",
+    "name": "QLAN",
+    "schoolId": "source-label-universidad-autonoma-de-tlaxcala-d9b6e9ecf4",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0161-univ-loyola-tecnologias",
+    "name": "Univ Loyola Tecnologías",
+    "schoolId": "source-school-d02f1199a0d9",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0162-ice",
+    "name": "ICE",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0163-ues",
+    "name": "*.UES",
+    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0164-jaguares-3",
+    "name": "Jaguares 3",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-ciudad-hidalgo-ea3e5aedd8",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0165-mxl-7-2",
+    "name": "MXL 7.2",
+    "schoolId": "source-school-e17f76fff302",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0166-uadec-extreme-coders",
+    "name": "UAdeC - Extreme Coders",
+    "schoolId": "source-school-2a720e035241",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0167-itvg",
+    "name": "ITVG",
+    "schoolId": "source-school-1a27feee9528",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0168-himaga",
+    "name": "HIMAGA",
+    "schoolId": "source-school-a76a58e8c7f1",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0169-marista-one",
+    "name": "Marista One",
+    "schoolId": "marista-guadalajara",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0170-hidrogo-s-power",
+    "name": "HIDROGO´S POWER",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0171-itst-1",
+    "name": "ITST-1",
+    "schoolId": "source-school-5a0ef5d09a6b",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0172-shinigamis",
+    "name": "SHINIGAMIS",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0173-buhos-blancos-sistemas-2",
+    "name": "Buhos Blancos Sistemas 2",
+    "schoolId": "source-school-f473268edfb5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0174-jaguares-2",
+    "name": "Jaguares 2",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-ciudad-hidalgo-ea3e5aedd8",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0175-jaguares-1",
+    "name": "Jaguares 1",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-ciudad-hidalgo-ea3e5aedd8",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0176-tonala-1",
+    "name": "Tonala-1",
+    "schoolId": "source-school-bf33e0d06c3a",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0177-el-grullo",
+    "name": "El Grullo",
+    "schoolId": "source-label-instituto-tecnologico-superior-de-el-grullo-4c9f506293",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0178-javasalir",
+    "name": "Javasalir",
+    "schoolId": "source-school-64985288ecac",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0179-aguilas",
+    "name": "Aguilas",
+    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0180-simuladores",
+    "name": "SIMULADORES",
+    "schoolId": "source-school-a76a58e8c7f1",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0181-itm3",
+    "name": "ITM3",
+    "schoolId": "source-school-fd73f8e00035",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0182-blue-screen-of-death",
+    "name": "Blue Screen of Death",
+    "schoolId": "source-school-d2a548191dfa",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0183-univa2",
+    "name": "univa2",
+    "schoolId": "source-school-bfbf9a1e6d0a",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0184-buhos-blancos-informatica-2",
+    "name": "Buhos Blancos Informatica 2",
+    "schoolId": "source-school-f473268edfb5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0185-buhos-blancos-informatica",
+    "name": "Buhos Blancos Informática",
+    "schoolId": "source-school-f473268edfb5",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0186-itst-2",
+    "name": "ITST-2",
+    "schoolId": "source-school-5a0ef5d09a6b",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0187-rock-n-coders",
+    "name": "Rock N' Coders",
+    "schoolId": "source-school-e0bf1360c164",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0188-los-osados",
+    "name": "Los Osados",
+    "schoolId": "source-school-bf6ff41867ad",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0189-cruz-azul",
+    "name": "CRUZ AZUL",
+    "schoolId": "source-label-instituto-tecnologico-superior-del-sur-de-guanajuato-3e777077e7",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0190-uadec-it-3-exe",
+    "name": "UAdeC - It 3! exe",
+    "schoolId": "source-school-2a720e035241",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0191-protos",
+    "name": "Protos",
+    "schoolId": "source-school-742fd898cd47",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0192-uadec-lo-c",
+    "name": "UAdeC - Lo C+",
+    "schoolId": "source-school-2a720e035241",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0193-omega",
+    "name": "Omega",
+    "schoolId": "utj",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0194-nullcoders",
+    "name": "NullCoders",
+    "schoolId": "source-school-64985288ecac",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0195-itst-3",
+    "name": "ITST-3",
+    "schoolId": "source-school-5a0ef5d09a6b",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0196-icebreakers",
+    "name": "Icebreakers",
+    "schoolId": "uvm",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0197-sense",
+    "name": "SENSE",
+    "schoolId": "source-school-83c10a3c73d3",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0198-itic-zac-2",
+    "name": "ITIC ZAC 2",
+    "schoolId": "source-school-8cd84f4d1524",
+    "seasonYear": 2010
+  },
+  {
+    "id": "2010-mexico-finals-global-row-0199-puchamon-team",
+    "name": "Puchamon Team",
+    "schoolId": "source-school-83c10a3c73d3",
+    "seasonYear": 2010
+  }
+]

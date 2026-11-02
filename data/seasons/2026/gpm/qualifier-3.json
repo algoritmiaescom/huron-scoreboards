@@ -1,0 +1,5508 @@
+{
+  "id": "2026-gpm-qualifier-3",
+  "seasonYear": 2026,
+  "seriesId": "gpm",
+  "stage": "qualifier-3",
+  "name": "Gran Premio MX 2026 — Tercera Fecha",
+  "date": "2026-08-29",
+  "durationMinutes": null,
+  "penaltyMinutesPerFailedAttempt": 20,
+  "problems": [],
+  "standings": [
+    {
+      "place": 1,
+      "teamId": "2026-gpm-qualifier-3-row-0001-358d25b2ca0f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 10,
+        "penalty": 1047
+      }
+    },
+    {
+      "place": 2,
+      "teamId": "2026-gpm-qualifier-1-row-0004-7f8ce778fc09",
+      "results": null,
+      "publishedTotals": {
+        "solved": 9,
+        "penalty": 964
+      }
+    },
+    {
+      "place": 3,
+      "teamId": "2026-gpm-qualifier-1-row-0039-4502ac56c866",
+      "results": null,
+      "publishedTotals": {
+        "solved": 9,
+        "penalty": 965
+      }
+    },
+    {
+      "place": 4,
+      "teamId": "2026-gpm-qualifier-1-row-0005-8a878375d513",
+      "results": null,
+      "publishedTotals": {
+        "solved": 9,
+        "penalty": 995
+      }
+    },
+    {
+      "place": 5,
+      "teamId": "2026-gpm-qualifier-1-row-0010-75f7ea4e4aae",
+      "results": null,
+      "publishedTotals": {
+        "solved": 9,
+        "penalty": 1185
+      }
+    },
+    {
+      "place": 6,
+      "teamId": "2026-gpm-qualifier-3-row-0006-d984d1fc1d7f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 735
+      }
+    },
+    {
+      "place": 7,
+      "teamId": "2026-gpm-qualifier-1-row-0032-d2a594d9ee21",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 931
+      }
+    },
+    {
+      "place": 8,
+      "teamId": "2026-gpm-qualifier-3-row-0008-58fe1ca80f25",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1032
+      }
+    },
+    {
+      "place": 9,
+      "teamId": "2026-gpm-qualifier-1-row-0007-3b3fce2b7419",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1039
+      }
+    },
+    {
+      "place": 10,
+      "teamId": "2026-gpm-qualifier-1-row-0026-647ba8a58af9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1075
+      }
+    },
+    {
+      "place": 11,
+      "teamId": "2026-gpm-qualifier-3-row-0011-55cec61dba80",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1082
+      }
+    },
+    {
+      "place": 12,
+      "teamId": "2026-gpm-qualifier-1-row-0036-2a54ed61fa46",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1095
+      }
+    },
+    {
+      "place": 13,
+      "teamId": "2026-gpm-qualifier-1-row-0015-5747cd7d8393",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1107
+      }
+    },
+    {
+      "place": 14,
+      "teamId": "2026-gpm-qualifier-1-row-0023-612e4c0305c5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1189
+      }
+    },
+    {
+      "place": 15,
+      "teamId": "2026-gpm-qualifier-3-row-0015-e0abf7e4c91a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 383
+      }
+    },
+    {
+      "place": 16,
+      "teamId": "2026-gpm-qualifier-1-row-0037-e554939121f0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 540
+      }
+    },
+    {
+      "place": 17,
+      "teamId": "2026-gpm-qualifier-3-row-0017-e346501a86ba",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 671
+      }
+    },
+    {
+      "place": 18,
+      "teamId": "2026-gpm-qualifier-1-row-0533-97ba904cc8e9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 702
+      }
+    },
+    {
+      "place": 19,
+      "teamId": "2026-gpm-qualifier-1-row-0009-8483b0bde8c3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 752
+      }
+    },
+    {
+      "place": 20,
+      "teamId": "2026-gpm-qualifier-1-row-0035-2f46c2140766",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 829
+      }
+    },
+    {
+      "place": 21,
+      "teamId": "2026-gpm-qualifier-1-row-0027-77b740f8124c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 878
+      }
+    },
+    {
+      "place": 22,
+      "teamId": "2026-gpm-qualifier-1-row-0033-1fccaa16ced1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 885
+      }
+    },
+    {
+      "place": 23,
+      "teamId": "2026-gpm-qualifier-1-row-0012-9ecfc31204a7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 915
+      }
+    },
+    {
+      "place": 24,
+      "teamId": "2026-gpm-qualifier-1-row-0014-753aa9e16745",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 921
+      }
+    },
+    {
+      "place": 25,
+      "teamId": "2026-gpm-qualifier-1-row-0018-3b9e9a4c3ea3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 1098
+      }
+    },
+    {
+      "place": 26,
+      "teamId": "2026-gpm-qualifier-1-row-0058-5ddc97b30107",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 1101
+      }
+    },
+    {
+      "place": 27,
+      "teamId": "2026-gpm-qualifier-3-row-0027-ff4464ba087e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 1158
+      }
+    },
+    {
+      "place": 28,
+      "teamId": "2026-gpm-qualifier-1-row-0050-09b05291dddc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 1207
+      }
+    },
+    {
+      "place": 29,
+      "teamId": "2026-gpm-qualifier-1-row-0021-58160991652c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 487
+      }
+    },
+    {
+      "place": 30,
+      "teamId": "2026-gpm-qualifier-1-row-0043-bdb70e59e5a6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 521
+      }
+    },
+    {
+      "place": 31,
+      "teamId": "2026-gpm-qualifier-1-row-0054-ab778b2762dd",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 553
+      }
+    },
+    {
+      "place": 32,
+      "teamId": "2026-gpm-qualifier-1-row-0073-e1ec905a4f69",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 576
+      }
+    },
+    {
+      "place": 33,
+      "teamId": "2026-gpm-qualifier-3-row-0033-653a946c93f2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 584
+      }
+    },
+    {
+      "place": 34,
+      "teamId": "2026-gpm-qualifier-1-row-0209-da40a1c190fe",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 663
+      }
+    },
+    {
+      "place": 35,
+      "teamId": "2026-gpm-qualifier-1-row-0051-7892984c003b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 682
+      }
+    },
+    {
+      "place": 36,
+      "teamId": "2026-gpm-qualifier-1-row-0053-ca35c843db9b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 780
+      }
+    },
+    {
+      "place": 37,
+      "teamId": "2026-gpm-qualifier-1-row-0008-761ff70bd234",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 812
+      }
+    },
+    {
+      "place": 38,
+      "teamId": "2026-gpm-qualifier-1-row-0117-db2344dc85d2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 885
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2026-gpm-qualifier-1-row-0069-e5d9a7196fe6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 892
+      }
+    },
+    {
+      "place": 40,
+      "teamId": "2026-gpm-qualifier-1-row-0572-36a781cc4b5b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 1168
+      }
+    },
+    {
+      "place": 41,
+      "teamId": "2026-gpm-qualifier-1-row-0355-3d7d6b965b1f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 1172
+      }
+    },
+    {
+      "place": 42,
+      "teamId": "2026-gpm-qualifier-1-row-0065-508b80ecb6bf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 338
+      }
+    },
+    {
+      "place": 43,
+      "teamId": "2026-gpm-qualifier-3-row-0043-e2aa109239a5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 387
+      }
+    },
+    {
+      "place": 44,
+      "teamId": "2026-gpm-qualifier-1-row-0116-30b8737fb4d2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 499
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2026-gpm-qualifier-1-row-0123-3f103a63f31b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 529
+      }
+    },
+    {
+      "place": 46,
+      "teamId": "2026-gpm-qualifier-1-row-0095-9f58a8354d35",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 537
+      }
+    },
+    {
+      "place": 47,
+      "teamId": "2026-gpm-qualifier-1-row-0064-afe8a5e250f3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 541
+      }
+    },
+    {
+      "place": 48,
+      "teamId": "2026-gpm-qualifier-1-row-0192-1a744c7e59cd",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 566
+      }
+    },
+    {
+      "place": 49,
+      "teamId": "2026-gpm-qualifier-1-row-0085-ef185bc2b8a0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 567
+      }
+    },
+    {
+      "place": 50,
+      "teamId": "2026-gpm-qualifier-1-row-0038-b063e42d1d97",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 577
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2026-gpm-qualifier-1-row-0044-8cb4d05a9259",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 587
+      }
+    },
+    {
+      "place": 52,
+      "teamId": "2026-gpm-qualifier-1-row-0046-9a4182430461",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 591
+      }
+    },
+    {
+      "place": 53,
+      "teamId": "2026-gpm-qualifier-3-row-0053-b056ecb14a35",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 599
+      }
+    },
+    {
+      "place": 54,
+      "teamId": "2026-gpm-qualifier-1-row-0066-40b973b9334d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 613
+      }
+    },
+    {
+      "place": 55,
+      "teamId": "2026-gpm-qualifier-1-row-0114-64abfdca8f0a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 620
+      }
+    },
+    {
+      "place": 56,
+      "teamId": "2026-gpm-qualifier-3-row-0056-43a44f202bdf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 621
+      }
+    },
+    {
+      "place": 57,
+      "teamId": "2026-gpm-qualifier-1-row-0091-0b72f3d916cc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 623
+      }
+    },
+    {
+      "place": 58,
+      "teamId": "2026-gpm-qualifier-1-row-0079-2e53d6ff7152",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 634
+      }
+    },
+    {
+      "place": 59,
+      "teamId": "2026-gpm-qualifier-3-row-0059-1d8aa512abcf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 637
+      }
+    },
+    {
+      "place": 60,
+      "teamId": "2026-gpm-qualifier-1-row-0089-3aeff5726897",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 676
+      }
+    },
+    {
+      "place": 61,
+      "teamId": "2026-gpm-qualifier-1-row-0042-8fde298a02e3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 679
+      }
+    },
+    {
+      "place": 62,
+      "teamId": "2026-gpm-qualifier-3-row-0062-ed4ace0f6432",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 683
+      }
+    },
+    {
+      "place": 63,
+      "teamId": "2026-gpm-qualifier-2-row-0113-3e48a0a5aa9b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 689
+      }
+    },
+    {
+      "place": 64,
+      "teamId": "2026-gpm-qualifier-1-row-0303-e054e7ce67aa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 693
+      }
+    },
+    {
+      "place": 65,
+      "teamId": "2026-gpm-qualifier-1-row-0196-e063586136fd",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 724
+      }
+    },
+    {
+      "place": 66,
+      "teamId": "2026-gpm-qualifier-1-row-0200-38da14b19dce",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 729
+      }
+    },
+    {
+      "place": 67,
+      "teamId": "2026-gpm-qualifier-3-row-0067-0fb95598ef63",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 744
+      }
+    },
+    {
+      "place": 68,
+      "teamId": "2026-gpm-qualifier-1-row-0072-56e700aa8b5a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 753
+      }
+    },
+    {
+      "place": 69,
+      "teamId": "2026-gpm-qualifier-1-row-0016-7454c781830e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 776
+      }
+    },
+    {
+      "place": 70,
+      "teamId": "2026-gpm-qualifier-1-row-0045-f5047f6b201a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 781
+      }
+    },
+    {
+      "place": 71,
+      "teamId": "2026-gpm-qualifier-1-row-0142-97fad4131469",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 785
+      }
+    },
+    {
+      "place": 72,
+      "teamId": "2026-gpm-qualifier-1-row-0088-db49cb45b9cc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 791
+      }
+    },
+    {
+      "place": 73,
+      "teamId": "2026-gpm-qualifier-2-row-0035-a8ac0b835951",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 796
+      }
+    },
+    {
+      "place": 74,
+      "teamId": "2026-gpm-qualifier-1-row-0580-26655af7aeee",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 801
+      }
+    },
+    {
+      "place": 75,
+      "teamId": "2026-gpm-qualifier-1-row-0112-91ce2ca20d20",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 892
+      }
+    },
+    {
+      "place": 76,
+      "teamId": "2026-gpm-qualifier-1-row-0083-6a0f81a237cd",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 904
+      }
+    },
+    {
+      "place": 77,
+      "teamId": "2026-gpm-qualifier-1-row-0125-672e5b758071",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 952
+      }
+    },
+    {
+      "place": 78,
+      "teamId": "2026-gpm-qualifier-1-row-0211-e23f70fe3602",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 971
+      }
+    },
+    {
+      "place": 79,
+      "teamId": "2026-gpm-qualifier-1-row-0041-dbd7e91fafb0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 167
+      }
+    },
+    {
+      "place": 80,
+      "teamId": "2026-gpm-qualifier-1-row-0134-fd61e8eeeb6a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 187
+      }
+    },
+    {
+      "place": 81,
+      "teamId": "2026-gpm-qualifier-1-row-0034-5bd0e0dbea68",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 276
+      }
+    },
+    {
+      "place": 82,
+      "teamId": "2026-gpm-qualifier-1-row-0068-c22e4f04e665",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 298
+      }
+    },
+    {
+      "place": 83,
+      "teamId": "2026-gpm-qualifier-1-row-0124-e44ab6e1102e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 338
+      }
+    },
+    {
+      "place": 84,
+      "teamId": "2026-gpm-qualifier-1-row-0090-819cfbfae7d5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 342
+      }
+    },
+    {
+      "place": 85,
+      "teamId": "2026-gpm-qualifier-1-row-0055-1fe0f7aa026e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 344
+      }
+    },
+    {
+      "place": 86,
+      "teamId": "2026-gpm-qualifier-1-row-0128-9acbe3fa5c40",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 349
+      }
+    },
+    {
+      "place": 87,
+      "teamId": "2026-gpm-qualifier-1-row-0383-360c20f87fa0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 358
+      }
+    },
+    {
+      "place": 88,
+      "teamId": "2026-gpm-qualifier-1-row-0119-e7fccbc4ada5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 400
+      }
+    },
+    {
+      "place": 89,
+      "teamId": "2026-gpm-qualifier-3-row-0089-ee38bcf775cf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 412
+      }
+    },
+    {
+      "place": 90,
+      "teamId": "2026-gpm-qualifier-1-row-0272-5b5298622ed1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 422
+      }
+    },
+    {
+      "place": 91,
+      "teamId": "2026-gpm-qualifier-1-row-0187-a383eebd049e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 423
+      }
+    },
+    {
+      "place": 92,
+      "teamId": "2026-gpm-qualifier-1-row-0118-ad07112c4b3b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 427
+      }
+    },
+    {
+      "place": 93,
+      "teamId": "2026-gpm-qualifier-1-row-0049-d6025cc2a3c0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 434
+      }
+    },
+    {
+      "place": 94,
+      "teamId": "2026-gpm-qualifier-1-row-0261-594a49bb7a9d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 446
+      }
+    },
+    {
+      "place": 95,
+      "teamId": "2026-gpm-qualifier-1-row-0122-cdd6fe26671f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 454
+      }
+    },
+    {
+      "place": 96,
+      "teamId": "2026-gpm-qualifier-1-row-0493-54cdf9eca1a1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 463
+      }
+    },
+    {
+      "place": 97,
+      "teamId": "2026-gpm-qualifier-1-row-0097-2641d81f5ba2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 476
+      }
+    },
+    {
+      "place": 98,
+      "teamId": "2026-gpm-qualifier-1-row-0218-f08bab090981",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 481
+      }
+    },
+    {
+      "place": 99,
+      "teamId": "2026-gpm-qualifier-1-row-0259-d9bd2de086f6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 504
+      }
+    },
+    {
+      "place": 100,
+      "teamId": "2026-gpm-qualifier-1-row-0135-7c6c6cccaebf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 505
+      }
+    },
+    {
+      "place": 101,
+      "teamId": "2026-gpm-qualifier-1-row-0598-bbc4a59c51ac",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 511
+      }
+    },
+    {
+      "place": 102,
+      "teamId": "2026-gpm-qualifier-1-row-0167-8236339c93b5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 512
+      }
+    },
+    {
+      "place": 103,
+      "teamId": "2026-gpm-qualifier-1-row-0563-cf726afab116",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 531
+      }
+    },
+    {
+      "place": 103,
+      "teamId": "2026-gpm-qualifier-1-row-0149-d9856ab43f79",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 531
+      }
+    },
+    {
+      "place": 105,
+      "teamId": "2026-gpm-qualifier-1-row-0201-e09e9bae57d9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 533
+      }
+    },
+    {
+      "place": 106,
+      "teamId": "2026-gpm-qualifier-1-row-0190-4fc980babfc5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 538
+      }
+    },
+    {
+      "place": 107,
+      "teamId": "2026-gpm-qualifier-1-row-0152-b7cbb53f40ff",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 544
+      }
+    },
+    {
+      "place": 108,
+      "teamId": "2026-gpm-qualifier-1-row-0075-7dc07d3657d2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 546
+      }
+    },
+    {
+      "place": 109,
+      "teamId": "2026-gpm-qualifier-1-row-0017-868a6eea03f8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 547
+      }
+    },
+    {
+      "place": 110,
+      "teamId": "2026-gpm-qualifier-1-row-0174-32ab2b600926",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 550
+      }
+    },
+    {
+      "place": 111,
+      "teamId": "2026-gpm-qualifier-3-row-0111-83788d0f5695",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 553
+      }
+    },
+    {
+      "place": 112,
+      "teamId": "2026-gpm-qualifier-3-row-0112-553b7339ca29",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 560
+      }
+    },
+    {
+      "place": 113,
+      "teamId": "2026-gpm-qualifier-1-row-0133-360415950f8e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 566
+      }
+    },
+    {
+      "place": 114,
+      "teamId": "2026-gpm-qualifier-1-row-0254-d048e9df4e4e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 572
+      }
+    },
+    {
+      "place": 115,
+      "teamId": "2026-gpm-qualifier-1-row-0260-273d916ccc5f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 576
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2026-gpm-qualifier-1-row-0022-2c15fd188572",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 579
+      }
+    },
+    {
+      "place": 117,
+      "teamId": "2026-gpm-qualifier-1-row-0257-0861c1e4d30f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 585
+      }
+    },
+    {
+      "place": 118,
+      "teamId": "2026-gpm-qualifier-1-row-0063-40e55bd95ad3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 589
+      }
+    },
+    {
+      "place": 119,
+      "teamId": "2026-gpm-qualifier-1-row-0183-7ea79fc06803",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 591
+      }
+    },
+    {
+      "place": 120,
+      "teamId": "2026-gpm-qualifier-1-row-0132-8b7971509915",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 600
+      }
+    },
+    {
+      "place": 121,
+      "teamId": "2026-gpm-qualifier-1-row-0157-8d60fa590e76",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 603
+      }
+    },
+    {
+      "place": 121,
+      "teamId": "2026-gpm-qualifier-1-row-0081-88c7c13f6a83",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 603
+      }
+    },
+    {
+      "place": 123,
+      "teamId": "2026-gpm-qualifier-1-row-0006-6ccf15ef374f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 609
+      }
+    },
+    {
+      "place": 124,
+      "teamId": "2026-gpm-qualifier-1-row-0102-5d834dfde613",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 615
+      }
+    },
+    {
+      "place": 125,
+      "teamId": "2026-gpm-qualifier-1-row-0139-ed8a8a8003bc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 620
+      }
+    },
+    {
+      "place": 126,
+      "teamId": "2026-gpm-qualifier-3-row-0126-d505419d9932",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 629
+      }
+    },
+    {
+      "place": 127,
+      "teamId": "2026-gpm-qualifier-1-row-0210-8fdfd6d8aa83",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 638
+      }
+    },
+    {
+      "place": 128,
+      "teamId": "2026-gpm-qualifier-1-row-0253-e481fc78ad66",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 639
+      }
+    },
+    {
+      "place": 129,
+      "teamId": "2026-gpm-qualifier-1-row-0176-e5085627fd17",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 648
+      }
+    },
+    {
+      "place": 130,
+      "teamId": "2026-gpm-qualifier-1-row-0150-81004b1b7ff6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 664
+      }
+    },
+    {
+      "place": 130,
+      "teamId": "2026-gpm-qualifier-1-row-0101-8a9a9dc2cfe9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 664
+      }
+    },
+    {
+      "place": 132,
+      "teamId": "2026-gpm-qualifier-1-row-0266-4252fdc1bcda",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 679
+      }
+    },
+    {
+      "place": 133,
+      "teamId": "2026-gpm-qualifier-1-row-0106-89784f75c371",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 696
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2026-gpm-qualifier-1-row-0195-04920bde1111",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 697
+      }
+    },
+    {
+      "place": 135,
+      "teamId": "2026-gpm-qualifier-1-row-0198-fb8bbc3f440a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 701
+      }
+    },
+    {
+      "place": 136,
+      "teamId": "2026-gpm-qualifier-1-row-0145-fc1e43c19e59",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 704
+      }
+    },
+    {
+      "place": 137,
+      "teamId": "2026-gpm-qualifier-1-row-0172-86d679e8043e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 706
+      }
+    },
+    {
+      "place": 138,
+      "teamId": "2026-gpm-qualifier-1-row-0161-3f1296d409d7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 715
+      }
+    },
+    {
+      "place": 139,
+      "teamId": "2026-gpm-qualifier-1-row-0099-b5796e34b1c6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 749
+      }
+    },
+    {
+      "place": 140,
+      "teamId": "2026-gpm-qualifier-1-row-0061-076e3f1ac3f8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 754
+      }
+    },
+    {
+      "place": 141,
+      "teamId": "2026-gpm-qualifier-1-row-0228-d3f0fe2b9913",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 768
+      }
+    },
+    {
+      "place": 142,
+      "teamId": "2026-gpm-qualifier-1-row-0434-b0f5256edd8d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 774
+      }
+    },
+    {
+      "place": 143,
+      "teamId": "2026-gpm-qualifier-1-row-0252-3f9676e12ec6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 802
+      }
+    },
+    {
+      "place": 144,
+      "teamId": "2026-gpm-qualifier-2-row-0345-74cb8a51274c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 841
+      }
+    },
+    {
+      "place": 145,
+      "teamId": "2026-gpm-qualifier-3-row-0145-916047726076",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 843
+      }
+    },
+    {
+      "place": 146,
+      "teamId": "2026-gpm-qualifier-3-row-0146-44eb377acb05",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 852
+      }
+    },
+    {
+      "place": 147,
+      "teamId": "2026-gpm-qualifier-1-row-0239-d266d31c0bb8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 113
+      }
+    },
+    {
+      "place": 148,
+      "teamId": "2026-gpm-qualifier-1-row-0086-df73a51e6a5b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 135
+      }
+    },
+    {
+      "place": 149,
+      "teamId": "2026-gpm-qualifier-1-row-0144-f519a1b16c96",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 154
+      }
+    },
+    {
+      "place": 149,
+      "teamId": "2026-gpm-qualifier-1-row-0121-b7808d02c6a4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 154
+      }
+    },
+    {
+      "place": 151,
+      "teamId": "2026-gpm-qualifier-1-row-0268-4e01d5373672",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 190
+      }
+    },
+    {
+      "place": 152,
+      "teamId": "2026-gpm-qualifier-1-row-0136-96f7b0d9eb81",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 197
+      }
+    },
+    {
+      "place": 153,
+      "teamId": "2026-gpm-qualifier-1-row-0076-e0c3b3136e5f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 203
+      }
+    },
+    {
+      "place": 154,
+      "teamId": "2026-gpm-qualifier-1-row-0232-50d659e52dc4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 210
+      }
+    },
+    {
+      "place": 155,
+      "teamId": "2026-gpm-qualifier-1-row-0048-cfada925ffab",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 217
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2026-gpm-qualifier-1-row-0391-fd96fe126817",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 238
+      }
+    },
+    {
+      "place": 157,
+      "teamId": "2026-gpm-qualifier-1-row-0331-56780028751f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 250
+      }
+    },
+    {
+      "place": 158,
+      "teamId": "2026-gpm-qualifier-1-row-0185-82052d444039",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 253
+      }
+    },
+    {
+      "place": 159,
+      "teamId": "2026-gpm-qualifier-1-row-0067-e582e0cf5792",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 258
+      }
+    },
+    {
+      "place": 160,
+      "teamId": "2026-gpm-qualifier-1-row-0204-7559114b0e80",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 270
+      }
+    },
+    {
+      "place": 161,
+      "teamId": "2026-gpm-qualifier-1-row-0326-01033f0a35bb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 290
+      }
+    },
+    {
+      "place": 162,
+      "teamId": "2026-gpm-qualifier-1-row-0273-05edab842b33",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 302
+      }
+    },
+    {
+      "place": 163,
+      "teamId": "2026-gpm-qualifier-1-row-0169-034befd78c87",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 304
+      }
+    },
+    {
+      "place": 164,
+      "teamId": "2026-gpm-qualifier-3-row-0164-88312a2847d4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 307
+      }
+    },
+    {
+      "place": 165,
+      "teamId": "2026-gpm-qualifier-1-row-0019-2a8f847ee665",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 308
+      }
+    },
+    {
+      "place": 166,
+      "teamId": "2026-gpm-qualifier-1-row-0100-b7dfa840ee98",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 311
+      }
+    },
+    {
+      "place": 167,
+      "teamId": "2026-gpm-qualifier-1-row-0262-fec75bdc051d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 312
+      }
+    },
+    {
+      "place": 168,
+      "teamId": "2026-gpm-qualifier-1-row-0059-3b8e1af15dd8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 314
+      }
+    },
+    {
+      "place": 169,
+      "teamId": "2026-gpm-qualifier-1-row-0057-b7c6edf4b6d9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 317
+      }
+    },
+    {
+      "place": 170,
+      "teamId": "2026-gpm-qualifier-1-row-0156-3e39d0201cce",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 318
+      }
+    },
+    {
+      "place": 171,
+      "teamId": "2026-gpm-qualifier-1-row-0131-b23c0d08fadf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 320
+      }
+    },
+    {
+      "place": 172,
+      "teamId": "2026-gpm-qualifier-1-row-0433-45a144b418de",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 322
+      }
+    },
+    {
+      "place": 173,
+      "teamId": "2026-gpm-qualifier-1-row-0245-a21b5874e5ed",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 339
+      }
+    },
+    {
+      "place": 174,
+      "teamId": "2026-gpm-qualifier-2-row-0267-b2f6f0c57ec0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 340
+      }
+    },
+    {
+      "place": 175,
+      "teamId": "2026-gpm-qualifier-1-row-0216-895932a4908a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 343
+      }
+    },
+    {
+      "place": 175,
+      "teamId": "2026-gpm-qualifier-1-row-0234-1eb9619f736c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 343
+      }
+    },
+    {
+      "place": 177,
+      "teamId": "2026-gpm-qualifier-2-row-0179-c8eae738beea",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 344
+      }
+    },
+    {
+      "place": 178,
+      "teamId": "2026-gpm-qualifier-1-row-0318-6f51752068f3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 347
+      }
+    },
+    {
+      "place": 179,
+      "teamId": "2026-gpm-qualifier-1-row-0221-425be7086ef0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 349
+      }
+    },
+    {
+      "place": 180,
+      "teamId": "2026-gpm-qualifier-1-row-0417-ce55b3b4579d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 355
+      }
+    },
+    {
+      "place": 181,
+      "teamId": "2026-gpm-qualifier-1-row-0264-8d793305ac72",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 371
+      }
+    },
+    {
+      "place": 182,
+      "teamId": "2026-gpm-qualifier-1-row-0080-6bdd5e870c78",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 394
+      }
+    },
+    {
+      "place": 183,
+      "teamId": "2026-gpm-qualifier-3-row-0183-25a74c4ce79b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 399
+      }
+    },
+    {
+      "place": 184,
+      "teamId": "2026-gpm-qualifier-1-row-0115-ed7264b43aa4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 405
+      }
+    },
+    {
+      "place": 185,
+      "teamId": "2026-gpm-qualifier-1-row-0168-358e9e8b182d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 409
+      }
+    },
+    {
+      "place": 186,
+      "teamId": "2026-gpm-qualifier-2-row-0414-27a0b67a3159",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 412
+      }
+    },
+    {
+      "place": 187,
+      "teamId": "2026-gpm-qualifier-3-row-0187-a8cfe4d8dc53",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 418
+      }
+    },
+    {
+      "place": 188,
+      "teamId": "2026-gpm-qualifier-3-row-0188-f9fe93b7a9b1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 423
+      }
+    },
+    {
+      "place": 189,
+      "teamId": "2026-gpm-qualifier-1-row-0361-9dfa6c13e9dd",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 426
+      }
+    },
+    {
+      "place": 190,
+      "teamId": "2026-gpm-qualifier-1-row-0105-454cb57f598e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 431
+      }
+    },
+    {
+      "place": 191,
+      "teamId": "2026-gpm-qualifier-1-row-0304-d5bd7eefc312",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 434
+      }
+    },
+    {
+      "place": 192,
+      "teamId": "2026-gpm-qualifier-1-row-0287-82419f3db1ec",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 440
+      }
+    },
+    {
+      "place": 193,
+      "teamId": "2026-gpm-qualifier-1-row-0078-771d555e45c6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 442
+      }
+    },
+    {
+      "place": 194,
+      "teamId": "2026-gpm-qualifier-1-row-0240-aace736d52c6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 448
+      }
+    },
+    {
+      "place": 194,
+      "teamId": "2026-gpm-qualifier-1-row-0166-e7e2e1d3fdc4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 448
+      }
+    },
+    {
+      "place": 196,
+      "teamId": "2026-gpm-qualifier-1-row-0343-3e3fbff07b9b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 453
+      }
+    },
+    {
+      "place": 197,
+      "teamId": "2026-gpm-qualifier-1-row-0109-d73a792a08b1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 460
+      }
+    },
+    {
+      "place": 198,
+      "teamId": "2026-gpm-qualifier-3-row-0198-ba736977d834",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 466
+      }
+    },
+    {
+      "place": 199,
+      "teamId": "2026-gpm-qualifier-1-row-0405-ee36b3d5f361",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 471
+      }
+    },
+    {
+      "place": 200,
+      "teamId": "2026-gpm-qualifier-1-row-0193-820c2357dc7e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 476
+      }
+    },
+    {
+      "place": 201,
+      "teamId": "2026-gpm-qualifier-1-row-0277-0c06e96118d5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 478
+      }
+    },
+    {
+      "place": 202,
+      "teamId": "2026-gpm-qualifier-2-row-0387-ea5e0dce3bb9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 485
+      }
+    },
+    {
+      "place": 203,
+      "teamId": "2026-gpm-qualifier-1-row-0285-57e712a5b9e9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 486
+      }
+    },
+    {
+      "place": 204,
+      "teamId": "2026-gpm-qualifier-1-row-0350-7955ecf6e7ea",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 491
+      }
+    },
+    {
+      "place": 205,
+      "teamId": "2026-gpm-qualifier-1-row-0294-fdd75e490ee7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 497
+      }
+    },
+    {
+      "place": 206,
+      "teamId": "2026-gpm-qualifier-1-row-0263-b95e7607fff2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 506
+      }
+    },
+    {
+      "place": 207,
+      "teamId": "2026-gpm-qualifier-1-row-0236-050f0b0b2967",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 516
+      }
+    },
+    {
+      "place": 208,
+      "teamId": "2026-gpm-qualifier-1-row-0435-e0ac934466b0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 522
+      }
+    },
+    {
+      "place": 209,
+      "teamId": "2026-gpm-qualifier-1-row-0476-06685426beff",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 571
+      }
+    },
+    {
+      "place": 210,
+      "teamId": "2026-gpm-qualifier-1-row-0229-c4a62ff601d6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 583
+      }
+    },
+    {
+      "place": 211,
+      "teamId": "2026-gpm-qualifier-3-row-0211-a9c20b51eb2f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 590
+      }
+    },
+    {
+      "place": 212,
+      "teamId": "2026-gpm-qualifier-2-row-0579-ec0dc8b7df8c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 634
+      }
+    },
+    {
+      "place": 213,
+      "teamId": "2026-gpm-qualifier-3-row-0213-f1e3731a6a2b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 678
+      }
+    },
+    {
+      "place": 214,
+      "teamId": "2026-gpm-qualifier-3-row-0214-e6114254540d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 679
+      }
+    },
+    {
+      "place": 215,
+      "teamId": "2026-gpm-qualifier-1-row-0281-bafdad3fe6cc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 685
+      }
+    },
+    {
+      "place": 216,
+      "teamId": "2026-gpm-qualifier-1-row-0374-3d652ee5ec24",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 811
+      }
+    },
+    {
+      "place": 217,
+      "teamId": "2026-gpm-qualifier-3-row-0217-742ef217e2c8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 39
+      }
+    },
+    {
+      "place": 218,
+      "teamId": "2026-gpm-qualifier-1-row-0162-c88fe8640004",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 41
+      }
+    },
+    {
+      "place": 219,
+      "teamId": "2026-gpm-qualifier-1-row-0181-f294c031aa90",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 57
+      }
+    },
+    {
+      "place": 220,
+      "teamId": "2026-gpm-qualifier-1-row-0231-3ea929bea471",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 58
+      }
+    },
+    {
+      "place": 221,
+      "teamId": "2026-gpm-qualifier-1-row-0227-eeabaa8eb8f9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 66
+      }
+    },
+    {
+      "place": 222,
+      "teamId": "2026-gpm-qualifier-1-row-0186-bab24b40e09c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 71
+      }
+    },
+    {
+      "place": 223,
+      "teamId": "2026-gpm-qualifier-3-row-0223-4d7656a9fccb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 73
+      }
+    },
+    {
+      "place": 224,
+      "teamId": "2026-gpm-qualifier-1-row-0222-549e9fb342e6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 74
+      }
+    },
+    {
+      "place": 225,
+      "teamId": "2026-gpm-qualifier-1-row-0143-800d7018efd3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 86
+      }
+    },
+    {
+      "place": 226,
+      "teamId": "2026-gpm-qualifier-1-row-0060-c991bb0779a5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 89
+      }
+    },
+    {
+      "place": 226,
+      "teamId": "2026-gpm-qualifier-1-row-0237-ad4cfb4953fa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 89
+      }
+    },
+    {
+      "place": 228,
+      "teamId": "2026-gpm-qualifier-1-row-0235-ee8e219cbe23",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 92
+      }
+    },
+    {
+      "place": 229,
+      "teamId": "2026-gpm-qualifier-1-row-0163-911a0672ebdc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 100
+      }
+    },
+    {
+      "place": 230,
+      "teamId": "2026-gpm-qualifier-1-row-0399-f3d03b76ae47",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 103
+      }
+    },
+    {
+      "place": 231,
+      "teamId": "2026-gpm-qualifier-3-row-0231-4cc466428be4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 107
+      }
+    },
+    {
+      "place": 232,
+      "teamId": "2026-gpm-qualifier-1-row-0246-cd392506a582",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 109
+      }
+    },
+    {
+      "place": 233,
+      "teamId": "2026-gpm-qualifier-1-row-0248-1b3802602937",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 111
+      }
+    },
+    {
+      "place": 234,
+      "teamId": "2026-gpm-qualifier-2-row-0161-7499329de6f6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 113
+      }
+    },
+    {
+      "place": 235,
+      "teamId": "2026-gpm-qualifier-1-row-0314-92aae3f9dba4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 117
+      }
+    },
+    {
+      "place": 236,
+      "teamId": "2026-gpm-qualifier-1-row-0226-4a68d7c894ad",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 119
+      }
+    },
+    {
+      "place": 237,
+      "teamId": "2026-gpm-qualifier-1-row-0199-8517cc9a3960",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 122
+      }
+    },
+    {
+      "place": 238,
+      "teamId": "2026-gpm-qualifier-1-row-0360-2732618f56bd",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 123
+      }
+    },
+    {
+      "place": 239,
+      "teamId": "2026-gpm-qualifier-1-row-0077-2f873b788953",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 134
+      }
+    },
+    {
+      "place": 240,
+      "teamId": "2026-gpm-qualifier-1-row-0160-28821421f198",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 137
+      }
+    },
+    {
+      "place": 241,
+      "teamId": "2026-gpm-qualifier-1-row-0288-d274bb9992ca",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 141
+      }
+    },
+    {
+      "place": 242,
+      "teamId": "2026-gpm-qualifier-2-row-0211-865f7d41795f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 153
+      }
+    },
+    {
+      "place": 243,
+      "teamId": "2026-gpm-qualifier-3-row-0243-c274504ed1a4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 155
+      }
+    },
+    {
+      "place": 243,
+      "teamId": "2026-gpm-qualifier-1-row-0584-aecf8155791a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 155
+      }
+    },
+    {
+      "place": 245,
+      "teamId": "2026-gpm-qualifier-1-row-0328-66fa48dc9ec6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 158
+      }
+    },
+    {
+      "place": 246,
+      "teamId": "2026-gpm-qualifier-1-row-0298-d9de19084ca3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 159
+      }
+    },
+    {
+      "place": 247,
+      "teamId": "2026-gpm-qualifier-1-row-0241-73668b5f09de",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 163
+      }
+    },
+    {
+      "place": 247,
+      "teamId": "2026-gpm-qualifier-1-row-0175-a87340bd8dcb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 163
+      }
+    },
+    {
+      "place": 247,
+      "teamId": "2026-gpm-qualifier-1-row-0306-a8e66408e563",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 163
+      }
+    },
+    {
+      "place": 250,
+      "teamId": "2026-gpm-qualifier-1-row-0450-f496cc7f068e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 172
+      }
+    },
+    {
+      "place": 251,
+      "teamId": "2026-gpm-qualifier-1-row-0429-f561f682153e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 173
+      }
+    },
+    {
+      "place": 252,
+      "teamId": "2026-gpm-qualifier-1-row-0388-ed9660ba7391",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 177
+      }
+    },
+    {
+      "place": 252,
+      "teamId": "2026-gpm-qualifier-1-row-0110-0037f621b833",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 177
+      }
+    },
+    {
+      "place": 254,
+      "teamId": "2026-gpm-qualifier-1-row-0338-0064fdb2c020",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 178
+      }
+    },
+    {
+      "place": 255,
+      "teamId": "2026-gpm-qualifier-1-row-0471-1c9734e47100",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 181
+      }
+    },
+    {
+      "place": 256,
+      "teamId": "2026-gpm-qualifier-1-row-0424-9613e2fd7f8d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 182
+      }
+    },
+    {
+      "place": 257,
+      "teamId": "2026-gpm-qualifier-1-row-0308-508df30ef5c8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 186
+      }
+    },
+    {
+      "place": 258,
+      "teamId": "2026-gpm-qualifier-2-row-0349-12fa3ef21170",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 193
+      }
+    },
+    {
+      "place": 259,
+      "teamId": "2026-gpm-qualifier-1-row-0113-3f03fb5d247a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 196
+      }
+    },
+    {
+      "place": 260,
+      "teamId": "2026-gpm-qualifier-3-row-0260-8cae49d07dc7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 197
+      }
+    },
+    {
+      "place": 261,
+      "teamId": "2026-gpm-qualifier-1-row-0379-1dee1825476f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 198
+      }
+    },
+    {
+      "place": 261,
+      "teamId": "2026-gpm-qualifier-3-row-0262-5810e63fb70f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 198
+      }
+    },
+    {
+      "place": 263,
+      "teamId": "2026-gpm-qualifier-3-row-0263-2f9595433bf4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 204
+      }
+    },
+    {
+      "place": 264,
+      "teamId": "2026-gpm-qualifier-1-row-0330-2aa8f6330210",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 206
+      }
+    },
+    {
+      "place": 265,
+      "teamId": "2026-gpm-qualifier-3-row-0265-25bbf1473f6b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 209
+      }
+    },
+    {
+      "place": 266,
+      "teamId": "2026-gpm-qualifier-1-row-0282-f880188bee35",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 221
+      }
+    },
+    {
+      "place": 267,
+      "teamId": "2026-gpm-qualifier-1-row-0357-5011fa4656d5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 222
+      }
+    },
+    {
+      "place": 268,
+      "teamId": "2026-gpm-qualifier-1-row-0173-13ae0c70a075",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 224
+      }
+    },
+    {
+      "place": 269,
+      "teamId": "2026-gpm-qualifier-1-row-0233-13b81e95c7ae",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 230
+      }
+    },
+    {
+      "place": 270,
+      "teamId": "2026-gpm-qualifier-1-row-0324-12c8a6347729",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 234
+      }
+    },
+    {
+      "place": 271,
+      "teamId": "2026-gpm-qualifier-3-row-0271-356e16f81050",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 236
+      }
+    },
+    {
+      "place": 272,
+      "teamId": "2026-gpm-qualifier-1-row-0313-5b22705ec79d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 254
+      }
+    },
+    {
+      "place": 272,
+      "teamId": "2026-gpm-qualifier-1-row-0478-a37956ea4e4c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 254
+      }
+    },
+    {
+      "place": 274,
+      "teamId": "2026-gpm-qualifier-1-row-0477-cee9020f35c0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 255
+      }
+    },
+    {
+      "place": 275,
+      "teamId": "2026-gpm-qualifier-1-row-0307-81dd0563a165",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 256
+      }
+    },
+    {
+      "place": 276,
+      "teamId": "2026-gpm-qualifier-1-row-0474-ee0449831b07",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 258
+      }
+    },
+    {
+      "place": 277,
+      "teamId": "2026-gpm-qualifier-3-row-0277-69c7740a1dc3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 261
+      }
+    },
+    {
+      "place": 278,
+      "teamId": "2026-gpm-qualifier-1-row-0299-31d43800bdc3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 262
+      }
+    },
+    {
+      "place": 279,
+      "teamId": "2026-gpm-qualifier-3-row-0279-5f905304d61f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 263
+      }
+    },
+    {
+      "place": 280,
+      "teamId": "2026-gpm-qualifier-1-row-0280-0c26bb560663",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 265
+      }
+    },
+    {
+      "place": 281,
+      "teamId": "2026-gpm-qualifier-1-row-0351-91abbe6d079e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 268
+      }
+    },
+    {
+      "place": 282,
+      "teamId": "2026-gpm-qualifier-1-row-0552-531e78654bf5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 270
+      }
+    },
+    {
+      "place": 283,
+      "teamId": "2026-gpm-qualifier-1-row-0469-92f6ddc4e4ed",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 275
+      }
+    },
+    {
+      "place": 284,
+      "teamId": "2026-gpm-qualifier-1-row-0597-ea1d077f1251",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 283
+      }
+    },
+    {
+      "place": 285,
+      "teamId": "2026-gpm-qualifier-3-row-0285-8151d0037029",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 286
+      }
+    },
+    {
+      "place": 286,
+      "teamId": "2026-gpm-qualifier-2-row-0106-1bafd1234901",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 308
+      }
+    },
+    {
+      "place": 287,
+      "teamId": "2026-gpm-qualifier-2-row-0376-e7f33f6081d8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 329
+      }
+    },
+    {
+      "place": 288,
+      "teamId": "2026-gpm-qualifier-2-row-0650-b1117aa6a5e9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 347
+      }
+    },
+    {
+      "place": 289,
+      "teamId": "2026-gpm-qualifier-1-row-0339-2b4cc5173b75",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 358
+      }
+    },
+    {
+      "place": 290,
+      "teamId": "2026-gpm-qualifier-1-row-0269-8bacfd2dfe3a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 369
+      }
+    },
+    {
+      "place": 291,
+      "teamId": "2026-gpm-qualifier-1-row-0206-6c769fa9cfa5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 409
+      }
+    },
+    {
+      "place": 292,
+      "teamId": "2026-gpm-qualifier-1-row-0401-695dfc90172d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 437
+      }
+    },
+    {
+      "place": 293,
+      "teamId": "2026-gpm-qualifier-1-row-0446-ab2e377d2123",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 439
+      }
+    },
+    {
+      "place": 294,
+      "teamId": "2026-gpm-qualifier-1-row-0543-3de1a6bbc21d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 440
+      }
+    },
+    {
+      "place": 295,
+      "teamId": "2026-gpm-qualifier-3-row-0295-3e7e565bf0e4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 444
+      }
+    },
+    {
+      "place": 296,
+      "teamId": "2026-gpm-qualifier-2-row-0450-de4a2b737250",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 500
+      }
+    },
+    {
+      "place": 297,
+      "teamId": "2026-gpm-qualifier-1-row-0347-b6e50e91b7dc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 509
+      }
+    },
+    {
+      "place": 298,
+      "teamId": "2026-gpm-qualifier-1-row-0419-beecc895b0fb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 7
+      }
+    },
+    {
+      "place": 299,
+      "teamId": "2026-gpm-qualifier-1-row-0247-1e46a8c8f558",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 8
+      }
+    },
+    {
+      "place": 300,
+      "teamId": "2026-gpm-qualifier-1-row-0408-fdbd2ac0c4ac",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 9
+      }
+    },
+    {
+      "place": 301,
+      "teamId": "2026-gpm-qualifier-1-row-0265-f29bad50a5e5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 10
+      }
+    },
+    {
+      "place": 301,
+      "teamId": "2026-gpm-qualifier-1-row-0483-680146ef92be",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 10
+      }
+    },
+    {
+      "place": 301,
+      "teamId": "2026-gpm-qualifier-2-row-0243-697f4a66291c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 10
+      }
+    },
+    {
+      "place": 304,
+      "teamId": "2026-gpm-qualifier-1-row-0341-86c7ce128545",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 11
+      }
+    },
+    {
+      "place": 305,
+      "teamId": "2026-gpm-qualifier-1-row-0275-2bcc61aa76eb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 12
+      }
+    },
+    {
+      "place": 306,
+      "teamId": "2026-gpm-qualifier-1-row-0151-cfeaf19bf206",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 13
+      }
+    },
+    {
+      "place": 306,
+      "teamId": "2026-gpm-qualifier-1-row-0293-b5b70209b18c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 13
+      }
+    },
+    {
+      "place": 306,
+      "teamId": "2026-gpm-qualifier-1-row-0456-43b981335004",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 13
+      }
+    },
+    {
+      "place": 306,
+      "teamId": "2026-gpm-qualifier-1-row-0180-43003b951999",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 13
+      }
+    },
+    {
+      "place": 310,
+      "teamId": "2026-gpm-qualifier-1-row-0321-7003c5c2dc5a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 14
+      }
+    },
+    {
+      "place": 310,
+      "teamId": "2026-gpm-qualifier-1-row-0362-ff35b6645068",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 14
+      }
+    },
+    {
+      "place": 310,
+      "teamId": "2026-gpm-qualifier-1-row-0542-9c51924a8ed5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 14
+      }
+    },
+    {
+      "place": 313,
+      "teamId": "2026-gpm-qualifier-1-row-0191-1ffef7f4dbf7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 16
+      }
+    },
+    {
+      "place": 314,
+      "teamId": "2026-gpm-qualifier-1-row-0385-71e31e0bd956",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 18
+      }
+    },
+    {
+      "place": 314,
+      "teamId": "2026-gpm-qualifier-1-row-0452-02ead2b80391",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 18
+      }
+    },
+    {
+      "place": 314,
+      "teamId": "2026-gpm-qualifier-1-row-0302-b9d58f2bb216",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 18
+      }
+    },
+    {
+      "place": 314,
+      "teamId": "2026-gpm-qualifier-3-row-0317-425d4dacad79",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 18
+      }
+    },
+    {
+      "place": 318,
+      "teamId": "2026-gpm-qualifier-1-row-0353-11ad38f40a03",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 20
+      }
+    },
+    {
+      "place": 318,
+      "teamId": "2026-gpm-qualifier-2-row-0433-589c438e5725",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 20
+      }
+    },
+    {
+      "place": 320,
+      "teamId": "2026-gpm-qualifier-1-row-0484-e4d2ac1a7647",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 21
+      }
+    },
+    {
+      "place": 321,
+      "teamId": "2026-gpm-qualifier-1-row-0242-dad8c294a3d2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 22
+      }
+    },
+    {
+      "place": 322,
+      "teamId": "2026-gpm-qualifier-1-row-0562-fee6e616de3f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 24
+      }
+    },
+    {
+      "place": 323,
+      "teamId": "2026-gpm-qualifier-1-row-0373-b8d9d5289732",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 29
+      }
+    },
+    {
+      "place": 324,
+      "teamId": "2026-gpm-qualifier-1-row-0447-9430c6d42059",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 30
+      }
+    },
+    {
+      "place": 324,
+      "teamId": "2026-gpm-qualifier-3-row-0325-2a86ac3b64e5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 30
+      }
+    },
+    {
+      "place": 326,
+      "teamId": "2026-gpm-qualifier-2-row-0465-cafc5ec1e98e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 32
+      }
+    },
+    {
+      "place": 327,
+      "teamId": "2026-gpm-qualifier-1-row-0146-d54f8b0de14c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 33
+      }
+    },
+    {
+      "place": 328,
+      "teamId": "2026-gpm-qualifier-3-row-0328-657e945bd20d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 34
+      }
+    },
+    {
+      "place": 329,
+      "teamId": "2026-gpm-qualifier-1-row-0442-dc389713354d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 35
+      }
+    },
+    {
+      "place": 330,
+      "teamId": "2026-gpm-qualifier-2-row-0398-be8e4155dbf8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 37
+      }
+    },
+    {
+      "place": 331,
+      "teamId": "2026-gpm-qualifier-1-row-0559-322a0cb03d24",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 39
+      }
+    },
+    {
+      "place": 332,
+      "teamId": "2026-gpm-qualifier-1-row-0448-32267a0b81ac",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 41
+      }
+    },
+    {
+      "place": 333,
+      "teamId": "2026-gpm-qualifier-1-row-0322-402711ac9e00",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 42
+      }
+    },
+    {
+      "place": 334,
+      "teamId": "2026-gpm-qualifier-1-row-0140-b2fde326a1cd",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 43
+      }
+    },
+    {
+      "place": 335,
+      "teamId": "2026-gpm-qualifier-1-row-0188-647b3cd19cb3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 46
+      }
+    },
+    {
+      "place": 336,
+      "teamId": "2026-gpm-qualifier-1-row-0364-f2d512d68471",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 48
+      }
+    },
+    {
+      "place": 337,
+      "teamId": "2026-gpm-qualifier-1-row-0463-fb53512f2432",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 52
+      }
+    },
+    {
+      "place": 338,
+      "teamId": "2026-gpm-qualifier-1-row-0290-1ae3d578b451",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 54
+      }
+    },
+    {
+      "place": 338,
+      "teamId": "2026-gpm-qualifier-1-row-0475-9418d611ab48",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 54
+      }
+    },
+    {
+      "place": 340,
+      "teamId": "2026-gpm-qualifier-3-row-0340-840d431ba2fc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 56
+      }
+    },
+    {
+      "place": 341,
+      "teamId": "2026-gpm-qualifier-1-row-0212-803ba5d63db4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 58
+      }
+    },
+    {
+      "place": 342,
+      "teamId": "2026-gpm-qualifier-2-row-0444-ed73ab340ddb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 60
+      }
+    },
+    {
+      "place": 343,
+      "teamId": "2026-gpm-qualifier-1-row-0540-e441ab85ee8a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 69
+      }
+    },
+    {
+      "place": 344,
+      "teamId": "2026-gpm-qualifier-1-row-0468-7720d852c656",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 76
+      }
+    },
+    {
+      "place": 345,
+      "teamId": "2026-gpm-qualifier-1-row-0489-14efa5e28a18",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 81
+      }
+    },
+    {
+      "place": 346,
+      "teamId": "2026-gpm-qualifier-1-row-0430-68376f1a2627",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 95
+      }
+    },
+    {
+      "place": 346,
+      "teamId": "2026-gpm-qualifier-1-row-0464-c2d79784068c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 95
+      }
+    },
+    {
+      "place": 346,
+      "teamId": "2026-gpm-qualifier-3-row-0348-a3f10a85bad0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 95
+      }
+    },
+    {
+      "place": 349,
+      "teamId": "2026-gpm-qualifier-1-row-0460-170370f73f12",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 112
+      }
+    },
+    {
+      "place": 350,
+      "teamId": "2026-gpm-qualifier-1-row-0390-8d3a08fbf230",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 119
+      }
+    },
+    {
+      "place": 351,
+      "teamId": "2026-gpm-qualifier-1-row-0274-cd7370c8f1e9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 129
+      }
+    },
+    {
+      "place": 352,
+      "teamId": "2026-gpm-qualifier-1-row-0470-2636ac2547b9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 138
+      }
+    },
+    {
+      "place": 353,
+      "teamId": "2026-gpm-qualifier-1-row-0365-7c48390d9bc1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 168
+      }
+    },
+    {
+      "place": 354,
+      "teamId": "2026-gpm-qualifier-1-row-0358-586aea84e0fa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 179
+      }
+    },
+    {
+      "place": 355,
+      "teamId": "2026-gpm-qualifier-1-row-0454-a83aa3a62a6e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 185
+      }
+    },
+    {
+      "place": 356,
+      "teamId": "2026-gpm-qualifier-2-row-0293-d98570082f2a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 195
+      }
+    },
+    {
+      "place": 357,
+      "teamId": "2026-gpm-qualifier-1-row-0582-387fe33b6e2a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 221
+      }
+    },
+    {
+      "place": 358,
+      "teamId": "2026-gpm-qualifier-1-row-0258-b0541cbff29d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 242
+      }
+    },
+    {
+      "place": 359,
+      "teamId": "2026-gpm-qualifier-3-row-0359-ae2cde3f9d37",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 273
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0297-8828bb9f8e77",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0256-e69e35e38b1b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0170-98bbf3028b4d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0363-0b3221a25812",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0364-fe11f29e9465",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0114-55cf26b08702",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0532-0023a61e7b20",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0171-905fee2009d9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0534-f8a148141320",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0213-3adf730adb65",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0402-d12239394088",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0459-ccd8ba0052c2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0220-210a1b548a6b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0226-b8f2d1ed5139",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0505-e745475036cf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0375-f0e12a6bea49",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0165-c4f698895872",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0363-e8af92926a16",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0445-3e9efa95b022",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0379-5c1645e8e021",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0467-77447779c554",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0381-beb9633f0cba",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0382-60b93bfe4f3c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0383-1a4fb20946b4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0301-799b855eb040",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0316-da7681dd911e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0511-632a96644b85",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0461-5b0ef5028d36",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0513-441d54590c04",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0389-7de09a9789b5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0538-7edb6f863fd1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0276-457650f3d1da",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0278-61a684d299b9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0479-1e4886af9b89",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0436-a3ed30f7609a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0217-b156e2a735d1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0423-59e2223485a6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0541-811673e0fa70",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0395-9d12171b7a06",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0434-9b9ba8ed6426",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0203-8941a7faa976",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0268-dbc3b341d6e8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0047-f804947a5cd0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0403-145e9f4f7f34",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0393-fc0767384c14",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0465-979e8c6f0030",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0147-770d04f26777",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0205-c3292a5a9c07",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0138-cb2139385588",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0448-be0e4ce3a280",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0267-0bc91423b4d9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0440-8c27be4c80bf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0544-c50477543114",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0412-b17d8d782436",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0203-01802dbb6584",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0415-f179c5eb2893",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0223-2c2165e19938",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0389-e8e2b072610a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0418-393f37873c7a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0490-ac38909ab46b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0540-00760c935613",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0420-0144c44cdf72",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0052-09d1933cd8c9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0323-5f1150b23b01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0544-c6e8aea660e9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0425-a7badc953ff0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0457-5a9ee72d5a0e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0284-b49cf5940dba",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0545-5f04b1bdd559",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0441-dbb17e9bfa3d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0334-12d62490e30b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0431-52729d337f05",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0438-9264628a07d7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0546-5ad3c9b06f6f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0327-d31c6a2259ed",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0560-dfc014c3e4a1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0548-00583ee8a42a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0562-e482d2e1c5ee",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0377-2971a2fe0b9e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0279-31f16002dd59",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0404-e58100cfcb54",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0453-265372298d99",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0497-49fa456ed429",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0443-22142ef687a8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0549-3cdbc0477162",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0445-16d889ea0348",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0451-ffbfe10ec70a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0447-e497e17e9591",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0251-23b4b5b2bb42",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0061-41bee83b7e17",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0570-83753db00c5a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0415-a3cd1b07276c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0452-123e398845db",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0453-65b9a8a76ba5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0454-30d4704dc255",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0455-9f6e50cfc6e5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0482-6154a22ea796",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0574-b5ee520f42f0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0202-4a3e05a16417",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0431-7e2cb6f61e3f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0372-616141bd39fe",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0342-bca657affb1b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0292-2d05b9176bf1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0422-bec342c05ba4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0551-4248e2ec6c81",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0444-2e84beedce87",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0379-a1033a3aec4c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0481-b3422cdfa530",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0553-95daeeb828f7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0344-84497d6d11c8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0291-c85d5fc6c91d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0554-5e539657a8cc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0472-acd061a4e249",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0586-cb80b3b47c54",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0555-4064ba4a27c6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0406-71dddf823b24",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0352-f9e1549f6b17",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0592-64c91412331a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0478-ab65f760b2b3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0479-a5abc82a3702",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0111-932bad3c64a8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0386-baced089bb56",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0437-e792b0d6878a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0483-b767f8b6ed42",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0396-9038d796fd85",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0485-dfe22660a63b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0556-d1cf61dfac44",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0366-e29b950411a3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0224-a7e7720ee9e8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0182-c2b689437a31",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0064-ae0f00d14b42",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0286-6f81d1e2b40c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0558-ac1c45c79e2d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0493-ad5dc6145f5d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0494-75251bf96780",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0495-c1b000234e2e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0599-fa78e4f49b88",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0441-c20d8bc79c84",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0560-a1e4e2021701",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0499-b6bf19b4d649",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0500-2fa7608a5667",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0561-037f95338204",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0416-2a36556dd708",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0503-e214d3a8ebc3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0197-856f05fab712",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0564-e56920fb76bd",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0336-98cf39e2f1ef",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0356-9d5b4327d425",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0348-be25411d2cff",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0566-627256fbc8dc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0510-0cd369bcef38",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0511-43a6b26a3358",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0512-91791c6d7080",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0439-e7e176f64e6f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0320-509be2948ff5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0452-d45c0bc1540b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0516-e7756052b3f0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0567-dbd1f0e06d55",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0238-f15a0e995615",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0368-7d8381f9e925",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0409-f82b832db28c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0230-fd87802fcc43",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0522-ad249b193961",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0523-625ec99aefa5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0426-d03ac6f70cd1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0569-9e86c1caaba1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0410-fa8cf69c687f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0527-b34562021a88",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0155-843f5e64aa82",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0630-ed813ec0443d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0570-0e2c9dbce217",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0486-3bee28d13e8f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0289-426d2b10f4ca",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0533-c57656f0efa0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0534-a89823263b1f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0219-41523b2ce1b5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0473-8bfe0f465fca",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0445-b2319c618793",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0571-fb80867c1be6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0573-af43ecacff7f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0574-6614c01f6852",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0215-10a223eb2e51",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0542-decdedf6be47",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0040-f2ae56409545",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0575-8baa50d5fc91",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0576-e9b11bc5ba3a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0305-ee7021f2fd2b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0577-9f97b43edadf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0548-9ddddd8b8472",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0332-7f001352b2e7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0578-1faef7e984d7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0579-0b5593158a6e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0310-00d210ec4c6e",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0581-d03f5ab55465",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0554-975ae6ff5438",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0485-1ca87833cdb2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0649-51164de7fafe",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0455-119b7861c714",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0469-ddea20b749af",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0462-cf25bf007726",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0311-d4c902c03d75",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0259-733a4c61d0dc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0583-a2a88e72eee3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0354-ab91e40f10fb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0093-e6f556ef09f4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0458-4867b5f1bd3b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0585-29fb8cafe679",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0586-e799eb6e417b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0070-137e0ccd32dc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0569-e05dc19826da",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0462-6480d4e0edf3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0587-dd21581ef7ae",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0589-dedea532f1be",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0179-aef1e495a4b2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0590-5f58aa965f44",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0662-3a92a3381c2a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0665-d314bb324195",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0666-c15182412ec7",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0369-ace40c75d5f5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0579-60aff4e77015",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0076-5c46b1c84029",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0591-d3dc78035b76",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0582-6a51c2c3eede",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0592-be1be8359253",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0670-4b1190139f5c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0585-3d7ca11ddda8",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0593-fff1a9db75bb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0673-f6c2f7745909",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0333-0b579873df4f",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0589-794f6a5032e4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0590-175fad1e6df2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0353-e3d0d91a97e2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0423-767bc6ef6f2c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0375-c643205e4a8c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0126-45e2d59505ab",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0595-fb0d36bcdb16",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0596-f45b47add661",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0414-6f0bd003e46b",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0184-3776435234d3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0682-50355b0b58b6",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0368-7d1fccd794f5",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0601-1e6a23076090",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0384-37e3d9ecac8d",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0596-000eb598f358",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0599-17bf1714b506",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0690-cd8e88cba427",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0096-576dc311f7b4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0109-6346ab46fccb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-2-row-0468-b3bd5912c0bc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-3-row-0609-308597a2a0c4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-qualifier-1-row-0295-08cceceeeaa9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    }
+  ],
+  "source": "https://www.icpcmexico.org/contests/gpmx-2026-fecha-3/scoreboard",
+  "publicationNotes": [
+    "La fuente solo publica totales: se conservan las 610 filas presentes en la tabla sin inventar detalle por problema. El encabezado no publica el total de equipos registrados; no se puede confirmar si faltan otros equipos.",
+    "La fecha del 29 de agosto de 2026 está publicada en el índice oficial de concursos de ICPC México (https://www.icpcmexico.org/contests); no aparece en el encabezado del scoreboard."
+  ]
+}

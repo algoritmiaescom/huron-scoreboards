@@ -1,0 +1,567 @@
+{
+  "id": "2014-mexico-finals-final",
+  "seasonYear": 2014,
+  "seriesId": "mexico-finals",
+  "stage": "final",
+  "name": "The 2014 ACM-ICPC  Mexico and Central America Finals",
+  "date": null,
+  "durationMinutes": null,
+  "penaltyMinutesPerFailedAttempt": null,
+  "problems": [],
+  "standings": [
+    {
+      "place": 1,
+      "teamId": "2014-mexico-finals-global-row-0001-peludos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 860
+      }
+    },
+    {
+      "place": 2,
+      "teamId": "2014-mexico-finals-global-row-0002-locos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 947
+      }
+    },
+    {
+      "place": 3,
+      "teamId": "2014-mexico-finals-global-row-0003-escoolers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 475
+      }
+    },
+    {
+      "place": 4,
+      "teamId": "2014-mexico-finals-global-row-0004-los-romanticos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 531
+      }
+    },
+    {
+      "place": 5,
+      "teamId": "2014-mexico-finals-global-row-0005-nnn-no-es-nautilus",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 544
+      }
+    },
+    {
+      "place": 6,
+      "teamId": "2014-mexico-finals-global-row-0006-burst-programming",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 584
+      }
+    },
+    {
+      "place": 7,
+      "teamId": "2014-mexico-finals-global-row-0007-pu",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 402
+      }
+    },
+    {
+      "place": 8,
+      "teamId": "2014-mexico-finals-global-row-0008-delta",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 537
+      }
+    },
+    {
+      "place": 9,
+      "teamId": "2014-mexico-finals-global-row-0009-jra",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 636
+      }
+    },
+    {
+      "place": 10,
+      "teamId": "2014-mexico-finals-global-row-0010-itsur-mix-lang-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 641
+      }
+    },
+    {
+      "place": 11,
+      "teamId": "2014-mexico-finals-global-row-0011-los-albertanos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 370
+      }
+    },
+    {
+      "place": 12,
+      "teamId": "2014-mexico-finals-global-row-0012-bitshifters-open",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 504
+      }
+    },
+    {
+      "place": 13,
+      "teamId": "2014-mexico-finals-global-row-0013-lerak-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 541
+      }
+    },
+    {
+      "place": 14,
+      "teamId": "2014-mexico-finals-global-row-0014-codeslayer",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 546
+      }
+    },
+    {
+      "place": 15,
+      "teamId": "2014-mexico-finals-global-row-0015-epsilon",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 629
+      }
+    },
+    {
+      "place": 16,
+      "teamId": "2014-mexico-finals-global-row-0016-ctbs",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 733
+      }
+    },
+    {
+      "place": 17,
+      "teamId": "2014-mexico-finals-global-row-0017-imaginationless",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 203
+      }
+    },
+    {
+      "place": 18,
+      "teamId": "2014-mexico-finals-global-row-0018-the-bugs",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 290
+      }
+    },
+    {
+      "place": 19,
+      "teamId": "2014-mexico-finals-global-row-0019-mictlan-guardians",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 302
+      }
+    },
+    {
+      "place": 20,
+      "teamId": "2014-mexico-finals-global-row-0020-astrum",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 317
+      }
+    },
+    {
+      "place": 21,
+      "teamId": "2014-mexico-finals-global-row-0021-trivium",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 349
+      }
+    },
+    {
+      "place": 22,
+      "teamId": "2014-mexico-finals-global-row-0022-el-equipo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 402
+      }
+    },
+    {
+      "place": 23,
+      "teamId": "2014-mexico-finals-global-row-0023-coding-horror",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 418
+      }
+    },
+    {
+      "place": 24,
+      "teamId": "2014-mexico-finals-global-row-0024-triforce",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 65
+      }
+    },
+    {
+      "place": 25,
+      "teamId": "2014-mexico-finals-global-row-0025-greedies",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 69
+      }
+    },
+    {
+      "place": 26,
+      "teamId": "2014-mexico-finals-global-row-0026-lords-llama-de-la-ciencia",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 101
+      }
+    },
+    {
+      "place": 27,
+      "teamId": "2014-mexico-finals-global-row-0027-easycode",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 114
+      }
+    },
+    {
+      "place": 28,
+      "teamId": "2014-mexico-finals-global-row-0028-tryndamere-y-tobago",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 122
+      }
+    },
+    {
+      "place": 29,
+      "teamId": "2014-mexico-finals-global-row-0029-chetudos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 128
+      }
+    },
+    {
+      "place": 30,
+      "teamId": "2014-mexico-finals-global-row-0030-legio-i-germania",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 139
+      }
+    },
+    {
+      "place": 31,
+      "teamId": "2014-mexico-finals-global-row-0031-borussia",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 146
+      }
+    },
+    {
+      "place": 32,
+      "teamId": "2014-mexico-finals-global-row-0032-epsilon",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 171
+      }
+    },
+    {
+      "place": 33,
+      "teamId": "2014-mexico-finals-global-row-0033-wolves",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 173
+      }
+    },
+    {
+      "place": 34,
+      "teamId": "2014-mexico-finals-global-row-0034-upcode",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 176
+      }
+    },
+    {
+      "place": 35,
+      "teamId": "2014-mexico-finals-global-row-0035-jarcores",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 207
+      }
+    },
+    {
+      "place": 36,
+      "teamId": "2014-mexico-finals-global-row-0036-deprecated-machine",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 265
+      }
+    },
+    {
+      "place": 37,
+      "teamId": "2014-mexico-finals-global-row-0037-tecgrullo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 319
+      }
+    },
+    {
+      "place": 38,
+      "teamId": "2014-mexico-finals-global-row-0038-cuauhpilli",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 4
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2014-mexico-finals-global-row-0039-oasis",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 5
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2014-mexico-finals-global-row-0040-uam-cuajimalpa-2014-compu",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 5
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2014-mexico-finals-global-row-0041-long-aniza",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 5
+      }
+    },
+    {
+      "place": 42,
+      "teamId": "2014-mexico-finals-global-row-0042-programmersop",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 6
+      }
+    },
+    {
+      "place": 43,
+      "teamId": "2014-mexico-finals-global-row-0043-badbits",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 7
+      }
+    },
+    {
+      "place": 44,
+      "teamId": "2014-mexico-finals-global-row-0044-zion",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 8
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2014-mexico-finals-global-row-0045-ami-ubicom",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 9
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2014-mexico-finals-global-row-0046-turigers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 9
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2014-mexico-finals-global-row-0047-los-hijos-de-piza",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 9
+      }
+    },
+    {
+      "place": 48,
+      "teamId": "2014-mexico-finals-global-row-0048-navy",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 11
+      }
+    },
+    {
+      "place": 48,
+      "teamId": "2014-mexico-finals-global-row-0049-coyotes-alpha",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 11
+      }
+    },
+    {
+      "place": 50,
+      "teamId": "2014-mexico-finals-global-row-0050-sncb",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 13
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2014-mexico-finals-global-row-0051-chomsky-s",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 15
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2014-mexico-finals-global-row-0052-itspr2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 15
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2014-mexico-finals-global-row-0053-hyvent",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 15
+      }
+    },
+    {
+      "place": 54,
+      "teamId": "2014-mexico-finals-global-row-0054-iberoleon",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 29
+      }
+    },
+    {
+      "place": 55,
+      "teamId": "2014-mexico-finals-global-row-0055-arandas1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 36
+      }
+    },
+    {
+      "place": 56,
+      "teamId": "2014-mexico-finals-global-row-0056-pinki-pie",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 44
+      }
+    },
+    {
+      "place": 57,
+      "teamId": "2014-mexico-finals-global-row-0057-hashtable",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 52
+      }
+    },
+    {
+      "place": 58,
+      "teamId": "2014-mexico-finals-global-row-0058-last-generation",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 65
+      }
+    },
+    {
+      "place": 59,
+      "teamId": "2014-mexico-finals-global-row-0059-mozzart",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 106
+      }
+    },
+    {
+      "place": 60,
+      "teamId": "2014-mexico-finals-global-row-0060-coyotes-betha",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 131
+      }
+    },
+    {
+      "place": 60,
+      "teamId": "2014-mexico-finals-global-row-0061-gatos-salvajes",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 131
+      }
+    }
+  ],
+  "source": "https://icpc.global/regionals/finder/Mexico-Central-America-2015/standings",
+  "publicationNotes": [
+    "La fuente corresponde a la final regional de México y Centroamérica; se conservan todos los equipos publicados, sin filtrar por país.",
+    "La fuente solo publica totales: no se conocen el detalle por problema, la duración ni la regla de penalización."
+  ]
+}

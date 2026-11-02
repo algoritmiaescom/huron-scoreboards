@@ -1,0 +1,8575 @@
+{
+  "id": "2022-gpm-repechage",
+  "seasonYear": 2022,
+  "seriesId": "gpm",
+  "stage": "repechage",
+  "name": "Repechaje Gran Premio MX 2022",
+  "date": null,
+  "durationMinutes": null,
+  "penaltyMinutesPerFailedAttempt": 20,
+  "problems": [
+    {
+      "label": "A"
+    },
+    {
+      "label": "B"
+    },
+    {
+      "label": "C"
+    },
+    {
+      "label": "D"
+    },
+    {
+      "label": "E"
+    },
+    {
+      "label": "F"
+    },
+    {
+      "label": "G"
+    },
+    {
+      "label": "H"
+    },
+    {
+      "label": "I"
+    },
+    {
+      "label": "J"
+    },
+    {
+      "label": "K"
+    },
+    {
+      "label": "L"
+    }
+  ],
+  "standings": [
+    {
+      "place": 1,
+      "teamId": "2022-owo-3d933f52",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 5,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 16,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 26,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 62,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 261,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 217,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 131,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 90,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 41,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 76,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 1085,
+        "solved": 10
+      }
+    },
+    {
+      "place": 2,
+      "teamId": "2022-exceso-de-fe-9e93508e",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 6,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 124,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 50,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 163,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 179,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 268,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 27,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 63,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 1020,
+        "solved": 8
+      }
+    },
+    {
+      "place": 3,
+      "teamId": "2022-crustaceos-cascarudos-0b51dced",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 11,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 90,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 30,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 242,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 257,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 69,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 118,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 857,
+        "solved": 7
+      }
+    },
+    {
+      "place": 4,
+      "teamId": "2022-chicos-percebe-44d2b2cc",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 6,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 63,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 21,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 254,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 223,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 30,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 181,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 878,
+        "solved": 7
+      }
+    },
+    {
+      "place": 5,
+      "teamId": "2022-tsurus-tuneados-4d0b1768",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 48,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 125,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 202,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 243,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 85,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 183,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 1013,
+        "solved": 7
+      }
+    },
+    {
+      "place": 6,
+      "teamId": "2022-uploading-a9ff9536",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 4,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 188,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 35,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 210,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 24,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 110,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 651,
+        "solved": 6
+      }
+    },
+    {
+      "place": 7,
+      "teamId": "2022-cagua-cd9513cc",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 10,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 95,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 23,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 227,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 38,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 182,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 695,
+        "solved": 6
+      }
+    },
+    {
+      "place": 8,
+      "teamId": "2022-ac-forever-68b8cf64",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 126,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 82,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 151,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 99,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 187,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 712,
+        "solved": 6
+      }
+    },
+    {
+      "place": 9,
+      "teamId": "2022-team-cpp-e6258c66",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 5,
+          "status": "solved"
+        },
+        {
+          "attempts": 9,
+          "solvedAtMinute": 269,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 46,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 8,
+          "solvedAtMinute": 280,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 16,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 116,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 1132,
+        "solved": 6
+      }
+    },
+    {
+      "place": 10,
+      "teamId": "2022-ug-es-2d0cef33",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 85,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 27,
+          "status": "solved"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 61,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 163,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 403,
+        "solved": 5
+      }
+    },
+    {
+      "place": 11,
+      "teamId": "2022-pumasds-910148e2",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 18,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 128,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 45,
+          "status": "solved"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 59,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 194,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 484,
+        "solved": 5
+      }
+    },
+    {
+      "place": 12,
+      "teamId": "2022-jojojos-c7b4b723",
+      "results": [
+        {
+          "attempts": 8,
+          "solvedAtMinute": 22,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 105,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 31,
+          "status": "solved"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 48,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 213,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 579,
+        "solved": 5
+      }
+    },
+    {
+      "place": 12,
+      "teamId": "2022-schrodinger-s-ac-1d0b0d66",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 13,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 169,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 28,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 45,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 284,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 579,
+        "solved": 5
+      }
+    },
+    {
+      "place": 14,
+      "teamId": "2022-omijal-2-274a39ec",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 6,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 202,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 65,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 27,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 249,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 609,
+        "solved": 5
+      }
+    },
+    {
+      "place": 15,
+      "teamId": "2022-tle-squared-5b0dd607",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 272,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 23,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 48,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 247,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 617,
+        "solved": 5
+      }
+    },
+    {
+      "place": 16,
+      "teamId": "2022-descomprimidos-zip-a2f0acad",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 5,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 223,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 19,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 28,
+          "status": "solved"
+        },
+        {
+          "attempts": 7,
+          "solvedAtMinute": 297,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 712,
+        "solved": 5
+      }
+    },
+    {
+      "place": 17,
+      "teamId": "2022-hugs-for-bugs-f8955c34",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 6,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 172,
+          "status": "solved"
+        },
+        {
+          "attempts": 6,
+          "solvedAtMinute": 88,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 66,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 245,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 717,
+        "solved": 5
+      }
+    },
+    {
+      "place": 18,
+      "teamId": "2022-dbd-crew-e4c2828f",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 8,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 140,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 169,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 250,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 39,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 726,
+        "solved": 5
+      }
+    },
+    {
+      "place": 19,
+      "teamId": "2022-adeamortizado-d9628e2d",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 5,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 74,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 186,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 68,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 270,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 803,
+        "solved": 5
+      }
+    },
+    {
+      "place": 20,
+      "teamId": "2022-o-1-3578453a",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 219,
+          "status": "solved"
+        },
+        {
+          "attempts": 6,
+          "solvedAtMinute": 138,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 81,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 271,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 836,
+        "solved": 5
+      }
+    },
+    {
+      "place": 21,
+      "teamId": "2022-deltawing-18e55cd9",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 5,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 293,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 211,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 62,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 263,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 914,
+        "solved": 5
+      }
+    },
+    {
+      "place": 22,
+      "teamId": "2022-icpcrikos-dee1482d",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 147,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "solvedAtMinute": 225,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 80,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 242,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 203,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 1037,
+        "solved": 5
+      }
+    },
+    {
+      "place": 23,
+      "teamId": "2022-cin-nombre-ada7960f",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 8,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 113,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 35,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 56,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 232,
+        "solved": 4
+      }
+    },
+    {
+      "place": 24,
+      "teamId": "2022-omijal-7344d10d",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 30,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 47,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 242,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 366,
+        "solved": 4
+      }
+    },
+    {
+      "place": 25,
+      "teamId": "2022-gauss-n-roses-8c574c08",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 12,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 36,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 74,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 192,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 374,
+        "solved": 4
+      }
+    },
+    {
+      "place": 26,
+      "teamId": "2022-ma-aleones7000-072f1f7b",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 31,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 67,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 232,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 417,
+        "solved": 4
+      }
+    },
+    {
+      "place": 27,
+      "teamId": "2022-equation-group-49143a6c",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 8,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 129,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 28,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 198,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 463,
+        "solved": 4
+      }
+    },
+    {
+      "place": 27,
+      "teamId": "2022-sudo-programmers-59d8240d",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 13,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 237,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 67,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 86,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 463,
+        "solved": 4
+      }
+    },
+    {
+      "place": 29,
+      "teamId": "2022-llaart-b13c7e39",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 14,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 76,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 52,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 285,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 467,
+        "solved": 4
+      }
+    },
+    {
+      "place": 30,
+      "teamId": "2022-team-biriche-fb045a5b",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 10,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 5,
+          "solvedAtMinute": 186,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 166,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 50,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 492,
+        "solved": 4
+      }
+    },
+    {
+      "place": 31,
+      "teamId": "2022-marcianosmx-29d9005a",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 16,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 108,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 95,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 246,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 505,
+        "solved": 4
+      }
+    },
+    {
+      "place": 32,
+      "teamId": "2022-mathgic-f46ef019",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 27,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 114,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 74,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 257,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 512,
+        "solved": 4
+      }
+    },
+    {
+      "place": 33,
+      "teamId": "2022-leones-code-57498c5e",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 18,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "solvedAtMinute": 94,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 31,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 287,
+          "status": "solved"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 550,
+        "solved": 4
+      }
+    },
+    {
+      "place": 34,
+      "teamId": "2022-include-uaz-cf765c8a",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 17,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 225,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 83,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 110,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 555,
+        "solved": 4
+      }
+    },
+    {
+      "place": 35,
+      "teamId": "2022-team-overflow-c5b72283",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 26,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "solvedAtMinute": 106,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 282,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 81,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 655,
+        "solved": 4
+      }
+    },
+    {
+      "place": 36,
+      "teamId": "2022-espantabugs-12bb714c",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 9,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 52,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 33,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 134,
+        "solved": 3
+      }
+    },
+    {
+      "place": 37,
+      "teamId": "2022-los-taqueros-d18a06f0",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 12,
+          "status": "solved"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 64,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 47,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 163,
+        "solved": 3
+      }
+    },
+    {
+      "place": 38,
+      "teamId": "2022-javamonos-255253b9",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 11,
+          "status": "solved"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 79,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 40,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 170,
+        "solved": 3
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2022-hijos-de-honor-41c405be",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 5,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 80,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 43,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 188,
+        "solved": 3
+      }
+    },
+    {
+      "place": 40,
+      "teamId": "2022-ludus-g-18cdebe4",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 6,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 97,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 35,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 198,
+        "solved": 3
+      }
+    },
+    {
+      "place": 40,
+      "teamId": "2022-prietosquad-9d322b8e",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 20,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 120,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 58,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 198,
+        "solved": 3
+      }
+    },
+    {
+      "place": 42,
+      "teamId": "2022-camel-case-023e8ed1",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 5,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 60,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 75,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 200,
+        "solved": 3
+      }
+    },
+    {
+      "place": 43,
+      "teamId": "2022-c-tangana-cbd28fac",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 12,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 87,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 64,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 203,
+        "solved": 3
+      }
+    },
+    {
+      "place": 44,
+      "teamId": "2022-axolotes-8b8f085e",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 19,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 70,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 117,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 206,
+        "solved": 3
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2022-lascuries-77397b5e",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 63,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 63,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 91,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 217,
+        "solved": 3
+      }
+    },
+    {
+      "place": 46,
+      "teamId": "2022-los-chicos-superpoderosos-5545031b",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 18,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 120,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 52,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 230,
+        "solved": 3
+      }
+    },
+    {
+      "place": 47,
+      "teamId": "2022-icp00-16361f4f",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 15,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 96,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 109,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 240,
+        "solved": 3
+      }
+    },
+    {
+      "place": 48,
+      "teamId": "2022-huevito-con-catsun-9cd60e98",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 17,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 149,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 57,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 243,
+        "solved": 3
+      }
+    },
+    {
+      "place": 49,
+      "teamId": "2022-los-lobos-solitarios-2b83fdfd",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 10,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 77,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 94,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 261,
+        "solved": 3
+      }
+    },
+    {
+      "place": 50,
+      "teamId": "2022-bryxelz-bbe78fb4",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 13,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 82,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 110,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 285,
+        "solved": 3
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2022-f-tle-957b07a7",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 80,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 169,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 296,
+        "solved": 3
+      }
+    },
+    {
+      "place": 52,
+      "teamId": "2022-algoritmicos-d1ee3038",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 10,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 154,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 54,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 298,
+        "solved": 3
+      }
+    },
+    {
+      "place": 53,
+      "teamId": "2022-juniors-58fca69b",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 48,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 116,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 155,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 339,
+        "solved": 3
+      }
+    },
+    {
+      "place": 54,
+      "teamId": "2022-to-icpc-and-beyond-69b49b43",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 20,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 120,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 144,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 364,
+        "solved": 3
+      }
+    },
+    {
+      "place": 55,
+      "teamId": "2022-o-1-complexity-24eb8c3a",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 6,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "solvedAtMinute": 117,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 122,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 385,
+        "solved": 3
+      }
+    },
+    {
+      "place": 56,
+      "teamId": "2022-la-sosiedad-435d3e5e",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 7,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 285,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 55,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 387,
+        "solved": 3
+      }
+    },
+    {
+      "place": 57,
+      "teamId": "2022-siglo-xiii-ef869fc3",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 23,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 197,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 154,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 414,
+        "solved": 3
+      }
+    },
+    {
+      "place": 58,
+      "teamId": "2022-minitas-chinas-c00171e3",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 21,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "solvedAtMinute": 162,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 113,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 416,
+        "solved": 3
+      }
+    },
+    {
+      "place": 59,
+      "teamId": "2022-noc-31b48377",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 33,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 237,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 121,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 471,
+        "solved": 3
+      }
+    },
+    {
+      "place": 60,
+      "teamId": "2022-fimaz-5d51d977",
+      "results": [
+        {
+          "attempts": 4,
+          "solvedAtMinute": 96,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 99,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 141,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 476,
+        "solved": 3
+      }
+    },
+    {
+      "place": 61,
+      "teamId": "2022-3logy-0be82651",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 18,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 243,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 199,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 480,
+        "solved": 3
+      }
+    },
+    {
+      "place": 62,
+      "teamId": "2022-bugged-coders-ac080049",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 18,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 180,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 246,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 484,
+        "solved": 3
+      }
+    },
+    {
+      "place": 63,
+      "teamId": "2022-shark-dj-en-mptres-34026466",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 13,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 226,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 179,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 498,
+        "solved": 3
+      }
+    },
+    {
+      "place": 64,
+      "teamId": "2022-siuuu-6ab279fa",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 10,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 11,
+          "solvedAtMinute": 279,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 83,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 572,
+        "solved": 3
+      }
+    },
+    {
+      "place": 65,
+      "teamId": "2022-tazaki-b15c0d51",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 17,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "solvedAtMinute": 193,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 209,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 579,
+        "solved": 3
+      }
+    },
+    {
+      "place": 66,
+      "teamId": "2022-jvf-007-51ddbaa7",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 13,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 8,
+          "solvedAtMinute": 269,
+          "status": "solved"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "solvedAtMinute": 195,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 697,
+        "solved": 3
+      }
+    },
+    {
+      "place": 67,
+      "teamId": "2022-la-remontada-de-los-picateclas-022645d4",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 8,
+          "status": "solved"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "attempts": 9,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 20,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 28,
+        "solved": 2
+      }
+    },
+    {
+      "place": 68,
+      "teamId": "2022-lxs-pixies-be45fd9f",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 9,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 12,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 29,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 38,
+        "solved": 2
+      }
+    },
+    {
+      "place": 69,
+      "teamId": "2022-o-no-ad9076e0",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 9,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 9,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 63,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 72,
+        "solved": 2
+      }
+    },
+    {
+      "place": 70,
+      "teamId": "2022-guerreros-del-sol-44bc6ab8",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 15,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 45,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 80,
+        "solved": 2
+      }
+    },
+    {
+      "place": 71,
+      "teamId": "2022-alt-f4-2282e191",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 9,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 78,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 87,
+        "solved": 2
+      }
+    },
+    {
+      "place": 72,
+      "teamId": "2022-thegoldenborrego-9a49b726",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 20,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 51,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 91,
+        "solved": 2
+      }
+    },
+    {
+      "place": 73,
+      "teamId": "2022-pu-2-1b110f8d",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 19,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 61,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 100,
+        "solved": 2
+      }
+    },
+    {
+      "place": 74,
+      "teamId": "2022-uijolen-c51e7e60",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 22,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 101,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 123,
+        "solved": 2
+      }
+    },
+    {
+      "place": 75,
+      "teamId": "2022-exception-teamnotfound-cac36741",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 11,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 118,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 129,
+        "solved": 2
+      }
+    },
+    {
+      "place": 76,
+      "teamId": "2022-the-log-n-1-42f20648",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 10,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 91,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 141,
+        "solved": 2
+      }
+    },
+    {
+      "place": 77,
+      "teamId": "2022-debuggers-5edaee7f",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 17,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 104,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 161,
+        "solved": 2
+      }
+    },
+    {
+      "place": 78,
+      "teamId": "2022-psyconova-01a96d77",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 32,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 12,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 91,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 163,
+        "solved": 2
+      }
+    },
+    {
+      "place": 79,
+      "teamId": "2022-las-picafresas-2bf79b5c",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 52,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 111,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 183,
+        "solved": 2
+      }
+    },
+    {
+      "place": 79,
+      "teamId": "2022-time-limit-exceeded-6bc0ce7d",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 16,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 147,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 183,
+        "solved": 2
+      }
+    },
+    {
+      "place": 81,
+      "teamId": "2022-cpu-destroyers-3a1d15ac",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 8,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 11,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 158,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 186,
+        "solved": 2
+      }
+    },
+    {
+      "place": 82,
+      "teamId": "2022-pandora-a3500f6c",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 40,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 152,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 192,
+        "solved": 2
+      }
+    },
+    {
+      "place": 83,
+      "teamId": "2022-return-ac-6c915287",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 47,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 108,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 195,
+        "solved": 2
+      }
+    },
+    {
+      "place": 84,
+      "teamId": "2022-oxbests-ae7232de",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 37,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 141,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 198,
+        "solved": 2
+      }
+    },
+    {
+      "place": 85,
+      "teamId": "2022-los-tilines-insanos-5d86cfd4",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 14,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 166,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 200,
+        "solved": 2
+      }
+    },
+    {
+      "place": 86,
+      "teamId": "2022-soul-segmentation-4105d44b",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 32,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 176,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 208,
+        "solved": 2
+      }
+    },
+    {
+      "place": 87,
+      "teamId": "2022-herederos-de-c-57afdab7",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 27,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 132,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 219,
+        "solved": 2
+      }
+    },
+    {
+      "place": 88,
+      "teamId": "2022-los-tlacuaches-de-turin-688c3bf5",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 24,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 12,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 140,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 224,
+        "solved": 2
+      }
+    },
+    {
+      "place": 89,
+      "teamId": "2022-nu1l-42b4c8db",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 105,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 9,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 102,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 227,
+        "solved": 2
+      }
+    },
+    {
+      "place": 90,
+      "teamId": "2022-las-divinas-28db13fb",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 12,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 201,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 233,
+        "solved": 2
+      }
+    },
+    {
+      "place": 91,
+      "teamId": "2022-l-3-3caed4a1",
+      "results": [
+        {
+          "attempts": 5,
+          "solvedAtMinute": 44,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 119,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 243,
+        "solved": 2
+      }
+    },
+    {
+      "place": 92,
+      "teamId": "2022-tortilla-b283a0a7",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 31,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 232,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 263,
+        "solved": 2
+      }
+    },
+    {
+      "place": 93,
+      "teamId": "2022-criged-py-30cf7b00",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 58,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 217,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 295,
+        "solved": 2
+      }
+    },
+    {
+      "place": 94,
+      "teamId": "2022-mavericks-6f24e226",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 37,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 9,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "solvedAtMinute": 251,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 328,
+        "solved": 2
+      }
+    },
+    {
+      "place": 95,
+      "teamId": "2022-chilakillers-e801b288",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 14,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "solvedAtMinute": 217,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 331,
+        "solved": 2
+      }
+    },
+    {
+      "place": 96,
+      "teamId": "2022-nexus-913cf928",
+      "results": [
+        {
+          "attempts": 4,
+          "solvedAtMinute": 93,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 8,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "solvedAtMinute": 170,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 343,
+        "solved": 2
+      }
+    },
+    {
+      "place": 97,
+      "teamId": "2022-the-orig-rejected-us-f99ed716",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 26,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 11,
+          "solvedAtMinute": 118,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 15,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 344,
+        "solved": 2
+      }
+    },
+    {
+      "place": 98,
+      "teamId": "2022-nsp-03ea037f",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 29,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 9,
+          "solvedAtMinute": 173,
+          "status": "solved"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 362,
+        "solved": 2
+      }
+    },
+    {
+      "place": 99,
+      "teamId": "2022-ile-9ec8be72",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 127,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "solvedAtMinute": 256,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 383,
+        "solved": 2
+      }
+    },
+    {
+      "place": 100,
+      "teamId": "2022-los-padrinos-del-c-8f2c4937",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 9,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "solvedAtMinute": 242,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 391,
+        "solved": 2
+      }
+    },
+    {
+      "place": 101,
+      "teamId": "2022-tecnoteam-c5de89fe",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 80,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 11,
+          "solvedAtMinute": 212,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 512,
+        "solved": 2
+      }
+    },
+    {
+      "place": 102,
+      "teamId": "2022-ctrl-alt-del-21698eac",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 26,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 13,
+          "solvedAtMinute": 259,
+          "status": "solved"
+        },
+        {
+          "attempts": 8,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 565,
+        "solved": 2
+      }
+    },
+    {
+      "place": 103,
+      "teamId": "2022-sabritones-bcae45d9",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 6,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 10,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 6,
+        "solved": 1
+      }
+    },
+    {
+      "place": 104,
+      "teamId": "2022-league-of-coders-3f00df77",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 13,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 9,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 13,
+        "solved": 1
+      }
+    },
+    {
+      "place": 104,
+      "teamId": "2022-los-edwins-ce6fabf2",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 13,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 13,
+        "solved": 1
+      }
+    },
+    {
+      "place": 106,
+      "teamId": "2022-a-de-ac-7a9c50b1",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 19,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 19,
+        "solved": 1
+      }
+    },
+    {
+      "place": 107,
+      "teamId": "2022-3-1416two2-c259c5d8",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 1,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 21,
+        "solved": 1
+      }
+    },
+    {
+      "place": 107,
+      "teamId": "2022-dinocoders-09a6a79a",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 21,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 21,
+        "solved": 1
+      }
+    },
+    {
+      "place": 109,
+      "teamId": "2022-jelicopter-0333dde7",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 23,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 23,
+        "solved": 1
+      }
+    },
+    {
+      "place": 109,
+      "teamId": "2022-team-belico-5415b098",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 23,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 23,
+        "solved": 1
+      }
+    },
+    {
+      "place": 111,
+      "teamId": "2022-syntax-error-uanl-15519099",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 26,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 26,
+        "solved": 1
+      }
+    },
+    {
+      "place": 112,
+      "teamId": "2022-include-ancedros-5f5c0cb0",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 27,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 27,
+        "solved": 1
+      }
+    },
+    {
+      "place": 112,
+      "teamId": "2022-three-ocean-8dc15926",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 27,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 27,
+        "solved": 1
+      }
+    },
+    {
+      "place": 114,
+      "teamId": "2022-the-pc-destroyers-ebe94461",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 30,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 30,
+        "solved": 1
+      }
+    },
+    {
+      "place": 115,
+      "teamId": "2022-team-sjc-b739856d",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 14,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 34,
+        "solved": 1
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2022-rte-cpp-4dfda1e8",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 15,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 14,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 35,
+        "solved": 1
+      }
+    },
+    {
+      "place": 117,
+      "teamId": "2022-los-traga-bugs-5ff104dd",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 36,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 36,
+        "solved": 1
+      }
+    },
+    {
+      "place": 117,
+      "teamId": "2022-team-kiwi-1a44194a",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 36,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 36,
+        "solved": 1
+      }
+    },
+    {
+      "place": 119,
+      "teamId": "2022-null-0b59508c",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 38,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 38,
+        "solved": 1
+      }
+    },
+    {
+      "place": 120,
+      "teamId": "2022-null-20650f82",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 39,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 39,
+        "solved": 1
+      }
+    },
+    {
+      "place": 121,
+      "teamId": "2022-galactic-jei-vi-em-60e4c2b5",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 20,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 10,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 40,
+        "solved": 1
+      }
+    },
+    {
+      "place": 122,
+      "teamId": "2022-dreaming-penguins-ba312702",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 42,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 42,
+        "solved": 1
+      }
+    },
+    {
+      "place": 123,
+      "teamId": "2022-tribilines-032d1bd8",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 24,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 44,
+        "solved": 1
+      }
+    },
+    {
+      "place": 124,
+      "teamId": "2022-escultores-de-codigo-31dfb47a",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 25,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 8,
+          "status": "attempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 45,
+        "solved": 1
+      }
+    },
+    {
+      "place": 125,
+      "teamId": "2022-viktorianos-e1c11d91",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 46,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 46,
+        "solved": 1
+      }
+    },
+    {
+      "place": 126,
+      "teamId": "2022-turtlebots-fac8d04c",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 27,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 47,
+        "solved": 1
+      }
+    },
+    {
+      "place": 127,
+      "teamId": "2022-lechuzas-bebes-65cadde2",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 49,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 49,
+        "solved": 1
+      }
+    },
+    {
+      "place": 127,
+      "teamId": "2022-se-desbloquean-celulares-a-domicilio-13ccb248",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 29,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 49,
+        "solved": 1
+      }
+    },
+    {
+      "place": 129,
+      "teamId": "2022-fuerzito-88529235",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 30,
+          "status": "solved"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 50,
+        "solved": 1
+      }
+    },
+    {
+      "place": 129,
+      "teamId": "2022-python-esp-afa70d6d",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 30,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 50,
+        "solved": 1
+      }
+    },
+    {
+      "place": 131,
+      "teamId": "2022-berserkers-06dac954",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 51,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 51,
+        "solved": 1
+      }
+    },
+    {
+      "place": 131,
+      "teamId": "2022-jle-aaf597f3",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 31,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 51,
+        "solved": 1
+      }
+    },
+    {
+      "place": 133,
+      "teamId": "2022-the-voids-d2ad1ece",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 63,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 63,
+        "solved": 1
+      }
+    },
+    {
+      "place": 133,
+      "teamId": "2022-win2-carnitas-karmalienses-0316b381",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 23,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 6,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 8,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 63,
+        "solved": 1
+      }
+    },
+    {
+      "place": 135,
+      "teamId": "2022-bitunlockers427-81885e38",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 45,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 14,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 65,
+        "solved": 1
+      }
+    },
+    {
+      "place": 136,
+      "teamId": "2022-c-dos-09826876",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 47,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 67,
+        "solved": 1
+      }
+    },
+    {
+      "place": 137,
+      "teamId": "2022-crackers-4d1f0848",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 31,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 71,
+        "solved": 1
+      }
+    },
+    {
+      "place": 138,
+      "teamId": "2022-lambda-superior-e0651a77",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 58,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 78,
+        "solved": 1
+      }
+    },
+    {
+      "place": 139,
+      "teamId": "2022-carpincho-4fde2d01",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 40,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 80,
+        "solved": 1
+      }
+    },
+    {
+      "place": 140,
+      "teamId": "2022-ace-23a6deed",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 62,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 82,
+        "solved": 1
+      }
+    },
+    {
+      "place": 141,
+      "teamId": "2022-sopa-de-codito-c77b6948",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 91,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 91,
+        "solved": 1
+      }
+    },
+    {
+      "place": 142,
+      "teamId": "2022-asimilando-la-ignorancia-4c01ec0c",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 55,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 95,
+        "solved": 1
+      }
+    },
+    {
+      "place": 142,
+      "teamId": "2022-the-warriors-11599560",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 75,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 95,
+        "solved": 1
+      }
+    },
+    {
+      "place": 144,
+      "teamId": "2022-developers-e8f11eaa",
+      "results": [
+        {
+          "attempts": 2,
+          "solvedAtMinute": 76,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 96,
+        "solved": 1
+      }
+    },
+    {
+      "place": 145,
+      "teamId": "2022-vodka-juniors-bae58729",
+      "results": [
+        {
+          "attempts": 4,
+          "solvedAtMinute": 45,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 9,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 105,
+        "solved": 1
+      }
+    },
+    {
+      "place": 146,
+      "teamId": "2022-croteam-ea331b2d",
+      "results": [
+        {
+          "attempts": 1,
+          "solvedAtMinute": 118,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 118,
+        "solved": 1
+      }
+    },
+    {
+      "place": 147,
+      "teamId": "2022-servers-squad-1dbb6d10",
+      "results": [
+        {
+          "attempts": 5,
+          "solvedAtMinute": 42,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 122,
+        "solved": 1
+      }
+    },
+    {
+      "place": 148,
+      "teamId": "2022-coders-in-progress-60eb3982",
+      "results": [
+        {
+          "attempts": 3,
+          "solvedAtMinute": 89,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 129,
+        "solved": 1
+      }
+    },
+    {
+      "place": 149,
+      "teamId": "2022-med-3707895c",
+      "results": [
+        {
+          "attempts": 5,
+          "solvedAtMinute": 59,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 139,
+        "solved": 1
+      }
+    },
+    {
+      "place": 149,
+      "teamId": "2022-threeamigos-3dd04ed0",
+      "results": [
+        {
+          "attempts": 5,
+          "solvedAtMinute": 59,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 8,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 139,
+        "solved": 1
+      }
+    },
+    {
+      "place": 151,
+      "teamId": "2022-cga-team-c19dcfc0",
+      "results": [
+        {
+          "attempts": 7,
+          "solvedAtMinute": 113,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 233,
+        "solved": 1
+      }
+    },
+    {
+      "place": 152,
+      "teamId": "2022-code-o-holics-3085db95",
+      "results": [
+        {
+          "attempts": 6,
+          "solvedAtMinute": 172,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 272,
+        "solved": 1
+      }
+    },
+    {
+      "place": 153,
+      "teamId": "2022-las-superpoderosas-806974d8",
+      "results": [
+        {
+          "attempts": 4,
+          "solvedAtMinute": 249,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 309,
+        "solved": 1
+      }
+    },
+    {
+      "place": 154,
+      "teamId": "2022-seatworks-7983a4f7",
+      "results": [
+        {
+          "attempts": 7,
+          "solvedAtMinute": 200,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 10,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 320,
+        "solved": 1
+      }
+    },
+    {
+      "place": 155,
+      "teamId": "2022-jda-e9e41f42",
+      "results": [
+        {
+          "attempts": 8,
+          "solvedAtMinute": 268,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 4,
+          "status": "attempted"
+        },
+        {
+          "attempts": 2,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 408,
+        "solved": 1
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2022-chicas-superpoderosas-e522ac6f",
+      "results": [
+        {
+          "attempts": 10,
+          "solvedAtMinute": 281,
+          "status": "solved"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 461,
+        "solved": 1
+      }
+    },
+    {
+      "place": 157,
+      "teamId": "2022-bug-programmers-bp-7b1e3d66",
+      "results": [
+        {
+          "attempts": 16,
+          "solvedAtMinute": 223,
+          "status": "solved"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 523,
+        "solved": 1
+      }
+    },
+    {
+      "place": 158,
+      "teamId": "2022-adc-6c16a7e3",
+      "results": [
+        {
+          "attempts": 3,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 0,
+        "solved": 0
+      }
+    },
+    {
+      "place": 158,
+      "teamId": "2022-err-team-not-found-4d2aa935",
+      "results": [
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 0,
+        "solved": 0
+      }
+    },
+    {
+      "place": 158,
+      "teamId": "2022-los-cuacks-564360c3",
+      "results": [
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 0,
+        "solved": 0
+      }
+    },
+    {
+      "place": 158,
+      "teamId": "2022-los-freshmen-102a92bb",
+      "results": [
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 0,
+        "solved": 0
+      }
+    },
+    {
+      "place": 158,
+      "teamId": "2022-los-testigos-de-oswi-4acd6e0b",
+      "results": [
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 0,
+        "solved": 0
+      }
+    },
+    {
+      "place": 158,
+      "teamId": "2022-los-egocentricos-f1f018ca",
+      "results": [
+        {
+          "attempts": 5,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 7,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "status": "unattempted"
+        },
+        {
+          "attempts": 1,
+          "status": "attempted"
+        },
+        {
+          "status": "unattempted"
+        }
+      ],
+      "publishedTotals": {
+        "penalty": 0,
+        "solved": 0
+      }
+    }
+  ],
+  "source": "https://www.icpcmexico.org/contests/gpmx-2022-repechaje/scoreboard"
+}

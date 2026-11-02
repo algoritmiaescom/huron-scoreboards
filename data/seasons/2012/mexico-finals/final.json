@@ -1,0 +1,1485 @@
+{
+  "id": "2012-mexico-finals-final",
+  "seasonYear": 2012,
+  "seriesId": "mexico-finals",
+  "stage": "final",
+  "name": "The 2012 Mexico & Central America Regional Contest",
+  "date": null,
+  "durationMinutes": null,
+  "penaltyMinutesPerFailedAttempt": null,
+  "problems": [],
+  "standings": [
+    {
+      "place": 1,
+      "teamId": "2012-mexico-finals-global-row-0001-escoders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 514
+      }
+    },
+    {
+      "place": 2,
+      "teamId": "2012-mexico-finals-global-row-0002-aei",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 515
+      }
+    },
+    {
+      "place": 3,
+      "teamId": "2012-mexico-finals-global-row-0003-peludos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 657
+      }
+    },
+    {
+      "place": 4,
+      "teamId": "2012-mexico-finals-global-row-0004-faith-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 146
+      }
+    },
+    {
+      "place": 5,
+      "teamId": "2012-mexico-finals-global-row-0005-hurones-ftw",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 296
+      }
+    },
+    {
+      "place": 6,
+      "teamId": "2012-mexico-finals-global-row-0006-nautilus",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 304
+      }
+    },
+    {
+      "place": 7,
+      "teamId": "2012-mexico-finals-global-row-0007-dragoncurve",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 332
+      }
+    },
+    {
+      "place": 8,
+      "teamId": "2012-mexico-finals-global-row-0008-dragones",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 343
+      }
+    },
+    {
+      "place": 9,
+      "teamId": "2012-mexico-finals-global-row-0009-javadabadoo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 387
+      }
+    },
+    {
+      "place": 10,
+      "teamId": "2012-mexico-finals-global-row-0010-eagleknights",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 405
+      }
+    },
+    {
+      "place": 11,
+      "teamId": "2012-mexico-finals-global-row-0011-c-mita",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 411
+      }
+    },
+    {
+      "place": 12,
+      "teamId": "2012-mexico-finals-global-row-0012-three-bits",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 434
+      }
+    },
+    {
+      "place": 13,
+      "teamId": "2012-mexico-finals-global-row-0013-hyvent",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 446
+      }
+    },
+    {
+      "place": 14,
+      "teamId": "2012-mexico-finals-global-row-0014-last-generation-itesz",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 471
+      }
+    },
+    {
+      "place": 15,
+      "teamId": "2012-mexico-finals-global-row-0015-pu-2-0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 113
+      }
+    },
+    {
+      "place": 16,
+      "teamId": "2012-mexico-finals-global-row-0016-tribonacci",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 154
+      }
+    },
+    {
+      "place": 17,
+      "teamId": "2012-mexico-finals-global-row-0017-fmat-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 207
+      }
+    },
+    {
+      "place": 17,
+      "teamId": "2012-mexico-finals-global-row-0018-drink-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 207
+      }
+    },
+    {
+      "place": 19,
+      "teamId": "2012-mexico-finals-global-row-0019-fismateros",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 227
+      }
+    },
+    {
+      "place": 20,
+      "teamId": "2012-mexico-finals-global-row-0020-macoders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 262
+      }
+    },
+    {
+      "place": 21,
+      "teamId": "2012-mexico-finals-global-row-0021-uam-azcapotzalco-xxiv",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 268
+      }
+    },
+    {
+      "place": 22,
+      "teamId": "2012-mexico-finals-global-row-0022-aaaawww-yeeeaaahhh",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 277
+      }
+    },
+    {
+      "place": 23,
+      "teamId": "2012-mexico-finals-global-row-0023-yep-yep",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 286
+      }
+    },
+    {
+      "place": 24,
+      "teamId": "2012-mexico-finals-global-row-0024-parabolic-octopi",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 289
+      }
+    },
+    {
+      "place": 25,
+      "teamId": "2012-mexico-finals-global-row-0025-los-queries",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 291
+      }
+    },
+    {
+      "place": 26,
+      "teamId": "2012-mexico-finals-global-row-0026-the-last-fad",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 330
+      }
+    },
+    {
+      "place": 27,
+      "teamId": "2012-mexico-finals-global-row-0027-astrum",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 351
+      }
+    },
+    {
+      "place": 28,
+      "teamId": "2012-mexico-finals-global-row-0028-hashtable",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 352
+      }
+    },
+    {
+      "place": 29,
+      "teamId": "2012-mexico-finals-global-row-0029-itsur-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 384
+      }
+    },
+    {
+      "place": 30,
+      "teamId": "2012-mexico-finals-global-row-0030-los-constructores",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 544
+      }
+    },
+    {
+      "place": 31,
+      "teamId": "2012-mexico-finals-global-row-0031-acmipt",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 31
+      }
+    },
+    {
+      "place": 32,
+      "teamId": "2012-mexico-finals-global-row-0032-coyotes-alpha",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 40
+      }
+    },
+    {
+      "place": 33,
+      "teamId": "2012-mexico-finals-global-row-0033-daa-cpp",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 42
+      }
+    },
+    {
+      "place": 34,
+      "teamId": "2012-mexico-finals-global-row-0034-linces",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 49
+      }
+    },
+    {
+      "place": 35,
+      "teamId": "2012-mexico-finals-global-row-0035-itesz01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 53
+      }
+    },
+    {
+      "place": 36,
+      "teamId": "2012-mexico-finals-global-row-0036-php",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 55
+      }
+    },
+    {
+      "place": 37,
+      "teamId": "2012-mexico-finals-global-row-0037-dona-cata-lovers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 57
+      }
+    },
+    {
+      "place": 38,
+      "teamId": "2012-mexico-finals-global-row-0038-4lux1t0s",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 58
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2012-mexico-finals-global-row-0039-iterators",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 61
+      }
+    },
+    {
+      "place": 40,
+      "teamId": "2012-mexico-finals-global-row-0040-codegeist",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 64
+      }
+    },
+    {
+      "place": 40,
+      "teamId": "2012-mexico-finals-global-row-0041-mapaches",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 64
+      }
+    },
+    {
+      "place": 42,
+      "teamId": "2012-mexico-finals-global-row-0042-aguascalientitos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 67
+      }
+    },
+    {
+      "place": 43,
+      "teamId": "2012-mexico-finals-global-row-0043-vigorexia-total",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 69
+      }
+    },
+    {
+      "place": 44,
+      "teamId": "2012-mexico-finals-global-row-0044-anonymous",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 72
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2012-mexico-finals-global-row-0045-tec",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 75
+      }
+    },
+    {
+      "place": 46,
+      "teamId": "2012-mexico-finals-global-row-0046-los-javeros",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 81
+      }
+    },
+    {
+      "place": 46,
+      "teamId": "2012-mexico-finals-global-row-0047-tec-morelia-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 81
+      }
+    },
+    {
+      "place": 48,
+      "teamId": "2012-mexico-finals-global-row-0048-utm-mix",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 90
+      }
+    },
+    {
+      "place": 49,
+      "teamId": "2012-mexico-finals-global-row-0049-uvaq-gw2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 93
+      }
+    },
+    {
+      "place": 50,
+      "teamId": "2012-mexico-finals-global-row-0050-los-guapos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 94
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2012-mexico-finals-global-row-0051-anomcodes",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 97
+      }
+    },
+    {
+      "place": 52,
+      "teamId": "2012-mexico-finals-global-row-0052-los-mininos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 97
+      }
+    },
+    {
+      "place": 53,
+      "teamId": "2012-mexico-finals-global-row-0053-simpus-yggdrasil",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 99
+      }
+    },
+    {
+      "place": 54,
+      "teamId": "2012-mexico-finals-global-row-0054-los-flameados",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 100
+      }
+    },
+    {
+      "place": 55,
+      "teamId": "2012-mexico-finals-global-row-0055-caldo-de-pollo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 102
+      }
+    },
+    {
+      "place": 56,
+      "teamId": "2012-mexico-finals-global-row-0056-lmental",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 106
+      }
+    },
+    {
+      "place": 56,
+      "teamId": "2012-mexico-finals-global-row-0057-dioses-piratas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 106
+      }
+    },
+    {
+      "place": 58,
+      "teamId": "2012-mexico-finals-global-row-0058-leviathan",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 107
+      }
+    },
+    {
+      "place": 59,
+      "teamId": "2012-mexico-finals-global-row-0059-npcs",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 108
+      }
+    },
+    {
+      "place": 60,
+      "teamId": "2012-mexico-finals-global-row-0060-extreme-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 109
+      }
+    },
+    {
+      "place": 61,
+      "teamId": "2012-mexico-finals-global-row-0061-error-404",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 110
+      }
+    },
+    {
+      "place": 62,
+      "teamId": "2012-mexico-finals-global-row-0062-the-javengers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 115
+      }
+    },
+    {
+      "place": 63,
+      "teamId": "2012-mexico-finals-global-row-0063-itm-tec-morelia-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 116
+      }
+    },
+    {
+      "place": 64,
+      "teamId": "2012-mexico-finals-global-row-0064-pallevalopacomelaqui",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 119
+      }
+    },
+    {
+      "place": 65,
+      "teamId": "2012-mexico-finals-global-row-0065-uaa-lti-lma",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 126
+      }
+    },
+    {
+      "place": 66,
+      "teamId": "2012-mexico-finals-global-row-0066-pok",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 126
+      }
+    },
+    {
+      "place": 67,
+      "teamId": "2012-mexico-finals-global-row-0067-uam-azcapotzalco-xxv",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 130
+      }
+    },
+    {
+      "place": 68,
+      "teamId": "2012-mexico-finals-global-row-0068-qlan-v2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 136
+      }
+    },
+    {
+      "place": 69,
+      "teamId": "2012-mexico-finals-global-row-0069-coyotes-beta",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 143
+      }
+    },
+    {
+      "place": 70,
+      "teamId": "2012-mexico-finals-global-row-0070-haka-2-0",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 156
+      }
+    },
+    {
+      "place": 71,
+      "teamId": "2012-mexico-finals-global-row-0071-cominf",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 158
+      }
+    },
+    {
+      "place": 71,
+      "teamId": "2012-mexico-finals-global-row-0072-los-pollos-hermanos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 158
+      }
+    },
+    {
+      "place": 73,
+      "teamId": "2012-mexico-finals-global-row-0073-iot",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 160
+      }
+    },
+    {
+      "place": 74,
+      "teamId": "2012-mexico-finals-global-row-0074-iroh",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 161
+      }
+    },
+    {
+      "place": 75,
+      "teamId": "2012-mexico-finals-global-row-0075-univ-anahuac-oaxaca",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 176
+      }
+    },
+    {
+      "place": 76,
+      "teamId": "2012-mexico-finals-global-row-0076-null",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 177
+      }
+    },
+    {
+      "place": 77,
+      "teamId": "2012-mexico-finals-global-row-0077-little-bobby-nully",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 179
+      }
+    },
+    {
+      "place": 78,
+      "teamId": "2012-mexico-finals-global-row-0078-prhogrameitorz",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 180
+      }
+    },
+    {
+      "place": 79,
+      "teamId": "2012-mexico-finals-global-row-0079-jaguares-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 184
+      }
+    },
+    {
+      "place": 80,
+      "teamId": "2012-mexico-finals-global-row-0080-nibblesoft",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 187
+      }
+    },
+    {
+      "place": 81,
+      "teamId": "2012-mexico-finals-global-row-0081-itm-tec-morelia-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 188
+      }
+    },
+    {
+      "place": 82,
+      "teamId": "2012-mexico-finals-global-row-0082-bsod",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 195
+      }
+    },
+    {
+      "place": 83,
+      "teamId": "2012-mexico-finals-global-row-0083-uaa-masters",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 206
+      }
+    },
+    {
+      "place": 84,
+      "teamId": "2012-mexico-finals-global-row-0084-los-forloops",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 208
+      }
+    },
+    {
+      "place": 85,
+      "teamId": "2012-mexico-finals-global-row-0085-criptux",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 209
+      }
+    },
+    {
+      "place": 86,
+      "teamId": "2012-mexico-finals-global-row-0086-jaguares-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 218
+      }
+    },
+    {
+      "place": 86,
+      "teamId": "2012-mexico-finals-global-row-0087-m3xicanos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 218
+      }
+    },
+    {
+      "place": 88,
+      "teamId": "2012-mexico-finals-global-row-0088-borregos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 222
+      }
+    },
+    {
+      "place": 89,
+      "teamId": "2012-mexico-finals-global-row-0089-galaxis",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 231
+      }
+    },
+    {
+      "place": 90,
+      "teamId": "2012-mexico-finals-global-row-0090-itsu1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 239
+      }
+    },
+    {
+      "place": 91,
+      "teamId": "2012-mexico-finals-global-row-0091-java-2g",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 241
+      }
+    },
+    {
+      "place": 92,
+      "teamId": "2012-mexico-finals-global-row-0092-bubblegum-sort",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 243
+      }
+    },
+    {
+      "place": 93,
+      "teamId": "2012-mexico-finals-global-row-0093-utm-meber",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 245
+      }
+    },
+    {
+      "place": 94,
+      "teamId": "2012-mexico-finals-global-row-0094-los-picadientes-de-caborca",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 266
+      }
+    },
+    {
+      "place": 95,
+      "teamId": "2012-mexico-finals-global-row-0095-g",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 268
+      }
+    },
+    {
+      "place": 96,
+      "teamId": "2012-mexico-finals-global-row-0096-tri-gun",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 270
+      }
+    },
+    {
+      "place": 97,
+      "teamId": "2012-mexico-finals-global-row-0097-razadelarazon",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 271
+      }
+    },
+    {
+      "place": 98,
+      "teamId": "2012-mexico-finals-global-row-0098-coyotes-gama",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 274
+      }
+    },
+    {
+      "place": 99,
+      "teamId": "2012-mexico-finals-global-row-0099-uaa-builders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 291
+      }
+    },
+    {
+      "place": 100,
+      "teamId": "2012-mexico-finals-global-row-0100-itslobos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 298
+      }
+    },
+    {
+      "place": 101,
+      "teamId": "2012-mexico-finals-global-row-0101-genesys",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 301
+      }
+    },
+    {
+      "place": 102,
+      "teamId": "2012-mexico-finals-global-row-0102-default-default",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 334
+      }
+    },
+    {
+      "place": 103,
+      "teamId": "2012-mexico-finals-global-row-0103-salchipulpos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 341
+      }
+    },
+    {
+      "place": 104,
+      "teamId": "2012-mexico-finals-global-row-0104-working",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 342
+      }
+    },
+    {
+      "place": 105,
+      "teamId": "2012-mexico-finals-global-row-0105-thundertecs",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 351
+      }
+    },
+    {
+      "place": 106,
+      "teamId": "2012-mexico-finals-global-row-0106-tecpanuco",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 369
+      }
+    },
+    {
+      "place": 107,
+      "teamId": "2012-mexico-finals-global-row-0107-copiaconflictiva",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 386
+      }
+    },
+    {
+      "place": 108,
+      "teamId": "2012-mexico-finals-global-row-0108-softluciones",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 417
+      }
+    },
+    {
+      "place": 109,
+      "teamId": "2012-mexico-finals-global-row-0109-uam-azcapotzalco-xxiii",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 424
+      }
+    },
+    {
+      "place": 110,
+      "teamId": "2012-mexico-finals-global-row-0110-la-resistance",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 428
+      }
+    },
+    {
+      "place": 111,
+      "teamId": "2012-mexico-finals-global-row-0111-skynet",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 438
+      }
+    },
+    {
+      "place": 112,
+      "teamId": "2012-mexico-finals-global-row-0112-itspr2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 448
+      }
+    },
+    {
+      "place": 113,
+      "teamId": "2012-mexico-finals-global-row-0113-system-gc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 464
+      }
+    },
+    {
+      "place": 114,
+      "teamId": "2012-mexico-finals-global-row-0114-nipper",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 38
+      }
+    },
+    {
+      "place": 115,
+      "teamId": "2012-mexico-finals-global-row-0115-ccm1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 51
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2012-mexico-finals-global-row-0116-itzitacuaro-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 62
+      }
+    },
+    {
+      "place": 117,
+      "teamId": "2012-mexico-finals-global-row-0117-pampasmitas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 63
+      }
+    },
+    {
+      "place": 118,
+      "teamId": "2012-mexico-finals-global-row-0118-the-wrong-answers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 82
+      }
+    },
+    {
+      "place": 119,
+      "teamId": "2012-mexico-finals-global-row-0119-losrivas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 84
+      }
+    },
+    {
+      "place": 120,
+      "teamId": "2012-mexico-finals-global-row-0120-nopal-warriors",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 105
+      }
+    },
+    {
+      "place": 121,
+      "teamId": "2012-mexico-finals-global-row-0121-drunkard-s-walk",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 107
+      }
+    },
+    {
+      "place": 121,
+      "teamId": "2012-mexico-finals-global-row-0122-losparces",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 107
+      }
+    },
+    {
+      "place": 123,
+      "teamId": "2012-mexico-finals-global-row-0123-los-saiyayin",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 116
+      }
+    },
+    {
+      "place": 124,
+      "teamId": "2012-mexico-finals-global-row-0124-ccm2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 127
+      }
+    },
+    {
+      "place": 125,
+      "teamId": "2012-mexico-finals-global-row-0125-nullsoft",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 134
+      }
+    },
+    {
+      "place": 126,
+      "teamId": "2012-mexico-finals-global-row-0126-jaguares-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 140
+      }
+    },
+    {
+      "place": 127,
+      "teamId": "2012-mexico-finals-global-row-0127-equipo-kakashi",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 150
+      }
+    },
+    {
+      "place": 128,
+      "teamId": "2012-mexico-finals-global-row-0128-s-black",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 209
+      }
+    },
+    {
+      "place": 129,
+      "teamId": "2012-mexico-finals-global-row-0129-itsu3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 241
+      }
+    },
+    {
+      "place": 130,
+      "teamId": "2012-mexico-finals-global-row-0130-nisc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 250
+      }
+    },
+    {
+      "place": 131,
+      "teamId": "2012-mexico-finals-global-row-0131-intsystxxi",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 266
+      }
+    },
+    {
+      "place": 132,
+      "teamId": "2012-mexico-finals-global-row-0132-lasystem",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 306
+      }
+    },
+    {
+      "place": 133,
+      "teamId": "2012-mexico-finals-global-row-0133-kyoo-corp",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 341
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0134-utd-durango1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0135-itsur-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0136-the-avengers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0137-teamwork",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0138-itsu2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0139-delfines",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0140-umg-alfa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0141-utd-durango2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0142-kame",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0143-itst-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0144-comelonches",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0145-storm",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0146-best-mecatronics",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0147-super-equipo-increible",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0148-its-coalcoman",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0149-itst-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0150-umg-delta",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0151-itzitacuaro-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0152-nemesis",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0153-itst-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0154-beta",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0155-los-truchas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0156-programming-ewoks",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0157-no-soy-un-bot",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0158-ascii-bit",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0159-galvantulas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0160-los-galacticos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0161-alfa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0162-birds",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2012-mexico-finals-global-row-0163-javaclass",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    }
+  ],
+  "source": "https://icpc.global/regionals/finder/Mexico-Central-America-2013/standings",
+  "publicationNotes": [
+    "La fuente corresponde a la final regional de México y Centroamérica; se conservan todos los equipos publicados, sin filtrar por país.",
+    "La fuente solo publica totales: no se conocen el detalle por problema, la duración ni la regla de penalización."
+  ]
+}
