@@ -64,32 +64,57 @@ export const AccumulatedStandings = ({
   const rows = selectAccumulatedRows(archive, standing);
   const cut = selectQualificationCut(standing);
   const label = `Clasificación acumulada ${String(standing.seasonYear)}`;
+  const scoreLabel =
+    standing.scoreUnit === undefined
+      ? 'Puntaje publicado'
+      : `Puntaje publicado (${standing.scoreUnit})`;
+  const snapshotNotice =
+    standing.snapshot === 'unconfirmed' ? (
+      <Alert severity="warning">
+        {standing.snapshotLabel === undefined
+          ? 'La fuente no confirma explícitamente que sea el resultado final.'
+          : `${standing.snapshotLabel}. La fuente no confirma explícitamente que sea el resultado final.`}
+      </Alert>
+    ) : standing.snapshot === 'intermediate' ? (
+      <Alert severity="warning">
+        {standing.snapshotLabel === undefined
+          ? 'La fuente identifica esta clasificación como intermedia.'
+          : `${standing.snapshotLabel}. La fuente identifica esta clasificación como intermedia.`}
+      </Alert>
+    ) : null;
   if (rows.length === 0) {
     return (
-      <Alert severity="info">
-        Esta clasificación acumulada todavía no tiene equipos publicados.
-      </Alert>
+      <>
+        {snapshotNotice}
+        <Alert severity="info">
+          Esta clasificación acumulada todavía no tiene equipos publicados.
+        </Alert>
+      </>
     );
   }
   if (!desktop) {
     return (
-      <ListGrid aria-label={label}>
-        {rows.map((row, index) => (
-          <li key={row.teamId}>
-            <QualifiedCard row={row} data-qualified={row.qualified} data-cut={cut === index + 1}>
-              <DataList items={[{ label: 'Puntaje publicado', value: String(row.score) }]} />
-              <QualificationChip qualified={row.qualified} />
-            </QualifiedCard>
-            {cut === index + 1 && (
-              <CutLabel variant="caption">Línea de corte de clasificación</CutLabel>
-            )}
-          </li>
-        ))}
-      </ListGrid>
+      <>
+        {snapshotNotice}
+        <ListGrid aria-label={label}>
+          {rows.map((row, index) => (
+            <li key={row.teamId}>
+              <QualifiedCard row={row} data-qualified={row.qualified} data-cut={cut === index + 1}>
+                <DataList items={[{ label: scoreLabel, value: String(row.score) }]} />
+                <QualificationChip qualified={row.qualified} />
+              </QualifiedCard>
+              {cut === index + 1 && (
+                <CutLabel variant="caption">Línea de corte de clasificación</CutLabel>
+              )}
+            </li>
+          ))}
+        </ListGrid>
+      </>
     );
   }
   return (
     <>
+      {snapshotNotice}
       <ScrollRegion label="Clasificación acumulada con desplazamiento">
         <ResultsTable aria-label={label}>
           <colgroup>
@@ -105,7 +130,7 @@ export const AccumulatedStandings = ({
               <TableCell scope="col">Equipo</TableCell>
               <TableCell scope="col">Institución</TableCell>
               <TableCell scope="col" align="right">
-                Puntaje publicado
+                {scoreLabel}
               </TableCell>
               <TableCell scope="col">Clasificación</TableCell>
             </TableRow>

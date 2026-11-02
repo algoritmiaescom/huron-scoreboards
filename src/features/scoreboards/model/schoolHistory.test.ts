@@ -5,6 +5,24 @@ import { archive, contest, partialContest, standing } from '@/test/fixtures/arch
 import { selectSchoolHistoryPresentation } from './schoolHistory';
 
 describe('school history presentation selectors', () => {
+  it('counts unranked results without creating a best place or podium', () => {
+    const source = {
+      ...archive,
+      contests: [
+        { ...contest, standings: contest.standings.map((row) => ({ ...row, place: null })) },
+      ],
+    };
+    const result = selectSchoolHistoryPresentation(source, 'unit', 'school');
+    expect(result).toMatchObject({
+      status: 'found',
+      record: {
+        summary: { results: 2, bestPlace: undefined, podiums: 0 },
+        seasons: [{ bestPlace: undefined, podiums: [] }],
+        podiums: [],
+      },
+    });
+  });
+
   it('preserves undated totals-only results in season summaries without inventing problem detail', () => {
     const result = selectSchoolHistoryPresentation(
       { ...archive, contests: [partialContest] },

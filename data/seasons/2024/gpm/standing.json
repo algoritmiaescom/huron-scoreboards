@@ -1,0 +1,2906 @@
+{
+  "seasonYear": 2024,
+  "seriesId": "gpm",
+  "rows": [
+    {
+      "place": 1,
+      "teamId": "2024-gpm-iteso-977797-rocky-iv",
+      "score": 440,
+      "qualified": null
+    },
+    {
+      "place": 2,
+      "teamId": "2024-gpm-iteso-980424-no-se-nos-ocurrio-un-nombre",
+      "score": 420,
+      "qualified": null
+    },
+    {
+      "place": 3,
+      "teamId": "2024-gpm-iteso-980620-enchiladas-con-patas",
+      "score": 409,
+      "qualified": null
+    },
+    {
+      "place": 4,
+      "teamId": "2024-gpm-iteso-973439-bro-csm",
+      "score": 364,
+      "qualified": null
+    },
+    {
+      "place": 5,
+      "teamId": "2024-gpm-iteso-976988-la-ultima-y-nos-vamos-ahora-si",
+      "score": 358,
+      "qualified": null
+    },
+    {
+      "place": 6,
+      "teamId": "2024-gpm-iteso-980950-upsolving",
+      "score": 338,
+      "qualified": null
+    },
+    {
+      "place": 7,
+      "teamId": "2024-gpm-iteso-972781-motomomis",
+      "score": 336,
+      "qualified": null
+    },
+    {
+      "place": 8,
+      "teamId": "2024-gpm-iteso-980826-upgraded",
+      "score": 328,
+      "qualified": null
+    },
+    {
+      "place": 9,
+      "teamId": "2024-gpm-iteso-972612-tigres-cpp",
+      "score": 302,
+      "qualified": null
+    },
+    {
+      "place": 10,
+      "teamId": "2024-gpm-iteso-976675-caltech-calvillo-institute-of-d43technology",
+      "score": 298,
+      "qualified": null
+    },
+    {
+      "place": 11,
+      "teamId": "2024-gpm-iteso-979527-britneys-pelonas",
+      "score": 291,
+      "qualified": null
+    },
+    {
+      "place": 12,
+      "teamId": "2024-gpm-iteso-980904-chamba-seekers",
+      "score": 289,
+      "qualified": null
+    },
+    {
+      "place": 13,
+      "teamId": "2024-gpm-iteso-979538-cocon13",
+      "score": 273,
+      "qualified": null
+    },
+    {
+      "place": 14,
+      "teamId": "2024-gpm-iteso-971826-lancheros-de-balzapote",
+      "score": 268,
+      "qualified": null
+    },
+    {
+      "place": 15,
+      "teamId": "2024-gpm-iteso-980679-testigos-de-galois",
+      "score": 266,
+      "qualified": null
+    },
+    {
+      "place": 16,
+      "teamId": "2024-gpm-iteso-980846-legion501",
+      "score": 243,
+      "qualified": null
+    },
+    {
+      "place": 17,
+      "teamId": "2024-gpm-iteso-980080-team-impala",
+      "score": 234,
+      "qualified": null
+    },
+    {
+      "place": 18,
+      "teamId": "2024-gpm-iteso-980150-borregos-0-0-0",
+      "score": 220,
+      "qualified": null
+    },
+    {
+      "place": 19,
+      "teamId": "2024-gpm-iteso-979729-3-de-lechon-con-cascarita",
+      "score": 210,
+      "qualified": null
+    },
+    {
+      "place": 20,
+      "teamId": "2024-gpm-iteso-976334-the-strings",
+      "score": 207,
+      "qualified": null
+    },
+    {
+      "place": 21,
+      "teamId": "2024-gpm-iteso-975518-gauss-n-roses",
+      "score": 205,
+      "qualified": null
+    },
+    {
+      "place": 22,
+      "teamId": "2024-gpm-iteso-979448-internship-plis",
+      "score": 196,
+      "qualified": null
+    },
+    {
+      "place": 23,
+      "teamId": "2024-gpm-iteso-973358-kemonitos",
+      "score": 193,
+      "qualified": null
+    },
+    {
+      "place": 24,
+      "teamId": "2024-gpm-iteso-977517-nosotros-los-guapos",
+      "score": 188,
+      "qualified": null
+    },
+    {
+      "place": 25,
+      "teamId": "2024-gpm-iteso-980890-papas-de-chamba-seekers",
+      "score": 186,
+      "qualified": null
+    },
+    {
+      "place": 26,
+      "teamId": "2024-gpm-iteso-971898-mathgic",
+      "score": 180,
+      "qualified": null
+    },
+    {
+      "place": 27,
+      "teamId": "2024-gpm-iteso-973438-ludus-500",
+      "score": 176,
+      "qualified": null
+    },
+    {
+      "place": 28,
+      "teamId": "2024-gpm-iteso-980918-money-mavens",
+      "score": 173,
+      "qualified": null
+    },
+    {
+      "place": 29,
+      "teamId": "2024-gpm-iteso-979473-con-el-maximum-flow",
+      "score": 164,
+      "qualified": null
+    },
+    {
+      "place": 30,
+      "teamId": "2024-gpm-iteso-971938-nullptr",
+      "score": 141,
+      "qualified": null
+    },
+    {
+      "place": 31,
+      "teamId": "2024-gpm-iteso-979302-pumamados",
+      "score": 116,
+      "qualified": null
+    },
+    {
+      "place": 32,
+      "teamId": "2024-gpm-iteso-971820-data-divas",
+      "score": 90,
+      "qualified": null
+    },
+    {
+      "place": 33,
+      "teamId": "2024-gpm-iteso-972596-tutters",
+      "score": 88,
+      "qualified": null
+    },
+    {
+      "place": 34,
+      "teamId": "2024-gpm-iteso-971935-los-espinosos",
+      "score": 86,
+      "qualified": null
+    },
+    {
+      "place": 35,
+      "teamId": "2024-gpm-iteso-975271-a-poco-si-muy-ac",
+      "score": 80,
+      "qualified": null
+    },
+    {
+      "place": 36,
+      "teamId": "2024-gpm-iteso-977252-puerkasquad",
+      "score": 79,
+      "qualified": null
+    },
+    {
+      "place": 37,
+      "teamId": "2024-gpm-iteso-971937-daj",
+      "score": 75,
+      "qualified": null
+    },
+    {
+      "place": 38,
+      "teamId": "2024-gpm-iteso-971824-patos-con-sombrero",
+      "score": 72,
+      "qualified": null
+    },
+    {
+      "place": 39,
+      "teamId": "2024-gpm-iteso-980623-taquitos-de-pastor",
+      "score": 72,
+      "qualified": null
+    },
+    {
+      "place": 40,
+      "teamId": "2024-gpm-iteso-980943-subelo-se-compila-en-el-juez",
+      "score": 72,
+      "qualified": null
+    },
+    {
+      "place": 41,
+      "teamId": "2024-gpm-iteso-973224-bowser-bytes",
+      "score": 62,
+      "qualified": null
+    },
+    {
+      "place": 42,
+      "teamId": "2024-gpm-iteso-971825-shadow-wizard-money-gang",
+      "score": 59,
+      "qualified": null
+    },
+    {
+      "place": 43,
+      "teamId": "2024-gpm-iteso-975294-subditos-de-sommerville",
+      "score": 55,
+      "qualified": null
+    },
+    {
+      "place": 44,
+      "teamId": "2024-gpm-iteso-973440-combo-deluxe",
+      "score": 45,
+      "qualified": null
+    },
+    {
+      "place": 45,
+      "teamId": "2024-gpm-iteso-980776-keyboard-warriors",
+      "score": 45,
+      "qualified": null
+    },
+    {
+      "place": 46,
+      "teamId": "2024-gpm-iteso-974635-cpu",
+      "score": 44,
+      "qualified": null
+    },
+    {
+      "place": 47,
+      "teamId": "2024-gpm-iteso-980849-iseepc",
+      "score": 42,
+      "qualified": null
+    },
+    {
+      "place": 48,
+      "teamId": "2024-gpm-iteso-979477-dead-developers-society",
+      "score": 39,
+      "qualified": null
+    },
+    {
+      "place": 49,
+      "teamId": "2024-gpm-iteso-975562-no-hay-nombre-pero",
+      "score": 38,
+      "qualified": null
+    },
+    {
+      "place": 50,
+      "teamId": "2024-gpm-iteso-980678-los-pusuas",
+      "score": 35,
+      "qualified": null
+    },
+    {
+      "place": 51,
+      "teamId": "2024-gpm-iteso-980891-stuckinc",
+      "score": 33,
+      "qualified": null
+    },
+    {
+      "place": 52,
+      "teamId": "2024-gpm-iteso-979528-unicornios-salvajes",
+      "score": 32,
+      "qualified": null
+    },
+    {
+      "place": 53,
+      "teamId": "2024-gpm-iteso-976875-itsurus",
+      "score": 31,
+      "qualified": null
+    },
+    {
+      "place": 54,
+      "teamId": "2024-gpm-iteso-971934-como",
+      "score": 31,
+      "qualified": null
+    },
+    {
+      "place": 55,
+      "teamId": "2024-gpm-iteso-971818-rbrgs-cpp",
+      "score": 30,
+      "qualified": null
+    },
+    {
+      "place": 56,
+      "teamId": "2024-gpm-iteso-979165-tucanes1",
+      "score": 27,
+      "qualified": null
+    },
+    {
+      "place": 57,
+      "teamId": "2024-mexico-finals-final-row-0167-bits-team-h",
+      "score": 26,
+      "qualified": null
+    },
+    {
+      "place": 58,
+      "teamId": "2024-gpm-iteso-974679-familia-gallegos-3-la-venganza",
+      "score": 23,
+      "qualified": null
+    },
+    {
+      "place": 59,
+      "teamId": "2024-gpm-iteso-973443-ado",
+      "score": 22,
+      "qualified": null
+    },
+    {
+      "place": 60,
+      "teamId": "2024-gpm-iteso-980112-balloon-thieves",
+      "score": 19,
+      "qualified": null
+    },
+    {
+      "place": 61,
+      "teamId": "2024-gpm-iteso-975278-ya-casi-stack",
+      "score": 17,
+      "qualified": null
+    },
+    {
+      "place": 62,
+      "teamId": "2024-gpm-iteso-975243-usurpadores",
+      "score": 16,
+      "qualified": null
+    },
+    {
+      "place": 63,
+      "teamId": "2024-gpm-iteso-971815-algorithm-assassins",
+      "score": 15,
+      "qualified": null
+    },
+    {
+      "place": 64,
+      "teamId": "2024-gpm-iteso-995512-nash-equilibrium",
+      "score": 13,
+      "qualified": null
+    },
+    {
+      "place": 65,
+      "teamId": "2024-gpm-iteso-972839-camel-case",
+      "score": 11,
+      "qualified": null
+    },
+    {
+      "place": 66,
+      "teamId": "2024-gpm-iteso-975545-using-brainspace",
+      "score": 11,
+      "qualified": null
+    },
+    {
+      "place": 67,
+      "teamId": "2024-gpm-iteso-980892-tistabros",
+      "score": 9,
+      "qualified": null
+    },
+    {
+      "place": 68,
+      "teamId": "2024-gpm-iteso-971821-crusaders",
+      "score": 9,
+      "qualified": null
+    },
+    {
+      "place": 69,
+      "teamId": "2024-gpm-iteso-972609-nsp",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 70,
+      "teamId": "2024-gpm-iteso-975940-la-choza-de-los-pequenines",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 71,
+      "teamId": "2024-gpm-iteso-980625-c",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 72,
+      "teamId": "2024-gpm-iteso-980903-daleboca",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 73,
+      "teamId": "2024-gpm-iteso-976989-b01ng-de-frut-l00ps",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 74,
+      "teamId": "2024-gpm-iteso-980835-the-last-dance",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 75,
+      "teamId": "2024-gpm-iteso-980159-los-hamsters-enviados-de-dios-del-antiguo-testamento",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 76,
+      "teamId": "2024-gpm-iteso-972872-codesnatchers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 77,
+      "teamId": "2024-gpm-iteso-972082-npcs",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 78,
+      "teamId": "2024-gpm-iteso-971827-heap-heap-hooray",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 79,
+      "teamId": "2024-gpm-iteso-979766-tortugas-ninja",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 80,
+      "teamId": "2024-gpm-iteso-980931-progruamers-empacadores-de-soriana",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 81,
+      "teamId": "2024-gpm-iteso-980834-rocketup",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 82,
+      "teamId": "2024-gpm-iteso-972230-teorema-del-grafo-euleriano",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 83,
+      "teamId": "2024-gpm-iteso-979512-itesm-ags-01",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 84,
+      "teamId": "2024-gpm-iteso-980911-miopes-derivados",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 85,
+      "teamId": "2024-gpm-iteso-976984-codigo-al-fallo",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 86,
+      "teamId": "2024-gpm-iteso-980777-chatgpt-make-a-cool-team-name",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 87,
+      "teamId": "2024-gpm-iteso-974319-dos-tequilas-y-un-mojito",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 88,
+      "teamId": "2024-gpm-iteso-980463-team-overflow",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 89,
+      "teamId": "2024-gpm-iteso-980641-tucanescancun",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 90,
+      "teamId": "2024-gpm-iteso-975537-chinches-programadoras",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 91,
+      "teamId": "2024-gpm-iteso-979437-chambacode",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 92,
+      "teamId": "2024-gpm-iteso-980675-the-creators",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 93,
+      "teamId": "2024-gpm-iteso-980619-heart-of-ac",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 94,
+      "teamId": "2024-gpm-iteso-972652-machines-ant-killer",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 95,
+      "teamId": "2024-gpm-iteso-980673-ajolotetos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 96,
+      "teamId": "2024-gpm-iteso-974676-racoode",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 97,
+      "teamId": "2024-gpm-iteso-972656-jam64",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 98,
+      "teamId": "2024-gpm-iteso-975526-los-gaussianos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 99,
+      "teamId": "2024-gpm-iteso-980524-3wa-y-me-voy",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 100,
+      "teamId": "2024-gpm-iteso-973507-los-monos-bichis",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 101,
+      "teamId": "2024-gpm-iteso-980759-tacos-envenenados",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 102,
+      "teamId": "2024-gpm-iteso-971830-icpc-girlies",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 103,
+      "teamId": "2024-gpm-iteso-980551-peranoteccoders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 104,
+      "teamId": "2024-gpm-iteso-974678-nth-time-s-the-charm",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 105,
+      "teamId": "2024-gpm-iteso-980511-enchiladas-verdes",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 106,
+      "teamId": "2024-gpm-iteso-973209-crustaceo-cascarudo",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 107,
+      "teamId": "2024-gpm-iteso-980920-chilaquiles-en-salsa-verde",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 108,
+      "teamId": "2024-gpm-iteso-972657-syntax-terror",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 109,
+      "teamId": "2024-gpm-iteso-979173-mixcoac",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 110,
+      "teamId": "2024-gpm-iteso-979735-los-gato-fino",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 111,
+      "teamId": "2024-gpm-iteso-972692-los-facilitadores",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 112,
+      "teamId": "2024-gpm-iteso-979255-segfaulters",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 113,
+      "teamId": "2024-gpm-iteso-979162-testigos-de-duport",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 114,
+      "teamId": "2024-gpm-iteso-980910-miltacoz-py",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 115,
+      "teamId": "2024-gpm-iteso-976040-code-repairers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 116,
+      "teamId": "2024-gpm-iteso-976317-rbrgs-py",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 117,
+      "teamId": "2024-gpm-iteso-980909-cmonkeys",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 118,
+      "teamId": "2024-gpm-iteso-971822-sabritones",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 119,
+      "teamId": "2024-gpm-iteso-980707-itislimitless",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 120,
+      "teamId": "2024-gpm-iteso-974200-anythingbutwa",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 121,
+      "teamId": "2024-gpm-iteso-976945-itverpower",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 122,
+      "teamId": "2024-gpm-iteso-971925-gaticones",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 123,
+      "teamId": "2024-gpm-iteso-980972-khe",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 124,
+      "teamId": "2024-gpm-iteso-972753-waous-team",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 125,
+      "teamId": "2024-gpm-iteso-978020-tlacuaches-del-arroyo",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 126,
+      "teamId": "2024-gpm-iteso-980681-picafresas-negras",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 127,
+      "teamId": "2024-gpm-iteso-972534-spteam",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 128,
+      "teamId": "2024-gpm-iteso-972635-rqt-recursivos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 129,
+      "teamId": "2024-gpm-iteso-973367-uamitos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 130,
+      "teamId": "2024-gpm-iteso-972081-dosattack",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 131,
+      "teamId": "2024-gpm-iteso-975546-jokabi",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 132,
+      "teamId": "2024-gpm-iteso-972646-cheddarini",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 133,
+      "teamId": "2024-gpm-iteso-976050-nameless-cpp",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 134,
+      "teamId": "2024-gpm-iteso-977847-skycoders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 135,
+      "teamId": "2024-gpm-iteso-977998-bpits",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 136,
+      "teamId": "2024-gpm-iteso-980512-skibiditoilets",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 137,
+      "teamId": "2024-gpm-iteso-973442-eagles",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 138,
+      "teamId": "2024-gpm-iteso-973207-chaotics",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 139,
+      "teamId": "2024-gpm-iteso-979486-netrunners",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 140,
+      "teamId": "2024-gpm-iteso-971923-gatubelxs",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 141,
+      "teamId": "2024-gpm-iteso-975560-binary-sech",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 142,
+      "teamId": "2024-gpm-iteso-975260-mavericks",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 143,
+      "teamId": "2024-gpm-iteso-980770-lalonchera",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 144,
+      "teamId": "2024-gpm-iteso-978429-static-void",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 145,
+      "teamId": "2024-gpm-iteso-976342-who-was-in-paris",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 146,
+      "teamId": "2024-gpm-iteso-980854-holamundo",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 147,
+      "teamId": "2024-gpm-iteso-980157-tucanes2",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 148,
+      "teamId": "2024-gpm-iteso-979726-sex-lovers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 149,
+      "teamId": "2024-gpm-iteso-972841-mothsteppers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 150,
+      "teamId": "2024-gpm-iteso-976026-brute-forcers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 151,
+      "teamId": "2024-gpm-iteso-980768-eabmodel",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 152,
+      "teamId": "2024-gpm-iteso-975389-ella-programa-sola",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 153,
+      "teamId": "2024-gpm-iteso-975507-koqforces",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 154,
+      "teamId": "2024-gpm-iteso-974198-nahuales-swifties",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 155,
+      "teamId": "2024-gpm-iteso-976666-mateatletas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 156,
+      "teamId": "2024-gpm-iteso-975508-pep8",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 157,
+      "teamId": "2024-gpm-iteso-979831-backyardigans",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 158,
+      "teamId": "2024-gpm-iteso-971922-peaky-blinders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 159,
+      "teamId": "2024-gpm-iteso-979438-re-turn-zero",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 160,
+      "teamId": "2024-gpm-iteso-977371-chat-gna",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 161,
+      "teamId": "2024-gpm-iteso-971817-mascotas-maravilla",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 162,
+      "teamId": "2024-gpm-iteso-973364-std-uwu",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 163,
+      "teamId": "2024-gpm-iteso-977850-void",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 164,
+      "teamId": "2024-gpm-iteso-978098-deltahbc",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 165,
+      "teamId": "2024-gpm-iteso-972716-cod3r5",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 166,
+      "teamId": "2024-gpm-iteso-978704-faith-limit-exceeded",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 167,
+      "teamId": "2024-gpm-iteso-975228-alivianame-con-una-funa",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 168,
+      "teamId": "2024-gpm-iteso-975292-placeholder",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 169,
+      "teamId": "2024-gpm-iteso-981185-favorite-worst-nightmare",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 170,
+      "teamId": "2024-gpm-iteso-974674-pookies",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 171,
+      "teamId": "2024-gpm-iteso-974634-michitech",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 172,
+      "teamId": "2024-gpm-iteso-975510-equipo-bomba",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 173,
+      "teamId": "2024-gpm-iteso-976155-trucha-salvaje",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 174,
+      "teamId": "2024-gpm-iteso-980543-lli-nalgotiksqlonas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 175,
+      "teamId": "2024-gpm-iteso-976837-dynamic-girls",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 176,
+      "teamId": "2024-gpm-iteso-980905-the-platypoos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 177,
+      "teamId": "2024-gpm-iteso-980906-turing",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 178,
+      "teamId": "2024-gpm-iteso-971832-atlas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 179,
+      "teamId": "2024-gpm-iteso-971936-codigocompartir",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 180,
+      "teamId": "2024-gpm-iteso-975561-lobocode",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 181,
+      "teamId": "2024-gpm-iteso-980940-compitiendo-desde-los-separos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 182,
+      "teamId": "2024-gpm-iteso-975544-colo-colo-ac-de-cv",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 183,
+      "teamId": "2024-gpm-iteso-977476-sunset-ravens",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 184,
+      "teamId": "2024-gpm-iteso-975442-valles-py",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 185,
+      "teamId": "2024-gpm-iteso-972633-las-chicas-superpoderosas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 186,
+      "teamId": "2024-gpm-iteso-972639-las-chicas-superprogramadoras",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 187,
+      "teamId": "2024-gpm-iteso-972626-codemonkees",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 188,
+      "teamId": "2024-gpm-iteso-974675-byte-the-dust",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 189,
+      "teamId": "2024-gpm-iteso-974677-hasbullas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 190,
+      "teamId": "2024-gpm-iteso-972630-timbits",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 191,
+      "teamId": "2024-gpm-iteso-979775-los-piratas-del-pseudo-codigo",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 192,
+      "teamId": "2024-gpm-iteso-971939-alt-35-1",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 193,
+      "teamId": "2024-gpm-iteso-972804-mctrio",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 194,
+      "teamId": "2024-gpm-iteso-979710-meangirls",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 195,
+      "teamId": "2024-gpm-iteso-976333-binary-brains",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 196,
+      "teamId": "2024-gpm-iteso-973444-krv",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 197,
+      "teamId": "2024-gpm-iteso-979807-aluxes-con-xikil-pak",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 198,
+      "teamId": "2024-gpm-iteso-979550-my-melody-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 199,
+      "teamId": "2024-gpm-iteso-979777-el-xix",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 200,
+      "teamId": "2024-gpm-iteso-980683-anemonas-anonimas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 201,
+      "teamId": "2024-gpm-iteso-972553-cisena-s-discipulos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 202,
+      "teamId": "2024-gpm-iteso-980901-las-ritchie",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 203,
+      "teamId": "2024-gpm-iteso-975539-scripting-js",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 204,
+      "teamId": "2024-gpm-iteso-974565-zapatos-py",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 205,
+      "teamId": "2024-gpm-iteso-979548-quien-es-el-main",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 206,
+      "teamId": "2024-gpm-iteso-979706-v-for-vector",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 207,
+      "teamId": "2024-gpm-iteso-975538-sin-nombre",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 208,
+      "teamId": "2024-gpm-iteso-980939-shalusco",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 209,
+      "teamId": "2024-gpm-iteso-978690-icptiesos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 210,
+      "teamId": "2024-gpm-iteso-975573-bigblackcode",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 211,
+      "teamId": "2024-gpm-iteso-972225-zaga-team",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 212,
+      "teamId": "2024-gpm-iteso-980856-quack",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 213,
+      "teamId": "2024-gpm-iteso-972658-loop-leyends",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 214,
+      "teamId": "2024-gpm-iteso-975547-programadoresgpt4",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 215,
+      "teamId": "2024-gpm-iteso-976319-strix",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 216,
+      "teamId": "2024-gpm-iteso-980041-umizoomi",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 217,
+      "teamId": "2024-gpm-iteso-974567-pythologic",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 218,
+      "teamId": "2024-gpm-iteso-980970-array-of-borregos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 219,
+      "teamId": "2024-gpm-iteso-975506-hackybaras",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 220,
+      "teamId": "2024-gpm-iteso-980778-asterisk",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 221,
+      "teamId": "2024-gpm-iteso-980001-rino",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 222,
+      "teamId": "2024-gpm-iteso-976514-rocket",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 223,
+      "teamId": "2024-gpm-iteso-976534-tropa-sorpresa",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 224,
+      "teamId": "2024-gpm-iteso-978021-crustaceos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 225,
+      "teamId": "2024-gpm-iteso-972764-beach-boys-girl",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 226,
+      "teamId": "2024-gpm-iteso-975530-lhm",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 227,
+      "teamId": "2024-gpm-iteso-979737-codeboys",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 228,
+      "teamId": "2024-gpm-iteso-975531-mac-queens",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 229,
+      "teamId": "2024-gpm-iteso-980682-tree-pas-de-gato",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 230,
+      "teamId": "2024-gpm-iteso-976318-somos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 231,
+      "teamId": "2024-gpm-iteso-980897-tucanes3",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 232,
+      "teamId": "2024-gpm-iteso-981352-maubrunger",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 233,
+      "teamId": "2024-gpm-iteso-980694-tics1",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 234,
+      "teamId": "2024-gpm-iteso-978613-ctrlsquad",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 235,
+      "teamId": "2024-gpm-iteso-972806-trifuerza",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 236,
+      "teamId": "2024-gpm-iteso-980898-tucanes4",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 237,
+      "teamId": "2024-gpm-iteso-976843-los-amigos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 238,
+      "teamId": "2024-gpm-iteso-980228-byte-squad",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 239,
+      "teamId": "2024-gpm-iteso-975293-code-enjoyers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 240,
+      "teamId": "2024-gpm-iteso-980437-green-team",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 241,
+      "teamId": "2024-gpm-iteso-981186-ronaldinho-soccer",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 242,
+      "teamId": "2024-gpm-iteso-971944-pragma",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 243,
+      "teamId": "2024-gpm-iteso-976975-peperators",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 244,
+      "teamId": "2024-gpm-iteso-974683-yes-chef",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 245,
+      "teamId": "2024-gpm-iteso-979163-up-fuerzas-especiales",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 246,
+      "teamId": "2024-gpm-iteso-980696-tecnobytes",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 247,
+      "teamId": "2024-gpm-iteso-980755-las-divines",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 248,
+      "teamId": "2024-gpm-iteso-979532-leones-code-p-a-d",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 249,
+      "teamId": "2024-gpm-iteso-988376-ley-de-murphy",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 250,
+      "teamId": "2024-gpm-iteso-978010-hasbulla-lovers-official-fans-club",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 251,
+      "teamId": "2024-gpm-iteso-980666-rosslyn-team-pro",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 252,
+      "teamId": "2024-gpm-iteso-973446-alphacentaury",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 253,
+      "teamId": "2024-gpm-iteso-980919-codisaurios",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 254,
+      "teamId": "2024-gpm-iteso-980535-tr1p4s-d3-g4t0",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 255,
+      "teamId": "2024-gpm-iteso-972691-burritos-de-c",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 256,
+      "teamId": "2024-gpm-iteso-975354-c-plas-plas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 257,
+      "teamId": "2024-gpm-iteso-975540-tec-rs",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 258,
+      "teamId": "2024-gpm-iteso-980857-los-taqueros-iii",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 259,
+      "teamId": "2024-gpm-iteso-980469-los-del-ciber",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 260,
+      "teamId": "2024-gpm-iteso-979375-transformers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 261,
+      "teamId": "2024-gpm-iteso-980758-remaria",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 262,
+      "teamId": "2024-gpm-iteso-983759-merequetenge",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 263,
+      "teamId": "2024-gpm-iteso-971924-los-secretarios",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 264,
+      "teamId": "2024-gpm-iteso-971831-sheep",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 265,
+      "teamId": "2024-gpm-iteso-977807-exidis",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 266,
+      "teamId": "2024-gpm-iteso-980664-los-tlacuaches",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 267,
+      "teamId": "2024-gpm-iteso-971834-nahuales",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 268,
+      "teamId": "2024-gpm-iteso-979340-no-son-enchiladas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 269,
+      "teamId": "2024-gpm-iteso-980677-de-la-que-dejo-tieso-al-arthur",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 270,
+      "teamId": "2024-gpm-iteso-988391-fanyezoiel",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 271,
+      "teamId": "2024-gpm-iteso-979533-bubble-sorters",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 272,
+      "teamId": "2024-gpm-iteso-980618-xml-haters",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 273,
+      "teamId": "2024-gpm-iteso-980945-chiles-poblanos-con-pibil",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 274,
+      "teamId": "2024-gpm-iteso-977412-honeycrisps",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 275,
+      "teamId": "2024-gpm-iteso-979436-circe",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 276,
+      "teamId": "2024-gpm-iteso-976223-lorem-ipsum",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 277,
+      "teamId": "2024-gpm-iteso-980974-c-dospuntos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 278,
+      "teamId": "2024-gpm-iteso-980695-carnal-pulpo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 279,
+      "teamId": "2024-gpm-iteso-980756-ingenieros-malvados-y-asociados",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 280,
+      "teamId": "2024-gpm-iteso-979166-python-es",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 281,
+      "teamId": "2024-gpm-iteso-972650-mercenarios-by-jl",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 282,
+      "teamId": "2024-gpm-iteso-989283-script-squad",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 283,
+      "teamId": "2024-gpm-iteso-980929-changos-articos-en-c-menor",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 284,
+      "teamId": "2024-gpm-iteso-972631-gallos-kaisen",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 285,
+      "teamId": "2024-gpm-iteso-978331-bosquejitos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 286,
+      "teamId": "2024-gpm-iteso-980079-los-javasaurios",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 287,
+      "teamId": "2024-gpm-iteso-980949-polimorfos-rqt",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 288,
+      "teamId": "2024-gpm-iteso-980680-oreo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 289,
+      "teamId": "2024-gpm-iteso-974637-code-ninjas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 290,
+      "teamId": "2024-gpm-iteso-975424-structured-papeadas-language",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 291,
+      "teamId": "2024-gpm-iteso-980757-coquette",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 292,
+      "teamId": "2024-gpm-iteso-971945-techub",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 293,
+      "teamId": "2024-gpm-iteso-980457-create",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 294,
+      "teamId": "2024-gpm-iteso-972846-teckers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 295,
+      "teamId": "2024-gpm-iteso-972840-the-digital-dmg",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 296,
+      "teamId": "2024-gpm-iteso-979820-chotitas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 297,
+      "teamId": "2024-gpm-iteso-980934-los-tlacuaches-de-turin",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 298,
+      "teamId": "2024-gpm-iteso-975441-programamistas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 299,
+      "teamId": "2024-gpm-iteso-980626-wumpus",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 300,
+      "teamId": "2024-gpm-iteso-974680-pixel-perfect",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 301,
+      "teamId": "2024-gpm-iteso-975578-buenar2",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 302,
+      "teamId": "2024-gpm-iteso-972663-sudo-apt-get",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 303,
+      "teamId": "2024-gpm-iteso-980971-triangulo-agudo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 304,
+      "teamId": "2024-gpm-iteso-976951-fandango-on-core",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 305,
+      "teamId": "2024-gpm-iteso-976113-pink-hackers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 306,
+      "teamId": "2024-gpm-iteso-971819-pythones",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 307,
+      "teamId": "2024-gpm-iteso-980676-rateros-del-oxxo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 308,
+      "teamId": "2024-gpm-iteso-973436-k-fresas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 309,
+      "teamId": "2024-gpm-iteso-974639-procesadoramd",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 310,
+      "teamId": "2024-gpm-iteso-971921-3-bits",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 311,
+      "teamId": "2024-gpm-iteso-980617-una-linea-a-la-vez",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 312,
+      "teamId": "2024-gpm-iteso-973508-los-monitos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 313,
+      "teamId": "2024-gpm-iteso-980924-hola-mundo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 314,
+      "teamId": "2024-gpm-iteso-975759-javalimos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 315,
+      "teamId": "2024-gpm-iteso-980937-alvama",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 316,
+      "teamId": "2024-gpm-iteso-981126-luis-4",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 317,
+      "teamId": "2024-gpm-iteso-972629-los-ensambladores",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 318,
+      "teamId": "2024-gpm-iteso-976112-c3po",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 319,
+      "teamId": "2024-gpm-iteso-972849-the-coders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 320,
+      "teamId": "2024-gpm-iteso-988508-ocotlenses-gang",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 321,
+      "teamId": "2024-gpm-iteso-981106-java-lioestesemestre",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 322,
+      "teamId": "2024-gpm-iteso-981363-jov",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 323,
+      "teamId": "2024-gpm-iteso-989290-gaturros",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 324,
+      "teamId": "2024-gpm-iteso-982634-lamda",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 325,
+      "teamId": "2024-gpm-iteso-972838-sharp-tank",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 326,
+      "teamId": "2024-gpm-iteso-980916-pescadores-del-puerto",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 327,
+      "teamId": "2024-gpm-iteso-971828-pollos-hermanos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 328,
+      "teamId": "2024-gpm-iteso-980935-equipo-dinamita",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 329,
+      "teamId": "2024-gpm-iteso-971942-katech",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 330,
+      "teamId": "2024-gpm-iteso-971943-los-tecnotulums",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 331,
+      "teamId": "2024-gpm-iteso-976054-xiaomilovers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 332,
+      "teamId": "2024-gpm-iteso-977238-absolut",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 333,
+      "teamId": "2024-gpm-iteso-972762-escuadron-lobo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 334,
+      "teamId": "2024-gpm-iteso-978352-team-410",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 335,
+      "teamId": "2024-gpm-iteso-972636-techbreak",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 336,
+      "teamId": "2024-gpm-iteso-977804-the-last-sons-of-chago",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 337,
+      "teamId": "2024-gpm-iteso-975420-los-triggers-del-norte",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 338,
+      "teamId": "2024-gpm-iteso-976922-multidata",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 339,
+      "teamId": "2024-gpm-iteso-981357-three-leg-boys",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 340,
+      "teamId": "2024-gpm-iteso-988632-mary",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 341,
+      "teamId": "2024-gpm-iteso-979542-chile-poblano",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 342,
+      "teamId": "2024-gpm-iteso-980930-progruamers-komodo3000",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 343,
+      "teamId": "2024-gpm-iteso-980944-el-lema-mas-fuerte-de-kolmogorov",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 344,
+      "teamId": "2024-gpm-iteso-980665-reflex-2-0",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 345,
+      "teamId": "2024-gpm-iteso-972725-monkeydevs",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 346,
+      "teamId": "2024-gpm-iteso-976039-while-true",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 347,
+      "teamId": "2024-gpm-iteso-979723-poolones",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 348,
+      "teamId": "2024-gpm-iteso-980942-tlayudas-gentrificadas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 349,
+      "teamId": "2024-gpm-iteso-975509-spiritual-mangoes",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 350,
+      "teamId": "2024-gpm-iteso-975206-unknoun",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 351,
+      "teamId": "2024-gpm-iteso-972780-tfdfps",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 352,
+      "teamId": "2024-gpm-iteso-980884-the-masters",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 353,
+      "teamId": "2024-gpm-iteso-976041-bisontes-lcc",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 354,
+      "teamId": "2024-gpm-iteso-971941-guardians",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 355,
+      "teamId": "2024-gpm-iteso-972659-terronsitos-404",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 356,
+      "teamId": "2024-gpm-iteso-980774-ardillas-por-doquier",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 357,
+      "teamId": "2024-gpm-iteso-975543-lnd",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 358,
+      "teamId": "2024-gpm-iteso-980521-outsiders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 359,
+      "teamId": "2024-gpm-iteso-979549-tifosi",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 360,
+      "teamId": "2024-gpm-iteso-972842-kiwicoders-vgm",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 361,
+      "teamId": "2024-gpm-iteso-978456-xtreme",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 362,
+      "teamId": "2024-gpm-iteso-996760-momazos-fc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 363,
+      "teamId": "2024-gpm-iteso-996849-oseloth",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 364,
+      "teamId": "2024-gpm-iteso-996856-tamalesdemole",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 365,
+      "teamId": "2024-gpm-iteso-980691-tics4",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 366,
+      "teamId": "2024-gpm-iteso-996751-abraham-nos-invito",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 367,
+      "teamId": "2024-gpm-iteso-972843-team-waos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 368,
+      "teamId": "2024-gpm-iteso-996762-cyberfurros",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 369,
+      "teamId": "2024-gpm-iteso-996779-dontpanic",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 370,
+      "teamId": "2024-gpm-iteso-996759-chambitasfi",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 371,
+      "teamId": "2024-gpm-iteso-996696-no-deterministas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 372,
+      "teamId": "2024-gpm-repechage-row-0312-sig",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 373,
+      "teamId": "2024-gpm-iteso-996750-codethieves",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 374,
+      "teamId": "2024-gpm-iteso-996837-los-elegantes-de-debian",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 375,
+      "teamId": "2024-gpm-iteso-996513-el-equipo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 376,
+      "teamId": "2024-gpm-iteso-996758-goosefarmers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 377,
+      "teamId": "2024-gpm-iteso-996514-snakecase",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 378,
+      "teamId": "2024-gpm-iteso-996778-sudo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 379,
+      "teamId": "2024-gpm-iteso-996410-404-not-found",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 380,
+      "teamId": "2024-gpm-iteso-980946-las-malotas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 381,
+      "teamId": "2024-gpm-iteso-995749-bugbusterstm",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 382,
+      "teamId": "2024-gpm-iteso-996842-los-ultimos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 383,
+      "teamId": "2024-gpm-iteso-980893-goosefarmers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 384,
+      "teamId": "2024-gpm-iteso-980660-codemillos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 385,
+      "teamId": "2024-gpm-iteso-979303-tba",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 386,
+      "teamId": "2024-gpm-iteso-996834-timbits",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 387,
+      "teamId": "2024-gpm-iteso-980881-prospectos-de-ingeniero",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 388,
+      "teamId": "2024-gpm-iteso-980684-tacos-de-asada",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 389,
+      "teamId": "2024-gpm-iteso-980941-un-verdadero-hombre-no-insulta-a-lopez-obrador",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 390,
+      "teamId": "2024-gpm-iteso-980712-tucanascancun",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 391,
+      "teamId": "2024-gpm-iteso-980880-emco",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 392,
+      "teamId": "2024-gpm-iteso-974638-avocado-overflow",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 393,
+      "teamId": "2024-gpm-iteso-980858-natahaters",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 394,
+      "teamId": "2024-gpm-iteso-971816-breecoders",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 395,
+      "teamId": "2024-gpm-iteso-975541-pi-two-dos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 396,
+      "teamId": "2024-gpm-iteso-980523-esimequesesiente",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 397,
+      "teamId": "2024-gpm-iteso-980927-inteligencia-ambiental",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 398,
+      "teamId": "2024-gpm-iteso-975548-the-walking-c",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 399,
+      "teamId": "2024-gpm-iteso-971829-sqlones",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 400,
+      "teamId": "2024-gpm-iteso-977215-codegirls",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 401,
+      "teamId": "2024-gpm-iteso-996695-bravebytes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 402,
+      "teamId": "2024-gpm-iteso-980536-3-devs-1-paste",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 403,
+      "teamId": "2024-gpm-iteso-979529-tilines-fc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 404,
+      "teamId": "2024-gpm-iteso-977234-ysotechx",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 405,
+      "teamId": "2024-gpm-iteso-977250-codecraft",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 406,
+      "teamId": "2024-gpm-iteso-972655-trio-dinamico",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 407,
+      "teamId": "2024-gpm-iteso-971857-cyberpicanas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 408,
+      "teamId": "2024-gpm-iteso-980621-tilines",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 409,
+      "teamId": "2024-gpm-iteso-976881-thing-link",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 410,
+      "teamId": "2024-gpm-iteso-980663-pytilines",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 411,
+      "teamId": "2024-gpm-iteso-976330-skull-kids",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 412,
+      "teamId": "2024-gpm-repechage-row-0311-pikmin-4",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 413,
+      "teamId": "2024-gpm-iteso-973441-c-3",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 414,
+      "teamId": "2024-gpm-iteso-996461-paps",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 415,
+      "teamId": "2024-gpm-iteso-980661-venenosos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 416,
+      "teamId": "2024-gpm-iteso-972653-prograpaps",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 417,
+      "teamId": "2024-gpm-iteso-979489-jajahaha",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 418,
+      "teamId": "2024-gpm-iteso-975370-rubberduckers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 419,
+      "teamId": "2024-gpm-iteso-995929-code-chameleons",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 420,
+      "teamId": "2024-gpm-iteso-976331-blue-blue",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 421,
+      "teamId": "2024-gpm-iteso-972773-trilobytes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 422,
+      "teamId": "2024-gpm-iteso-972776-code-crafters",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 423,
+      "teamId": "2024-gpm-iteso-973445-chicas-superpoderosas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 424,
+      "teamId": "2024-gpm-iteso-977547-triforce",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 425,
+      "teamId": "2024-gpm-iteso-974631-epic-bytes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 426,
+      "teamId": "2024-gpm-iteso-980510-noc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 427,
+      "teamId": "2024-gpm-iteso-979382-skibidi-mewing",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 428,
+      "teamId": "2024-gpm-iteso-980923-brizuela-y-su-pandilla",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 429,
+      "teamId": "2024-gpm-iteso-980899-racc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 430,
+      "teamId": "2024-gpm-iteso-979164-joshiditos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 431,
+      "teamId": "2024-gpm-iteso-976033-kvj",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 432,
+      "teamId": "2024-gpm-iteso-976665-java-limos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 433,
+      "teamId": "2024-gpm-iteso-996822-ray-mundos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 434,
+      "teamId": "2024-gpm-iteso-980951-natalovers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 435,
+      "teamId": "2024-gpm-iteso-972610-scriptsymphony",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 436,
+      "teamId": "2024-gpm-iteso-989156-firilantes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 437,
+      "teamId": "2024-gpm-iteso-977353-cpuss",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 438,
+      "teamId": "2024-gpm-iteso-976343-6fh-lamia",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 439,
+      "teamId": "2024-gpm-iteso-996335-los-null-pointers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 440,
+      "teamId": "2024-gpm-iteso-981874-quimera-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 441,
+      "teamId": "2024-gpm-iteso-971836-coders-in-progress",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 442,
+      "teamId": "2024-gpm-iteso-979513-umizumi",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 443,
+      "teamId": "2024-gpm-iteso-980709-tucancun",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 444,
+      "teamId": "2024-gpm-iteso-981356-job",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 445,
+      "teamId": "2024-gpm-iteso-972651-algoritbros",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 446,
+      "teamId": "2024-gpm-iteso-996334-we-dont-have-idea-what-we-are-doing-here",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 447,
+      "teamId": "2024-gpm-iteso-983760-tucanes5",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 448,
+      "teamId": "2024-gpm-iteso-976914-bugbusters",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 449,
+      "teamId": "2024-gpm-iteso-975763-netfreaks-11-3",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 450,
+      "teamId": "2024-gpm-iteso-980724-ifanidado",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 451,
+      "teamId": "2024-gpm-iteso-980922-gitgut",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 452,
+      "teamId": "2024-gpm-iteso-985978-los-semi-seniors",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 453,
+      "teamId": "2024-gpm-iteso-976599-bug-blitzers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 454,
+      "teamId": "2024-gpm-iteso-973437-ingenebrios",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 455,
+      "teamId": "2024-gpm-iteso-976890-java-lieron",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 456,
+      "teamId": "2024-gpm-iteso-972774-gechok",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 457,
+      "teamId": "2024-gpm-iteso-996774-static-boys",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 458,
+      "teamId": "2024-gpm-iteso-989282-servobot-466",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 459,
+      "teamId": "2024-gpm-iteso-980693-tics2",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 460,
+      "teamId": "2024-gpm-iteso-988726-lincecoders",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 461,
+      "teamId": "2024-gpm-iteso-977235-katsin",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 462,
+      "teamId": "2024-gpm-iteso-996749-runtime-rebels",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 463,
+      "teamId": "2024-gpm-iteso-981360-kcb",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 464,
+      "teamId": "2024-gpm-iteso-972689-charliegpt",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 465,
+      "teamId": "2024-gpm-iteso-979356-myckey-mouse",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 466,
+      "teamId": "2024-gpm-iteso-981353-los-telematicos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 467,
+      "teamId": "2024-gpm-iteso-981129-javandors",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 468,
+      "teamId": "2024-gpm-iteso-979565-jeroglificos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 469,
+      "teamId": "2024-gpm-iteso-979687-gwc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 470,
+      "teamId": "2024-gpm-iteso-980692-tics3",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 471,
+      "teamId": "2024-gpm-iteso-978515-the-alphas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 472,
+      "teamId": "2024-gpm-iteso-980697-toluquenos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 473,
+      "teamId": "2024-gpm-iteso-981361-ken-dan",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 474,
+      "teamId": "2024-gpm-iteso-972654-awa-py",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 475,
+      "teamId": "2024-gpm-iteso-972660-code-5-3",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 476,
+      "teamId": "2024-gpm-iteso-980921-syntax-sorcerers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 477,
+      "teamId": "2024-gpm-iteso-988383-bug-busters",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 478,
+      "teamId": "2024-gpm-iteso-988734-softgirls",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 479,
+      "teamId": "2024-gpm-iteso-977993-kp-s",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 480,
+      "teamId": "2024-gpm-iteso-980425-borregos-idm-2024",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 481,
+      "teamId": "2024-gpm-iteso-987492-flecha",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 482,
+      "teamId": "2024-gpm-iteso-972845-the-parangositos",
+      "score": 0,
+      "qualified": null
+    }
+  ],
+  "source": "https://acm.iteso.mx/share/standing_acumulado_tercera_fecha_gpmx2024_2.pdf",
+  "scoreUnit": "Puntos",
+  "snapshot": "unconfirmed",
+  "snapshotLabel": "Acumulado hasta la tercera fecha",
+  "publicationNotes": [
+    "Se conserva el acumulado publicado por ITESO; no se recalculan puntajes ni se infiere quién clasificó.",
+    "GooseFarmers y Timbits tienen dos registros cada uno con identificadores de origen diferentes (996758/980893 y 972630/996834); no se fusionan por nombre."
+  ]
+}

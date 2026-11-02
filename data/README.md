@@ -15,8 +15,96 @@ Both are validated by `npm run validate:data`, but they are validated **independ
 resolve within a single dataset, so a mock team can never satisfy a reference in the real archive
 and mock records can never be served as history.
 
-The real archive is currently empty. Transcribing an official scoreboard into it is the most
-valuable contribution you can make.
+The real archive contains 34 contest scoreboards from the 2009–2026 seasons, totaling 14,658
+contest rows, plus 12 accumulated GPM standings with 4,800 rows:
+
+| Season | Contests | Contest rows | Accumulated rows |
+| ------ | -------- | ------------ | ---------------- |
+| 2009   | 1        | 163          | —                |
+| 2010   | 1        | 199          | —                |
+| 2011   | 1        | 160          | —                |
+| 2012   | 1        | 163          | —                |
+| 2013   | 1        | 174          | —                |
+| 2014   | 1        | 61           | —                |
+| 2015   | 1        | 80           | 306              |
+| 2016   | 1        | 89           | 273              |
+| 2017   | 1        | 88           | 404              |
+| 2018   | 1        | 97           | 393              |
+| 2019   | 1        | 368          | 382              |
+| 2020   | 1        | 302          | 350              |
+| 2021   | 2        | 1,040        | 225              |
+| 2022   | 5        | 2,076        | 381              |
+| 2023   | 4        | 2,368        | 458              |
+| 2024   | 4        | 2,702        | 482              |
+| 2025   | 4        | 2,616        | 532              |
+| 2026   | 3        | 1,912        | 614              |
+
+Contest files are organized under `data/seasons/<year>/`. School identities use reviewed
+canonical records where supported by the source and review notes. Other non-empty source labels
+are preserved literally as separate school records rather than merged by guesswork; 95 teams have
+`schoolId: null` because their source did not identify an institution, and the scoreboard displays
+“Institución no identificada” for them. The school directory now contains 1,174 records.
+
+The 2026 GPM archive contains qualifiers 1, 2 and 3 from ICPC Mexico: 601, 701 and 610 rows.
+The first two tables have confirmed published row counts and problem detail. The third publishes
+only solved/penalty totals and does not display its registered-team count: all 610 visible source
+rows are preserved, but completeness beyond that table is not asserted. Its date, August 29, comes
+from the official contest index; durations remain unknown. Fecha 0 and repechage are not included
+in this qualifier import. Literal school labels and international participants are retained.
+
+The 2026 accumulated standing is transcribed from ICPC Mexico's separate accumulated table,
+which states that all three scoring dates are computed. All 614 ranked rows are retained,
+including the 509 teams with points and the 105 zero-point teams tied at place 510. The 14
+guest teams listed separately have neither accumulated places nor scores and are not given
+invented values. Only the 70 explicit numeric quota assignments are marked `qualified: true`;
+the other 544 flags remain unknown rather than being treated as definitive rejections. The
+source headline reports 71 assigned quotas, but the ranked table displays only 70; this
+discrepancy is disclosed without inventing an assignment. The snapshot remains `unconfirmed`
+because the source does not explicitly identify it as final. Exact unique team/school pairs
+reuse existing season registrations; other source identities remain separate.
+
+The 2019 and 2020 archives each contain the complete ICPC Mexico Finals scoreboard. Their dates
+and durations were unavailable on the source scoreboards and remain `null`; 29 teams in the 2019
+source have no school identity. ScoreLATAM also lists these editions, but its Mexico-only group
+could not be reliably distinguished from other score groups, so those rows were not imported.
+
+The 2019 archive also contains the ITESO accumulated GPM table, with all 382 rows and 79 source
+institution labels. Nineteen labels match one existing school record exactly; the other 60 are
+preserved as literal school records because no single exact match was available. Its official PDF
+describes the points as accumulated through the third date but does not explicitly identify the
+table as the final result. The record is therefore marked `snapshot: "unconfirmed"` and labeled
+“Acumulado hasta la tercera fecha”; the scoreboard displays that caveat. Every published point
+total matches the three date totals plus any community points shown in the source. Five teams reuse
+2019 Finals registrations where both the team name and unique exact school match; no other teams
+were merged by name alone. ITESO's season overview does not expose a 2020 accumulated-result
+page, but ICPC Global links directly to its official accumulated PDF, now archived.
+
+The recovered ITESO accumulated documents for 2015–2025 are published with explicit snapshot
+labels. Except for the 2023 intermediate table, they remain `unconfirmed`, not asserted final.
+The 2023 source covers only the first two dates; no third-date or repechage points are inferred.
+The 2015 source uses dense ranking: ties at 155, 197 and 239 do not skip the following places.
+All 306 rows survive, including both FGZ registrations. The 2024 GooseFarmers and Timbits pairs
+have different source registration IDs and remain separate teams. Source annotations, including
+2018 account-use and ineligibility notices, appear in publication notes.
+
+The 2009–2018 Finals were transcribed from the complete paginated ICPC Global native tables.
+These historical events cover Mexico **and Central America**; no country-based filtering was
+applied. All rows retain published totals without invented problem detail or contest metadata.
+In 2013 the source omits place 13 and leaves 81 of its 174 rows unranked. Its explicitly documented
+`ranking: "published"` preserves that gap and uses `place: null` for the unknown places. Such rows
+display “No publicado”, count as participation, and never create podiums or fabricated best places.
+
+The separate Global native tables for 2019–2025 disagree with the existing ICPC Mexico records in
+coverage. They were not merged into or substituted for the existing archive. Native Global GPM
+rows are not accumulated-point standings and are not published as such. Older directory entries
+may link to external results even when their native standings are empty; an empty table is not
+proof that no historical results exist.
+
+The 2023 GPM repechage retains all 1,157 published places. For 49 rows, per-problem details
+conflict with the published totals, so those rows preserve the published solved and penalty totals
+with `results: null`; the other rows retain their available detail. The 2022 GPM repechage also
+retains all 163 published rows, including international participants and tied places. Its date
+and duration were unavailable on the source scoreboard and remain `null`.
 
 Real media events and their posts also live here, under `media/events/`. Juicer ingestion appends
 posts through reviewed PRs; see [setup and operation](../docs/media-ingestion.md). No real event

@@ -1,0 +1,1485 @@
+{
+  "id": "2009-mexico-finals-final",
+  "seasonYear": 2009,
+  "seriesId": "mexico-finals",
+  "stage": "final",
+  "name": "The 2009 Mexico & Central America Contest",
+  "date": null,
+  "durationMinutes": null,
+  "penaltyMinutesPerFailedAttempt": null,
+  "problems": [],
+  "standings": [
+    {
+      "place": 1,
+      "teamId": "2009-mexico-finals-global-row-0001-los-punteros",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1089
+      }
+    },
+    {
+      "place": 2,
+      "teamId": "2009-mexico-finals-global-row-0002-hausdorff",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 720
+      }
+    },
+    {
+      "place": 3,
+      "teamId": "2009-mexico-finals-global-row-0003-uclv1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 1061
+      }
+    },
+    {
+      "place": 4,
+      "teamId": "2009-mexico-finals-global-row-0004-bankai",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 788
+      }
+    },
+    {
+      "place": 5,
+      "teamId": "2009-mexico-finals-global-row-0005-escom56",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 958
+      }
+    },
+    {
+      "place": 6,
+      "teamId": "2009-mexico-finals-global-row-0006-uh03",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 1155
+      }
+    },
+    {
+      "place": 7,
+      "teamId": "2009-mexico-finals-global-row-0007-uh01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 567
+      }
+    },
+    {
+      "place": 8,
+      "teamId": "2009-mexico-finals-global-row-0008-acm-problem-solvers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 846
+      }
+    },
+    {
+      "place": 9,
+      "teamId": "2009-mexico-finals-global-row-0009-mty01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 868
+      }
+    },
+    {
+      "place": 10,
+      "teamId": "2009-mexico-finals-global-row-0010-uclv3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 873
+      }
+    },
+    {
+      "place": 11,
+      "teamId": "2009-mexico-finals-global-row-0011-mty03",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 1013
+      }
+    },
+    {
+      "place": 12,
+      "teamId": "2009-mexico-finals-global-row-0012-itccm",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 510
+      }
+    },
+    {
+      "place": 13,
+      "teamId": "2009-mexico-finals-global-row-0013-uh02",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 539
+      }
+    },
+    {
+      "place": 14,
+      "teamId": "2009-mexico-finals-global-row-0014-algoholics",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 621
+      }
+    },
+    {
+      "place": 15,
+      "teamId": "2009-mexico-finals-global-row-0015-extintor",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 669
+      }
+    },
+    {
+      "place": 16,
+      "teamId": "2009-mexico-finals-global-row-0016-tec-de-culiacan",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 674
+      }
+    },
+    {
+      "place": 17,
+      "teamId": "2009-mexico-finals-global-row-0017-aediat-upin",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 731
+      }
+    },
+    {
+      "place": 18,
+      "teamId": "2009-mexico-finals-global-row-0018-uci-03",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 319
+      }
+    },
+    {
+      "place": 19,
+      "teamId": "2009-mexico-finals-global-row-0019-thehiveclusterisunderattack",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 337
+      }
+    },
+    {
+      "place": 20,
+      "teamId": "2009-mexico-finals-global-row-0020-haka-itq",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 341
+      }
+    },
+    {
+      "place": 21,
+      "teamId": "2009-mexico-finals-global-row-0021-carlit-os",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 344
+      }
+    },
+    {
+      "place": 22,
+      "teamId": "2009-mexico-finals-global-row-0022-jovenes-promesa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 357
+      }
+    },
+    {
+      "place": 23,
+      "teamId": "2009-mexico-finals-global-row-0023-uci-05",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 401
+      }
+    },
+    {
+      "place": 24,
+      "teamId": "2009-mexico-finals-global-row-0024-lyapunov",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 442
+      }
+    },
+    {
+      "place": 25,
+      "teamId": "2009-mexico-finals-global-row-0025-escom",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 455
+      }
+    },
+    {
+      "place": 26,
+      "teamId": "2009-mexico-finals-global-row-0026-maze-minds",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 594
+      }
+    },
+    {
+      "place": 27,
+      "teamId": "2009-mexico-finals-global-row-0027-mty02",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 597
+      }
+    },
+    {
+      "place": 28,
+      "teamId": "2009-mexico-finals-global-row-0028-uci-01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 648
+      }
+    },
+    {
+      "place": 29,
+      "teamId": "2009-mexico-finals-global-row-0029-uam-azcapotzalco-xiv",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 676
+      }
+    },
+    {
+      "place": 30,
+      "teamId": "2009-mexico-finals-global-row-0030-dethlok",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 722
+      }
+    },
+    {
+      "place": 31,
+      "teamId": "2009-mexico-finals-global-row-0031-uo-team2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 752
+      }
+    },
+    {
+      "place": 32,
+      "teamId": "2009-mexico-finals-global-row-0032-kci",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 142
+      }
+    },
+    {
+      "place": 33,
+      "teamId": "2009-mexico-finals-global-row-0033-uci-04",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 157
+      }
+    },
+    {
+      "place": 34,
+      "teamId": "2009-mexico-finals-global-row-0034-utphenom",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 161
+      }
+    },
+    {
+      "place": 35,
+      "teamId": "2009-mexico-finals-global-row-0035-tesla",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 171
+      }
+    },
+    {
+      "place": 36,
+      "teamId": "2009-mexico-finals-global-row-0036-sons-of-a-bit",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 188
+      }
+    },
+    {
+      "place": 37,
+      "teamId": "2009-mexico-finals-global-row-0037-uam-azcapotzalco-xvi",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 218
+      }
+    },
+    {
+      "place": 38,
+      "teamId": "2009-mexico-finals-global-row-0038-success",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 224
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2009-mexico-finals-global-row-0039-seven",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 263
+      }
+    },
+    {
+      "place": 40,
+      "teamId": "2009-mexico-finals-global-row-0040-itsenautas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 273
+      }
+    },
+    {
+      "place": 41,
+      "teamId": "2009-mexico-finals-global-row-0041-team-name-null",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 274
+      }
+    },
+    {
+      "place": 42,
+      "teamId": "2009-mexico-finals-global-row-0042-laguna-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 288
+      }
+    },
+    {
+      "place": 43,
+      "teamId": "2009-mexico-finals-global-row-0043-tezcatlipoca",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 290
+      }
+    },
+    {
+      "place": 43,
+      "teamId": "2009-mexico-finals-global-row-0044-gallos-uaa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 290
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2009-mexico-finals-global-row-0045-trinomio",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 305
+      }
+    },
+    {
+      "place": 46,
+      "teamId": "2009-mexico-finals-global-row-0046-itesz01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 314
+      }
+    },
+    {
+      "place": 47,
+      "teamId": "2009-mexico-finals-global-row-0047-coyotes-alfa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 318
+      }
+    },
+    {
+      "place": 48,
+      "teamId": "2009-mexico-finals-global-row-0048-uh04",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 321
+      }
+    },
+    {
+      "place": 49,
+      "teamId": "2009-mexico-finals-global-row-0049-uclv2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 325
+      }
+    },
+    {
+      "place": 50,
+      "teamId": "2009-mexico-finals-global-row-0050-cujae2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 330
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2009-mexico-finals-global-row-0051-esquizofrenia",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 333
+      }
+    },
+    {
+      "place": 52,
+      "teamId": "2009-mexico-finals-global-row-0052-qwerty",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 339
+      }
+    },
+    {
+      "place": 53,
+      "teamId": "2009-mexico-finals-global-row-0053-alpha",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 341
+      }
+    },
+    {
+      "place": 54,
+      "teamId": "2009-mexico-finals-global-row-0054-omijal-american-school",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 347
+      }
+    },
+    {
+      "place": 55,
+      "teamId": "2009-mexico-finals-global-row-0055-cujae01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 351
+      }
+    },
+    {
+      "place": 56,
+      "teamId": "2009-mexico-finals-global-row-0056-compilando",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 376
+      }
+    },
+    {
+      "place": 57,
+      "teamId": "2009-mexico-finals-global-row-0057-javeros-reloaded",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 387
+      }
+    },
+    {
+      "place": 58,
+      "teamId": "2009-mexico-finals-global-row-0058-acm-tequilas-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 392
+      }
+    },
+    {
+      "place": 59,
+      "teamId": "2009-mexico-finals-global-row-0059-malandros",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 397
+      }
+    },
+    {
+      "place": 60,
+      "teamId": "2009-mexico-finals-global-row-0060-ucf-02",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 437
+      }
+    },
+    {
+      "place": 61,
+      "teamId": "2009-mexico-finals-global-row-0061-sylber-dynamics",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 447
+      }
+    },
+    {
+      "place": 62,
+      "teamId": "2009-mexico-finals-global-row-0062-cucei-people",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 452
+      }
+    },
+    {
+      "place": 63,
+      "teamId": "2009-mexico-finals-global-row-0063-bloques-de-lego",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 454
+      }
+    },
+    {
+      "place": 64,
+      "teamId": "2009-mexico-finals-global-row-0064-uho-team01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 33
+      }
+    },
+    {
+      "place": 64,
+      "teamId": "2009-mexico-finals-global-row-0065-burros-blancos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 33
+      }
+    },
+    {
+      "place": 66,
+      "teamId": "2009-mexico-finals-global-row-0066-kachibombos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 44
+      }
+    },
+    {
+      "place": 67,
+      "teamId": "2009-mexico-finals-global-row-0067-fail",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 55
+      }
+    },
+    {
+      "place": 68,
+      "teamId": "2009-mexico-finals-global-row-0068-develovers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 65
+      }
+    },
+    {
+      "place": 69,
+      "teamId": "2009-mexico-finals-global-row-0069-stupiduserexception",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 77
+      }
+    },
+    {
+      "place": 70,
+      "teamId": "2009-mexico-finals-global-row-0070-aro-itq",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 80
+      }
+    },
+    {
+      "place": 70,
+      "teamId": "2009-mexico-finals-global-row-0071-itspr-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 80
+      }
+    },
+    {
+      "place": 72,
+      "teamId": "2009-mexico-finals-global-row-0072-uam-azcapotzalco-xv",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 85
+      }
+    },
+    {
+      "place": 72,
+      "teamId": "2009-mexico-finals-global-row-0073-nullpointerexception",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 85
+      }
+    },
+    {
+      "place": 74,
+      "teamId": "2009-mexico-finals-global-row-0074-fire-code",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 87
+      }
+    },
+    {
+      "place": 75,
+      "teamId": "2009-mexico-finals-global-row-0075-los-11-mosqueteros",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 88
+      }
+    },
+    {
+      "place": 76,
+      "teamId": "2009-mexico-finals-global-row-0076-macoides",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 91
+      }
+    },
+    {
+      "place": 77,
+      "teamId": "2009-mexico-finals-global-row-0077-laguna-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 93
+      }
+    },
+    {
+      "place": 78,
+      "teamId": "2009-mexico-finals-global-row-0078-liwet",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 94
+      }
+    },
+    {
+      "place": 78,
+      "teamId": "2009-mexico-finals-global-row-0079-upr",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 94
+      }
+    },
+    {
+      "place": 80,
+      "teamId": "2009-mexico-finals-global-row-0080-omijal-gira-jalisco",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 99
+      }
+    },
+    {
+      "place": 81,
+      "teamId": "2009-mexico-finals-global-row-0081-arigato",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 103
+      }
+    },
+    {
+      "place": 81,
+      "teamId": "2009-mexico-finals-global-row-0082-simpus-itsa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 103
+      }
+    },
+    {
+      "place": 81,
+      "teamId": "2009-mexico-finals-global-row-0083-ras",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 103
+      }
+    },
+    {
+      "place": 84,
+      "teamId": "2009-mexico-finals-global-row-0084-01-f1-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 105
+      }
+    },
+    {
+      "place": 85,
+      "teamId": "2009-mexico-finals-global-row-0085-fenix",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 107
+      }
+    },
+    {
+      "place": 86,
+      "teamId": "2009-mexico-finals-global-row-0086-novatos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 112
+      }
+    },
+    {
+      "place": 87,
+      "teamId": "2009-mexico-finals-global-row-0087-buchanans",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 117
+      }
+    },
+    {
+      "place": 88,
+      "teamId": "2009-mexico-finals-global-row-0088-null-breakers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 118
+      }
+    },
+    {
+      "place": 89,
+      "teamId": "2009-mexico-finals-global-row-0089-omijal-ceti",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 120
+      }
+    },
+    {
+      "place": 90,
+      "teamId": "2009-mexico-finals-global-row-0090-uho-team02",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 129
+      }
+    },
+    {
+      "place": 91,
+      "teamId": "2009-mexico-finals-global-row-0091-itla",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 133
+      }
+    },
+    {
+      "place": 92,
+      "teamId": "2009-mexico-finals-global-row-0092-gnu-itsa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 135
+      }
+    },
+    {
+      "place": 93,
+      "teamId": "2009-mexico-finals-global-row-0093-itcuautla2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 143
+      }
+    },
+    {
+      "place": 94,
+      "teamId": "2009-mexico-finals-global-row-0094-corporativo-vainilla",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 148
+      }
+    },
+    {
+      "place": 95,
+      "teamId": "2009-mexico-finals-global-row-0095-tuxinator",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 155
+      }
+    },
+    {
+      "place": 96,
+      "teamId": "2009-mexico-finals-global-row-0096-ecanus",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 156
+      }
+    },
+    {
+      "place": 97,
+      "teamId": "2009-mexico-finals-global-row-0097-itesu01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 162
+      }
+    },
+    {
+      "place": 98,
+      "teamId": "2009-mexico-finals-global-row-0098-burros-pardos-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 186
+      }
+    },
+    {
+      "place": 99,
+      "teamId": "2009-mexico-finals-global-row-0099-fei-uv",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 188
+      }
+    },
+    {
+      "place": 100,
+      "teamId": "2009-mexico-finals-global-row-0100-granma",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 189
+      }
+    },
+    {
+      "place": 101,
+      "teamId": "2009-mexico-finals-global-row-0101-epsilon",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 192
+      }
+    },
+    {
+      "place": 102,
+      "teamId": "2009-mexico-finals-global-row-0102-cujae04",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 197
+      }
+    },
+    {
+      "place": 103,
+      "teamId": "2009-mexico-finals-global-row-0103-itesu03",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 221
+      }
+    },
+    {
+      "place": 104,
+      "teamId": "2009-mexico-finals-global-row-0104-win2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 224
+      }
+    },
+    {
+      "place": 105,
+      "teamId": "2009-mexico-finals-global-row-0105-deadlockers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 229
+      }
+    },
+    {
+      "place": 106,
+      "teamId": "2009-mexico-finals-global-row-0106-buhos-blancos-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 235
+      }
+    },
+    {
+      "place": 107,
+      "teamId": "2009-mexico-finals-global-row-0107-triforce",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 239
+      }
+    },
+    {
+      "place": 108,
+      "teamId": "2009-mexico-finals-global-row-0108-dughc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 255
+      }
+    },
+    {
+      "place": 109,
+      "teamId": "2009-mexico-finals-global-row-0109-children-of-evolution",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 258
+      }
+    },
+    {
+      "place": 110,
+      "teamId": "2009-mexico-finals-global-row-0110-itcuautla1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 259
+      }
+    },
+    {
+      "place": 111,
+      "teamId": "2009-mexico-finals-global-row-0111-uo-team1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 273
+      }
+    },
+    {
+      "place": 111,
+      "teamId": "2009-mexico-finals-global-row-0112-uho-team04",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 273
+      }
+    },
+    {
+      "place": 113,
+      "teamId": "2009-mexico-finals-global-row-0113-leperianos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 284
+      }
+    },
+    {
+      "place": 114,
+      "teamId": "2009-mexico-finals-global-row-0114-tec-linces",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 286
+      }
+    },
+    {
+      "place": 115,
+      "teamId": "2009-mexico-finals-global-row-0115-buhos-blancos-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 302
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0116-uat-d-s-corp",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0117-vg-software",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0118-queequipo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0119-burros-pardos-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0120-itspr-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0121-predefinidos-por-el-usuario",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0122-tecgrullo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0123-hxc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0124-buhos-blancos-4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0125-sistemas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0126-itesu02",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0127-virtual-java-leon",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0128-buhos-blancos-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0129-black-jack",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0130-cug-3ro",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0131-1small-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0132-uaa-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0133-sistemas-loyola",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0134-uaq-first",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0135-cujae03",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0136-isla",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0137-ucf-01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0138-agramontinos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0139-sistemas-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0140-sistemac",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0141-netsoft",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0142-itic-zacatecas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0143-coyotes-omega",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0144-strange-loop",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0145-laguna-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0146-javax",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0147-the-dragons",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0148-uaa-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0149-cug-4to",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0150-itesz02",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0151-burritos-pardos-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0152-sistemas-4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0153-omicron",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0154-sistemas-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0155-relampago-9",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0156-uho-team03",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0157-the-fad",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0158-t-d-d-o",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0159-uvmistas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0160-pumasoo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0161-dukes",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0162-isla",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2009-mexico-finals-global-row-0163-uo-team3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    }
+  ],
+  "source": "https://icpc.global/regionals/finder/Mexico-Central-America-2010/standings",
+  "publicationNotes": [
+    "La fuente corresponde a la final regional de México y Centroamérica; se conservan todos los equipos publicados, sin filtrar por país.",
+    "La fuente solo publica totales: no se conocen el detalle por problema, la duración ni la regla de penalización."
+  ]
+}

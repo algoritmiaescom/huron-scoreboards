@@ -131,6 +131,7 @@ const makeSeasonStandingCandidate = (
       place: 1,
       sourceTeamId: 'source-alpha',
       teamName: 'Alpha source name',
+      schoolName: null,
       score: 12.75,
       scoreText: '12.75',
       scoreUnit: 'points',

@@ -1,0 +1,819 @@
+{
+  "id": "2016-mexico-finals-final",
+  "seasonYear": 2016,
+  "seriesId": "mexico-finals",
+  "stage": "final",
+  "name": "The 2016 ACM-ICPC Mexico and Central America Finals",
+  "date": null,
+  "durationMinutes": null,
+  "penaltyMinutesPerFailedAttempt": null,
+  "problems": [],
+  "standings": [
+    {
+      "place": 1,
+      "teamId": "2016-mexico-finals-global-row-0001-pu",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 958
+      }
+    },
+    {
+      "place": 2,
+      "teamId": "2016-mexico-finals-global-row-0002-los-romanticos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 637
+      }
+    },
+    {
+      "place": 3,
+      "teamId": "2016-mexico-finals-global-row-0003-los-a-s",
+      "results": null,
+      "publishedTotals": {
+        "solved": 7,
+        "penalty": 942
+      }
+    },
+    {
+      "place": 4,
+      "teamId": "2016-mexico-finals-global-row-0004-new-avengers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 745
+      }
+    },
+    {
+      "place": 5,
+      "teamId": "2016-mexico-finals-global-row-0005-locos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 769
+      }
+    },
+    {
+      "place": 6,
+      "teamId": "2016-mexico-finals-global-row-0006-e3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 391
+      }
+    },
+    {
+      "place": 7,
+      "teamId": "2016-mexico-finals-global-row-0007-sopa-de-pinguino",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 522
+      }
+    },
+    {
+      "place": 8,
+      "teamId": "2016-mexico-finals-global-row-0008-perrillos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 529
+      }
+    },
+    {
+      "place": 9,
+      "teamId": "2016-mexico-finals-global-row-0009-wolves",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 535
+      }
+    },
+    {
+      "place": 10,
+      "teamId": "2016-mexico-finals-global-row-0010-quetzal-h",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 820
+      }
+    },
+    {
+      "place": 11,
+      "teamId": "2016-mexico-finals-global-row-0011-pinguinos-de-sopa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 268
+      }
+    },
+    {
+      "place": 12,
+      "teamId": "2016-mexico-finals-global-row-0012-wlog",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 274
+      }
+    },
+    {
+      "place": 13,
+      "teamId": "2016-mexico-finals-global-row-0013-fastfingers-lml",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 377
+      }
+    },
+    {
+      "place": 14,
+      "teamId": "2016-mexico-finals-global-row-0014-itsur-mix-lang-coffee",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 381
+      }
+    },
+    {
+      "place": 15,
+      "teamId": "2016-mexico-finals-global-row-0015-the-foos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 97
+      }
+    },
+    {
+      "place": 16,
+      "teamId": "2016-mexico-finals-global-row-0016-char-mander",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 113
+      }
+    },
+    {
+      "place": 17,
+      "teamId": "2016-mexico-finals-global-row-0017-code-n-play",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 146
+      }
+    },
+    {
+      "place": 18,
+      "teamId": "2016-mexico-finals-global-row-0018-clfies",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 153
+      }
+    },
+    {
+      "place": 19,
+      "teamId": "2016-mexico-finals-global-row-0019-greedies",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 163
+      }
+    },
+    {
+      "place": 20,
+      "teamId": "2016-mexico-finals-global-row-0020-binary-lambda",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 164
+      }
+    },
+    {
+      "place": 21,
+      "teamId": "2016-mexico-finals-global-row-0021-wasabi",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 193
+      }
+    },
+    {
+      "place": 22,
+      "teamId": "2016-mexico-finals-global-row-0022-gleichseitiges",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 212
+      }
+    },
+    {
+      "place": 23,
+      "teamId": "2016-mexico-finals-global-row-0023-twt",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 222
+      }
+    },
+    {
+      "place": 24,
+      "teamId": "2016-mexico-finals-global-row-0024-uam-azcapotzalco-2016-ii",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 249
+      }
+    },
+    {
+      "place": 25,
+      "teamId": "2016-mexico-finals-global-row-0025-cooperativa-pascal",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 269
+      }
+    },
+    {
+      "place": 26,
+      "teamId": "2016-mexico-finals-global-row-0026-uamc-a",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 271
+      }
+    },
+    {
+      "place": 27,
+      "teamId": "2016-mexico-finals-global-row-0027-the-feel-train",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 277
+      }
+    },
+    {
+      "place": 28,
+      "teamId": "2016-mexico-finals-global-row-0028-jcc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 305
+      }
+    },
+    {
+      "place": 29,
+      "teamId": "2016-mexico-finals-global-row-0029-entscheidungsteam",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 314
+      }
+    },
+    {
+      "place": 30,
+      "teamId": "2016-mexico-finals-global-row-0030-make-sandwich",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 316
+      }
+    },
+    {
+      "place": 31,
+      "teamId": "2016-mexico-finals-global-row-0031-nac-os",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 342
+      }
+    },
+    {
+      "place": 32,
+      "teamId": "2016-mexico-finals-global-row-0032-m3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 345
+      }
+    },
+    {
+      "place": 33,
+      "teamId": "2016-mexico-finals-global-row-0033-kebabs",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 347
+      }
+    },
+    {
+      "place": 34,
+      "teamId": "2016-mexico-finals-global-row-0034-los-religiosos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 383
+      }
+    },
+    {
+      "place": 35,
+      "teamId": "2016-mexico-finals-global-row-0035-printfers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 412
+      }
+    },
+    {
+      "place": 36,
+      "teamId": "2016-mexico-finals-global-row-0036-uam-azcapotzalco-2016",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 426
+      }
+    },
+    {
+      "place": 37,
+      "teamId": "2016-mexico-finals-global-row-0037-itspr1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 630
+      }
+    },
+    {
+      "place": 38,
+      "teamId": "2016-mexico-finals-global-row-0038-csf1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 42
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2016-mexico-finals-global-row-0039-leopardos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 45
+      }
+    },
+    {
+      "place": 40,
+      "teamId": "2016-mexico-finals-global-row-0040-sourcecode",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 51
+      }
+    },
+    {
+      "place": 41,
+      "teamId": "2016-mexico-finals-global-row-0041-legio-i",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 54
+      }
+    },
+    {
+      "place": 42,
+      "teamId": "2016-mexico-finals-global-row-0042-coding-horror",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 56
+      }
+    },
+    {
+      "place": 43,
+      "teamId": "2016-mexico-finals-global-row-0043-duxel",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 59
+      }
+    },
+    {
+      "place": 44,
+      "teamId": "2016-mexico-finals-global-row-0044-dagas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 60
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2016-mexico-finals-global-row-0045-codereallygood",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 63
+      }
+    },
+    {
+      "place": 46,
+      "teamId": "2016-mexico-finals-global-row-0046-3idiotas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 65
+      }
+    },
+    {
+      "place": 47,
+      "teamId": "2016-mexico-finals-global-row-0047-lobowar",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 70
+      }
+    },
+    {
+      "place": 48,
+      "teamId": "2016-mexico-finals-global-row-0048-caribbeancoders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 76
+      }
+    },
+    {
+      "place": 49,
+      "teamId": "2016-mexico-finals-global-row-0049-ytrewq321",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 83
+      }
+    },
+    {
+      "place": 50,
+      "teamId": "2016-mexico-finals-global-row-0050-cnoobs",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 88
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2016-mexico-finals-global-row-0051-hakunas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 89
+      }
+    },
+    {
+      "place": 52,
+      "teamId": "2016-mexico-finals-global-row-0052-heavymachinegun",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 94
+      }
+    },
+    {
+      "place": 53,
+      "teamId": "2016-mexico-finals-global-row-0053-repechaje",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 95
+      }
+    },
+    {
+      "place": 54,
+      "teamId": "2016-mexico-finals-global-row-0054-the-brewskis",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 105
+      }
+    },
+    {
+      "place": 55,
+      "teamId": "2016-mexico-finals-global-row-0055-machineguns",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 107
+      }
+    },
+    {
+      "place": 56,
+      "teamId": "2016-mexico-finals-global-row-0056-chinchanpu",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 111
+      }
+    },
+    {
+      "place": 57,
+      "teamId": "2016-mexico-finals-global-row-0057-enigma",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 122
+      }
+    },
+    {
+      "place": 58,
+      "teamId": "2016-mexico-finals-global-row-0058-los-vengadores",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 123
+      }
+    },
+    {
+      "place": 59,
+      "teamId": "2016-mexico-finals-global-row-0059-unidad-de-choque",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 127
+      }
+    },
+    {
+      "place": 60,
+      "teamId": "2016-mexico-finals-global-row-0060-where-s-the-pizza",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 129
+      }
+    },
+    {
+      "place": 61,
+      "teamId": "2016-mexico-finals-global-row-0061-the-orden-of-the-t-rex",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 140
+      }
+    },
+    {
+      "place": 62,
+      "teamId": "2016-mexico-finals-global-row-0062-return-too-izi",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 145
+      }
+    },
+    {
+      "place": 63,
+      "teamId": "2016-mexico-finals-global-row-0063-mindcode",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 160
+      }
+    },
+    {
+      "place": 64,
+      "teamId": "2016-mexico-finals-global-row-0064-iverlu-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 164
+      }
+    },
+    {
+      "place": 65,
+      "teamId": "2016-mexico-finals-global-row-0065-team-conviction",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 166
+      }
+    },
+    {
+      "place": 66,
+      "teamId": "2016-mexico-finals-global-row-0066-compilando",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 173
+      }
+    },
+    {
+      "place": 67,
+      "teamId": "2016-mexico-finals-global-row-0067-ateamhasnoname",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 178
+      }
+    },
+    {
+      "place": 68,
+      "teamId": "2016-mexico-finals-global-row-0068-penguins",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 178
+      }
+    },
+    {
+      "place": 69,
+      "teamId": "2016-mexico-finals-global-row-0069-ras-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 187
+      }
+    },
+    {
+      "place": 70,
+      "teamId": "2016-mexico-finals-global-row-0070-itleon-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 188
+      }
+    },
+    {
+      "place": 71,
+      "teamId": "2016-mexico-finals-global-row-0071-itspr2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 191
+      }
+    },
+    {
+      "place": 72,
+      "teamId": "2016-mexico-finals-global-row-0072-icode",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 203
+      }
+    },
+    {
+      "place": 73,
+      "teamId": "2016-mexico-finals-global-row-0073-j-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 204
+      }
+    },
+    {
+      "place": 74,
+      "teamId": "2016-mexico-finals-global-row-0074-orion",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 229
+      }
+    },
+    {
+      "place": 75,
+      "teamId": "2016-mexico-finals-global-row-0075-master-net",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 236
+      }
+    },
+    {
+      "place": 76,
+      "teamId": "2016-mexico-finals-global-row-0076-las-chonchas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 242
+      }
+    },
+    {
+      "place": 77,
+      "teamId": "2016-mexico-finals-global-row-0077-upqroo-cancun",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 312
+      }
+    },
+    {
+      "place": 78,
+      "teamId": "2016-mexico-finals-global-row-0078-dream-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 320
+      }
+    },
+    {
+      "place": 79,
+      "teamId": "2016-mexico-finals-global-row-0079-ami-ubicom",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 330
+      }
+    },
+    {
+      "place": 80,
+      "teamId": "2016-mexico-finals-global-row-0080-hopefullyrookies",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 339
+      }
+    },
+    {
+      "place": 81,
+      "teamId": "2016-mexico-finals-global-row-0081-kdt",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 346
+      }
+    },
+    {
+      "place": 82,
+      "teamId": "2016-mexico-finals-global-row-0082-team-fismat",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 346
+      }
+    },
+    {
+      "place": 83,
+      "teamId": "2016-mexico-finals-global-row-0083-brave-system",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 353
+      }
+    },
+    {
+      "place": 84,
+      "teamId": "2016-mexico-finals-global-row-0084-codificadores-de-alajuela",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 378
+      }
+    },
+    {
+      "place": 85,
+      "teamId": "2016-mexico-finals-global-row-0085-pacific-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 468
+      }
+    },
+    {
+      "place": 86,
+      "teamId": "2016-mexico-finals-global-row-0086-the-fighters",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 152
+      }
+    },
+    {
+      "place": 87,
+      "teamId": "2016-mexico-finals-global-row-0087-2-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 247
+      }
+    },
+    {
+      "place": 88,
+      "teamId": "2016-mexico-finals-global-row-0088-el-pueblo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 411
+      }
+    },
+    {
+      "place": 89,
+      "teamId": "2016-mexico-finals-global-row-0089-hello-world",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    }
+  ],
+  "source": "https://icpc.global/regionals/finder/Mexico-Central-America-2017/standings",
+  "publicationNotes": [
+    "La fuente corresponde a la final regional de México y Centroamérica; se conservan todos los equipos publicados, sin filtrar por país.",
+    "La fuente solo publica totales: no se conocen el detalle por problema, la duración ni la regla de penalización."
+  ]
+}

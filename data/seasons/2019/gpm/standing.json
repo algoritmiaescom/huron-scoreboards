@@ -1,0 +1,2302 @@
+{
+  "seasonYear": 2019,
+  "seriesId": "gpm",
+  "rows": [
+    {
+      "place": 1,
+      "teamId": "2019-gpm-iteso-row-0001-norman-is-hunting",
+      "score": 446,
+      "qualified": null
+    },
+    {
+      "place": 2,
+      "teamId": "2019-gpm-iteso-row-0002-we-put-the-d-in-dp",
+      "score": 424,
+      "qualified": null
+    },
+    {
+      "place": 3,
+      "teamId": "2019-gpm-iteso-row-0003-define-trilci-404-0-v",
+      "score": 422,
+      "qualified": null
+    },
+    {
+      "place": 4,
+      "teamId": "2019-gpm-iteso-row-0004-pu-os",
+      "score": 400,
+      "qualified": null
+    },
+    {
+      "place": 5,
+      "teamId": "2019-gpm-iteso-row-0005-e3",
+      "score": 396,
+      "qualified": null
+    },
+    {
+      "place": 6,
+      "teamId": "2019-gpm-iteso-row-0006-heaps-dont-lie",
+      "score": 393,
+      "qualified": null
+    },
+    {
+      "place": 7,
+      "teamId": "2019-gpm-iteso-row-0007-error-team-name-not-defined",
+      "score": 344,
+      "qualified": null
+    },
+    {
+      "place": 8,
+      "teamId": "2019-gpm-iteso-row-0008-talla-mediana",
+      "score": 321,
+      "qualified": null
+    },
+    {
+      "place": 9,
+      "teamId": "2019-gpm-iteso-row-0009-upsolving",
+      "score": 319,
+      "qualified": null
+    },
+    {
+      "place": 10,
+      "teamId": "2019-gpm-iteso-row-0010-ac-holics",
+      "score": 303,
+      "qualified": null
+    },
+    {
+      "place": 11,
+      "teamId": "2019-gpm-iteso-row-0011-include-uaz",
+      "score": 300,
+      "qualified": null
+    },
+    {
+      "place": 12,
+      "teamId": "2019-gpm-iteso-row-0012-los-chac-s",
+      "score": 295,
+      "qualified": null
+    },
+    {
+      "place": 13,
+      "teamId": "2019-gpm-iteso-row-0013-leftasanexercise",
+      "score": 286,
+      "qualified": null
+    },
+    {
+      "place": 14,
+      "teamId": "2019-mexico-finals-final-row-0114-triada",
+      "score": 273,
+      "qualified": null
+    },
+    {
+      "place": 15,
+      "teamId": "2019-gpm-iteso-row-0015-wolves",
+      "score": 271,
+      "qualified": null
+    },
+    {
+      "place": 16,
+      "teamId": "2019-gpm-iteso-row-0016-pumas",
+      "score": 249,
+      "qualified": null
+    },
+    {
+      "place": 17,
+      "teamId": "2019-gpm-iteso-row-0017-los-que-no-vinieron",
+      "score": 231,
+      "qualified": null
+    },
+    {
+      "place": 18,
+      "teamId": "2019-gpm-iteso-row-0018-two-and-a-half-compus",
+      "score": 227,
+      "qualified": null
+    },
+    {
+      "place": 19,
+      "teamId": "2019-gpm-iteso-row-0019-ezln",
+      "score": 219,
+      "qualified": null
+    },
+    {
+      "place": 20,
+      "teamId": "2019-gpm-iteso-row-0020-leones-0-0-0",
+      "score": 217,
+      "qualified": null
+    },
+    {
+      "place": 21,
+      "teamId": "2019-gpm-iteso-row-0021-404-globito-not-found",
+      "score": 195,
+      "qualified": null
+    },
+    {
+      "place": 22,
+      "teamId": "2019-gpm-iteso-row-0022-uam",
+      "score": 190,
+      "qualified": null
+    },
+    {
+      "place": 23,
+      "teamId": "2019-gpm-iteso-row-0023-jjl",
+      "score": 184,
+      "qualified": null
+    },
+    {
+      "place": 24,
+      "teamId": "2019-gpm-iteso-row-0024-mdp",
+      "score": 159,
+      "qualified": null
+    },
+    {
+      "place": 25,
+      "teamId": "2019-gpm-iteso-row-0025-k-bezones",
+      "score": 155,
+      "qualified": null
+    },
+    {
+      "place": 26,
+      "teamId": "2019-gpm-iteso-row-0026-programalovers",
+      "score": 145,
+      "qualified": null
+    },
+    {
+      "place": 27,
+      "teamId": "2019-gpm-iteso-row-0027-batchnorm3d",
+      "score": 136,
+      "qualified": null
+    },
+    {
+      "place": 28,
+      "teamId": "2019-gpm-iteso-row-0028-last-chance",
+      "score": 125,
+      "qualified": null
+    },
+    {
+      "place": 29,
+      "teamId": "2019-gpm-iteso-row-0029-kygerand",
+      "score": 121,
+      "qualified": null
+    },
+    {
+      "place": 30,
+      "teamId": "2019-gpm-iteso-row-0030-ansiosos",
+      "score": 109,
+      "qualified": null
+    },
+    {
+      "place": 31,
+      "teamId": "2019-gpm-iteso-row-0031-promised-rinascimento",
+      "score": 104,
+      "qualified": null
+    },
+    {
+      "place": 32,
+      "teamId": "2019-mexico-finals-final-row-0178-patodalavida",
+      "score": 102,
+      "qualified": null
+    },
+    {
+      "place": 33,
+      "teamId": "2019-mexico-finals-final-row-0228-flying-kiwi",
+      "score": 102,
+      "qualified": null
+    },
+    {
+      "place": 34,
+      "teamId": "2019-gpm-iteso-row-0034-cuahutemoc",
+      "score": 96,
+      "qualified": null
+    },
+    {
+      "place": 35,
+      "teamId": "2019-gpm-iteso-row-0035-the-best-skynet",
+      "score": 90,
+      "qualified": null
+    },
+    {
+      "place": 36,
+      "teamId": "2019-gpm-iteso-row-0036-lavanda-nortena",
+      "score": 81,
+      "qualified": null
+    },
+    {
+      "place": 37,
+      "teamId": "2019-mexico-finals-final-row-0163-los-testigos-de-aaron",
+      "score": 78,
+      "qualified": null
+    },
+    {
+      "place": 38,
+      "teamId": "2019-gpm-iteso-row-0038-o-1",
+      "score": 70,
+      "qualified": null
+    },
+    {
+      "place": 39,
+      "teamId": "2019-gpm-iteso-row-0039-la-mafia-del-poder",
+      "score": 67,
+      "qualified": null
+    },
+    {
+      "place": 40,
+      "teamId": "2019-gpm-iteso-row-0040-los-tres-jinetes",
+      "score": 66,
+      "qualified": null
+    },
+    {
+      "place": 41,
+      "teamId": "2019-gpm-iteso-row-0041-que",
+      "score": 64,
+      "qualified": null
+    },
+    {
+      "place": 42,
+      "teamId": "2019-mexico-finals-final-row-0299-3loko",
+      "score": 63,
+      "qualified": null
+    },
+    {
+      "place": 43,
+      "teamId": "2019-gpm-iteso-row-0043-campos-de-galois",
+      "score": 58,
+      "qualified": null
+    },
+    {
+      "place": 44,
+      "teamId": "2019-gpm-iteso-row-0044-el-marichi-dorado-de-michoacan",
+      "score": 56,
+      "qualified": null
+    },
+    {
+      "place": 45,
+      "teamId": "2019-gpm-iteso-row-0045-chillakillers-upb",
+      "score": 50,
+      "qualified": null
+    },
+    {
+      "place": 46,
+      "teamId": "2019-gpm-iteso-row-0046-el-perla-negra",
+      "score": 47,
+      "qualified": null
+    },
+    {
+      "place": 47,
+      "teamId": "2019-gpm-iteso-row-0047-another-day-another-ac",
+      "score": 45,
+      "qualified": null
+    },
+    {
+      "place": 48,
+      "teamId": "2019-gpm-iteso-row-0048-los-hombres-de-katy",
+      "score": 41,
+      "qualified": null
+    },
+    {
+      "place": 49,
+      "teamId": "2019-gpm-iteso-row-0049-code-wizards",
+      "score": 40,
+      "qualified": null
+    },
+    {
+      "place": 50,
+      "teamId": "2019-gpm-iteso-row-0050-bissingzeile11",
+      "score": 36,
+      "qualified": null
+    },
+    {
+      "place": 51,
+      "teamId": "2019-gpm-iteso-row-0051-beaners",
+      "score": 34,
+      "qualified": null
+    },
+    {
+      "place": 52,
+      "teamId": "2019-gpm-iteso-row-0052-las-neuronas",
+      "score": 33,
+      "qualified": null
+    },
+    {
+      "place": 53,
+      "teamId": "2019-gpm-iteso-row-0053-ti-tanis",
+      "score": 31,
+      "qualified": null
+    },
+    {
+      "place": 54,
+      "teamId": "2019-gpm-iteso-row-0054-pitones",
+      "score": 29,
+      "qualified": null
+    },
+    {
+      "place": 55,
+      "teamId": "2019-gpm-iteso-row-0055-triple-a",
+      "score": 28,
+      "qualified": null
+    },
+    {
+      "place": 56,
+      "teamId": "2019-gpm-iteso-row-0056-tle",
+      "score": 26,
+      "qualified": null
+    },
+    {
+      "place": 57,
+      "teamId": "2019-gpm-iteso-row-0057-mutant-primates",
+      "score": 26,
+      "qualified": null
+    },
+    {
+      "place": 58,
+      "teamId": "2019-gpm-iteso-row-0058-las-pistas-de-null",
+      "score": 24,
+      "qualified": null
+    },
+    {
+      "place": 59,
+      "teamId": "2019-gpm-iteso-row-0059-chichen-int-za",
+      "score": 23,
+      "qualified": null
+    },
+    {
+      "place": 60,
+      "teamId": "2019-gpm-iteso-row-0060-the-game",
+      "score": 22,
+      "qualified": null
+    },
+    {
+      "place": 61,
+      "teamId": "2019-gpm-iteso-row-0061-si-no-gano-me-corren",
+      "score": 21,
+      "qualified": null
+    },
+    {
+      "place": 62,
+      "teamId": "2019-gpm-iteso-row-0062-opilimpicos",
+      "score": 18,
+      "qualified": null
+    },
+    {
+      "place": 63,
+      "teamId": "2019-gpm-iteso-row-0063-gekko",
+      "score": 18,
+      "qualified": null
+    },
+    {
+      "place": 64,
+      "teamId": "2019-gpm-iteso-row-0064-orion-belt",
+      "score": 16,
+      "qualified": null
+    },
+    {
+      "place": 65,
+      "teamId": "2019-gpm-iteso-row-0065-los-bad-bunny",
+      "score": 16,
+      "qualified": null
+    },
+    {
+      "place": 66,
+      "teamId": "2019-gpm-iteso-row-0066-c-io",
+      "score": 11,
+      "qualified": null
+    },
+    {
+      "place": 67,
+      "teamId": "2019-gpm-iteso-row-0067-char-izard",
+      "score": 10,
+      "qualified": null
+    },
+    {
+      "place": 68,
+      "teamId": "2019-gpm-iteso-row-0068-backend-boys",
+      "score": 9,
+      "qualified": null
+    },
+    {
+      "place": 69,
+      "teamId": "2019-gpm-iteso-row-0069-uamitos",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 70,
+      "teamId": "2019-gpm-iteso-row-0070-re100te",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 71,
+      "teamId": "2019-gpm-iteso-row-0071-galacticos-1",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 72,
+      "teamId": "2019-gpm-iteso-row-0072-ponjo",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 73,
+      "teamId": "2019-gpm-iteso-row-0073-array-of-clowns",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 74,
+      "teamId": "2019-gpm-iteso-row-0074-ac-tlecos",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 75,
+      "teamId": "2019-gpm-iteso-row-0075-los-crack-s",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 76,
+      "teamId": "2019-gpm-iteso-row-0076-quesadillasllevanqueso",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 77,
+      "teamId": "2019-gpm-iteso-row-0077-merceria-paquita-d",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 78,
+      "teamId": "2019-gpm-iteso-row-0078-syntaxerror-v",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 79,
+      "teamId": "2019-gpm-iteso-row-0079-system-32",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 80,
+      "teamId": "2019-gpm-iteso-row-0080-string-productions",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 81,
+      "teamId": "2019-gpm-iteso-row-0081-ac",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 82,
+      "teamId": "2019-gpm-iteso-row-0082-la-tribu",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 83,
+      "teamId": "2019-gpm-iteso-row-0083-escuadron-alpha-lobo-dinamita",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 84,
+      "teamId": "2019-gpm-iteso-row-0084-macboy-s",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 85,
+      "teamId": "2019-gpm-iteso-row-0085-hcl",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 86,
+      "teamId": "2019-gpm-iteso-row-0086-uncompilables",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 87,
+      "teamId": "2019-gpm-iteso-row-0087-el-bueno-el-malo-y-el-feo",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 88,
+      "teamId": "2019-gpm-iteso-row-0088-bug-makers",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 89,
+      "teamId": "2019-gpm-iteso-row-0089-system-32",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 90,
+      "teamId": "2019-gpm-iteso-row-0090-los-super-conocidos",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 91,
+      "teamId": "2019-gpm-iteso-row-0091-scorpius",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 92,
+      "teamId": "2019-gpm-iteso-row-0092-hackerways",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 93,
+      "teamId": "2019-gpm-iteso-row-0093-name-not-found",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 94,
+      "teamId": "2019-gpm-iteso-row-0094-en-el-b-no-hay-internet",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 95,
+      "teamId": "2019-gpm-iteso-row-0095-pumitas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 96,
+      "teamId": "2019-gpm-iteso-row-0096-mariachi",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 97,
+      "teamId": "2019-gpm-iteso-row-0097-root-scramblers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 98,
+      "teamId": "2019-gpm-iteso-row-0098-los-pixies",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 99,
+      "teamId": "2019-gpm-iteso-row-0099-firmala-gio",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 100,
+      "teamId": "2019-gpm-iteso-row-0100-let-it-c",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 101,
+      "teamId": "2019-gpm-iteso-row-0101-itln",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 102,
+      "teamId": "2019-gpm-iteso-row-0102-equipo-generico-1",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 103,
+      "teamId": "2019-gpm-iteso-row-0103-leftovers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 104,
+      "teamId": "2019-gpm-iteso-row-0104-equipo-estrella",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 105,
+      "teamId": "2019-gpm-iteso-row-0105-los-testigos-de-botello",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 106,
+      "teamId": "2019-gpm-iteso-row-0106-error-o",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 107,
+      "teamId": "2019-gpm-iteso-row-0107-caribbean-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 108,
+      "teamId": "2019-gpm-iteso-row-0108-rebel-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 109,
+      "teamId": "2019-gpm-iteso-row-0109-your-socialist-hacker",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 110,
+      "teamId": "2019-gpm-iteso-row-0110-sistemos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 111,
+      "teamId": "2019-gpm-iteso-row-0111-dj-ikstra-pimp-y-kuzko",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 112,
+      "teamId": "2019-gpm-iteso-row-0112-techlink",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 113,
+      "teamId": "2019-gpm-iteso-row-0113-master-net",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 114,
+      "teamId": "2019-gpm-iteso-row-0114-404",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 115,
+      "teamId": "2019-gpm-iteso-row-0115-bathtub-coding",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 116,
+      "teamId": "2019-gpm-iteso-row-0116-sinners",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 117,
+      "teamId": "2019-gpm-iteso-row-0117-include-witech",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 118,
+      "teamId": "2019-gpm-iteso-row-0118-eszettcorp",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 119,
+      "teamId": "2019-gpm-iteso-row-0119-real-colicos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 120,
+      "teamId": "2019-gpm-iteso-row-0120-elite-penguin-force",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 121,
+      "teamId": "2019-gpm-iteso-row-0121-los-mariks",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 122,
+      "teamId": "2019-gpm-iteso-row-0122-holmes",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 123,
+      "teamId": "2019-gpm-iteso-row-0123-itsahackers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 124,
+      "teamId": "2019-gpm-iteso-row-0124-coderregos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 125,
+      "teamId": "2019-gpm-iteso-row-0125-ignite",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 126,
+      "teamId": "2019-gpm-iteso-row-0126-the-girls-have-no-name",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 127,
+      "teamId": "2019-gpm-iteso-row-0127-tortugas-torpes",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 128,
+      "teamId": "2019-gpm-iteso-row-0128-ckt",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 129,
+      "teamId": "2019-gpm-iteso-row-0129-a-verdad-me-engane",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 130,
+      "teamId": "2019-gpm-iteso-row-0130-base16",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 131,
+      "teamId": "2019-gpm-iteso-row-0131-gunters",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 132,
+      "teamId": "2019-gpm-iteso-row-0132-dinosaurios",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 133,
+      "teamId": "2019-gpm-iteso-row-0133-tropicos-de-capricornio",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 134,
+      "teamId": "2019-gpm-iteso-row-0134-percepctron",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 135,
+      "teamId": "2019-gpm-iteso-row-0135-the-bytes",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 136,
+      "teamId": "2019-gpm-iteso-row-0136-team-extends-god",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 137,
+      "teamId": "2019-gpm-iteso-row-0137-cabezones-en-bytecode",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 138,
+      "teamId": "2019-gpm-iteso-row-0138-donas-s-team",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 139,
+      "teamId": "2019-gpm-iteso-row-0139-infinabyte",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 140,
+      "teamId": "2019-gpm-iteso-row-0140-javalimos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 141,
+      "teamId": "2019-gpm-iteso-row-0141-3-1416t",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 142,
+      "teamId": "2019-gpm-iteso-row-0142-coding-donkey",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 143,
+      "teamId": "2019-gpm-iteso-row-0143-origins",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 144,
+      "teamId": "2019-gpm-iteso-row-0144-the-untouchables",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 145,
+      "teamId": "2019-gpm-iteso-row-0145-pandilla",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 146,
+      "teamId": "2019-gpm-iteso-row-0146-op101",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 147,
+      "teamId": "2019-gpm-iteso-row-0147-quesadilla-con-queso",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 148,
+      "teamId": "2019-gpm-iteso-row-0148-calcetines-de-bebe",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 149,
+      "teamId": "2019-gpm-iteso-row-0149-shiny",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 150,
+      "teamId": "2019-gpm-iteso-row-0150-overflow",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 151,
+      "teamId": "2019-gpm-iteso-row-0151-escuadron-de-movimiento-perpetuo",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 152,
+      "teamId": "2019-gpm-iteso-row-0152-saj",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 153,
+      "teamId": "2019-gpm-iteso-row-0153-osmosis",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 154,
+      "teamId": "2019-gpm-iteso-row-0154-flaming-flamingoes",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 155,
+      "teamId": "2019-gpm-iteso-row-0155-01",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 156,
+      "teamId": "2019-gpm-iteso-row-0156-connectia",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 157,
+      "teamId": "2019-gpm-iteso-row-0157-int-genieros",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 158,
+      "teamId": "2019-gpm-iteso-row-0158-los-gatos-de-schrodinger",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 159,
+      "teamId": "2019-gpm-iteso-row-0159-castores-cascajavas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 160,
+      "teamId": "2019-gpm-iteso-row-0160-taurina",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 161,
+      "teamId": "2019-gpm-iteso-row-0161-los-vigilantes",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 162,
+      "teamId": "2019-gpm-iteso-row-0162-las-comadres",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 163,
+      "teamId": "2019-gpm-iteso-row-0163-los-diamancos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 164,
+      "teamId": "2019-gpm-iteso-row-0164-uprss",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 165,
+      "teamId": "2019-gpm-iteso-row-0165-team-jpg",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 166,
+      "teamId": "2019-gpm-iteso-row-0166-puma",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 167,
+      "teamId": "2019-gpm-iteso-row-0167-codebreakers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 168,
+      "teamId": "2019-gpm-iteso-row-0168-solaristas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 169,
+      "teamId": "2019-gpm-iteso-row-0169-the-code-redemption",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 170,
+      "teamId": "2019-gpm-iteso-row-0170-monkeys-coders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 171,
+      "teamId": "2019-gpm-iteso-row-0171-apostol-cahazu",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 172,
+      "teamId": "2019-gpm-iteso-row-0172-fenix",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 173,
+      "teamId": "2019-gpm-iteso-row-0173-3-1",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 174,
+      "teamId": "2019-gpm-iteso-row-0174-aj-compleja",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 175,
+      "teamId": "2019-gpm-iteso-row-0175-las-chicas-superpoderosas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 176,
+      "teamId": "2019-gpm-iteso-row-0176-jajajava",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 177,
+      "teamId": "2019-gpm-iteso-row-0177-weepycoders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 178,
+      "teamId": "2019-gpm-iteso-row-0178-coders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 179,
+      "teamId": "2019-gpm-iteso-row-0179-oldcode",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 180,
+      "teamId": "2019-gpm-iteso-row-0180-maravilla-team",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 181,
+      "teamId": "2019-gpm-iteso-row-0181-c-nadores",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 182,
+      "teamId": "2019-gpm-iteso-row-0182-yippee-ki-yay-mother-coders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 183,
+      "teamId": "2019-gpm-iteso-row-0183-trying",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 184,
+      "teamId": "2019-gpm-iteso-row-0184-innombrables",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 185,
+      "teamId": "2019-gpm-iteso-row-0185-codebusters",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 186,
+      "teamId": "2019-gpm-iteso-row-0186-a-cuanto-las-paletas-de-a-peso",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 187,
+      "teamId": "2019-gpm-iteso-row-0187-p7",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 188,
+      "teamId": "2019-gpm-iteso-row-0188-las-3-gemas-del-infinito",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 189,
+      "teamId": "2019-gpm-iteso-row-0189-jalapenos-developer-team",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 190,
+      "teamId": "2019-gpm-iteso-row-0190-qubits",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 191,
+      "teamId": "2019-gpm-iteso-row-0191-galacticos-2",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 192,
+      "teamId": "2019-gpm-iteso-row-0192-rike-polle-de-10-pesitos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 193,
+      "teamId": "2019-gpm-iteso-row-0193-neko",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 194,
+      "teamId": "2019-gpm-iteso-row-0194-exco",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 195,
+      "teamId": "2019-gpm-iteso-row-0195-los-kirboz",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 196,
+      "teamId": "2019-gpm-iteso-row-0196-aoc",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 197,
+      "teamId": "2019-gpm-iteso-row-0197-beagletown",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 198,
+      "teamId": "2019-gpm-iteso-row-0198-codevengers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 199,
+      "teamId": "2019-gpm-iteso-row-0199-dinamita2",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 200,
+      "teamId": "2019-gpm-iteso-row-0200-teamname",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 201,
+      "teamId": "2019-gpm-iteso-row-0201-rm-rf",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 202,
+      "teamId": "2019-gpm-iteso-row-0202-costa8",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 203,
+      "teamId": "2019-gpm-iteso-row-0203-team-warriors",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 204,
+      "teamId": "2019-gpm-iteso-row-0204-su-e-cloud",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 205,
+      "teamId": "2019-gpm-iteso-row-0205-ya-nos-vamos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 206,
+      "teamId": "2019-gpm-iteso-row-0206-equipo106",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 207,
+      "teamId": "2019-gpm-iteso-row-0207-eabel",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 208,
+      "teamId": "2019-gpm-iteso-row-0208-chillakillers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 209,
+      "teamId": "2019-gpm-iteso-row-0209-isanse",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 210,
+      "teamId": "2019-gpm-iteso-row-0210-ducks",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 211,
+      "teamId": "2019-gpm-iteso-row-0211-blujs",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 212,
+      "teamId": "2019-gpm-iteso-row-0212-smite",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 213,
+      "teamId": "2019-gpm-iteso-row-0213-los-ansiosos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 214,
+      "teamId": "2019-gpm-iteso-row-0214-constelacion",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 215,
+      "teamId": "2019-gpm-iteso-row-0215-byte-by-byte",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 216,
+      "teamId": "2019-gpm-iteso-row-0216-webceleb",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 217,
+      "teamId": "2019-gpm-iteso-row-0217-sick-programmation",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 218,
+      "teamId": "2019-gpm-iteso-row-0218-ioexception",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 219,
+      "teamId": "2019-gpm-iteso-row-0219-ayuwoki",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 220,
+      "teamId": "2019-gpm-iteso-row-0220-zero",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 221,
+      "teamId": "2019-gpm-iteso-row-0221-indigo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 222,
+      "teamId": "2019-gpm-iteso-row-0222-white-space",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 223,
+      "teamId": "2019-gpm-iteso-row-0223-g-e-n-e-s-i-s",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 224,
+      "teamId": "2019-gpm-iteso-row-0224-costa7",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 225,
+      "teamId": "2019-gpm-iteso-row-0225-los-carnales-v",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 226,
+      "teamId": "2019-gpm-iteso-row-0226-lobocoders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 227,
+      "teamId": "2019-gpm-iteso-row-0227-brimsoft",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 228,
+      "teamId": "2019-gpm-iteso-row-0228-the-last-one",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 229,
+      "teamId": "2019-gpm-iteso-row-0229-tle-not-found",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 230,
+      "teamId": "2019-gpm-iteso-row-0230-no-compila",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 231,
+      "teamId": "2019-gpm-iteso-row-0231-ami-ubicom-sorrynotfound",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 232,
+      "teamId": "2019-gpm-iteso-row-0232-cytma",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 233,
+      "teamId": "2019-gpm-iteso-row-0233-tonaltecas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 234,
+      "teamId": "2019-gpm-iteso-row-0234-tcp",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 235,
+      "teamId": "2019-gpm-iteso-row-0235-fondo-de-bikini",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 236,
+      "teamId": "2019-gpm-iteso-row-0236-polokos-escom",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 237,
+      "teamId": "2019-gpm-iteso-row-0237-o-possum",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 238,
+      "teamId": "2019-gpm-iteso-row-0238-te-ma",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 239,
+      "teamId": "2019-gpm-iteso-row-0239-los-herederos-de-solis",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 240,
+      "teamId": "2019-gpm-iteso-row-0240-uwu",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 241,
+      "teamId": "2019-gpm-iteso-row-0241-programadores-logicos-en-fase-de",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 242,
+      "teamId": "2019-gpm-iteso-row-0242-el-cartel-de-java",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 243,
+      "teamId": "2019-gpm-iteso-row-0243-costa10",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 244,
+      "teamId": "2019-gpm-iteso-row-0244-hackemate",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 245,
+      "teamId": "2019-gpm-iteso-row-0245-team-porras-cs",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 246,
+      "teamId": "2019-gpm-iteso-row-0246-los-pescadores-del-rio-bravo",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 247,
+      "teamId": "2019-gpm-iteso-row-0247-shell1",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 248,
+      "teamId": "2019-gpm-iteso-row-0248-qubitsn-t",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 249,
+      "teamId": "2019-gpm-iteso-row-0249-icpcrikos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 250,
+      "teamId": "2019-gpm-iteso-row-0250-los-purepechas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 251,
+      "teamId": "2019-gpm-iteso-row-0251-oozma-kappa",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 252,
+      "teamId": "2019-gpm-iteso-row-0252-lgm",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 253,
+      "teamId": "2019-gpm-iteso-row-0253-tornados-tlaquepaque",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 254,
+      "teamId": "2019-gpm-iteso-row-0254-espartanos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 255,
+      "teamId": "2019-gpm-iteso-row-0255-jpc",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 256,
+      "teamId": "2019-gpm-iteso-row-0256-nionic",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 257,
+      "teamId": "2019-gpm-iteso-row-0257-equipo-perdedor",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 258,
+      "teamId": "2019-gpm-iteso-row-0258-gorditos-y-bonitos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 259,
+      "teamId": "2019-gpm-iteso-row-0259-lumib-17",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 260,
+      "teamId": "2019-gpm-iteso-row-0260-code-117",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 261,
+      "teamId": "2019-gpm-iteso-row-0261-los-numpys",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 262,
+      "teamId": "2019-gpm-iteso-row-0262-conos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 263,
+      "teamId": "2019-gpm-iteso-row-0263-laboratorio-14",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 264,
+      "teamId": "2019-gpm-iteso-row-0264-los-hijos-de-kal-el",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 265,
+      "teamId": "2019-gpm-iteso-row-0265-bubulubuenos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 266,
+      "teamId": "2019-gpm-iteso-row-0266-sacos-de-abono",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 267,
+      "teamId": "2019-gpm-iteso-row-0267-equipo-7",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 268,
+      "teamId": "2019-gpm-iteso-row-0268-triforce",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 269,
+      "teamId": "2019-gpm-iteso-row-0269-galacticos-5",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 270,
+      "teamId": "2019-gpm-iteso-row-0270-qbots",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 271,
+      "teamId": "2019-gpm-iteso-row-0271-bynamite",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 272,
+      "teamId": "2019-gpm-iteso-row-0272-chomsky",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 273,
+      "teamId": "2019-gpm-iteso-row-0273-random-name",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 274,
+      "teamId": "2019-gpm-iteso-row-0274-los-chicos-del-tec",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 275,
+      "teamId": "2019-gpm-iteso-row-0275-los-padrinos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 276,
+      "teamId": "2019-gpm-iteso-row-0276-lsb",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 277,
+      "teamId": "2019-gpm-iteso-row-0277-coyotes-guerreros",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 278,
+      "teamId": "2019-gpm-iteso-row-0278-chanchitos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 279,
+      "teamId": "2019-gpm-iteso-row-0279-los-primeros",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 280,
+      "teamId": "2019-gpm-iteso-row-0280-charmander",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 281,
+      "teamId": "2019-gpm-iteso-row-0281-darkcodes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 282,
+      "teamId": "2019-gpm-iteso-row-0282-dragones",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 283,
+      "teamId": "2019-gpm-iteso-row-0283-dataforsker",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 284,
+      "teamId": "2019-gpm-iteso-row-0284-the-north-code",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 285,
+      "teamId": "2019-gpm-iteso-row-0285-alt-f4",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 286,
+      "teamId": "2019-gpm-iteso-row-0286-gumaca",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 287,
+      "teamId": "2019-gpm-iteso-row-0287-troyanos-uaq",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 288,
+      "teamId": "2019-gpm-iteso-row-0288-las-inevitables",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 289,
+      "teamId": "2019-gpm-iteso-row-0289-los-valedores-de-iztacalco",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 290,
+      "teamId": "2019-gpm-iteso-row-0290-alpha-strike",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 291,
+      "teamId": "2019-gpm-iteso-row-0291-time-limit-exceeded",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 292,
+      "teamId": "2019-gpm-iteso-row-0292-black-mens",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 293,
+      "teamId": "2019-gpm-iteso-row-0293-cometa-azul",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 294,
+      "teamId": "2019-gpm-iteso-row-0294-dinamita",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 295,
+      "teamId": "2019-gpm-iteso-row-0295-avengers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 296,
+      "teamId": "2019-gpm-iteso-row-0296-don-al-2",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 297,
+      "teamId": "2019-gpm-iteso-row-0297-aristogatos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 298,
+      "teamId": "2019-gpm-iteso-row-0298-los-scooby-y-el-misterio-de-la-p",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 299,
+      "teamId": "2019-gpm-iteso-row-0299-pass-of-death",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 300,
+      "teamId": "2019-gpm-iteso-row-0300-grizzlies",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 301,
+      "teamId": "2019-gpm-iteso-row-0301-si-no-gano-me-reprueban",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 302,
+      "teamId": "2019-gpm-iteso-row-0302-alpha-omega",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 303,
+      "teamId": "2019-gpm-iteso-row-0303-ragnarok",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 304,
+      "teamId": "2019-gpm-iteso-row-0304-loscorrecodigos-exe",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 305,
+      "teamId": "2019-gpm-iteso-row-0305-los-perezosos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 306,
+      "teamId": "2019-gpm-iteso-row-0306-asdw",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 307,
+      "teamId": "2019-gpm-iteso-row-0307-team-oty",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 308,
+      "teamId": "2019-gpm-iteso-row-0308-umt-uady",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 309,
+      "teamId": "2019-gpm-iteso-row-0309-ami-ubicom-rangers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 310,
+      "teamId": "2019-gpm-iteso-row-0310-diy",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 311,
+      "teamId": "2019-gpm-iteso-row-0311-teclaguna1",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 312,
+      "teamId": "2019-gpm-iteso-row-0312-stdio-h",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 313,
+      "teamId": "2019-gpm-iteso-row-0313-the-noobs",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 314,
+      "teamId": "2019-gpm-iteso-row-0314-eddan",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 315,
+      "teamId": "2019-gpm-iteso-row-0315-rockstar-nsfw",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 316,
+      "teamId": "2019-gpm-iteso-row-0316-irresponsables",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 317,
+      "teamId": "2019-gpm-iteso-row-0317-acapulqueques",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 318,
+      "teamId": "2019-gpm-iteso-row-0318-los-nopales-cosmicos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 319,
+      "teamId": "2019-gpm-iteso-row-0319-programadores-logicos-en-fase-de",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 320,
+      "teamId": "2019-gpm-iteso-row-0320-gree-you",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 321,
+      "teamId": "2019-gpm-iteso-row-0321-punto-y-coma",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 322,
+      "teamId": "2019-gpm-iteso-row-0322-anonymus",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 323,
+      "teamId": "2019-gpm-iteso-row-0323-abp",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 324,
+      "teamId": "2019-gpm-iteso-row-0324-koders",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 325,
+      "teamId": "2019-gpm-iteso-row-0325-shazam",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 326,
+      "teamId": "2019-gpm-iteso-row-0326-bits",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 327,
+      "teamId": "2019-gpm-iteso-row-0327-fc-biome-s",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 328,
+      "teamId": "2019-gpm-iteso-row-0328-5k",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 329,
+      "teamId": "2019-gpm-iteso-row-0329-suzanahorias",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 330,
+      "teamId": "2019-gpm-iteso-row-0330-code-rookies",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 331,
+      "teamId": "2019-gpm-iteso-row-0331-nunpy",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 332,
+      "teamId": "2019-gpm-iteso-row-0332-qbits",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 333,
+      "teamId": "2019-gpm-iteso-row-0333-segmentation-fault",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 334,
+      "teamId": "2019-gpm-iteso-row-0334-the-phantom-thieves-of-code",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 335,
+      "teamId": "2019-gpm-iteso-row-0335-tacos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 336,
+      "teamId": "2019-gpm-iteso-row-0336-syntax-error",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 337,
+      "teamId": "2019-gpm-iteso-row-0337-los-teslas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 338,
+      "teamId": "2019-gpm-iteso-row-0338-cantavit",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 339,
+      "teamId": "2019-gpm-iteso-row-0339-lobos-galacticos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 340,
+      "teamId": "2019-gpm-iteso-row-0340-galacticos-3",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 341,
+      "teamId": "2019-gpm-iteso-row-0341-note-nv",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 342,
+      "teamId": "2019-gpm-iteso-row-0342-los-charks",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 343,
+      "teamId": "2019-gpm-iteso-row-0343-pizza-atomica-2-0",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 344,
+      "teamId": "2019-gpm-iteso-row-0344-noobmaster69",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 345,
+      "teamId": "2019-gpm-iteso-row-0345-softtrooper",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 346,
+      "teamId": "2019-gpm-iteso-row-0346-vicabe",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 347,
+      "teamId": "2019-gpm-iteso-row-0347-team-omnicos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 348,
+      "teamId": "2019-gpm-iteso-row-0348-symbolab",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 349,
+      "teamId": "2019-gpm-iteso-row-0349-valhalla",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 350,
+      "teamId": "2019-gpm-iteso-row-0350-ucreaycode",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 351,
+      "teamId": "2019-gpm-iteso-row-0351-the-skulls",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 352,
+      "teamId": "2019-gpm-iteso-row-0352-singleton",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 353,
+      "teamId": "2019-gpm-iteso-row-0353-tokki-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 354,
+      "teamId": "2019-gpm-iteso-row-0354-softuaz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 355,
+      "teamId": "2019-gpm-iteso-row-0355-team-capi",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 356,
+      "teamId": "2019-gpm-iteso-row-0356-deletesystem32",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 357,
+      "teamId": "2019-gpm-iteso-row-0357-el-tri",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 358,
+      "teamId": "2019-gpm-iteso-row-0358-goodfellas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 359,
+      "teamId": "2019-gpm-iteso-row-0359-arraylist",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 360,
+      "teamId": "2019-gpm-iteso-row-0360-los-primos-de-fermat",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 361,
+      "teamId": "2019-gpm-iteso-row-0361-los-cerebros-de-pollo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 362,
+      "teamId": "2019-gpm-iteso-row-0362-dejavu",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 363,
+      "teamId": "2019-gpm-iteso-row-0363-abstract-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 364,
+      "teamId": "2019-gpm-iteso-row-0364-critical-infamous",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 365,
+      "teamId": "2019-gpm-iteso-row-0365-uat-mapachitos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 366,
+      "teamId": "2019-gpm-iteso-row-0366-los-huracanes-del-teclado",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 367,
+      "teamId": "2019-gpm-iteso-row-0367-sovie",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 368,
+      "teamId": "2019-gpm-iteso-row-0368-jaguares",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 369,
+      "teamId": "2019-gpm-iteso-row-0369-the-arrayngers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 370,
+      "teamId": "2019-gpm-iteso-row-0370-tecmm-grullo-2",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 371,
+      "teamId": "2019-gpm-iteso-row-0371-team-jar",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 372,
+      "teamId": "2019-gpm-iteso-row-0372-the-monitors",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 373,
+      "teamId": "2019-gpm-iteso-row-0373-los-noobs",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 374,
+      "teamId": "2019-gpm-iteso-row-0374-screenprint",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 375,
+      "teamId": "2019-gpm-iteso-row-0375-los-kabos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 376,
+      "teamId": "2019-gpm-iteso-row-0376-charizar",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 377,
+      "teamId": "2019-gpm-iteso-row-0377-software-libre",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 378,
+      "teamId": "2019-gpm-iteso-row-0378-the-yutas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 379,
+      "teamId": "2019-gpm-iteso-row-0379-bam",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 380,
+      "teamId": "2019-gpm-iteso-row-0380-combos-a-99",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 381,
+      "teamId": "2019-gpm-iteso-row-0381-las-colorburgers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 382,
+      "teamId": "2019-gpm-iteso-row-0382-acusticartisans",
+      "score": 1,
+      "qualified": null
+    }
+  ],
+  "source": "https://acm.iteso.mx/share/gp2019_resultados_acumulados_tercera_fecha.pdf",
+  "scoreUnit": "Puntos",
+  "snapshot": "unconfirmed",
+  "snapshotLabel": "Acumulado hasta la tercera fecha"
+}

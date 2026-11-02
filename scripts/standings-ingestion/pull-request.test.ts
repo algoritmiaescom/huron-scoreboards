@@ -51,6 +51,7 @@ const seasonStandingCandidate: ReviewProposal['seasonStandingCandidates'][number
       place: 1,
       sourceTeamId: 'Equipo Alpha',
       teamName: 'Equipo Alpha',
+      schoolName: null,
       score: 12.5,
       scoreText: '12.5',
       scoreUnit: 'Puntos',

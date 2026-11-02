@@ -1,3 +1,4 @@
+import { bestKnownPlace, isPodiumPlace } from './ranking';
 import { selectSchoolHistory } from './selectors';
 
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
@@ -23,8 +24,8 @@ export const selectSchoolHistoryPresentation = (
       contests: new Set(rows.map(({ contest }) => contest.id)).size,
       teams: new Set(rows.map(({ row }) => row.teamId)).size,
       solved: rows.reduce((total, { row }) => total + row.solved, 0),
-      bestPlace: Math.min(...rows.map(({ row }) => row.place)),
-      podiums: rows.filter(({ row }) => row.place <= 3),
+      bestPlace: bestKnownPlace(rows.map(({ row }) => row.place)),
+      podiums: rows.filter(({ row }) => isPodiumPlace(row.place)),
     };
   });
   return {
@@ -36,11 +37,10 @@ export const selectSchoolHistoryPresentation = (
         results: contests.length,
         contests: new Set(contests.map(({ contest }) => contest.id)).size,
         teams: new Set(contests.map(({ row }) => row.teamId)).size,
-        podiums: contests.filter(({ row }) => row.place <= 3).length,
-        bestPlace:
-          contests.length === 0 ? undefined : Math.min(...contests.map(({ row }) => row.place)),
+        podiums: contests.filter(({ row }) => isPodiumPlace(row.place)).length,
+        bestPlace: bestKnownPlace(contests.map(({ row }) => row.place)),
       },
-      podiums: contests.filter(({ row }) => row.place <= 3),
+      podiums: contests.filter(({ row }) => isPodiumPlace(row.place)),
       accumulated,
     },
   };

@@ -17,6 +17,7 @@ import { ProblemResults } from './ProblemResults';
 import { SchoolIdentity } from './SchoolIdentity';
 import { StandingCard } from './StandingCard';
 import { TeamIdentity } from './TeamIdentity';
+import { formatPlace } from '../model/ranking';
 
 import type { Contest } from '../model/schemas';
 import type { selectContestRows } from '../model/selectors';
@@ -151,7 +152,7 @@ export const ContestStandings = ({
           {rows.map((row) => (
             <TableRow key={row.teamId}>
               <TableCell data-identity-column="place">
-                <Typography variant="data">#{row.place}</Typography>
+                <Typography variant="data">{formatPlace(row.place)}</Typography>
               </TableCell>
               <TableCell component="th" scope="row" data-identity-column="team">
                 <TeamIdentity team={row.team} />

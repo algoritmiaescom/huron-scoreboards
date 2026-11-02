@@ -1,0 +1,3699 @@
+{
+  "seasonYear": 2026,
+  "seriesId": "gpm",
+  "rows": [
+    {
+      "place": 1,
+      "teamId": "2026-gpm-accumulated-1127493",
+      "score": 435,
+      "qualified": true
+    },
+    {
+      "place": 2,
+      "teamId": "2026-gpm-accumulated-1128527",
+      "score": 425,
+      "qualified": true
+    },
+    {
+      "place": 3,
+      "teamId": "2026-gpm-accumulated-1126734",
+      "score": 425,
+      "qualified": true
+    },
+    {
+      "place": 4,
+      "teamId": "2026-gpm-accumulated-1126730",
+      "score": 390,
+      "qualified": true
+    },
+    {
+      "place": 5,
+      "teamId": "2026-gpm-accumulated-1127051",
+      "score": 356,
+      "qualified": true
+    },
+    {
+      "place": 6,
+      "teamId": "2026-gpm-accumulated-1126297",
+      "score": 342,
+      "qualified": true
+    },
+    {
+      "place": 7,
+      "teamId": "2026-gpm-accumulated-1127167",
+      "score": 336,
+      "qualified": true
+    },
+    {
+      "place": 8,
+      "teamId": "2026-gpm-accumulated-1126438",
+      "score": 335,
+      "qualified": true
+    },
+    {
+      "place": 9,
+      "teamId": "2026-gpm-accumulated-1128183",
+      "score": 319,
+      "qualified": true
+    },
+    {
+      "place": 10,
+      "teamId": "2026-gpm-accumulated-1127319",
+      "score": 301,
+      "qualified": true
+    },
+    {
+      "place": 11,
+      "teamId": "2026-gpm-accumulated-1126733",
+      "score": 272,
+      "qualified": true
+    },
+    {
+      "place": 12,
+      "teamId": "2026-gpm-accumulated-1128291",
+      "score": 243,
+      "qualified": true
+    },
+    {
+      "place": 13,
+      "teamId": "2026-gpm-accumulated-1128163",
+      "score": 227,
+      "qualified": true
+    },
+    {
+      "place": 14,
+      "teamId": "2026-gpm-accumulated-1126688",
+      "score": 224,
+      "qualified": true
+    },
+    {
+      "place": 15,
+      "teamId": "2026-gpm-accumulated-1128611",
+      "score": 224,
+      "qualified": true
+    },
+    {
+      "place": 16,
+      "teamId": "2026-gpm-accumulated-1124919",
+      "score": 213,
+      "qualified": true
+    },
+    {
+      "place": 17,
+      "teamId": "2026-gpm-accumulated-1128214",
+      "score": 213,
+      "qualified": true
+    },
+    {
+      "place": 18,
+      "teamId": "2026-gpm-accumulated-1126805",
+      "score": 206,
+      "qualified": null
+    },
+    {
+      "place": 19,
+      "teamId": "2026-gpm-accumulated-1128259",
+      "score": 204,
+      "qualified": true
+    },
+    {
+      "place": 20,
+      "teamId": "2026-gpm-accumulated-1128226",
+      "score": 201,
+      "qualified": true
+    },
+    {
+      "place": 21,
+      "teamId": "2026-gpm-accumulated-1124449",
+      "score": 195,
+      "qualified": true
+    },
+    {
+      "place": 22,
+      "teamId": "2026-gpm-accumulated-1126433",
+      "score": 194,
+      "qualified": true
+    },
+    {
+      "place": 23,
+      "teamId": "2026-gpm-accumulated-1126735",
+      "score": 184,
+      "qualified": null
+    },
+    {
+      "place": 24,
+      "teamId": "2026-gpm-accumulated-1145579",
+      "score": 175,
+      "qualified": true
+    },
+    {
+      "place": 25,
+      "teamId": "2026-gpm-accumulated-1127172",
+      "score": 154,
+      "qualified": true
+    },
+    {
+      "place": 26,
+      "teamId": "2026-gpm-accumulated-1126921",
+      "score": 144,
+      "qualified": true
+    },
+    {
+      "place": 27,
+      "teamId": "2026-gpm-accumulated-1126200",
+      "score": 141,
+      "qualified": true
+    },
+    {
+      "place": 28,
+      "teamId": "2026-gpm-accumulated-1128262",
+      "score": 137,
+      "qualified": true
+    },
+    {
+      "place": 29,
+      "teamId": "2026-gpm-accumulated-1126436",
+      "score": 136,
+      "qualified": true
+    },
+    {
+      "place": 30,
+      "teamId": "2026-gpm-accumulated-1145483",
+      "score": 130,
+      "qualified": true
+    },
+    {
+      "place": 31,
+      "teamId": "2026-gpm-accumulated-1126994",
+      "score": 122,
+      "qualified": true
+    },
+    {
+      "place": 32,
+      "teamId": "2026-gpm-accumulated-1145627",
+      "score": 120,
+      "qualified": true
+    },
+    {
+      "place": 33,
+      "teamId": "2026-gpm-accumulated-1128265",
+      "score": 98,
+      "qualified": true
+    },
+    {
+      "place": 34,
+      "teamId": "2026-gpm-accumulated-1124477",
+      "score": 82,
+      "qualified": true
+    },
+    {
+      "place": 35,
+      "teamId": "2026-gpm-accumulated-1126382",
+      "score": 82,
+      "qualified": true
+    },
+    {
+      "place": 36,
+      "teamId": "2026-gpm-accumulated-1128187",
+      "score": 79,
+      "qualified": true
+    },
+    {
+      "place": 37,
+      "teamId": "2026-gpm-accumulated-1126868",
+      "score": 78,
+      "qualified": true
+    },
+    {
+      "place": 38,
+      "teamId": "2026-gpm-accumulated-1128574",
+      "score": 77,
+      "qualified": true
+    },
+    {
+      "place": 39,
+      "teamId": "2026-gpm-accumulated-1127573",
+      "score": 77,
+      "qualified": true
+    },
+    {
+      "place": 40,
+      "teamId": "2026-gpm-accumulated-1126728",
+      "score": 76,
+      "qualified": true
+    },
+    {
+      "place": 41,
+      "teamId": "2026-gpm-accumulated-1126908",
+      "score": 76,
+      "qualified": null
+    },
+    {
+      "place": 42,
+      "teamId": "2026-gpm-accumulated-1128438",
+      "score": 76,
+      "qualified": true
+    },
+    {
+      "place": 43,
+      "teamId": "2026-gpm-accumulated-1128535",
+      "score": 72,
+      "qualified": true
+    },
+    {
+      "place": 44,
+      "teamId": "2026-gpm-accumulated-1126856",
+      "score": 66,
+      "qualified": true
+    },
+    {
+      "place": 45,
+      "teamId": "2026-gpm-accumulated-1126211",
+      "score": 66,
+      "qualified": true
+    },
+    {
+      "place": 46,
+      "teamId": "2026-gpm-accumulated-1126284",
+      "score": 63,
+      "qualified": true
+    },
+    {
+      "place": 47,
+      "teamId": "2026-gpm-accumulated-1131858",
+      "score": 59,
+      "qualified": true
+    },
+    {
+      "place": 48,
+      "teamId": "2026-gpm-accumulated-1125051",
+      "score": 53,
+      "qualified": true
+    },
+    {
+      "place": 49,
+      "teamId": "2026-gpm-accumulated-1126198",
+      "score": 52,
+      "qualified": true
+    },
+    {
+      "place": 50,
+      "teamId": "2026-gpm-accumulated-1129016",
+      "score": 51,
+      "qualified": true
+    },
+    {
+      "place": 51,
+      "teamId": "2026-gpm-accumulated-1126876",
+      "score": 45,
+      "qualified": true
+    },
+    {
+      "place": 52,
+      "teamId": "2026-gpm-accumulated-1127155",
+      "score": 43,
+      "qualified": true
+    },
+    {
+      "place": 53,
+      "teamId": "2026-gpm-accumulated-1127049",
+      "score": 42,
+      "qualified": true
+    },
+    {
+      "place": 54,
+      "teamId": "2026-gpm-accumulated-1134850",
+      "score": 40,
+      "qualified": true
+    },
+    {
+      "place": 55,
+      "teamId": "2026-gpm-accumulated-1126437",
+      "score": 38,
+      "qualified": null
+    },
+    {
+      "place": 56,
+      "teamId": "2026-gpm-accumulated-1127131",
+      "score": 36,
+      "qualified": true
+    },
+    {
+      "place": 57,
+      "teamId": "2026-gpm-accumulated-1127679",
+      "score": 29,
+      "qualified": true
+    },
+    {
+      "place": 58,
+      "teamId": "2026-gpm-accumulated-1128549",
+      "score": 29,
+      "qualified": null
+    },
+    {
+      "place": 59,
+      "teamId": "2026-gpm-accumulated-1126203",
+      "score": 28,
+      "qualified": null
+    },
+    {
+      "place": 60,
+      "teamId": "2026-gpm-accumulated-1128188",
+      "score": 25,
+      "qualified": null
+    },
+    {
+      "place": 61,
+      "teamId": "2026-gpm-accumulated-1126632",
+      "score": 22,
+      "qualified": true
+    },
+    {
+      "place": 62,
+      "teamId": "2026-gpm-accumulated-1126752",
+      "score": 22,
+      "qualified": null
+    },
+    {
+      "place": 63,
+      "teamId": "2026-gpm-accumulated-1127006",
+      "score": 20,
+      "qualified": null
+    },
+    {
+      "place": 64,
+      "teamId": "2026-gpm-accumulated-1127227",
+      "score": 19,
+      "qualified": true
+    },
+    {
+      "place": 65,
+      "teamId": "2026-gpm-accumulated-1127189",
+      "score": 18,
+      "qualified": true
+    },
+    {
+      "place": 66,
+      "teamId": "2026-gpm-accumulated-1128555",
+      "score": 17,
+      "qualified": null
+    },
+    {
+      "place": 67,
+      "teamId": "2026-gpm-accumulated-1126687",
+      "score": 15,
+      "qualified": null
+    },
+    {
+      "place": 68,
+      "teamId": "2026-gpm-accumulated-1128302",
+      "score": 15,
+      "qualified": null
+    },
+    {
+      "place": 69,
+      "teamId": "2026-gpm-accumulated-1127949",
+      "score": 13,
+      "qualified": true
+    },
+    {
+      "place": 70,
+      "teamId": "2026-gpm-accumulated-1128447",
+      "score": 12,
+      "qualified": null
+    },
+    {
+      "place": 71,
+      "teamId": "2026-gpm-accumulated-1132431",
+      "score": 11,
+      "qualified": true
+    },
+    {
+      "place": 72,
+      "teamId": "2026-gpm-accumulated-1128525",
+      "score": 9,
+      "qualified": null
+    },
+    {
+      "place": 73,
+      "teamId": "2026-gpm-accumulated-1126426",
+      "score": 9,
+      "qualified": null
+    },
+    {
+      "place": 74,
+      "teamId": "2026-gpm-accumulated-1126423",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 75,
+      "teamId": "2026-gpm-accumulated-1126383",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 76,
+      "teamId": "2026-gpm-accumulated-1126736",
+      "score": 5,
+      "qualified": true
+    },
+    {
+      "place": 77,
+      "teamId": "2026-gpm-accumulated-1126447",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 78,
+      "teamId": "2026-gpm-accumulated-1128548",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 79,
+      "teamId": "2026-gpm-accumulated-1127182",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 80,
+      "teamId": "2026-gpm-accumulated-1128524",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 81,
+      "teamId": "2026-gpm-accumulated-1126915",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 82,
+      "teamId": "2026-gpm-accumulated-1127587",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 83,
+      "teamId": "2026-gpm-accumulated-1124458",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 84,
+      "teamId": "2026-gpm-accumulated-1127152",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 85,
+      "teamId": "2026-gpm-accumulated-1128260",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 86,
+      "teamId": "2026-gpm-accumulated-1128570",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 87,
+      "teamId": "2026-gpm-accumulated-1126408",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 88,
+      "teamId": "2026-gpm-accumulated-1127158",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 89,
+      "teamId": "2026-gpm-accumulated-1128254",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 90,
+      "teamId": "2026-gpm-accumulated-1126740",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 91,
+      "teamId": "2026-gpm-accumulated-1128075",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 92,
+      "teamId": "2026-gpm-accumulated-1127163",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 93,
+      "teamId": "2026-gpm-accumulated-1127166",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 94,
+      "teamId": "2026-gpm-accumulated-1126283",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 95,
+      "teamId": "2026-gpm-accumulated-1126285",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 96,
+      "teamId": "2026-gpm-accumulated-1127183",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 97,
+      "teamId": "2026-gpm-accumulated-1124459",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 98,
+      "teamId": "2026-gpm-accumulated-1127138",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 99,
+      "teamId": "2026-gpm-accumulated-1126739",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 100,
+      "teamId": "2026-gpm-accumulated-1128575",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 101,
+      "teamId": "2026-gpm-accumulated-1128209",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 102,
+      "teamId": "2026-gpm-accumulated-1128471",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 103,
+      "teamId": "2026-gpm-accumulated-1127164",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 104,
+      "teamId": "2026-gpm-accumulated-1128164",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 105,
+      "teamId": "2026-gpm-accumulated-1124490",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 106,
+      "teamId": "2026-gpm-accumulated-1126891",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 107,
+      "teamId": "2026-gpm-accumulated-1127329",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 108,
+      "teamId": "2026-gpm-accumulated-1127016",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 109,
+      "teamId": "2026-gpm-accumulated-1128614",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 110,
+      "teamId": "2026-gpm-accumulated-1124504",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 111,
+      "teamId": "2026-gpm-accumulated-1127331",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 112,
+      "teamId": "2026-gpm-accumulated-1126454",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 113,
+      "teamId": "2026-gpm-accumulated-1127151",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 114,
+      "teamId": "2026-gpm-accumulated-1124533",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 115,
+      "teamId": "2026-gpm-accumulated-1127188",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 116,
+      "teamId": "2026-gpm-accumulated-1127009",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 117,
+      "teamId": "2026-gpm-accumulated-1126511",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 118,
+      "teamId": "2026-gpm-accumulated-1124473",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 119,
+      "teamId": "2026-gpm-accumulated-1127048",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 120,
+      "teamId": "2026-gpm-accumulated-1128250",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 121,
+      "teamId": "2026-gpm-accumulated-1126829",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 122,
+      "teamId": "2026-gpm-accumulated-1127677",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 123,
+      "teamId": "2026-gpm-accumulated-1128266",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 124,
+      "teamId": "2026-gpm-accumulated-1127153",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 125,
+      "teamId": "2026-gpm-accumulated-1127929",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 126,
+      "teamId": "2026-gpm-accumulated-1126434",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 127,
+      "teamId": "2026-gpm-accumulated-1128218",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 128,
+      "teamId": "2026-gpm-accumulated-1126992",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 129,
+      "teamId": "2026-gpm-accumulated-1124921",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 130,
+      "teamId": "2026-gpm-accumulated-1127600",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 131,
+      "teamId": "2026-gpm-accumulated-1127948",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 132,
+      "teamId": "2026-gpm-accumulated-1128452",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 133,
+      "teamId": "2026-gpm-accumulated-1127207",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 134,
+      "teamId": "2026-gpm-accumulated-1126386",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 135,
+      "teamId": "2026-gpm-accumulated-1127228",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 136,
+      "teamId": "2026-gpm-accumulated-1126293",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 137,
+      "teamId": "2026-gpm-accumulated-1128337",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 138,
+      "teamId": "2026-gpm-accumulated-1126443",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 139,
+      "teamId": "2026-gpm-accumulated-1124859",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 140,
+      "teamId": "2026-gpm-accumulated-1127149",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 141,
+      "teamId": "2026-gpm-accumulated-1126400",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 142,
+      "teamId": "2026-gpm-accumulated-1126689",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 143,
+      "teamId": "2026-gpm-accumulated-1126446",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 144,
+      "teamId": "2026-gpm-accumulated-1128181",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 145,
+      "teamId": "2026-gpm-accumulated-1127169",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 146,
+      "teamId": "2026-gpm-accumulated-1128267",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 147,
+      "teamId": "2026-gpm-accumulated-1126980",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 148,
+      "teamId": "2026-gpm-accumulated-1127321",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 149,
+      "teamId": "2026-gpm-accumulated-1128253",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 150,
+      "teamId": "2026-gpm-accumulated-1128541",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 151,
+      "teamId": "2026-gpm-accumulated-1128488",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 152,
+      "teamId": "2026-gpm-accumulated-1127134",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 153,
+      "teamId": "2026-gpm-accumulated-1127638",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 154,
+      "teamId": "2026-gpm-accumulated-1128247",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 155,
+      "teamId": "2026-gpm-accumulated-1126827",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 156,
+      "teamId": "2026-gpm-accumulated-1127157",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 157,
+      "teamId": "2026-gpm-accumulated-1127222",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 158,
+      "teamId": "2026-gpm-accumulated-1126875",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 159,
+      "teamId": "2026-gpm-accumulated-1128526",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 160,
+      "teamId": "2026-gpm-accumulated-1126431",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 161,
+      "teamId": "2026-gpm-accumulated-1128125",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 162,
+      "teamId": "2026-gpm-accumulated-1124460",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 163,
+      "teamId": "2026-gpm-accumulated-1128612",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 164,
+      "teamId": "2026-gpm-accumulated-1124544",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 165,
+      "teamId": "2026-gpm-accumulated-1128135",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 166,
+      "teamId": "2026-gpm-accumulated-1128109",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 167,
+      "teamId": "2026-gpm-accumulated-1127234",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 168,
+      "teamId": "2026-gpm-accumulated-1126741",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 169,
+      "teamId": "2026-gpm-accumulated-1124405",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 170,
+      "teamId": "2026-gpm-accumulated-1128444",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 171,
+      "teamId": "2026-gpm-accumulated-1128225",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 172,
+      "teamId": "2026-gpm-accumulated-1128550",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 173,
+      "teamId": "2026-gpm-accumulated-1128277",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 174,
+      "teamId": "2026-gpm-accumulated-1128189",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 175,
+      "teamId": "2026-gpm-accumulated-1128207",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 176,
+      "teamId": "2026-gpm-accumulated-1127191",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 177,
+      "teamId": "2026-gpm-accumulated-1124454",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 178,
+      "teamId": "2026-gpm-accumulated-1126742",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 179,
+      "teamId": "2026-gpm-accumulated-1126424",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 180,
+      "teamId": "2026-gpm-accumulated-1127480",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 181,
+      "teamId": "2026-gpm-accumulated-1126639",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 182,
+      "teamId": "2026-gpm-accumulated-1127129",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 183,
+      "teamId": "2026-gpm-accumulated-1128563",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 184,
+      "teamId": "2026-gpm-accumulated-1128334",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 185,
+      "teamId": "2026-gpm-accumulated-1127005",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 186,
+      "teamId": "2026-gpm-accumulated-1128133",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 187,
+      "teamId": "2026-gpm-accumulated-1127165",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 188,
+      "teamId": "2026-gpm-accumulated-1127076",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 189,
+      "teamId": "2026-gpm-accumulated-1124922",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 190,
+      "teamId": "2026-gpm-accumulated-1124478",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 191,
+      "teamId": "2026-gpm-accumulated-1127160",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 191,
+      "teamId": "2026-gpm-accumulated-1128765",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 193,
+      "teamId": "2026-gpm-accumulated-1128020",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 194,
+      "teamId": "2026-gpm-accumulated-1127821",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 195,
+      "teamId": "2026-gpm-accumulated-1126916",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 196,
+      "teamId": "2026-gpm-accumulated-1128196",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 197,
+      "teamId": "2026-gpm-accumulated-1128605",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 198,
+      "teamId": "2026-gpm-accumulated-1128500",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 199,
+      "teamId": "2026-gpm-accumulated-1128481",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 200,
+      "teamId": "2026-gpm-accumulated-1126295",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 201,
+      "teamId": "2026-gpm-accumulated-1126914",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 202,
+      "teamId": "2026-gpm-accumulated-1128621",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 203,
+      "teamId": "2026-gpm-accumulated-1127173",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 204,
+      "teamId": "2026-gpm-accumulated-1127047",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 205,
+      "teamId": "2026-gpm-accumulated-1126199",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 206,
+      "teamId": "2026-gpm-accumulated-1128556",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 207,
+      "teamId": "2026-gpm-accumulated-1126743",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 207,
+      "teamId": "2026-gpm-accumulated-1124455",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 209,
+      "teamId": "2026-gpm-accumulated-1127201",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 210,
+      "teamId": "2026-gpm-accumulated-1128238",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 211,
+      "teamId": "2026-gpm-accumulated-1127154",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 212,
+      "teamId": "2026-gpm-accumulated-1128529",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 213,
+      "teamId": "2026-gpm-accumulated-1128263",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 214,
+      "teamId": "2026-gpm-accumulated-1128328",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 214,
+      "teamId": "2026-gpm-qualifier-1-row-0298-d9de19084ca3",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 216,
+      "teamId": "2026-gpm-accumulated-1127195",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 217,
+      "teamId": "2026-gpm-accumulated-1128540",
+      "score": 3,
+      "qualified": true
+    },
+    {
+      "place": 218,
+      "teamId": "2026-gpm-accumulated-1126444",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 219,
+      "teamId": "2026-gpm-accumulated-1128249",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 220,
+      "teamId": "2026-gpm-accumulated-1126738",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 221,
+      "teamId": "2026-gpm-accumulated-1127132",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 222,
+      "teamId": "2026-gpm-accumulated-1127597",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 223,
+      "teamId": "2026-gpm-accumulated-1127209",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 224,
+      "teamId": "2026-gpm-accumulated-1127186",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 225,
+      "teamId": "2026-gpm-accumulated-1127194",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 226,
+      "teamId": "2026-gpm-accumulated-1129021",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 227,
+      "teamId": "2026-gpm-accumulated-1128292",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 228,
+      "teamId": "2026-gpm-accumulated-1127145",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 229,
+      "teamId": "2026-gpm-accumulated-1128603",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 230,
+      "teamId": "2026-gpm-accumulated-1126638",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 231,
+      "teamId": "2026-gpm-accumulated-1124475",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 232,
+      "teamId": "2026-gpm-accumulated-1128557",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 233,
+      "teamId": "2026-gpm-accumulated-1126737",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 234,
+      "teamId": "2026-gpm-accumulated-1126744",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 235,
+      "teamId": "2026-gpm-accumulated-1126828",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 236,
+      "teamId": "2026-gpm-accumulated-1127066",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 237,
+      "teamId": "2026-gpm-accumulated-1124944",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 238,
+      "teamId": "2026-gpm-accumulated-1127225",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 239,
+      "teamId": "2026-gpm-accumulated-1124924",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 240,
+      "teamId": "2026-gpm-accumulated-1128310",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 241,
+      "teamId": "2026-gpm-accumulated-1128117",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 242,
+      "teamId": "2026-gpm-accumulated-1128279",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 243,
+      "teamId": "2026-gpm-accumulated-1128251",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 244,
+      "teamId": "2026-gpm-accumulated-1128453",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 245,
+      "teamId": "2026-gpm-accumulated-1128278",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 246,
+      "teamId": "2026-gpm-accumulated-1128257",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 247,
+      "teamId": "2026-gpm-accumulated-1127660",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 248,
+      "teamId": "2026-gpm-accumulated-1126271",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 249,
+      "teamId": "2026-gpm-accumulated-1124946",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 250,
+      "teamId": "2026-gpm-accumulated-1128224",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 251,
+      "teamId": "2026-gpm-accumulated-1127184",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 252,
+      "teamId": "2026-gpm-accumulated-1127662",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 253,
+      "teamId": "2026-gpm-accumulated-1127661",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 254,
+      "teamId": "2026-gpm-accumulated-1128268",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 255,
+      "teamId": "2026-gpm-accumulated-1128124",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 256,
+      "teamId": "2026-gpm-accumulated-1128468",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 257,
+      "teamId": "2026-gpm-accumulated-1124465",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 258,
+      "teamId": "2026-gpm-accumulated-1126465",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 259,
+      "teamId": "2026-gpm-accumulated-1124943",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 260,
+      "teamId": "2026-gpm-accumulated-1128459",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 261,
+      "teamId": "2026-gpm-accumulated-1127603",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 262,
+      "teamId": "2026-gpm-accumulated-1124923",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 263,
+      "teamId": "2026-gpm-accumulated-1126427",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 264,
+      "teamId": "2026-gpm-accumulated-1128506",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 265,
+      "teamId": "2026-gpm-accumulated-1127148",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 266,
+      "teamId": "2026-gpm-accumulated-1128543",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 267,
+      "teamId": "2026-gpm-accumulated-1128496",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 268,
+      "teamId": "2026-gpm-accumulated-1127187",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 269,
+      "teamId": "2026-gpm-accumulated-1128240",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 270,
+      "teamId": "2026-gpm-accumulated-1127202",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 271,
+      "teamId": "2026-gpm-qualifier-1-row-0464-c2d79784068c",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 272,
+      "teamId": "2026-gpm-accumulated-1128102",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 273,
+      "teamId": "2026-gpm-accumulated-1127046",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 274,
+      "teamId": "2026-gpm-accumulated-1134765",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 275,
+      "teamId": "2026-gpm-accumulated-1128532",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 276,
+      "teamId": "2026-gpm-accumulated-1127553",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 277,
+      "teamId": "2026-gpm-accumulated-1126435",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 278,
+      "teamId": "2026-gpm-accumulated-1124457",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 279,
+      "teamId": "2026-gpm-accumulated-1124503",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 280,
+      "teamId": "2026-gpm-accumulated-1127179",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 281,
+      "teamId": "2026-gpm-accumulated-1128523",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 282,
+      "teamId": "2026-gpm-accumulated-1128085",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 283,
+      "teamId": "2026-gpm-accumulated-1126832",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 284,
+      "teamId": "2026-gpm-accumulated-1128553",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 285,
+      "teamId": "2026-gpm-accumulated-1134742",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 286,
+      "teamId": "2026-gpm-accumulated-1128103",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 287,
+      "teamId": "2026-gpm-accumulated-1128210",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 288,
+      "teamId": "2026-gpm-accumulated-1126690",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 289,
+      "teamId": "2026-gpm-accumulated-1127174",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 290,
+      "teamId": "2026-gpm-accumulated-1126922",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 291,
+      "teamId": "2026-gpm-accumulated-1134719",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 292,
+      "teamId": "2026-gpm-accumulated-1134720",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 293,
+      "teamId": "2026-gpm-accumulated-1128019",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 294,
+      "teamId": "2026-gpm-accumulated-1127052",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 295,
+      "teamId": "2026-gpm-accumulated-1126830",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 296,
+      "teamId": "2026-gpm-accumulated-1128660",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 297,
+      "teamId": "2026-gpm-accumulated-1125052",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 298,
+      "teamId": "2026-gpm-accumulated-1128441",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 299,
+      "teamId": "2026-gpm-accumulated-1134418",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 300,
+      "teamId": "2026-gpm-accumulated-1127150",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 301,
+      "teamId": "2026-gpm-accumulated-1128536",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 302,
+      "teamId": "2026-gpm-accumulated-1126432",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 303,
+      "teamId": "2026-gpm-accumulated-1124411",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 304,
+      "teamId": "2026-gpm-accumulated-1127659",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 305,
+      "teamId": "2026-gpm-accumulated-1127598",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 306,
+      "teamId": "2026-gpm-accumulated-1127574",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 307,
+      "teamId": "2026-gpm-accumulated-1128086",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 308,
+      "teamId": "2026-gpm-accumulated-1127136",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 309,
+      "teamId": "2026-gpm-accumulated-1134557",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 310,
+      "teamId": "2026-gpm-accumulated-1126453",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 311,
+      "teamId": "2026-gpm-accumulated-1128607",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 312,
+      "teamId": "2026-gpm-accumulated-1128485",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 313,
+      "teamId": "2026-gpm-accumulated-1127159",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 314,
+      "teamId": "2026-gpm-accumulated-1127161",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 315,
+      "teamId": "2026-gpm-accumulated-1126450",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 316,
+      "teamId": "2026-gpm-accumulated-1128620",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 317,
+      "teamId": "2026-gpm-accumulated-1124515",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 318,
+      "teamId": "2026-gpm-accumulated-1134388",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 319,
+      "teamId": "2026-gpm-qualifier-1-row-0278-61a684d299b9",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 320,
+      "teamId": "2026-gpm-accumulated-1127589",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 321,
+      "teamId": "2026-gpm-accumulated-1124531",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 322,
+      "teamId": "2026-gpm-accumulated-1128248",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 323,
+      "teamId": "2026-gpm-accumulated-1127197",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 324,
+      "teamId": "2026-gpm-accumulated-1127229",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 325,
+      "teamId": "2026-gpm-accumulated-1127226",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 326,
+      "teamId": "2026-gpm-accumulated-1127479",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 327,
+      "teamId": "2026-gpm-accumulated-1126301",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 328,
+      "teamId": "2026-gpm-accumulated-1126831",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 329,
+      "teamId": "2026-gpm-accumulated-1126381",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 330,
+      "teamId": "2026-gpm-accumulated-1124502",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 331,
+      "teamId": "2026-gpm-accumulated-1128483",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 332,
+      "teamId": "2026-gpm-accumulated-1124463",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 333,
+      "teamId": "2026-gpm-accumulated-1126913",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 334,
+      "teamId": "2026-gpm-accumulated-1127180",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 335,
+      "teamId": "2026-gpm-accumulated-1128191",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 336,
+      "teamId": "2026-gpm-accumulated-1126932",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 337,
+      "teamId": "2026-gpm-accumulated-1128623",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 338,
+      "teamId": "2026-gpm-accumulated-1134667",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 339,
+      "teamId": "2026-gpm-accumulated-1127298",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 340,
+      "teamId": "2026-gpm-accumulated-1127877",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 341,
+      "teamId": "2026-gpm-accumulated-1128065",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 342,
+      "teamId": "2026-gpm-accumulated-1127473",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 343,
+      "teamId": "2026-gpm-accumulated-1128215",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 343,
+      "teamId": "2026-gpm-accumulated-1124717",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 345,
+      "teamId": "2026-gpm-accumulated-1127192",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 346,
+      "teamId": "2026-gpm-accumulated-1126923",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 347,
+      "teamId": "2026-gpm-accumulated-1128104",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 348,
+      "teamId": "2026-gpm-accumulated-1126874",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 349,
+      "teamId": "2026-gpm-accumulated-1128261",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 350,
+      "teamId": "2026-gpm-accumulated-1126307",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 351,
+      "teamId": "2026-gpm-accumulated-1126636",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 352,
+      "teamId": "2026-gpm-accumulated-1134825",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 353,
+      "teamId": "2026-gpm-accumulated-1124718",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 354,
+      "teamId": "2026-gpm-accumulated-1126303",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 355,
+      "teamId": "2026-gpm-accumulated-1127658",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 356,
+      "teamId": "2026-gpm-accumulated-1124464",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 357,
+      "teamId": "2026-gpm-accumulated-1128604",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 358,
+      "teamId": "2026-gpm-accumulated-1127057",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 359,
+      "teamId": "2026-gpm-accumulated-1126290",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 360,
+      "teamId": "2026-gpm-accumulated-1128609",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 361,
+      "teamId": "2026-gpm-accumulated-1128100",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 362,
+      "teamId": "2026-gpm-accumulated-1134571",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 363,
+      "teamId": "2026-gpm-accumulated-1134930",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 364,
+      "teamId": "2026-gpm-accumulated-1127135",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 365,
+      "teamId": "2026-gpm-accumulated-1126305",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 366,
+      "teamId": "2026-gpm-accumulated-1126306",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 367,
+      "teamId": "2026-gpm-accumulated-1124719",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 368,
+      "teamId": "2026-gpm-accumulated-1128256",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 369,
+      "teamId": "2026-gpm-accumulated-1128517",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 370,
+      "teamId": "2026-gpm-accumulated-1133905",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 371,
+      "teamId": "2026-gpm-accumulated-1126873",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 372,
+      "teamId": "2026-gpm-accumulated-1127178",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 373,
+      "teamId": "2026-gpm-accumulated-1128076",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 374,
+      "teamId": "2026-gpm-accumulated-1128490",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 374,
+      "teamId": "2026-gpm-accumulated-1128499",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 376,
+      "teamId": "2026-gpm-accumulated-1128301",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 376,
+      "teamId": "2026-gpm-accumulated-1134669",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 378,
+      "teamId": "2026-gpm-accumulated-1127974",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 379,
+      "teamId": "2026-gpm-accumulated-1127470",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 380,
+      "teamId": "2026-gpm-accumulated-1128619",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 381,
+      "teamId": "2026-gpm-accumulated-1126227",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 382,
+      "teamId": "2026-gpm-accumulated-1134933",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 383,
+      "teamId": "2026-gpm-accumulated-1124529",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 384,
+      "teamId": "2026-gpm-accumulated-1126202",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 385,
+      "teamId": "2026-gpm-accumulated-1134572",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 386,
+      "teamId": "2026-gpm-accumulated-1128624",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 387,
+      "teamId": "2026-gpm-accumulated-1144301",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 388,
+      "teamId": "2026-gpm-accumulated-1127663",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 389,
+      "teamId": "2026-gpm-accumulated-1144974",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 390,
+      "teamId": "2026-gpm-accumulated-1128569",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 391,
+      "teamId": "2026-gpm-accumulated-1128269",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 392,
+      "teamId": "2026-gpm-accumulated-1126448",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 393,
+      "teamId": "2026-gpm-accumulated-1134660",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 394,
+      "teamId": "2026-gpm-accumulated-1145157",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 395,
+      "teamId": "2026-gpm-accumulated-1128477",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 396,
+      "teamId": "2026-gpm-accumulated-1134763",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 397,
+      "teamId": "2026-gpm-accumulated-1127657",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 398,
+      "teamId": "2026-gpm-accumulated-1145305",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 399,
+      "teamId": "2026-gpm-accumulated-1128122",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 400,
+      "teamId": "2026-gpm-accumulated-1145486",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 401,
+      "teamId": "2026-gpm-accumulated-1145583",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 402,
+      "teamId": "2026-gpm-accumulated-1128673",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 403,
+      "teamId": "2026-gpm-accumulated-1134995",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 404,
+      "teamId": "2026-gpm-accumulated-1134861",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 405,
+      "teamId": "2026-gpm-accumulated-1145301",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 406,
+      "teamId": "2026-gpm-accumulated-1145588",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 407,
+      "teamId": "2026-gpm-accumulated-1134741",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 408,
+      "teamId": "2026-gpm-accumulated-1124941",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 409,
+      "teamId": "2026-gpm-accumulated-1124476",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 410,
+      "teamId": "2026-gpm-accumulated-1145564",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 411,
+      "teamId": "2026-gpm-accumulated-1127491",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 412,
+      "teamId": "2026-gpm-accumulated-1127133",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 413,
+      "teamId": "2026-gpm-accumulated-1128572",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 414,
+      "teamId": "2026-gpm-accumulated-1127223",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 415,
+      "teamId": "2026-gpm-accumulated-1128533",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 416,
+      "teamId": "2026-gpm-accumulated-1128686",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 417,
+      "teamId": "2026-gpm-accumulated-1128126",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 418,
+      "teamId": "2026-gpm-accumulated-1128282",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 419,
+      "teamId": "2026-gpm-accumulated-1126299",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 420,
+      "teamId": "2026-gpm-accumulated-1128258",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 421,
+      "teamId": "2026-gpm-accumulated-1128231",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 422,
+      "teamId": "2026-gpm-accumulated-1128255",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 423,
+      "teamId": "2026-gpm-accumulated-1128078",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 424,
+      "teamId": "2026-gpm-accumulated-1128531",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 425,
+      "teamId": "2026-gpm-accumulated-1145636",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 425,
+      "teamId": "2026-gpm-accumulated-1126308",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 427,
+      "teamId": "2026-gpm-accumulated-1128971",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 428,
+      "teamId": "2026-gpm-accumulated-1128123",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 429,
+      "teamId": "2026-gpm-accumulated-1128463",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 430,
+      "teamId": "2026-gpm-accumulated-1145490",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 431,
+      "teamId": "2026-gpm-accumulated-1145304",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 432,
+      "teamId": "2026-gpm-accumulated-1145307",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 433,
+      "teamId": "2026-gpm-accumulated-1145313",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 434,
+      "teamId": "2026-gpm-accumulated-1134927",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 435,
+      "teamId": "2026-gpm-accumulated-1127303",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 436,
+      "teamId": "2026-gpm-accumulated-1128134",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 437,
+      "teamId": "2026-gpm-accumulated-1128613",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 438,
+      "teamId": "2026-gpm-accumulated-1128435",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 439,
+      "teamId": "2026-gpm-accumulated-1145417",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 440,
+      "teamId": "2026-gpm-accumulated-1130150",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 441,
+      "teamId": "2026-gpm-accumulated-1134585",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 442,
+      "teamId": "2026-gpm-accumulated-1145306",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 443,
+      "teamId": "2026-gpm-accumulated-1134556",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 444,
+      "teamId": "2026-gpm-accumulated-1128050",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 445,
+      "teamId": "2026-gpm-accumulated-1128332",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 446,
+      "teamId": "2026-gpm-accumulated-1134586",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 447,
+      "teamId": "2026-gpm-accumulated-1128520",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 448,
+      "teamId": "2026-gpm-accumulated-1129045",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 449,
+      "teamId": "2026-gpm-accumulated-1128280",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 449,
+      "teamId": "2026-gpm-accumulated-1134997",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 451,
+      "teamId": "2026-gpm-accumulated-1126910",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 452,
+      "teamId": "2026-gpm-accumulated-1128552",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 453,
+      "teamId": "2026-gpm-accumulated-1134862",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 454,
+      "teamId": "2026-gpm-accumulated-1128026",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 455,
+      "teamId": "2026-gpm-accumulated-1128561",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 456,
+      "teamId": "2026-gpm-accumulated-1128680",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 457,
+      "teamId": "2026-gpm-accumulated-1124554",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 458,
+      "teamId": "2026-gpm-accumulated-1127210",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 459,
+      "teamId": "2026-gpm-accumulated-1145626",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 460,
+      "teamId": "2026-gpm-accumulated-1128356",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 461,
+      "teamId": "2026-gpm-accumulated-1128685",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 462,
+      "teamId": "2026-gpm-accumulated-1127950",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 463,
+      "teamId": "2026-gpm-accumulated-1128594",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 464,
+      "teamId": "2026-gpm-accumulated-1124509",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 464,
+      "teamId": "2026-gpm-accumulated-1145410",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 466,
+      "teamId": "2026-gpm-accumulated-1128094",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 467,
+      "teamId": "2026-gpm-accumulated-1127168",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 468,
+      "teamId": "2026-gpm-accumulated-1126445",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 469,
+      "teamId": "2026-gpm-accumulated-1145603",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 470,
+      "teamId": "2026-gpm-accumulated-1145303",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 471,
+      "teamId": "2026-gpm-accumulated-1128088",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 472,
+      "teamId": "2026-gpm-accumulated-1128766",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 473,
+      "teamId": "2026-gpm-accumulated-1134827",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 474,
+      "teamId": "2026-gpm-accumulated-1126877",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 475,
+      "teamId": "2026-gpm-accumulated-1128084",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 476,
+      "teamId": "2026-gpm-accumulated-1145516",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 477,
+      "teamId": "2026-gpm-accumulated-1128422",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 478,
+      "teamId": "2026-gpm-accumulated-1134964",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 479,
+      "teamId": "2026-gpm-accumulated-1128113",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 480,
+      "teamId": "2026-gpm-accumulated-1131817",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 481,
+      "teamId": "2026-gpm-accumulated-1128448",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 482,
+      "teamId": "2026-gpm-accumulated-1134844",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 483,
+      "teamId": "2026-gpm-accumulated-1134745",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 483,
+      "teamId": "2026-gpm-accumulated-1145580",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 485,
+      "teamId": "2026-gpm-accumulated-1128522",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 486,
+      "teamId": "2026-gpm-accumulated-1128538",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 486,
+      "teamId": "2026-gpm-accumulated-1128077",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 488,
+      "teamId": "2026-gpm-accumulated-1127641",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 488,
+      "teamId": "2026-gpm-accumulated-1128475",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 490,
+      "teamId": "2026-gpm-accumulated-1128057",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 491,
+      "teamId": "2026-gpm-accumulated-1128503",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 492,
+      "teamId": "2026-gpm-accumulated-1128472",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 493,
+      "teamId": "2026-gpm-accumulated-1134833",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 494,
+      "teamId": "2026-gpm-accumulated-1128622",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 495,
+      "teamId": "2026-gpm-accumulated-1127190",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 496,
+      "teamId": "2026-gpm-accumulated-1126298",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 497,
+      "teamId": "2026-gpm-accumulated-1134931",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 498,
+      "teamId": "2026-gpm-accumulated-1128067",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 499,
+      "teamId": "2026-gpm-accumulated-1134570",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 500,
+      "teamId": "2026-gpm-accumulated-1128244",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 501,
+      "teamId": "2026-gpm-accumulated-1134417",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 502,
+      "teamId": "2026-gpm-accumulated-1128283",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 503,
+      "teamId": "2026-gpm-accumulated-1134847",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 504,
+      "teamId": "2026-gpm-accumulated-1134331",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 505,
+      "teamId": "2026-gpm-accumulated-1134842",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 506,
+      "teamId": "2026-gpm-accumulated-1128264",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 507,
+      "teamId": "2026-gpm-accumulated-1134670",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 508,
+      "teamId": "2026-gpm-accumulated-1134746",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 509,
+      "teamId": "2026-gpm-accumulated-1134994",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145565",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134761",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127666",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134845",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145589",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1135498",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134944",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145628",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-qualifier-3-row-0383-1a4fb20946b4",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134569",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134843",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1135499",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127176",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127175",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128061",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1147698",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1135563",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134723",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128364",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145020",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128509",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1133877",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1124543",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134934",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128494",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134841",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1148007",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145478",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1135497",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128239",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134961",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134960",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134962",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134959",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134938",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127615",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128558",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1126996",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134754",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134943",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127162",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134416",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134782",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134958",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1143814",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134942",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128062",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128281",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1146151",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134778",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1132316",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128427",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134940",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134963",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127181",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1147860",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128534",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145479",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134929",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134781",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134880",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128105",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134755",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1135501",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128222",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1146594",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134826",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134780",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1148010",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128493",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127593",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134759",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127196",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127137",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1126909",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128518",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128162",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1135562",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134965",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128049",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128101",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134758",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128486",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128048",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1126987",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134743",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134766",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134724",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1135599",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128615",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1135500",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134744",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145413",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128587",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134415",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134777",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134779",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145480",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1133904",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128469",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1145439",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1127193",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1128089",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-accumulated-1134737",
+      "score": 0,
+      "qualified": null
+    },
+    {
+      "place": 510,
+      "teamId": "2026-gpm-qualifier-3-row-0609-308597a2a0c4",
+      "score": 0,
+      "qualified": null
+    }
+  ],
+  "source": "https://www.icpcmexico.org/contests/gpmx-2026/acumulado",
+  "scoreUnit": "Puntos",
+  "snapshot": "unconfirmed",
+  "snapshotLabel": "Acumulado de las tres fechas publicadas de 2026; la fuente no lo identifica explícitamente como final",
+  "publicationNotes": [
+    "Se conserva el acumulado publicado por ICPC México, con 3 de 3 fechas computadas, sin recalcular puntajes. Se incluyen las 614 filas clasificadas: 509 equipos con puntos y 105 con cero puntos.",
+    "Los 14 equipos invitados aparecen aparte en la fuente sin puesto ni puntaje acumulado; no se les inventan valores ni se incluyen como filas de esta clasificación.",
+    "Se marcan como clasificados únicamente los 70 equipos con un número de cupo explícito, incluidos cupos obtenidos por otras vías como el Repechaje. La ausencia de cupo queda sin confirmar, no como una descalificación definitiva. El encabezado anuncia 71 cupos, pero la tabla clasificada solo muestra 70; no se infiere la asignación faltante."
+  ]
+}

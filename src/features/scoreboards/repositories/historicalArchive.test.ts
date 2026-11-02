@@ -1,0 +1,88 @@
+// @vitest-environment node
+import { describe, expect, it } from 'vitest';
+
+import { createJsonScoreboardsRepository } from './scoreboardsRepository';
+
+const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+  query: '?raw',
+  import: 'default',
+});
+
+describe('published historical archive', () => {
+  it('loads every recovered accumulated document and historical Finals through the repository boundary', async () => {
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    expect(result.status).toBe('ready');
+    if (result.status !== 'ready') {
+      throw new Error('Historical archive did not pass repository validation.');
+    }
+    const { contests, seasonStandings, teams } = result.data;
+    expect(contests).toHaveLength(34);
+    expect(contests.reduce((sum, contest) => sum + contest.standings.length, 0)).toBe(14658);
+    const qualifiers = contests.filter(({ seasonYear }) => seasonYear === 2026);
+    expect(
+      qualifiers.map(({ stage, standings, date }) => ({ stage, rows: standings.length, date })),
+    ).toEqual([
+      { stage: 'qualifier-1', rows: 601, date: '2026-04-18' },
+      { stage: 'qualifier-2', rows: 701, date: '2026-05-16' },
+      { stage: 'qualifier-3', rows: 610, date: '2026-08-29' },
+    ]);
+    expect(qualifiers[2].problems).toEqual([]);
+    expect(qualifiers[2].standings.every(({ results }) => results === null)).toBe(true);
+    expect(qualifiers[2].publicationNotes?.join(' ')).toContain('no se puede confirmar');
+    expect(seasonStandings.map(({ seasonYear }) => seasonYear)).toEqual([
+      2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015,
+    ]);
+    expect(seasonStandings.map(({ rows }) => rows.length)).toEqual([
+      614, 532, 482, 458, 381, 225, 350, 382, 393, 404, 273, 306,
+    ]);
+    expect(
+      seasonStandings
+        .filter(({ seasonYear }) => seasonYear < 2026)
+        .every(({ rows }) => rows.every(({ qualified }) => qualified === null)),
+    ).toBe(true);
+
+    const accumulated2026 = seasonStandings.find(({ seasonYear }) => seasonYear === 2026);
+    expect(accumulated2026?.source).toBe('https://www.icpcmexico.org/contests/gpmx-2026/acumulado');
+    expect(accumulated2026?.snapshot).toBe('unconfirmed');
+    expect(accumulated2026?.snapshotLabel).toContain('tres fechas');
+    expect(accumulated2026?.rows.filter(({ score }) => score > 0)).toHaveLength(509);
+    expect(accumulated2026?.rows.filter(({ score }) => score === 0)).toHaveLength(105);
+    expect(accumulated2026?.rows.filter(({ place }) => place === 510)).toHaveLength(105);
+    expect(accumulated2026?.rows.filter(({ qualified }) => qualified === true)).toHaveLength(70);
+    expect(accumulated2026?.rows.filter(({ qualified }) => qualified === null)).toHaveLength(544);
+    expect(accumulated2026?.publicationNotes?.join(' ')).toContain('71 cupos');
+    expect(accumulated2026?.rows.slice(0, 3).map(({ score }) => score)).toEqual([435, 425, 425]);
+    const leader2026 = teams.find(({ id }) => id === accumulated2026?.rows[0].teamId);
+    expect(leader2026?.name).toBe('🇲🇽 Oasis');
+
+    const dense = seasonStandings.find(({ seasonYear }) => seasonYear === 2015);
+    expect(dense?.ranking).toBe('dense');
+    expect(dense?.rows.filter(({ place }) => place === 239)).toHaveLength(51);
+    const repeated2015 = dense?.rows.filter(
+      ({ teamId }) => teams.find(({ id }) => id === teamId)?.name === 'FGZ',
+    );
+    expect(repeated2015).toHaveLength(2);
+    expect(new Set(repeated2015?.map(({ teamId }) => teamId)).size).toBe(2);
+
+    const standing2024 = seasonStandings.find(({ seasonYear }) => seasonYear === 2024);
+    for (const name of ['GooseFarmers', 'Timbits']) {
+      const repeated = standing2024?.rows.filter(
+        ({ teamId }) => teams.find(({ id }) => id === teamId)?.name === name,
+      );
+      expect(repeated).toHaveLength(2);
+      expect(new Set(repeated?.map(({ teamId }) => teamId)).size).toBe(2);
+    }
+    const intermediate = seasonStandings.find(({ seasonYear }) => seasonYear === 2023);
+    expect(intermediate?.snapshot).toBe('intermediate');
+    expect(intermediate?.snapshotLabel).toContain('segunda fecha');
+    const partial = contests.find(({ id }) => id === '2013-mexico-finals-final');
+    expect(partial?.ranking).toBe('published');
+    expect(partial?.publicationNotes?.join(' ')).toContain('puesto 13');
+    expect(partial?.standings).toHaveLength(174);
+    expect(partial?.standings.filter(({ place }) => place === null)).toHaveLength(81);
+    expect(partial?.standings.some(({ place }) => place === 13)).toBe(false);
+    expect(contests.find(({ id }) => id === '2019-mexico-finals-final')?.standings).toHaveLength(
+      368,
+    );
+  });
+});

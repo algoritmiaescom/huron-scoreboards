@@ -1,5 +1,6 @@
 import { z } from 'zod';
 
+import { isValidPlaceRanking } from './ranking';
 import { scoreStandingRow } from './scoring';
 
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -61,7 +62,7 @@ export const teamMemberSchema = z.object({
 export const teamSchema = z.object({
   id: slugSchema,
   name: z.string().min(1),
-  schoolId: slugSchema,
+  schoolId: slugSchema.nullable(),
   seasonYear: seasonYearSchema,
   members: z.array(teamMemberSchema).optional(),
 });
@@ -95,7 +96,7 @@ const publishedTotalsSchema = z.object({
 });
 
 const standingIdentity = {
-  place: z.number().int().positive(),
+  place: z.number().int().positive().nullable(),
   teamId: slugSchema,
 };
 
@@ -119,41 +120,42 @@ export const seasonStandingRowSchema = z.object({
   qualified: z.boolean().nullable(),
 });
 
-/**
- * Standard competition ranking: places start at 1, ties share a place, and the place after a tie
- * of `n` teams skips ahead by `n`.
- */
-const isValidPlaceRanking = (places: readonly number[]): boolean => {
-  const sorted = [...places].sort((a, b) => a - b);
-  let expected = 1;
-  let index = 0;
-
-  while (index < sorted.length) {
-    const place = sorted[index];
-
-    if (place !== expected) {
-      return false;
-    }
-
-    let tied = 0;
-    while (index < sorted.length && sorted[index] === place) {
-      tied += 1;
-      index += 1;
-    }
-
-    expected += tied;
-  }
-
-  return true;
+const publicationFields = {
+  ranking: z.enum(['competition', 'dense', 'published']).optional(),
+  publicationNotes: z.array(z.string().min(1)).min(1).optional(),
 };
 
-const addPlaceRankingIssue = (places: readonly number[], ctx: z.RefinementCtx, key: string) => {
-  if (!isValidPlaceRanking(places)) {
+const addPlaceRankingIssue = (
+  places: readonly (number | null)[],
+  ctx: z.RefinementCtx,
+  key: string,
+  ranking: 'competition' | 'dense' | 'published' = 'competition',
+  notes?: string[],
+) => {
+  if (ranking === 'published') {
+    if (notes === undefined || notes.length === 0) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['publicationNotes'],
+        message: 'as-published rankings require an explanation of missing or irregular places',
+      });
+    }
+    return;
+  }
+  if (
+    places.some((place) => place === null) ||
+    !isValidPlaceRanking(
+      places.filter((place) => place !== null),
+      ranking,
+    )
+  ) {
     ctx.addIssue({
       code: 'custom',
       path: [key],
       message:
-        'places must start at 1 and skip ahead after a tie, so that 1, 2, 2, 4 is valid but 1, 2, 2, 3 is not',
+        ranking === 'dense'
+          ? 'dense places must start at 1 and advance by one after each distinct place'
+          : 'places must start at 1 and skip ahead after a tie, so that 1, 2, 2, 4 is valid but 1, 2, 2, 3 is not',
     });
   }
 };
@@ -171,6 +173,7 @@ export const contestSchema = z
     problems: z.array(problemSchema),
     standings: z.array(standingRowSchema),
     source: z.url(),
+    ...publicationFields,
   })
   .superRefine((contest, ctx) => {
     const seenLabels = new Set<string>();
@@ -273,6 +276,8 @@ export const contestSchema = z
       contest.standings.map((row) => row.place),
       ctx,
       'standings',
+      contest.ranking,
+      contest.publicationNotes,
     );
   });
 
@@ -282,8 +287,30 @@ export const seasonStandingSchema = z
     seriesId: slugSchema,
     rows: z.array(seasonStandingRowSchema),
     source: z.url(),
+    scoreUnit: z.string().min(1).optional(),
+    snapshot: z.enum(['intermediate', 'latest-explicit', 'unconfirmed']).optional(),
+    snapshotLabel: z.string().min(1).optional(),
+    ...publicationFields,
   })
   .superRefine((standing, ctx) => {
+    if (
+      standing.snapshot !== undefined &&
+      standing.snapshot !== 'latest-explicit' &&
+      standing.snapshotLabel === undefined
+    ) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['snapshotLabel'],
+        message: 'non-final season standings must describe the published snapshot',
+      });
+    }
+    if (standing.snapshotLabel !== undefined && standing.snapshot === undefined) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['snapshot'],
+        message: 'snapshot labels require an explicit snapshot status',
+      });
+    }
     const seenTeamIds = new Set<string>();
 
     standing.rows.forEach((row, index) => {
@@ -302,6 +329,8 @@ export const seasonStandingSchema = z
       standing.rows.map((row) => row.place),
       ctx,
       'rows',
+      standing.ranking,
+      standing.publicationNotes,
     );
   });
 

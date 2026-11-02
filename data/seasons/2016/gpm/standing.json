@@ -1,0 +1,1651 @@
+{
+  "seasonYear": 2016,
+  "seriesId": "gpm",
+  "rows": [
+    {
+      "place": 1,
+      "teamId": "2016-gpm-iteso-row-0001-los-romanticos",
+      "score": 90,
+      "qualified": null
+    },
+    {
+      "place": 2,
+      "teamId": "2016-mexico-finals-global-row-0001-pu",
+      "score": 59,
+      "qualified": null
+    },
+    {
+      "place": 3,
+      "teamId": "2016-mexico-finals-global-row-0012-wlog",
+      "score": 55,
+      "qualified": null
+    },
+    {
+      "place": 4,
+      "teamId": "2016-mexico-finals-global-row-0005-locos",
+      "score": 49,
+      "qualified": null
+    },
+    {
+      "place": 5,
+      "teamId": "2016-gpm-iteso-row-0005-los-as",
+      "score": 49,
+      "qualified": null
+    },
+    {
+      "place": 6,
+      "teamId": "2016-mexico-finals-global-row-0007-sopa-de-pinguino",
+      "score": 37,
+      "qualified": null
+    },
+    {
+      "place": 7,
+      "teamId": "2016-mexico-finals-global-row-0006-e3",
+      "score": 34,
+      "qualified": null
+    },
+    {
+      "place": 8,
+      "teamId": "2016-gpm-iteso-row-0008-perrillos",
+      "score": 28,
+      "qualified": null
+    },
+    {
+      "place": 9,
+      "teamId": "2016-mexico-finals-global-row-0025-cooperativa-pascal",
+      "score": 27,
+      "qualified": null
+    },
+    {
+      "place": 10,
+      "teamId": "2016-mexico-finals-global-row-0004-new-avengers",
+      "score": 27,
+      "qualified": null
+    },
+    {
+      "place": 11,
+      "teamId": "2016-mexico-finals-global-row-0014-itsur-mix-lang-coffee",
+      "score": 24,
+      "qualified": null
+    },
+    {
+      "place": 12,
+      "teamId": "2016-mexico-finals-global-row-0019-greedies",
+      "score": 24,
+      "qualified": null
+    },
+    {
+      "place": 13,
+      "teamId": "2016-mexico-finals-global-row-0015-the-foos",
+      "score": 24,
+      "qualified": null
+    },
+    {
+      "place": 14,
+      "teamId": "2016-mexico-finals-global-row-0013-fastfingers-lml",
+      "score": 22,
+      "qualified": null
+    },
+    {
+      "place": 15,
+      "teamId": "2016-mexico-finals-global-row-0020-binary-lambda",
+      "score": 20,
+      "qualified": null
+    },
+    {
+      "place": 16,
+      "teamId": "2016-mexico-finals-global-row-0010-quetzal-h",
+      "score": 18,
+      "qualified": null
+    },
+    {
+      "place": 17,
+      "teamId": "2016-gpm-iteso-row-0017-pinguinos-de-sopa",
+      "score": 18,
+      "qualified": null
+    },
+    {
+      "place": 18,
+      "teamId": "2016-gpm-iteso-row-0018-jaguar",
+      "score": 17,
+      "qualified": null
+    },
+    {
+      "place": 19,
+      "teamId": "2016-mexico-finals-global-row-0021-wasabi",
+      "score": 16,
+      "qualified": null
+    },
+    {
+      "place": 20,
+      "teamId": "2016-gpm-iteso-row-0020-cocoders",
+      "score": 14,
+      "qualified": null
+    },
+    {
+      "place": 21,
+      "teamId": "2016-gpm-iteso-row-0021-brp",
+      "score": 13,
+      "qualified": null
+    },
+    {
+      "place": 22,
+      "teamId": "2016-gpm-iteso-row-0022-horchata-team",
+      "score": 12,
+      "qualified": null
+    },
+    {
+      "place": 23,
+      "teamId": "2016-gpm-iteso-row-0023-los-papus-pro",
+      "score": 12,
+      "qualified": null
+    },
+    {
+      "place": 24,
+      "teamId": "2016-gpm-iteso-row-0024-wolves-of-codestreet",
+      "score": 11,
+      "qualified": null
+    },
+    {
+      "place": 25,
+      "teamId": "2016-mexico-finals-global-row-0009-wolves",
+      "score": 11,
+      "qualified": null
+    },
+    {
+      "place": 26,
+      "teamId": "2016-gpm-iteso-row-0026-dic-h",
+      "score": 10,
+      "qualified": null
+    },
+    {
+      "place": 27,
+      "teamId": "2016-mexico-finals-global-row-0018-clfies",
+      "score": 9,
+      "qualified": null
+    },
+    {
+      "place": 28,
+      "teamId": "2016-mexico-finals-global-row-0023-twt",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 29,
+      "teamId": "2016-gpm-iteso-row-0029-brogrammers",
+      "score": 8,
+      "qualified": null
+    },
+    {
+      "place": 30,
+      "teamId": "2016-mexico-finals-global-row-0022-gleichseitiges",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 31,
+      "teamId": "2016-mexico-finals-global-row-0036-uam-azcapotzalco-2016",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 32,
+      "teamId": "2016-gpm-iteso-row-0032-pelados",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 33,
+      "teamId": "2016-mexico-finals-global-row-0016-char-mander",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 34,
+      "teamId": "2016-mexico-finals-global-row-0043-duxel",
+      "score": 7,
+      "qualified": null
+    },
+    {
+      "place": 35,
+      "teamId": "2016-mexico-finals-global-row-0042-coding-horror",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 36,
+      "teamId": "2016-gpm-iteso-row-0036-conde-n-play",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 37,
+      "teamId": "2016-mexico-finals-global-row-0061-the-orden-of-the-t-rex",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 38,
+      "teamId": "2016-mexico-finals-global-row-0044-dagas",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 39,
+      "teamId": "2016-mexico-finals-global-row-0027-the-feel-train",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 40,
+      "teamId": "2016-gpm-iteso-row-0040-crack",
+      "score": 6,
+      "qualified": null
+    },
+    {
+      "place": 41,
+      "teamId": "2016-mexico-finals-global-row-0032-m3",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 42,
+      "teamId": "2016-gpm-iteso-row-0042-los-chimpantasticos",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 43,
+      "teamId": "2016-gpm-iteso-row-0043-tacos",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 44,
+      "teamId": "2016-mexico-finals-global-row-0052-heavymachinegun",
+      "score": 5,
+      "qualified": null
+    },
+    {
+      "place": 45,
+      "teamId": "2016-gpm-iteso-row-0045-quoda",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 46,
+      "teamId": "2016-gpm-iteso-row-0046-code-c",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 47,
+      "teamId": "2016-mexico-finals-global-row-0031-nac-os",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 48,
+      "teamId": "2016-gpm-iteso-row-0048-programmers-crew",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 49,
+      "teamId": "2016-mexico-finals-global-row-0030-make-sandwich",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 50,
+      "teamId": "2016-mexico-finals-global-row-0038-csf1",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 51,
+      "teamId": "2016-gpm-iteso-row-0051-c-y-dos-mas",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 52,
+      "teamId": "2016-mexico-finals-global-row-0029-entscheidungsteam",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 53,
+      "teamId": "2016-mexico-finals-global-row-0040-sourcecode",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 54,
+      "teamId": "2016-gpm-iteso-row-0054-musketeers",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 55,
+      "teamId": "2016-mexico-finals-global-row-0046-3idiotas",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 56,
+      "teamId": "2016-gpm-iteso-row-0056-warriors-lel",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 57,
+      "teamId": "2016-mexico-finals-global-row-0024-uam-azcapotzalco-2016-ii",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 58,
+      "teamId": "2016-gpm-iteso-row-0058-next-gen",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 59,
+      "teamId": "2016-mexico-finals-global-row-0037-itspr1",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 60,
+      "teamId": "2016-mexico-finals-global-row-0033-kebabs",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 61,
+      "teamId": "2016-mexico-finals-global-row-0076-las-chonchas",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 62,
+      "teamId": "2016-gpm-iteso-row-0062-los-de-concreto",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 63,
+      "teamId": "2016-mexico-finals-global-row-0026-uamc-a",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 64,
+      "teamId": "2016-mexico-finals-global-row-0047-lobowar",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 65,
+      "teamId": "2016-mexico-finals-global-row-0050-cnoobs",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 66,
+      "teamId": "2016-gpm-iteso-row-0066-segfault",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 67,
+      "teamId": "2016-gpm-iteso-row-0067-upqroo-cancun",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 68,
+      "teamId": "2016-gpm-iteso-row-0068-los-lunas",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 69,
+      "teamId": "2016-mexico-finals-global-row-0028-jcc",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 70,
+      "teamId": "2016-gpm-iteso-row-0070-mjm",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 71,
+      "teamId": "2016-gpm-iteso-row-0071-thecodeleague",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 72,
+      "teamId": "2016-mexico-finals-global-row-0057-enigma",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 73,
+      "teamId": "2016-gpm-iteso-row-0073-pacha-memers",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 74,
+      "teamId": "2016-mexico-finals-global-row-0082-team-fismat",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 75,
+      "teamId": "2016-gpm-iteso-row-0075-dinamita",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 76,
+      "teamId": "2016-mexico-finals-global-row-0083-brave-system",
+      "score": 4,
+      "qualified": null
+    },
+    {
+      "place": 77,
+      "teamId": "2016-gpm-iteso-row-0077-machine-guns",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 78,
+      "teamId": "2016-mexico-finals-global-row-0041-legio-i",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 79,
+      "teamId": "2016-gpm-iteso-row-0079-kygerand",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 80,
+      "teamId": "2016-gpm-iteso-row-0080-uam-azcapotzalco-2016-iii",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 81,
+      "teamId": "2016-gpm-iteso-row-0081-red-hot-coding-peppers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 82,
+      "teamId": "2016-gpm-iteso-row-0082-los-compadres",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 83,
+      "teamId": "2016-mexico-finals-global-row-0034-los-religiosos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 84,
+      "teamId": "2016-mexico-finals-global-row-0051-hakunas",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 85,
+      "teamId": "2016-gpm-iteso-row-0085-rebel-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 86,
+      "teamId": "2016-mexico-finals-global-row-0079-ami-ubicom",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 87,
+      "teamId": "2016-gpm-iteso-row-0087-ponejitos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 88,
+      "teamId": "2016-gpm-iteso-row-0088-caribbean-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 89,
+      "teamId": "2016-gpm-iteso-row-0089-los-chinos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 90,
+      "teamId": "2016-mexico-finals-global-row-0039-leopardos",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 91,
+      "teamId": "2016-mexico-finals-global-row-0075-master-net",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 92,
+      "teamId": "2016-gpm-iteso-row-0092-frens",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 93,
+      "teamId": "2016-gpm-iteso-row-0093-poncho-el-pato",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 94,
+      "teamId": "2016-gpm-iteso-row-0094-itleon-1",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 95,
+      "teamId": "2016-gpm-iteso-row-0095-e-z",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 96,
+      "teamId": "2016-gpm-iteso-row-0096-x-coders",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 97,
+      "teamId": "2016-mexico-finals-global-row-0058-los-vengadores",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 98,
+      "teamId": "2016-gpm-iteso-row-0098-monroy-liebers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 99,
+      "teamId": "2016-gpm-iteso-row-0099-eureka-exe",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 100,
+      "teamId": "2016-mexico-finals-global-row-0071-itspr2",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 101,
+      "teamId": "2016-mexico-finals-global-row-0056-chinchanpu",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 102,
+      "teamId": "2016-mexico-finals-global-row-0060-where-s-the-pizza",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 103,
+      "teamId": "2016-mexico-finals-global-row-0081-kdt",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 104,
+      "teamId": "2016-gpm-iteso-row-0104-yam",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 105,
+      "teamId": "2016-gpm-iteso-row-0105-jcn",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 106,
+      "teamId": "2016-mexico-finals-global-row-0068-penguins",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 107,
+      "teamId": "2016-gpm-iteso-row-0107-asgardian",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 108,
+      "teamId": "2016-gpm-iteso-row-0108-rookiecode",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 109,
+      "teamId": "2016-mexico-finals-global-row-0035-printfers",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 110,
+      "teamId": "2016-mexico-finals-global-row-0054-the-brewskis",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 111,
+      "teamId": "2016-mexico-finals-global-row-0066-compilando",
+      "score": 3,
+      "qualified": null
+    },
+    {
+      "place": 112,
+      "teamId": "2016-gpm-iteso-row-0112-voidcode",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 113,
+      "teamId": "2016-gpm-iteso-row-0113-pu",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 114,
+      "teamId": "2016-gpm-iteso-row-0114-hidrorayos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 115,
+      "teamId": "2016-gpm-iteso-row-0115-los-tres-jinetes",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 116,
+      "teamId": "2016-gpm-iteso-row-0116-team-kol",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 117,
+      "teamId": "2016-gpm-iteso-row-0117-lobos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 118,
+      "teamId": "2016-gpm-iteso-row-0118-cyborg-raccoons",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 119,
+      "teamId": "2016-gpm-iteso-row-0119-night-coders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 120,
+      "teamId": "2016-mexico-finals-global-row-0063-mindcode",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 121,
+      "teamId": "2016-gpm-iteso-row-0121-mjdcode",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 122,
+      "teamId": "2016-gpm-iteso-row-0122-los-exiliados",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 123,
+      "teamId": "2016-gpm-iteso-row-0123-golden-ratio",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 124,
+      "teamId": "2016-gpm-iteso-row-0124-equipo42",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 125,
+      "teamId": "2016-gpm-iteso-row-0125-the-enigmas",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 126,
+      "teamId": "2016-gpm-iteso-row-0126-see",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 127,
+      "teamId": "2016-gpm-iteso-row-0127-ytrewq321",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 128,
+      "teamId": "2016-gpm-iteso-row-0128-404-not-found",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 129,
+      "teamId": "2016-gpm-iteso-row-0129-return-void",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 130,
+      "teamId": "2016-gpm-iteso-row-0130-lasteam",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 131,
+      "teamId": "2016-gpm-iteso-row-0131-u-p-nes",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 132,
+      "teamId": "2016-gpm-iteso-row-0132-code-kil",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 133,
+      "teamId": "2016-gpm-iteso-row-0133-kdump",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 134,
+      "teamId": "2016-gpm-iteso-row-0134-die-schnellen-und-witzigen",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 135,
+      "teamId": "2016-gpm-iteso-row-0135-the-winner-pattern",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 136,
+      "teamId": "2016-gpm-iteso-row-0136-adaline",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 137,
+      "teamId": "2016-gpm-iteso-row-0137-badrock-team",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 138,
+      "teamId": "2016-gpm-iteso-row-0138-itspr4",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 139,
+      "teamId": "2016-gpm-iteso-row-0139-silumgar",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 140,
+      "teamId": "2016-mexico-finals-global-row-0067-ateamhasnoname",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 141,
+      "teamId": "2016-gpm-iteso-row-0141-orion",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 142,
+      "teamId": "2016-gpm-iteso-row-0142-cosmos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 143,
+      "teamId": "2016-gpm-iteso-row-0143-syntax-error",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 144,
+      "teamId": "2016-gpm-iteso-row-0144-amalgan",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 145,
+      "teamId": "2016-gpm-iteso-row-0145-la-onda",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 146,
+      "teamId": "2016-gpm-iteso-row-0146-coyote-13",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 147,
+      "teamId": "2016-gpm-iteso-row-0147-los-nuevos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 148,
+      "teamId": "2016-gpm-iteso-row-0148-neto-y-los-omi",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 149,
+      "teamId": "2016-gpm-iteso-row-0149-karasuno",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 150,
+      "teamId": "2016-gpm-iteso-row-0150-slowfingers",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 151,
+      "teamId": "2016-gpm-iteso-row-0151-wrandologos",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 152,
+      "teamId": "2016-gpm-iteso-row-0152-hello-world",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 153,
+      "teamId": "2016-gpm-iteso-row-0153-nullsoft",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 154,
+      "teamId": "2016-gpm-iteso-row-0154-krieg-coders",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 155,
+      "teamId": "2016-mexico-finals-global-row-0045-codereallygood",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 156,
+      "teamId": "2016-gpm-iteso-row-0156-cyberrams1",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 157,
+      "teamId": "2016-gpm-iteso-row-0157-ras-team",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 158,
+      "teamId": "2016-gpm-iteso-row-0158-tecgrullo4",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 159,
+      "teamId": "2016-gpm-iteso-row-0159-upqroo-cancun-ii",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 160,
+      "teamId": "2016-gpm-iteso-row-0160-itleon-2",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 161,
+      "teamId": "2016-gpm-iteso-row-0161-los-de-civil",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 162,
+      "teamId": "2016-gpm-iteso-row-0162-espace",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 163,
+      "teamId": "2016-gpm-iteso-row-0163-salamandras-azules",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 164,
+      "teamId": "2016-gpm-iteso-row-0164-chomsky",
+      "score": 2,
+      "qualified": null
+    },
+    {
+      "place": 165,
+      "teamId": "2016-gpm-iteso-row-0165-shiwawenos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 166,
+      "teamId": "2016-gpm-iteso-row-0166-los-obsesionados",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 167,
+      "teamId": "2016-gpm-iteso-row-0167-vimps",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 168,
+      "teamId": "2016-mexico-finals-global-row-0078-dream-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 169,
+      "teamId": "2016-gpm-iteso-row-0169-fullmetal-alchemist",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 170,
+      "teamId": "2016-gpm-iteso-row-0170-the-segfaults",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 171,
+      "teamId": "2016-gpm-iteso-row-0171-mezcal-del-sotol",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 172,
+      "teamId": "2016-mexico-finals-global-row-0072-icode",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 173,
+      "teamId": "2016-mexico-finals-global-row-0065-team-conviction",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 174,
+      "teamId": "2016-gpm-iteso-row-0174-nous",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 175,
+      "teamId": "2016-gpm-iteso-row-0175-oregorer",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 176,
+      "teamId": "2016-gpm-iteso-row-0176-kik-cloner",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 177,
+      "teamId": "2016-mexico-finals-global-row-0062-return-too-izi",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 178,
+      "teamId": "2016-gpm-iteso-row-0178-8bits",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 179,
+      "teamId": "2016-gpm-iteso-row-0179-los-afk",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 180,
+      "teamId": "2016-mexico-finals-global-row-0064-iverlu-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 181,
+      "teamId": "2016-gpm-iteso-row-0181-roxana",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 182,
+      "teamId": "2016-gpm-iteso-row-0182-bitwise",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 183,
+      "teamId": "2016-gpm-iteso-row-0183-do-for",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 184,
+      "teamId": "2016-gpm-iteso-row-0184-only-inhuman",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 185,
+      "teamId": "2016-gpm-iteso-row-0185-biguaa",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 186,
+      "teamId": "2016-gpm-iteso-row-0186-quetzal",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 187,
+      "teamId": "2016-gpm-iteso-row-0187-xyz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 188,
+      "teamId": "2016-gpm-iteso-row-0188-los-asiaticos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 189,
+      "teamId": "2016-gpm-iteso-row-0189-drim-tim",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 190,
+      "teamId": "2016-gpm-iteso-row-0190-kids-itsur",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 191,
+      "teamId": "2016-gpm-iteso-row-0191-antrax",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 192,
+      "teamId": "2016-mexico-finals-global-row-0080-hopefullyrookies",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 193,
+      "teamId": "2016-gpm-iteso-row-0193-cadmus",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 194,
+      "teamId": "2016-gpm-iteso-row-0194-lac-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 195,
+      "teamId": "2016-gpm-iteso-row-0195-backstreetcode",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 196,
+      "teamId": "2016-gpm-iteso-row-0196-triforce-1-1",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 197,
+      "teamId": "2016-gpm-iteso-row-0197-csf2",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 198,
+      "teamId": "2016-gpm-iteso-row-0198-el-pueblo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 199,
+      "teamId": "2016-gpm-iteso-row-0199-c0derz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 200,
+      "teamId": "2016-gpm-iteso-row-0200-mean-girls",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 201,
+      "teamId": "2016-gpm-iteso-row-0201-los-eternos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 202,
+      "teamId": "2016-gpm-iteso-row-0202-natsu",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 203,
+      "teamId": "2016-gpm-iteso-row-0203-tecgrullo3",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 204,
+      "teamId": "2016-gpm-iteso-row-0204-twf",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 205,
+      "teamId": "2016-gpm-iteso-row-0205-pichones",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 206,
+      "teamId": "2016-gpm-iteso-row-0206-huevitos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 207,
+      "teamId": "2016-gpm-iteso-row-0207-daemon-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 208,
+      "teamId": "2016-gpm-iteso-row-0208-cobrish-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 209,
+      "teamId": "2016-mexico-finals-global-row-0084-codificadores-de-alajuela",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 210,
+      "teamId": "2016-gpm-iteso-row-0210-pacifica-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 211,
+      "teamId": "2016-gpm-iteso-row-0211-fuerzajuanga",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 212,
+      "teamId": "2016-gpm-iteso-row-0212-fisicoculturistas-wow",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 213,
+      "teamId": "2016-gpm-iteso-row-0213-stl-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 214,
+      "teamId": "2016-gpm-iteso-row-0214-nolastname-404",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 215,
+      "teamId": "2016-gpm-iteso-row-0215-improvisados",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 216,
+      "teamId": "2016-gpm-iteso-row-0216-virtualcod",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 217,
+      "teamId": "2016-gpm-iteso-row-0217-beagletown",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 218,
+      "teamId": "2016-gpm-iteso-row-0218-jalags",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 219,
+      "teamId": "2016-gpm-iteso-row-0219-include-string",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 220,
+      "teamId": "2016-gpm-iteso-row-0220-guardians",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 221,
+      "teamId": "2016-gpm-iteso-row-0221-teamcobres",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 222,
+      "teamId": "2016-gpm-iteso-row-0222-spacemonkeys",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 223,
+      "teamId": "2016-gpm-iteso-row-0223-developerros",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 224,
+      "teamId": "2016-gpm-iteso-row-0224-bit-byte-bit",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 225,
+      "teamId": "2016-gpm-iteso-row-0225-desarrolladores-anonimos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 226,
+      "teamId": "2016-gpm-iteso-row-0226-expendables",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 227,
+      "teamId": "2016-gpm-iteso-row-0227-los-tiempo-limite-excedido",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 228,
+      "teamId": "2016-gpm-iteso-row-0228-los-galacticos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 229,
+      "teamId": "2016-gpm-iteso-row-0229-basicteam",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 230,
+      "teamId": "2016-gpm-iteso-row-0230-faith",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 231,
+      "teamId": "2016-gpm-iteso-row-0231-fox-code",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 232,
+      "teamId": "2016-gpm-iteso-row-0232-javalio",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 233,
+      "teamId": "2016-gpm-iteso-row-0233-the-mirror-s",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 234,
+      "teamId": "2016-gpm-iteso-row-0234-epsilon",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 235,
+      "teamId": "2016-gpm-iteso-row-0235-code-miners",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 236,
+      "teamId": "2016-gpm-iteso-row-0236-chicos-que-lloran",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 237,
+      "teamId": "2016-gpm-iteso-row-0237-ieea",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 238,
+      "teamId": "2016-gpm-iteso-row-0238-los-snorlax",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 239,
+      "teamId": "2016-gpm-iteso-row-0239-csf3",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 240,
+      "teamId": "2016-gpm-iteso-row-0240-the-xtreme-programmers",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 241,
+      "teamId": "2016-gpm-iteso-row-0241-murox-y-friends",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 242,
+      "teamId": "2016-gpm-iteso-row-0242-javalimos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 243,
+      "teamId": "2016-gpm-iteso-row-0243-ambition",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 244,
+      "teamId": "2016-gpm-iteso-row-0244-gglyonmx",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 245,
+      "teamId": "2016-gpm-iteso-row-0245-salamandras-verdes",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 246,
+      "teamId": "2016-gpm-iteso-row-0246-los-lucas",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 247,
+      "teamId": "2016-gpm-iteso-row-0247-engix",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 248,
+      "teamId": "2016-gpm-iteso-row-0248-blackriver",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 249,
+      "teamId": "2016-gpm-iteso-row-0249-bugs",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 250,
+      "teamId": "2016-gpm-iteso-row-0250-cerbero",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 251,
+      "teamId": "2016-gpm-iteso-row-0251-tesla-itz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 252,
+      "teamId": "2016-gpm-iteso-row-0252-jdk",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 253,
+      "teamId": "2016-gpm-iteso-row-0253-the-masters",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 254,
+      "teamId": "2016-gpm-iteso-row-0254-exodia",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 255,
+      "teamId": "2016-gpm-iteso-row-0255-code-breaker",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 256,
+      "teamId": "2016-gpm-iteso-row-0256-evelia-friends",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 257,
+      "teamId": "2016-gpm-iteso-row-0257-2-1",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 258,
+      "teamId": "2016-gpm-iteso-row-0258-cetys1",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 259,
+      "teamId": "2016-gpm-iteso-row-0259-the-fighters",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 260,
+      "teamId": "2016-gpm-iteso-row-0260-robocode",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 261,
+      "teamId": "2016-gpm-iteso-row-0261-xirosame",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 262,
+      "teamId": "2016-gpm-iteso-row-0262-tmfs",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 263,
+      "teamId": "2016-mexico-finals-global-row-0073-j-team",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 264,
+      "teamId": "2016-gpm-iteso-row-0264-mlz",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 265,
+      "teamId": "2016-gpm-iteso-row-0265-hackerman-s",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 266,
+      "teamId": "2016-gpm-iteso-row-0266-onlyone",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 267,
+      "teamId": "2016-gpm-iteso-row-0267-fifos",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 268,
+      "teamId": "2016-gpm-iteso-row-0268-itcrew",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 269,
+      "teamId": "2016-gpm-iteso-row-0269-el-equipo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 270,
+      "teamId": "2016-mexico-finals-global-row-0059-unidad-de-choque",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 271,
+      "teamId": "2016-gpm-iteso-row-0271-testigos-de-teemo",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 272,
+      "teamId": "2016-gpm-iteso-row-0272-include-stdio",
+      "score": 1,
+      "qualified": null
+    },
+    {
+      "place": 273,
+      "teamId": "2016-gpm-iteso-row-0273-los-destructores",
+      "score": 1,
+      "qualified": null
+    }
+  ],
+  "source": "https://acm.iteso.mx/share/concentrado_gp2016_20161004.pdf",
+  "scoreUnit": "Puntos",
+  "snapshot": "unconfirmed",
+  "snapshotLabel": "Acumulado hasta la cuarta fecha",
+  "publicationNotes": [
+    "Se conserva el acumulado publicado por ITESO; no se recalculan puntajes ni se infiere quién clasificó."
+  ]
+}

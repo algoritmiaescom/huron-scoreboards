@@ -1,0 +1,1809 @@
+{
+  "id": "2010-mexico-finals-final",
+  "seasonYear": 2010,
+  "seriesId": "mexico-finals",
+  "stage": "final",
+  "name": "The 2010 Mexico & Central America Regional Contest",
+  "date": null,
+  "durationMinutes": null,
+  "penaltyMinutesPerFailedAttempt": null,
+  "problems": [],
+  "standings": [
+    {
+      "place": 1,
+      "teamId": "2010-mexico-finals-global-row-0001-manowar",
+      "results": null,
+      "publishedTotals": {
+        "solved": 8,
+        "penalty": 1176
+      }
+    },
+    {
+      "place": 2,
+      "teamId": "2010-mexico-finals-global-row-0002-olimpo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 6,
+        "penalty": 855
+      }
+    },
+    {
+      "place": 3,
+      "teamId": "2010-mexico-finals-global-row-0003-uh",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 416
+      }
+    },
+    {
+      "place": 4,
+      "teamId": "2010-mexico-finals-global-row-0004-bankai",
+      "results": null,
+      "publishedTotals": {
+        "solved": 5,
+        "penalty": 462
+      }
+    },
+    {
+      "place": 5,
+      "teamId": "2010-mexico-finals-global-row-0005-los-punteros",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 177
+      }
+    },
+    {
+      "place": 6,
+      "teamId": "2010-mexico-finals-global-row-0006-acm-problem-solvers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 264
+      }
+    },
+    {
+      "place": 7,
+      "teamId": "2010-mexico-finals-global-row-0007-itesm-pointers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 431
+      }
+    },
+    {
+      "place": 8,
+      "teamId": "2010-mexico-finals-global-row-0008-granja",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 513
+      }
+    },
+    {
+      "place": 9,
+      "teamId": "2010-mexico-finals-global-row-0009-dragon-kurve",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 574
+      }
+    },
+    {
+      "place": 10,
+      "teamId": "2010-mexico-finals-global-row-0010-ades",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 603
+      }
+    },
+    {
+      "place": 11,
+      "teamId": "2010-mexico-finals-global-row-0011-elecujae2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 684
+      }
+    },
+    {
+      "place": 12,
+      "teamId": "2010-mexico-finals-global-row-0012-cem-42",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 741
+      }
+    },
+    {
+      "place": 13,
+      "teamId": "2010-mexico-finals-global-row-0013-lol",
+      "results": null,
+      "publishedTotals": {
+        "solved": 4,
+        "penalty": 777
+      }
+    },
+    {
+      "place": 14,
+      "teamId": "2010-mexico-finals-global-row-0014-dinamacion-programica",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 115
+      }
+    },
+    {
+      "place": 15,
+      "teamId": "2010-mexico-finals-global-row-0015-shishibukai",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 181
+      }
+    },
+    {
+      "place": 16,
+      "teamId": "2010-mexico-finals-global-row-0016-los-colaos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 193
+      }
+    },
+    {
+      "place": 17,
+      "teamId": "2010-mexico-finals-global-row-0017-itamitas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 214
+      }
+    },
+    {
+      "place": 18,
+      "teamId": "2010-mexico-finals-global-row-0018-ftw",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 216
+      }
+    },
+    {
+      "place": 19,
+      "teamId": "2010-mexico-finals-global-row-0019-fcmc-uo-12",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 222
+      }
+    },
+    {
+      "place": 20,
+      "teamId": "2010-mexico-finals-global-row-0020-es-team-a2-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 246
+      }
+    },
+    {
+      "place": 21,
+      "teamId": "2010-mexico-finals-global-row-0021-olimpicos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 247
+      }
+    },
+    {
+      "place": 22,
+      "teamId": "2010-mexico-finals-global-row-0022-uh23",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 257
+      }
+    },
+    {
+      "place": 23,
+      "teamId": "2010-mexico-finals-global-row-0023-k-boom",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 269
+      }
+    },
+    {
+      "place": 24,
+      "teamId": "2010-mexico-finals-global-row-0024-code-raiders-of-chaos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 273
+      }
+    },
+    {
+      "place": 25,
+      "teamId": "2010-mexico-finals-global-row-0025-geekstra",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 280
+      }
+    },
+    {
+      "place": 26,
+      "teamId": "2010-mexico-finals-global-row-0026-pura-creatividad",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 293
+      }
+    },
+    {
+      "place": 27,
+      "teamId": "2010-mexico-finals-global-row-0027-nomen-nescio",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 297
+      }
+    },
+    {
+      "place": 28,
+      "teamId": "2010-mexico-finals-global-row-0028-villanos-favoritos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 299
+      }
+    },
+    {
+      "place": 29,
+      "teamId": "2010-mexico-finals-global-row-0029-big-blue-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 352
+      }
+    },
+    {
+      "place": 30,
+      "teamId": "2010-mexico-finals-global-row-0030-terkianos-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 358
+      }
+    },
+    {
+      "place": 31,
+      "teamId": "2010-mexico-finals-global-row-0031-uam-azcapotzalco-xvii",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 362
+      }
+    },
+    {
+      "place": 32,
+      "teamId": "2010-mexico-finals-global-row-0032-elecujae3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 365
+      }
+    },
+    {
+      "place": 33,
+      "teamId": "2010-mexico-finals-global-row-0033-los-parsers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 377
+      }
+    },
+    {
+      "place": 34,
+      "teamId": "2010-mexico-finals-global-row-0034-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 410
+      }
+    },
+    {
+      "place": 35,
+      "teamId": "2010-mexico-finals-global-row-0035-javangelists",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 414
+      }
+    },
+    {
+      "place": 36,
+      "teamId": "2010-mexico-finals-global-row-0036-los-no-primos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 426
+      }
+    },
+    {
+      "place": 37,
+      "teamId": "2010-mexico-finals-global-row-0037-lol",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 435
+      }
+    },
+    {
+      "place": 38,
+      "teamId": "2010-mexico-finals-global-row-0038-haka-itq",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 440
+      }
+    },
+    {
+      "place": 39,
+      "teamId": "2010-mexico-finals-global-row-0039-itspr-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 442
+      }
+    },
+    {
+      "place": 40,
+      "teamId": "2010-mexico-finals-global-row-0040-c-mita",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 456
+      }
+    },
+    {
+      "place": 41,
+      "teamId": "2010-mexico-finals-global-row-0041-dekus",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 459
+      }
+    },
+    {
+      "place": 42,
+      "teamId": "2010-mexico-finals-global-row-0042-lobos-iii",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 469
+      }
+    },
+    {
+      "place": 43,
+      "teamId": "2010-mexico-finals-global-row-0043-itesz01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 487
+      }
+    },
+    {
+      "place": 44,
+      "teamId": "2010-mexico-finals-global-row-0044-ttteam",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 494
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2010-mexico-finals-global-row-0045-umcc2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 495
+      }
+    },
+    {
+      "place": 45,
+      "teamId": "2010-mexico-finals-global-row-0046-uh21",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 495
+      }
+    },
+    {
+      "place": 47,
+      "teamId": "2010-mexico-finals-global-row-0047-the-coppers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 517
+      }
+    },
+    {
+      "place": 48,
+      "teamId": "2010-mexico-finals-global-row-0048-la-gerencia",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 530
+      }
+    },
+    {
+      "place": 49,
+      "teamId": "2010-mexico-finals-global-row-0049-the-fad",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 619
+      }
+    },
+    {
+      "place": 50,
+      "teamId": "2010-mexico-finals-global-row-0050-machine-gun",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 686
+      }
+    },
+    {
+      "place": 51,
+      "teamId": "2010-mexico-finals-global-row-0051-spartans",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 702
+      }
+    },
+    {
+      "place": 52,
+      "teamId": "2010-mexico-finals-global-row-0052-unicoders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 3,
+        "penalty": 819
+      }
+    },
+    {
+      "place": 53,
+      "teamId": "2010-mexico-finals-global-row-0053-uci-frc-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 40
+      }
+    },
+    {
+      "place": 54,
+      "teamId": "2010-mexico-finals-global-row-0054-hot-code",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 81
+      }
+    },
+    {
+      "place": 55,
+      "teamId": "2010-mexico-finals-global-row-0055-los-primos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 85
+      }
+    },
+    {
+      "place": 56,
+      "teamId": "2010-mexico-finals-global-row-0056-tequilas-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 97
+      }
+    },
+    {
+      "place": 57,
+      "teamId": "2010-mexico-finals-global-row-0057-uho-01",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 99
+      }
+    },
+    {
+      "place": 57,
+      "teamId": "2010-mexico-finals-global-row-0058-el-santo-contra-las-momias",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 99
+      }
+    },
+    {
+      "place": 59,
+      "teamId": "2010-mexico-finals-global-row-0059-bloques-de-lego",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 104
+      }
+    },
+    {
+      "place": 60,
+      "teamId": "2010-mexico-finals-global-row-0060-dev-null",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 128
+      }
+    },
+    {
+      "place": 61,
+      "teamId": "2010-mexico-finals-global-row-0061-equipo-2-quinto",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 131
+      }
+    },
+    {
+      "place": 62,
+      "teamId": "2010-mexico-finals-global-row-0062-itnl-java",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 138
+      }
+    },
+    {
+      "place": 63,
+      "teamId": "2010-mexico-finals-global-row-0063-inf-cujae2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 139
+      }
+    },
+    {
+      "place": 64,
+      "teamId": "2010-mexico-finals-global-row-0064-ajax",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 140
+      }
+    },
+    {
+      "place": 65,
+      "teamId": "2010-mexico-finals-global-row-0065-uho-soap",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 147
+      }
+    },
+    {
+      "place": 66,
+      "teamId": "2010-mexico-finals-global-row-0066-the-expendables",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 152
+      }
+    },
+    {
+      "place": 66,
+      "teamId": "2010-mexico-finals-global-row-0067-quien-sabe",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 152
+      }
+    },
+    {
+      "place": 68,
+      "teamId": "2010-mexico-finals-global-row-0068-linces",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 159
+      }
+    },
+    {
+      "place": 69,
+      "teamId": "2010-mexico-finals-global-row-0069-three-little-bits",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 168
+      }
+    },
+    {
+      "place": 70,
+      "teamId": "2010-mexico-finals-global-row-0070-c-ke-tu",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 170
+      }
+    },
+    {
+      "place": 71,
+      "teamId": "2010-mexico-finals-global-row-0071-frg07",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 180
+      }
+    },
+    {
+      "place": 72,
+      "teamId": "2010-mexico-finals-global-row-0072-s-t-dio-h",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 201
+      }
+    },
+    {
+      "place": 73,
+      "teamId": "2010-mexico-finals-global-row-0073-ucf-helloworld",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 202
+      }
+    },
+    {
+      "place": 74,
+      "teamId": "2010-mexico-finals-global-row-0074-ne-ne-isc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 205
+      }
+    },
+    {
+      "place": 75,
+      "teamId": "2010-mexico-finals-global-row-0075-tezcaltlipoca",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 210
+      }
+    },
+    {
+      "place": 76,
+      "teamId": "2010-mexico-finals-global-row-0076-los-aprendices",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 217
+      }
+    },
+    {
+      "place": 77,
+      "teamId": "2010-mexico-finals-global-row-0077-ccv-dp",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 223
+      }
+    },
+    {
+      "place": 78,
+      "teamId": "2010-mexico-finals-global-row-0078-umcc4",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 226
+      }
+    },
+    {
+      "place": 79,
+      "teamId": "2010-mexico-finals-global-row-0079-u",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 229
+      }
+    },
+    {
+      "place": 80,
+      "teamId": "2010-mexico-finals-global-row-0080-success",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 233
+      }
+    },
+    {
+      "place": 81,
+      "teamId": "2010-mexico-finals-global-row-0081-los-batillos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 234
+      }
+    },
+    {
+      "place": 82,
+      "teamId": "2010-mexico-finals-global-row-0082-aureo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 237
+      }
+    },
+    {
+      "place": 83,
+      "teamId": "2010-mexico-finals-global-row-0083-crazy-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 276
+      }
+    },
+    {
+      "place": 84,
+      "teamId": "2010-mexico-finals-global-row-0084-itesz02",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 277
+      }
+    },
+    {
+      "place": 85,
+      "teamId": "2010-mexico-finals-global-row-0085-fldsmdfr",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 298
+      }
+    },
+    {
+      "place": 86,
+      "teamId": "2010-mexico-finals-global-row-0086-equipo-t",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 300
+      }
+    },
+    {
+      "place": 87,
+      "teamId": "2010-mexico-finals-global-row-0087-itic-zac-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 306
+      }
+    },
+    {
+      "place": 88,
+      "teamId": "2010-mexico-finals-global-row-0088-coyotes-alpha",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 334
+      }
+    },
+    {
+      "place": 89,
+      "teamId": "2010-mexico-finals-global-row-0089-fismateros",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 337
+      }
+    },
+    {
+      "place": 90,
+      "teamId": "2010-mexico-finals-global-row-0090-unreal-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 361
+      }
+    },
+    {
+      "place": 90,
+      "teamId": "2010-mexico-finals-global-row-0091-itesz03",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 361
+      }
+    },
+    {
+      "place": 92,
+      "teamId": "2010-mexico-finals-global-row-0092-equipo-1-quinto",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 370
+      }
+    },
+    {
+      "place": 93,
+      "teamId": "2010-mexico-finals-global-row-0093-marista-three",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 380
+      }
+    },
+    {
+      "place": 94,
+      "teamId": "2010-mexico-finals-global-row-0094-los-bien-vestidos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 383
+      }
+    },
+    {
+      "place": 95,
+      "teamId": "2010-mexico-finals-global-row-0095-malandros",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 387
+      }
+    },
+    {
+      "place": 96,
+      "teamId": "2010-mexico-finals-global-row-0096-british-steel",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 449
+      }
+    },
+    {
+      "place": 97,
+      "teamId": "2010-mexico-finals-global-row-0097-nibblesoft",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 481
+      }
+    },
+    {
+      "place": 98,
+      "teamId": "2010-mexico-finals-global-row-0098-fs-148-212-19-18",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 511
+      }
+    },
+    {
+      "place": 99,
+      "teamId": "2010-mexico-finals-global-row-0099-sapna-pony",
+      "results": null,
+      "publishedTotals": {
+        "solved": 2,
+        "penalty": 707
+      }
+    },
+    {
+      "place": 100,
+      "teamId": "2010-mexico-finals-global-row-0100-los3reyesmagos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 10
+      }
+    },
+    {
+      "place": 101,
+      "teamId": "2010-mexico-finals-global-row-0101-exquisofrenia-ii",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 16
+      }
+    },
+    {
+      "place": 102,
+      "teamId": "2010-mexico-finals-global-row-0102-itm-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 22
+      }
+    },
+    {
+      "place": 102,
+      "teamId": "2010-mexico-finals-global-row-0103-simpus-itsa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 22
+      }
+    },
+    {
+      "place": 104,
+      "teamId": "2010-mexico-finals-global-row-0104-fire-code",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 29
+      }
+    },
+    {
+      "place": 105,
+      "teamId": "2010-mexico-finals-global-row-0105-ka-tet",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 30
+      }
+    },
+    {
+      "place": 106,
+      "teamId": "2010-mexico-finals-global-row-0106-automatas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 33
+      }
+    },
+    {
+      "place": 106,
+      "teamId": "2010-mexico-finals-global-row-0107-pycaro",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 33
+      }
+    },
+    {
+      "place": 108,
+      "teamId": "2010-mexico-finals-global-row-0108-code-killers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 39
+      }
+    },
+    {
+      "place": 109,
+      "teamId": "2010-mexico-finals-global-row-0109-coyotes-omega",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 40
+      }
+    },
+    {
+      "place": 110,
+      "teamId": "2010-mexico-finals-global-row-0110-itm1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 42
+      }
+    },
+    {
+      "place": 110,
+      "teamId": "2010-mexico-finals-global-row-0111-gatos-salvajes",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 42
+      }
+    },
+    {
+      "place": 112,
+      "teamId": "2010-mexico-finals-global-row-0112-nisc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 48
+      }
+    },
+    {
+      "place": 113,
+      "teamId": "2010-mexico-finals-global-row-0113-uam-azcapotzalco-xviii",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 53
+      }
+    },
+    {
+      "place": 114,
+      "teamId": "2010-mexico-finals-global-row-0114-stone-code",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 55
+      }
+    },
+    {
+      "place": 115,
+      "teamId": "2010-mexico-finals-global-row-0115-vg-software",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 56
+      }
+    },
+    {
+      "place": 116,
+      "teamId": "2010-mexico-finals-global-row-0116-1os-bytecode",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 60
+      }
+    },
+    {
+      "place": 117,
+      "teamId": "2010-mexico-finals-global-row-0117-ucf-sudden",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 68
+      }
+    },
+    {
+      "place": 118,
+      "teamId": "2010-mexico-finals-global-row-0118-itsaltillo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 70
+      }
+    },
+    {
+      "place": 119,
+      "teamId": "2010-mexico-finals-global-row-0119-programming-for-a-dream",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 74
+      }
+    },
+    {
+      "place": 120,
+      "teamId": "2010-mexico-finals-global-row-0120-overcloaked",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 76
+      }
+    },
+    {
+      "place": 121,
+      "teamId": "2010-mexico-finals-global-row-0121-bubulubu-fi-unam",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 78
+      }
+    },
+    {
+      "place": 122,
+      "teamId": "2010-mexico-finals-global-row-0122-fredos-slash",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 80
+      }
+    },
+    {
+      "place": 123,
+      "teamId": "2010-mexico-finals-global-row-0123-ispjam-02",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 82
+      }
+    },
+    {
+      "place": 124,
+      "teamId": "2010-mexico-finals-global-row-0124-los-borregos-de-san-luis",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 86
+      }
+    },
+    {
+      "place": 125,
+      "teamId": "2010-mexico-finals-global-row-0125-fcmc-uo-05",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 90
+      }
+    },
+    {
+      "place": 126,
+      "teamId": "2010-mexico-finals-global-row-0126-mibarraespaciadoranosirve",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 94
+      }
+    },
+    {
+      "place": 127,
+      "teamId": "2010-mexico-finals-global-row-0127-ceti-guan",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 95
+      }
+    },
+    {
+      "place": 127,
+      "teamId": "2010-mexico-finals-global-row-0128-neo-cuantic",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 95
+      }
+    },
+    {
+      "place": 129,
+      "teamId": "2010-mexico-finals-global-row-0129-buhos-blancos-isc",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 99
+      }
+    },
+    {
+      "place": 130,
+      "teamId": "2010-mexico-finals-global-row-0130-itzit2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 106
+      }
+    },
+    {
+      "place": 131,
+      "teamId": "2010-mexico-finals-global-row-0131-itsur-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 110
+      }
+    },
+    {
+      "place": 132,
+      "teamId": "2010-mexico-finals-global-row-0132-gsh",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 127
+      }
+    },
+    {
+      "place": 133,
+      "teamId": "2010-mexico-finals-global-row-0133-itspr-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 134
+      }
+    },
+    {
+      "place": 134,
+      "teamId": "2010-mexico-finals-global-row-0134-itsur-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 142
+      }
+    },
+    {
+      "place": 135,
+      "teamId": "2010-mexico-finals-global-row-0135-quantum-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 146
+      }
+    },
+    {
+      "place": 136,
+      "teamId": "2010-mexico-finals-global-row-0136-espartan",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 162
+      }
+    },
+    {
+      "place": 137,
+      "teamId": "2010-mexico-finals-global-row-0137-gameover-laguna",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 163
+      }
+    },
+    {
+      "place": 138,
+      "teamId": "2010-mexico-finals-global-row-0138-itzit1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 173
+      }
+    },
+    {
+      "place": 139,
+      "teamId": "2010-mexico-finals-global-row-0139-itzit3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 202
+      }
+    },
+    {
+      "place": 140,
+      "teamId": "2010-mexico-finals-global-row-0140-ici",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 218
+      }
+    },
+    {
+      "place": 141,
+      "teamId": "2010-mexico-finals-global-row-0141-los-novatos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 219
+      }
+    },
+    {
+      "place": 142,
+      "teamId": "2010-mexico-finals-global-row-0142-fs-rootkits",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 233
+      }
+    },
+    {
+      "place": 143,
+      "teamId": "2010-mexico-finals-global-row-0143-uam-azcapotzalco-xix",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 241
+      }
+    },
+    {
+      "place": 144,
+      "teamId": "2010-mexico-finals-global-row-0144-acapella",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 247
+      }
+    },
+    {
+      "place": 145,
+      "teamId": "2010-mexico-finals-global-row-0145-gallos-uaa",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 268
+      }
+    },
+    {
+      "place": 145,
+      "teamId": "2010-mexico-finals-global-row-0146-wolf-developers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 268
+      }
+    },
+    {
+      "place": 147,
+      "teamId": "2010-mexico-finals-global-row-0147-zergs",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 295
+      }
+    },
+    {
+      "place": 148,
+      "teamId": "2010-mexico-finals-global-row-0148-ccv-ttls",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 299
+      }
+    },
+    {
+      "place": 149,
+      "teamId": "2010-mexico-finals-global-row-0149-alu",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 306
+      }
+    },
+    {
+      "place": 150,
+      "teamId": "2010-mexico-finals-global-row-0150-umcc1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 307
+      }
+    },
+    {
+      "place": 151,
+      "teamId": "2010-mexico-finals-global-row-0151-triforce",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 309
+      }
+    },
+    {
+      "place": 152,
+      "teamId": "2010-mexico-finals-global-row-0152-geeksquad",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 334
+      }
+    },
+    {
+      "place": 153,
+      "teamId": "2010-mexico-finals-global-row-0153-itspr-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 367
+      }
+    },
+    {
+      "place": 154,
+      "teamId": "2010-mexico-finals-global-row-0154-itesu001",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 386
+      }
+    },
+    {
+      "place": 155,
+      "teamId": "2010-mexico-finals-global-row-0155-los-caballeros-de-java",
+      "results": null,
+      "publishedTotals": {
+        "solved": 1,
+        "penalty": 395
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0156-digital-fortress",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0157-fs-e-link",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0158-m",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0159-omijal-preparatoria",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0160-qlan",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0161-univ-loyola-tecnologias",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0162-ice",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0163-ues",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0164-jaguares-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0165-mxl-7-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0166-uadec-extreme-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0167-itvg",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0168-himaga",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0169-marista-one",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0170-hidrogo-s-power",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0171-itst-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0172-shinigamis",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0173-buhos-blancos-sistemas-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0174-jaguares-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0175-jaguares-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0176-tonala-1",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0177-el-grullo",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0178-javasalir",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0179-aguilas",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0180-simuladores",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0181-itm3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0182-blue-screen-of-death",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0183-univa2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0184-buhos-blancos-informatica-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0185-buhos-blancos-informatica",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0186-itst-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0187-rock-n-coders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0188-los-osados",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0189-cruz-azul",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0190-uadec-it-3-exe",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0191-protos",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0192-uadec-lo-c",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0193-omega",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0194-nullcoders",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0195-itst-3",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0196-icebreakers",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0197-sense",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0198-itic-zac-2",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    },
+    {
+      "place": 156,
+      "teamId": "2010-mexico-finals-global-row-0199-puchamon-team",
+      "results": null,
+      "publishedTotals": {
+        "solved": 0,
+        "penalty": 0
+      }
+    }
+  ],
+  "source": "https://icpc.global/regionals/finder/Mexico-Central-America-2011/standings",
+  "publicationNotes": [
+    "La fuente corresponde a la final regional de México y Centroamérica; se conservan todos los equipos publicados, sin filtrar por país.",
+    "La fuente solo publica totales: no se conocen el detalle por problema, la duración ni la regla de penalización."
+  ]
+}

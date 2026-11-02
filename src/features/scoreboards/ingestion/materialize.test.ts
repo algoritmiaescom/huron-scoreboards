@@ -243,7 +243,11 @@ describe('archive draft materialization', () => {
     const result = materialize(value);
     expect(result.files[0]).toMatchObject({
       path: 'data/seasons/2024/other-series/standing.json',
-      record: { rows: [{ place: 1, teamId: '2024-a', score: 12.5, qualified: null }] },
+      record: {
+        rows: [{ place: 1, teamId: '2024-a', score: 12.5, qualified: null }],
+        scoreUnit: 'Puntos',
+        snapshot: 'latest-explicit',
+      },
     });
     expect(result.warnings).toContain('fixture-standing: accumulated score unit is Puntos.');
     expect(

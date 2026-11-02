@@ -213,6 +213,38 @@ describe('ICPC Mexico scoreboard parser', () => {
     publicationState: 'final' as const,
   };
 
+  it('preserves a four-column totals-only source without inventing problem detail or coverage', () => {
+    const html = `<!doctype html><main><header><p>Gran Premio MX 2026 — Tercera Fecha</p>
+      <p>equipos registrados · con envíos · problemas</p></header>
+      <table><thead><tr><th>#</th><th>Equipo</th><th>✓</th><th>Pen</th></tr></thead>
+      <tbody><tr><td>1</td><td><p>Alpha</p><p>School Alpha</p></td><td>10</td><td>1047</td></tr>
+      <tr><td>2</td><td><p>Beta</p><p>School Beta</p></td><td>0</td><td>0</td></tr></tbody></table></main>`;
+    const candidate = parseICPCMexicoScoreboard(html, {
+      ...context,
+      seasonYear: 2026,
+      sourceEditionLabel: '2026',
+      stage: 'qualifier-3',
+    });
+    expect(candidate.contest).toMatchObject({
+      problemLabels: [],
+      date: null,
+      durationMinutes: null,
+      penaltyMinutesPerFailedAttempt: null,
+    });
+    expect(candidate.rows).toMatchObject([
+      { place: 1, results: null, publishedTotals: { solved: 10, penalty: 1047 } },
+      { place: 2, results: null, publishedTotals: { solved: 0, penalty: 0 } },
+    ]);
+    expect(candidate.coverage).toEqual({
+      expectedRowCount: null,
+      rowsComplete: false,
+      paginationComplete: null,
+    });
+    expect(candidate.warnings).toContain(
+      'The source publishes totals only; problem labels and per-problem detail are unavailable.',
+    );
+  });
+
   it('preserves cell boundaries, attempt semantics, totals, and cell evidence', () => {
     const candidate = parseICPCMexicoScoreboard(scoreboardHtml(), context);
     expect(candidate).toMatchObject({
@@ -269,6 +301,26 @@ describe('ICPC Mexico scoreboard parser', () => {
     expect(candidate.coverage.rowsComplete).toBe(true);
   });
 
+  it('extracts bracketed school tags from compact team cells', () => {
+    const taggedHtml = scoreboardHtml().replace(
+      '<div><p title="Alpha">Alpha</p><p title="School Alpha">School Alpha</p></div>',
+      '<div><p title="[FC-UNAM][mx,MX] Rocky IV">[FC-UNAM][mx,MX] Rocky IV</p></div>',
+    );
+    const candidate = parseICPCMexicoScoreboard(taggedHtml, context);
+
+    expect(candidate.rows[0]).toMatchObject({
+      teamName: 'Rocky IV',
+      schoolName: 'FC-UNAM',
+    });
+    expect(candidate.rows[0].evidence).toContainEqual(
+      expect.objectContaining({
+        field: 'rows[0].schoolName',
+        locator: 'table tbody tr:nth-child(1) td:nth-child(2)',
+        excerpt: '[FC-UNAM][mx,MX] Rocky IV',
+      }),
+    );
+  });
+
   it('retains totals and reports incomplete problem detail when cell notation is unknown', () => {
     const candidate = parseICPCMexicoScoreboard(scoreboardHtml(2, 'AC? 50'), context);
     expect(candidate.rows[1]).toMatchObject({
@@ -278,6 +330,19 @@ describe('ICPC Mexico scoreboard parser', () => {
     expect(candidate.coverage.rowsComplete).toBe(true);
     expect(candidate.warnings).toContain(
       'Problem detail for scoreboard row 2 is incomplete; published totals were retained.',
+    );
+  });
+
+  it('omits problem detail when it conflicts with published totals', () => {
+    const conflictingHtml = scoreboardHtml().replace('<td>90</td>', '<td>70</td>');
+    const candidate = parseICPCMexicoScoreboard(conflictingHtml, context);
+
+    expect(candidate.rows[0]).toMatchObject({
+      results: null,
+      publishedTotals: { solved: 1, penalty: 70 },
+    });
+    expect(candidate.warnings).toContain(
+      'Problem detail was omitted for scoreboard row 1 because extracted results disagree with published totals.',
     );
   });
 

@@ -192,6 +192,13 @@ describe('team and school identities', () => {
     expect(screen.queryByText(/undefined|null/)).not.toBeInTheDocument();
   });
 
+  it('labels teams with no source school identity without inventing a school link', () => {
+    renderApp(<SchoolIdentity school={null} href="/schools/unknown" />);
+    expect(screen.getByText('Institución no identificada')).toBeInTheDocument();
+    expect(screen.queryByRole('link')).not.toBeInTheDocument();
+    expect(screen.queryByRole('img')).not.toBeInTheDocument();
+  });
+
   it('supports explicit school links, root-relative logos and complete location', () => {
     renderApp(
       <MemoryRouter>

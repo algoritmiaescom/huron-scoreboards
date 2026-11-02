@@ -3,6 +3,8 @@ import { styled } from '@mui/material/styles';
 
 import { DataList, ListGrid, SectionTitle } from '@/components';
 
+import { formatPlace } from '../model/ranking';
+
 import type { SchoolHistory } from '../model/schoolHistory';
 
 const Chart = styled('svg')(({ theme }) => ({
@@ -43,21 +45,24 @@ const rankTicks = (maxRank: number) => {
 };
 
 export const SchoolTrendChart = ({ seasons }: { seasons: SchoolHistory['seasons'] }) => {
+  const rankedSeasons = seasons.flatMap((season) =>
+    season.bestPlace === undefined ? [] : [{ ...season, bestPlace: season.bestPlace }],
+  );
   const width = 640;
   const height = 280;
   const left = 46;
   const right = 12;
   const top = 12;
   const bottom = 34;
-  const maxPlace = Math.max(...seasons.map(({ bestPlace }) => bestPlace));
+  const maxPlace = Math.max(1, ...rankedSeasons.map(({ bestPlace }) => bestPlace));
   const maxRank = Math.max(8, maxPlace);
   const ticks = rankTicks(maxRank);
   const x = (index: number) =>
-    seasons.length <= 1
+    rankedSeasons.length <= 1
       ? (left + width - right) / 2
-      : left + (index / (seasons.length - 1)) * (width - left - right);
+      : left + (index / (rankedSeasons.length - 1)) * (width - left - right);
   const y = (place: number) => top + ((place - 1) / (maxRank - 1)) * (height - top - bottom);
-  const points = seasons
+  const points = rankedSeasons
     .map(({ bestPlace }, index) => `${String(x(index))},${String(y(bestPlace))}`)
     .join(' ');
 
@@ -77,7 +82,7 @@ export const SchoolTrendChart = ({ seasons }: { seasons: SchoolHistory['seasons'
           <desc id="school-trend-description">
             {seasons
               .map(
-                ({ seasonYear, bestPlace }) => `${String(seasonYear)}: puesto ${String(bestPlace)}`,
+                ({ seasonYear, bestPlace }) => `${String(seasonYear)}: ${formatPlace(bestPlace)}`,
               )
               .join('; ')}
           </desc>
@@ -95,10 +100,10 @@ export const SchoolTrendChart = ({ seasons }: { seasons: SchoolHistory['seasons'
               </text>
             </g>
           ))}
-          {seasons.length > 1 && (
+          {rankedSeasons.length > 1 && (
             <polyline points={points} fill="none" stroke="currentColor" strokeWidth="3" />
           )}
-          {seasons.map(({ seasonYear, bestPlace }, index) => (
+          {rankedSeasons.map(({ seasonYear, bestPlace }, index) => (
             <g key={seasonYear} data-season={seasonYear} data-place={bestPlace}>
               <circle
                 cx={x(index)}
@@ -124,7 +129,7 @@ export const SchoolTrendChart = ({ seasons }: { seasons: SchoolHistory['seasons'
               <Season
                 items={[
                   { label: 'Temporada', value: seasonYear },
-                  { label: 'Mejor puesto', value: `#${String(bestPlace)}` },
+                  { label: 'Mejor puesto', value: formatPlace(bestPlace) },
                   { label: 'Participaciones', value: results },
                   { label: 'Concursos', value: contests },
                   { label: 'Podios', value: podiums.length },
@@ -133,7 +138,12 @@ export const SchoolTrendChart = ({ seasons }: { seasons: SchoolHistory['seasons'
             </li>
           ))}
         </Values>
-        {seasons.length === 1 && (
+        {rankedSeasons.length === 0 && (
+          <Typography color="text.secondary">
+            La fuente no publica puestos para construir una tendencia.
+          </Typography>
+        )}
+        {rankedSeasons.length === 1 && (
           <Typography color="text.secondary" variant="caption">
             Solo hay datos de una temporada; la gráfica muestra un punto y no implica una tendencia.
           </Typography>
