@@ -17,7 +17,7 @@ const Logo = styled('img')(({ theme }) => ({
 const schoolLogoSource = (logo: string) =>
   schoolLogoSchema.safeParse(logo).success
     ? logo.startsWith('logos/')
-      ? `/${logo}`
+      ? `${import.meta.env.BASE_URL}${logo}`
       : logo
     : undefined;
 

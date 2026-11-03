@@ -2,8 +2,8 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
 const origin = 'http://127.0.0.1:4175';
-const accumulatedUrl = `${origin}/scoreboards?season=2024&series=gpm&view=accumulated`;
-const contestUrl = `${origin}/scoreboards?contest=2024-gpm-qualifier-1`;
+const accumulatedUrl = `${origin}/#/scoreboards?season=2024&series=gpm&view=accumulated`;
+const contestUrl = `${origin}/#/scoreboards?contest=2024-gpm-qualifier-1`;
 const title = 'Clasificación acumulada 2024';
 
 test.beforeEach(async ({ page }) => {
@@ -36,7 +36,7 @@ test('selects, reloads, shares and restores the distinct accumulated view throug
   );
   await expect(page.getByRole('link', { name: 'Cómo corregir estos datos' })).toHaveAttribute(
     'href',
-    '/contribute',
+    '#/contribute',
   );
   await page.getByRole('button', { name: 'Compartir vista' }).click();
   await expect(page.getByText('Enlace copiado')).toBeVisible();
@@ -50,7 +50,7 @@ test('selects, reloads, shares and restores the distinct accumulated view throug
   await page.goForward();
   await expect(table).toBeVisible();
   await page.getByRole('combobox', { name: 'Temporada' }).selectOption('2025');
-  await expect(page).toHaveURL(`${origin}/scoreboards?season=2025&series=gpm&view=accumulated`);
+  await expect(page).toHaveURL(`${origin}/#/scoreboards?season=2025&series=gpm&view=accumulated`);
   await expect(page.getByRole('table').getByText('114.8', { exact: true })).toBeVisible();
   await page.getByRole('combobox', { name: 'Temporada' }).selectOption('2023');
   await expect(page.getByRole('table')).toBeVisible();
@@ -59,13 +59,13 @@ test('selects, reloads, shares and restores the distinct accumulated view throug
       .getByRole('combobox', { name: 'Clasificación', exact: true })
       .locator('option[value="accumulated"]'),
   ).toHaveCount(0);
-  expect(new URL(page.url()).searchParams.has('contest')).toBe(true);
+  expect(new URL(page.url().split('#')[1], origin).searchParams.has('contest')).toBe(true);
 });
 
 test('recovers missing selections and incompatible filters without substituting results', async ({
   page,
 }) => {
-  await page.goto(`${origin}/scoreboards?season=2023&series=gpm&view=accumulated`);
+  await page.goto(`${origin}/#/scoreboards?season=2023&series=gpm&view=accumulated`);
   await expect(page.getByRole('alert')).toContainText('No hay clasificación acumulada publicada');
   await expect(page.getByRole('table')).toHaveCount(0);
   await page.getByRole('combobox', { name: 'Temporada' }).selectOption('2024');

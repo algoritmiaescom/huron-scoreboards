@@ -86,7 +86,7 @@ The in-app contribution guide must stay consistent with this section.
 - Keep changes focused and explain user-visible behavior.
 - Update directly related documentation.
 - Include testing evidence.
-- Do not introduce deployment assumptions until a hosting decision is recorded.
+- Keep deployment changes consistent with [the GitHub Pages decision](docs/adr/0009-deploy-to-github-pages.md).
 - Record significant architectural changes in `docs/adr/`. ADRs are for architecture only:
   coding standards belong in `docs/best-practices.md` and the lint config, visual decisions in
   `docs/design.md`, and feature scope in `docs/product-scope.md`. See `docs/adr/README.md`.

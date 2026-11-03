@@ -15,6 +15,7 @@ const Footer = styled('footer')(({ theme }) => ({
 const FooterContent = styled(Container)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
+  flexWrap: 'wrap',
   alignItems: 'flex-start',
   gap: theme.spacing(2),
   [theme.breakpoints.up('sm')]: {

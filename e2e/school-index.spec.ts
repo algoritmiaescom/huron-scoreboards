@@ -2,7 +2,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
 const origin = 'http://127.0.0.1:4175';
-const directoryUrl = `${origin}/schools`;
+const directoryUrl = `${origin}/#/schools`;
 const searchLabel = 'Buscar instituciones, unidades, ciudades o estados';
 
 test.beforeEach(async ({ page }) => {
@@ -20,7 +20,7 @@ test('searches stable identities and locations with reloadable URLs and honest r
   await expect(list.getByRole('link')).toHaveCount(15);
   await expect(list.getByRole('link', { name: 'UNAM', exact: true })).toHaveAttribute(
     'href',
-    '/schools/unam',
+    '#/schools/unam',
   );
   const parent = page.getByRole('article', { name: 'UNAM', exact: true });
   await expect(parent.getByText('2 unidades académicas')).toBeVisible();
@@ -35,7 +35,7 @@ test('searches stable identities and locations with reloadable URLs and honest r
   await search.fill('MÉRIDA');
   await expect(page.getByRole('status')).toHaveText('1 de 15 instituciones y unidades');
   await expect(list.getByRole('heading', { name: 'UADY', exact: true })).toBeVisible();
-  expect(new URL(page.url()).searchParams.get('q')).toBe('MÉRIDA');
+  expect(new URL(page.url().split('#')[1], origin).searchParams.get('q')).toBe('MÉRIDA');
   await page.reload();
   await expect(search).toHaveValue('MÉRIDA');
   await expect(list.getByRole('article')).toHaveCount(1);
@@ -62,13 +62,13 @@ test('searches stable identities and locations with reloadable URLs and honest r
 test('uses the real archive in production and exposes current institution navigation', async ({
   page,
 }) => {
-  await page.goto('/schools');
+  await page.goto('./#/schools');
   await expect(page.getByRole('status')).toHaveText('1174 de 1174 instituciones y unidades');
   await expect(page.getByRole('article', { name: 'CCL', exact: true })).toBeVisible();
   await expect(
     page
       .getByRole('article', { name: 'ESCOM IPN', exact: true })
-      .filter({ has: page.locator('a[href="/schools/ipn-escom"]') }),
+      .filter({ has: page.locator('a[href="#/schools/ipn-escom"]') }),
   ).toBeVisible();
   await expect(page.getByRole('textbox', { name: searchLabel })).toBeVisible();
   await expect(page.getByText(/inventados/)).toHaveCount(0);
@@ -83,7 +83,7 @@ test('opens unit and institution histories with the correct scope and contest de
 }) => {
   await page.goto(directoryUrl);
   await page.getByRole('link', { name: 'UNAM', exact: true }).click();
-  await expect(page).toHaveURL(`${origin}/schools/unam`);
+  await expect(page).toHaveURL(`${origin}/#/schools/unam`);
   await expect(page.getByText('Alcance institucional')).toBeVisible({ timeout: 15_000 });
   const stats = page.getByRole('region', { name: 'Resumen del historial' });
   await expect(stats.getByText('50', { exact: true })).toBeVisible();
@@ -91,18 +91,18 @@ test('opens unit and institution histories with the correct scope and contest de
     page.getByRole('img', { name: 'Tendencia del mejor puesto por temporada' }),
   ).toBeVisible();
   await page.getByRole('link', { name: 'Ver solo resultados directos' }).click();
-  await expect(page).toHaveURL(`${origin}/schools/unam?scope=school`);
+  await expect(page).toHaveURL(`${origin}/#/schools/unam?scope=school`);
   await expect(
     page.getByRole('region', { name: 'Resumen del historial' }).locator('dd').first(),
   ).toHaveText('0');
   await expect(page.getByText(/Todavía no hay resultados de concursos/)).toBeVisible();
   await page.getByRole('link', { name: 'Todas las instituciones' }).click();
   await page.getByRole('link', { name: 'UNAM FI', exact: true }).click();
-  await expect(page).toHaveURL(`${origin}/schools/unam-fi`);
+  await expect(page).toHaveURL(`${origin}/#/schools/unam-fi`);
   await expect(page.getByText('Esta escuela únicamente')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Ver institución UNAM' })).toHaveAttribute(
     'href',
-    '/schools/unam',
+    '#/schools/unam',
   );
   await expect(page.getByRole('link', { name: 'Contest' })).toHaveCount(0);
   const contestResults = page.getByRole('list', { name: 'Resultados de concursos' });
@@ -112,7 +112,7 @@ test('opens unit and institution histories with the correct scope and contest de
   });
   await expect(targetContest).toHaveCount(2);
   await targetContest.first().click();
-  await expect(page).toHaveURL(`${origin}/scoreboards?contest=2024-gpm-qualifier-1`);
+  await expect(page).toHaveURL(`${origin}/#/scoreboards?contest=2024-gpm-qualifier-1`);
   const contestHeading = page.getByRole('heading', {
     name: 'GPM 2024 Clasificatorio 1',
     exact: true,
@@ -123,7 +123,7 @@ test('opens unit and institution histories with the correct scope and contest de
 for (const width of [390, 1024]) {
   test(`opens the school index through navigation at ${String(width)}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 844 });
-    await page.goto(`${origin}/scoreboards`);
+    await page.goto(`${origin}/#/scoreboards`);
     if (width < 900) {
       await page.getByRole('button', { name: 'Abrir navegación' }).click();
     }
@@ -156,7 +156,7 @@ for (const mode of ['light', 'dark'] as const) {
       localStorage.setItem('huron-scoreboards.theme-mode', value);
     }, mode);
     await page.emulateMedia({ reducedMotion: 'reduce' });
-    await page.goto(`${origin}/schools/unam-fi`);
+    await page.goto(`${origin}/#/schools/unam-fi`);
     const results = page.getByRole('list', { name: 'Resultados de concursos' });
     await expect(results.locator(':scope > li').first()).toBeVisible();
     const original = await results.textContent();
