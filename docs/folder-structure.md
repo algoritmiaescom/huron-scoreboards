@@ -60,7 +60,7 @@ the `schoolDirectory` and `schoolHistory` models derive scope-aware summaries an
 Route-only pieces are imported directly to keep the public entry point narrow. The shared
 desktop/mobile navigation links to the index; cards and unit histories link to history pages.
 
-`MediaPage` composes the latest held contest, eligible event, and referenced posts for `/media`.
+`MediaPage` composes event metadata, published referenced posts, and optional contest context for `/media`.
 `MediaPostCard` owns the accessible carousel, asset playback,
 optional post metadata, and original-post link. The shared desktop/mobile navigation links to the
 feed; media selection and validation remain in the repository/model layers.
@@ -70,7 +70,7 @@ The modules map to these features:
 ```text
 src/features/
   scoreboards/   Contest standings, per-problem results, filters, school history
-  media/         Curated posts linked to events for the latest held contest
+  media/         Curated posts linked to events, independently of scoreboard availability
   contribution/  Guide for correcting competition data through GitHub
 ```
 

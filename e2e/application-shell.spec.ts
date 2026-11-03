@@ -44,23 +44,19 @@ test('navigates the complete page, restores its theme, and recovers unknown rout
   await expect(page.getByRole('main')).toBeFocused();
 });
 
-test('opens multimedia from desktop and mobile navigation with an honest empty media state', async ({
-  page,
-}) => {
+test('opens archived multimedia from desktop and mobile navigation', async ({ page }) => {
   await page.goto('./#/scoreboards');
   await page.getByRole('link', { name: 'Multimedia', exact: true }).click();
   await expect(page).toHaveURL('./#/media');
   await expect(page).toHaveTitle('Comunidad | Huron Scoreboards');
   await expect(page.getByRole('heading', { name: 'Más allá de la clasificación.' })).toBeVisible();
-  await expect(
-    page.getByRole('heading', { name: 'Aún no hay publicaciones archivadas' }),
-  ).toBeVisible();
+  await expect(page.getByText(/Final Mexicana 2026 ·/)).toBeVisible();
   await expect(page.getByRole('link', { name: 'Multimedia', exact: true })).toHaveAttribute(
     'aria-current',
     'page',
   );
   await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
-  await expect(page.getByRole('article')).toHaveCount(0);
+  await expect(page.getByRole('article').first()).toBeVisible();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.getByRole('button', { name: 'Abrir navegación' }).click();
   const drawer = page.getByRole('dialog', { name: 'Menú de navegación' });
@@ -82,23 +78,22 @@ for (const mode of ['light', 'dark'] as const) {
     await page.addInitScript((themeMode) => {
       localStorage.setItem('huron-scoreboards.theme-mode', themeMode);
     }, mode);
+    await page.clock.setFixedTime(new Date('2026-11-02T12:00:00Z'));
     await page.goto('http://127.0.0.1:4175/#/media');
-    const picker = page.getByLabel('Ver publicaciones de otra competencia');
+    const picker = page.getByLabel('Ver publicaciones de otro evento');
     await expect(picker).toBeVisible();
-    await picker.selectOption('2025-mexico-finals');
+    await picker.selectOption('2024-gpm-repechage');
 
-    await expect(page).toHaveURL('http://127.0.0.1:4175/#/media?contest=2025-mexico-finals');
+    await expect(page).toHaveURL('http://127.0.0.1:4175/#/media?event=2024-gpm-repechage');
     await expect(
-      page.getByText(
-        'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
-      ),
+      page.getByText('Publicados los resultados del repechaje 2024. Nos vemos en la final.'),
     ).toBeVisible();
-    await expect(picker).toHaveValue('2025-mexico-finals');
+    await expect(picker).toHaveValue('2024-gpm-repechage');
 
     for (const width of [320, 390, 599, 600, 899, 900, 1200, 1440]) {
       await page.setViewportSize({ width, height: 844 });
-      await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
-        '2025-mexico-finals',
+      await expect(page.getByLabel('Ver publicaciones de otro evento')).toHaveValue(
+        '2024-gpm-repechage',
       );
       await expect
         .poll(
@@ -116,18 +111,16 @@ for (const mode of ['light', 'dark'] as const) {
     }
 
     await page.reload();
-    await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
-      '2025-mexico-finals',
+    await expect(page.getByLabel('Ver publicaciones de otro evento')).toHaveValue(
+      '2024-gpm-repechage',
     );
     await expect(
-      page.getByText(
-        'Comienza la Final Regional Mexicana 2025 con los mejores equipos del Gran Premio de México.',
-      ),
+      page.getByText('Publicados los resultados del repechaje 2024. Nos vemos en la final.'),
     ).toBeVisible();
     await page.goBack();
     await expect(page).toHaveURL('http://127.0.0.1:4175/#/media');
-    await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveValue(
-      '2026-gpm-qualifier-3',
+    await expect(page.getByLabel('Ver publicaciones de otro evento')).toHaveValue(
+      '2025-mexico-finals',
     );
   });
 }

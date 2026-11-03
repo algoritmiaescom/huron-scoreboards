@@ -44,12 +44,14 @@ const renderMedia = (data: MediaPageData, initialEntry = '/media') => {
             path: '/media',
             loader: ({ request }) => {
               const contests = new URL(request.url).searchParams.getAll('contest');
+              const events = new URL(request.url).searchParams.getAll('event');
               return selectMediaPageData(
                 data.scoreboards,
                 data.media,
                 new Date('2024-03-02T12:00:00Z'),
                 contests.length === 1 ? contests[0] : undefined,
-                contests.length > 1,
+                contests.length + events.length > 1,
+                events[0],
               );
             },
             Component: MediaPage,
@@ -272,14 +274,19 @@ describe('media page', () => {
     const router = renderMedia(data);
 
     expect(await screen.findByText('post-a')).toBeVisible();
-    const picker = screen.getByLabelText('Ver publicaciones de otra competencia');
-    expect(picker).toHaveValue('2024-gpm-q1');
-    await user.selectOptions(picker, '2023-gpm-q1');
+    const picker = screen.getByLabelText('Ver publicaciones de otro evento');
+    expect(picker).toHaveValue(eventFile.event.id);
+    await user.selectOptions(picker, '2023-gpm-event');
 
     expect(await screen.findByText('Archivo de una competencia anterior')).toBeVisible();
     expect(screen.queryByText('post-a')).not.toBeInTheDocument();
-    expect(router.state.location.search).toBe('?contest=2023-gpm-q1');
-    expect(screen.getAllByText(/GPM 2023/)).toHaveLength(2);
+    expect(router.state.location.search).toBe('?event=2023-gpm-event');
+    await user.selectOptions(
+      screen.getByLabelText('Ver publicaciones de otro evento'),
+      eventFile.event.id,
+    );
+    expect(await screen.findByText('post-a')).toBeVisible();
+    expect(router.state.location.search).toBe('');
   });
 
   it('explains unknown contest selections instead of showing another contest', async () => {
@@ -297,5 +304,41 @@ describe('media page', () => {
     renderMedia(data, '/media?contest=2024-gpm-q1&contest=2024-gpm-q1');
     expect(await screen.findByText(/aparece más de una vez/)).toBeVisible();
     expect(screen.queryByText(eventFile.posts[0].body)).not.toBeInTheDocument();
+  });
+
+  it('renders upcoming unlinked media with an empty scoreboard archive and no fabricated classification link', async () => {
+    const upcoming = {
+      ...eventFile,
+      event: {
+        ...eventFile.event,
+        name: 'Upcoming event',
+        date: '2024-04-01',
+        contestId: undefined,
+      },
+    };
+    renderMedia(
+      createPageData(
+        upcoming.posts,
+        { status: 'empty', data: { ...archive, contests: [] } },
+        { status: 'ready', data: { source: 'archive', events: [upcoming] } },
+      ),
+    );
+    expect(await screen.findByText(/Upcoming event ·/)).toBeVisible();
+    expect(screen.getAllByRole('article')).toHaveLength(2);
+    expect(screen.queryByRole('link', { name: /Ver clasificación de/ })).not.toBeInTheDocument();
+  });
+
+  it.each([
+    '/media?event=missing',
+    '/media?event=2024-gpm-event&event=2024-gpm-event',
+    '/media?event=2024-gpm-event&contest=2024-gpm-q1',
+  ])('explains invalid event URLs and offers recovery (%s)', async (url) => {
+    const user = userEvent.setup();
+    const router = renderMedia(createPageData([eventFile.posts[0]]), url);
+    const picker = await screen.findByLabelText('Ver publicaciones de otro evento');
+    expect(screen.queryByRole('article')).not.toBeInTheDocument();
+    await user.selectOptions(picker, eventFile.event.id);
+    expect(await screen.findByRole('article')).toBeVisible();
+    expect(router.state.location.search).toBe('');
   });
 });

@@ -83,6 +83,9 @@ Create `data/media/events/<event-id>.json` with accurate real event metadata:
 
 The values above illustrate the shape; replace them with verified event details. Omit `contestId`
 until the corresponding real contest exists. Never target `data/mock/`.
+The media page can show an unlinked or upcoming event as soon as it has published posts; no
+scoreboard placeholder or altered event date is needed. Only posts with `postedAt` at or before
+the current instant appear.
 
 Edit `config/media-ingestion.json`:
 
@@ -114,8 +117,14 @@ an unfiltered feed containing unsupported platforms fails explicitly. A hashtag 
 the event record's hashtag unless it lists its own `hashtags`, which replace it; include the event
 hashtag in that list to keep searching it. Each hashtag is queried on each of the source's
 platforms, and a post matching several hashtags is imported once. Associate each configured feed
-with the intended event in Juicer; a feed's public posts need not all contain a hashtag in their
-text.
+with the intended event in Juicer.
+
+Juicer results are not trusted to be relevant: feeds and direct hashtag searches can return posts
+that never mention the hashtag. Each collected post's text must contain the hashtag it was searched
+for, as a whole hashtag compared case-insensitively (`#icpcmx2026` matches `#ICPCMX2026`;
+`#ICPCMX20261` does not). Feed posts must contain the event record's hashtag, and direct hashtag
+posts must contain the queried hashtag. Other posts are counted as `missingHashtag` and are not
+imported.
 
 For individual feed sources, use `"sourceIds": [12345, 67890]` instead of `platforms`.
 These are Juicer source IDs, not social-post IDs. The two filter forms are mutually exclusive
@@ -157,7 +166,7 @@ npm run validate:data
 ```
 
 Dry-run collects and validates but changes nothing. Both modes print enabled source modes and
-per-event counts for fetched, added, duplicate, suppressed, date-excluded, and newly imported missing-alt media items. Credentials
+per-event counts for fetched, added, duplicate, suppressed, date-excluded, missing-hashtag, and newly imported missing-alt media items. Credentials
 and raw response bodies are not logged. Juicer query failures (HTTP/network errors, HTTP-200
 platform errors, malformed pages, missing required fields, repeated cursors, and exhausted
 limits) produce warnings and partial summaries rather than failing the whole run.
@@ -214,8 +223,9 @@ overwritten.
 - Juicer link attachments are not image/video media and are omitted; the post's message and
   permalink remain. The importer never treats article URLs as image URLs, renders HTML, or
   downloads binaries. Remote media URLs can expire.
-- Null or blank Juicer messages become `body: ""` for posts containing images or videos;
-  their media and attribution are preserved, and the UI omits the empty body text block.
+- Null or blank Juicer messages become `body: ""`, so such captionless posts cannot contain the
+  searched hashtag and are not imported. Curated captionless posts with images or videos remain
+  valid archive data, and the UI omits the empty body text block.
   Posts with neither nonblank text nor image/video media fail validation.
 - No invented body, author, timestamp, or attribution fills missing required fields. Such
   records stop that query with an explicit warning and must be investigated.

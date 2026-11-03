@@ -50,7 +50,7 @@ const FeedHeader = styled('div')(({ theme }) => ({
   },
 }));
 
-const ContestPicker = styled('label')(({ theme }) => ({
+const EventPicker = styled('label')(({ theme }) => ({
   display: 'grid',
   gap: theme.spacing(0.75),
   minWidth: 0,
@@ -59,7 +59,7 @@ const ContestPicker = styled('label')(({ theme }) => ({
   fontWeight: theme.typography.fontWeightMedium,
 }));
 
-const ContestSelect = styled('select')(({ theme }) => ({
+const EventSelect = styled('select')(({ theme }) => ({
   width: '100%',
   minHeight: theme.spacing(5.25),
   padding: theme.spacing(1, 1.5),
@@ -93,38 +93,34 @@ export const MediaPage = () => {
   const {
     scoreboards,
     media,
-    latestContest,
     selectedContest,
-    contestsWithMedia,
+    eventsWithMedia,
+    defaultEventId,
     selectionError,
     feed,
   } = useLoaderData<MediaPageData>();
   const [, setSearchParams] = useSearchParams();
-  const fallbackContests = [latestContest, selectedContest].flatMap((contest, index, choices) =>
-    contest !== undefined &&
-    !contestsWithMedia.some((option) => option.contest.id === contest.id) &&
-    choices.findIndex((choice) => choice?.id === contest.id) === index
-      ? [contest]
-      : [],
-  );
-  const contestOptions = [
-    ...contestsWithMedia.map(({ contest }) => contest),
-    ...fallbackContests,
-  ].toSorted((a, b) => (b.date ?? '').localeCompare(a.date ?? '') || a.id.localeCompare(b.id));
-  const showContestPicker = contestOptions.length > 1;
   const selectedEvent = feed.status === 'found' ? feed.record.event : undefined;
+  const eventOptions = [
+    ...eventsWithMedia.map(({ record }) => record.event),
+    ...(selectedEvent !== undefined &&
+    !eventsWithMedia.some(({ record }) => record.event.id === selectedEvent.id)
+      ? [selectedEvent]
+      : []),
+  ].toSorted((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+  const showEventPicker = eventOptions.length > 1 || selectionError !== undefined;
   const subtitle =
     selectedEvent !== undefined
       ? `${selectedEvent.name} · ${formatCalendarDate(selectedEvent.date)}${selectedEvent.location === undefined ? '' : ` · ${selectedEvent.location}`}`
       : selectedContest === undefined
-        ? 'Aún no hay concursos realizados en el archivo.'
+        ? 'Publicaciones de eventos de la comunidad.'
         : `${selectedContest.name} · ${formatCalendarDate(selectedContest.date)}`;
 
   return (
     <>
       <DocumentTitle>Comunidad</DocumentTitle>
       <Hero
-        eyebrow={`Publicaciones archivadas · ${selectedContest?.name ?? 'competencia'}`}
+        eyebrow={`Publicaciones archivadas · ${selectedEvent?.name ?? selectedContest?.name ?? 'comunidad'}`}
         title="Más allá de la clasificación."
         description={subtitle}
       >
@@ -137,7 +133,7 @@ export const MediaPage = () => {
         {scoreboards.status === 'invalid' || scoreboards.status === 'error' ? (
           <DataLoadError
             title="No se pudo cargar el archivo de competencias"
-            message="El feed requiere validar las competencias archivadas antes de elegir el evento más reciente."
+            message="El feed requiere validar las referencias a las competencias archivadas."
             issues={scoreboards.issues}
           />
         ) : media.status === 'blocked' ? (
@@ -162,55 +158,56 @@ export const MediaPage = () => {
               <Typography variant="body2" color="text.secondary">
                 Fuentes: X · Instagram · Facebook · YouTube · LinkedIn
               </Typography>
-              {showContestPicker && (
-                <ContestPicker htmlFor="media-contest">
-                  Ver publicaciones de otra competencia
-                  <ContestSelect
-                    id="media-contest"
-                    value={selectedContest?.id ?? ''}
+              {showEventPicker && (
+                <EventPicker htmlFor="media-event">
+                  Ver publicaciones de otro evento
+                  <EventSelect
+                    id="media-event"
+                    value={selectedEvent?.id ?? ''}
                     onChange={(event) => {
-                      const contestId = event.currentTarget.value;
+                      const eventId = event.currentTarget.value;
                       setSearchParams((current) => {
                         const next = new URLSearchParams(current);
-                        if (contestId === latestContest?.id || contestId === '') {
-                          next.delete('contest');
+                        next.delete('contest');
+                        if (eventId === defaultEventId || eventId === '') {
+                          next.delete('event');
                         } else {
-                          next.set('contest', contestId);
+                          next.set('event', eventId);
                         }
                         return next;
                       });
                     }}
                   >
-                    {selectionError !== undefined && (
-                      <option value="">Selecciona una competencia archivada</option>
+                    {selectedEvent === undefined && (
+                      <option value="">Selecciona un evento archivado</option>
                     )}
-                    {contestOptions.map((contest) => {
-                      const hasMedia = contestsWithMedia.some(
-                        (option) => option.contest.id === contest.id,
+                    {eventOptions.map((event) => {
+                      const hasMedia = eventsWithMedia.some(
+                        ({ record }) => record.event.id === event.id,
                       );
                       return (
-                        <option key={contest.id} value={contest.id}>
-                          {contest.name} · {formatCalendarDate(contest.date)}
+                        <option key={event.id} value={event.id}>
+                          {event.name} · {formatCalendarDate(event.date)}
                           {hasMedia ? '' : ' · sin publicaciones archivadas'}
                         </option>
                       );
                     })}
-                  </ContestSelect>
-                </ContestPicker>
+                  </EventSelect>
+                </EventPicker>
               )}
             </FeedHeader>
 
             {selectionError !== undefined ? (
               <Alert severity="warning">
                 {selectionError === 'repeated'
-                  ? 'La selección de competencia aparece más de una vez en la dirección.'
-                  : 'La competencia seleccionada no existe en el archivo o aún no se ha realizado.'}{' '}
-                Elige una competencia archivada para continuar.
+                  ? 'La selección de evento o competencia aparece más de una vez en la dirección.'
+                  : 'El evento o la competencia seleccionada no existe en el archivo.'}{' '}
+                Elige un evento archivado para continuar.
               </Alert>
             ) : feed.status === 'found' && feed.record.posts.length > 0 ? (
               <ListGrid
                 columns={{ md: 2, lg: 3 }}
-                aria-label={`Publicaciones de ${selectedContest?.name ?? 'la competencia seleccionada'}`}
+                aria-label={`Publicaciones de ${selectedEvent?.name ?? 'el evento seleccionado'}`}
               >
                 {feed.record.posts.map((post) => (
                   <li key={post.id}>
@@ -226,11 +223,11 @@ export const MediaPage = () => {
                     Aún no hay publicaciones archivadas
                   </Typography>
                   <Typography color="text.secondary">
-                    {selectedContest === undefined
-                      ? 'No hay concursos realizados en el archivo para seleccionar un evento.'
-                      : feed.status === 'found'
-                        ? `El evento ${feed.record.event.name} no tiene publicaciones vinculadas.`
-                        : `No hay un evento archivado para ${selectedContest.name}. No se sustituyen publicaciones de otras competencias ni de eventos futuros.`}
+                    {feed.status === 'found'
+                      ? `El evento ${feed.record.event.name} no tiene publicaciones vinculadas ya publicadas.`
+                      : selectedContest === undefined
+                        ? 'No hay eventos con publicaciones disponibles en el archivo.'
+                        : `No hay un evento archivado para ${selectedContest.name}.`}
                   </Typography>
                   {selectedContest !== undefined && (
                     <Button

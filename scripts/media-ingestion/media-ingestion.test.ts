@@ -9,7 +9,13 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { postMediaSchema, postSchema } from '@/features/media/model/schemas';
 
 import { configSchema, parseConfig, parseJson, type SourceConfig } from './config';
-import { appendPosts, canonicalPermalink, ingestMedia, normalizePost } from './ingestion';
+import {
+  appendPosts,
+  canonicalPermalink,
+  containsHashtag,
+  ingestMedia,
+  normalizePost,
+} from './ingestion';
 import { type CollectedPost, type IncompleteQuery, JuicerClient, toPostSource } from './juicer';
 
 const roots: string[] = [];
@@ -67,6 +73,7 @@ const candidate = (id = '1'): CollectedPost => ({
   source: 'x',
   postedAt: '2026-10-22T10:00:00Z',
   externalId: id,
+  searchedHashtag: '#ICPC',
 });
 
 const feedPage = (posts: unknown[] = [wirePost()], page = 1, totalPages = 1) => ({
@@ -395,6 +402,7 @@ describe('Juicer client', () => {
       '#ICPC',
     );
     expect(posts).toHaveLength(2);
+    expect(posts.every(({ searchedHashtag }) => searchedHashtag === '#ICPC')).toBe(true);
     const url = calledUrl(adapter, 1);
     expect(url.origin).toBe('https://api.juicer.io');
     expect(url.pathname).toBe('/v1/feeds/123/posts');
@@ -485,8 +493,10 @@ describe('Juicer client', () => {
       '#GPM2026',
       '#ICPC',
     ]);
+    expect(posts.map(({ searchedHashtag }) => searchedHashtag)).toEqual(['#GPM2026', '#ICPC']);
     const { summary } = appendPosts(record(), posts, cfg.events[0]);
-    expect(summary).toMatchObject({ fetched: 2, added: 1, duplicates: 1 });
+    // The fixture text mentions #ICPC but not #GPM2026, so only the #ICPC result is kept.
+    expect(summary).toMatchObject({ fetched: 2, added: 1, missingHashtag: 1, duplicates: 0 });
   });
 
   it('accepts empty feed pages and rejects invalid keys before requests', async () => {
@@ -897,6 +907,19 @@ describe('normalization and append-only merging', () => {
         .summary.outsideDateRange,
     ).toBe(1);
   });
+
+  it('drops posts whose text does not contain the searched hashtag', () => {
+    const unrelated = candidate('2');
+    unrelated.post = { ...unrelated.post, message: 'Motocross #ICPCMX #mx' };
+    const mixedCase = candidate('3');
+    mixedCase.post = { ...mixedCase.post, message: 'Gran final #icpc' };
+    const result = appendPosts(record(), [candidate(), unrelated, mixedCase], eventConfig());
+    expect(result.summary).toMatchObject({ fetched: 3, added: 2, missingHashtag: 1 });
+    expect(result.record.posts.map(({ body }) => body)).not.toContain('Motocross #ICPCMX #mx');
+    expect(containsHashtag('Final #ICPCMX2026!', '#icpcmx2026')).toBe(true);
+    expect(containsHashtag('Final #ICPCMX20261', '#ICPCMX2026')).toBe(false);
+    expect(containsHashtag('Final ICPCMX2026', '#ICPCMX2026')).toBe(false);
+  });
 });
 
 describe('filesystem ingestion', () => {
@@ -908,9 +931,10 @@ describe('filesystem ingestion', () => {
       ] satisfies SourceConfig[]
     ).flatMap((source) => [null, '', '   '].map((message) => ({ source, message }))),
   )(
-    'imports captionless media through $source.type with message $message',
+    'rejects captionless media through $source.type with message $message because it lacks the hashtag',
     async ({ source, message }) => {
       const { root, file } = await fixture();
+      const before = await readFile(file, 'utf8');
       const cfg = config([source]);
       const post = { ...wirePost(), platform: 'Facebook', message };
       const page =
@@ -927,26 +951,8 @@ describe('filesystem ingestion', () => {
       const adapter = adapterMock().mockResolvedValue(json(page));
       expect(
         await ingestMedia({ root, config: cfg, apiKey: 'secret', dependencies: { adapter } }),
-      ).toMatchObject([{ fetched: 1, added: 1, incomplete: [] }]);
-      const contents = await readFile(file, 'utf8');
-      expect(JSON.parse(contents)).toMatchObject({
-        posts: [
-          {
-            source: 'facebook',
-            body: '',
-            tags: [],
-            permalink: post.url,
-            media: [
-              { type: 'image', url: post.media[0].url, alt: '' },
-              { type: 'video', url: post.media[1].url, alt: 'Teams celebrating' },
-            ],
-          },
-        ],
-      });
-      expect(
-        await ingestMedia({ root, config: cfg, apiKey: 'secret', dependencies: { adapter } }),
-      ).toMatchObject([{ added: 0, duplicates: 1 }]);
-      expect(await readFile(file, 'utf8')).toBe(contents);
+      ).toMatchObject([{ fetched: 1, added: 0, missingHashtag: 1, incomplete: [] }]);
+      expect(await readFile(file, 'utf8')).toBe(before);
     },
   );
 

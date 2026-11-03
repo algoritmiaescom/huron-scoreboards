@@ -86,7 +86,7 @@ index is `/huron-scoreboards/#/schools?q=UNAM`.
   latest archived contest whose date is not later than today's date in `America/Mexico_City`.
   Break equal-date ties by ascending contest id. If no held contests exist, show an empty archive.
   Undated historical contests remain explicitly selectable and appear in school histories, but
-  are not eligible for latest-held or dated media selection.
+  are not eligible for latest-held selection. Media events use their own metadata.
 - Accumulated views use `/scoreboards?season=<year>&series=<id>&view=accumulated`. They select a
   `SeasonStanding`, not a fabricated contest. Conflicting or incomplete selection parameters
   show a recovery message with an explicit action to choose a valid selection.
@@ -159,18 +159,18 @@ errors are explicit states.
 
 ### 2. Media feed
 
-The `/media` page presents curated public media posts linked to the latest held contest. Posts
-come only from validated repository records; select the latest held archived contest using the
-date/id rule above, then its linked media event (latest event date, then ascending event id if
-several exist), considering only events dated today or earlier in `America/Mexico_City`. Display
-only its explicitly referenced posts. If that contest has no eligible event or the event has no
-linked posts, show an explicit empty state rather than posts from another contest or an upcoming
-event. Visitors can select a previous held contest with eligible archived posts; the selection is
-shareable as `/media?contest=<id>`, and removing the parameter returns to the latest contest.
-Only contests whose selected eligible event has at least one referenced post appear as historical
-choices. A valid selection with no feed remains an honest empty state; an unknown, future, or
-repeated selection is explained instead of silently falling back. Unlinked announced events
-remain valid archive data but do not replace this feed.
+The `/media` page presents curated public posts from archived media events, including upcoming
+events and events without a scoreboard contest. It defaults to the event with published posts
+having the latest event date, then ascending event id. Only explicitly referenced posts whose
+`postedAt` is not later than the current instant are displayed, in curated order. If no event has
+published posts, select the newest event and show an explicit empty state.
+
+Visitors can select other events with published posts through `/media?event=<id>`; removing the
+parameter returns to the default event. An explicit event with no published posts remains empty.
+Legacy `/media?contest=<id>` links select that contest's newest linked event without requiring a
+held or known contest date; a valid contest without media stays empty. Unknown, repeated, or mixed
+event/contest selections produce an explicit recovery message, not a fallback. Classification
+links are shown only when the selected event has a validated contest reference.
 
 Cards support optional author/profile metadata, title, media assets, and tags, with accessible
 carousel controls, native video playback, and an original-post link. Repository-backed mode must
