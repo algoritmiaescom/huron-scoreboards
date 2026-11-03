@@ -10,7 +10,7 @@ import { postMediaSchema, postSchema } from '@/features/media/model/schemas';
 
 import { configSchema, parseConfig, parseJson, type SourceConfig } from './config';
 import { appendPosts, canonicalPermalink, ingestMedia, normalizePost } from './ingestion';
-import { type CollectedPost, JuicerClient, type SkippedQuery, toPostSource } from './juicer';
+import { type CollectedPost, type IncompleteQuery, JuicerClient, toPostSource } from './juicer';
 
 const roots: string[] = [];
 afterEach(async () => {
@@ -184,6 +184,184 @@ describe('configuration and alt contract', () => {
 });
 
 describe('Juicer client', () => {
+  it.each([
+    {
+      name: 'HTTP',
+      response: () =>
+        httpResponse(JSON.stringify({ error: { message: 'bad secret' } }), { status: 401 }),
+      reason: 'HTTP 401',
+    },
+    {
+      name: 'network',
+      response: () => {
+        throw new Error('secret');
+      },
+      reason: 'network request failed',
+    },
+    { name: 'JSON', response: () => httpResponse('{'), reason: 'invalid JSON' },
+    {
+      name: 'schema',
+      response: () => json(feedPage([{ ...wirePost('bad'), message: 12 }], 2, 2)),
+      reason: 'Invalid Juicer feed response',
+    },
+    {
+      name: 'page number',
+      response: () => json(feedPage([wirePost('bad')], 3, 3)),
+      reason: 'feed page 3',
+    },
+    {
+      name: 'post platform',
+      response: () => json(feedPage([{ ...wirePost('bad'), platform: 'TikTok' }], 2, 2)),
+      reason: 'unsupported platform',
+    },
+    {
+      name: 'timestamp',
+      response: () =>
+        json(feedPage([{ ...wirePost('bad'), external_created_at: undefined }], 2, 2)),
+      reason: 'publication timestamp',
+    },
+  ])(
+    'retains validated pages after a $name failure and continues later sources',
+    async ({ response, reason }) => {
+      const cfg = { ...config(), retries: 0 };
+      const adapter = adapterMock()
+        .mockResolvedValueOnce(json(feedPage([wirePost('1')], 1, 2)))
+        .mockImplementationOnce(() => Promise.resolve().then(response))
+        .mockResolvedValueOnce(json(feedPage([wirePost('2')])));
+      const warnings = vi.fn<(failure: IncompleteQuery) => void>();
+      const client = new JuicerClient(cfg, 'secret', { adapter });
+      const posts = await client.collect(
+        eventConfig().sources[0],
+        eventConfig(),
+        '#ICPC',
+        warnings,
+      );
+      expect(posts.map(({ externalId }) => externalId)).toEqual(['1']);
+      expect(warnings.mock.calls[0][0]).toMatchObject({
+        query: 'feed 123, all platforms',
+        page: 2,
+        retained: 1,
+      });
+      expect(warnings.mock.calls[0][0].reason).toContain(reason);
+      expect(warnings.mock.calls[0][0].reason).not.toContain('secret');
+      expect(
+        await client.collect({ type: 'feed', feedId: 456 }, eventConfig(), '#ICPC', warnings),
+      ).toHaveLength(1);
+    },
+  );
+
+  it.each(['page', 'request'] as const)(
+    'retains posts when the %s limit is reached',
+    async (limit) => {
+      const cfg = {
+        ...config(),
+        maxPages: limit === 'page' ? 1 : 2,
+        maxRequests: limit === 'request' ? 1 : 3,
+      };
+      const adapter = adapterMock().mockResolvedValue(json(feedPage([wirePost()], 1, 2)));
+      const warnings = vi.fn<(failure: IncompleteQuery) => void>();
+      const posts = await new JuicerClient(cfg, 'secret', { adapter }).collect(
+        eventConfig().sources[0],
+        eventConfig(),
+        '#ICPC',
+        warnings,
+      );
+      expect(posts).toHaveLength(1);
+      expect(warnings.mock.calls[0][0]).toMatchObject({
+        retained: 1,
+      });
+      expect(warnings.mock.calls[0][0].reason).toContain(`${limit} limit`);
+      expect(adapter).toHaveBeenCalledTimes(1);
+    },
+  );
+
+  it('discards platform-failure data and continues later hashtag queries', async () => {
+    const cfg = config([{ type: 'hashtag', platforms: ['x'], hashtags: ['#ICPC', '#GPM'] }]);
+    const adapter = adapterMock()
+      .mockResolvedValueOnce(json(dataPage([wirePost('1')], 'next')))
+      .mockResolvedValueOnce(
+        json({
+          data: [wirePost('bad')],
+          meta: { platforms: [{ platform: 'Twitter', success: false, message: 'timeout' }] },
+        }),
+      )
+      .mockResolvedValueOnce(json(dataPage([wirePost('2')])));
+    const warnings = vi.fn<(failure: IncompleteQuery) => void>();
+    const posts = await new JuicerClient(cfg, 'secret', { adapter }).collect(
+      cfg.events[0].sources[0],
+      eventConfig(),
+      '#ICPC',
+      warnings,
+    );
+    expect(posts.map(({ externalId }) => externalId)).toEqual(['1', '2']);
+    expect(warnings.mock.calls[0][0]).toMatchObject({ page: 2, retained: 1 });
+    expect(calledUrl(adapter, 2).searchParams.get('cursor')).toBeNull();
+  });
+
+  it('does not exceed the shared request budget when subsequent queries are incomplete', async () => {
+    const cfg = {
+      ...config([{ type: 'hashtag', platforms: ['x'], hashtags: ['#ICPC', '#GPM'] }]),
+      maxRequests: 1,
+    };
+    const adapter = adapterMock().mockResolvedValue(json(dataPage([wirePost()], 'next')));
+    const warnings = vi.fn<(failure: IncompleteQuery) => void>();
+    const posts = await new JuicerClient(cfg, 'secret', { adapter }).collect(
+      cfg.events[0].sources[0],
+      eventConfig(),
+      '#ICPC',
+      warnings,
+    );
+    expect(posts).toHaveLength(1);
+    expect(adapter).toHaveBeenCalledTimes(1);
+    expect(warnings.mock.calls.map(([failure]) => failure.retained)).toEqual([1, 0]);
+  });
+
+  it('uses the configured budgets to complete a Facebook hashtag query beyond 20 pages', async () => {
+    const cfg = parseConfig(
+      await readFile(new URL('../../config/media-ingestion.json', import.meta.url), 'utf8'),
+    );
+    expect(cfg).toMatchObject({ maxPages: 100, maxRequests: 500 });
+    const adapter = adapterMock();
+    for (let page = 1; page <= 21; page += 1) {
+      adapter.mockResolvedValueOnce(
+        json({
+          data: [{ ...wirePost(String(page)), platform: 'Facebook' }],
+          meta: {
+            platforms: [
+              {
+                platform: 'Facebook',
+                success: true,
+                has_more: page < 21,
+                next_cursor: page < 21 ? `cursor-${String(page)}` : null,
+              },
+            ],
+          },
+        }),
+      );
+    }
+    const posts = await new JuicerClient(cfg, 'secret', { adapter }).collect(
+      { type: 'hashtag', platforms: ['facebook'], hashtags: ['#ICPCMexico'] },
+      cfg.events[0],
+      '#ICPCMexico',
+    );
+    expect(posts).toHaveLength(21);
+    expect(adapter).toHaveBeenCalledTimes(21);
+    expect(calledUrl(adapter, 20).searchParams.get('cursor')).toBe('cursor-20');
+  });
+
+  it('still rejects incomplete hashtag results and explains that date bounds do not limit pagination', async () => {
+    const cfg = { ...config(), maxPages: 1 };
+    const adapter = adapterMock().mockResolvedValue(json(dataPage([], 'more')));
+    await expect(
+      new JuicerClient(cfg, 'secret', { adapter }).collect(
+        { type: 'hashtag', platforms: ['x'] },
+        eventConfig(),
+        '#ICPC',
+      ),
+    ).rejects.toThrow('date bounds filter locally and do not reduce hashtag pagination');
+    expect(adapter).toHaveBeenCalledTimes(1);
+  });
+
   it('shares a request budget across collections but isolates client instances', async () => {
     const adapter = adapterMock().mockImplementation(() => Promise.resolve(json(feedPage())));
     const clientConfig = { retries: 0, maxRequests: 2, maxPages: 1, requestTimeoutMs: 500 };
@@ -475,7 +653,7 @@ describe('Juicer client', () => {
     });
     const adapter = adapterMock().mockResolvedValue(credits);
     const client = new JuicerClient(cfg, 'secret', { adapter });
-    const skipped: SkippedQuery[] = [];
+    const skipped: IncompleteQuery[] = [];
     const posts = await client.collect(cfg.events[0].sources[0], eventConfig(), '#ICPC', (skip) => {
       skipped.push(skip);
     });
@@ -498,14 +676,19 @@ describe('Juicer client', () => {
     ).toHaveLength(1);
 
     adapter.mockResolvedValue(httpResponse('', { status: 401 }));
-    await expect(
-      new JuicerClient(cfg, 'secret', { adapter }).collect(
+    const warnings = vi.fn<(failure: IncompleteQuery) => void>();
+    expect(
+      await new JuicerClient(cfg, 'secret', { adapter }).collect(
         cfg.events[0].sources[0],
         eventConfig(),
         '#ICPC',
-        () => undefined,
+        warnings,
       ),
-    ).rejects.toThrow('HTTP 401');
+    ).toEqual([]);
+    expect(warnings.mock.calls[0][0]).toMatchObject({
+      retained: 0,
+    });
+    expect(warnings.mock.calls[0][0].reason).toContain('HTTP 401');
   });
 
   it('never echoes non-JSON error bodies or the API key', async () => {
@@ -744,7 +927,7 @@ describe('filesystem ingestion', () => {
       const adapter = adapterMock().mockResolvedValue(json(page));
       expect(
         await ingestMedia({ root, config: cfg, apiKey: 'secret', dependencies: { adapter } }),
-      ).toMatchObject([{ fetched: 1, added: 1 }]);
+      ).toMatchObject([{ fetched: 1, added: 1, incomplete: [] }]);
       const contents = await readFile(file, 'utf8');
       expect(JSON.parse(contents)).toMatchObject({
         posts: [
@@ -767,7 +950,7 @@ describe('filesystem ingestion', () => {
     },
   );
 
-  it('rejects captionless link-only hashtag posts without writing files', async () => {
+  it('warns about captionless link-only hashtag posts without writing files', async () => {
     const { root, file } = await fixture();
     const before = await readFile(file, 'utf8');
     const adapter = adapterMock().mockResolvedValue(
@@ -781,15 +964,45 @@ describe('filesystem ingestion', () => {
         ]),
       ),
     );
-    await expect(
-      ingestMedia({
+    const warnings = vi.fn<(warning: string) => void>();
+    expect(
+      await ingestMedia({
         root,
         config: config([{ type: 'hashtag', platforms: ['x'] }]),
         apiKey: 'secret',
         dependencies: { adapter },
+        onWarning: warnings,
       }),
-    ).rejects.toThrow('must contain text or image/video media');
+    ).toMatchObject([{ added: 0, incomplete: [{ retained: 0, page: 1 }] }]);
+    expect(warnings.mock.calls[0][0]).toContain('must contain text or image/video media');
     expect(await readFile(file, 'utf8')).toBe(before);
+  });
+
+  it('publishes partial validated results, reports them, and remains dry-run safe and idempotent', async () => {
+    const { root, file } = await fixture();
+    const cfg = { ...config(), maxPages: 1 };
+    const adapter = adapterMock().mockResolvedValue(json(feedPage([wirePost()], 1, 2)));
+    const warnings = vi.fn<(warning: string) => void>();
+    const before = await readFile(file, 'utf8');
+    const options = {
+      root,
+      config: cfg,
+      apiKey: 'secret',
+      dependencies: { adapter },
+      onWarning: warnings,
+    };
+    expect(await ingestMedia({ ...options, dryRun: true })).toMatchObject([
+      { added: 1, skipped: [], incomplete: [{ retained: 1, page: 1 }] },
+    ]);
+    expect(await readFile(file, 'utf8')).toBe(before);
+    expect(await ingestMedia(options)).toMatchObject([{ added: 1, incomplete: [{ retained: 1 }] }]);
+    const written = await readFile(file, 'utf8');
+    expect(JSON.parse(written)).toMatchObject({ posts: [{ body: wirePost().message }] });
+    expect(await ingestMedia(options)).toMatchObject([
+      { added: 0, duplicates: 1, incomplete: [{ retained: 1 }] },
+    ]);
+    expect(await readFile(file, 'utf8')).toBe(written);
+    expect(warnings.mock.calls[0][0]).toContain('Partial: retained 1 posts');
   });
 
   it('combines adapters, writes valid JSON, and is byte-idempotent on a second run', async () => {
@@ -872,7 +1085,7 @@ describe('filesystem ingestion', () => {
     expect(await readFile(file, 'utf8')).toMatch(/"postIds": \[\s*"2026-finals-x-/);
   });
 
-  it('fails all targets before writing if a later source fails', async () => {
+  it('writes successful events even if a later event query fails', async () => {
     const { root, file } = await fixture();
     const secondFile = path.join(root, 'data/media/events/other-event.json');
     const second = record();
@@ -885,11 +1098,25 @@ describe('filesystem ingestion', () => {
     const adapter = adapterMock()
       .mockResolvedValueOnce(json(feedPage()))
       .mockResolvedValueOnce(httpResponse('', { status: 401 }));
-    const before = await readFile(file, 'utf8');
-    await expect(
-      ingestMedia({ root, config: cfg, apiKey: 'secret', dependencies: { adapter: adapter } }),
-    ).rejects.toThrow('HTTP 401');
-    expect(await readFile(file, 'utf8')).toBe(before);
+    const before = await readFile(secondFile, 'utf8');
+    const warnings = vi.fn<(warning: string) => void>();
+    expect(
+      await ingestMedia({
+        root,
+        config: cfg,
+        apiKey: 'secret',
+        dependencies: { adapter },
+        onWarning: warnings,
+      }),
+    ).toMatchObject([
+      { eventId: '2026-finals', added: 1, incomplete: [] },
+      { eventId: 'other-event', added: 0, incomplete: [{ retained: 0, page: 1 }] },
+    ]);
+    expect(warnings.mock.calls[0][0]).toContain('HTTP 401');
+    expect(JSON.parse(await readFile(file, 'utf8'))).toMatchObject({
+      posts: [{ body: wirePost().message }],
+    });
+    expect(await readFile(secondFile, 'utf8')).toBe(before);
   });
 
   it('rejects empty configuration, missing targets, invalid records, and unresolved references', async () => {

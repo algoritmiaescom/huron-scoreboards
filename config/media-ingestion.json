@@ -7,9 +7,11 @@
         {
           "type": "hashtag",
           "platforms": ["instagram", "facebook"],
-          "hashtags": ["#ICPCMX2026", "#ICPCMexico"]
+          "hashtags": ["#ICPCMX2026"]
         }
       ]
     }
-  ]
+  ],
+  "maxPages": 100,
+  "maxRequests": 500
 }

@@ -100,6 +100,7 @@ const pullRequestBody = (summary: string): string =>
     'Append-only Juicer import. Review attribution and media descriptions before merging.',
     '',
     'Existing posts and contributor edits are preserved. No automatic deletions or merge.',
+    'Queries may be incomplete: review `incomplete` entries for failure reasons, pages, and retained counts.',
     '',
     '### Ingestion counts',
     '```text',

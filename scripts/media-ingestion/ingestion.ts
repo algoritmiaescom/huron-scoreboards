@@ -18,7 +18,12 @@ import { formatIssues } from '@/lib/validation/issues';
 
 import { validateDataDirectory } from '../data-validation';
 import { type EventConfig, type IngestionConfig, parseJson, type SourceConfig } from './config';
-import { type ClientDependencies, type CollectedPost, JuicerClient } from './juicer';
+import {
+  type ClientDependencies,
+  type CollectedPost,
+  type IncompleteQuery,
+  JuicerClient,
+} from './juicer';
 
 // Validate known fields without erasing contributor metadata during append-only updates.
 const archiveSchema = eventFileSchema.loose().extend({
@@ -88,8 +93,9 @@ export interface EventSummary {
   suppressed: number;
   outsideDateRange: number;
   missingAlt: number;
-  // Source queries skipped because Juicer rejected them for exhausted credits.
+  // Incomplete queries with no retained posts.
   skipped: string[];
+  incomplete: IncompleteQuery[];
 }
 
 export const appendPosts = (
@@ -102,6 +108,7 @@ export const appendPosts = (
     sources: [...new Set(config.sources.map(({ type }) => type))],
     fetched: candidates.length,
     skipped: [],
+    incomplete: [],
     added: 0,
     duplicates: 0,
     suppressed: 0,
@@ -201,21 +208,31 @@ export const ingestMedia = async ({
   for (const target of targets) {
     const candidates: CollectedPost[] = [];
     const skipped: string[] = [];
+    const incomplete: IncompleteQuery[] = [];
     for (const source of target.eventConfig.sources) {
       candidates.push(
         ...(await client.collect(
           source,
           target.eventConfig,
           target.existing.event.hashtag,
-          ({ query, reason }) => {
-            skipped.push(query);
-            onWarning?.(`[event ${target.eventConfig.eventId}, ${query}] Skipped: ${reason}`);
+          (failure) => {
+            const { query, reason, page, retained } = failure;
+            incomplete.push(failure);
+            if (retained === 0) {
+              skipped.push(query);
+            }
+            const outcome =
+              retained === 0 ? 'Skipped' : `Partial: retained ${String(retained)} posts`;
+            onWarning?.(
+              `[event ${target.eventConfig.eventId}, ${query}] ${outcome}: ${reason} (page ${String(page)})`,
+            );
           },
         )),
       );
     }
     const { record, summary } = appendPosts(target.existing, candidates, target.eventConfig);
     summary.skipped = skipped;
+    summary.incomplete = incomplete;
     eventFileSchema.parse(record);
     proposals.push({ ...target, record, summary });
   }

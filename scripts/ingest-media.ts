@@ -42,7 +42,12 @@ const run = async (): Promise<void> => {
       console.error(`${prefix}${redact(warning)}`);
     },
   });
-  console.log(values['dry-run'] ? 'Dry run: archive unchanged.' : 'Media ingestion complete.');
+  const partial = summaries.some(({ incomplete }) => incomplete.length > 0);
+  console.log(
+    values['dry-run']
+      ? `Dry run${partial ? ' (partial collection)' : ''}: archive unchanged.`
+      : `Media ingestion ${partial ? 'partial; see incomplete queries below' : 'complete'}.`,
+  );
   for (const summary of summaries) {
     console.log(JSON.stringify(summary));
   }
