@@ -124,10 +124,14 @@ because Juicer's `filter` parameter matches a list of sources rather than inters
 Date bounds are optional and inclusive in local filtering. Feed requests also pass the bounds to
 Juicer, whose endpoint documents them as after/before filters. Direct mode filters locally:
 it does not assume date-query support or stop pagination early. `maxPages` applies per
-source/platform/hashtag; `maxRequests` includes retries across the entire run. Hitting a limit fails,
-rather than publishing an incomplete collection. Narrow sources or increase limits deliberately.
-Retries apply only to network/timeouts, 429, and 5xx. A `Retry-After` exceeding 60 seconds fails
-for a later run instead of exceeding the job budget.
+source/platform/hashtag; `maxRequests` includes retries across the entire run. Hitting a limit
+stops that query with a warning and retains its fully validated pages for a partial import.
+Narrow sources or increase limits deliberately.
+The checked-in configuration allows 100 pages per query and 500 requests per run to accommodate
+the broader `#ICPCMexico` search. These are still safety limits, not a guarantee of completion;
+direct hashtag requests spend Juicer credits, including requests for posts later filtered locally.
+Retries apply only to network/timeouts, 429, and 5xx. A `Retry-After` exceeding 60 seconds
+stops the query for a later run instead of exceeding the job budget.
 
 ## Run locally
 
@@ -136,6 +140,8 @@ instance. It accepts request timeout, retry, page, and lifetime request budgets 
 event configuration, so one instance can collect multiple sources. Create a new instance for a new
 ingestion run to reset its request budget. Tests inject an Axios adapter and retry sleep function;
 they exercise the real Axios request configuration without contacting Juicer.
+Direct client calls remain strict unless they provide an `onIncomplete` reporter; the ingestion
+script always supplies one to retain validated partial results.
 
 Use Node 24, npm 11, and `npm ci`. Copy `.env.example` to the ignored `.env` and set
 `JUICER_API_KEY`. Node scripts under `scripts/` load the repository-root `.env` automatically when
@@ -152,8 +158,10 @@ npm run validate:data
 
 Dry-run collects and validates but changes nothing. Both modes print enabled source modes and
 per-event counts for fetched, added, duplicate, suppressed, date-excluded, and newly imported missing-alt media items. Credentials
-and raw response bodies are not logged. HTTP-200 platform errors, malformed responses, missing
-required domain fields, repeated cursors, and exhausted limits fail the run.
+and raw response bodies are not logged. Juicer query failures (HTTP/network errors, HTTP-200
+platform errors, malformed pages, missing required fields, repeated cursors, and exhausted
+limits) produce warnings and partial summaries rather than failing the whole run.
+Only fully validated pages are retained; data from failed or inconsistent pages is not imported.
 
 ### Troubleshooting
 
@@ -164,24 +172,29 @@ shown; other response bodies are never printed. Pass `--verbose` to print one li
 attempt, with its path, query parameters, status, and duration. Credentials are never printed and
 pagination cursors are masked.
 
-| Error                              | Likely cause and fix                                                                                    |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `HTTP 401`                         | `JUICER_API_KEY` is missing or invalid; use a permanent dashboard key.                                  |
-| `HTTP 402 insufficient_credits`    | Direct hashtag search spends Data API credits per request. Top up, or rely on feed sources.             |
-| `HTTP 404`                         | `feedId` must be the numeric feed ID from the API, not the feed slug shown in the dashboard URL.        |
-| `platform failure (fetch_timeout)` | Juicer could not reach the platform in time; usually transient, so rerun later.                         |
-| `page limit reached`               | Too many results; set `startingAt`, narrow hashtags/platforms, or raise `maxPages` deliberately.        |
-| `unsupported platform "…"`         | An unfiltered feed contains a platform the archive does not model; filter with `platforms`/`sourceIds`. |
+| Error                              | Likely cause and fix                                                                                      |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `HTTP 401`                         | `JUICER_API_KEY` is missing or invalid; use a permanent dashboard key.                                    |
+| `HTTP 402 insufficient_credits`    | Direct hashtag search spends Data API credits per request. Top up, or rely on feed sources.               |
+| `HTTP 404`                         | `feedId` must be the numeric feed ID from the API, not the feed slug shown in the dashboard URL.          |
+| `platform failure (fetch_timeout)` | Juicer could not reach the platform in time; usually transient, so rerun later.                           |
+| `page limit reached`               | Narrow hashtags/platforms or raise `maxPages`. `startingAt` reduces feed results, not hashtag pagination. |
+| `unsupported platform "…"`         | An unfiltered feed contains a platform the archive does not model; filter with `platforms`/`sourceIds`.   |
 
-HTTP 402 is the one exception to failing the run: the query is skipped with a warning, and later
-queries of the same source type are skipped without spending requests, while other sources
-continue. Skipped queries are listed in the event summary's `skipped` field, which appears in the
-PR description; in GitHub Actions they also appear as run annotations. Because ingestion is
-append-only, a later run can collect the skipped posts once credits are restored, as long as
-Juicer still returns them.
+After a query fails, ingestion keeps its fully validated pages and continues other queries.
+Every incomplete query is listed in the event summary's `incomplete` field with its reason,
+page, and retained-post count (before deduplication and date filtering); queries retaining no posts
+also appear in `skipped`. The CLI labels partial collections explicitly, and these summaries appear
+in the PR description. Warnings also appear as GitHub Actions run annotations.
+After HTTP 402, later queries of the same source type are skipped without spending requests.
+Once the shared request budget is exhausted, later queries cannot make requests.
+Because ingestion is append-only, a later run can collect missing posts if Juicer still returns them.
+No retry cursor is persisted, so a rerun starts each query from the beginning.
 
 All configured events are loaded before requests; all proposed changes are validated before
-writing. Each changed file is formatted and replaced atomically. A filesystem failure during
+writing. Configuration, missing/invalid credentials at setup, archive validation, filesystem, and
+GitHub publication errors still fail the job; partial collection never bypasses these safeguards.
+Each changed file is formatted and replaced atomically. A filesystem failure during
 multi-file replacement can leave some local files updated: inspect the diff and rerun. No failed
 workflow publishes a commit/PR. Concurrent edits detected before staging fail instead of being
 overwritten.
@@ -205,7 +218,7 @@ overwritten.
   their media and attribution are preserved, and the UI omits the empty body text block.
   Posts with neither nonblank text nor image/video media fail validation.
 - No invented body, author, timestamp, or attribution fills missing required fields. Such
-  records fail ingestion and must be investigated rather than silently discarded.
+  records stop that query with an explicit warning and must be investigated.
 - Existing posts are never refreshed or automatically removed when upstream data disappears.
 
 To remove or reject a post, add its permalink to the event's `suppressedPermalinks` and manually

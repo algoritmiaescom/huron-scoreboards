@@ -172,10 +172,12 @@ export type JuicerClientConfig = Pick<
   'retries' | 'maxRequests' | 'maxPages' | 'requestTimeoutMs'
 >;
 
-export interface SkippedQuery {
+export interface IncompleteQuery {
   // For example `hashtag #ICPC, platform x`.
   query: string;
   reason: string;
+  page: number;
+  retained: number;
 }
 
 export class JuicerClient {
@@ -211,12 +213,12 @@ export class JuicerClient {
     const { config } = this;
     const label = describeRequest(url);
     for (let attempt = 0; attempt <= config.retries; attempt += 1) {
-      this.requests += 1;
-      if (this.requests > config.maxRequests) {
+      if (this.requests >= config.maxRequests) {
         throw new Error(
           `Juicer request limit reached after ${String(config.maxRequests)} requests; increase maxRequests or narrow the sources`,
         );
       }
+      this.requests += 1;
       const attemptLabel = `${label} (attempt ${String(attempt + 1)}/${String(config.retries + 1)})`;
       const started = performance.now();
       let response: AxiosResponse<string>;
@@ -276,9 +278,9 @@ export class JuicerClient {
     term: string | undefined,
     platform: PostSource | undefined,
     progress: { page: number },
-  ): Promise<CollectedPost[]> => {
+    collected: CollectedPost[],
+  ): Promise<void> => {
     const { config } = this;
-    const collected: CollectedPost[] = [];
     let cursor: string | undefined;
     const seenCursors = new Set<string>();
     let complete = false;
@@ -326,6 +328,7 @@ export class JuicerClient {
         throw new Error(`Invalid Juicer ${source.type} response: ${issues}${more}`);
       }
       const response = result.data;
+      const pagePosts: CollectedPost[] = [];
       for (const [index, post] of response.data.entries()) {
         const postSource = toPostSource(post.platform);
         if (platform !== undefined && postSource !== platform) {
@@ -339,7 +342,7 @@ export class JuicerClient {
             `Juicer post ${String(index)} is missing its publication timestamp: ${post.url}`,
           );
         }
-        collected.push({
+        pagePosts.push({
           post,
           source: postSource,
           postedAt,
@@ -390,24 +393,26 @@ export class JuicerClient {
           seenCursors.add(cursor);
         }
       }
+      collected.push(...pagePosts);
       if (complete) {
         break;
       }
     }
     if (!complete) {
-      throw new Error(
-        `Juicer page limit reached after ${String(config.maxPages)} pages; increase maxPages, set startingAt, or narrow the sources`,
-      );
+      const hint =
+        source.type === 'feed'
+          ? 'increase maxPages, set startingAt, or narrow the sources'
+          : 'increase maxPages or narrow the sources (date bounds filter locally and do not reduce hashtag pagination)';
+      throw new Error(`Juicer page limit reached after ${String(config.maxPages)} pages; ${hint}`);
     }
-    return collected;
   };
 
-  // `onSkip` opts in to skipping queries rejected for exhausted credits (HTTP 402); without it they fail.
+  // Without a reporter, collections remain strict. Opting in retains only fully validated pages.
   readonly collect = async (
     source: SourceConfig,
     event: EventConfig,
     defaultHashtag: string,
-    onSkip?: (skipped: SkippedQuery) => void,
+    onIncomplete?: (failure: IncompleteQuery) => void,
   ): Promise<CollectedPost[]> => {
     const collected: CollectedPost[] = [];
     // Query one platform at a time so cursors can never be applied to the wrong platform.
@@ -420,23 +425,34 @@ export class JuicerClient {
         source.type === 'feed' ? `feed ${String(source.feedId)}` : `hashtag ${term ?? ''}`,
         platform === undefined ? 'all platforms' : `platform ${platform}`,
       ].join(', ');
-      if (onSkip !== undefined && this.outOfCredits.has(source.type)) {
-        onSkip({
+      if (onIncomplete !== undefined && this.outOfCredits.has(source.type)) {
+        onIncomplete({
           query,
           reason: 'Juicer API credits exhausted earlier in this run; not requested',
+          page: 1,
+          retained: 0,
         });
         continue;
       }
+      const queryPosts: CollectedPost[] = [];
       try {
-        collected.push(...(await this.collectQuery(source, event, term, platform, progress)));
+        await this.collectQuery(source, event, term, platform, progress, queryPosts);
       } catch (error) {
         const message = (error instanceof Error ? error.message : String(error)).replaceAll(
           this.apiKey,
           '[REDACTED]',
         );
-        if (onSkip !== undefined && error instanceof JuicerHttpError && error.status === 402) {
-          this.outOfCredits.add(source.type);
-          onSkip({ query, reason: message });
+        if (onIncomplete !== undefined) {
+          if (error instanceof JuicerHttpError && error.status === 402) {
+            this.outOfCredits.add(source.type);
+          }
+          collected.push(...queryPosts);
+          onIncomplete({
+            query,
+            reason: message,
+            page: progress.page,
+            retained: queryPosts.length,
+          });
           continue;
         }
         throw new Error(
@@ -444,6 +460,7 @@ export class JuicerClient {
           { cause: error },
         );
       }
+      collected.push(...queryPosts);
     }
     return collected;
   };

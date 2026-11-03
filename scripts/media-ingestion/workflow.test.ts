@@ -140,7 +140,14 @@ describe('ingestion workflow git operations', () => {
   });
 
   it('creates an initial data-only branch and PR', async () => {
-    const { repo, git, run, log } = await setup();
+    const { root, repo, git, run, log } = await setup();
+    const summary = JSON.stringify({
+      added: 1,
+      incomplete: [
+        { query: 'feed 1, all platforms', page: 20, retained: 1, reason: 'page limit reached' },
+      ],
+    });
+    await writeFile(path.join(root, 'media-ingestion-summary.txt'), `${summary}\n`);
     run(prepare);
     await writeFile(path.join(repo, target), 'new post\n');
     run(publish, { COMPARISON: 'HEAD', PR_NUMBER: '' });
@@ -149,6 +156,9 @@ describe('ingestion workflow git operations', () => {
     expect(commands).toContain('"create"');
     expect(commands).toContain(`["workflow","run","ci.yml","--ref","${branch}"]`);
     expect(commands.indexOf('"create"')).toBeLessThan(commands.indexOf('"workflow"'));
+    const body = await readFile(path.join(root, 'media-ingestion-pr.md'), 'utf8');
+    expect(body).toContain('Queries may be incomplete');
+    expect(body).toContain(summary);
   });
 
   it('preserves curator data, updates the open PR, and makes no repeat commit', async () => {
