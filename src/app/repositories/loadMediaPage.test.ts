@@ -6,131 +6,140 @@ import { selectMediaPageData } from './loadMediaPage';
 
 describe('media page selection', () => {
   const instant = new Date('2024-03-02T12:00:00Z');
-  const media = { source: 'mock' as const, events: [eventFile] };
+  const scoreboards = { status: 'ready' as const, data: archive };
+  const media = {
+    status: 'ready' as const,
+    data: { source: 'mock' as const, events: [eventFile] },
+  };
+  const upcoming = {
+    ...eventFile,
+    event: { ...eventFile.event, id: 'upcoming', contestId: undefined, date: '2024-04-01' },
+  };
 
-  it('selects the newest linked event and its explicitly ordered posts for the latest held contest', () => {
+  it('defaults to the newest event with published posts, independent of contest availability', () => {
     const result = selectMediaPageData(
-      { status: 'ready', data: archive },
-      { status: 'ready', data: media },
+      { status: 'empty', data: { ...archive, contests: [] } },
+      { ...media, data: { ...media.data, events: [eventFile, upcoming] } },
       instant,
     );
-    expect(result.latestContest?.id).toBe('2024-gpm-q1');
+    expect(result.defaultEventId).toBe('upcoming');
+    expect(result.selectedContest).toBeUndefined();
     expect(result.feed).toMatchObject({
       status: 'found',
-      record: {
-        event: { id: eventFile.event.id },
-        posts: [{ id: 'post-a' }, { id: 'post-b' }],
-      },
+      record: { event: { id: 'upcoming' }, posts: [{ id: 'post-a' }, { id: 'post-b' }] },
     });
-  });
-
-  it('does not substitute a different contest or a future feed', () => {
-    const newerContest = { ...archive.contests[0], id: 'newer', date: '2024-03-02' };
-    const futureEvent = {
-      ...eventFile,
-      event: { ...eventFile.event, date: '2024-03-03' },
-    };
-    const noFeed = selectMediaPageData(
-      { status: 'ready', data: { ...archive, contests: [newerContest] } },
-      { status: 'ready', data: { ...media, events: [eventFile, futureEvent] } },
-      instant,
-    );
-    expect(noFeed.latestContest?.id).toBe('newer');
-    expect(noFeed.feed).toEqual({ status: 'not-found' });
-  });
-
-  it('lists only held contests with referenced posts and resolves explicit contest selections', () => {
-    const previousContest = {
-      ...archive.contests[0],
-      id: '2023-gpm-q1',
-      seasonYear: 2023,
-      date: '2023-03-01',
-    };
-    const previousEvent = {
-      ...eventFile,
-      event: {
-        ...eventFile.event,
-        id: '2023-gpm-event',
-        contestId: previousContest.id,
-        date: '2023-03-01',
-      },
-    };
-    const data = selectMediaPageData(
-      { status: 'ready', data: { ...archive, contests: [archive.contests[0], previousContest] } },
-      { status: 'ready', data: { ...media, events: [eventFile, previousEvent] } },
-      instant,
-      previousContest.id,
-    );
-
-    expect(data.latestContest?.id).toBe(archive.contests[0].id);
-    expect(data.selectedContest?.id).toBe(previousContest.id);
-    expect(data.feed).toMatchObject({
-      status: 'found',
-      record: { event: { id: '2023-gpm-event' }, posts: [{ id: 'post-a' }, { id: 'post-b' }] },
-    });
-    expect(data.contestsWithMedia.map(({ contest }) => contest.id)).toEqual([
-      archive.contests[0].id,
-      previousContest.id,
+    expect(result.eventsWithMedia.map(({ record }) => record.event.id)).toEqual([
+      'upcoming',
+      eventFile.event.id,
     ]);
   });
 
-  it('rejects future or missing contest selections rather than falling back to the latest contest', () => {
-    const data = selectMediaPageData(
-      { status: 'ready', data: archive },
-      { status: 'ready', data: media },
+  it('does not let a newer event without published posts hide available media', () => {
+    const result = selectMediaPageData(
+      scoreboards,
+      {
+        ...media,
+        data: {
+          ...media.data,
+          events: [
+            eventFile,
+            {
+              ...upcoming,
+              posts: upcoming.posts.map((post) => ({ ...post, postedAt: '2024-04-01T12:00:00Z' })),
+            },
+          ],
+        },
+      },
       instant,
-      'not-in-archive',
     );
-
-    expect(data.latestContest?.id).toBe(archive.contests[0].id);
-    expect(data.selectedContest).toBeUndefined();
-    expect(data.selectionError).toBe('not-found');
-    expect(data.feed).toEqual({ status: 'not-found' });
+    expect(result.defaultEventId).toBe(eventFile.event.id);
+    expect(result.eventsWithMedia).toHaveLength(1);
   });
 
-  it('does not apply the default contest when the URL repeats its selection', () => {
-    const data = selectMediaPageData(
-      { status: 'ready', data: archive },
-      { status: 'ready', data: media },
+  it('breaks equal event dates by ascending id and supports explicit event selections', () => {
+    const result = selectMediaPageData(
+      scoreboards,
+      {
+        ...media,
+        data: {
+          ...media.data,
+          events: [upcoming, { ...upcoming, event: { ...upcoming.event, id: 'a' } }],
+        },
+      },
       instant,
       undefined,
-      true,
+      false,
+      'upcoming',
     );
+    expect(result.defaultEventId).toBe('a');
+    expect(result.feed).toMatchObject({ status: 'found', record: { event: { id: 'upcoming' } } });
+  });
 
-    expect(data.selectedContest).toBeUndefined();
-    expect(data.selectionError).toBe('repeated');
-    expect(data.feed).toEqual({ status: 'not-found' });
+  it('preserves legacy contest links and optional scoreboard context, including undated contests', () => {
+    const result = selectMediaPageData(
+      { ...scoreboards, data: { ...archive, contests: [{ ...archive.contests[0], date: null }] } },
+      media,
+      instant,
+      archive.contests[0].id,
+    );
+    expect(result.selectedContest?.id).toBe(archive.contests[0].id);
+    expect(result.feed.status).toBe('found');
+  });
+
+  it('keeps a valid contest without media empty rather than substituting another event', () => {
+    const contest = { ...archive.contests[0], id: 'no-media' };
+    const result = selectMediaPageData(
+      { ...scoreboards, data: { ...archive, contests: [contest] } },
+      { ...media, data: { ...media.data, events: [upcoming] } },
+      instant,
+      contest.id,
+    );
+    expect(result.selectedContest?.id).toBe(contest.id);
+    expect(result.selectionError).toBeUndefined();
+    expect(result.feed).toEqual({ status: 'not-found' });
+  });
+
+  it.each(['event', 'contest'])('rejects unknown %s selections without falling back', (kind) => {
+    const result = selectMediaPageData(
+      scoreboards,
+      media,
+      instant,
+      kind === 'contest' ? 'missing' : undefined,
+      false,
+      kind === 'event' ? 'missing' : undefined,
+    );
+    expect(result.selectionError).toBe('not-found');
+    expect(result.feed).toEqual({ status: 'not-found' });
+  });
+
+  it('rejects repeated or mixed selections', () => {
+    const result = selectMediaPageData(scoreboards, media, instant, undefined, true);
+    expect(result.selectionError).toBe('repeated');
+    expect(result.feed).toEqual({ status: 'not-found' });
   });
 
   it('preserves empty event, missing archive, and repository error states', () => {
-    const emptyEvent = {
-      ...eventFile,
-      event: { ...eventFile.event, postIds: [] },
-      posts: [],
-    };
+    const emptyEvent = { ...eventFile, event: { ...eventFile.event, postIds: [] }, posts: [] };
     expect(
       selectMediaPageData(
-        { status: 'ready', data: archive },
-        { status: 'ready', data: { ...media, events: [emptyEvent] } },
+        scoreboards,
+        { ...media, data: { ...media.data, events: [emptyEvent] } },
         instant,
       ).feed,
     ).toMatchObject({ status: 'found', record: { posts: [] } });
     expect(
       selectMediaPageData(
-        {
-          status: 'empty',
-          data: { source: 'archive', schools: [], teams: [], contests: [], seasonStandings: [] },
-        },
+        scoreboards,
         { status: 'empty', data: { source: 'archive', events: [] } },
         instant,
-      ),
-    ).toMatchObject({ latestContest: undefined, feed: { status: 'not-found' } });
+      ).feed,
+    ).toEqual({ status: 'not-found' });
+    expect(selectMediaPageData({ status: 'invalid', issues: [] }, media, instant)).toMatchObject({
+      media: { status: 'blocked' },
+      feed: { status: 'not-found' },
+    });
     expect(
-      selectMediaPageData(
-        { status: 'invalid', issues: [] },
-        { status: 'empty', data: { source: 'archive', events: [] } },
-        instant,
-      ),
-    ).toMatchObject({ media: { status: 'blocked' }, feed: { status: 'not-found' } });
+      selectMediaPageData(scoreboards, { status: 'error', issues: [] }, instant),
+    ).toMatchObject({ media: { status: 'error' }, feed: { status: 'not-found' } });
   });
 });

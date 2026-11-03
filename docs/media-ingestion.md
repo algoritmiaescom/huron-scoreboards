@@ -83,6 +83,9 @@ Create `data/media/events/<event-id>.json` with accurate real event metadata:
 
 The values above illustrate the shape; replace them with verified event details. Omit `contestId`
 until the corresponding real contest exists. Never target `data/mock/`.
+The media page can show an unlinked or upcoming event as soon as it has published posts; no
+scoreboard placeholder or altered event date is needed. Only posts with `postedAt` at or before
+the current instant appear.
 
 Edit `config/media-ingestion.json`:
 

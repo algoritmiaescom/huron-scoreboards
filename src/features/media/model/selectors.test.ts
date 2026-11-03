@@ -2,7 +2,33 @@ import { describe, expect, it } from 'vitest';
 
 import { eventFile } from '@/test/fixtures/archive';
 
-import { selectContestFeed } from './selectors';
+import { selectContestFeed, selectEventFeed } from './selectors';
+
+describe('event feed selector', () => {
+  it('shows published posts for upcoming unlinked events in curated order, comparing timestamp offsets', () => {
+    const result = selectEventFeed(
+      {
+        source: 'archive',
+        events: [
+          {
+            ...eventFile,
+            event: { ...eventFile.event, date: '2024-04-01', contestId: undefined },
+            posts: [
+              { ...eventFile.posts[0], postedAt: '2024-03-02T06:00:01-06:00' },
+              { ...eventFile.posts[1], postedAt: '2024-03-02T06:00:00-06:00' },
+            ],
+          },
+        ],
+      },
+      eventFile.event.id,
+      new Date('2024-03-02T12:00:00Z'),
+    );
+    expect(result).toMatchObject({ status: 'found', record: { posts: [{ id: 'post-a' }] } });
+    expect(selectEventFeed({ source: 'archive', events: [] }, 'missing', new Date())).toEqual({
+      status: 'not-found',
+    });
+  });
+});
 
 describe('contest feed selectors', () => {
   it('preserves curated post order and does not require optional metadata or media', () => {

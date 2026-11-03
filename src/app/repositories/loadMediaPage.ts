@@ -1,30 +1,21 @@
-import { type MediaArchive, selectContestFeed } from '@/features/media';
-import {
-  type Contest,
-  type ScoreboardsArchive,
-  selectContest,
-  selectLatestHeldContest,
-} from '@/features/scoreboards';
-import { mexicoCityDate } from '@/lib/dates';
+import { type MediaArchive, selectEventFeed } from '@/features/media';
+import { type Contest, type ScoreboardsArchive, selectContest } from '@/features/scoreboards';
 
 import { loadApplicationRepositories } from './applicationData';
 import { loadScoreboards } from './loadScoreboards';
 
 import type { RepositoryResult } from '@/lib/data/repository';
 
-export interface MediaContestOption {
-  contest: Contest;
-  feed: Extract<ReturnType<typeof selectContestFeed>, { status: 'found' }>;
-}
+type EventFeed = Extract<ReturnType<typeof selectEventFeed>, { status: 'found' }>;
 
 export interface MediaPageData {
   scoreboards: RepositoryResult<ScoreboardsArchive>;
   media: RepositoryResult<MediaArchive> | { status: 'blocked' };
-  latestContest: Contest | undefined;
   selectedContest: Contest | undefined;
-  contestsWithMedia: MediaContestOption[];
+  eventsWithMedia: EventFeed[];
+  defaultEventId: string | undefined;
   selectionError: 'repeated' | 'not-found' | undefined;
-  feed: ReturnType<typeof selectContestFeed>;
+  feed: ReturnType<typeof selectEventFeed>;
 }
 
 export const selectMediaPageData = (
@@ -33,82 +24,84 @@ export const selectMediaPageData = (
   instant: Date,
   requestedContestId?: string,
   repeatedSelection = false,
+  requestedEventId?: string,
 ): MediaPageData => {
   if (scoreboards.status === 'invalid' || scoreboards.status === 'error') {
     return {
       scoreboards,
       media: { status: 'blocked' },
-      latestContest: undefined,
       selectedContest: undefined,
-      contestsWithMedia: [],
+      eventsWithMedia: [],
+      defaultEventId: undefined,
       selectionError: undefined,
       feed: { status: 'not-found' },
     };
   }
-
-  const today = mexicoCityDate(instant);
-  const latest = selectLatestHeldContest(scoreboards.data, today);
-  const latestContest = latest.status === 'found' ? latest.record : undefined;
-  const contestsWithMedia =
+  const feeds =
     media.status === 'ready' || media.status === 'empty'
-      ? scoreboards.data.contests
-          .filter((contest) => contest.date !== null && contest.date <= today)
+      ? media.data.events
           .toSorted(
-            (a, b) => (b.date ?? '').localeCompare(a.date ?? '') || a.id.localeCompare(b.id),
+            (a, b) =>
+              b.event.date.localeCompare(a.event.date) || a.event.id.localeCompare(b.event.id),
           )
-          .flatMap((contest) => {
-            const feed = selectContestFeed(media.data, contest.id, today);
-            return feed.status === 'found' && feed.record.posts.length > 0
-              ? [{ contest, feed }]
-              : [];
+          .flatMap(({ event }) => {
+            const feed = selectEventFeed(media.data, event.id, instant);
+            return feed.status === 'found' ? [feed] : [];
           })
       : [];
+  const eventsWithMedia = feeds.filter(({ record }) => record.posts.length > 0);
+  const defaultFeed = eventsWithMedia.at(0) ?? feeds.at(0);
   const requestedContest =
-    requestedContestId === undefined
-      ? undefined
-      : selectContest(scoreboards.data, requestedContestId);
-  const selectedContest = repeatedSelection
+    requestedContestId !== undefined
+      ? selectContest(scoreboards.data, requestedContestId)
+      : undefined;
+  const selection = repeatedSelection
     ? undefined
-    : requestedContestId === undefined
-      ? latestContest
-      : requestedContest?.status === 'found' &&
-          requestedContest.record.date !== null &&
-          requestedContest.record.date <= today
-        ? requestedContest.record
-        : undefined;
+    : requestedEventId !== undefined
+      ? feeds.find(({ record }) => record.event.id === requestedEventId)
+      : requestedContestId !== undefined
+        ? feeds.find(({ record }) => record.event.contestId === requestedContestId)
+        : defaultFeed;
   const selectionError = repeatedSelection
     ? 'repeated'
-    : requestedContestId !== undefined && selectedContest === undefined
+    : requestedEventId !== undefined && selection === undefined
       ? 'not-found'
-      : undefined;
+      : requestedContestId !== undefined && requestedContest?.status !== 'found'
+        ? 'not-found'
+        : undefined;
   const feed =
-    selectedContest !== undefined &&
-    (media.status === 'ready' || media.status === 'empty') &&
     selectionError === undefined
-      ? selectContestFeed(media.data, selectedContest.id, today)
+      ? (selection ?? { status: 'not-found' as const })
       : { status: 'not-found' as const };
+  const contestId = feed.status === 'found' ? feed.record.event.contestId : requestedContestId;
+  const contest = contestId !== undefined ? selectContest(scoreboards.data, contestId) : undefined;
 
   return {
     scoreboards,
     media,
-    latestContest,
-    selectedContest,
-    contestsWithMedia,
+    selectedContest:
+      selectionError === undefined && contest?.status === 'found' ? contest.record : undefined,
+    eventsWithMedia,
+    defaultEventId: defaultFeed?.record.event.id,
     selectionError,
     feed,
   };
 };
 
 export const loadMediaPage = async ({ request }: { request: Request }): Promise<MediaPageData> => {
-  const selections = new URL(request.url).searchParams.getAll('contest');
+  const params = new URL(request.url).searchParams;
+  const contests = params.getAll('contest');
+  const events = params.getAll('event');
+  const repeatedSelection = contests.length + events.length > 1;
   const scoreboards = await loadScoreboards();
   if (scoreboards.status === 'invalid' || scoreboards.status === 'error') {
     return selectMediaPageData(
       scoreboards,
       { status: 'blocked' },
       new Date(),
-      selections.length === 1 ? selections[0] : undefined,
-      selections.length > 1,
+      contests[0],
+      repeatedSelection,
+      events[0],
     );
   }
 
@@ -124,7 +117,8 @@ export const loadMediaPage = async ({ request }: { request: Request }): Promise<
     scoreboards,
     media,
     new Date(),
-    selections.length === 1 ? selections[0] : undefined,
-    selections.length > 1,
+    contests[0],
+    repeatedSelection,
+    events[0],
   );
 };

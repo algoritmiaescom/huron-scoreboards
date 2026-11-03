@@ -154,7 +154,8 @@ Unknown historical metadata is explicitly `null`, not omitted or guessed. `probl
 means the problem set is unavailable, not that the contest had zero problems; only totals-only
 rows are allowed in that case. Existing detailed records remain valid without migration.
 Undated contests remain selectable in the catalog and appear in school history under their
-edition year, but cannot be chosen as the latest held contest or as a dated media selection.
+edition year, but cannot be chosen as the latest held contest. Linked media events use their own
+dates independently of contest metadata.
 
 ### Standings and problem results
 
@@ -292,6 +293,9 @@ same team. Preserve distinct source IDs, or separate source rows when no IDs exi
 The media feature owns its own types. Per the feature boundary rule in
 [architecture](architecture.md), it must not import scoreboards types; `Event` therefore carries
 its own display fields and refers to a contest only by an optional, loose id.
+An unlinked event can display published posts before its contest exists or its event date arrives.
+When supplied, `contestId` must still resolve in the scoreboard archive; omit it until that contest
+exists. The media page filters posts by their `postedAt` timestamp, not by the event date.
 
 ```ts
 type Event = {

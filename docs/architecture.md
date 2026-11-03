@@ -81,10 +81,10 @@ The application loads scoreboards first and supplies their contest ids to media 
 without a media-to-scoreboards import. Invalid scoreboards block media validation explicitly;
 invalid media does not discard valid standings. Media currently loads curated event/post files,
 not a live service. A future external integration must preserve the same isolated failure behavior.
-The media route defaults to the latest held contest and accepts `?contest=<id>` for a previous
-held contest. Its picker is derived from validated event records and includes only contests whose
-selected eligible event has referenced posts. Contest selection lives in the URL; invalid,
-future, and repeated values produce an explicit recovery message instead of changing the feed.
+The media route defaults to the newest event with published posts, including unlinked and
+upcoming events, and accepts `?event=<id>`. Its picker includes events with published referenced
+posts. Legacy `?contest=<id>` links still resolve linked events. Unknown, repeated, and mixed
+selections produce an explicit recovery message instead of changing the feed.
 
 Pure scoreboard selectors own catalog discovery, identity joins, contest-specific scoring,
 tied first solves, AND filters, published accumulated results, qualification cuts, and
@@ -117,12 +117,12 @@ reuses identities, provenance, and sharing but has a separate header and table/c
 it consumes stored scores/qualification and selector-supported cut boundaries without contest
 scoring or filters. Incompatible filter parameters require explicit, selection-preserving removal.
 
-Default feed composition chooses the latest held contest, then the latest eligible event for
-that contest. The caller supplies the current instant; selection uses its calendar date in
-`America/Mexico_City` with ascending ids breaking equal-date ties. No eligible event means an
-empty feed, not a different contest's posts. The `/media` route loads validated event/post records,
-shows only explicitly linked posts, and distinguishes empty and repository error states. It does
-not query social networks live.
+Default media-page composition chooses the latest event date with published posts, with ascending
+ids breaking equal-date ties. Event metadata supplies the header independently of scoreboard
+availability. The caller supplies the current instant; `postedAt` timestamps determine publication
+eligibility, not the event date. The `/media` route shows only explicitly referenced posts in
+curated order and distinguishes empty and repository error states. It does not query social
+networks live.
 
 Media posts are collected outside the browser through Juicer and proposed as append-only JSON
 changes through reviewed pull requests. The media repository reads this validated archive;

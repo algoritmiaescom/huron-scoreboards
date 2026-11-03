@@ -1,6 +1,8 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
+import mediaEvent from '../data/media/events/2026-mexico-finals.json' with { type: 'json' };
+
 test('serves shared hash links and assets under the Pages prefix', async ({ page, baseURL }) => {
   if (baseURL === undefined) {
     throw new Error('Expected the production preview URL');
@@ -227,16 +229,23 @@ test('shows every 2013 Finals row without inventing missing places on desktop an
   await expect(mobile.getByText('Puesto no publicado', { exact: true })).toHaveCount(81);
 });
 
-test('shows an honest empty media archive in production', async ({ page }) => {
+test('shows published archive media before its unlinked event takes place', async ({ page }) => {
+  const instant = new Date('2026-11-02T12:00:00Z');
+  await page.clock.setFixedTime(instant);
+  await page.route(/https?:\/\/(?!127\.0\.0\.1)/, (route) => route.abort());
   await page.goto('./#/media');
   await expect(page).toHaveTitle('Comunidad | Huron Scoreboards');
-  await expect(
-    page.getByRole('heading', { name: 'Aún no hay publicaciones archivadas' }),
-  ).toBeVisible();
-  await expect(page.getByRole('article')).toHaveCount(0);
-  await expect(page.getByLabel('Ver publicaciones de otra competencia')).toHaveCount(0);
+  await expect(page.getByText(/Final Mexicana 2026 ·/)).toBeVisible();
+  await expect(page.getByRole('article')).toHaveCount(
+    mediaEvent.posts.filter((post) => new Date(post.postedAt) <= instant).length,
+  );
+  await expect(page.getByRole('link', { name: /Ver clasificación de/ })).toHaveCount(0);
+  await expect(page.getByLabel('Ver publicaciones de otro evento')).toHaveCount(0);
   await expect(page.getByText(/inventados/)).toHaveCount(0);
   await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
+  await page.goto('./#/media?event=2026-mexico-finals');
+  await page.reload();
+  await expect(page.getByText(/Final Mexicana 2026 ·/)).toBeVisible();
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
 });
 

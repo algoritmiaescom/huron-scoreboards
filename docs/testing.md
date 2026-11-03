@@ -120,12 +120,14 @@ Both themes cover seven viewport sizes, breakpoint edges, live resize without da
 document-overflow checks, phone/desktop axe scans, keyboard roster disclosure, and 200% root-font
 enlargement.
 
-Media tests cover latest held contest/event selection, explicit post references, previous-contest
-selection, URL persistence and invalid/repeated selections, optional metadata, image failures,
+Media tests cover event-based selection, upcoming/unlinked events, publication timestamp filtering,
+explicit post references, legacy contest links, previous-event selection, URL persistence and
+invalid/repeated selections, optional metadata, image failures,
 carousel controls, native video controls, original-post links, empty event/feed states, and
-invalid repository diagnostics. Browser journeys verify the navigation link, the production empty
-archive, the mock archive's historical media selector and reload behavior, and the media route in
-both themes across the responsive viewport and breakpoint matrix, with phone/desktop axe scans and
+invalid repository diagnostics. Browser journeys verify the navigation link, the production
+archive's upcoming unlinked media, the mock archive's historical media selector and reload behavior,
+and the media route in both themes across the responsive viewport and breakpoint matrix, with
+phone/desktop axe scans and
 document-overflow checks.
 
 ## Data validation
