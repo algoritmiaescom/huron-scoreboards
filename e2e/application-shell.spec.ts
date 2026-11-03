@@ -23,7 +23,11 @@ test('navigates the complete page, restores its theme, and recovers unknown rout
     'href',
     /\/blob\/main\/CONTRIBUTING.md$/,
   );
-  await expect(page.getByText(/Los enlaces de esta guía son/)).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Abrir el repositorio de GitHub' })).toHaveAttribute(
+    'href',
+    'https://github.com/algoritmiaescom/huron-scoreboards',
+  );
+  await expect(page.getByText(/Los enlaces de esta guía son/)).toHaveCount(0);
   await page.getByRole('button', { name: 'Cambiar al tema oscuro', exact: true }).click();
   await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(7, 24, 35)');
   await page.reload();
@@ -316,7 +320,7 @@ test.describe('touch navigation', () => {
 test('preserves focus rings, reduced motion, and enlarged-text reflow', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('./#/contribute');
-  const action = page.getByRole('link', { name: 'GitHub: enlace provisional', exact: true });
+  const action = page.getByRole('link', { name: 'Abrir el repositorio de GitHub', exact: true });
   await action.focus();
   const focus = await action.evaluate((element) => ({
     outline: getComputedStyle(element).outlineWidth,
