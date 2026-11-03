@@ -27,6 +27,8 @@ when provided), with hash-based application URLs. This exercises the Pages asset
 and direct-link/refresh behavior instead of relying on server-side route rewrites.
 Responsive overflow checks retry until layout settles while still requiring zero horizontal
 overflow, including after root-font enlargement.
+The footer must wrap its navigation actions rather than squeeze icon buttons below their
+content width at enlarged text sizes; overflow checks cover it on every application route.
 
 ```sh
 npx playwright install chromium

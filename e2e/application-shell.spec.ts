@@ -317,6 +317,39 @@ test.describe('touch navigation', () => {
   });
 });
 
+for (const mode of ['light', 'dark'] as const) {
+  test(`keeps footer actions readable with enlarged text in ${mode}`, async ({ page }) => {
+    await page.addInitScript((themeMode) => {
+      localStorage.setItem('huron-scoreboards.theme-mode', themeMode);
+    }, mode);
+    await page.goto('./#/contribute');
+    const footer = page.getByRole('contentinfo');
+    await expect(footer.getByRole('link', { name: 'Repositorio en GitHub' })).toBeVisible();
+    await page.evaluate(async () => {
+      document.documentElement.style.fontSize = '200%';
+      await document.fonts.ready;
+    });
+
+    for (const width of [320, 600, 640]) {
+      await page.setViewportSize({ width, height: 900 });
+      await expect
+        .poll(
+          () =>
+            footer.evaluate(
+              (element) =>
+                document.documentElement.scrollWidth <= document.documentElement.clientWidth &&
+                element.scrollWidth <= element.clientWidth &&
+                [...element.querySelectorAll('a')].every(
+                  (link) => link.scrollWidth <= link.clientWidth,
+                ),
+            ),
+          { message: `${mode} ${String(width)}px footer actions overflow at 200% text` },
+        )
+        .toBe(true);
+    }
+  });
+}
+
 test('preserves focus rings, reduced motion, and enlarged-text reflow', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('./#/contribute');
