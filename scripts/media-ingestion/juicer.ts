@@ -9,29 +9,38 @@ import { type EventConfig, type IngestionConfig, type SourceConfig } from './con
 
 const httpUrl = z.httpUrl();
 const optionalText = z.string().nullable().optional();
-const wirePostSchema = z.object({
-  platform: z.string().min(1),
-  external_id: optionalText,
-  platform_id: optionalText,
-  url: httpUrl,
-  message: z.string().trim().min(1),
-  external_created_at: z.iso.datetime({ offset: true }).optional(),
-  post_created_at: z.iso.datetime({ offset: true }).optional(),
-  poster: z.object({
-    name: z.string().trim().min(1),
-    display_name: optionalText,
-    url: httpUrl.nullable().optional(),
-    image: httpUrl.nullable().optional(),
-  }),
-  media: z.array(
-    z.object({
-      type: z.enum(['image', 'video', 'link']),
-      url: httpUrl,
-      alt_text: optionalText,
+const wirePostSchema = z
+  .object({
+    platform: z.string().min(1),
+    external_id: optionalText,
+    platform_id: optionalText,
+    url: httpUrl,
+    message: z
+      .string()
+      .trim()
+      .nullable()
+      .transform((message) => message ?? ''),
+    external_created_at: z.iso.datetime({ offset: true }).optional(),
+    post_created_at: z.iso.datetime({ offset: true }).optional(),
+    poster: z.object({
+      name: z.string().trim().min(1),
+      display_name: optionalText,
+      url: httpUrl.nullable().optional(),
+      image: httpUrl.nullable().optional(),
     }),
-  ),
-  moderation_status: z.literal('public').optional(),
-});
+    media: z.array(
+      z.object({
+        type: z.enum(['image', 'video', 'link']),
+        url: httpUrl,
+        alt_text: optionalText,
+      }),
+    ),
+    moderation_status: z.literal('public').optional(),
+  })
+  .refine((post) => post.message.length > 0 || post.media.some(({ type }) => type !== 'link'), {
+    path: ['message'],
+    message: 'must contain text or image/video media',
+  });
 
 const feedPageSchema = z.object({
   data: z.array(wirePostSchema),

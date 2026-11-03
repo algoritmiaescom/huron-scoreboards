@@ -24,7 +24,7 @@ import { type ClientDependencies, type CollectedPost, JuicerClient } from './jui
 const archiveSchema = eventFileSchema.loose().extend({
   event: eventSchema.loose(),
   posts: z.array(
-    postSchema.loose().extend({
+    postSchema.loose().safeExtend({
       author: postAuthorSchema.loose(),
       media: z.array(postMediaSchema.loose()),
     }),
