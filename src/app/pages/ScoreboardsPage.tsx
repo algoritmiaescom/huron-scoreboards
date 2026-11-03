@@ -89,7 +89,12 @@ const ScoreboardsLayout = ({ children }: { children: ReactNode }) => (
       title="Cada solución tiene una historia."
       titleComponent="p"
       description="Explora clasificaciones oficiales por temporadas y series, preservadas por la comunidad."
-      aside={<HeroLogo src="/brand/icpc-mexico.png" alt="ICPC Masters México" />}
+      aside={
+        <HeroLogo
+          src={`${import.meta.env.BASE_URL}brand/icpc-mexico.png`}
+          alt="ICPC Masters México"
+        />
+      }
     />
     <Content maxWidth="xl">
       <Overlap>{children}</Overlap>

@@ -1,8 +1,8 @@
 export const appConfig = {
   repository: {
-    url: 'https://github.com/OWNER/REPOSITORY',
+    url: 'https://github.com/algoritmiaescom/huron-scoreboards',
     branch: 'main',
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
 };
 

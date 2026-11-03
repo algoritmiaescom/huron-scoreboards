@@ -76,8 +76,12 @@ describe('application routes', () => {
       'href',
       repositoryLinks.pullRequests,
     );
-    expect(screen.getByText(/aún no está configurado/)).toBeInTheDocument();
-    expect(appConfig.repository.isPlaceholder).toBe(true);
+    expect(screen.getByRole('link', { name: 'Abrir el repositorio de GitHub' })).toHaveAttribute(
+      'href',
+      repositoryLinks.home,
+    );
+    expect(screen.queryByText(/aún no está configurado/)).not.toBeInTheDocument();
+    expect(appConfig.repository.isPlaceholder).toBe(false);
     await waitFor(() => {
       expect(document.title).toBe('Contribuir | Huron Scoreboards');
     });

@@ -42,7 +42,8 @@ correcting competition data through GitHub. See `docs/product-scope.md` and `doc
 - Use local React state for local UI, React Hook Form for forms, Zustand for shared client state,
   and route/search parameters for URL state, including scoreboard filters.
 - Do not add an asynchronous state library until the application has server state.
-- Do not add hosting or deployment configuration until that decision is made.
+- Deploy the static site to GitHub Pages through the validated CI artifact. Use hash routing
+  and base-aware asset paths; see `docs/adr/0009-deploy-to-github-pages.md`.
 - The color palette derived from the club and ICPC logos is not decided yet; use theme tokens and
   do not hard-code colors.
 

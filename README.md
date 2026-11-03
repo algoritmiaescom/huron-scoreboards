@@ -19,7 +19,8 @@ index is directly accessible at `/schools` (for example,
 responsive per-school histories at `/schools/:schoolId`, with institution/unit scope, trends,
 podiums, and contest destinations. The feed is linked as "Multimedia" in desktop and mobile
 navigation; it reads only validated archive records and does not query social networks live.
-The root redirects to standings.
+The root redirects to standings. These are client routes: public URLs use `#/scoreboards`,
+`#/schools`, and so on so shared links and refreshes work on GitHub Pages.
 
 ## Prerequisites
 
@@ -92,4 +93,29 @@ intentionally provisional and the guide warns that contributions cannot be submi
 - [Agent guidance](AGENTS.md)
 - [Contributing](CONTRIBUTING.md)
 
-Hosting and deployment are intentionally undecided.
+## Deployment
+
+The site is published to <https://algoritmiaescom.github.io/huron-scoreboards/>.
+
+One-time repository setup: open **Settings → Pages → Build and deployment** and select
+**GitHub Actions** as the source. If environment protection rules are configured, allow `main`
+to deploy to the `github-pages` environment.
+
+The [CI workflow](.github/workflows/ci.yml) uploads the validated production bundle and deploys
+it after all Python, application, data, and browser checks succeed on a push to `main`.
+Pull requests run checks without publishing. To redeploy, run **CI** from the **Actions** tab
+with branch `main`. No personal access token or `gh-pages` branch is required.
+
+The build uses `VITE_BASE_PATH=/huron-scoreboards/` (derived from the repository name in CI).
+Assets respect this prefix; navigation and filters live after `#`, for example
+`https://algoritmiaescom.github.io/huron-scoreboards/#/schools?q=UNAM`.
+Only the real archive is included in production.
+
+To preview the Pages layout locally:
+
+```sh
+VITE_BASE_PATH=/huron-scoreboards/ npm run build
+npm run preview -- --base /huron-scoreboards/
+```
+
+See [ADR 0009](docs/adr/0009-deploy-to-github-pages.md) for the hosting and routing decision.

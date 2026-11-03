@@ -45,7 +45,9 @@ const renderHistory = (
             children: route.children?.map((child) =>
               child.path === 'schools/:schoolId'
                 ? { ...child, Component: SchoolHistoryPage, loader }
-                : child,
+                : child.path === 'schools'
+                  ? { ...child, loader }
+                  : child,
             ),
           },
     ),

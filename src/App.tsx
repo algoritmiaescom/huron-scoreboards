@@ -1,9 +1,9 @@
 import { flushSync } from 'react-dom';
-import { createBrowserRouter, RouterProvider } from 'react-router';
+import { createHashRouter, RouterProvider } from 'react-router';
 
 import { routes } from '@/app/routes';
 
-const router = createBrowserRouter(routes);
+const router = createHashRouter(routes);
 
 export const App = () => (
   <RouterProvider
