@@ -6,7 +6,7 @@ import path from 'node:path';
 import { type AxiosAdapter, AxiosHeaders, type AxiosResponse } from 'axios';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { postMediaSchema } from '@/features/media/model/schemas';
+import { postMediaSchema, postSchema } from '@/features/media/model/schemas';
 
 import { configSchema, parseConfig, parseJson, type SourceConfig } from './config';
 import { appendPosts, canonicalPermalink, ingestMedia, normalizePost } from './ingestion';
@@ -73,7 +73,7 @@ const feedPage = (posts: unknown[] = [wirePost()], page = 1, totalPages = 1) => 
   data: posts,
   meta: { page, total_pages: totalPages },
 });
-const dataPage = (posts = [wirePost()], cursor: string | null = null) => ({
+const dataPage = (posts: unknown[] = [wirePost()], cursor: string | null = null) => ({
   data: posts,
   meta: {
     platforms: [
@@ -130,6 +130,18 @@ describe('configuration and alt contract', () => {
     for (const alt of [undefined, null, 12]) {
       expect(postMediaSchema.safeParse({ ...media, alt }).success).toBe(false);
     }
+  });
+
+  it('allows empty bodies only with media and still requires a body string', () => {
+    const post = normalizePost(candidate(), '2026-finals');
+    for (const body of ['', '   ']) {
+      expect(postSchema.safeParse({ ...post, body }).success).toBe(true);
+      expect(postSchema.safeParse({ ...post, body, media: [] }).success).toBe(false);
+    }
+    for (const body of [undefined, null, 12]) {
+      expect(postSchema.safeParse({ ...post, body }).success).toBe(false);
+    }
+    expect(postSchema.safeParse({ ...post, media: [] }).success).toBe(true);
   });
 
   it('parses both source modes and applies operational defaults', () => {
@@ -255,6 +267,31 @@ describe('Juicer client', () => {
     expect(calledUrl(adapter, 2).searchParams.get('cursor')).toBeNull();
   });
 
+  it('continues Facebook hashtag pagination after a null message', async () => {
+    const cfg = config([{ type: 'hashtag', platforms: ['facebook'] }]);
+    const page = (posts: unknown[], cursor: string | null) => ({
+      data: posts,
+      meta: {
+        platforms: [
+          { platform: 'Facebook', success: true, has_more: cursor !== null, next_cursor: cursor },
+        ],
+      },
+    });
+    const adapter = adapterMock()
+      .mockResolvedValueOnce(
+        json(page([{ ...wirePost('1'), platform: 'Facebook', message: null }], 'next-page')),
+      )
+      .mockResolvedValueOnce(json(page([{ ...wirePost('2'), platform: 'Facebook' }], null)));
+    const posts = await new JuicerClient(cfg, 'secret', { adapter }).collect(
+      cfg.events[0].sources[0],
+      eventConfig(),
+      '#ICPCMexico',
+    );
+    expect(posts.map(({ post }) => post.message)).toEqual(['', wirePost().message]);
+    expect(posts.map(({ externalId }) => externalId)).toEqual(['1', '2']);
+    expect(calledUrl(adapter, 1).searchParams.get('cursor')).toBe('next-page');
+  });
+
   it('queries each configured hashtag per platform instead of the event hashtag', async () => {
     const cfg = config([{ type: 'hashtag', platforms: ['x'], hashtags: ['#GPM2026', '#ICPC'] }]);
     const adapter = adapterMock()
@@ -374,10 +411,14 @@ describe('Juicer client', () => {
     { response: () => httpResponse('secret', { status: 500 }), error: 'gave up after 1 attempt' },
     { response: () => httpResponse('{'), error: 'invalid JSON' },
     { response: () => json({ data: [], meta: {} }), error: 'Invalid Juicer feed response' },
-    {
-      response: () => json(feedPage([{ ...wirePost(), message: '' }])),
+    ...[null, '', '   '].map((message) => ({
+      response: () => json(feedPage([{ ...wirePost(), message, media: [] }])),
       error: 'Invalid Juicer feed response',
-    },
+    })),
+    ...[undefined, 12].map((message) => ({
+      response: () => json(feedPage([{ ...wirePost(), message }])),
+      error: 'Invalid Juicer feed response',
+    })),
     {
       response: () => json(feedPage([{ ...wirePost(), platform: 'TikTok' }])),
       error: 'unsupported platform',
@@ -676,6 +717,81 @@ describe('normalization and append-only merging', () => {
 });
 
 describe('filesystem ingestion', () => {
+  it.each(
+    (
+      [
+        { type: 'feed', feedId: 123 },
+        { type: 'hashtag', platforms: ['facebook'] },
+      ] satisfies SourceConfig[]
+    ).flatMap((source) => [null, '', '   '].map((message) => ({ source, message }))),
+  )(
+    'imports captionless media through $source.type with message $message',
+    async ({ source, message }) => {
+      const { root, file } = await fixture();
+      const cfg = config([source]);
+      const post = { ...wirePost(), platform: 'Facebook', message };
+      const page =
+        source.type === 'feed'
+          ? feedPage([post])
+          : {
+              ...dataPage([post]),
+              meta: {
+                platforms: [
+                  { platform: 'Facebook', success: true, has_more: false, next_cursor: null },
+                ],
+              },
+            };
+      const adapter = adapterMock().mockResolvedValue(json(page));
+      expect(
+        await ingestMedia({ root, config: cfg, apiKey: 'secret', dependencies: { adapter } }),
+      ).toMatchObject([{ fetched: 1, added: 1 }]);
+      const contents = await readFile(file, 'utf8');
+      expect(JSON.parse(contents)).toMatchObject({
+        posts: [
+          {
+            source: 'facebook',
+            body: '',
+            tags: [],
+            permalink: post.url,
+            media: [
+              { type: 'image', url: post.media[0].url, alt: '' },
+              { type: 'video', url: post.media[1].url, alt: 'Teams celebrating' },
+            ],
+          },
+        ],
+      });
+      expect(
+        await ingestMedia({ root, config: cfg, apiKey: 'secret', dependencies: { adapter } }),
+      ).toMatchObject([{ added: 0, duplicates: 1 }]);
+      expect(await readFile(file, 'utf8')).toBe(contents);
+    },
+  );
+
+  it('rejects captionless link-only hashtag posts without writing files', async () => {
+    const { root, file } = await fixture();
+    const before = await readFile(file, 'utf8');
+    const adapter = adapterMock().mockResolvedValue(
+      json(
+        dataPage([
+          {
+            ...wirePost(),
+            message: null,
+            media: [{ type: 'link', url: 'https://example.com/article' }],
+          },
+        ]),
+      ),
+    );
+    await expect(
+      ingestMedia({
+        root,
+        config: config([{ type: 'hashtag', platforms: ['x'] }]),
+        apiKey: 'secret',
+        dependencies: { adapter },
+      }),
+    ).rejects.toThrow('must contain text or image/video media');
+    expect(await readFile(file, 'utf8')).toBe(before);
+  });
+
   it('combines adapters, writes valid JSON, and is byte-idempotent on a second run', async () => {
     const { root, file } = await fixture();
     const cfg = config([

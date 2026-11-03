@@ -222,11 +222,12 @@ export const MediaPostCard = ({ post }: { post: Post }) => {
           <Chip label={sourceLabels[post.source]} size="small" variant="outlined" />
         </PostHeader>
         {post.title !== undefined && <PostTitle>{post.title}</PostTitle>}
-        {post.title === undefined ? (
-          <PostBody>{post.body}</PostBody>
-        ) : (
-          <PostBodyAfterTitle>{post.body}</PostBodyAfterTitle>
-        )}
+        {post.body.trim().length > 0 &&
+          (post.title === undefined ? (
+            <PostBody>{post.body}</PostBody>
+          ) : (
+            <PostBodyAfterTitle>{post.body}</PostBodyAfterTitle>
+          ))}
         {post.tags.length > 0 && (
           <TagList aria-label="Etiquetas">
             {post.tags.map((tag) => (
