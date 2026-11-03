@@ -84,6 +84,8 @@ The document must reflow at 320 CSS pixels without horizontal page overflow. Do 
 - Use contained, labeled horizontal scrolling for intrinsically wide tables. Place/team/school
   stay sticky while problem columns scroll; the header remains sticky vertically. Column
   offsets must equal actual rendered widths, including borders/padding, to avoid overlap.
+- Standings without problem columns fill the scroll container. Team and institution columns
+  share the available space; only the header stays sticky in this totals-only layout.
 - Result cells have a minimum 68 x 48px footprint; problem columns start at 84px. Preserve
   information in mobile cards rather than dropping columns silently.
 - Charts and media fit their containers. Long names, missing metadata, many chips, and short

@@ -27,6 +27,41 @@ for (const width of [390, 1440]) {
       '919 min',
     );
     await expect(page.getByRole('img', { name: /Problema/ })).toHaveCount(0);
+    if (width >= 900) {
+      await expect(totals.getByRole('columnheader')).toHaveText([
+        'Puesto',
+        'Equipo',
+        'Institución',
+        'Resueltos',
+        'Penalización',
+      ]);
+      for (const desktopWidth of [900, 1024, 1440, 1920]) {
+        await page.setViewportSize({ width: desktopWidth, height: 900 });
+        const geometry = await totals.evaluate((table) => {
+          const region = table.closest('[role="region"]');
+          if (region === null) {
+            throw new Error('Missing standings scroll region');
+          }
+          const headers = Array.from(table.querySelectorAll('thead th'));
+          const bounds = table.getBoundingClientRect();
+          return {
+            tableWidth: bounds.width,
+            containerWidth: region.clientWidth,
+            contentWidth: region.scrollWidth,
+            lastColumnRight: headers[headers.length - 1].getBoundingClientRect().right,
+            tableRight: bounds.right,
+            teamWidth: headers[1].getBoundingClientRect().width,
+            schoolWidth: headers[2].getBoundingClientRect().width,
+          };
+        });
+        expect(Math.abs(geometry.tableWidth - geometry.containerWidth)).toBeLessThanOrEqual(1);
+        expect(geometry.contentWidth).toBeLessThanOrEqual(geometry.containerWidth + 1);
+        expect(Math.abs(geometry.lastColumnRight - geometry.tableRight)).toBeLessThanOrEqual(1);
+        expect(geometry.teamWidth).toBeGreaterThanOrEqual(200);
+        expect(geometry.schoolWidth).toBeGreaterThanOrEqual(240);
+      }
+      await page.setViewportSize({ width, height: 900 });
+    }
     await page.getByRole('button', { name: 'Resuelto', exact: true }).click();
     await expect(page.getByRole('status')).toHaveText('9 de 12 equipos');
     await page.reload();
