@@ -4280,7 +4280,7 @@
   {
     "id": "2021-gpm-repechage-row-0714-pms",
     "name": "PMS",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2021
   },
   {
@@ -7358,7 +7358,7 @@
   {
     "id": "2021-gpm-iteso-556098-pms-buap",
     "name": "PMS - BUAP",
-    "schoolId": "source-school-5d06059e7144",
+    "schoolId": "buap",
     "seasonYear": 2021
   },
   {

@@ -12,12 +12,13 @@
   {
     "id": "buap",
     "officialName": "Benemérita Universidad Autónoma de Puebla",
-    "shortName": "Benemérita Universidad Autónoma de Puebla"
+    "shortName": "BUAP"
   },
   {
-    "id": "buap-mx",
-    "officialName": "Benemérita Universidad Autónoma de Puebla (BUAP)",
-    "shortName": "BUAP"
+    "id": "buap-fcc",
+    "officialName": "Facultad de Ciencias de la Computación",
+    "shortName": "FCC BUAP",
+    "parentInstitutionId": "buap"
   },
   {
     "id": "cbtis-217",
@@ -2666,11 +2667,6 @@
     "shortName": "Universidad Tecnológica de La Habana \"José Antonio Echeverría\""
   },
   {
-    "id": "source-school-1389d6b7512a",
-    "officialName": "BUAP",
-    "shortName": "BUAP"
-  },
-  {
     "id": "source-school-153d29e75bbd",
     "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 198",
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 198"
@@ -3199,11 +3195,6 @@
     "id": "source-school-5b3266f2ec11",
     "officialName": "UACH",
     "shortName": "UACH"
-  },
-  {
-    "id": "source-school-5d06059e7144",
-    "officialName": "Benemérica Universidad Autónoma de Puebla",
-    "shortName": "Benemérica Universidad Autónoma de Puebla"
   },
   {
     "id": "source-school-5e34206154c6",
@@ -3854,11 +3845,6 @@
     "id": "source-school-bfbf9a1e6d0a",
     "officialName": "Universidad del Valle de Atemajac",
     "shortName": "Universidad del Valle de Atemajac"
-  },
-  {
-    "id": "source-school-bfcfeb8363f7",
-    "officialName": "BUAP Facultad de Ciencias de la Computación",
-    "shortName": "BUAP Facultad de Ciencias de la Computación"
   },
   {
     "id": "source-school-c2bf2f06324f",

@@ -63,7 +63,7 @@ test('uses the real archive in production and exposes current institution naviga
   page,
 }) => {
   await page.goto('./#/schools');
-  await expect(page.getByRole('status')).toHaveText('1174 de 1174 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('1171 de 1171 instituciones y unidades');
   await expect(page.getByRole('article', { name: 'CCL', exact: true })).toBeVisible();
   await expect(
     page
@@ -76,6 +76,36 @@ test('uses the real archive in production and exposes current institution naviga
     'aria-current',
     'page',
   );
+});
+
+test('shows one BUAP university and its distinct FCC unit in the published archive', async ({
+  page,
+}) => {
+  await page.goto('./#/schools?q=BUAP');
+  const list = page.getByRole('list', { name: 'Instituciones y unidades' });
+  await expect(list.getByRole('article')).toHaveCount(2);
+  await expect(page.getByRole('status')).toHaveText('2 de 1171 instituciones y unidades');
+  await expect(list.getByRole('link', { name: 'BUAP', exact: true })).toHaveAttribute(
+    'href',
+    '#/schools/buap',
+  );
+  await list.getByRole('link', { name: 'FCC BUAP', exact: true }).click();
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    'Facultad de Ciencias de la Computación',
+  );
+  await expect(page.getByText('Esta escuela únicamente', { exact: true })).toBeVisible();
+  await expect(page.getByText('voidcode', { exact: true })).toBeVisible();
+  await expect(page.getByText('FAAV team', { exact: true })).toBeVisible();
+  await page.getByRole('link', { name: 'Ver institución BUAP', exact: true }).click();
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    'Benemérita Universidad Autónoma de Puebla',
+  );
+  await expect(page.getByText('Alcance institucional', { exact: true })).toBeVisible();
+  await expect(page.getByText('voidcode', { exact: true })).toBeVisible();
+  await expect(page.getByText('FAAV team', { exact: true })).toBeVisible();
+  await page.getByRole('link', { name: 'Ver solo resultados directos', exact: true }).click();
+  await expect(page.getByText('voidcode', { exact: true })).toHaveCount(0);
+  await expect(page.getByText('FAAV team', { exact: true })).toHaveCount(0);
 });
 
 test('opens unit and institution histories with the correct scope and contest destination', async ({

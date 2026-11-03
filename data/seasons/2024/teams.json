@@ -176,7 +176,7 @@
   {
     "id": "2024-gpm-qualifier-1-row-0030-no-hay-nombre-pero-se-han-pregun",
     "name": "no hay nombre, pero ¿Se han preguntado cual es el limite de caracteres en el nombre de un equi",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -746,7 +746,7 @@
   {
     "id": "2024-gpm-qualifier-1-row-0125-mateatletas",
     "name": "Mateatletas",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -932,7 +932,7 @@
   {
     "id": "2024-gpm-qualifier-1-row-0156-binary-sech",
     "name": "binary_sech()",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -1334,7 +1334,7 @@
   {
     "id": "2024-gpm-qualifier-1-row-0223-lobocode",
     "name": "Lobocode",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -1826,7 +1826,7 @@
   {
     "id": "2024-gpm-qualifier-1-row-0305-java-limos",
     "name": "Java-limos",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -1838,7 +1838,7 @@
   {
     "id": "2024-gpm-qualifier-1-row-0307-chile-poblano",
     "name": "Chile Poblano",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -3188,7 +3188,7 @@
   {
     "id": "2024-gpm-qualifier-2-row-0057-no-hay-nombre-pero-se-han-pregun",
     "name": "no hay nombre, pero ¿Se han preguntado cual es el limite de caracteres en el nombre de un equi",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -3686,7 +3686,7 @@
   {
     "id": "2024-gpm-qualifier-2-row-0140-binary-sech",
     "name": "binary_sech()",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -4274,7 +4274,7 @@
   {
     "id": "2024-gpm-qualifier-2-row-0238-lobocode",
     "name": "Lobocode",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -4550,7 +4550,7 @@
   {
     "id": "2024-gpm-qualifier-2-row-0284-mateatletas",
     "name": "Mateatletas",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -5210,13 +5210,13 @@
   {
     "id": "2024-gpm-qualifier-2-row-0394-chile-poblano",
     "name": "Chile Poblano",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
     "id": "2024-gpm-qualifier-2-row-0395-java-limos",
     "name": "Java-limos",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -7052,7 +7052,7 @@
   {
     "id": "2024-gpm-repechage-row-0119-lobocode",
     "name": "Lobocode",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -7142,7 +7142,7 @@
   {
     "id": "2024-gpm-repechage-row-0134-binary-sech",
     "name": "binary_sech()",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -7196,7 +7196,7 @@
   {
     "id": "2024-gpm-repechage-row-0143-mateatletas",
     "name": "Mateatletas",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -7562,7 +7562,7 @@
   {
     "id": "2024-gpm-repechage-row-0204-ctrl-shift",
     "name": "ctrl_shift",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -7712,7 +7712,7 @@
   {
     "id": "2024-gpm-repechage-row-0229-noditos",
     "name": "Noditos",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -7802,19 +7802,19 @@
   {
     "id": "2024-gpm-repechage-row-0244-chile-poblano",
     "name": "Chile Poblano",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
     "id": "2024-gpm-repechage-row-0245-java-limos",
     "name": "Java-limos",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
     "id": "2024-gpm-repechage-row-0246-no-hay-nombre-pero-se-han-pregun",
     "name": "no hay nombre, pero ¿Se han preguntado cual es el limite de caracteres en el nombre de un equi",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -14594,7 +14594,7 @@
   {
     "id": "2024-mexico-finals-final-row-0247-no-hay-nombre-pero-se-han-pregun",
     "name": "no hay nombre, pero ¿Se han preguntado cual es el limite de caracteres en el nombre de un equi",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {
@@ -15860,7 +15860,7 @@
   {
     "id": "2024-mexico-finals-final-row-0458-lobocode",
     "name": "Lobocode",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2024
   },
   {

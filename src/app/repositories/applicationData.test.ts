@@ -6,6 +6,7 @@ import {
   selectContest,
   selectSeasonStanding,
 } from '@/features/scoreboards';
+import { selectSchoolHistory } from '@/features/scoreboards/model/selectors';
 import { mexicoCityDate } from '@/lib/dates';
 import {
   archive,
@@ -33,6 +34,59 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('keeps canonical BUAP registrations and rolls FCC history up without merging the faculty', async () => {
+    const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published archive');
+    }
+    const published = result.data;
+    expect(published.schools.filter(({ id }) => id.startsWith('buap'))).toEqual([
+      {
+        id: 'buap',
+        officialName: 'Benemérita Universidad Autónoma de Puebla',
+        shortName: 'BUAP',
+      },
+      {
+        id: 'buap-fcc',
+        officialName: 'Facultad de Ciencias de la Computación',
+        shortName: 'FCC BUAP',
+        parentInstitutionId: 'buap',
+      },
+    ]);
+    for (const id of [
+      'buap-mx',
+      'source-school-1389d6b7512a',
+      'source-school-5d06059e7144',
+      'source-school-bfcfeb8363f7',
+    ]) {
+      expect(published.schools.some((school) => school.id === id)).toBe(false);
+      expect(published.teams.some((team) => team.schoolId === id)).toBe(false);
+    }
+    for (const [schoolId, scope, count] of [
+      ['buap', 'school', 142],
+      ['buap', 'institution', 144],
+      ['buap-fcc', 'school', 2],
+    ] as const) {
+      const history = selectSchoolHistory(published, schoolId, scope);
+      if (history.status !== 'found') {
+        throw new Error(`Expected history for ${schoolId}`);
+      }
+      expect(history.record.teams).toHaveLength(count);
+      if (schoolId === 'buap-fcc' || scope === 'institution') {
+        expect(history.record.accumulated.map(({ row }) => row.teamId)).toEqual(
+          expect.arrayContaining([
+            '2016-gpm-iteso-row-0112-voidcode',
+            '2020-gpm-iteso-464522-faav-team',
+          ]),
+        );
+      }
+    }
+  });
+
   it('loads mixed-detail historical records without losing explicit unknown values', async () => {
     const files = archiveFiles();
     files['data/mock/seasons/2024/gpm/qualifier-1.json'] = jsonFile(partialContest);
