@@ -132,6 +132,8 @@ export interface CollectedPost {
   source: PostSource;
   postedAt: string;
   externalId?: string;
+  // The event hashtag for feeds, or the queried term for direct hashtag sources.
+  searchedHashtag: string;
 }
 
 const platformNames: Record<PostSource, string> = {
@@ -276,6 +278,7 @@ export class JuicerClient {
     source: SourceConfig,
     event: EventConfig,
     term: string | undefined,
+    searchedHashtag: string,
     platform: PostSource | undefined,
     progress: { page: number },
     collected: CollectedPost[],
@@ -347,6 +350,7 @@ export class JuicerClient {
           source: postSource,
           postedAt,
           externalId: (source.type === 'feed' ? post.external_id : post.platform_id) ?? undefined,
+          searchedHashtag,
         });
       }
       if ('total_pages' in response.meta) {
@@ -436,7 +440,15 @@ export class JuicerClient {
       }
       const queryPosts: CollectedPost[] = [];
       try {
-        await this.collectQuery(source, event, term, platform, progress, queryPosts);
+        await this.collectQuery(
+          source,
+          event,
+          term,
+          term ?? defaultHashtag,
+          platform,
+          progress,
+          queryPosts,
+        );
       } catch (error) {
         const message = (error instanceof Error ? error.message : String(error)).replaceAll(
           this.apiKey,

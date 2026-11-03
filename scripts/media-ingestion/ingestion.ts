@@ -56,6 +56,14 @@ export const canonicalPermalink = (value: string): string => {
   return url.toString();
 };
 
+const hashtagsIn = (text: string): string[] => text.match(/#[\p{L}\p{N}_]+/gu) ?? [];
+
+const hashtagKey = (hashtag: string): string => hashtag.normalize('NFC').toLowerCase();
+
+// Juicer feeds and hashtag searches can return posts whose text never mentions the hashtag.
+export const containsHashtag = (text: string, hashtag: string): boolean =>
+  hashtagsIn(text).some((tag) => hashtagKey(tag) === hashtagKey(hashtag));
+
 export const normalizePost = (item: CollectedPost, eventId: string): Post => {
   const { post, source, postedAt, externalId } = item;
   const identity =
@@ -80,7 +88,7 @@ export const normalizePost = (item: CollectedPost, eventId: string): Post => {
         : [{ type: medium.type, url: medium.url, alt: medium.alt_text ?? '' }],
     ),
     permalink: post.url,
-    tags: [...new Set(post.message.match(/#[\p{L}\p{N}_]+/gu) ?? [])],
+    tags: [...new Set(hashtagsIn(post.message))],
   });
 };
 
@@ -92,6 +100,7 @@ export interface EventSummary {
   duplicates: number;
   suppressed: number;
   outsideDateRange: number;
+  missingHashtag: number;
   missingAlt: number;
   // Incomplete queries with no retained posts.
   skipped: string[];
@@ -113,6 +122,7 @@ export const appendPosts = (
     duplicates: 0,
     suppressed: 0,
     outsideDateRange: 0,
+    missingHashtag: 0,
     missingAlt: 0,
   };
   const ids = new Set(existing.posts.map(({ id }) => id));
@@ -131,6 +141,10 @@ export const appendPosts = (
     const link = canonicalPermalink(candidate.post.url);
     if (suppressed.has(link)) {
       summary.suppressed += 1;
+      continue;
+    }
+    if (!containsHashtag(candidate.post.message, candidate.searchedHashtag)) {
+      summary.missingHashtag += 1;
       continue;
     }
     const post = normalizePost(candidate, config.eventId);
