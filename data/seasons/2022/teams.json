@@ -2510,7 +2510,7 @@
   {
     "id": "2022-gpm-qualifier-2-row-0096-siglo-xiii-upiiz",
     "name": "Siglo XIII - UPIIZ",
-    "schoolId": "ipn",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2022
   },
   {
@@ -12482,13 +12482,13 @@
   {
     "id": "2022-gpm-iteso-672426-exceso-de-fe",
     "name": "Exceso de Fé",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672390-crustaceos-cascarudos",
     "name": "Crustáceos Cascarudos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12512,7 +12512,7 @@
   {
     "id": "2022-gpm-iteso-672418-ac-forever",
     "name": "AC Forever",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12530,7 +12530,7 @@
   {
     "id": "2022-gpm-iteso-672419-descomprimidos-zip",
     "name": "dESCOMprimidos.zip",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12626,7 +12626,7 @@
   {
     "id": "2022-gpm-iteso-672420-dbd-crew",
     "name": "DBD crew",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12644,7 +12644,7 @@
   {
     "id": "2022-gpm-iteso-672430-shark-dj-en-mptres",
     "name": "Shark DJ en MPTres",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12764,7 +12764,7 @@
   {
     "id": "2022-gpm-iteso-672428-to-icpc-and-beyond",
     "name": "To ICPC and beyond",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12830,7 +12830,7 @@
   {
     "id": "2022-gpm-iteso-672433-schrodinger-s-ac",
     "name": "Schrodinger's AC",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12950,7 +12950,7 @@
   {
     "id": "2022-gpm-iteso-672464-bffs-brute-force-friends-3",
     "name": "BFFs(Brute Force Friends)<3",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2022
   },
   {
@@ -12992,7 +12992,7 @@
   {
     "id": "2022-gpm-iteso-672389-huevito-con-catsun",
     "name": "Huevito con catsun",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -13058,13 +13058,13 @@
   {
     "id": "2022-gpm-iteso-672429-return-ac",
     "name": "return AC;",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672422-lascuries",
     "name": "lasCuries",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -13154,7 +13154,7 @@
   {
     "id": "2022-gpm-iteso-672421-las-picafresas",
     "name": "Las Picafresas",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -13418,7 +13418,7 @@
   {
     "id": "2022-gpm-iteso-732491-siglo-xiii",
     "name": "Siglo XIII",
-    "schoolId": "source-school-16f24e4704a7",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2022
   },
   {
@@ -14018,7 +14018,7 @@
   {
     "id": "2022-gpm-iteso-672463-void-guys",
     "name": "Void Guys",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2022
   },
   {
@@ -14030,7 +14030,7 @@
   {
     "id": "2022-gpm-iteso-672423-a-de-ac",
     "name": "A de AC",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -14168,7 +14168,7 @@
   {
     "id": "2022-gpm-iteso-672434-los-binarios",
     "name": "Los binarios",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -14300,13 +14300,13 @@
   {
     "id": "2022-gpm-iteso-672630-rama",
     "name": "RAMA",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672427-las-chicas-del-barrio",
     "name": "Las chicas del barrio",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -14396,7 +14396,7 @@
   {
     "id": "2022-gpm-iteso-672432-pandora",
     "name": "Pandora",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {

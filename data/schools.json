@@ -499,9 +499,21 @@
     "parentInstitutionId": "ipn"
   },
   {
+    "id": "ipn-esime-azcapotzalco",
+    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica, Unidad Azcapotzalco",
+    "shortName": "ESIME Azcapotzalco",
+    "parentInstitutionId": "ipn"
+  },
+  {
     "id": "ipn-esime-culhuacan",
     "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica, Unidad Culhuacán",
     "shortName": "ESIME Culhuacán",
+    "parentInstitutionId": "ipn"
+  },
+  {
+    "id": "ipn-upiicsa",
+    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas",
+    "shortName": "UPIICSA IPN",
     "parentInstitutionId": "ipn"
   },
   {
@@ -920,11 +932,6 @@
     "id": "source-label-emdic-3d17d72e0b",
     "officialName": "EMdIC",
     "shortName": "EMdIC"
-  },
-  {
-    "id": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
-    "officialName": "Escuela Superior De Computo Instituto Politecnico Nacional",
-    "shortName": "Escuela Superior De Computo Instituto Politecnico Nacional"
   },
   {
     "id": "source-label-espm-8a88abee7e",
@@ -2067,11 +2074,6 @@
     "shortName": "Unicaribe"
   },
   {
-    "id": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
-    "officialName": "Unidad Profesional Interdisciplinaria de Ingenieria Campus Zacatecas",
-    "shortName": "Unidad Profesional Interdisciplinaria de Ingenieria Campus Zacatecas"
-  },
-  {
     "id": "source-label-unifacef-85c8edb673",
     "officialName": "UNIFACEF",
     "shortName": "UNIFACEF"
@@ -2582,11 +2584,6 @@
     "shortName": "ITCancún"
   },
   {
-    "id": "source-school-0223f623eaba",
-    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Naciona",
-    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Naciona"
-  },
-  {
     "id": "source-school-068741c53129",
     "officialName": "Universidad Tecnica Nacional de Costa Rica",
     "shortName": "Universidad Tecnica Nacional de Costa Rica"
@@ -2672,11 +2669,6 @@
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 198"
   },
   {
-    "id": "source-school-16f24e4704a7",
-    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN",
-    "shortName": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN"
-  },
-  {
     "id": "source-school-175644cc58e8",
     "officialName": "Universidad de Granma - Bayamo",
     "shortName": "Universidad de Granma - Bayamo"
@@ -2747,11 +2739,6 @@
     "shortName": "TECNOLOGICO NACIONAL DE MEXICO CAMPUS MORELIA"
   },
   {
-    "id": "source-school-23203f7743a5",
-    "officialName": "ESCOM IPN",
-    "shortName": "ESCOM IPN"
-  },
-  {
     "id": "source-school-2422e48e0a1a",
     "officialName": "Universidad Nacional de Costa Rica Campus Chorotega",
     "shortName": "Universidad Nacional de Costa Rica Campus Chorotega"
@@ -2765,11 +2752,6 @@
     "id": "source-school-25b3dd443154",
     "officialName": "Universidad Centroamericana",
     "shortName": "Universidad Centroamericana"
-  },
-  {
-    "id": "source-school-26d80743abcd",
-    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas",
-    "shortName": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas"
   },
   {
     "id": "source-school-275a4aead4c3",
@@ -2867,11 +2849,6 @@
     "shortName": "ULSA"
   },
   {
-    "id": "source-school-318679454525",
-    "officialName": "UPIICSA",
-    "shortName": "UPIICSA"
-  },
-  {
     "id": "source-school-3196809a1ca6",
     "officialName": "Universidad de las Americas-Puebla",
     "shortName": "Universidad de las Americas-Puebla"
@@ -2900,11 +2877,6 @@
     "id": "source-school-36dd3f015eef",
     "officialName": "ITESM Monterrey",
     "shortName": "ITESM Monterrey"
-  },
-  {
-    "id": "source-school-37806e2c8f27",
-    "officialName": "Escuela Superior de Cómputo IPN",
-    "shortName": "Escuela Superior de Cómputo IPN"
   },
   {
     "id": "source-school-389761cad6a1",
@@ -2982,11 +2954,6 @@
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No.255"
   },
   {
-    "id": "source-school-40fbd05cee85",
-    "officialName": "Escuela Superior de Física y Matemáticas del IPN",
-    "shortName": "Escuela Superior de Física y Matemáticas del IPN"
-  },
-  {
     "id": "source-school-41239e5c8a3b",
     "officialName": "ITESM León",
     "shortName": "ITESM León"
@@ -3047,11 +3014,6 @@
     "shortName": "U de Guanajuato"
   },
   {
-    "id": "source-school-4eb7211dfff1",
-    "officialName": "ESCOM Instituto Politecnico Nacional",
-    "shortName": "ESCOM Instituto Politecnico Nacional"
-  },
-  {
     "id": "source-school-4f7c9598af91",
     "officialName": "Instituto Tecnológico de Las Américas",
     "shortName": "Instituto Tecnológico de Las Américas"
@@ -3065,11 +3027,6 @@
     "id": "source-school-5143fc756511",
     "officialName": "ITVer",
     "shortName": "ITVer"
-  },
-  {
-    "id": "source-school-516d80476120",
-    "officialName": "Escuela Superior de Física y Matemáticas del Instituto Politécnico Nacional",
-    "shortName": "Escuela Superior de Física y Matemáticas del Instituto Politécnico Nacional"
   },
   {
     "id": "source-school-51b132f7b9a7",
@@ -3257,11 +3214,6 @@
     "shortName": "Tecnológico Nacional de México , Instituto Tecnológico de León"
   },
   {
-    "id": "source-school-6993759cca4b",
-    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del IPN Unidad Azcapotzalco",
-    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del IPN Unidad Azcapotzalco"
-  },
-  {
     "id": "source-school-6a220b20176f",
     "officialName": "Universidad de las Ciencias Informáticas - Facultad Regional de Ciego",
     "shortName": "Universidad de las Ciencias Informáticas - Facultad Regional de Ciego"
@@ -3342,11 +3294,6 @@
     "shortName": "UAM Iztapalapa"
   },
   {
-    "id": "source-school-751fdf1568f6",
-    "officialName": "ESIME Azcapotzalco",
-    "shortName": "ESIME Azcapotzalco"
-  },
-  {
     "id": "source-school-773893f7149c",
     "officialName": "UPAEP",
     "shortName": "UPAEP"
@@ -3370,11 +3317,6 @@
     "id": "source-school-7a2289b9dded",
     "officialName": "UdG CUSUR",
     "shortName": "UdG CUSUR"
-  },
-  {
-    "id": "source-school-7aa06b6cb0bd",
-    "officialName": "Unidad Profesional Interdisciplinaria de Ingenieria Zacatecas IPN",
-    "shortName": "Unidad Profesional Interdisciplinaria de Ingenieria Zacatecas IPN"
   },
   {
     "id": "source-school-7b42cb77e9ee",
@@ -3547,11 +3489,6 @@
     "shortName": "Universidad de las Ciencias Informáticas"
   },
   {
-    "id": "source-school-9321a2f2d26e",
-    "officialName": "Universidad Nacional Autónoma de México CNyMyN",
-    "shortName": "Universidad Nacional Autónoma de México CNyMyN"
-  },
-  {
     "id": "source-school-93bef2438b23",
     "officialName": "Politécnica de Santa Rosa Jáuregui",
     "shortName": "Politécnica de Santa Rosa Jáuregui"
@@ -3600,11 +3537,6 @@
     "id": "source-school-97d7e30bc553",
     "officialName": "Colegio de Estudios Cientificos y Tecnologicos del Estado de Michoacan",
     "shortName": "Colegio de Estudios Cientificos y Tecnologicos del Estado de Michoacan"
-  },
-  {
-    "id": "source-school-991fa4ba5252",
-    "officialName": "ESIME del Instituto Politecnico Nacional Azcapotzalco",
-    "shortName": "ESIME del Instituto Politecnico Nacional Azcapotzalco"
   },
   {
     "id": "source-school-9abdb58ab272",
@@ -3777,11 +3709,6 @@
     "shortName": "CBTis 217 Salvador Urrutia"
   },
   {
-    "id": "source-school-b71fbe062024",
-    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional Unidad Culhuacán",
-    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional Unidad Culhuacán"
-  },
-  {
     "id": "source-school-b7d0815fb289",
     "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 172",
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 172"
@@ -3820,11 +3747,6 @@
     "id": "source-school-bd755128e841",
     "officialName": "FES Acatlan UNAM",
     "shortName": "FES Acatlan UNAM"
-  },
-  {
-    "id": "source-school-bd7a82d5ebbd",
-    "officialName": "UPIICSA Instituto Politécnico Nacional",
-    "shortName": "UPIICSA Instituto Politécnico Nacional"
   },
   {
     "id": "source-school-beed31ec1ef8",
@@ -3867,11 +3789,6 @@
     "shortName": "ITESM Toluca"
   },
   {
-    "id": "source-school-c9017650908b",
-    "officialName": "ESFM IPN",
-    "shortName": "ESFM IPN"
-  },
-  {
     "id": "source-school-ca31779b34e7",
     "officialName": "Centros de Estudios Tecnológicos Industrial y de Servicios 77",
     "shortName": "Centros de Estudios Tecnológicos Industrial y de Servicios 77"
@@ -3887,11 +3804,6 @@
     "shortName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas-UNAM"
   },
   {
-    "id": "source-school-cbe370566f4c",
-    "officialName": "UPIIZ - IPN",
-    "shortName": "UPIIZ - IPN"
-  },
-  {
     "id": "source-school-cc60902d90be",
     "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 148",
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 148"
@@ -3905,11 +3817,6 @@
     "id": "source-school-cd42395ecd92",
     "officialName": "Universidad de Costa Rica",
     "shortName": "Universidad de Costa Rica"
-  },
-  {
-    "id": "source-school-cf711fffc42c",
-    "officialName": "UPIIZ Instituto Politécnico Nacional Campus Zacatecas",
-    "shortName": "UPIIZ Instituto Politécnico Nacional Campus Zacatecas"
   },
   {
     "id": "source-school-cfd585fc5d93",
@@ -4055,11 +3962,6 @@
     "id": "source-school-e02dd402e70d",
     "officialName": "ITSJRC",
     "shortName": "ITSJRC"
-  },
-  {
-    "id": "source-school-e0819f018bde",
-    "officialName": "Escuela Superior De Computo IPN",
-    "shortName": "Escuela Superior De Computo IPN"
   },
   {
     "id": "source-school-e0bf1360c164",
@@ -4217,11 +4119,6 @@
     "shortName": "Universidad de Guadalajara CUCEA"
   },
   {
-    "id": "source-school-f512b4d3b560",
-    "officialName": "ESIME Culhuacán",
-    "shortName": "ESIME Culhuacán"
-  },
-  {
     "id": "source-school-f6a6eb9fe115",
     "officialName": "Universidad de Gualajara CUALTOS",
     "shortName": "Universidad de Gualajara CUALTOS"
@@ -4240,16 +4137,6 @@
     "id": "source-school-f96ce82ce333",
     "officialName": "ITSUR",
     "shortName": "ITSUR"
-  },
-  {
-    "id": "source-school-f994082eaba8",
-    "officialName": "Centro de Nanociencias y Micro y Nanotecnologías - UNAM",
-    "shortName": "Centro de Nanociencias y Micro y Nanotecnologías - UNAM"
-  },
-  {
-    "id": "source-school-fb0785c61132",
-    "officialName": "Escuela Superior de Física y Matemáticas IPN",
-    "shortName": "Escuela Superior de Física y Matemáticas IPN"
   },
   {
     "id": "source-school-fb880f1b0a52",
@@ -5185,6 +5072,12 @@
     "id": "unam",
     "officialName": "Universidad Nacional Autónoma de México",
     "shortName": "Universidad Nacional Autónoma de México"
+  },
+  {
+    "id": "unam-cnyn",
+    "officialName": "Centro de Nanociencias y Nanotecnología",
+    "shortName": "CNYN UNAM",
+    "parentInstitutionId": "unam"
   },
   {
     "id": "unam-enes-morelia",

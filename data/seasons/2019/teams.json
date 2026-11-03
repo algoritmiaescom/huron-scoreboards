@@ -2210,7 +2210,7 @@
   {
     "id": "2019-gpm-iteso-row-0001-norman-is-hunting",
     "name": "Norman is Hunting",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2246,7 +2246,7 @@
   {
     "id": "2019-gpm-iteso-row-0007-error-team-name-not-defined",
     "name": "Error: \"Team Name\" not defined",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2324,7 +2324,7 @@
   {
     "id": "2019-gpm-iteso-row-0021-404-globito-not-found",
     "name": "404.Globito Not Found",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2366,7 +2366,7 @@
   {
     "id": "2019-gpm-iteso-row-0028-last-chance",
     "name": "Last Chance",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2378,7 +2378,7 @@
   {
     "id": "2019-gpm-iteso-row-0030-ansiosos",
     "name": "ANSIosos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2432,7 +2432,7 @@
   {
     "id": "2019-gpm-iteso-row-0043-campos-de-galois",
     "name": "Campos de Galois",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2450,7 +2450,7 @@
   {
     "id": "2019-gpm-iteso-row-0046-el-perla-negra",
     "name": "El perla negra",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2504,13 +2504,13 @@
   {
     "id": "2019-gpm-iteso-row-0055-triple-a",
     "name": "Triple A",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0056-tle",
     "name": "TLE++",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2522,7 +2522,7 @@
   {
     "id": "2019-gpm-iteso-row-0058-las-pistas-de-null",
     "name": "Las pistas de NULL",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2019
   },
   {
@@ -2558,7 +2558,7 @@
   {
     "id": "2019-gpm-iteso-row-0064-orion-belt",
     "name": "Orion Belt",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2672,7 +2672,7 @@
   {
     "id": "2019-gpm-iteso-row-0083-escuadron-alpha-lobo-dinamita",
     "name": "Escuadron alpha lobo dinamita",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2019
   },
   {
@@ -2792,7 +2792,7 @@
   {
     "id": "2019-gpm-iteso-row-0103-leftovers",
     "name": "Leftovers",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2876,7 +2876,7 @@
   {
     "id": "2019-gpm-iteso-row-0117-include-witech",
     "name": "#include<witech>",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2936,7 +2936,7 @@
   {
     "id": "2019-gpm-iteso-row-0127-tortugas-torpes",
     "name": "Tortugas Torpes",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3002,7 +3002,7 @@
   {
     "id": "2019-gpm-iteso-row-0138-donas-s-team",
     "name": "Donas's Team",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2019
   },
   {
@@ -3026,7 +3026,7 @@
   {
     "id": "2019-gpm-iteso-row-0142-coding-donkey",
     "name": "Coding Donkey",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3050,7 +3050,7 @@
   {
     "id": "2019-gpm-iteso-row-0146-op101",
     "name": "OP101",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3092,7 +3092,7 @@
   {
     "id": "2019-gpm-iteso-row-0153-osmosis",
     "name": "Osmósis",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3242,7 +3242,7 @@
   {
     "id": "2019-gpm-iteso-row-0178-coders",
     "name": "Coders++",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3542,7 +3542,7 @@
   {
     "id": "2019-gpm-iteso-row-0228-the-last-one",
     "name": "The last one",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3590,7 +3590,7 @@
   {
     "id": "2019-gpm-iteso-row-0236-polokos-escom",
     "name": "Polokos ESCOM",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3656,7 +3656,7 @@
   {
     "id": "2019-gpm-iteso-row-0247-shell1",
     "name": "Shell1",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3752,7 +3752,7 @@
   {
     "id": "2019-gpm-iteso-row-0263-laboratorio-14",
     "name": "Laboratorio 14",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3794,13 +3794,13 @@
   {
     "id": "2019-gpm-iteso-row-0270-qbots",
     "name": "Qbots",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0271-bynamite",
     "name": "Bynamite",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2019
   },
   {
@@ -4460,7 +4460,7 @@
   {
     "id": "2019-gpm-iteso-row-0381-las-colorburgers",
     "name": "Las Colorburgers",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {

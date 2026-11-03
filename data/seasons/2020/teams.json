@@ -1814,7 +1814,7 @@
   {
     "id": "2020-gpm-iteso-464446-escuela-superior-de-comedia",
     "name": "Escuela Superior de Comedia",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -1850,7 +1850,7 @@
   {
     "id": "2020-gpm-iteso-464448-camara-ya-subelo-asi-w",
     "name": "Cámara Ya Súbelo Asi w",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -1898,7 +1898,7 @@
   {
     "id": "2020-gpm-iteso-464447-los-hermanos-computadores-de-paine",
     "name": "Los Hermanos Computadores de Paine",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -1958,13 +1958,13 @@
   {
     "id": "2020-gpm-iteso-469833-ac-forever",
     "name": "AC Forever",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465287-hijos-de-turing",
     "name": "Hijos de Turing",
-    "schoolId": "source-school-f994082eaba8",
+    "schoolId": "unam-cnyn",
     "seasonYear": 2020
   },
   {
@@ -2024,7 +2024,7 @@
   {
     "id": "2020-gpm-iteso-463383-ansiosos",
     "name": "ANSIosos",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -2102,13 +2102,13 @@
   {
     "id": "2020-gpm-iteso-454993-bff-brute-force-friend-s-tle-v",
     "name": "BFF (Brute Force Friend's) TLE :'v",
-    "schoolId": "source-school-40fbd05cee85",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-454991-void-guys",
     "name": "Void Guys",
-    "schoolId": "source-school-40fbd05cee85",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2020
   },
   {
@@ -2222,13 +2222,13 @@
   {
     "id": "2020-gpm-iteso-466718-return-t-d-a",
     "name": "return t + d + a;",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469835-gunters",
     "name": "Gunters",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -2282,7 +2282,7 @@
   {
     "id": "2020-gpm-iteso-469837-include-abd",
     "name": "#include<ABD>",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -2294,13 +2294,13 @@
   {
     "id": "2020-gpm-iteso-464449-el-holandes-errante",
     "name": "El holandés errante",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464450-tle",
     "name": "TLE",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -2390,7 +2390,7 @@
   {
     "id": "2020-gpm-iteso-469785-las-pistas-de-nullptr",
     "name": "Las pistas de nullptr",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2020
   },
   {
@@ -2516,7 +2516,7 @@
   {
     "id": "2020-gpm-iteso-469786-d3dsec-exe",
     "name": "D3dSec.exe",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2020
   },
   {
@@ -2648,7 +2648,7 @@
   {
     "id": "2020-gpm-iteso-469788-icppn-was-not-declared",
     "name": "ICPPN was not declared",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2020
   },
   {
@@ -2918,7 +2918,7 @@
   {
     "id": "2020-gpm-iteso-466784-lascuries",
     "name": "lasCuries",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -3026,7 +3026,7 @@
   {
     "id": "2020-gpm-iteso-454992-the-gauss-fellows",
     "name": "The Gauss' Fellows",
-    "schoolId": "source-school-40fbd05cee85",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2020
   },
   {
@@ -3806,7 +3806,7 @@
   {
     "id": "2020-gpm-iteso-469789-awa-de-uwu-sabor-owo",
     "name": "AwA de UwU sabor OwO",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2020
   },
   {

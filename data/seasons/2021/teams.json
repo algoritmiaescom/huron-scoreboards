@@ -6254,7 +6254,7 @@
   {
     "id": "2021-gpm-iteso-554318-discipulos-de-marckess-escom-ipn",
     "name": "Discípulos de Marckess - ESCOM IPN",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6290,7 +6290,7 @@
   {
     "id": "2021-gpm-iteso-554353-descomulgados-by-marckess-escom-ipn",
     "name": "dESCOMulgados by Marckess - ESCOM IPN",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6344,7 +6344,7 @@
   {
     "id": "2021-gpm-iteso-553822-ac-forever-escom-ipn",
     "name": "AC Forever - ESCOM IPN",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6356,7 +6356,7 @@
   {
     "id": "2021-gpm-iteso-579956-chilaquiles-con-pollo-escom-ipn",
     "name": "Chilaquiles con pollo - ESCOM IPN (**)",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6464,7 +6464,7 @@
   {
     "id": "2021-gpm-iteso-555386-sereno-el-fullereno-cnymyn",
     "name": "Sereno el Fullereno - CNyMyN",
-    "schoolId": "source-school-9321a2f2d26e",
+    "schoolId": "unam-cnyn",
     "seasonYear": 2021
   },
   {
@@ -6482,7 +6482,7 @@
   {
     "id": "2021-gpm-iteso-555403-los-pininos-esfm-ipn",
     "name": "Los pininos - ESFM IPN",
-    "schoolId": "source-school-fb0785c61132",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2021
   },
   {
@@ -6500,7 +6500,7 @@
   {
     "id": "2021-gpm-iteso-555405-void-guys-esfm-ipn",
     "name": "Void guys - ESFM IPN",
-    "schoolId": "source-school-fb0785c61132",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2021
   },
   {
@@ -6518,7 +6518,7 @@
   {
     "id": "2021-gpm-iteso-554359-redstone-engineers-escom-ipn",
     "name": "Redstone Engineers - ESCOM IPN",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6530,7 +6530,7 @@
   {
     "id": "2021-gpm-iteso-555446-cyberdemons-escom-ipn",
     "name": "cyberdemons - ESCOM IPN (*)",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6590,7 +6590,7 @@
   {
     "id": "2021-gpm-iteso-553788-return-t-d-a-escom-ipn",
     "name": "return t + d + a; - ESCOM IPN (*)",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6632,7 +6632,7 @@
   {
     "id": "2021-gpm-iteso-554358-ansiosos-escom-ipn",
     "name": "ANSIosos - ESCOM IPN (*)",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6692,7 +6692,7 @@
   {
     "id": "2021-gpm-iteso-555404-mme-py-esfm-ipn",
     "name": "MME++.py - ESFM IPN",
-    "schoolId": "source-school-fb0785c61132",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2021
   },
   {
@@ -6722,7 +6722,7 @@
   {
     "id": "2021-gpm-iteso-555966-los-charlies-de-angel-upiiz-ipn",
     "name": "Los charlies de Angel - UPIIZ - IPN",
-    "schoolId": "source-school-7aa06b6cb0bd",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2021
   },
   {
@@ -6734,7 +6734,7 @@
   {
     "id": "2021-gpm-iteso-555448-anti-coding-coding-club-escom-ipn",
     "name": "Anti Coding Coding Club - ESCOM IPN",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6764,7 +6764,7 @@
   {
     "id": "2021-gpm-iteso-555965-d3dsecexe-upiiz-ipn",
     "name": "D3dSecexe - UPIIZ - IPN",
-    "schoolId": "source-school-7aa06b6cb0bd",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2021
   },
   {
@@ -6776,7 +6776,7 @@
   {
     "id": "2021-gpm-iteso-555406-bffs-brute-force-friends-3-esfm-ipn",
     "name": "BFFs (Brute Force Friends) < 3 - ESFM IPN",
-    "schoolId": "source-school-fb0785c61132",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2021
   },
   {
@@ -6878,7 +6878,7 @@
   {
     "id": "2021-gpm-iteso-553787-lascuries-escom-ipn",
     "name": "lasCuries - ESCOM IPN (*)",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6896,7 +6896,7 @@
   {
     "id": "2021-gpm-iteso-556130-donkeysquad-escom-ipn",
     "name": "DonkeySquad - ESCOM IPN",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -6926,7 +6926,7 @@
   {
     "id": "2021-gpm-iteso-555410-hornet-esfm-ipn",
     "name": "Hornet - ESFM IPN",
-    "schoolId": "source-school-fb0785c61132",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2021
   },
   {
@@ -6956,7 +6956,7 @@
   {
     "id": "2021-gpm-iteso-572267-norbertos-ciberneticos-escom-ipn",
     "name": "Norbertos Cibernéticos - ESCOM IPN",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {
@@ -7040,7 +7040,7 @@
   {
     "id": "2021-gpm-iteso-572238-angstroms-cnymyn",
     "name": "Ángstroms - CNyMyN",
-    "schoolId": "source-school-9321a2f2d26e",
+    "schoolId": "unam-cnyn",
     "seasonYear": 2021
   },
   {
@@ -7256,7 +7256,7 @@
   {
     "id": "2021-gpm-iteso-555409-aquino-esfm-ipn",
     "name": "Aquino - ESFM IPN",
-    "schoolId": "source-school-fb0785c61132",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2021
   },
   {
@@ -7388,7 +7388,7 @@
   {
     "id": "2021-gpm-iteso-553821-no-nos-funen-plox-escom-ipn",
     "name": "No nos funen plox - ESCOM IPN",
-    "schoolId": "source-school-37806e2c8f27",
+    "schoolId": "ipn-escom",
     "seasonYear": 2021
   },
   {

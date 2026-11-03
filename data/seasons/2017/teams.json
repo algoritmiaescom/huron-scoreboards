@@ -32,13 +32,13 @@
   {
     "id": "2017-mexico-finals-global-row-0006-rocky-iv",
     "name": "Rocky IV",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
     "id": "2017-mexico-finals-global-row-0007-maniac",
     "name": "ManiAC",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -56,7 +56,7 @@
   {
     "id": "2017-mexico-finals-global-row-0010-cooperativa-pascal",
     "name": "Cooperativa Pascal",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -314,7 +314,7 @@
   {
     "id": "2017-mexico-finals-global-row-0053-solo-dos-idiotas-y-lalo",
     "name": "solo_dos_idiotas_y_lalo",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2017
   },
   {
@@ -326,7 +326,7 @@
   {
     "id": "2017-mexico-finals-global-row-0055-printfers",
     "name": "Printfers",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2017
   },
   {
@@ -536,19 +536,19 @@
   {
     "id": "2017-gpm-iteso-row-0012-los-papus-pro",
     "name": "Los Papus Pro",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
     "id": "2017-gpm-iteso-row-0016-escom3",
     "name": "ESCOM3",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
     "id": "2017-gpm-iteso-row-0017-3-1416tu2",
     "name": "3.1416TU2",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -566,7 +566,7 @@
   {
     "id": "2017-gpm-iteso-row-0035-monos-chinos",
     "name": "Monos Chinos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -578,7 +578,7 @@
   {
     "id": "2017-gpm-iteso-row-0039-codestreet",
     "name": "Codestreet",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -590,7 +590,7 @@
   {
     "id": "2017-gpm-iteso-row-0051-quoda",
     "name": "Quoda",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -812,7 +812,7 @@
   {
     "id": "2017-gpm-iteso-row-0099-404-not-found",
     "name": "404 NOT FOUND",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2017
   },
   {
@@ -902,7 +902,7 @@
   {
     "id": "2017-gpm-iteso-row-0114-los-nuevos",
     "name": "Los Nuevos",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2017
   },
   {
@@ -1244,7 +1244,7 @@
   {
     "id": "2017-gpm-iteso-row-0177-lagrangianos",
     "name": "Lagrangianos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -1274,7 +1274,7 @@
   {
     "id": "2017-gpm-iteso-row-0183-outer-heaven",
     "name": "Outer heaven",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -1382,7 +1382,7 @@
   {
     "id": "2017-gpm-iteso-row-0205-the-revenants",
     "name": "The Revenants",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -1526,7 +1526,7 @@
   {
     "id": "2017-gpm-iteso-row-0230-malkovich",
     "name": "Malkovich",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -1568,7 +1568,7 @@
   {
     "id": "2017-gpm-iteso-row-0237-team-bash",
     "name": "Team bash",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2017
   },
   {
@@ -1820,7 +1820,7 @@
   {
     "id": "2017-gpm-iteso-row-0280-clash-of-code",
     "name": "Clash of code",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -1904,13 +1904,13 @@
   {
     "id": "2017-gpm-iteso-row-0294-cpijava",
     "name": "CpiJava",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
     "id": "2017-gpm-iteso-row-0295-burros",
     "name": "BurrOS",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2017
   },
   {
@@ -1922,7 +1922,7 @@
   {
     "id": "2017-gpm-iteso-row-0297-elotroidiotaydoschiquitines",
     "name": "ElOtroIdiotayDosChiquitines",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2017
   },
   {
@@ -1982,7 +1982,7 @@
   {
     "id": "2017-gpm-iteso-row-0307-shrek-is-love",
     "name": "shrek is love",
-    "schoolId": "source-school-6993759cca4b",
+    "schoolId": "ipn-esime-azcapotzalco",
     "seasonYear": 2017
   },
   {
@@ -2036,7 +2036,7 @@
   {
     "id": "2017-gpm-iteso-row-0316-dedsek",
     "name": "dedsek",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2017
   },
   {

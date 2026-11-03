@@ -63,7 +63,7 @@ test('uses the real archive in production and exposes current institution naviga
   page,
 }) => {
   await page.goto('./#/schools');
-  await expect(page.getByRole('status')).toHaveText('1171 de 1171 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('1149 de 1149 instituciones y unidades');
   await expect(page.getByRole('article', { name: 'CCL', exact: true })).toBeVisible();
   await expect(
     page
@@ -84,7 +84,7 @@ test('shows one BUAP university and its distinct FCC unit in the published archi
   await page.goto('./#/schools?q=BUAP');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(2);
-  await expect(page.getByRole('status')).toHaveText('2 de 1171 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('2 de 1149 instituciones y unidades');
   await expect(list.getByRole('link', { name: 'BUAP', exact: true })).toHaveAttribute(
     'href',
     '#/schools/buap',
@@ -106,6 +106,73 @@ test('shows one BUAP university and its distinct FCC unit in the published archi
   await page.getByRole('link', { name: 'Ver solo resultados directos', exact: true }).click();
   await expect(page.getByText('voidcode', { exact: true })).toHaveCount(0);
   await expect(page.getByText('FAAV team', { exact: true })).toHaveCount(0);
+});
+
+test('shows consolidated ESCOM history as a distinct IPN unit in the published archive', async ({
+  page,
+}) => {
+  await page.goto('./#/schools?q=Escuela%20Superior%20de%20C%C3%B3mputo');
+  const list = page.getByRole('list', { name: 'Instituciones y unidades' });
+  await expect(list.getByRole('article')).toHaveCount(1);
+  await expect(page.getByRole('status')).toHaveText('1 de 1149 instituciones y unidades');
+  await list.getByRole('link', { name: 'ESCOM IPN', exact: true }).click();
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Escuela Superior de Cómputo');
+  await expect(page.getByText('Esta escuela únicamente', { exact: true })).toBeVisible();
+  await expect(
+    page.getByRole('link', { name: 'Ver institución IPN', exact: true }),
+  ).toHaveAttribute('href', '#/schools/ipn');
+  await expect(
+    page.getByRole('list', { name: 'Resultados de concursos' }).getByText('Escoders', {
+      exact: true,
+    }),
+  ).toBeVisible();
+  await page.getByRole('link', { name: 'Ver institución IPN', exact: true }).click();
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    'Instituto Politécnico Nacional',
+  );
+  await expect(page.getByText('Alcance institucional', { exact: true })).toBeVisible();
+  const results = page.getByRole('list', { name: 'Resultados de concursos' });
+  await expect(results.getByText('Escoders', { exact: true })).toBeVisible();
+  await page.getByRole('link', { name: 'Ver solo resultados directos', exact: true }).click();
+  await expect(results.getByText('Escoders', { exact: true })).toHaveCount(0);
+});
+
+test('publishes consolidated IPN units and a separate UNAM CNYN history', async ({ page }) => {
+  for (const [search, name, schoolId] of [
+    ['ESFM', 'ESFM IPN', 'ipn-esfm'],
+    ['UPIIZ', 'UPIIZ - IPN', 'ipn-upiiz'],
+    ['UPIICSA', 'UPIICSA IPN', 'ipn-upiicsa'],
+    ['ESIME', 'ESIME Culhuacán', 'ipn-esime-culhuacan'],
+    ['ESIME', 'ESIME Azcapotzalco', 'ipn-esime-azcapotzalco'],
+  ]) {
+    await page.goto(`./#/schools?q=${search}`);
+    const list = page.getByRole('list', { name: 'Instituciones y unidades' });
+    await expect(list.getByRole('article')).toHaveCount(search === 'ESIME' ? 2 : 1);
+    const link = list.getByRole('link', { name, exact: true });
+    await expect(link).toHaveAttribute('href', `#/schools/${schoolId}`);
+    await link.click();
+    await expect(
+      page.getByRole('link', { name: 'Ver institución IPN', exact: true }),
+    ).toHaveAttribute('href', '#/schools/ipn');
+  }
+  await page.goto('./#/schools/unam-cnyn');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    'Centro de Nanociencias y Nanotecnología',
+  );
+  await expect(
+    page.getByRole('link', {
+      name: 'Ver institución Universidad Nacional Autónoma de México',
+      exact: true,
+    }),
+  ).toHaveAttribute('href', '#/schools/unam');
+  const accumulated = page.getByText('Hijos de Turing', { exact: true });
+  await expect(accumulated).toBeVisible();
+  await expect(page.getByText('Sereno el Fullereno - CNyMyN', { exact: true })).toBeVisible();
+  await expect(page.getByText('Ángstroms - CNyMyN', { exact: true })).toBeVisible();
+  await page.goto('./#/schools/ipn?scope=school');
+  await expect(
+    page.getByRole('region', { name: 'Resumen del historial' }).locator('dd').first(),
+  ).toHaveText('0');
 });
 
 test('opens unit and institution histories with the correct scope and contest destination', async ({

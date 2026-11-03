@@ -6,7 +6,7 @@ import {
   selectContest,
   selectSeasonStanding,
 } from '@/features/scoreboards';
-import { selectSchoolHistory } from '@/features/scoreboards/model/selectors';
+import { selectSchoolHistory, selectSchoolScope } from '@/features/scoreboards/model/selectors';
 import { mexicoCityDate } from '@/lib/dates';
 import {
   archive,
@@ -34,6 +34,114 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('consolidates IPN units and keeps explicitly UNAM nanoscience registrations separate', async () => {
+    const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published archive');
+    }
+    const published = result.data;
+    const groups = [
+      ['ipn-esfm', 'ipn', 134],
+      ['ipn-upiiz', 'ipn', 66],
+      ['ipn-esime-culhuacan', 'ipn', 35],
+      ['ipn-esime-azcapotzalco', 'ipn', 3],
+      ['ipn-upiicsa', 'ipn', 5],
+      ['unam-cnyn', 'unam', 3],
+      ['ipn-cnymyn', 'ipn', 47],
+    ] as const;
+    for (const [schoolId, parentId, count] of groups) {
+      expect(published.schools.find(({ id }) => id === schoolId)?.parentInstitutionId).toBe(
+        parentId,
+      );
+      const unit = selectSchoolScope(published, schoolId, 'school');
+      const parent = selectSchoolScope(published, parentId, 'institution');
+      if (unit.status !== 'found' || parent.status !== 'found') {
+        throw new Error(`Expected unit and parent histories for ${schoolId}`);
+      }
+      expect(unit.record.teams).toHaveLength(count);
+      expect(parent.record.teams.map(({ id }) => id)).toEqual(
+        expect.arrayContaining(unit.record.teams.map(({ id }) => id)),
+      );
+    }
+    expect(
+      published.teams.find(({ id }) => id === '2022-gpm-qualifier-2-row-0096-siglo-xiii-upiiz')
+        ?.schoolId,
+    ).toBe('ipn-upiiz');
+    for (const id of [
+      '2023-gpm-iteso-853843-esimecu-anthrax',
+      '2023-gpm-iteso-854139-esimecu-nullbyte',
+      '2023-gpm-iteso-853848-esimecu-zeniith',
+    ]) {
+      expect(published.teams.find((team) => team.id === id)?.schoolId).toBe('ipn-esime-culhuacan');
+    }
+    const unamTeams = published.teams.filter(({ schoolId }) => schoolId === 'unam-cnyn');
+    expect(unamTeams.map(({ id }) => id).toSorted()).toEqual([
+      '2020-gpm-iteso-465287-hijos-de-turing',
+      '2021-gpm-iteso-555386-sereno-el-fullereno-cnymyn',
+      '2021-gpm-iteso-572238-angstroms-cnymyn',
+    ]);
+    const ipn = selectSchoolScope(published, 'ipn', 'institution');
+    if (ipn.status !== 'found') {
+      throw new Error('Expected IPN history');
+    }
+    const ipnIds = new Set(ipn.record.teams.map(({ id }) => id));
+    expect(unamTeams.every(({ id }) => !ipnIds.has(id))).toBe(true);
+    expect(published.teams.filter(({ schoolId }) => schoolId === 'ipn')).toHaveLength(0);
+    expect(published.schools).toHaveLength(1149);
+  });
+
+  it('consolidates ESCOM registrations under its IPN unit without merging unrelated schools', async () => {
+    const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published archive');
+    }
+    const published = result.data;
+    expect(published.schools.find(({ id }) => id === 'ipn-escom')).toEqual({
+      id: 'ipn-escom',
+      officialName: 'Escuela Superior de Cómputo',
+      shortName: 'ESCOM IPN',
+      parentInstitutionId: 'ipn',
+    });
+    for (const id of [
+      'source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8',
+      'source-school-23203f7743a5',
+      'source-school-37806e2c8f27',
+      'source-school-4eb7211dfff1',
+      'source-school-e0819f018bde',
+    ]) {
+      expect(published.schools.some((school) => school.id === id)).toBe(false);
+      expect(published.teams.some((team) => team.schoolId === id)).toBe(false);
+    }
+    const escom = selectSchoolHistory(published, 'ipn-escom', 'school');
+    const ipn = selectSchoolHistory(published, 'ipn', 'institution');
+    const directIpn = selectSchoolHistory(published, 'ipn', 'school');
+    if (escom.status !== 'found' || ipn.status !== 'found' || directIpn.status !== 'found') {
+      throw new Error('Expected ESCOM and IPN histories');
+    }
+    expect(escom.record.teams).toHaveLength(578);
+    expect(ipn.record.teams.map(({ id }) => id)).toEqual(
+      expect.arrayContaining(escom.record.teams.map(({ id }) => id)),
+    );
+    expect(directIpn.record.teams.some(({ schoolId }) => schoolId === 'ipn-escom')).toBe(false);
+    expect(escom.record.contests.map(({ row }) => row.teamId)).toContain(
+      '2012-mexico-finals-global-row-0001-escoders',
+    );
+    expect(escom.record.accumulated.map(({ row }) => row.teamId)).toContain(
+      '2026-gpm-accumulated-1128527',
+    );
+    expect(
+      published.teams.filter(({ schoolId }) => schoolId === 'source-label-descomplica-4b30f1b9b2'),
+    ).toHaveLength(8);
+  });
+
   it('keeps canonical BUAP registrations and rolls FCC history up without merging the faculty', async () => {
     const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
       query: '?raw',
