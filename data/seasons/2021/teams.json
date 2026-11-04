@@ -6242,7 +6242,7 @@
   {
     "id": "2021-gpm-iteso-551774-leones-0-0-0-udg-cucei",
     "name": "Leones(0,0,0) - UdG CUCEI",
-    "schoolId": "source-school-a48bd42dfe0f",
+    "schoolId": "udg-cucei",
     "seasonYear": 2021
   },
   {
@@ -6320,7 +6320,7 @@
   {
     "id": "2021-gpm-iteso-551777-a-new-hope-udg-cucei",
     "name": "A New Hope - UdG CUCEI",
-    "schoolId": "source-school-a48bd42dfe0f",
+    "schoolId": "udg-cucei",
     "seasonYear": 2021
   },
   {
@@ -6362,13 +6362,13 @@
   {
     "id": "2021-gpm-iteso-569957-yo-no-se-manana-udg-cucei",
     "name": "Yo no sé mañana - UdG CUCEI",
-    "schoolId": "source-school-a48bd42dfe0f",
+    "schoolId": "udg-cucei",
     "seasonYear": 2021
   },
   {
     "id": "2021-gpm-iteso-551776-la-tercera-es-la-vencida-udg-cucei",
     "name": "La tercera es la vencida - UdG CUCEI",
-    "schoolId": "source-school-a48bd42dfe0f",
+    "schoolId": "udg-cucei",
     "seasonYear": 2021
   },
   {
@@ -6578,7 +6578,7 @@
   {
     "id": "2021-gpm-iteso-571096-deltawing-udg-cucei",
     "name": "DeltaWing - UdG CUCEI",
-    "schoolId": "source-school-a48bd42dfe0f",
+    "schoolId": "udg-cucei",
     "seasonYear": 2021
   },
   {
@@ -7082,7 +7082,7 @@
   {
     "id": "2021-gpm-iteso-554513-develoopers-udg-cucei",
     "name": "Develoopers - UdG CUCEI",
-    "schoolId": "source-school-a48bd42dfe0f",
+    "schoolId": "udg-cucei",
     "seasonYear": 2021
   },
   {

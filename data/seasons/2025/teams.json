@@ -15542,7 +15542,7 @@
   {
     "id": "2025-mexico-finals-final-row-0568-cucei-extreme",
     "name": "CUCEI Extreme",
-    "schoolId": "udg",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -15710,7 +15710,7 @@
   {
     "id": "2025-gpm-iteso-1049664-find-nim-mo",
     "name": "Find(Nim, Mo);",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -15782,7 +15782,7 @@
   {
     "id": "2025-gpm-iteso-1066578-f-tenten",
     "name": "f(tenten)",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -15824,7 +15824,7 @@
   {
     "id": "2025-gpm-iteso-1045680-paleteria-la-michoacana",
     "name": "Paletería la Michoacana",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16358,7 +16358,7 @@
   {
     "id": "2025-gpm-iteso-1048982-drop-table-equipos",
     "name": "\");Drop table equipos;--",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16370,7 +16370,7 @@
   {
     "id": "2025-gpm-iteso-1057920-adictos-al-div-4",
     "name": "Adictos al Div 4",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16688,7 +16688,7 @@
   {
     "id": "2025-gpm-iteso-1051208-syntaxsquad",
     "name": "SyntaxSquad",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16724,19 +16724,19 @@
   {
     "id": "2025-gpm-iteso-1067934-cross-edge",
     "name": "Cross Edge",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1054591-bombardiros-crocodilos",
     "name": "Bombardiros Crocodilos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1067232-faith-limit-exceeded",
     "name": "Faith Limit Exceeded",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16886,7 +16886,7 @@
   {
     "id": "2025-gpm-iteso-1067178-compuchidos",
     "name": "Compuchidos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16922,7 +16922,7 @@
   {
     "id": "2025-gpm-iteso-1049998-debugme",
     "name": "DebugMe!",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16982,7 +16982,7 @@
   {
     "id": "2025-gpm-iteso-1051513-alphacentaury",
     "name": "AlphaCentaury",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -17384,7 +17384,7 @@
   {
     "id": "2025-gpm-iteso-1068355-los-deudores-de-conocimiento",
     "name": "Los deudores de conocimiento",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -17504,7 +17504,7 @@
   {
     "id": "2025-gpm-iteso-1045681-cmascafe",
     "name": "Cmascafe",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -17954,7 +17954,7 @@
   {
     "id": "2025-gpm-iteso-1068522-equipo-alfa-buena-maravilla-onda-dinamita-escuadron-lobo",
     "name": "Equipo Alfa Buena Maravilla Onda Dinamita Escuadron Lobo",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -18188,7 +18188,7 @@
   {
     "id": "2025-gpm-iteso-1047732-il-vento-d-oro",
     "name": "il vento d'oro",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -18728,7 +18728,7 @@
   {
     "id": "2025-gpm-iteso-1068360-programa-puercos",
     "name": "Programa puercos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -18818,13 +18818,13 @@
   {
     "id": "2025-gpm-iteso-1049141-compilaton-error-ahhmoment",
     "name": "Compilaton Error AhhMoment",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1073026-ilabtdi",
     "name": "iLabTDI",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {

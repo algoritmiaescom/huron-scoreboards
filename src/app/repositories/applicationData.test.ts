@@ -34,6 +34,57 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('consolidates CUCEI history and assigns confirmed CUCEI Extreme without merging other UDG units', async () => {
+    const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published archive');
+    }
+    const published = result.data;
+    expect(published.schools.find(({ id }) => id === 'udg-cucei')).toEqual({
+      id: 'udg-cucei',
+      officialName: 'Centro Universitario de Ciencias Exactas e Ingenierías',
+      shortName: 'UdG CUCEI',
+      parentInstitutionId: 'udg',
+    });
+    for (const id of [
+      'source-label-udg-cucei-86b0833dc5',
+      'source-label-universidad-de-guadalajara-cucei-9cfd67a2df',
+      'source-school-a48bd42dfe0f',
+      'source-school-dec505bbb795',
+    ]) {
+      expect(published.schools.some((school) => school.id === id)).toBe(false);
+      expect(published.teams.some((team) => team.schoolId === id)).toBe(false);
+    }
+    const unit = selectSchoolScope(published, 'udg-cucei', 'school');
+    const institution = selectSchoolScope(published, 'udg', 'institution');
+    const direct = selectSchoolScope(published, 'udg', 'school');
+    if (unit.status !== 'found' || institution.status !== 'found' || direct.status !== 'found') {
+      throw new Error('Expected CUCEI and UDG scopes');
+    }
+    expect(unit.record.teams).toHaveLength(447);
+    expect(unit.record.teams.map(({ id }) => id)).toContain(
+      '2025-mexico-finals-final-row-0568-cucei-extreme',
+    );
+    expect(institution.record.teams.map(({ id }) => id)).toEqual(
+      expect.arrayContaining(unit.record.teams.map(({ id }) => id)),
+    );
+    expect(direct.record.teams.map(({ id }) => id)).toEqual([
+      '2023-gpm-qualifier-2-row-0323-los-zermenitos',
+    ]);
+    for (const [schoolId, count] of [
+      ['udg-cucosta', 61],
+      ['udg-cusur', 2],
+      ['udg-cutonala', 93],
+      ['udg-cuvalles', 24],
+    ] as const) {
+      expect(published.teams.filter((team) => team.schoolId === schoolId)).toHaveLength(count);
+    }
+  });
+
   it('consolidates ITESM campuses under one university while keeping unrelated institutions separate', async () => {
     const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
       query: '?raw',
@@ -212,7 +263,7 @@ describe('runtime repositories', () => {
     const ipnIds = new Set(ipn.record.teams.map(({ id }) => id));
     expect(unamTeams.every(({ id }) => !ipnIds.has(id))).toBe(true);
     expect(published.teams.filter(({ schoolId }) => schoolId === 'ipn')).toHaveLength(0);
-    expect(published.schools).toHaveLength(1080);
+    expect(published.schools).toHaveLength(1076);
   });
 
   it('consolidates ESCOM registrations under its IPN unit without merging unrelated schools', async () => {

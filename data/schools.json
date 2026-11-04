@@ -1739,11 +1739,6 @@
     "shortName": "UDesc"
   },
   {
-    "id": "source-label-udg-cucei-86b0833dc5",
-    "officialName": "UdG/CUCEI",
-    "shortName": "UdG/CUCEI"
-  },
-  {
     "id": "source-label-udi-c785c709be",
     "officialName": "UDI",
     "shortName": "UDI"
@@ -2147,11 +2142,6 @@
     "id": "source-label-universidad-de-guadalajara-cualtos-6e945e3d9f",
     "officialName": "Universidad de Guadalajara CUALTOS",
     "shortName": "Universidad de Guadalajara CUALTOS"
-  },
-  {
-    "id": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
-    "officialName": "Universidad de Guadalajara CUCEI",
-    "shortName": "Universidad de Guadalajara CUCEI"
   },
   {
     "id": "source-label-universidad-de-guadalajara-cucosta-d01f8e1f2c",
@@ -3364,11 +3354,6 @@
     "shortName": "Universidad Enrique Díaz de León"
   },
   {
-    "id": "source-school-a48bd42dfe0f",
-    "officialName": "Universidad de Guadalajara Campus CUCEI",
-    "shortName": "Universidad de Guadalajara Campus CUCEI"
-  },
-  {
     "id": "source-school-a55b1b0808de",
     "officialName": "Universidad Tecnológica de Zacatecas",
     "shortName": "Universidad Tecnológica de Zacatecas"
@@ -3637,11 +3622,6 @@
     "id": "source-school-de496dacad4e",
     "officialName": "Instituto Tecnologico de Tuxtla Gutierrez",
     "shortName": "Instituto Tecnologico de Tuxtla Gutierrez"
-  },
-  {
-    "id": "source-school-dec505bbb795",
-    "officialName": "UdG CUCEI",
-    "shortName": "UdG CUCEI"
   },
   {
     "id": "source-school-df455a712d91",
