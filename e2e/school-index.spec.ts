@@ -63,7 +63,7 @@ test('uses the real archive in production and exposes current institution naviga
   page,
 }) => {
   await page.goto('./#/schools');
-  await expect(page.getByRole('status')).toHaveText('1076 de 1076 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('1075 de 1075 instituciones y unidades');
   await expect(page.getByRole('article', { name: 'CCL', exact: true })).toBeVisible();
   await expect(
     page
@@ -84,7 +84,7 @@ test('shows one BUAP university and its distinct FCC unit in the published archi
   await page.goto('./#/schools?q=BUAP');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(2);
-  await expect(page.getByRole('status')).toHaveText('2 de 1076 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('2 de 1075 instituciones y unidades');
   await expect(list.getByRole('link', { name: 'BUAP', exact: true })).toHaveAttribute(
     'href',
     '#/schools/buap',
@@ -114,7 +114,7 @@ test('shows consolidated ESCOM history as a distinct IPN unit in the published a
   await page.goto('./#/schools?q=Escuela%20Superior%20de%20C%C3%B3mputo');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(1);
-  await expect(page.getByRole('status')).toHaveText('1 de 1076 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('1 de 1075 instituciones y unidades');
   await list.getByRole('link', { name: 'ESCOM IPN', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Escuela Superior de Cómputo');
   await expect(page.getByText('Esta escuela únicamente', { exact: true })).toBeVisible();
@@ -181,7 +181,7 @@ test('publishes one record per UNAM unit with correct institutional navigation',
   await page.goto('./#/schools?q=UNAM');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(9);
-  await expect(page.getByRole('status')).toHaveText('9 de 1076 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('9 de 1075 instituciones y unidades');
   for (const [name, id] of [
     ['FC UNAM', 'unam-fciencias'],
     ['FI UNAM', 'unam-fi'],
@@ -223,7 +223,7 @@ test('publishes distinct ITESM campuses and a shared university history', async 
   await page.goto('./#/schools?q=ITESM');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(19);
-  await expect(page.getByRole('status')).toHaveText('19 de 1076 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('19 de 1075 instituciones y unidades');
   for (const [name, id] of [
     ['ITESM CEM', 'itesm-cem'],
     ['ITESM CCM', 'tec-ciudad-de-mexico'],
@@ -263,7 +263,7 @@ test('publishes one CUCEI unit and includes confirmed CUCEI Extreme in its histo
   await page.goto('./#/schools?q=CUCEI');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(1);
-  await expect(page.getByRole('status')).toHaveText('1 de 1076 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('1 de 1075 instituciones y unidades');
   await list.getByRole('link', { name: 'UdG CUCEI', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Centro Universitario de Ciencias Exactas e Ingenierías',
@@ -277,6 +277,23 @@ test('publishes one CUCEI unit and includes confirmed CUCEI Extreme in its histo
   await page.getByRole('link', { name: 'Ver solo resultados directos', exact: true }).click();
   await expect(results.getByText('CUCEI Extreme', { exact: true })).toHaveCount(0);
   await expect(results.getByText('Los Zermeñitos', { exact: true })).toBeVisible();
+});
+
+test('publishes combined UG-CIMAT history without inventing a university parent', async ({
+  page,
+}) => {
+  await page.goto('./#/schools?q=UG-CIMAT');
+  const list = page.getByRole('list', { name: 'Instituciones y unidades' });
+  await expect(list.getByRole('article')).toHaveCount(1);
+  await expect(page.getByRole('status')).toHaveText('1 de 1075 instituciones y unidades');
+  await list.getByRole('link', { name: 'UG-CIMAT', exact: true }).click();
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    'Universidad de Guanajuato / Centro de Investigación en Matemáticas',
+  );
+  await expect(page.getByRole('link', { name: /^Ver institución / })).toHaveCount(0);
+  const results = page.getByRole('list', { name: 'Resultados de concursos' });
+  await expect(results.getByText('Manowar', { exact: true }).first()).toBeVisible();
+  await expect(results.getByText('OWO', { exact: true }).first()).toBeVisible();
 });
 
 test('opens unit and institution histories with the correct scope and contest destination', async ({

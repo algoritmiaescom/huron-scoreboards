@@ -34,6 +34,49 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('consolidates UG-CIMAT without inferring a parent or merging DCNE and SENAI identities', async () => {
+    const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published archive');
+    }
+    const published = result.data;
+    const unit = selectSchoolScope(published, 'ug-cimat', 'school');
+    if (unit.status !== 'found') {
+      throw new Error('Expected UG-CIMAT scope');
+    }
+    expect(unit.record.school).toEqual({
+      id: 'ug-cimat',
+      officialName: 'Universidad de Guanajuato / Centro de Investigación en Matemáticas',
+      shortName: 'UG-CIMAT',
+    });
+    expect(unit.record.teams).toHaveLength(116);
+    expect(unit.record.teams.map(({ id }) => id)).toEqual(
+      expect.arrayContaining([
+        '2010-mexico-finals-global-row-0001-manowar',
+        '2021-gpm-repechage-row-0052-owo',
+        '2026-gpm-qualifier-1-row-0015-5747cd7d8393',
+      ]),
+    );
+    expect(published.schools.some(({ id }) => id === 'source-school-3999b6144a49')).toBe(false);
+    expect(published.teams.some(({ schoolId }) => schoolId === 'source-school-3999b6144a49')).toBe(
+      false,
+    );
+    for (const [schoolId, count] of [
+      ['source-label-universidad-de-guanajuato-dcne-f00dc1f3f7', 39],
+      ['source-school-3e017bf58ae3', 7],
+      ['ugto', 37],
+      ['senai-cimatec', 5],
+      ['source-label-senai-cimatec-eebe9d6039', 12],
+      ['source-label-senai-cimatic-14250e4d55', 3],
+    ] as const) {
+      expect(published.teams.filter((team) => team.schoolId === schoolId)).toHaveLength(count);
+    }
+  });
+
   it('consolidates CUCEI history and assigns confirmed CUCEI Extreme without merging other UDG units', async () => {
     const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
       query: '?raw',
@@ -263,7 +306,7 @@ describe('runtime repositories', () => {
     const ipnIds = new Set(ipn.record.teams.map(({ id }) => id));
     expect(unamTeams.every(({ id }) => !ipnIds.has(id))).toBe(true);
     expect(published.teams.filter(({ schoolId }) => schoolId === 'ipn')).toHaveLength(0);
-    expect(published.schools).toHaveLength(1076);
+    expect(published.schools).toHaveLength(1075);
   });
 
   it('consolidates ESCOM registrations under its IPN unit without merging unrelated schools', async () => {
