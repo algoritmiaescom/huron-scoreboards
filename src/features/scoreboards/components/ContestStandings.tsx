@@ -40,7 +40,11 @@ const StandingsTable = styled(Table, {
   shouldForwardProp: (prop) => prop !== 'problemCount',
 })<{ problemCount: number }>(({ theme, problemCount }) => ({
   tableLayout: 'fixed',
-  width: identityWidth + problemCount * widths.problem + 2 * widths.summary,
+  width:
+    problemCount === 0
+      ? '100%'
+      : identityWidth + problemCount * widths.problem + 2 * widths.summary,
+  minWidth: identityWidth + 2 * widths.summary,
   borderCollapse: 'separate',
   borderSpacing: 0,
   '& th, & td': {
@@ -50,14 +54,16 @@ const StandingsTable = styled(Table, {
     backgroundColor: theme.palette.background.paper,
   },
   '& thead th': { position: 'sticky', top: 0, zIndex: 2 },
-  '& [data-identity-column]': { position: 'sticky', zIndex: 1 },
-  '& [data-identity-column="place"]': { left: 0 },
-  '& [data-identity-column="team"]': { left: widths.place },
-  '& [data-identity-column="school"]': {
-    left: widths.place + widths.team,
-    borderRight: `1px solid ${theme.palette.divider}`,
-  },
-  '& thead [data-identity-column]': { zIndex: 3 },
+  ...(problemCount > 0 && {
+    '& [data-identity-column]': { position: 'sticky', zIndex: 1 },
+    '& [data-identity-column="place"]': { left: 0 },
+    '& [data-identity-column="team"]': { left: widths.place },
+    '& [data-identity-column="school"]': {
+      left: widths.place + widths.team,
+      borderRight: `1px solid ${theme.palette.divider}`,
+    },
+    '& thead [data-identity-column]': { zIndex: 3 },
+  }),
 }));
 
 export const ContestStandings = ({
@@ -111,8 +117,8 @@ export const ContestStandings = ({
       >
         <colgroup>
           <col width={widths.place} />
-          <col width={widths.team} />
-          <col width={widths.school} />
+          <col width={contest.problems.length > 0 ? widths.team : undefined} />
+          <col width={contest.problems.length > 0 ? widths.school : undefined} />
           {contest.problems.map(({ label }) => (
             <col key={label} width={widths.problem} />
           ))}

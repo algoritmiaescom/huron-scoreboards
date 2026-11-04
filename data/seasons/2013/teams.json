@@ -2,7 +2,7 @@
   {
     "id": "2013-mexico-finals-global-row-0001-hurones-pwneadores",
     "name": "Hurones Pwneadores",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2013
   },
   {
@@ -14,13 +14,13 @@
   {
     "id": "2013-mexico-finals-global-row-0003-los-chidory",
     "name": "Los Chidory",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0004-locos",
     "name": "Locos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -32,7 +32,7 @@
   {
     "id": "2013-mexico-finals-global-row-0006-kernel-paaaaanic",
     "name": "Kernel Paaaaanic!",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2013
   },
   {
@@ -56,13 +56,13 @@
   {
     "id": "2013-mexico-finals-global-row-0010-burst-programming",
     "name": "Burst Programming",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0011-nautilus",
     "name": "Nautilus",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2013
   },
   {
@@ -74,7 +74,7 @@
   {
     "id": "2013-mexico-finals-global-row-0013-cembitshifters",
     "name": "CEMbitshifters",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2013
   },
   {
@@ -86,13 +86,13 @@
   {
     "id": "2013-mexico-finals-global-row-0015-astrum",
     "name": "Astrum",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0016-epsilon",
     "name": "Épsilon",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2013
   },
   {
@@ -110,19 +110,19 @@
   {
     "id": "2013-mexico-finals-global-row-0019-modelo-entidad-relacion",
     "name": "Modelo entidad-relación",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0020-l-kipo-reinforced",
     "name": "L kipo reinforced",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0021-algoritmo",
     "name": "Algoritmo",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -152,7 +152,7 @@
   {
     "id": "2013-mexico-finals-global-row-0026-dudes",
     "name": "Dudes",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2013
   },
   {
@@ -176,25 +176,25 @@
   {
     "id": "2013-mexico-finals-global-row-0030-logic-bytes",
     "name": "Logic Bytes",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0031-yhwh",
     "name": "YHWH",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0032-floyd",
     "name": "Floyd",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0033-los-forloops",
     "name": "Los Forloops",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -206,19 +206,19 @@
   {
     "id": "2013-mexico-finals-global-row-0035-krieger",
     "name": "Krieger",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0036-codigueros",
     "name": "CodiguerOS",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0037-dragones",
     "name": "Dragones",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2013
   },
   {
@@ -236,7 +236,7 @@
   {
     "id": "2013-mexico-finals-global-row-0040-greedies",
     "name": "Greedies",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -260,7 +260,7 @@
   {
     "id": "2013-mexico-finals-global-row-0044-trinomio",
     "name": "Trinomio",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -284,7 +284,7 @@
   {
     "id": "2013-mexico-finals-global-row-0048-los-chimpas-felices",
     "name": "Los Chimpas Felices",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2013
   },
   {
@@ -302,7 +302,7 @@
   {
     "id": "2013-mexico-finals-global-row-0051-tribonacci",
     "name": "Tribonacci",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2013
   },
   {
@@ -320,7 +320,7 @@
   {
     "id": "2013-mexico-finals-global-row-0054-los-grenuditos",
     "name": "Los Greñuditos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2013
   },
   {
@@ -332,7 +332,7 @@
   {
     "id": "2013-mexico-finals-global-row-0056-mapaches",
     "name": "Mapaches",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2013
   },
   {
@@ -344,7 +344,7 @@
   {
     "id": "2013-mexico-finals-global-row-0058-perrys",
     "name": "Perrys",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2013
   },
   {
@@ -356,7 +356,7 @@
   {
     "id": "2013-mexico-finals-global-row-0060-el-santo-blue-demon-y-bulldog",
     "name": "El Santo, Blue Demon y Bulldog",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2013
   },
   {
@@ -386,7 +386,7 @@
   {
     "id": "2013-mexico-finals-global-row-0065-error-418",
     "name": "Error 418",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2013
   },
   {
@@ -410,7 +410,7 @@
   {
     "id": "2013-mexico-finals-global-row-0069-thewhileloops",
     "name": "TheWhileLoops",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -428,13 +428,13 @@
   {
     "id": "2013-mexico-finals-global-row-0072-code-hunters",
     "name": "Code Hunters",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2013
   },
   {
     "id": "2013-mexico-finals-global-row-0073-fatal-error",
     "name": "Fatal Error",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2013
   },
   {
@@ -464,7 +464,7 @@
   {
     "id": "2013-mexico-finals-global-row-0078-aio",
     "name": "AIO",
-    "schoolId": "source-school-64985288ecac",
+    "schoolId": "tec-aguascalientes",
     "seasonYear": 2013
   },
   {
@@ -548,7 +548,7 @@
   {
     "id": "2013-mexico-finals-global-row-0092-kebabs",
     "name": "Kebabs",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2013
   },
   {
@@ -566,7 +566,7 @@
   {
     "id": "2013-mexico-finals-global-row-0095-noobs",
     "name": "Noobs",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2013
   },
   {
@@ -584,7 +584,7 @@
   {
     "id": "2013-mexico-finals-global-row-0098-ncodersqro",
     "name": "nCodersQro",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2013
   },
   {
@@ -794,7 +794,7 @@
   {
     "id": "2013-mexico-finals-global-row-0133-the-three-amigos",
     "name": "The three amigos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -914,7 +914,7 @@
   {
     "id": "2013-mexico-finals-global-row-0153-death-or-alive",
     "name": "Death Or Alive",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {

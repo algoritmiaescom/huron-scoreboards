@@ -410,7 +410,7 @@
   {
     "id": "2019-mexico-finals-final-row-0069-leftasanexercise",
     "name": "lEFTaSaNeXERCISE",
-    "schoolId": "tec-mx",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
@@ -2210,13 +2210,13 @@
   {
     "id": "2019-gpm-iteso-row-0001-norman-is-hunting",
     "name": "Norman is Hunting",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0002-we-put-the-d-in-dp",
     "name": "We put the D in DP",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2228,7 +2228,7 @@
   {
     "id": "2019-gpm-iteso-row-0004-pu-os",
     "name": "pu+os",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -2240,13 +2240,13 @@
   {
     "id": "2019-gpm-iteso-row-0006-heaps-dont-lie",
     "name": "Heaps Dont Lie",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0007-error-team-name-not-defined",
     "name": "Error: \"Team Name\" not defined",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2258,13 +2258,13 @@
   {
     "id": "2019-gpm-iteso-row-0009-upsolving",
     "name": "UPsolving",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0010-ac-holics",
     "name": "AC’holics",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2282,7 +2282,7 @@
   {
     "id": "2019-gpm-iteso-row-0013-leftasanexercise",
     "name": "lEFTaSaNeXERCISE",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
@@ -2294,13 +2294,13 @@
   {
     "id": "2019-gpm-iteso-row-0016-pumas",
     "name": "Pumas+",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0017-los-que-no-vinieron",
     "name": "Los que no vinieron",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2019
   },
   {
@@ -2312,19 +2312,19 @@
   {
     "id": "2019-gpm-iteso-row-0019-ezln",
     "name": "EZLN",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0020-leones-0-0-0",
     "name": "Leones(0,0,0);",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0021-404-globito-not-found",
     "name": "404.Globito Not Found",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2342,7 +2342,7 @@
   {
     "id": "2019-gpm-iteso-row-0024-mdp",
     "name": "mdp",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2019
   },
   {
@@ -2354,31 +2354,31 @@
   {
     "id": "2019-gpm-iteso-row-0026-programalovers",
     "name": "ProgramaLovers",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0027-batchnorm3d",
     "name": "BatchNorm3d",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0028-last-chance",
     "name": "Last Chance",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0029-kygerand",
     "name": "Kygerand",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0030-ansiosos",
     "name": "ANSIosos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2402,19 +2402,19 @@
   {
     "id": "2019-gpm-iteso-row-0036-lavanda-nortena",
     "name": "LAVANDA NORTEÑA",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0038-o-1",
     "name": "O(1)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0039-la-mafia-del-poder",
     "name": "LA MAFIA DEL PODER",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
@@ -2432,25 +2432,25 @@
   {
     "id": "2019-gpm-iteso-row-0043-campos-de-galois",
     "name": "Campos de Galois",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0044-el-marichi-dorado-de-michoacan",
     "name": "El Marichi dorado de Michoacan",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0045-chillakillers-upb",
     "name": "ChillaKillers_UPB",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0046-el-perla-negra",
     "name": "El perla negra",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2462,31 +2462,31 @@
   {
     "id": "2019-gpm-iteso-row-0048-los-hombres-de-katy",
     "name": "Los hombres de Katy",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0049-code-wizards",
     "name": "Code Wizards",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0050-bissingzeile11",
     "name": "Bissingzeile11",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0051-beaners",
     "name": "BEANERS",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0052-las-neuronas",
     "name": "Las neuronas",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -2498,19 +2498,19 @@
   {
     "id": "2019-gpm-iteso-row-0054-pitones",
     "name": "Pitones",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0055-triple-a",
     "name": "Triple A",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0056-tle",
     "name": "TLE++",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2522,7 +2522,7 @@
   {
     "id": "2019-gpm-iteso-row-0058-las-pistas-de-null",
     "name": "Las pistas de NULL",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2019
   },
   {
@@ -2552,13 +2552,13 @@
   {
     "id": "2019-gpm-iteso-row-0063-gekko",
     "name": "Gekko",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0064-orion-belt",
     "name": "Orion Belt",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2576,13 +2576,13 @@
   {
     "id": "2019-gpm-iteso-row-0067-char-izard",
     "name": "char izard;",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0068-backend-boys",
     "name": "Backend boys",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
@@ -2594,19 +2594,19 @@
   {
     "id": "2019-gpm-iteso-row-0070-re100te",
     "name": "RE100TE",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0071-galacticos-1",
     "name": "Galácticos 1",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0072-ponjo",
     "name": "PONJO",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
@@ -2618,7 +2618,7 @@
   {
     "id": "2019-gpm-iteso-row-0074-ac-tlecos",
     "name": "ac@tlecos",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
@@ -2660,7 +2660,7 @@
   {
     "id": "2019-gpm-iteso-row-0081-ac",
     "name": "AC",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
@@ -2672,7 +2672,7 @@
   {
     "id": "2019-gpm-iteso-row-0083-escuadron-alpha-lobo-dinamita",
     "name": "Escuadron alpha lobo dinamita",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2019
   },
   {
@@ -2684,7 +2684,7 @@
   {
     "id": "2019-gpm-iteso-row-0085-hcl",
     "name": "HCL",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
@@ -2726,13 +2726,13 @@
   {
     "id": "2019-gpm-iteso-row-0092-hackerways",
     "name": "HackerWays",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0093-name-not-found",
     "name": "name not found",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2019
   },
   {
@@ -2744,7 +2744,7 @@
   {
     "id": "2019-gpm-iteso-row-0095-pumitas",
     "name": "Pumitas",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -2756,13 +2756,13 @@
   {
     "id": "2019-gpm-iteso-row-0097-root-scramblers",
     "name": "root@scramblers",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0098-los-pixies",
     "name": "Los pixies",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -2786,19 +2786,19 @@
   {
     "id": "2019-gpm-iteso-row-0102-equipo-generico-1",
     "name": "Equipo generico 1",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0103-leftovers",
     "name": "Leftovers",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0104-equipo-estrella",
     "name": "Equipo Estrella",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2822,13 +2822,13 @@
   {
     "id": "2019-gpm-iteso-row-0108-rebel-coders",
     "name": "Rebel Coders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0109-your-socialist-hacker",
     "name": "Your Socialist Hacker",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -2840,13 +2840,13 @@
   {
     "id": "2019-gpm-iteso-row-0111-dj-ikstra-pimp-y-kuzko",
     "name": "DJ Ikstra, Pimp y Kuzko",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0112-techlink",
     "name": "techlink",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2858,31 +2858,31 @@
   {
     "id": "2019-gpm-iteso-row-0114-404",
     "name": "404",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0115-bathtub-coding",
     "name": "Bathtub Coding",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0116-sinners",
     "name": "Sinners",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0117-include-witech",
     "name": "#include<witech>",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0118-eszettcorp",
     "name": "EszettCorp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2894,7 +2894,7 @@
   {
     "id": "2019-gpm-iteso-row-0120-elite-penguin-force",
     "name": "Elite Penguin Force",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2019
   },
   {
@@ -2918,7 +2918,7 @@
   {
     "id": "2019-gpm-iteso-row-0124-coderregos",
     "name": "CODErregos",
-    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2019
   },
   {
@@ -2930,13 +2930,13 @@
   {
     "id": "2019-gpm-iteso-row-0126-the-girls-have-no-name",
     "name": "The girls have no name",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0127-tortugas-torpes",
     "name": "Tortugas Torpes",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -2960,7 +2960,7 @@
   {
     "id": "2019-gpm-iteso-row-0131-gunters",
     "name": "Gunters",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2972,7 +2972,7 @@
   {
     "id": "2019-gpm-iteso-row-0133-tropicos-de-capricornio",
     "name": "Trópicos de Capricornio",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2019
   },
   {
@@ -2990,7 +2990,7 @@
   {
     "id": "2019-gpm-iteso-row-0136-team-extends-god",
     "name": "Team extends God",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2019
   },
   {
@@ -3002,7 +3002,7 @@
   {
     "id": "2019-gpm-iteso-row-0138-donas-s-team",
     "name": "Donas's Team",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2019
   },
   {
@@ -3026,7 +3026,7 @@
   {
     "id": "2019-gpm-iteso-row-0142-coding-donkey",
     "name": "Coding Donkey",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3050,19 +3050,19 @@
   {
     "id": "2019-gpm-iteso-row-0146-op101",
     "name": "OP101",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0147-quesadilla-con-queso",
     "name": "Quesadilla con queso",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0148-calcetines-de-bebe",
     "name": "Calcetines de bebé",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -3074,7 +3074,7 @@
   {
     "id": "2019-gpm-iteso-row-0150-overflow",
     "name": "Overflow",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
@@ -3092,13 +3092,13 @@
   {
     "id": "2019-gpm-iteso-row-0153-osmosis",
     "name": "Osmósis",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0154-flaming-flamingoes",
     "name": "Flaming Flamingoes",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3152,19 +3152,19 @@
   {
     "id": "2019-gpm-iteso-row-0163-los-diamancos",
     "name": "Los diamancos",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0164-uprss",
     "name": "UpRSS",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0165-team-jpg",
     "name": "Team JPG",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3182,13 +3182,13 @@
   {
     "id": "2019-gpm-iteso-row-0168-solaristas",
     "name": "Solaristas",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0169-the-code-redemption",
     "name": "The Code Redemption",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -3206,7 +3206,7 @@
   {
     "id": "2019-gpm-iteso-row-0172-fenix",
     "name": "Fenix",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3224,7 +3224,7 @@
   {
     "id": "2019-gpm-iteso-row-0175-las-chicas-superpoderosas",
     "name": "Las chicas superpoderosas",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -3242,7 +3242,7 @@
   {
     "id": "2019-gpm-iteso-row-0178-coders",
     "name": "Coders++",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3260,13 +3260,13 @@
   {
     "id": "2019-gpm-iteso-row-0181-c-nadores",
     "name": "C-nadores",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0182-yippee-ki-yay-mother-coders",
     "name": "Yippee ki-yay mother coders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -3284,7 +3284,7 @@
   {
     "id": "2019-gpm-iteso-row-0185-codebusters",
     "name": "Codebusters",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -3296,7 +3296,7 @@
   {
     "id": "2019-gpm-iteso-row-0187-p7",
     "name": "P7++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
@@ -3320,13 +3320,13 @@
   {
     "id": "2019-gpm-iteso-row-0191-galacticos-2",
     "name": "Galácticos 2",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0192-rike-polle-de-10-pesitos",
     "name": "Rike Polle de 10 pesitos",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2019
   },
   {
@@ -3356,13 +3356,13 @@
   {
     "id": "2019-gpm-iteso-row-0197-beagletown",
     "name": "BeagleTown",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0198-codevengers",
     "name": "Codevengers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3374,7 +3374,7 @@
   {
     "id": "2019-gpm-iteso-row-0200-teamname",
     "name": "teamName = \"\";",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
@@ -3434,7 +3434,7 @@
   {
     "id": "2019-gpm-iteso-row-0210-ducks",
     "name": "Ducks",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
@@ -3542,7 +3542,7 @@
   {
     "id": "2019-gpm-iteso-row-0228-the-last-one",
     "name": "The last one",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3554,7 +3554,7 @@
   {
     "id": "2019-gpm-iteso-row-0230-no-compila",
     "name": "No Compila",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3590,19 +3590,19 @@
   {
     "id": "2019-gpm-iteso-row-0236-polokos-escom",
     "name": "Polokos ESCOM",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0237-o-possum",
     "name": "O(possum)",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0238-te-ma",
     "name": "te ma+",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -3614,7 +3614,7 @@
   {
     "id": "2019-gpm-iteso-row-0240-uwu",
     "name": "uwu",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3626,7 +3626,7 @@
   {
     "id": "2019-gpm-iteso-row-0242-el-cartel-de-java",
     "name": "El cartel de Java",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2019
   },
   {
@@ -3650,13 +3650,13 @@
   {
     "id": "2019-gpm-iteso-row-0246-los-pescadores-del-rio-bravo",
     "name": "Los Pescadores del Río Bravo",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0247-shell1",
     "name": "Shell1",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3668,13 +3668,13 @@
   {
     "id": "2019-gpm-iteso-row-0249-icpcrikos",
     "name": "ICPCrikos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0250-los-purepechas",
     "name": "Los Purepechas",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -3692,7 +3692,7 @@
   {
     "id": "2019-gpm-iteso-row-0253-tornados-tlaquepaque",
     "name": "Tornados Tlaquepaque",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2019
   },
   {
@@ -3710,13 +3710,13 @@
   {
     "id": "2019-gpm-iteso-row-0256-nionic",
     "name": "Nionic",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0257-equipo-perdedor",
     "name": "Equipo perdedor",
-    "schoolId": "source-label-itesm-campus-tampico-63b99f7f21",
+    "schoolId": "itesm-tampico",
     "seasonYear": 2019
   },
   {
@@ -3734,7 +3734,7 @@
   {
     "id": "2019-gpm-iteso-row-0260-code-117",
     "name": "Code 117",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
@@ -3752,7 +3752,7 @@
   {
     "id": "2019-gpm-iteso-row-0263-laboratorio-14",
     "name": "Laboratorio 14",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
@@ -3764,7 +3764,7 @@
   {
     "id": "2019-gpm-iteso-row-0265-bubulubuenos",
     "name": "Bubulubuenos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3776,7 +3776,7 @@
   {
     "id": "2019-gpm-iteso-row-0267-equipo-7",
     "name": "Equipo 7",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
@@ -3788,19 +3788,19 @@
   {
     "id": "2019-gpm-iteso-row-0269-galacticos-5",
     "name": "Galácticos 5",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0270-qbots",
     "name": "Qbots",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0271-bynamite",
     "name": "Bynamite",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2019
   },
   {
@@ -3920,7 +3920,7 @@
   {
     "id": "2019-gpm-iteso-row-0291-time-limit-exceeded",
     "name": "Time Limit Exceeded",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2019
   },
   {
@@ -3950,7 +3950,7 @@
   {
     "id": "2019-gpm-iteso-row-0296-don-al-2",
     "name": "Don(Al)2",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
@@ -3962,7 +3962,7 @@
   {
     "id": "2019-gpm-iteso-row-0298-los-scooby-y-el-misterio-de-la-p",
     "name": "Los Scooby y el Misterio de la Programación",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2019
   },
   {
@@ -4004,7 +4004,7 @@
   {
     "id": "2019-gpm-iteso-row-0305-los-perezosos",
     "name": "Los perezosos",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -4082,7 +4082,7 @@
   {
     "id": "2019-gpm-iteso-row-0318-los-nopales-cosmicos",
     "name": "Los nopales cósmicos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -4172,7 +4172,7 @@
   {
     "id": "2019-gpm-iteso-row-0333-segmentation-fault",
     "name": "Segmentation Fault",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -4214,7 +4214,7 @@
   {
     "id": "2019-gpm-iteso-row-0340-galacticos-3",
     "name": "Galácticos 3",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2019
   },
   {
@@ -4232,7 +4232,7 @@
   {
     "id": "2019-gpm-iteso-row-0343-pizza-atomica-2-0",
     "name": "Pizza Atómica 2.0",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
@@ -4262,13 +4262,13 @@
   {
     "id": "2019-gpm-iteso-row-0348-symbolab",
     "name": "Symbolab",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0349-valhalla",
     "name": "Valhalla",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -4292,7 +4292,7 @@
   {
     "id": "2019-gpm-iteso-row-0353-tokki-team",
     "name": "Tokki Team",
-    "schoolId": "source-label-itesm-campus-tampico-63b99f7f21",
+    "schoolId": "itesm-tampico",
     "seasonYear": 2019
   },
   {
@@ -4376,7 +4376,7 @@
   {
     "id": "2019-gpm-iteso-row-0367-sovie",
     "name": "Sovie",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
@@ -4454,19 +4454,19 @@
   {
     "id": "2019-gpm-iteso-row-0380-combos-a-99",
     "name": "Combos a 99",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0381-las-colorburgers",
     "name": "Las Colorburgers",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0382-acusticartisans",
     "name": "AcusticArtisans",
-    "schoolId": "source-label-itesm-campus-tampico-63b99f7f21",
+    "schoolId": "itesm-tampico",
     "seasonYear": 2019
   }
 ]

@@ -12,12 +12,13 @@
   {
     "id": "buap",
     "officialName": "Benemérita Universidad Autónoma de Puebla",
-    "shortName": "Benemérita Universidad Autónoma de Puebla"
+    "shortName": "BUAP"
   },
   {
-    "id": "buap-mx",
-    "officialName": "Benemérita Universidad Autónoma de Puebla (BUAP)",
-    "shortName": "BUAP"
+    "id": "buap-fcc",
+    "officialName": "Facultad de Ciencias de la Computación",
+    "shortName": "FCC BUAP",
+    "parentInstitutionId": "buap"
   },
   {
     "id": "cbtis-217",
@@ -79,12 +80,6 @@
     "officialName": "Escuela Militar de Ingeniería - Ingeniería de Sistemas",
     "shortName": "EMI-Sistemas",
     "parentInstitutionId": "emi-bolivia"
-  },
-  {
-    "id": "enes-morelia",
-    "officialName": "Escuela Nacional de Estudios Superiores, Unidad Morelia (ENES Morelia)",
-    "shortName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia",
-    "parentInstitutionId": "unam"
   },
   {
     "id": "esan-pe",
@@ -171,12 +166,6 @@
     "id": "fei-br",
     "officialName": "Centro Universitário FEI",
     "shortName": "FEI"
-  },
-  {
-    "id": "fes-acatlan",
-    "officialName": "Facultad de Estudios Superiores Acatlán",
-    "shortName": "Facultad de Estudios Superiores Acatlán - UNAM",
-    "parentInstitutionId": "unam"
   },
   {
     "id": "fgv",
@@ -498,9 +487,21 @@
     "parentInstitutionId": "ipn"
   },
   {
+    "id": "ipn-esime-azcapotzalco",
+    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica, Unidad Azcapotzalco",
+    "shortName": "ESIME Azcapotzalco",
+    "parentInstitutionId": "ipn"
+  },
+  {
     "id": "ipn-esime-culhuacan",
     "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica, Unidad Culhuacán",
     "shortName": "ESIME Culhuacán",
+    "parentInstitutionId": "ipn"
+  },
+  {
+    "id": "ipn-upiicsa",
+    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas",
+    "shortName": "UPIICSA IPN",
     "parentInstitutionId": "ipn"
   },
   {
@@ -620,19 +621,81 @@
     "shortName": "ITESG"
   },
   {
+    "id": "itesm",
+    "officialName": "Instituto Tecnológico y de Estudios Superiores de Monterrey",
+    "shortName": "Tec de Monterrey"
+  },
+  {
     "id": "itesm-cem",
     "officialName": "Tecnológico de Monterrey, Campus Estado de México",
-    "shortName": "ITESM CEM"
+    "shortName": "ITESM CEM",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-central-veracruz",
+    "officialName": "Tecnológico de Monterrey, Campus Central de Veracruz",
+    "shortName": "ITESM Central de Veracruz",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-chihuahua",
+    "officialName": "Tecnológico de Monterrey, Campus Chihuahua",
+    "shortName": "ITESM Chihuahua",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "itesm-cuernavaca",
-    "officialName": "Tecnológico de Monterrey - Campus Cuernavaca",
-    "shortName": "ITESM Cuernavaca"
+    "officialName": "Tecnológico de Monterrey, Campus Cuernavaca",
+    "shortName": "ITESM Cuernavaca",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-laguna",
+    "officialName": "Tecnológico de Monterrey, Campus Laguna",
+    "shortName": "ITESM Laguna",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-leon",
+    "officialName": "Tecnológico de Monterrey, Campus León",
+    "shortName": "ITESM León",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "itesm-monterrey",
-    "officialName": "Tecnológico de Monterrey",
-    "shortName": "ITESM Monterrey"
+    "officialName": "Tecnológico de Monterrey, Campus Monterrey",
+    "shortName": "ITESM Monterrey",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-morelia",
+    "officialName": "Tecnológico de Monterrey, Campus Morelia",
+    "shortName": "ITESM Morelia",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-saltillo",
+    "officialName": "Tecnológico de Monterrey, Campus Saltillo",
+    "shortName": "ITESM Saltillo",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-san-luis",
+    "officialName": "Tecnológico de Monterrey, Campus San Luis",
+    "shortName": "ITESM San Luis",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-tampico",
+    "officialName": "Tecnológico de Monterrey, Campus Tampico",
+    "shortName": "ITESM Tampico",
+    "parentInstitutionId": "itesm"
+  },
+  {
+    "id": "itesm-zacatecas",
+    "officialName": "Tecnológico de Monterrey, Campus Zacatecas",
+    "shortName": "ITESM Zacatecas",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "iteso",
@@ -921,11 +984,6 @@
     "shortName": "EMdIC"
   },
   {
-    "id": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
-    "officialName": "Escuela Superior De Computo Instituto Politecnico Nacional",
-    "shortName": "Escuela Superior De Computo Instituto Politecnico Nacional"
-  },
-  {
     "id": "source-label-espm-8a88abee7e",
     "officialName": "ESPM",
     "shortName": "ESPM"
@@ -939,16 +997,6 @@
     "id": "source-label-faculmontes-279b6cd485",
     "officialName": "FACULMONTES",
     "shortName": "FACULMONTES"
-  },
-  {
-    "id": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
-    "officialName": "Facultad de Ciencias-Universidad Nacional Autónoma de México",
-    "shortName": "Facultad de Ciencias-Universidad Nacional Autónoma de México"
-  },
-  {
-    "id": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
-    "officialName": "Facultad de Estudios Superiores Acatlán - UNAM",
-    "shortName": "Facultad de Estudios Superiores Acatlán - UNAM"
   },
   {
     "id": "source-label-fai-80d0e12571",
@@ -969,11 +1017,6 @@
     "id": "source-label-fcen-0f01e9672c",
     "officialName": "FCEN",
     "shortName": "FCEN"
-  },
-  {
-    "id": "source-label-fe-unam-7a4403ea09",
-    "officialName": "FE-UNAM",
-    "shortName": "FE-UNAM"
   },
   {
     "id": "source-label-fib-d99c045aea",
@@ -1229,101 +1272,6 @@
     "id": "source-label-iteshu-092c0c8052",
     "officialName": "ITESHU",
     "shortName": "ITESHU"
-  },
-  {
-    "id": "source-label-itesm-ags-80a859139e",
-    "officialName": "ITESM Ags",
-    "shortName": "ITESM Ags"
-  },
-  {
-    "id": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
-    "officialName": "ITESM Campus Chihuahua",
-    "shortName": "ITESM Campus Chihuahua"
-  },
-  {
-    "id": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
-    "officialName": "ITESM Campus Ciudad de Mexico",
-    "shortName": "ITESM Campus Ciudad de Mexico"
-  },
-  {
-    "id": "source-label-itesm-campus-cuernavaca-85b5efd00c",
-    "officialName": "ITESM Campus Cuernavaca",
-    "shortName": "ITESM Campus Cuernavaca"
-  },
-  {
-    "id": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
-    "officialName": "ITESM Campus Estado de Mexico",
-    "shortName": "ITESM Campus Estado de Mexico"
-  },
-  {
-    "id": "source-label-itesm-campus-guadalajara-a27baa0fd4",
-    "officialName": "ITESM Campus Guadalajara",
-    "shortName": "ITESM Campus Guadalajara"
-  },
-  {
-    "id": "source-label-itesm-campus-monterrey-4bfce0d452",
-    "officialName": "ITESM Campus Monterrey",
-    "shortName": "ITESM Campus Monterrey"
-  },
-  {
-    "id": "source-label-itesm-campus-puebla-ee3242fade",
-    "officialName": "ITESM Campus Puebla",
-    "shortName": "ITESM Campus Puebla"
-  },
-  {
-    "id": "source-label-itesm-campus-queretaro-3c252201a2",
-    "officialName": "ITESM Campus Queretaro",
-    "shortName": "ITESM Campus Queretaro"
-  },
-  {
-    "id": "source-label-itesm-campus-santa-fe-9fc02ffda4",
-    "officialName": "ITESM Campus Santa Fe",
-    "shortName": "ITESM Campus Santa Fe"
-  },
-  {
-    "id": "source-label-itesm-campus-tampico-63b99f7f21",
-    "officialName": "ITESM Campus Tampico",
-    "shortName": "ITESM Campus Tampico"
-  },
-  {
-    "id": "source-label-itesm-ccm-751cd280d0",
-    "officialName": "ITESM/CCM",
-    "shortName": "ITESM/CCM"
-  },
-  {
-    "id": "source-label-itesm-cem-8e86cfbbf8",
-    "officialName": "ITESM/CEM",
-    "shortName": "ITESM/CEM"
-  },
-  {
-    "id": "source-label-itesm-chihuahua-472b156865",
-    "officialName": "ITESM/CHIHUAHUA",
-    "shortName": "ITESM/CHIHUAHUA"
-  },
-  {
-    "id": "source-label-itesm-csf-4fd7f9f9a0",
-    "officialName": "ITESM/CSF",
-    "shortName": "ITESM/CSF"
-  },
-  {
-    "id": "source-label-itesm-cuernavaca-0f48505f61",
-    "officialName": "ITESM/Cuernavaca",
-    "shortName": "ITESM/Cuernavaca"
-  },
-  {
-    "id": "source-label-itesm-gda-6bc76b2ed9",
-    "officialName": "ITESM/GDA",
-    "shortName": "ITESM/GDA"
-  },
-  {
-    "id": "source-label-itesm-monterrey-f8acc60b08",
-    "officialName": "ITESM/Monterrey",
-    "shortName": "ITESM/Monterrey"
-  },
-  {
-    "id": "source-label-itesm-puebla-e566c4d955",
-    "officialName": "ITESM/Puebla",
-    "shortName": "ITESM/Puebla"
   },
   {
     "id": "source-label-iteso-university-f66d759f69",
@@ -1791,11 +1739,6 @@
     "shortName": "UDesc"
   },
   {
-    "id": "source-label-udg-cucei-86b0833dc5",
-    "officialName": "UdG/CUCEI",
-    "shortName": "UdG/CUCEI"
-  },
-  {
     "id": "source-label-udi-c785c709be",
     "officialName": "UDI",
     "shortName": "UDI"
@@ -1956,26 +1899,6 @@
     "shortName": "UNAL/Bogotá"
   },
   {
-    "id": "source-label-unam-enes-morelia-a4d37af5d6",
-    "officialName": "UNAM/ENES Morelia",
-    "shortName": "UNAM/ENES Morelia"
-  },
-  {
-    "id": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
-    "officialName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia",
-    "shortName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia"
-  },
-  {
-    "id": "source-label-unam-fc-f6c1204110",
-    "officialName": "UNAM/FC",
-    "shortName": "UNAM/FC"
-  },
-  {
-    "id": "source-label-unam-fes-acatlan-04beda8ec8",
-    "officialName": "UNAM/FES Acatlan",
-    "shortName": "UNAM/FES Acatlan"
-  },
-  {
     "id": "source-label-unan-managua-373da2ab3e",
     "officialName": "UNAN/Managua",
     "shortName": "UNAN/Managua"
@@ -2064,11 +1987,6 @@
     "id": "source-label-unicaribe-9246e7a67e",
     "officialName": "Unicaribe",
     "shortName": "Unicaribe"
-  },
-  {
-    "id": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
-    "officialName": "Unidad Profesional Interdisciplinaria de Ingenieria Campus Zacatecas",
-    "shortName": "Unidad Profesional Interdisciplinaria de Ingenieria Campus Zacatecas"
   },
   {
     "id": "source-label-unifacef-85c8edb673",
@@ -2226,11 +2144,6 @@
     "shortName": "Universidad de Guadalajara CUALTOS"
   },
   {
-    "id": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
-    "officialName": "Universidad de Guadalajara CUCEI",
-    "shortName": "Universidad de Guadalajara CUCEI"
-  },
-  {
     "id": "source-label-universidad-de-guadalajara-cucosta-d01f8e1f2c",
     "officialName": "Universidad de Guadalajara CUCOSTA",
     "shortName": "Universidad de Guadalajara CUCOSTA"
@@ -2284,16 +2197,6 @@
     "id": "source-label-universidad-nacional-de-colombia-bogota-3f821f7a99",
     "officialName": "Universidad Nacional de Colombia - Bogotá",
     "shortName": "Universidad Nacional de Colombia - Bogotá"
-  },
-  {
-    "id": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
-    "officialName": "Universidad Panamericana Campus Bonaterra",
-    "shortName": "Universidad Panamericana Campus Bonaterra"
-  },
-  {
-    "id": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
-    "officialName": "Universidad Panamericana Campus Guadalajara",
-    "shortName": "Universidad Panamericana Campus Guadalajara"
   },
   {
     "id": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
@@ -2384,11 +2287,6 @@
     "id": "source-label-up-42cb4e6f84",
     "officialName": "UP",
     "shortName": "UP"
-  },
-  {
-    "id": "source-label-up-bonaterra-8c52d5b992",
-    "officialName": "UP/Bonaterra",
-    "shortName": "UP/Bonaterra"
   },
   {
     "id": "source-label-upb-buc-f54cbcb8d7",
@@ -2571,29 +2469,14 @@
     "shortName": "UWI/TTO"
   },
   {
-    "id": "source-school-0149ac9523a7",
-    "officialName": "Facultad de Ingenieria - Universidad Nacional Autónoma de México",
-    "shortName": "Facultad de Ingenieria - Universidad Nacional Autónoma de México"
-  },
-  {
     "id": "source-school-0161a1267336",
     "officialName": "ITCancún",
     "shortName": "ITCancún"
   },
   {
-    "id": "source-school-0223f623eaba",
-    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Naciona",
-    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Naciona"
-  },
-  {
     "id": "source-school-068741c53129",
     "officialName": "Universidad Tecnica Nacional de Costa Rica",
     "shortName": "Universidad Tecnica Nacional de Costa Rica"
-  },
-  {
-    "id": "source-school-0835dc54967a",
-    "officialName": "Facultad de Estudios Superiores Cuautitlán - UNAM",
-    "shortName": "Facultad de Estudios Superiores Cuautitlán - UNAM"
   },
   {
     "id": "source-school-086bf4f4b3fa",
@@ -2611,11 +2494,6 @@
     "shortName": "Tec Parral"
   },
   {
-    "id": "source-school-0c4ad61b0a3b",
-    "officialName": "Tec de Monterrey Campus Ciudad de México",
-    "shortName": "Tec de Monterrey Campus Ciudad de México"
-  },
-  {
     "id": "source-school-0d2c7fc1b4d4",
     "officialName": "Colegio de Bachilleres del Estado de Michoacán",
     "shortName": "Colegio de Bachilleres del Estado de Michoacán"
@@ -2629,16 +2507,6 @@
     "id": "source-school-0f5310b0efc8",
     "officialName": "Univesidad Autonoma de Yucatán",
     "shortName": "Univesidad Autonoma de Yucatán"
-  },
-  {
-    "id": "source-school-0f8e1e27e205",
-    "officialName": "ITESM CCM",
-    "shortName": "ITESM CCM"
-  },
-  {
-    "id": "source-school-0fdad3b95a45",
-    "officialName": "Tec de Monterrey Campus Monterrey",
-    "shortName": "Tec de Monterrey Campus Monterrey"
   },
   {
     "id": "source-school-10b2f3d59c0d",
@@ -2666,19 +2534,9 @@
     "shortName": "Universidad Tecnológica de La Habana \"José Antonio Echeverría\""
   },
   {
-    "id": "source-school-1389d6b7512a",
-    "officialName": "BUAP",
-    "shortName": "BUAP"
-  },
-  {
     "id": "source-school-153d29e75bbd",
     "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 198",
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 198"
-  },
-  {
-    "id": "source-school-16f24e4704a7",
-    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN",
-    "shortName": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN"
   },
   {
     "id": "source-school-175644cc58e8",
@@ -2716,11 +2574,6 @@
     "shortName": "Universidad Veracruzana"
   },
   {
-    "id": "source-school-1e495eaa39fa",
-    "officialName": "ITESM-Puebla",
-    "shortName": "ITESM-Puebla"
-  },
-  {
     "id": "source-school-1f6766a910a3",
     "officialName": "UdG CUVALLES",
     "shortName": "UdG CUVALLES"
@@ -2741,19 +2594,9 @@
     "shortName": "Universidad de Guadalajara CUCSUR"
   },
   {
-    "id": "source-school-1ffa2ceeda41",
-    "officialName": "ITESM Campus León",
-    "shortName": "ITESM Campus León"
-  },
-  {
     "id": "source-school-2129812f9b28",
     "officialName": "TECNOLOGICO NACIONAL DE MEXICO CAMPUS MORELIA",
     "shortName": "TECNOLOGICO NACIONAL DE MEXICO CAMPUS MORELIA"
-  },
-  {
-    "id": "source-school-23203f7743a5",
-    "officialName": "ESCOM IPN",
-    "shortName": "ESCOM IPN"
   },
   {
     "id": "source-school-2422e48e0a1a",
@@ -2769,16 +2612,6 @@
     "id": "source-school-25b3dd443154",
     "officialName": "Universidad Centroamericana",
     "shortName": "Universidad Centroamericana"
-  },
-  {
-    "id": "source-school-26d80743abcd",
-    "officialName": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas",
-    "shortName": "Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas"
-  },
-  {
-    "id": "source-school-275a4aead4c3",
-    "officialName": "Universidad Nacional Autónoma de México ENES Morelia",
-    "shortName": "Universidad Nacional Autónoma de México ENES Morelia"
   },
   {
     "id": "source-school-27740a8f1201",
@@ -2871,11 +2704,6 @@
     "shortName": "ULSA"
   },
   {
-    "id": "source-school-318679454525",
-    "officialName": "UPIICSA",
-    "shortName": "UPIICSA"
-  },
-  {
     "id": "source-school-3196809a1ca6",
     "officialName": "Universidad de las Americas-Puebla",
     "shortName": "Universidad de las Americas-Puebla"
@@ -2901,16 +2729,6 @@
     "shortName": "Instituto Tecnológico Superior de Loreto"
   },
   {
-    "id": "source-school-36dd3f015eef",
-    "officialName": "ITESM Monterrey",
-    "shortName": "ITESM Monterrey"
-  },
-  {
-    "id": "source-school-37806e2c8f27",
-    "officialName": "Escuela Superior de Cómputo IPN",
-    "shortName": "Escuela Superior de Cómputo IPN"
-  },
-  {
     "id": "source-school-389761cad6a1",
     "officialName": "Universidad de Oriente - Sede Julio Antonio Mella",
     "shortName": "Universidad de Oriente - Sede Julio Antonio Mella"
@@ -2926,11 +2744,6 @@
     "shortName": "TEC Milenio - Las Torres"
   },
   {
-    "id": "source-school-3999b6144a49",
-    "officialName": "Universidad de Guanajuato - CIMAT",
-    "shortName": "Universidad de Guanajuato - CIMAT"
-  },
-  {
     "id": "source-school-39d5e4a5d475",
     "officialName": "Instituto Tecnlogico de la Laguna",
     "shortName": "Instituto Tecnlogico de la Laguna"
@@ -2939,16 +2752,6 @@
     "id": "source-school-39faaece2b9b",
     "officialName": "Universidad Politécnica de Pénjamo",
     "shortName": "Universidad Politécnica de Pénjamo"
-  },
-  {
-    "id": "source-school-3a45010d69b0",
-    "officialName": "Universidad Nacional Autónoma de México Facultad de Ingenierías",
-    "shortName": "Universidad Nacional Autónoma de México Facultad de Ingenierías"
-  },
-  {
-    "id": "source-school-3a4ea71a63f4",
-    "officialName": "Facultad de Ciencias - UNAM",
-    "shortName": "Facultad de Ciencias - UNAM"
   },
   {
     "id": "source-school-3a8a3f9f2cce",
@@ -2986,16 +2789,6 @@
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No.255"
   },
   {
-    "id": "source-school-40fbd05cee85",
-    "officialName": "Escuela Superior de Física y Matemáticas del IPN",
-    "shortName": "Escuela Superior de Física y Matemáticas del IPN"
-  },
-  {
-    "id": "source-school-41239e5c8a3b",
-    "officialName": "ITESM León",
-    "shortName": "ITESM León"
-  },
-  {
     "id": "source-school-42fdce5c49e5",
     "officialName": "Instituto Tecnológico Superior de Uruapan",
     "shortName": "Instituto Tecnológico Superior de Uruapan"
@@ -3014,16 +2807,6 @@
     "id": "source-school-44cc991d7bdf",
     "officialName": "Instituto Tecnológico Superior de Comalcalco",
     "shortName": "Instituto Tecnológico Superior de Comalcalco"
-  },
-  {
-    "id": "source-school-4509fd5dafbc",
-    "officialName": "Escuela Nacional de Estudios Superiores Unidad Morelia - UNAM",
-    "shortName": "Escuela Nacional de Estudios Superiores Unidad Morelia - UNAM"
-  },
-  {
-    "id": "source-school-465388a6b0c1",
-    "officialName": "UNAM CFATA Campus Juriquilla",
-    "shortName": "UNAM CFATA Campus Juriquilla"
   },
   {
     "id": "source-school-48649350a9b2",
@@ -3051,11 +2834,6 @@
     "shortName": "U de Guanajuato"
   },
   {
-    "id": "source-school-4eb7211dfff1",
-    "officialName": "ESCOM Instituto Politecnico Nacional",
-    "shortName": "ESCOM Instituto Politecnico Nacional"
-  },
-  {
     "id": "source-school-4f7c9598af91",
     "officialName": "Instituto Tecnológico de Las Américas",
     "shortName": "Instituto Tecnológico de Las Américas"
@@ -3071,24 +2849,9 @@
     "shortName": "ITVer"
   },
   {
-    "id": "source-school-516d80476120",
-    "officialName": "Escuela Superior de Física y Matemáticas del Instituto Politécnico Nacional",
-    "shortName": "Escuela Superior de Física y Matemáticas del Instituto Politécnico Nacional"
-  },
-  {
-    "id": "source-school-51b132f7b9a7",
-    "officialName": "Universidad Panamericana Guadalajara",
-    "shortName": "Universidad Panamericana Guadalajara"
-  },
-  {
     "id": "source-school-520749ecba08",
     "officialName": "IT Culiacan",
     "shortName": "IT Culiacan"
-  },
-  {
-    "id": "source-school-5248b87401e8",
-    "officialName": "ITESM Campus Central de Veracruz",
-    "shortName": "ITESM Campus Central de Veracruz"
   },
   {
     "id": "source-school-52e4eec73ada",
@@ -3109,11 +2872,6 @@
     "id": "source-school-551acbe0bd4a",
     "officialName": "Instituto Tecnológico Superior Sombrerete Zacatecas Occidente",
     "shortName": "Instituto Tecnológico Superior Sombrerete Zacatecas Occidente"
-  },
-  {
-    "id": "source-school-5525168c90ce",
-    "officialName": "ITESM Puebla",
-    "shortName": "ITESM Puebla"
   },
   {
     "id": "source-school-55403a1cda92",
@@ -3191,19 +2949,9 @@
     "shortName": "Instituto Tecnológico Superior de Irapuato Campus Purísima del Rincon"
   },
   {
-    "id": "source-school-5b30fd95c616",
-    "officialName": "UP CDMX",
-    "shortName": "UP CDMX"
-  },
-  {
     "id": "source-school-5b3266f2ec11",
     "officialName": "UACH",
     "shortName": "UACH"
-  },
-  {
-    "id": "source-school-5d06059e7144",
-    "officialName": "Benemérica Universidad Autónoma de Puebla",
-    "shortName": "Benemérica Universidad Autónoma de Puebla"
   },
   {
     "id": "source-school-5e34206154c6",
@@ -3216,11 +2964,6 @@
     "shortName": "ITC"
   },
   {
-    "id": "source-school-5f34e226e4d7",
-    "officialName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México",
-    "shortName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México"
-  },
-  {
     "id": "source-school-628390b14281",
     "officialName": "Instituto Tecnologico de Piedras Negras",
     "shortName": "Instituto Tecnologico de Piedras Negras"
@@ -3229,26 +2972,6 @@
     "id": "source-school-633c53baa9d8",
     "officialName": "Centro Universitario de Occidente",
     "shortName": "Centro Universitario de Occidente"
-  },
-  {
-    "id": "source-school-634899c39ce2",
-    "officialName": "ITESM Cuernavaca",
-    "shortName": "ITESM Cuernavaca"
-  },
-  {
-    "id": "source-school-64985288ecac",
-    "officialName": "ITESM Campus Aguascalientes",
-    "shortName": "ITESM Campus Aguascalientes"
-  },
-  {
-    "id": "source-school-651ab7cb3fc0",
-    "officialName": "Universidad Nacional Autónoma de México Facultad de Ciencias",
-    "shortName": "Universidad Nacional Autónoma de México Facultad de Ciencias"
-  },
-  {
-    "id": "source-school-65fa55ecf399",
-    "officialName": "Tec de Monterrey Campus Puebla",
-    "shortName": "Tec de Monterrey Campus Puebla"
   },
   {
     "id": "source-school-675e4c30a948",
@@ -3264,11 +2987,6 @@
     "id": "source-school-68c426c8f3bc",
     "officialName": "Tecnológico Nacional de México , Instituto Tecnológico de León",
     "shortName": "Tecnológico Nacional de México , Instituto Tecnológico de León"
-  },
-  {
-    "id": "source-school-6993759cca4b",
-    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del IPN Unidad Azcapotzalco",
-    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del IPN Unidad Azcapotzalco"
   },
   {
     "id": "source-school-6a220b20176f",
@@ -3331,11 +3049,6 @@
     "shortName": "Universidad de Cienfuegos"
   },
   {
-    "id": "source-school-742fd898cd47",
-    "officialName": "ITESM Campus Morelia",
-    "shortName": "ITESM Campus Morelia"
-  },
-  {
     "id": "source-school-7497c97aa05f",
     "officialName": "UPALT",
     "shortName": "UPALT"
@@ -3349,11 +3062,6 @@
     "id": "source-school-7503ca7a5711",
     "officialName": "UAM Iztapalapa",
     "shortName": "UAM Iztapalapa"
-  },
-  {
-    "id": "source-school-751fdf1568f6",
-    "officialName": "ESIME Azcapotzalco",
-    "shortName": "ESIME Azcapotzalco"
   },
   {
     "id": "source-school-773893f7149c",
@@ -3381,19 +3089,9 @@
     "shortName": "UdG CUSUR"
   },
   {
-    "id": "source-school-7aa06b6cb0bd",
-    "officialName": "Unidad Profesional Interdisciplinaria de Ingenieria Zacatecas IPN",
-    "shortName": "Unidad Profesional Interdisciplinaria de Ingenieria Zacatecas IPN"
-  },
-  {
     "id": "source-school-7b42cb77e9ee",
     "officialName": "UANL",
     "shortName": "UANL"
-  },
-  {
-    "id": "source-school-7c0a0a825e92",
-    "officialName": "Tec de Monterrey Campus Toluca",
-    "shortName": "Tec de Monterrey Campus Toluca"
   },
   {
     "id": "source-school-7c8bf8374a91",
@@ -3441,19 +3139,9 @@
     "shortName": "Universidad del Istmo, Campus Tehuantepec"
   },
   {
-    "id": "source-school-84fe5610e0ce",
-    "officialName": "UNAM ENES Morelia",
-    "shortName": "UNAM ENES Morelia"
-  },
-  {
     "id": "source-school-8605d7dea947",
     "officialName": "Universidad Gerardo Barrios",
     "shortName": "Universidad Gerardo Barrios"
-  },
-  {
-    "id": "source-school-87392873a345",
-    "officialName": "Facultad de Ciencias-UNAM",
-    "shortName": "Facultad de Ciencias-UNAM"
   },
   {
     "id": "source-school-8783f41bc328",
@@ -3496,11 +3184,6 @@
     "shortName": "Instituto Tecnologico Superior Sombrerete Zacatecas Occidente"
   },
   {
-    "id": "source-school-8cd84f4d1524",
-    "officialName": "ITESM Campus Zacatecas",
-    "shortName": "ITESM Campus Zacatecas"
-  },
-  {
     "id": "source-school-8d0e27ac4fd7",
     "officialName": "Facultad de Informática Mazatlán UAS",
     "shortName": "Facultad de Informática Mazatlán UAS"
@@ -3536,11 +3219,6 @@
     "shortName": "Universidad Tecnológica de la Zona Metropolitana de Guadalajara"
   },
   {
-    "id": "source-school-91f6e4436bd9",
-    "officialName": "Universidad Panamericana Ciudad de México",
-    "shortName": "Universidad Panamericana Ciudad de México"
-  },
-  {
     "id": "source-school-92183a1f39cc",
     "officialName": "Instituto Tecnológico de Estudios Superiores de Zamora",
     "shortName": "Instituto Tecnológico de Estudios Superiores de Zamora"
@@ -3556,19 +3234,9 @@
     "shortName": "Universidad de las Ciencias Informáticas"
   },
   {
-    "id": "source-school-9321a2f2d26e",
-    "officialName": "Universidad Nacional Autónoma de México CNyMyN",
-    "shortName": "Universidad Nacional Autónoma de México CNyMyN"
-  },
-  {
     "id": "source-school-93bef2438b23",
     "officialName": "Politécnica de Santa Rosa Jáuregui",
     "shortName": "Politécnica de Santa Rosa Jáuregui"
-  },
-  {
-    "id": "source-school-940ac9035f2c",
-    "officialName": "Tec de Monterrey Campus Cuernavaca",
-    "shortName": "Tec de Monterrey Campus Cuernavaca"
   },
   {
     "id": "source-school-9439bca48746",
@@ -3579,11 +3247,6 @@
     "id": "source-school-94c62f520f58",
     "officialName": "Instituto Tecnológico de Aguascalientes",
     "shortName": "Instituto Tecnológico de Aguascalientes"
-  },
-  {
-    "id": "source-school-95d04191fe16",
-    "officialName": "Tec de Monterrey Campus Estado de México",
-    "shortName": "Tec de Monterrey Campus Estado de México"
   },
   {
     "id": "source-school-96d0fe5212e7",
@@ -3601,19 +3264,9 @@
     "shortName": "University of Technology- Jamaica"
   },
   {
-    "id": "source-school-974208957e60",
-    "officialName": "FI-UNAM",
-    "shortName": "FI-UNAM"
-  },
-  {
     "id": "source-school-97d7e30bc553",
     "officialName": "Colegio de Estudios Cientificos y Tecnologicos del Estado de Michoacan",
     "shortName": "Colegio de Estudios Cientificos y Tecnologicos del Estado de Michoacan"
-  },
-  {
-    "id": "source-school-991fa4ba5252",
-    "officialName": "ESIME del Instituto Politecnico Nacional Azcapotzalco",
-    "shortName": "ESIME del Instituto Politecnico Nacional Azcapotzalco"
   },
   {
     "id": "source-school-9abdb58ab272",
@@ -3641,11 +3294,6 @@
     "shortName": "Universidad Autónoma Metropolitana Unidad Iztapalapa"
   },
   {
-    "id": "source-school-9fb0a30c8929",
-    "officialName": "FES Cuautitlan - UNAM",
-    "shortName": "FES Cuautitlan - UNAM"
-  },
-  {
     "id": "source-school-a0e44fb98d65",
     "officialName": "Tecnológico de Estudios Superiores de Chalco",
     "shortName": "Tecnológico de Estudios Superiores de Chalco"
@@ -3669,11 +3317,6 @@
     "id": "source-school-a384166e1a21",
     "officialName": "Universidad Enrique Díaz de León",
     "shortName": "Universidad Enrique Díaz de León"
-  },
-  {
-    "id": "source-school-a48bd42dfe0f",
-    "officialName": "Universidad de Guadalajara Campus CUCEI",
-    "shortName": "Universidad de Guadalajara Campus CUCEI"
   },
   {
     "id": "source-school-a55b1b0808de",
@@ -3706,19 +3349,9 @@
     "shortName": "Universidad Americana"
   },
   {
-    "id": "source-school-aa2a43de1753",
-    "officialName": "Universidad Panamericana Bonaterra",
-    "shortName": "Universidad Panamericana Bonaterra"
-  },
-  {
     "id": "source-school-ac35ddd18166",
     "officialName": "Universidad de Costa Rica campus Pacífico",
     "shortName": "Universidad de Costa Rica campus Pacífico"
-  },
-  {
-    "id": "source-school-ac5afbcfd1fa",
-    "officialName": "ITESM Campus Saltillo",
-    "shortName": "ITESM Campus Saltillo"
   },
   {
     "id": "source-school-ac9b7d38153c",
@@ -3729,11 +3362,6 @@
     "id": "source-school-aed40d6dcc4d",
     "officialName": "Instituto Tecnológico de Costa Rica campus Limón",
     "shortName": "Instituto Tecnológico de Costa Rica campus Limón"
-  },
-  {
-    "id": "source-school-af13892124a2",
-    "officialName": "Facultad de Ingenierías - UNAM",
-    "shortName": "Facultad de Ingenierías - UNAM"
   },
   {
     "id": "source-school-b057236ebacb",
@@ -3766,16 +3394,6 @@
     "shortName": "Universidad Politécnica de Tlaxcala"
   },
   {
-    "id": "source-school-b452914c0ee7",
-    "officialName": "Universidad Nacional Autónoma de México FES Acatlán",
-    "shortName": "Universidad Nacional Autónoma de México FES Acatlán"
-  },
-  {
-    "id": "source-school-b4d27b58e7e2",
-    "officialName": "UP GDL",
-    "shortName": "UP GDL"
-  },
-  {
     "id": "source-school-b5487600068d",
     "officialName": "Tec Huetamo",
     "shortName": "Tec Huetamo"
@@ -3784,11 +3402,6 @@
     "id": "source-school-b6b754b7a6a8",
     "officialName": "CBTis 217 Salvador Urrutia",
     "shortName": "CBTis 217 Salvador Urrutia"
-  },
-  {
-    "id": "source-school-b71fbe062024",
-    "officialName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional Unidad Culhuacán",
-    "shortName": "Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional Unidad Culhuacán"
   },
   {
     "id": "source-school-b7d0815fb289",
@@ -3806,11 +3419,6 @@
     "shortName": "Intituto Tecnologico de Lázaro Cárdenas"
   },
   {
-    "id": "source-school-b985fd84d0b8",
-    "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas - UNAM",
-    "shortName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas - UNAM"
-  },
-  {
     "id": "source-school-b9c2c80cbc65",
     "officialName": "Universidad Nacional de Costa Rica",
     "shortName": "Universidad Nacional de Costa Rica"
@@ -3824,21 +3432,6 @@
     "id": "source-school-bac1a836d628",
     "officialName": "Universidad Autonoma de Coahuila Facultad de Sistemas Unidad Saltillo",
     "shortName": "Universidad Autonoma de Coahuila Facultad de Sistemas Unidad Saltillo"
-  },
-  {
-    "id": "source-school-bd755128e841",
-    "officialName": "FES Acatlan UNAM",
-    "shortName": "FES Acatlan UNAM"
-  },
-  {
-    "id": "source-school-bd7a82d5ebbd",
-    "officialName": "UPIICSA Instituto Politécnico Nacional",
-    "shortName": "UPIICSA Instituto Politécnico Nacional"
-  },
-  {
-    "id": "source-school-beed31ec1ef8",
-    "officialName": "Tec de Monterrey Campus Chihuahua",
-    "shortName": "Tec de Monterrey Campus Chihuahua"
   },
   {
     "id": "source-school-bf33e0d06c3a",
@@ -3856,11 +3449,6 @@
     "shortName": "Universidad del Valle de Atemajac"
   },
   {
-    "id": "source-school-bfcfeb8363f7",
-    "officialName": "BUAP Facultad de Ciencias de la Computación",
-    "shortName": "BUAP Facultad de Ciencias de la Computación"
-  },
-  {
     "id": "source-school-c2bf2f06324f",
     "officialName": "UAA",
     "shortName": "UAA"
@@ -3876,16 +3464,6 @@
     "shortName": "Universidad Internacional de Ciencia y Tecnología"
   },
   {
-    "id": "source-school-c81c4e48c8ed",
-    "officialName": "ITESM Toluca",
-    "shortName": "ITESM Toluca"
-  },
-  {
-    "id": "source-school-c9017650908b",
-    "officialName": "ESFM IPN",
-    "shortName": "ESFM IPN"
-  },
-  {
     "id": "source-school-ca31779b34e7",
     "officialName": "Centros de Estudios Tecnológicos Industrial y de Servicios 77",
     "shortName": "Centros de Estudios Tecnológicos Industrial y de Servicios 77"
@@ -3896,34 +3474,14 @@
     "shortName": "UDEM"
   },
   {
-    "id": "source-school-cb8aece785ce",
-    "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas-UNAM",
-    "shortName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas-UNAM"
-  },
-  {
-    "id": "source-school-cbe370566f4c",
-    "officialName": "UPIIZ - IPN",
-    "shortName": "UPIIZ - IPN"
-  },
-  {
     "id": "source-school-cc60902d90be",
     "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 148",
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 148"
   },
   {
-    "id": "source-school-ccd13ba3aeb4",
-    "officialName": "Facultad de Economia - Universidad Nacional Autonoma de Mexico",
-    "shortName": "Facultad de Economia - Universidad Nacional Autonoma de Mexico"
-  },
-  {
     "id": "source-school-cd42395ecd92",
     "officialName": "Universidad de Costa Rica",
     "shortName": "Universidad de Costa Rica"
-  },
-  {
-    "id": "source-school-cf711fffc42c",
-    "officialName": "UPIIZ Instituto Politécnico Nacional Campus Zacatecas",
-    "shortName": "UPIIZ Instituto Politécnico Nacional Campus Zacatecas"
   },
   {
     "id": "source-school-cfd585fc5d93",
@@ -3941,16 +3499,6 @@
     "shortName": "Universidad Vasco de Quiroga"
   },
   {
-    "id": "source-school-d0a0b175c12e",
-    "officialName": "Facultad de Ciencias UNAM",
-    "shortName": "Facultad de Ciencias UNAM"
-  },
-  {
-    "id": "source-school-d0d329114035",
-    "officialName": "ITESM Campus Laguna",
-    "shortName": "ITESM Campus Laguna"
-  },
-  {
     "id": "source-school-d117a0d9ef38",
     "officialName": "ITSSP",
     "shortName": "ITSSP"
@@ -3964,11 +3512,6 @@
     "id": "source-school-d22414b1cca8",
     "officialName": "Instituto Tecnologico Superior de Arandas",
     "shortName": "Instituto Tecnologico Superior de Arandas"
-  },
-  {
-    "id": "source-school-d2a548191dfa",
-    "officialName": "ITESM Campus Toluca",
-    "shortName": "ITESM Campus Toluca"
   },
   {
     "id": "source-school-d372694af067",
@@ -4001,19 +3544,9 @@
     "shortName": "Instituto Tecnologico de Cd. Juarez"
   },
   {
-    "id": "source-school-d61c41a82877",
-    "officialName": "ITESM CEM",
-    "shortName": "ITESM CEM"
-  },
-  {
     "id": "source-school-d63cda88798a",
     "officialName": "Instituto Tecnológico Superior de Puerto Vallarta",
     "shortName": "Instituto Tecnológico Superior de Puerto Vallarta"
-  },
-  {
-    "id": "source-school-d71e1c0db7ee",
-    "officialName": "Tec de Monterrey Campus Guadalajara",
-    "shortName": "Tec de Monterrey Campus Guadalajara"
   },
   {
     "id": "source-school-d9b08bdc1ade",
@@ -4046,11 +3579,6 @@
     "shortName": "Instituto Tecnologico de Tuxtla Gutierrez"
   },
   {
-    "id": "source-school-dec505bbb795",
-    "officialName": "UdG CUCEI",
-    "shortName": "UdG CUCEI"
-  },
-  {
     "id": "source-school-df455a712d91",
     "officialName": "Universidad Michoacana de San Nicolás de Hidalgo",
     "shortName": "Universidad Michoacana de San Nicolás de Hidalgo"
@@ -4061,19 +3589,9 @@
     "shortName": "UASLP"
   },
   {
-    "id": "source-school-df77f8c4e06f",
-    "officialName": "ITESM CSF",
-    "shortName": "ITESM CSF"
-  },
-  {
     "id": "source-school-e02dd402e70d",
     "officialName": "ITSJRC",
     "shortName": "ITSJRC"
-  },
-  {
-    "id": "source-school-e0819f018bde",
-    "officialName": "Escuela Superior De Computo IPN",
-    "shortName": "Escuela Superior De Computo IPN"
   },
   {
     "id": "source-school-e0bf1360c164",
@@ -4089,11 +3607,6 @@
     "id": "source-school-e17f76fff302",
     "officialName": "Instituto Tecnologico de Mexicali",
     "shortName": "Instituto Tecnologico de Mexicali"
-  },
-  {
-    "id": "source-school-e1fb333bae37",
-    "officialName": "FC-UNAM",
-    "shortName": "FC-UNAM"
   },
   {
     "id": "source-school-e21d04dd0199",
@@ -4146,16 +3659,6 @@
     "shortName": "Universidad Autonoma de Zacatecas Campus Jalpa"
   },
   {
-    "id": "source-school-eac8bea18c92",
-    "officialName": "ITESM GDA",
-    "shortName": "ITESM GDA"
-  },
-  {
-    "id": "source-school-ec22a89bfec7",
-    "officialName": "ITESM Campus San Luis",
-    "shortName": "ITESM Campus San Luis"
-  },
-  {
     "id": "source-school-ecd179a196c7",
     "officialName": "Universidad Politécnica de Gomez Palacios",
     "shortName": "Universidad Politécnica de Gomez Palacios"
@@ -4171,11 +3674,6 @@
     "shortName": "Universidad Autónoma de Guadalajara"
   },
   {
-    "id": "source-school-ef4797e02280",
-    "officialName": "UNAM ENES Unidad Morelia",
-    "shortName": "UNAM ENES Unidad Morelia"
-  },
-  {
     "id": "source-school-ef5b207f46fc",
     "officialName": "Colegio Nacional de Educación Profesional Técnica Moroleon",
     "shortName": "Colegio Nacional de Educación Profesional Técnica Moroleon"
@@ -4184,11 +3682,6 @@
     "id": "source-school-efa104e08024",
     "officialName": "Universidad de Costa Rica Campus Pacífico",
     "shortName": "Universidad de Costa Rica Campus Pacífico"
-  },
-  {
-    "id": "source-school-f00f1f3e2d58",
-    "officialName": "UP Bonaterra",
-    "shortName": "UP Bonaterra"
   },
   {
     "id": "source-school-f05d9b78be9b",
@@ -4231,39 +3724,14 @@
     "shortName": "Universidad de Guadalajara CUCEA"
   },
   {
-    "id": "source-school-f512b4d3b560",
-    "officialName": "ESIME Culhuacán",
-    "shortName": "ESIME Culhuacán"
-  },
-  {
     "id": "source-school-f6a6eb9fe115",
     "officialName": "Universidad de Gualajara CUALTOS",
     "shortName": "Universidad de Gualajara CUALTOS"
   },
   {
-    "id": "source-school-f7216a0611b9",
-    "officialName": "Universidad Nacional Autónoma de México IIMAS",
-    "shortName": "Universidad Nacional Autónoma de México IIMAS"
-  },
-  {
-    "id": "source-school-f8a66d8f4c32",
-    "officialName": "ITESM Queretaro",
-    "shortName": "ITESM Queretaro"
-  },
-  {
     "id": "source-school-f96ce82ce333",
     "officialName": "ITSUR",
     "shortName": "ITSUR"
-  },
-  {
-    "id": "source-school-f994082eaba8",
-    "officialName": "Centro de Nanociencias y Micro y Nanotecnologías - UNAM",
-    "shortName": "Centro de Nanociencias y Micro y Nanotecnologías - UNAM"
-  },
-  {
-    "id": "source-school-fb0785c61132",
-    "officialName": "Escuela Superior de Física y Matemáticas IPN",
-    "shortName": "Escuela Superior de Física y Matemáticas IPN"
   },
   {
     "id": "source-school-fb880f1b0a52",
@@ -4303,12 +3771,14 @@
   {
     "id": "tec-aguascalientes",
     "officialName": "Tecnológico de Monterrey, Campus Aguascalientes",
-    "shortName": "ITESMAgua"
+    "shortName": "ITESM Aguascalientes",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "tec-ciudad-de-mexico",
     "officialName": "Tecnológico de Monterrey, Campus Ciudad de México",
-    "shortName": "ITESM Campus Ciudad de Mexico"
+    "shortName": "ITESM CCM",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "tec-costa-rica",
@@ -4330,32 +3800,32 @@
   {
     "id": "tec-guadalajara",
     "officialName": "Tecnológico de Monterrey, Campus Guadalajara",
-    "shortName": "ITESM GDA"
+    "shortName": "ITESM GDA",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "tec-monterrey-toluca",
     "officialName": "Tecnológico de Monterrey, Campus Toluca",
-    "shortName": "ITESM Toluca"
-  },
-  {
-    "id": "tec-mx",
-    "officialName": "Tecnológico de Monterrey (Instituto Tecnológico y de Estudios Superiores de Monterrey)",
-    "shortName": "ITESM Queretaro"
+    "shortName": "ITESM Toluca",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "tec-puebla",
     "officialName": "Tecnológico de Monterrey, Campus Puebla",
-    "shortName": "ITESM-Puebla"
+    "shortName": "ITESM Puebla",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "tec-queretaro",
     "officialName": "Tecnológico de Monterrey, Campus Querétaro",
-    "shortName": "ITESM Campus Queretaro"
+    "shortName": "ITESM Querétaro",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "tec-santa-fe",
     "officialName": "Tecnológico de Monterrey, Campus Santa Fe",
-    "shortName": "ITESM Campus Santa Fe"
+    "shortName": "ITESM CSF",
+    "parentInstitutionId": "itesm"
   },
   {
     "id": "tec-tepexi-de-rodriguez",
@@ -5198,47 +4668,60 @@
   {
     "id": "unam",
     "officialName": "Universidad Nacional Autónoma de México",
-    "shortName": "Universidad Nacional Autónoma de México"
+    "shortName": "UNAM"
+  },
+  {
+    "id": "unam-cfata",
+    "officialName": "UNAM CFATA Campus Juriquilla",
+    "shortName": "CFATA UNAM",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "unam-cnyn",
+    "officialName": "Centro de Nanociencias y Nanotecnología",
+    "shortName": "CNYN UNAM",
+    "parentInstitutionId": "unam"
+  },
+  {
+    "id": "unam-economia",
+    "officialName": "Facultad de Economía",
+    "shortName": "FE UNAM",
+    "parentInstitutionId": "unam"
   },
   {
     "id": "unam-enes-morelia",
     "officialName": "Escuela Nacional de Estudios Superiores (ENES), Unidad Morelia",
-    "shortName": "UNAM ENES Morelia",
+    "shortName": "ENES Morelia UNAM",
     "parentInstitutionId": "unam"
   },
   {
     "id": "unam-fciencias",
     "officialName": "Facultad de Ciencias",
-    "shortName": "FC-UNAM",
+    "shortName": "FC UNAM",
     "parentInstitutionId": "unam"
   },
   {
     "id": "unam-fes-acatlan",
     "officialName": "Facultad de Estudios Superiores Acatlán",
-    "shortName": "FES Acatlan UNAM",
+    "shortName": "FES Acatlán UNAM",
     "parentInstitutionId": "unam"
   },
   {
     "id": "unam-fes-cuautitlan",
     "officialName": "Facultad de Estudios Superiores Cuautitlán",
-    "shortName": "Facultad de Estudios Superiores Cuautitlán - UNAM",
+    "shortName": "FES Cuautitlán UNAM",
     "parentInstitutionId": "unam"
   },
   {
     "id": "unam-fi",
     "officialName": "Facultad de Ingeniería, Universidad Nacional Autónoma de México",
-    "shortName": "Facultad de Ingenieria"
+    "shortName": "FI UNAM",
+    "parentInstitutionId": "unam"
   },
   {
     "id": "unam-iimas",
     "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas",
     "shortName": "IIMAS",
-    "parentInstitutionId": "unam"
-  },
-  {
-    "id": "unam-ingenieria",
-    "officialName": "Facultad de Ingeniería",
-    "shortName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México",
     "parentInstitutionId": "unam"
   },
   {
@@ -5601,19 +5084,27 @@
     "shortName": "UNT"
   },
   {
+    "id": "up",
+    "officialName": "Universidad Panamericana",
+    "shortName": "UP"
+  },
+  {
     "id": "up-aguascalientes",
     "officialName": "Universidad Panamericana, Campus Aguascalientes",
-    "shortName": "UP Bonaterra"
+    "shortName": "UP Bonaterra",
+    "parentInstitutionId": "up"
   },
   {
     "id": "up-ciudad-de-mexico",
     "officialName": "Universidad Panamericana, Campus Ciudad de México",
-    "shortName": "Universidad Panamericana Ciudad de México"
+    "shortName": "UP CDMX",
+    "parentInstitutionId": "up"
   },
   {
     "id": "up-guadalajara",
     "officialName": "Universidad Panamericana, Campus Guadalajara",
-    "shortName": "UPGDL"
+    "shortName": "UP Guadalajara",
+    "parentInstitutionId": "up"
   },
   {
     "id": "upaep",

@@ -8,13 +8,13 @@
   {
     "id": "2020-mexico-finals-final-row-0002-legendary-grand-newbies",
     "name": "Legendary Grand Newbies",
-    "schoolId": "source-label-itesm-monterrey-f8acc60b08",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-mexico-finals-final-row-0003-pumomm",
     "name": "PumOMM",
-    "schoolId": "source-label-unam-fc-f6c1204110",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -224,7 +224,7 @@
   {
     "id": "2020-mexico-finals-final-row-0038-leones-0-0-0",
     "name": "Leones(0,0,0)",
-    "schoolId": "source-label-udg-cucei-86b0833dc5",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
@@ -236,7 +236,7 @@
   {
     "id": "2020-mexico-finals-final-row-0040-upsolving",
     "name": "UPsolving",
-    "schoolId": "source-label-up-bonaterra-8c52d5b992",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
@@ -482,7 +482,7 @@
   {
     "id": "2020-mexico-finals-final-row-0081-los-que-no-vinieron",
     "name": "Los que no vinieron",
-    "schoolId": "source-label-itesm-cuernavaca-0f48505f61",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2020
   },
   {
@@ -530,7 +530,7 @@
   {
     "id": "2020-mexico-finals-final-row-0089-the-empire-strikes-back",
     "name": "The Empire Strikes Back",
-    "schoolId": "source-label-udg-cucei-86b0833dc5",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
@@ -572,7 +572,7 @@
   {
     "id": "2020-mexico-finals-final-row-0096-panpanaderos",
     "name": "PanPanaderos",
-    "schoolId": "source-label-up-bonaterra-8c52d5b992",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
@@ -596,7 +596,7 @@
   {
     "id": "2020-mexico-finals-final-row-0100-acholics",
     "name": "AC’Holics",
-    "schoolId": "source-label-itesm-monterrey-f8acc60b08",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -644,7 +644,7 @@
   {
     "id": "2020-mexico-finals-final-row-0108-pumas",
     "name": "Pumas+",
-    "schoolId": "source-label-unam-fc-f6c1204110",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -692,13 +692,13 @@
   {
     "id": "2020-mexico-finals-final-row-0116-ravioli",
     "name": "Ravioli",
-    "schoolId": "source-label-itesm-monterrey-f8acc60b08",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-mexico-finals-final-row-0117-lonches-ahogados",
     "name": "Lonches Ahogados",
-    "schoolId": "source-label-udg-cucei-86b0833dc5",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
@@ -740,7 +740,7 @@
   {
     "id": "2020-mexico-finals-final-row-0124-assassin-bugs",
     "name": "Assassin Bugs",
-    "schoolId": "source-label-itesm-csf-4fd7f9f9a0",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2020
   },
   {
@@ -830,7 +830,7 @@
   {
     "id": "2020-mexico-finals-final-row-0139-lavanda-nortena",
     "name": "Lavanda Norteña",
-    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -842,7 +842,7 @@
   {
     "id": "2020-mexico-finals-final-row-0141-tec-gdl-10",
     "name": "Tec GDL 10",
-    "schoolId": "source-label-itesm-gda-6bc76b2ed9",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -866,7 +866,7 @@
   {
     "id": "2020-mexico-finals-final-row-0145-bruwus",
     "name": "BrUwUs",
-    "schoolId": "source-label-itesm-ccm-751cd280d0",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2020
   },
   {
@@ -1034,7 +1034,7 @@
   {
     "id": "2020-mexico-finals-final-row-0173-los-de-arriba-son-tramposos",
     "name": "Los de arriba son tramposos",
-    "schoolId": "source-label-unam-enes-morelia-a4d37af5d6",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
@@ -1106,7 +1106,7 @@
   {
     "id": "2020-mexico-finals-final-row-0185-pitones-2-7",
     "name": "Pitones 2.7",
-    "schoolId": "source-label-itesm-cem-8e86cfbbf8",
+    "schoolId": "itesm-cem",
     "seasonYear": 2020
   },
   {
@@ -1142,7 +1142,7 @@
   {
     "id": "2020-mexico-finals-final-row-0191-oblivion",
     "name": "Oblivion",
-    "schoolId": "source-label-itesm-puebla-e566c4d955",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
@@ -1328,7 +1328,7 @@
   {
     "id": "2020-mexico-finals-final-row-0222-utf-8",
     "name": "UTF-8",
-    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -1406,7 +1406,7 @@
   {
     "id": "2020-mexico-finals-final-row-0235-coderregos",
     "name": "CODErregos",
-    "schoolId": "source-label-itesm-chihuahua-472b156865",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2020
   },
   {
@@ -1466,7 +1466,7 @@
   {
     "id": "2020-mexico-finals-final-row-0245-riko-pollo",
     "name": "Riko Pollo",
-    "schoolId": "source-label-itesm-monterrey-f8acc60b08",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -1478,7 +1478,7 @@
   {
     "id": "2020-mexico-finals-final-row-0247-chicas-superpoderosas",
     "name": "Chicas Superpoderosas",
-    "schoolId": "source-label-unam-fc-f6c1204110",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -1706,7 +1706,7 @@
   {
     "id": "2020-mexico-finals-final-row-0285-m-c-nificas",
     "name": "M@C'nificas",
-    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -1814,25 +1814,25 @@
   {
     "id": "2020-gpm-iteso-464446-escuela-superior-de-comedia",
     "name": "Escuela Superior de Comedia",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-468823-legendary-grand-newbies",
     "name": "Legendary Grand Newbies",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464302-pumomm",
     "name": "PumOMM",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-468673-upsolving",
     "name": "UPsolving",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
@@ -1844,13 +1844,13 @@
   {
     "id": "2020-gpm-iteso-454257-leones-0-0-0",
     "name": "Leones(0,0,0)",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464448-camara-ya-subelo-asi-w",
     "name": "Cámara Ya Súbelo Asi w",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -1862,7 +1862,7 @@
   {
     "id": "2020-gpm-iteso-454477-the-empire-strikes-back",
     "name": "The Empire Strikes Back",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
@@ -1874,31 +1874,31 @@
   {
     "id": "2020-gpm-iteso-462217-ac-holics",
     "name": "AC’Holics",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465200-pumas",
     "name": "Pumas+",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-468784-panpanaderos",
     "name": "PanPanaderos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463929-ravioli",
     "name": "Ravioli",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464447-los-hermanos-computadores-de-paine",
     "name": "Los Hermanos Computadores de Paine",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -1916,7 +1916,7 @@
   {
     "id": "2020-gpm-iteso-468731-icpcrikos",
     "name": "ICPCrikos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
@@ -1934,49 +1934,49 @@
   {
     "id": "2020-gpm-iteso-462343-o-1",
     "name": "O(1)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466685-lavanda-nortena",
     "name": "Lavanda Norteña",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-470314-lonches-ahogados",
     "name": "Lonches Ahogados",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-461788-b11",
     "name": "B11",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469833-ac-forever",
     "name": "AC Forever",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465287-hijos-de-turing",
     "name": "Hijos de Turing",
-    "schoolId": "source-school-f994082eaba8",
+    "schoolId": "unam-cnyn",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466692-utf-8",
     "name": "UTF-8",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466496-tec-gdl-10",
     "name": "Tec GDL 10",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -2000,7 +2000,7 @@
   {
     "id": "2020-gpm-iteso-456894-los-que-no-vinieron",
     "name": "Los que no vinieron",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2020
   },
   {
@@ -2018,19 +2018,19 @@
   {
     "id": "2020-gpm-iteso-463535-awadeuwu",
     "name": "awadeuwu",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463383-ansiosos",
     "name": "ANSIosos",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-467477-coders-council",
     "name": "Coders Council",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
@@ -2042,19 +2042,19 @@
   {
     "id": "2020-gpm-iteso-463740-los-de-arriba-son-tramposos",
     "name": "Los de arriba son tramposos",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464310-b-i-o-s",
     "name": "B.I.O.S",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-470616-oblivion",
     "name": "Oblivion",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
@@ -2066,7 +2066,7 @@
   {
     "id": "2020-gpm-iteso-454994-bruwus",
     "name": "BrUwUs",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2020
   },
   {
@@ -2078,55 +2078,55 @@
   {
     "id": "2020-gpm-iteso-469402-coronacoders",
     "name": "CoronaCoders",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462150-bathtub-coding",
     "name": "Bathtub Coding",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462341-predators",
     "name": "Predators",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-470007-drimtimicp",
     "name": "DrimTimICP",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-454993-bff-brute-force-friend-s-tle-v",
     "name": "BFF (Brute Force Friend's) TLE :'v",
-    "schoolId": "source-school-40fbd05cee85",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-454991-void-guys",
     "name": "Void Guys",
-    "schoolId": "source-school-40fbd05cee85",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-455505-assassin-bugs",
     "name": "Assassin Bugs",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463449-dunkel",
     "name": "Dunkel",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469868-pitones-2-7",
     "name": "Pitones 2.7",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2020
   },
   {
@@ -2138,25 +2138,25 @@
   {
     "id": "2020-gpm-iteso-470158-problem-3n-1",
     "name": "Problem 3n - 1",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462131-roborregos-code",
     "name": "Roborregos Code",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-470159-m-c-nificas",
     "name": "M@C'nificas",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-478808-jrm-e",
     "name": "JRM-E",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
@@ -2180,7 +2180,7 @@
   {
     "id": "2020-gpm-iteso-462331-riko-pollo",
     "name": "Riko Pollo",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -2192,13 +2192,13 @@
   {
     "id": "2020-gpm-iteso-462151-tam",
     "name": "TAM++",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469864-root-scramblers",
     "name": "root@scramblers",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2020
   },
   {
@@ -2210,7 +2210,7 @@
   {
     "id": "2020-gpm-iteso-463733-fenix",
     "name": "FENIX",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -2222,19 +2222,19 @@
   {
     "id": "2020-gpm-iteso-466718-return-t-d-a",
     "name": "return t + d + a;",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469835-gunters",
     "name": "Gunters",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462243-che",
     "name": "Che$$",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -2246,7 +2246,7 @@
   {
     "id": "2020-gpm-iteso-470580-brocode",
     "name": "BroCode",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2020
   },
   {
@@ -2282,25 +2282,25 @@
   {
     "id": "2020-gpm-iteso-469837-include-abd",
     "name": "#include<ABD>",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469874-yippee-ki-yay-python-coders",
     "name": "Yippee ki-yay Python Coders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464449-el-holandes-errante",
     "name": "El holandés errante",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464450-tle",
     "name": "TLE",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -2354,31 +2354,31 @@
   {
     "id": "2020-gpm-iteso-465286-pumasds",
     "name": "PumasDS",
-    "schoolId": "source-school-b985fd84d0b8",
+    "schoolId": "unam-iimas",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465283-include-victory-h",
     "name": "#include <victory.h>",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465206-chicas-superpoderosas",
     "name": "Chicas Superpoderosas",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466220-tec-gdl-3",
     "name": "Tec GDL 3",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464444-quarantined-code",
     "name": "Quarantined Code",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2390,13 +2390,13 @@
   {
     "id": "2020-gpm-iteso-469785-las-pistas-de-nullptr",
     "name": "Las pistas de nullptr",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465259-i",
     "name": "i++",
-    "schoolId": "source-school-b985fd84d0b8",
+    "schoolId": "unam-iimas",
     "seasonYear": 2020
   },
   {
@@ -2414,19 +2414,19 @@
   {
     "id": "2020-gpm-iteso-463641-pandilla-de-la-puerta",
     "name": "Pandilla de la puerta",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465215-elementary-my-dear-watson",
     "name": "Elementary, my dear Watson!",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466222-tec-gdl-4",
     "name": "Tec GDL 4",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -2450,13 +2450,13 @@
   {
     "id": "2020-gpm-iteso-454996-montadioses",
     "name": "Montadioses",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463800-tecbots",
     "name": "TecBots",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2020
   },
   {
@@ -2468,43 +2468,43 @@
   {
     "id": "2020-gpm-iteso-465578-coderregos",
     "name": "CODErregos",
-    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462422-omega",
     "name": "OMEGA",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465212-tecosdecanasta",
     "name": "TECosDeCanasta",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469403-l3s-ax0l0tls",
     "name": "l3s ax0l0tls",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-461662-las-javas-bravas",
     "name": "Las javas bravas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463227-code-impostors",
     "name": "Code-Impostors",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465186-valhalla",
     "name": "Valhalla",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2516,7 +2516,7 @@
   {
     "id": "2020-gpm-iteso-469786-d3dsec-exe",
     "name": "D3dSec.exe",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2020
   },
   {
@@ -2534,7 +2534,7 @@
   {
     "id": "2020-gpm-iteso-466224-tec-gdl-5",
     "name": "Tec GDL 5",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -2558,19 +2558,19 @@
   {
     "id": "2020-gpm-iteso-464965-javasonicos",
     "name": "Javasonicos",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464524-quantum-coders",
     "name": "Quantum Coders",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469935-arranederris",
     "name": "ArraneDerris",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
@@ -2582,7 +2582,7 @@
   {
     "id": "2020-gpm-iteso-464522-faav-team",
     "name": "FAAV team",
-    "schoolId": "source-school-bfcfeb8363f7",
+    "schoolId": "buap-fcc",
     "seasonYear": 2020
   },
   {
@@ -2594,7 +2594,7 @@
   {
     "id": "2020-gpm-iteso-465505-eszett",
     "name": "Eszett",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -2606,7 +2606,7 @@
   {
     "id": "2020-gpm-iteso-463393-las-hoppers",
     "name": "Las Hoppers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -2630,31 +2630,31 @@
   {
     "id": "2020-gpm-iteso-464301-estesilesgusta-c",
     "name": "EsteSiLesGusta?>:c",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465301-braxad",
     "name": "BRAXAD",
-    "schoolId": "source-school-af13892124a2",
+    "schoolId": "unam-fi",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466482-tec-gdl-6",
     "name": "Tec GDL 6",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469788-icppn-was-not-declared",
     "name": "ICPPN was not declared",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465311-stc",
     "name": "STC",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2672,13 +2672,13 @@
   {
     "id": "2020-gpm-iteso-462245-patos",
     "name": "Patos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466487-tec-gdl-8",
     "name": "Tec GDL 8",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -2702,7 +2702,7 @@
   {
     "id": "2020-gpm-iteso-470014-upgdl05",
     "name": "UPGDL05",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -2714,7 +2714,7 @@
   {
     "id": "2020-gpm-iteso-463914-echo-coding",
     "name": "Echo Coding",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2020
   },
   {
@@ -2750,31 +2750,31 @@
   {
     "id": "2020-gpm-iteso-462340-blue-pythons",
     "name": "Blue Pythons",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469780-los-pixies-2-0",
     "name": "Los pixies 2.0",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464313-undefined",
     "name": "Undefined",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466208-tec-gdl-1",
     "name": "Tec GDL 1",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469815-c",
     "name": "C - -",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -2804,7 +2804,7 @@
   {
     "id": "2020-gpm-iteso-462320-tec-80ti",
     "name": "Tec 80ti",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -2816,19 +2816,19 @@
   {
     "id": "2020-gpm-iteso-469414-pink-coders",
     "name": "pink coders",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464166-mc-y-los-malacopa-de-michoacan",
     "name": "MC y los malacopa de michoacan",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-470006-timelimitexceeded",
     "name": "TimeLimitExceeded",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -2846,13 +2846,13 @@
   {
     "id": "2020-gpm-iteso-465516-las-neuronas",
     "name": "Las neuronas",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463161-pmg",
     "name": "PMG",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -2870,13 +2870,13 @@
   {
     "id": "2020-gpm-iteso-469401-las-pistas-del-bug",
     "name": "Las pistas del bug",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464543-developtecs",
     "name": "DevelopTecs",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
@@ -2912,13 +2912,13 @@
   {
     "id": "2020-gpm-iteso-462237-coding-wizards",
     "name": "Coding Wizards",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-466784-lascuries",
     "name": "lasCuries",
-    "schoolId": "source-school-e0819f018bde",
+    "schoolId": "ipn-escom",
     "seasonYear": 2020
   },
   {
@@ -2930,7 +2930,7 @@
   {
     "id": "2020-gpm-iteso-465303-tec-coder-s",
     "name": "Tec Coder's",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
@@ -2954,7 +2954,7 @@
   {
     "id": "2020-gpm-iteso-465440-fsociety",
     "name": "Fsociety",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -2990,13 +2990,13 @@
   {
     "id": "2020-gpm-iteso-463228-ctnos",
     "name": "ctNOS",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464163-michexotic-s",
     "name": "MichExoTic's",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
@@ -3008,13 +3008,13 @@
   {
     "id": "2020-gpm-iteso-463902-anime-bois",
     "name": "Anime Bois",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462326-guayeral",
     "name": "Guayeral",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3026,7 +3026,7 @@
   {
     "id": "2020-gpm-iteso-454992-the-gauss-fellows",
     "name": "The Gauss' Fellows",
-    "schoolId": "source-school-40fbd05cee85",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2020
   },
   {
@@ -3038,61 +3038,61 @@
   {
     "id": "2020-gpm-iteso-462377-offline-mode",
     "name": "offline mode",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-467337-tec-gdl-17",
     "name": "Tec GDL 17",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469405-mictlantecuhtli",
     "name": "Mictlantecuhtli",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-471958-tec-gdl-9",
     "name": "Tec GDL 9",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462216-earth-wind-and-fire",
     "name": "Earth Wind and Fire",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464005-devsoc",
     "name": "DEVSOC",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462132-quark",
     "name": "Quark",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-469869-your-socialist-hacker",
     "name": "Your Socialist Hacker",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462142-uwu",
     "name": "uwu",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463644-alpaca-cult",
     "name": "Alpaca Cult",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3104,25 +3104,25 @@
   {
     "id": "2020-gpm-iteso-466100-itchads",
     "name": "ITChads",
-    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-467335-tec-gdl-16",
     "name": "Tec GDL 16",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465989-segmentation-fault",
     "name": "Segmentation fault",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465442-out-of-bounds",
     "name": "Out of Bounds",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3134,7 +3134,7 @@
   {
     "id": "2020-gpm-iteso-465473-pumabytes",
     "name": "PumaBytes",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -3152,19 +3152,19 @@
   {
     "id": "2020-gpm-iteso-462322-whiletrue",
     "name": "WhileTrue",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-470303-nautilus-phi",
     "name": "Nautilus Phi",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463238-equipo-dinamita-arn",
     "name": "Equipo dinamita ARN",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3176,7 +3176,7 @@
   {
     "id": "2020-gpm-iteso-462327-terkos",
     "name": "TERKOS",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3188,7 +3188,7 @@
   {
     "id": "2020-gpm-iteso-464303-debuggers",
     "name": "Debuggers",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
@@ -3218,13 +3218,13 @@
   {
     "id": "2020-gpm-iteso-461806-steminists",
     "name": "Steminists",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464953-interconexion-de-redes",
     "name": "Interconexion de Redes",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
@@ -3242,7 +3242,7 @@
   {
     "id": "2020-gpm-iteso-465282-script-cuantico",
     "name": "Script Cuántico",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -3254,7 +3254,7 @@
   {
     "id": "2020-gpm-iteso-465617-aguilas",
     "name": "Aguilas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3266,7 +3266,7 @@
   {
     "id": "2020-gpm-iteso-463913-minute-men",
     "name": "Minute Men",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2020
   },
   {
@@ -3302,7 +3302,7 @@
   {
     "id": "2020-gpm-iteso-464185-tinthas",
     "name": "Tinthas",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2020
   },
   {
@@ -3338,7 +3338,7 @@
   {
     "id": "2020-gpm-iteso-469881-salsa5",
     "name": "Salsa5",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2020
   },
   {
@@ -3350,7 +3350,7 @@
   {
     "id": "2020-gpm-iteso-465727-code-gang",
     "name": "Code gang",
-    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2020
   },
   {
@@ -3380,13 +3380,13 @@
   {
     "id": "2020-gpm-iteso-471803-arf",
     "name": "ARF",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465504-jonathan-inc",
     "name": "Jonathan, Inc",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3428,7 +3428,7 @@
   {
     "id": "2020-gpm-iteso-465992-codebreakers",
     "name": "CodeBreakers",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
@@ -3440,19 +3440,19 @@
   {
     "id": "2020-gpm-iteso-463642-los-panas",
     "name": "Los Panas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465817-sinonymous",
     "name": "Sinonymous",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465717-cly",
     "name": "CLY",
-    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2020
   },
   {
@@ -3464,7 +3464,7 @@
   {
     "id": "2020-gpm-iteso-462376-equipo-dinamita-doble",
     "name": "Equipo Dinamita Doble",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3506,7 +3506,7 @@
   {
     "id": "2020-gpm-iteso-465226-luigi-vampa",
     "name": "Luigi Vampa",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -3518,7 +3518,7 @@
   {
     "id": "2020-gpm-iteso-469875-hellogoodbyte",
     "name": "helloGoodByte",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2020
   },
   {
@@ -3530,7 +3530,7 @@
   {
     "id": "2020-gpm-iteso-462143-2-jaibas-1-cocodrilo",
     "name": "2 jaibas, 1 cocodrilo",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3578,13 +3578,13 @@
   {
     "id": "2020-gpm-iteso-471848-tec-gdl-15",
     "name": "Tec GDL 15",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-471807-dexter",
     "name": "Dexter",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2020
   },
   {
@@ -3602,7 +3602,7 @@
   {
     "id": "2020-gpm-iteso-463930-3xploit3rs",
     "name": "3xploit3rs",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2020
   },
   {
@@ -3614,7 +3614,7 @@
   {
     "id": "2020-gpm-iteso-466213-tec-gdl-2",
     "name": "Tec GDL 2",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -3692,13 +3692,13 @@
   {
     "id": "2020-gpm-iteso-463517-spooky-code",
     "name": "Spooky Code",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462375-amirus",
     "name": "Amirus",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3716,7 +3716,7 @@
   {
     "id": "2020-gpm-iteso-465134-visual-strong",
     "name": "Visual Strong",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3740,7 +3740,7 @@
   {
     "id": "2020-gpm-iteso-462244-equipo-dinamita",
     "name": "Equipo Dinamita",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3764,7 +3764,7 @@
   {
     "id": "2020-gpm-iteso-470013-roosters",
     "name": "Roosters",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2020
   },
   {
@@ -3776,13 +3776,13 @@
   {
     "id": "2020-gpm-iteso-467329-tec-gdl-14",
     "name": "Tec GDL 14",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-463536-codebuds",
     "name": "CodeBuds",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3794,7 +3794,7 @@
   {
     "id": "2020-gpm-iteso-465168-rem",
     "name": "REM",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3806,13 +3806,13 @@
   {
     "id": "2020-gpm-iteso-469789-awa-de-uwu-sabor-owo",
     "name": "AwA de UwU sabor OwO",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-462328-kemonitos",
     "name": "Kemonitos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {
@@ -3824,7 +3824,7 @@
   {
     "id": "2020-gpm-iteso-463051-los-solovinos",
     "name": "Los Solovinos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2020
   },
   {

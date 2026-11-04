@@ -8,7 +8,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0002-61f65d833dce",
     "name": "🇲🇽 Domain Expansion Abraham échate un hint",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -20,25 +20,25 @@
   {
     "id": "2026-gpm-qualifier-1-row-0004-7f8ce778fc09",
     "name": "🇲🇽 Oasis",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0005-8a878375d513",
     "name": "🇲🇽 :)",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0006-6ccf15ef374f",
     "name": "🇲🇽 Prisioneros de Alcatraz",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0007-3b3fce2b7419",
     "name": "🇲🇽 Y con esto, terminamos la carrera",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -50,13 +50,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0009-8483b0bde8c3",
     "name": "🇲🇽 :Alianza de Autismo de Puerto Rico",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0010-75f7ea4e4aae",
     "name": "🇲🇽 Hijos del Puntero",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -74,37 +74,37 @@
   {
     "id": "2026-gpm-qualifier-1-row-0013-518841883edb",
     "name": "🇲🇽 Adrián quería que nos pusiéramos un nombre largo por alguna razón, y como no decidimos cuál nombre era el mejor, intentamos pedirle al chatcito que nos generara una lista de nombres más atractivos par",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0014-753aa9e16745",
     "name": "🇲🇽 Data Divas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0015-5747cd7d8393",
     "name": "🇲🇽 Mäthgic Crüe",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0016-7454c781830e",
     "name": "🇲🇽 Silencio, empezaron mis frutinovelas",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0017-868a6eea03f8",
     "name": "🇲🇽 Labubus vs Ternurines II",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0018-3b9e9a4c3ea3",
     "name": "🇲🇽 Los Ratones",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -116,7 +116,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0020-ef72b2b74c2a",
     "name": "🇲🇽 while(!AC)",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -134,7 +134,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0023-612e4c0305c5",
     "name": "🇲🇽 The good, the bad and the ugly",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -152,7 +152,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0026-647ba8a58af9",
     "name": "🇲🇽 Cocon1",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
@@ -188,31 +188,31 @@
   {
     "id": "2026-gpm-qualifier-1-row-0032-d2a594d9ee21",
     "name": "🇲🇽 LCAxiom",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0033-1fccaa16ced1",
     "name": "🇲🇽 botellopai23",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0034-5bd0e0dbea68",
     "name": "🇲🇽 Paletería la Michoacana",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0035-2f46c2140766",
     "name": "🇲🇽 Las Chivas de Milito",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0036-2a54ed61fa46",
     "name": "🇲🇽 The algorithms are talking",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -224,19 +224,19 @@
   {
     "id": "2026-gpm-qualifier-1-row-0038-b063e42d1d97",
     "name": "🇲🇽 NPCs",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0039-4502ac56c866",
     "name": "🇲🇽 Academia de Pilotaje Aerostático Manuel Doblado (Clases Privadas de Anatomía y Género $100/hr + 529993244386)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0040-f2ae56409545",
     "name": "🇲🇽 Nos equivocamos de olimpiada",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -278,13 +278,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0047-f804947a5cd0",
     "name": "🇲🇽 Caza Mathgics (espera el unfreeze, Mike)",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0048-cfada925ffab",
     "name": "🇲🇽 Gigante Noble",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -302,7 +302,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0051-7892984c003b",
     "name": "🇲🇽 Chat. Aviéntate un nombre bien tuneadísimo y de paso la solución del F, con papas para llevar.",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -338,25 +338,25 @@
   {
     "id": "2026-gpm-qualifier-1-row-0057-b7c6edf4b6d9",
     "name": "🇲🇽 Heap Thrust",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0058-5ddc97b30107",
     "name": "🇲🇽 Equipo Rosa (los muchachitos)",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0059-3b8e1af15dd8",
     "name": "🇲🇽 Ajolotetos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0060-c991bb0779a5",
     "name": "🇲🇽 4 Ostras Voladoras",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -386,7 +386,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0065-508b80ecb6bf",
     "name": "🇲🇽 Claude Opus 4.6",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -398,7 +398,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0067-e582e0cf5792",
     "name": "🇲🇽 temp++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -416,7 +416,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0070-137e0ccd32dc",
     "name": "🇲🇽 Rascals Last AC",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -428,31 +428,31 @@
   {
     "id": "2026-gpm-qualifier-1-row-0072-56e700aa8b5a",
     "name": "🇲🇽 Requiem",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0073-e1ec905a4f69",
     "name": "🇲🇽 ATCSUSMS (Alianza)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0074-f7b9fbde754c",
     "name": "🇲🇽 Gatitas Tapabaños Nacatlán",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0075-7dc07d3657d2",
     "name": "🇲🇽 Arroz con leche, me quiero matar",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0076-e0c3b3136e5f",
     "name": "🇲🇽 Bellakos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -470,7 +470,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0079-2e53d6ff7152",
     "name": "🇲🇽 acuantoelmamutdeapeso",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -482,7 +482,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0081-88c7c13f6a83",
     "name": "🇲🇽 Chirigüillos de Tamaulipas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -500,7 +500,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0084-62b589bb4083",
     "name": "🇲🇽 return 0 // ese último WA no me dolió... lo suficiente.",
-    "schoolId": "source-school-b71fbe062024",
+    "schoolId": "ipn-esime-culhuacan",
     "seasonYear": 2026
   },
   {
@@ -524,25 +524,25 @@
   {
     "id": "2026-gpm-qualifier-1-row-0088-db49cb45b9cc",
     "name": "🇲🇽 CpLovers2:elRegreso",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0089-3aeff5726897",
     "name": "🇲🇽 3 randoms hacen lo suyo y se van",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0090-819cfbfae7d5",
     "name": "🇲🇽 FractalTeam",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0091-0b72f3d916cc",
     "name": "🇲🇽 Gatos Naranjosos",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -554,25 +554,25 @@
   {
     "id": "2026-gpm-qualifier-1-row-0093-e6f556ef09f4",
     "name": "🇲🇽 QuackiRikos Inc.",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0094-f98bb10f2d2e",
     "name": "🇲🇽 victor&lt;pair&lt;emi, olayo&gt;&gt;",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0095-9f58a8354d35",
     "name": "🇲🇽 Encontramos a Zarate...",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0096-576dc311f7b4",
     "name": "🇲🇽 VoidCoders",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -626,7 +626,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0105-454cb57f598e",
     "name": "🇲🇽 Buenas tardes",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
@@ -656,13 +656,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0110-0037f621b833",
     "name": "🇲🇽 De ultimo momento",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0111-932bad3c64a8",
     "name": "🇲🇽 internal pointer",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -674,7 +674,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0113-3f03fb5d247a",
     "name": "🇲🇽 Patitas EnVinagre.exe",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -686,13 +686,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0115-ed7264b43aa4",
     "name": "🇲🇽 Tacos Orinoco",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0116-30b8737fb4d2",
     "name": "🇲🇽 Estamos Perdidas",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -704,7 +704,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0118-ad07112c4b3b",
     "name": "🇲🇽 Skycoders",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -722,7 +722,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0121-b7808d02c6a4",
     "name": "🇲🇽 Sopes",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -740,13 +740,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0124-e44ab6e1102e",
     "name": "🇲🇽 CPUAC",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0125-672e5b758071",
     "name": "🇲🇽 Racso va a caer",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -788,7 +788,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0132-8b7971509915",
     "name": "🇲🇽 UnregisteredHypercam2",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -806,7 +806,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0135-7c6c6cccaebf",
     "name": "🇲🇽 Zumitos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -824,7 +824,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0138-cb2139385588",
     "name": "🇲🇽 Ciencias NP",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -866,13 +866,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0145-fc1e43c19e59",
     "name": "🇲🇽 3^3",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0146-d54f8b0de14c",
     "name": "🇲🇽 Snack Overflow",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -890,7 +890,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0149-d9856ab43f79",
     "name": "🇲🇽 MLA",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -908,7 +908,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0152-b7cbb53f40ff",
     "name": "🇲🇽 Pollitos armados",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -926,13 +926,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0155-843f5e64aa82",
     "name": "🇲🇽 MasterCodes_117",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0156-3e39d0201cce",
     "name": "🇲🇽 (:v)3",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -974,7 +974,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0163-911a0672ebdc",
     "name": "🇲🇽 DreamTeam++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -986,13 +986,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0165-c4f698895872",
     "name": "🇲🇽 basiquitos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0166-e7e2e1d3fdc4",
     "name": "🇲🇽 Árbol",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -1004,7 +1004,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0168-358e9e8b182d",
     "name": "🇲🇽 FirsTLE",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -1022,13 +1022,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0171-905fee2009d9",
     "name": "🇲🇽 @iTEC",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0172-86d679e8043e",
     "name": "🇲🇽 Teorema del mono infinito",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -1040,19 +1040,19 @@
   {
     "id": "2026-gpm-qualifier-1-row-0174-32ab2b600926",
     "name": "🇲🇽 Tha land of big(O)oo",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0175-a87340bd8dcb",
     "name": "🇲🇽 hermanos brothers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0176-e5085627fd17",
     "name": "🇲🇽 Grupo de ayuda para adictos al TLE",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -1070,13 +1070,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0179-aef1e495a4b2",
     "name": "🇲🇽 Revolucion Ruta 302",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0180-43003b951999",
     "name": "🇲🇽 Vibecoders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1094,7 +1094,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0183-7ea79fc06803",
     "name": "🇲🇽 Dr. Simi",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -1124,7 +1124,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0188-647b3cd19cb3",
     "name": "🇲🇽 Hope Overflow",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1172,7 +1172,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0196-e063586136fd",
     "name": "🇲🇽 solvers++",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1184,7 +1184,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0198-fb8bbc3f440a",
     "name": "🇲🇽 Se nos perdió Zarate...",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
@@ -1196,7 +1196,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0200-38da14b19dce",
     "name": "🇲🇽 Pi, Pi, Pi, Pino La Anguila",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -1214,7 +1214,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0203-01802dbb6584",
     "name": "🇲🇽 Code Collective Crusaders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1232,7 +1232,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0206-6c769fa9cfa5",
     "name": "🇲🇽 tripi tropis",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1256,7 +1256,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0210-8fdfd6d8aa83",
     "name": "🇲🇽 Li Chao Team",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
@@ -1274,7 +1274,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0213-3adf730adb65",
     "name": "🇲🇽 Alergicos al AC",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -1292,7 +1292,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0216-895932a4908a",
     "name": "🇲🇽 JotaAGe",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
@@ -1334,13 +1334,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0223-2c2165e19938",
     "name": "🇲🇽 CodeDogs",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0224-a7e7720ee9e8",
     "name": "🇲🇽 Kernel Panic",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -1352,7 +1352,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0226-4a68d7c894ad",
     "name": "🇲🇽 K-Pop Demon Coders",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -1376,7 +1376,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0230-fd87802fcc43",
     "name": "🇲🇽 Los TestCases",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1394,7 +1394,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0233-13b81e95c7ae",
     "name": "🇲🇽 Claro! Aquí tienes ideas de nombres para equipos desempleados de cp: PapeadosFI",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -1406,37 +1406,37 @@
   {
     "id": "2026-gpm-qualifier-1-row-0235-ee8e219cbe23",
     "name": "🇲🇽 TPS DATA",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0236-050f0b0b2967",
     "name": "🇲🇽 MIX",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0237-ad4cfb4953fa",
     "name": "🇲🇽 papucitosnfactorial",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0238-f15a0e995615",
     "name": "🇲🇽 Los Primos",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0239-d266d31c0bb8",
     "name": "🇲🇽 Tacos de llanto y estrés",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0240-aace736d52c6",
     "name": "🇲🇽 Faith Limit Exceeded",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -1448,7 +1448,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0242-dad8c294a3d2",
     "name": "🇲🇽 International Coding Papupros Corporation",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1466,13 +1466,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0245-a21b5874e5ed",
     "name": "🇲🇽 Andatti",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0246-cd392506a582",
     "name": "🇲🇽 TLE y pa casa",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -1484,7 +1484,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0248-1b3802602937",
     "name": "🇲🇽 SharkByte",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1496,7 +1496,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0250-54d37be04efc",
     "name": "🇲🇽",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1556,13 +1556,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0260-273d916ccc5f",
     "name": "🇲🇽 Tacos Envenenados: El Regreso",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0261-594a49bb7a9d",
     "name": "🇲🇽 TripleT",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1580,7 +1580,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0264-8d793305ac72",
     "name": "🇲🇽 BuenoLoIntentamos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -1598,7 +1598,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0267-0bc91423b4d9",
     "name": "🇲🇽 Claude Mythos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -1616,7 +1616,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0270-8021a7ec0976",
     "name": "🇲🇽 Es gráficas, no grafos. Es Lay-tek no latex",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -1640,7 +1640,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0274-cd7370c8f1e9",
     "name": "🇲🇽 Code Malone",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1670,13 +1670,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0279-31f16002dd59",
     "name": "🇲🇽 Dinamita",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0280-0c26bb560663",
     "name": "🇲🇽 smiling_friends.cpp",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
@@ -1694,7 +1694,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0283-2a0dc0991c79",
     "name": "🇲🇽 )Drop table equipos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -1712,19 +1712,19 @@
   {
     "id": "2026-gpm-qualifier-1-row-0286-6f81d1e2b40c",
     "name": "🇲🇽 La magia de la amistad",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0287-82419f3db1ec",
     "name": "🇲🇽 Compilación a último minuto",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0288-d274bb9992ca",
     "name": "🇲🇽 ThePlatyPOOsV3.0",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -1736,25 +1736,25 @@
   {
     "id": "2026-gpm-qualifier-1-row-0290-1ae3d578b451",
     "name": "🇲🇽 If(we == FAIL) try again",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0291-c85d5fc6c91d",
     "name": "🇲🇽 Holy C++",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0292-2d05b9176bf1",
     "name": "🇲🇽 Gatitos Explosivos",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0293-b5b70209b18c",
     "name": "🇲🇽 My python in SQLazo",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
@@ -1790,7 +1790,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0299-31d43800bdc3",
     "name": "🇲🇽 Testigos de Ávila",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -1808,25 +1808,25 @@
   {
     "id": "2026-gpm-qualifier-1-row-0302-b9d58f2bb216",
     "name": "🇲🇽 MicrobiOS",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0303-e054e7ce67aa",
     "name": "🇲🇽 Kairos",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0304-d5bd7eefc312",
     "name": "🇲🇽 Tourists",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0305-ee7021f2fd2b",
     "name": "🇲🇽 O(n!)",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -1838,7 +1838,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0307-81dd0563a165",
     "name": "🇲🇽 ChilaquilesDivorciadosConPollo",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -1868,7 +1868,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0312-fa42c7f0eb25",
     "name": "🇲🇽 Tortas Ahogadas Dev Team",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -1880,19 +1880,19 @@
   {
     "id": "2026-gpm-qualifier-1-row-0314-92aae3f9dba4",
     "name": "🇲🇽 Chocomilk en bolsa",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0315-b77495637341",
     "name": "🇲🇽 Java &gt; Python",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0316-da7681dd911e",
     "name": "🇲🇽 BK2",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2026
   },
   {
@@ -1922,7 +1922,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0321-7003c5c2dc5a",
     "name": "🇲🇽 Banda El Limón",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1940,7 +1940,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0324-12c8a6347729",
     "name": "🇲🇽 Team_Opus4.6",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1952,13 +1952,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0326-01033f0a35bb",
     "name": "🇲🇽 BubbleSpammerEnjoyers",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0327-d31c6a2259ed",
     "name": "🇲🇽 David el Pro XD",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -1988,7 +1988,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0332-7f001352b2e7",
     "name": "🇲🇽 Papi Claude",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2000,7 +2000,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0334-12d62490e30b",
     "name": "🇲🇽 Cuaterniones",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
@@ -2030,7 +2030,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0339-2b4cc5173b75",
     "name": "🇲🇽 Segment Treemendo",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -2078,13 +2078,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0347-b6e50e91b7dc",
     "name": "🇲🇽 Cortisol takes all",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0348-be25411d2cff",
     "name": "🇲🇽 Los escombritos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -2096,7 +2096,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0350-7955ecf6e7ea",
     "name": "🇲🇽 Nos pasamos de Overflow",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -2108,13 +2108,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0352-f9e1549f6b17",
     "name": "🇲🇽 Incodeables",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0353-11ad38f40a03",
     "name": "🇲🇽 DEC 404",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -2144,7 +2144,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0358-586aea84e0fa",
     "name": "🇲🇽 Stem fesc",
-    "schoolId": "source-school-0835dc54967a",
+    "schoolId": "unam-fes-cuautitlan",
     "seasonYear": 2026
   },
   {
@@ -2156,31 +2156,31 @@
   {
     "id": "2026-gpm-qualifier-1-row-0360-2732618f56bd",
     "name": "🇲🇽 Chispas",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0361-9dfa6c13e9dd",
     "name": "🇲🇽 SyntaxError",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0362-ff35b6645068",
     "name": "🇲🇽 borreguitos.cpp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0363-e8af92926a16",
     "name": "🇲🇽 Bazinga",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0364-f2d512d68471",
     "name": "🇲🇽 Larp Larp Larp Sahurs",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -2192,7 +2192,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0366-e29b950411a3",
     "name": "🇲🇽 KerangKecil",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2210,7 +2210,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0369-ace40c75d5f5",
     "name": "🇲🇽 StackStorm",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -2228,7 +2228,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0372-616141bd39fe",
     "name": "🇲🇽 Fórmula General",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2294,7 +2294,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0383-360c20f87fa0",
     "name": "🇲🇽 Claudeholics",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -2336,13 +2336,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0390-8d3a08fbf230",
     "name": "🇲🇽 BitWarden",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0391-fd96fe126817",
     "name": "🇲🇽 BlueKeys",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -2426,13 +2426,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0405-ee36b3d5f361",
     "name": "🇲🇽 Holodomor",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0406-71dddf823b24",
     "name": "🇲🇽 Imposibles De Ayudar",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -2480,7 +2480,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0414-6f0bd003e46b",
     "name": "🇲🇽 TORTASPATYY",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -2552,7 +2552,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0426-d03ac6f70cd1",
     "name": "🇲🇽 Lotus",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
@@ -2570,7 +2570,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0429-f561f682153e",
     "name": "🇲🇽 Supernenas",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -2594,7 +2594,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0433-45a144b418de",
     "name": "🇲🇽 achuSaludGracias",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -2606,7 +2606,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0435-e0ac934466b0",
     "name": "🇲🇽 Masa madre",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2624,7 +2624,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0438-9264628a07d7",
     "name": "🇲🇽 Cultivatec",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2702,7 +2702,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0451-ffbfe10ec70a",
     "name": "🇲🇽 EFN Remix",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2726,7 +2726,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0455-119b7861c714",
     "name": "🇲🇽 Poke1",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2750,7 +2750,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0459-ccd8ba0052c2",
     "name": "🇲🇽 AlphaTherians",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2834,7 +2834,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0473-8bfe0f465fca",
     "name": "🇲🇽 Monos",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2882,7 +2882,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0481-b3422cdfa530",
     "name": "🇲🇽 Hackstreet Girls",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2978,7 +2978,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0497-49fa456ed429",
     "name": "🇲🇽 Dream team",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -3188,7 +3188,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0532-0023a61e7b20",
     "name": "🇲🇽 6ix7even",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2026
   },
   {
@@ -3206,7 +3206,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0535-7709dcd4621a",
     "name": "🇲🇽 binario",
-    "schoolId": "source-school-26d80743abcd",
+    "schoolId": "ipn-upiicsa",
     "seasonYear": 2026
   },
   {
@@ -3224,7 +3224,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0538-7edb6f863fd1",
     "name": "🇲🇽 Bugbusters",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3242,13 +3242,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0541-811673e0fa70",
     "name": "🇲🇽 CabritasFC",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0542-9c51924a8ed5",
     "name": "🇲🇽 Chat, danos un nombre para ICPC",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -3260,7 +3260,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0544-c50477543114",
     "name": "🇲🇽 coahuilaceratops",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3290,7 +3290,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0549-3cdbc0477162",
     "name": "🇲🇽 Drimtim Patapim",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -3302,13 +3302,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0551-4248e2ec6c81",
     "name": "🇲🇽 Hacemos esto por FOMO",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0552-531e78654bf5",
     "name": "🇲🇽 Heelna",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -3326,13 +3326,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0555-4064ba4a27c6",
     "name": "🇲🇽 icpcnes",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0556-d1cf61dfac44",
     "name": "🇲🇽 JUEGUIPIBES",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3362,13 +3362,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0561-037f95338204",
     "name": "🇲🇽 Legión 501",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0562-fee6e616de3f",
     "name": "🇲🇽 long long long",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -3422,25 +3422,25 @@
   {
     "id": "2026-gpm-qualifier-1-row-0571-fb80867c1be6",
     "name": "🇲🇽 Mugiwaras",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0572-36a781cc4b5b",
     "name": "🇲🇽 Nao Nao",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0573-af43ecacff7f",
     "name": "🇲🇽 Navegantes de Cuajimalpa",
-    "schoolId": "source-school-26d80743abcd",
+    "schoolId": "ipn-upiicsa",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0574-6614c01f6852",
     "name": "🇲🇽 Ninja Code Force",
-    "schoolId": "source-school-1ffa2ceeda41",
+    "schoolId": "itesm-leon",
     "seasonYear": 2026
   },
   {
@@ -3452,7 +3452,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0576-e9b11bc5ba3a",
     "name": "🇲🇽 null pointers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3464,7 +3464,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0578-1faef7e984d7",
     "name": "🇲🇽 PapusPros",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3494,13 +3494,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0583-a2a88e72eee3",
     "name": "🇲🇽 Pumamaniaticos",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0584-aecf8155791a",
     "name": "🇲🇽 PyTrix",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -3518,7 +3518,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0587-dd21581ef7ae",
     "name": "🇲🇽 RecursionSquad",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -3536,7 +3536,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0590-5f58aa965f44",
     "name": "🇲🇽 Rollback",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3554,7 +3554,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0593-fff1a9db75bb",
     "name": "🇲🇽 Teorema de Noether",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3584,7 +3584,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0598-bbc4a59c51ac",
     "name": "🇲🇽 UMAzing IRyStocrats of Hallownest 67",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -3608,7 +3608,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0009-649c72721d90",
     "name": "🇲🇽 Academia de Pilotaje Aerostático Manuel Doblado (Clases Privadas de Anatomía y Género $100/hr ...",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3620,7 +3620,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0015-ce35a69602e6",
     "name": "🇲🇽 Adrián quería que nos pusiéramos un nombre largo por alguna razón, y como no decidimos cuál no...",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -3644,7 +3644,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0051-9f56651f1f10",
     "name": "🇲🇽 LanievepintalamontañahoyNohayhuellasqueseguirEnlasoledad,unreinoYlareinaviveenmíElvientorugeYh...",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3728,7 +3728,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0161-7499329de6f6",
     "name": "🇲🇽 chalanes.cpp",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3776,7 +3776,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0215-10a223eb2e51",
     "name": "🇲🇽 No era Greedy",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
@@ -3800,7 +3800,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0243-697f4a66291c",
     "name": "🇲🇽 Tortas Ahogadas Dev Team 🌮",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -3866,7 +3866,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0349-12fa3ef21170",
     "name": "🇲🇽 IZPZ",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3908,7 +3908,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0377-2971a2fe0b9e",
     "name": "🇲🇽 dinamita",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -3980,7 +3980,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0433-589c438e5725",
     "name": "🇲🇽 Sigma",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3998,7 +3998,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0441-c20d8bc79c84",
     "name": "🇲🇽 Las chicas superpoderosas y Toño",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -4106,7 +4106,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0505-e745475036cf",
     "name": "🇲🇽 Arielados",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -4130,7 +4130,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0513-441d54590c04",
     "name": "🇲🇽 booleados",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -4202,7 +4202,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0562-e482d2e1c5ee",
     "name": "🇲🇽 Dinamicos",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -4244,7 +4244,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0586-cb80b3b47c54",
     "name": "🇲🇽 ICPCausas",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -4388,7 +4388,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0665-d314bb324195",
     "name": "🇲🇽 SIAFI",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -4412,7 +4412,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0673-f6c2f7745909",
     "name": "🇲🇽 The algorithms 67",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -4466,7 +4466,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0001-358d25b2ca0f",
     "name": "🇲🇽 Domain Expansion \"Abraham échate un hint\"",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -4478,7 +4478,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0008-58fe1ca80f25",
     "name": "🇲🇽 Adrián quería que nos pusiéramos un nombre largo por alguna razón, y como no decidimos cuál nombre era el mejor, intentamos pedirle al chatcito que nos generara una lista de nombres más atractivos para ICPC. Estos fueron los nombres que nos sugir",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -4490,7 +4490,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0015-e0abf7e4c91a",
     "name": "🇲🇽 Soy malo y eso es bueno, yo jamás seré bueno y eso no es malo",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2026
   },
   {
@@ -4502,7 +4502,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0027-ff4464ba087e",
     "name": "🇲🇽 while(!AC);",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -4514,13 +4514,13 @@
   {
     "id": "2026-gpm-qualifier-3-row-0043-e2aa109239a5",
     "name": "🇲🇽 Gatitas Tapabaños Nacatlán--",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-3-row-0053-b056ecb14a35",
     "name": "🇲🇽 \");Drop table equipos;--",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -4532,7 +4532,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0059-1d8aa512abcf",
     "name": "🇲🇽 \" \"",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -4544,7 +4544,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0067-0fb95598ef63",
     "name": "🇲🇽 En mi computadora si jalaba",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2026
   },
   {
@@ -4580,13 +4580,13 @@
   {
     "id": "2026-gpm-qualifier-3-row-0146-44eb377acb05",
     "name": "🇲🇽 return 0; // ese último WA no me dolió... lo suficiente.",
-    "schoolId": "source-school-b71fbe062024",
+    "schoolId": "ipn-esime-culhuacan",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-3-row-0164-88312a2847d4",
     "name": "🇲🇽 Farmacias Benavides",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -4598,13 +4598,13 @@
   {
     "id": "2026-gpm-qualifier-3-row-0187-a8cfe4d8dc53",
     "name": "🇲🇽 Los pelones",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-3-row-0188-f9fe93b7a9b1",
     "name": "🇲🇽 El jajas, el yoker, y el wai sou sirius",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -4634,19 +4634,19 @@
   {
     "id": "2026-gpm-qualifier-3-row-0217-742ef217e2c8",
     "name": "🇲🇽 Los Pythones, en honor al lenguaje de programación Python",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-3-row-0223-4d7656a9fccb",
     "name": "🇲🇽 victor<pair<emi, olayo>>",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-3-row-0231-4cc466428be4",
     "name": "🇲🇽 Es gráficas, no grafos. Es \"Lay-tek\" no \"latex\"",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -4664,13 +4664,13 @@
   {
     "id": "2026-gpm-qualifier-3-row-0262-5810e63fb70f",
     "name": "🇲🇽 Trasvestis de Tlajomulco",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-3-row-0263-2f9595433bf4",
     "name": "🇲🇽 Costillas y Pollos al Carbón \"Francisco Ignacio X\"",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -4688,7 +4688,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0277-69c7740a1dc3",
     "name": "🇲🇽 \"Java > Python \"",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -4700,13 +4700,13 @@
   {
     "id": "2026-gpm-qualifier-3-row-0285-8151d0037029",
     "name": "🇲🇽 Aura farmer's dab 67",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-3-row-0295-3e7e565bf0e4",
     "name": "🇲🇽 .PDF",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -4724,13 +4724,13 @@
   {
     "id": "2026-gpm-qualifier-3-row-0328-657e945bd20d",
     "name": "🇲🇽 Pepto Bismol",
-    "schoolId": "source-school-0149ac9523a7",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-3-row-0340-840d431ba2fc",
     "name": "🇲🇽 IDKWIA",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -4898,7 +4898,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0494-75251bf96780",
     "name": "🇲🇽 LanievepintalamontañahoyNohayhuellasqueseguirEnlasoledad,unreinoYlareinaviveenmíElvientorugeYhaytormentaenmiinteriorUnatempestadQuedemísalióLoquehayenti,nodejesverBuenachica,túsiempredebesserNohasdeabrirtucorazónPuesyaseabrióLibresoy,libresoy",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -4994,7 +4994,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0554-975ae6ff5438",
     "name": "🇲🇽 Pino Espino Espinoza",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -5060,31 +5060,31 @@
   {
     "id": "2026-gpm-accumulated-1127493",
     "name": "🇲🇽 Oasis",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128527",
     "name": "🇲🇽 Domain Expansion Abraham échate un hint",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126734",
     "name": "🇲🇽 :)",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126730",
     "name": "🇲🇽 Hijos del Puntero",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127051",
     "name": "🇲🇽 Y con esto, terminamos la carrera",
-    "schoolId": "source-school-84fe5610e0ce",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -5096,13 +5096,13 @@
   {
     "id": "2026-gpm-accumulated-1127167",
     "name": "🇲🇽 Adrián quería que nos pusiéramos un nombre largo por alguna razón, y como no decidimos cuál nombre era el mejor, intentamos pedirle al chatcito que nos generara una lista de nombres más atractivos par",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126438",
     "name": "🇲🇽 Academia de Pilotaje Aerostático Manuel Doblado (Clases Privadas de Anatomía y Género $100/hr + 529993244386)",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5114,13 +5114,13 @@
   {
     "id": "2026-gpm-accumulated-1127319",
     "name": "🇲🇽 The algorithms are talking",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126733",
     "name": "🇲🇽 :Alianza de Autismo de Puerto Rico",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -5144,7 +5144,7 @@
   {
     "id": "2026-gpm-accumulated-1128611",
     "name": "🇲🇽 Prisioneros de Alcatraz",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5156,7 +5156,7 @@
   {
     "id": "2026-gpm-accumulated-1128214",
     "name": "🇲🇽 Las Chivas de Milito",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -5168,7 +5168,7 @@
   {
     "id": "2026-gpm-accumulated-1128259",
     "name": "🇲🇽 The good, the bad and the ugly",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5180,19 +5180,19 @@
   {
     "id": "2026-gpm-accumulated-1124449",
     "name": "🇲🇽 Los Ratones",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126433",
     "name": "🇲🇽 Data Divas",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126735",
     "name": "🇲🇽 botellopai23",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -5204,7 +5204,7 @@
   {
     "id": "2026-gpm-accumulated-1127172",
     "name": "🇲🇽 Labubus vs Ternurines II",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -5222,13 +5222,13 @@
   {
     "id": "2026-gpm-accumulated-1128262",
     "name": "🇲🇽 while(!AC)",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126436",
     "name": "🇲🇽 ATCSUSMS (Alianza)",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5252,7 +5252,7 @@
   {
     "id": "2026-gpm-accumulated-1128265",
     "name": "🇲🇽 Equipo Rosa (los muchachitos)",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5282,7 +5282,7 @@
   {
     "id": "2026-gpm-accumulated-1128574",
     "name": "🇲🇽 Chat. Aviéntate un nombre bien tuneadísimo y de paso la solución del F, con papas para llevar.",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -5300,7 +5300,7 @@
   {
     "id": "2026-gpm-accumulated-1126908",
     "name": "🇲🇽 Gigante Noble",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5312,7 +5312,7 @@
   {
     "id": "2026-gpm-accumulated-1128535",
     "name": "🇲🇽 Silencio, empezaron mis frutinovelas",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -5366,13 +5366,13 @@
   {
     "id": "2026-gpm-accumulated-1127155",
     "name": "🇲🇽 Claude Opus 4.6",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127049",
     "name": "🇲🇽 Paletería la Michoacana",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -5384,13 +5384,13 @@
   {
     "id": "2026-gpm-accumulated-1126437",
     "name": "🇲🇽 Nao Nao",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127131",
     "name": "🇲🇽 NPCs",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -5402,7 +5402,7 @@
   {
     "id": "2026-gpm-accumulated-1128549",
     "name": "🇲🇽 Nos equivocamos de olimpiada",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -5438,7 +5438,7 @@
   {
     "id": "2026-gpm-accumulated-1127227",
     "name": "🇲🇽 Gatitas Tapabaños Nacatlán",
-    "schoolId": "source-school-bd755128e841",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
@@ -5450,7 +5450,7 @@
   {
     "id": "2026-gpm-accumulated-1128555",
     "name": "🇲🇽 Estamos Perdidas",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -5468,7 +5468,7 @@
   {
     "id": "2026-gpm-accumulated-1127949",
     "name": "🇲🇽 Encontramos a Zarate...",
-    "schoolId": "source-school-c9017650908b",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
@@ -5480,7 +5480,7 @@
   {
     "id": "2026-gpm-accumulated-1132431",
     "name": "🇲🇽 LanievepintalamontañahoyNohayhuellasqueseguirEnlasoledad,unreinoYlareinaviveenmíElvientorugeYh...",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5510,7 +5510,7 @@
   {
     "id": "2026-gpm-accumulated-1126736",
     "name": "🇲🇽 Heap Thrust",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -5522,19 +5522,19 @@
   {
     "id": "2026-gpm-accumulated-1128548",
     "name": "🇲🇽 Requiem",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127182",
     "name": "🇲🇽 Gatos Naranjosos",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128524",
     "name": "🇲🇽 Ajolotetos",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -5558,19 +5558,19 @@
   {
     "id": "2026-gpm-accumulated-1127152",
     "name": "🇲🇽 acuantoelmamutdeapeso",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128260",
     "name": "🇲🇽 Arroz con leche, me quiero matar",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128570",
     "name": "🇲🇽 CpLovers2:elRegreso",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -5588,13 +5588,13 @@
   {
     "id": "2026-gpm-accumulated-1128254",
     "name": "🇲🇽 temp++",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126740",
     "name": "🇲🇽 Racso va a caer",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -5606,7 +5606,7 @@
   {
     "id": "2026-gpm-accumulated-1127163",
     "name": "🇲🇽 Chirigüillos de Tamaulipas",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5642,19 +5642,19 @@
   {
     "id": "2026-gpm-accumulated-1127138",
     "name": "🇲🇽 Bellakos",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126739",
     "name": "🇲🇽 FractalTeam",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128575",
     "name": "🇲🇽 3 randoms hacen lo suyo y se van",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -5672,13 +5672,13 @@
   {
     "id": "2026-gpm-accumulated-1127164",
     "name": "🇲🇽 solvers++",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128164",
     "name": "🇲🇽 return 0 // ese último WA no me dolió... lo suficiente.",
-    "schoolId": "source-school-f512b4d3b560",
+    "schoolId": "ipn-esime-culhuacan",
     "seasonYear": 2026
   },
   {
@@ -5696,7 +5696,7 @@
   {
     "id": "2026-gpm-accumulated-1127329",
     "name": "🇲🇽 Pi, Pi, Pi, Pino La Anguila",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -5708,7 +5708,7 @@
   {
     "id": "2026-gpm-accumulated-1128614",
     "name": "🇲🇽 Teorema del mono infinito",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5732,13 +5732,13 @@
   {
     "id": "2026-gpm-accumulated-1127151",
     "name": "🇲🇽 CPUAC",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1124533",
     "name": "🇲🇽 )Drop table equipos",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -5750,13 +5750,13 @@
   {
     "id": "2026-gpm-accumulated-1127009",
     "name": "🇲🇽 Skycoders",
-    "schoolId": "source-school-84fe5610e0ce",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126511",
     "name": "🇲🇽",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5768,7 +5768,7 @@
   {
     "id": "2026-gpm-accumulated-1127048",
     "name": "🇲🇽 Kairos",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -5780,7 +5780,7 @@
   {
     "id": "2026-gpm-accumulated-1126829",
     "name": "🇲🇽 victor&lt;pair&lt;emi, olayo&gt;&gt;",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -5792,31 +5792,31 @@
   {
     "id": "2026-gpm-accumulated-1128266",
     "name": "🇲🇽 Zumitos",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127153",
     "name": "🇲🇽 MLA",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127929",
     "name": "🇲🇽 4 Ostras Voladoras",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126434",
     "name": "🇲🇽 UnregisteredHypercam2",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128218",
     "name": "🇲🇽 3^3",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -5840,7 +5840,7 @@
   {
     "id": "2026-gpm-accumulated-1127948",
     "name": "🇲🇽 Se nos perdió Zarate...",
-    "schoolId": "source-school-c9017650908b",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
@@ -5864,7 +5864,7 @@
   {
     "id": "2026-gpm-accumulated-1127228",
     "name": "🇲🇽 Buenas tardes",
-    "schoolId": "source-school-bd755128e841",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
@@ -5900,7 +5900,7 @@
   {
     "id": "2026-gpm-accumulated-1126400",
     "name": "🇲🇽 TripleT",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5912,7 +5912,7 @@
   {
     "id": "2026-gpm-accumulated-1126446",
     "name": "🇲🇽 Sopes",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5930,7 +5930,7 @@
   {
     "id": "2026-gpm-accumulated-1128267",
     "name": "🇲🇽 Claudeholics",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5942,25 +5942,25 @@
   {
     "id": "2026-gpm-accumulated-1127321",
     "name": "🇲🇽 Andatti",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128253",
     "name": "🇲🇽 segmentationFault :(",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128541",
     "name": "🇲🇽 Tacos Envenenados: El Regreso",
-    "schoolId": "source-school-cbe370566f4c",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128488",
     "name": "🇲🇽 Pollitos armados",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -5978,19 +5978,19 @@
   {
     "id": "2026-gpm-accumulated-1128247",
     "name": "🇲🇽 Bits&Bytes",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126827",
     "name": "🇲🇽 FirsTLE",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127157",
     "name": "🇲🇽 Tha land of big(O)oo",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -6014,7 +6014,7 @@
   {
     "id": "2026-gpm-accumulated-1126431",
     "name": "🇲🇽 Tacos Orinoco",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6032,7 +6032,7 @@
   {
     "id": "2026-gpm-accumulated-1128612",
     "name": "🇲🇽 Árbol",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -6044,7 +6044,7 @@
   {
     "id": "2026-gpm-accumulated-1128135",
     "name": "🇲🇽 De ultimo momento",
-    "schoolId": "source-school-f8a66d8f4c32",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -6062,7 +6062,7 @@
   {
     "id": "2026-gpm-accumulated-1126741",
     "name": "🇲🇽 Grupo de ayuda para adictos al TLE",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -6080,25 +6080,25 @@
   {
     "id": "2026-gpm-accumulated-1128225",
     "name": "🇲🇽 Patitas EnVinagre.exe",
-    "schoolId": "source-school-84fe5610e0ce",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128550",
     "name": "🇲🇽 Tacos de llanto y estrés",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128277",
     "name": "🇲🇽 Tilines Insanos",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128189",
     "name": "🇲🇽 BFS (Boys Freaking Sexys)",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -6122,7 +6122,7 @@
   {
     "id": "2026-gpm-accumulated-1126742",
     "name": "🇲🇽 Tourists",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -6134,7 +6134,7 @@
   {
     "id": "2026-gpm-accumulated-1127480",
     "name": "🇲🇽 hermanos brothers",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6152,7 +6152,7 @@
   {
     "id": "2026-gpm-accumulated-1128563",
     "name": "🇲🇽 BubbleSpammerEnjoyers",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -6170,7 +6170,7 @@
   {
     "id": "2026-gpm-accumulated-1128133",
     "name": "🇲🇽 BlueKeys",
-    "schoolId": "source-school-f8a66d8f4c32",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -6218,7 +6218,7 @@
   {
     "id": "2026-gpm-accumulated-1127821",
     "name": "🇲🇽 Faith Limit Exceeded",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -6230,13 +6230,13 @@
   {
     "id": "2026-gpm-accumulated-1128196",
     "name": "🇲🇽 Los 3B",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128605",
     "name": "🇲🇽 Holodomor",
-    "schoolId": "source-school-84fe5610e0ce",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -6248,7 +6248,7 @@
   {
     "id": "2026-gpm-accumulated-1128481",
     "name": "🇲🇽 achuSaludGracias",
-    "schoolId": "source-school-84fe5610e0ce",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -6266,13 +6266,13 @@
   {
     "id": "2026-gpm-accumulated-1128621",
     "name": "🇲🇽 Chocomilk en bolsa",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127173",
     "name": "🇲🇽 Snack Overflow",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -6290,13 +6290,13 @@
   {
     "id": "2026-gpm-accumulated-1128556",
     "name": "🇲🇽 Compilación a último minuto",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126743",
     "name": "🇲🇽 Claro! Aquí tienes ideas de nombres para equipos desempleados de cp: PapeadosFI",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -6320,19 +6320,19 @@
   {
     "id": "2026-gpm-accumulated-1127154",
     "name": "🇲🇽 ChilaquilesDivorciadosConPollo",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128529",
     "name": "🇲🇽 Testigos de Ávila",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128263",
     "name": "🇲🇽 DreamTeam++",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -6350,7 +6350,7 @@
   {
     "id": "2026-gpm-accumulated-1128540",
     "name": "🇲🇽 Chispas",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -6362,13 +6362,13 @@
   {
     "id": "2026-gpm-accumulated-1128249",
     "name": "🇲🇽 Linuxeros",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126738",
     "name": "🇲🇽 Nos pasamos de Overflow",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -6404,7 +6404,7 @@
   {
     "id": "2026-gpm-accumulated-1129021",
     "name": "🇲🇽 Team_Opus4.6",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6416,19 +6416,19 @@
   {
     "id": "2026-gpm-accumulated-1127145",
     "name": "🇲🇽 SyntaxError",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128603",
     "name": "🇲🇽 Supernenas",
-    "schoolId": "source-school-84fe5610e0ce",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126638",
     "name": "🇲🇽 TPS DATA",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6440,25 +6440,25 @@
   {
     "id": "2026-gpm-accumulated-1128557",
     "name": "🇲🇽 TLE y pa casa",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126737",
     "name": "🇲🇽 K-Pop Demon Coders",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126744",
     "name": "🇲🇽 papucitosnfactorial",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126828",
     "name": "🇲🇽 Es gráficas, no grafos. Es Lay-tek no latex",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -6476,7 +6476,7 @@
   {
     "id": "2026-gpm-accumulated-1127225",
     "name": "🇲🇽 My python in SQLazo",
-    "schoolId": "source-school-bd755128e841",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
@@ -6494,19 +6494,19 @@
   {
     "id": "2026-gpm-accumulated-1128117",
     "name": "🇲🇽 Tortas Ahogadas Dev Team",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128279",
     "name": "🇲🇽 Java &gt; Python",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128251",
     "name": "🇲🇽 Mixiote Team",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -6518,19 +6518,19 @@
   {
     "id": "2026-gpm-accumulated-1128278",
     "name": "🇲🇽 Mango con Tajín",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128257",
     "name": "🇲🇽 Segment Treemendo",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127660",
     "name": "🇲🇽 Hope Overflow",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6548,7 +6548,7 @@
   {
     "id": "2026-gpm-accumulated-1128224",
     "name": "🇲🇽 Cortisol takes all",
-    "schoolId": "source-school-84fe5610e0ce",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -6560,25 +6560,25 @@
   {
     "id": "2026-gpm-accumulated-1127662",
     "name": "🇲🇽 International Coding Papupros Corporation",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127661",
     "name": "🇲🇽 MicrobiOS",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128268",
     "name": "🇲🇽 If(we == FAIL) try again",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128124",
     "name": "🇲🇽 Banda El Limón",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6608,13 +6608,13 @@
   {
     "id": "2026-gpm-accumulated-1128459",
     "name": "🇲🇽 CuboLobitos",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127603",
     "name": "🇲🇽 Stem fesc",
-    "schoolId": "source-school-9fb0a30c8929",
+    "schoolId": "unam-fes-cuautitlan",
     "seasonYear": 2026
   },
   {
@@ -6692,7 +6692,7 @@
   {
     "id": "2026-gpm-accumulated-1128532",
     "name": "🇲🇽 Dr. Simi",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -6704,7 +6704,7 @@
   {
     "id": "2026-gpm-accumulated-1126435",
     "name": "🇲🇽 (:v)3",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6716,19 +6716,19 @@
   {
     "id": "2026-gpm-accumulated-1124503",
     "name": "🇲🇽 internal pointer",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127179",
     "name": "🇲🇽 Ciencias NP",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128523",
     "name": "🇲🇽 BuenoLoIntentamos",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -6740,13 +6740,13 @@
   {
     "id": "2026-gpm-accumulated-1126832",
     "name": "🇲🇽 MIX",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128553",
     "name": "🇲🇽 VoidCoders",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -6776,7 +6776,7 @@
   {
     "id": "2026-gpm-accumulated-1127174",
     "name": "🇲🇽 tripi tropis",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -6806,13 +6806,13 @@
   {
     "id": "2026-gpm-accumulated-1127052",
     "name": "🇲🇽 SharkByte",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126830",
     "name": "🇲🇽 ThePlatyPOOsV3.0",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -6830,31 +6830,31 @@
   {
     "id": "2026-gpm-accumulated-1128441",
     "name": "🇲🇽 Holy C++",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1134418",
     "name": "🇲🇽 chalanes.cpp",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127150",
     "name": "🇲🇽 Kernel Panic",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128536",
     "name": "🇲🇽 basiquitos",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126432",
     "name": "🇲🇽 Revolucion Ruta 302",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6866,7 +6866,7 @@
   {
     "id": "2026-gpm-accumulated-1127659",
     "name": "🇲🇽 Vibecoders",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6878,7 +6878,7 @@
   {
     "id": "2026-gpm-accumulated-1127574",
     "name": "🇲🇽 Los TestCases",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -6890,7 +6890,7 @@
   {
     "id": "2026-gpm-accumulated-1127136",
     "name": "🇲🇽 MasterCodes_117",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -6938,7 +6938,7 @@
   {
     "id": "2026-gpm-accumulated-1128620",
     "name": "🇲🇽 Masa madre",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -6980,19 +6980,19 @@
   {
     "id": "2026-gpm-accumulated-1127229",
     "name": "🇲🇽 Los Primos",
-    "schoolId": "source-school-bd755128e841",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127226",
     "name": "🇲🇽 CodeDogs",
-    "schoolId": "source-school-bd755128e841",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127479",
     "name": "🇲🇽 BK2",
-    "schoolId": "source-school-df77f8c4e06f",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2026
   },
   {
@@ -7004,7 +7004,7 @@
   {
     "id": "2026-gpm-accumulated-1126831",
     "name": "🇲🇽 O(n!)",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -7016,13 +7016,13 @@
   {
     "id": "2026-gpm-accumulated-1124502",
     "name": "🇲🇽 Code Malone",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128483",
     "name": "🇲🇽 DEC 404",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -7034,43 +7034,43 @@
   {
     "id": "2026-gpm-accumulated-1126913",
     "name": "🇲🇽 borreguitos.cpp",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127180",
     "name": "🇲🇽 Gatitos Explosivos",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128191",
     "name": "🇲🇽 Balloon Boys",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126932",
     "name": "🇲🇽 KerangKecil",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128623",
     "name": "🇲🇽 La magia de la amistad",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1134667",
     "name": "🇲🇽 IZPZ",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127298",
     "name": "🇲🇽 Larp Larp Larp Sahurs",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -7082,7 +7082,7 @@
   {
     "id": "2026-gpm-accumulated-1128065",
     "name": "🇲🇽 Papi Claude",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -7094,7 +7094,7 @@
   {
     "id": "2026-gpm-accumulated-1128215",
     "name": "🇲🇽 Bazinga",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -7130,7 +7130,7 @@
   {
     "id": "2026-gpm-accumulated-1128261",
     "name": "🇲🇽 gatito include",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -7166,7 +7166,7 @@
   {
     "id": "2026-gpm-accumulated-1127658",
     "name": "🇲🇽 BitWarden",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -7178,7 +7178,7 @@
   {
     "id": "2026-gpm-accumulated-1128604",
     "name": "🇲🇽 Heelna",
-    "schoolId": "source-school-84fe5610e0ce",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2026
   },
   {
@@ -7196,7 +7196,7 @@
   {
     "id": "2026-gpm-accumulated-1128609",
     "name": "🇲🇽 Dream team",
-    "schoolId": "source-school-f8a66d8f4c32",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -7244,13 +7244,13 @@
   {
     "id": "2026-gpm-accumulated-1128256",
     "name": "🇲🇽 Chat, danos un nombre para ICPC",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128517",
     "name": "🇲🇽 Poke1",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7292,13 +7292,13 @@
   {
     "id": "2026-gpm-accumulated-1128301",
     "name": "🇲🇽 long long long",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1134669",
     "name": "🇲🇽 Sigma",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7316,7 +7316,7 @@
   {
     "id": "2026-gpm-accumulated-1128619",
     "name": "🇲🇽 EFN Remix",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7352,19 +7352,19 @@
   {
     "id": "2026-gpm-accumulated-1128624",
     "name": "🇲🇽 AlphaTherians",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1144301",
     "name": "🇲🇽 En mi computadora si jalaba",
-    "schoolId": "source-school-cbe370566f4c",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127663",
     "name": "🇲🇽 Rascals Last AC",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -7376,13 +7376,13 @@
   {
     "id": "2026-gpm-accumulated-1128569",
     "name": "🇲🇽 UMAzing IRyStocrats of Hallownest 67",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128269",
     "name": "🇲🇽 Look-What-You-Made-Me-Code",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -7418,37 +7418,37 @@
   {
     "id": "2026-gpm-accumulated-1127657",
     "name": "🇲🇽 @iTEC",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1145305",
     "name": "🇲🇽 Farmacias Benavides",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128122",
     "name": "🇲🇽 Code Collective Crusaders",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1145486",
     "name": "🇲🇽 Los pelones",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1145583",
     "name": "🇲🇽 El jajas, el yoker, y el wai sou sirius",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128673",
     "name": "🇲🇽 Alergicos al AC",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -7496,7 +7496,7 @@
   {
     "id": "2026-gpm-accumulated-1145564",
     "name": "🇲🇽 Los Pythones, en honor al lenguaje de programación Python",
-    "schoolId": "source-school-5b30fd95c616",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -7514,7 +7514,7 @@
   {
     "id": "2026-gpm-accumulated-1128572",
     "name": "🇲🇽 Claude Mythos",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -7526,7 +7526,7 @@
   {
     "id": "2026-gpm-accumulated-1128533",
     "name": "🇲🇽 Dinamita",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -7544,7 +7544,7 @@
   {
     "id": "2026-gpm-accumulated-1128282",
     "name": "🇲🇽 Zero Devs",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -7556,7 +7556,7 @@
   {
     "id": "2026-gpm-accumulated-1128258",
     "name": "🇲🇽 Los NyE",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -7568,13 +7568,13 @@
   {
     "id": "2026-gpm-accumulated-1128255",
     "name": "🇲🇽 David el Pro XD",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128078",
     "name": "🇲🇽 Cuaterniones",
-    "schoolId": "source-school-c9017650908b",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
@@ -7592,19 +7592,19 @@
   {
     "id": "2026-gpm-accumulated-1126308",
     "name": "🇲🇽 PyTrix",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128971",
     "name": "🇲🇽 Los escombritos",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128123",
     "name": "🇲🇽 Incodeables",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -7622,13 +7622,13 @@
   {
     "id": "2026-gpm-accumulated-1145304",
     "name": "🇲🇽 Trasvestis de Tlajomulco",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1145307",
     "name": "🇲🇽 Costillas y Pollos al Carbón \"Francisco Ignacio X\"",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -7652,19 +7652,19 @@
   {
     "id": "2026-gpm-accumulated-1128134",
     "name": "🇲🇽 StackStorm",
-    "schoolId": "source-school-f8a66d8f4c32",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128613",
     "name": "🇲🇽 Fórmula General",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128435",
     "name": "🇲🇽 Pumamaniaticos",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -7682,13 +7682,13 @@
   {
     "id": "2026-gpm-accumulated-1134585",
     "name": "🇲🇽 No era Greedy",
-    "schoolId": "source-school-c9017650908b",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1145306",
     "name": "🇲🇽 Aura farmer's dab 67",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -7730,7 +7730,7 @@
   {
     "id": "2026-gpm-accumulated-1128280",
     "name": "🇲🇽 Dinastia",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -7742,13 +7742,13 @@
   {
     "id": "2026-gpm-accumulated-1126910",
     "name": "🇲🇽 Ninja Code Force",
-    "schoolId": "source-school-41239e5c8a3b",
+    "schoolId": "itesm-leon",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128552",
     "name": "🇲🇽 Imposibles De Ayudar",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -7766,7 +7766,7 @@
   {
     "id": "2026-gpm-accumulated-1128561",
     "name": "🇲🇽 TORTASPATYY",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -7790,7 +7790,7 @@
   {
     "id": "2026-gpm-accumulated-1145626",
     "name": "🇲🇽 .PDF",
-    "schoolId": "source-school-5b30fd95c616",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -7808,7 +7808,7 @@
   {
     "id": "2026-gpm-accumulated-1127950",
     "name": "🇲🇽 Lotus",
-    "schoolId": "source-school-c9017650908b",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2026
   },
   {
@@ -7838,7 +7838,7 @@
   {
     "id": "2026-gpm-accumulated-1127168",
     "name": "🇲🇽 Cultivatec",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -7856,7 +7856,7 @@
   {
     "id": "2026-gpm-accumulated-1145303",
     "name": "🇲🇽 Pepto Bismol",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -7892,7 +7892,7 @@
   {
     "id": "2026-gpm-accumulated-1145516",
     "name": "🇲🇽 IDKWIA",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -7928,7 +7928,7 @@
   {
     "id": "2026-gpm-accumulated-1134844",
     "name": "🇲🇽 dinamita",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -7946,7 +7946,7 @@
   {
     "id": "2026-gpm-accumulated-1128522",
     "name": "🇲🇽 Drimtim Patapim",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -8000,7 +8000,7 @@
   {
     "id": "2026-gpm-accumulated-1128622",
     "name": "🇲🇽 Monos",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -8024,7 +8024,7 @@
   {
     "id": "2026-gpm-accumulated-1128067",
     "name": "🇲🇽 Hackstreet Girls",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8042,13 +8042,13 @@
   {
     "id": "2026-gpm-accumulated-1134417",
     "name": "🇲🇽 Las chicas superpoderosas y Toño",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128283",
     "name": "🇲🇽 Pink pony club",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -8072,7 +8072,7 @@
   {
     "id": "2026-gpm-accumulated-1128264",
     "name": "🇲🇽 CodeStorm",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -8108,13 +8108,13 @@
   {
     "id": "2026-gpm-accumulated-1127666",
     "name": "🇲🇽 6ix7even",
-    "schoolId": "source-school-c81c4e48c8ed",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1134845",
     "name": "🇲🇽 Arielados",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -8150,7 +8150,7 @@
   {
     "id": "2026-gpm-accumulated-1134843",
     "name": "🇲🇽 booleados",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -8162,19 +8162,19 @@
   {
     "id": "2026-gpm-accumulated-1127176",
     "name": "🇲🇽 Bugbusters",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127175",
     "name": "🇲🇽 CabritasFC",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128061",
     "name": "🇲🇽 coahuilaceratops",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8240,7 +8240,7 @@
   {
     "id": "2026-gpm-accumulated-1134841",
     "name": "🇲🇽 Dinamicos",
-    "schoolId": "source-school-974208957e60",
+    "schoolId": "unam-fi",
     "seasonYear": 2026
   },
   {
@@ -8300,7 +8300,7 @@
   {
     "id": "2026-gpm-accumulated-1127615",
     "name": "🇲🇽 Hacemos esto por FOMO",
-    "schoolId": "source-school-23203f7743a5",
+    "schoolId": "ipn-escom",
     "seasonYear": 2026
   },
   {
@@ -8324,13 +8324,13 @@
   {
     "id": "2026-gpm-accumulated-1134943",
     "name": "🇲🇽 ICPCausas",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127162",
     "name": "🇲🇽 icpcnes",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -8366,13 +8366,13 @@
   {
     "id": "2026-gpm-accumulated-1128062",
     "name": "🇲🇽 JUEGUIPIBES",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128281",
     "name": "🇲🇽 Lagrangiano",
-    "schoolId": "source-school-1389d6b7512a",
+    "schoolId": "buap",
     "seasonYear": 2026
   },
   {
@@ -8414,7 +8414,7 @@
   {
     "id": "2026-gpm-accumulated-1127181",
     "name": "🇲🇽 Legión 501",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -8504,13 +8504,13 @@
   {
     "id": "2026-gpm-accumulated-1128493",
     "name": "🇲🇽 Mugiwaras",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127593",
     "name": "🇲🇽 Navegantes de Cuajimalpa",
-    "schoolId": "source-school-318679454525",
+    "schoolId": "ipn-upiicsa",
     "seasonYear": 2026
   },
   {
@@ -8528,13 +8528,13 @@
   {
     "id": "2026-gpm-accumulated-1127137",
     "name": "🇲🇽 null pointers",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126909",
     "name": "🇲🇽 PapusPros",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8552,7 +8552,7 @@
   {
     "id": "2026-gpm-accumulated-1135562",
     "name": "🇲🇽 Pino Espino Espinoza",
-    "schoolId": "source-school-dec505bbb795",
+    "schoolId": "udg-cucei",
     "seasonYear": 2026
   },
   {
@@ -8582,7 +8582,7 @@
   {
     "id": "2026-gpm-accumulated-1128486",
     "name": "🇲🇽 RecursionSquad",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -8594,7 +8594,7 @@
   {
     "id": "2026-gpm-accumulated-1126987",
     "name": "🇲🇽 Rollback",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8606,7 +8606,7 @@
   {
     "id": "2026-gpm-accumulated-1134766",
     "name": "🇲🇽 SIAFI",
-    "schoolId": "source-school-e1fb333bae37",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2026
   },
   {
@@ -8648,13 +8648,13 @@
   {
     "id": "2026-gpm-accumulated-1128587",
     "name": "🇲🇽 Teorema de Noether",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1134415",
     "name": "🇲🇽 The algorithms 67",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {

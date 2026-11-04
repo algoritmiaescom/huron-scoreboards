@@ -2510,7 +2510,7 @@
   {
     "id": "2022-gpm-qualifier-2-row-0096-siglo-xiii-upiiz",
     "name": "Siglo XIII - UPIIZ",
-    "schoolId": "ipn",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2022
   },
   {
@@ -12470,25 +12470,25 @@
   {
     "id": "2022-gpm-iteso-671993-upsolving",
     "name": "UPsolving",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-671924-icpcrikos",
     "name": "ICPCrikos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672426-exceso-de-fe",
     "name": "Exceso de Fé",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672390-crustaceos-cascarudos",
     "name": "Crustáceos Cascarudos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12500,25 +12500,25 @@
   {
     "id": "2022-gpm-iteso-671603-tsurus-tuneados",
     "name": "Tsurus Tuneados",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670644-pumas",
     "name": "Pumas+",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672418-ac-forever",
     "name": "AC Forever",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670645-cagua",
     "name": "Cagua++",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -12530,19 +12530,19 @@
   {
     "id": "2022-gpm-iteso-672419-descomprimidos-zip",
     "name": "dESCOMprimidos.zip",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-671923-adeamortizado",
     "name": "ADeAmortizado",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672205-chicos-percebe",
     "name": "Chicos_Percebe",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
@@ -12554,7 +12554,7 @@
   {
     "id": "2022-gpm-iteso-672225-team-cpp",
     "name": "team.cpp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -12572,7 +12572,7 @@
   {
     "id": "2022-gpm-iteso-672439-software-chasers",
     "name": "Software Chasers",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
@@ -12596,13 +12596,13 @@
   {
     "id": "2022-gpm-iteso-672237-f-tle",
     "name": "F TLE",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-671602-almost-retired",
     "name": "Almost Retired",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -12620,13 +12620,13 @@
   {
     "id": "2022-gpm-iteso-671810-o-1",
     "name": "O(1)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672420-dbd-crew",
     "name": "DBD crew",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12638,13 +12638,13 @@
   {
     "id": "2022-gpm-iteso-670606-3-guys-1-wa",
     "name": "3 guys 1 WA",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672430-shark-dj-en-mptres",
     "name": "Shark DJ en MPTres",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12656,25 +12656,25 @@
   {
     "id": "2022-gpm-iteso-671925-uploading",
     "name": "UPLoading",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672020-bugbusters",
     "name": "Bugbusters",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-731797-los-mismisimos-carajillos",
     "name": "Los mismisimos carajillos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-671608-deltawing",
     "name": "DeltaWing",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -12692,7 +12692,7 @@
   {
     "id": "2022-gpm-iteso-671926-llaart",
     "name": "Llaart",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
@@ -12710,7 +12710,7 @@
   {
     "id": "2022-gpm-iteso-670682-pumasds",
     "name": "PumasDS",
-    "schoolId": "source-school-cb8aece785ce",
+    "schoolId": "unam-iimas",
     "seasonYear": 2022
   },
   {
@@ -12728,7 +12728,7 @@
   {
     "id": "2022-gpm-iteso-670447-la-sosiedad",
     "name": "La Sosiedad",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -12764,13 +12764,13 @@
   {
     "id": "2022-gpm-iteso-672428-to-icpc-and-beyond",
     "name": "To ICPC and beyond",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-671927-icp00",
     "name": "ICP00",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
@@ -12782,19 +12782,19 @@
   {
     "id": "2022-gpm-iteso-672431-hololive",
     "name": "Hololive",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670151-los-que-si-vinieron",
     "name": "Los que SÍ vinieron",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-731360-noc",
     "name": "NoC++",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2022
   },
   {
@@ -12806,13 +12806,13 @@
   {
     "id": "2022-gpm-iteso-671928-los-taqueros",
     "name": "Los Taqueros",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732112-ma-aleones7000",
     "name": "Ma+aleones7000",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -12830,7 +12830,7 @@
   {
     "id": "2022-gpm-iteso-672433-schrodinger-s-ac",
     "name": "Schrodinger's AC",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -12842,7 +12842,7 @@
   {
     "id": "2022-gpm-iteso-670230-los-chicos-superpoderosos",
     "name": "Los Chicos Superpoderosos",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2022
   },
   {
@@ -12872,13 +12872,13 @@
   {
     "id": "2022-gpm-iteso-671930-troyano-exe",
     "name": "Troyano.exe",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-671889-the-log-n-1",
     "name": "The Log(n+1)",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -12890,13 +12890,13 @@
   {
     "id": "2022-gpm-iteso-732042-marcianosmx",
     "name": "marcianosmx",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670712-c-tangana",
     "name": "C++ Tangana",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -12914,7 +12914,7 @@
   {
     "id": "2022-gpm-iteso-672009-m-c-nificas",
     "name": "M@C'nificas",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2022
   },
   {
@@ -12944,19 +12944,19 @@
   {
     "id": "2022-gpm-iteso-670212-jvf-007",
     "name": "JVF-007",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672464-bffs-brute-force-friends-3",
     "name": "BFFs(Brute Force Friends)<3",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672015-axolotes",
     "name": "axolotes",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2022
   },
   {
@@ -12968,19 +12968,19 @@
   {
     "id": "2022-gpm-iteso-671932-tazaki",
     "name": "Tazaki",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672094-las-divinas",
     "name": "Las divinas",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-671174-thegoldenborrego",
     "name": "TheGoldenBorrego",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -12992,13 +12992,13 @@
   {
     "id": "2022-gpm-iteso-672389-huevito-con-catsun",
     "name": "Huevito con catsun",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672013-minitas-chinas",
     "name": "Minitas_chinas++",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2022
   },
   {
@@ -13016,19 +13016,19 @@
   {
     "id": "2022-gpm-iteso-672077-lxs-pixies",
     "name": "Lxs Pixies",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670357-bryxelz",
     "name": "Bryxelz",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672440-ezpclemonezquizi",
     "name": "EzpcLemonEzQuizi",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
@@ -13046,7 +13046,7 @@
   {
     "id": "2022-gpm-iteso-672485-pu-2",
     "name": "pu(-)^2",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -13058,13 +13058,13 @@
   {
     "id": "2022-gpm-iteso-672429-return-ac",
     "name": "return AC;",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672422-lascuries",
     "name": "lasCuries",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -13082,13 +13082,13 @@
   {
     "id": "2022-gpm-iteso-672449-los-angeles-azules",
     "name": "Los Ángeles Azules",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672455-the-endurance",
     "name": "The endurance",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -13124,7 +13124,7 @@
   {
     "id": "2022-gpm-iteso-671929-cpu-destroyers",
     "name": "CPU Destroyers",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
@@ -13154,7 +13154,7 @@
   {
     "id": "2022-gpm-iteso-672421-las-picafresas",
     "name": "Las Picafresas",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -13172,7 +13172,7 @@
   {
     "id": "2022-gpm-iteso-672010-winx",
     "name": "winx",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2022
   },
   {
@@ -13184,7 +13184,7 @@
   {
     "id": "2022-gpm-iteso-672435-los-pijijis",
     "name": "Los pijijís",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
@@ -13196,13 +13196,13 @@
   {
     "id": "2022-gpm-iteso-670888-los-pooderosos",
     "name": "Los POOderosos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672483-loading",
     "name": "Loading...",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -13226,7 +13226,7 @@
   {
     "id": "2022-gpm-iteso-672448-fldsmdfr",
     "name": "FLDSMDFR",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
@@ -13262,7 +13262,7 @@
   {
     "id": "2022-gpm-iteso-672012-quesadillas",
     "name": "queSADillas",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2022
   },
   {
@@ -13292,7 +13292,7 @@
   {
     "id": "2022-gpm-iteso-670544-los-freshmen",
     "name": "Los Freshmen",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -13304,7 +13304,7 @@
   {
     "id": "2022-gpm-iteso-672014-noname",
     "name": "NoName:(",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2022
   },
   {
@@ -13328,7 +13328,7 @@
   {
     "id": "2022-gpm-iteso-670364-a-de-alpha",
     "name": "A de alpha",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -13382,7 +13382,7 @@
   {
     "id": "2022-gpm-iteso-670643-dna",
     "name": "DNA",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -13406,7 +13406,7 @@
   {
     "id": "2022-gpm-iteso-730265-debuggers",
     "name": "Debuggers",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
@@ -13418,31 +13418,31 @@
   {
     "id": "2022-gpm-iteso-732491-siglo-xiii",
     "name": "Siglo XIII",
-    "schoolId": "source-school-16f24e4704a7",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732492-dinocoders",
     "name": "Dinocoders",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670396-compilation-error",
     "name": "compilation error",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-730637-galactic-jei-vi-em",
     "name": "Galactic Jei-Vi-Em",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732501-equipo-3",
     "name": "Equipo 3",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -13454,25 +13454,25 @@
   {
     "id": "2022-gpm-iteso-732097-graggy-daddy",
     "name": "Graggy Daddy",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-730263-payconova",
     "name": "Payconova",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732452-hmgool",
     "name": "HMGOol",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732506-last-moment",
     "name": "Last Moment",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -13496,13 +13496,13 @@
   {
     "id": "2022-gpm-iteso-670979-java-lieron",
     "name": "Java lieron",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-729909-los-papacitos",
     "name": "Los papacitos",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2022
   },
   {
@@ -13514,7 +13514,7 @@
   {
     "id": "2022-gpm-iteso-730271-ile",
     "name": "ILE",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
@@ -13538,19 +13538,19 @@
   {
     "id": "2022-gpm-iteso-730264-herederos-de-c",
     "name": "Herederos de C",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-730268-crackers",
     "name": "Crackers",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-730576-outofrange",
     "name": "OutOfRange",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2022
   },
   {
@@ -13580,13 +13580,13 @@
   {
     "id": "2022-gpm-iteso-732092-saka",
     "name": "SAKA",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732007-the-pc-destroyers",
     "name": "The PC Destroyers",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -13604,7 +13604,7 @@
   {
     "id": "2022-gpm-iteso-732102-caguamas-cpp",
     "name": "Caguamas.cpp",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -13616,7 +13616,7 @@
   {
     "id": "2022-gpm-iteso-732320-armadillos",
     "name": "Armadillos",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2022
   },
   {
@@ -13640,13 +13640,13 @@
   {
     "id": "2022-gpm-iteso-730262-dreaming-penguins",
     "name": "Dreaming Penguins",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-730575-tribilines",
     "name": "Tribilines",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2022
   },
   {
@@ -13682,7 +13682,7 @@
   {
     "id": "2022-gpm-iteso-732310-dos-attack",
     "name": "DoS Attack",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2022
   },
   {
@@ -13694,7 +13694,7 @@
   {
     "id": "2022-gpm-iteso-730260-o-nice",
     "name": "O(nice)",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
@@ -13736,7 +13736,7 @@
   {
     "id": "2022-gpm-iteso-730261-turtlebots",
     "name": "Turtlebots",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
@@ -13748,7 +13748,7 @@
   {
     "id": "2022-gpm-iteso-732096-hasegi",
     "name": "Hasegi",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
@@ -13760,7 +13760,7 @@
   {
     "id": "2022-gpm-iteso-732105-lostejuinos",
     "name": "LosTejuinos",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
@@ -13772,7 +13772,7 @@
   {
     "id": "2022-gpm-iteso-730272-l-3",
     "name": "L^3",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
@@ -13790,7 +13790,7 @@
   {
     "id": "2022-gpm-iteso-728986-los-tlacuaches-de-turin",
     "name": "Los Tlacuaches de Turín",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2022
   },
   {
@@ -13820,7 +13820,7 @@
   {
     "id": "2022-gpm-iteso-732638-pythones",
     "name": "Pythones",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2022
   },
   {
@@ -13832,7 +13832,7 @@
   {
     "id": "2022-gpm-iteso-730638-trenesitos",
     "name": "Trenesitos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -13898,37 +13898,37 @@
   {
     "id": "2022-gpm-iteso-672011-los-p2",
     "name": "los +P2",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732068-las-belicas",
     "name": "Las bélicas",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738538-spaguetti-casero",
     "name": "Spaguetti Casero",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-742088-siuuu",
     "name": "Siuuu++",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738331-sabritones",
     "name": "Sabritones",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-737825-o-1-complexity",
     "name": "O(1) Complexity",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -13940,43 +13940,43 @@
   {
     "id": "2022-gpm-iteso-738715-pyth0nkillerzzz",
     "name": "pyth0nKillerzzz",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-737798-team-sjc",
     "name": "Team SJC",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738611-tortilla",
     "name": "Tortilla",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672595-c",
     "name": "C--",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738370-uwuntu",
     "name": "Uwuntu",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670234-no-name",
     "name": "No Name",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738726-los-majors",
     "name": "Los Majors",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14000,37 +14000,37 @@
   {
     "id": "2022-gpm-iteso-672473-empanadas-de-la-destruccion",
     "name": "Empanadas de la Destrucción",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738369-vayne-juan-trick",
     "name": "Vayne Juan Trick",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670711-equipo-7",
     "name": "Equipo 7",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672463-void-guys",
     "name": "Void Guys",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-671812-505",
     "name": "505",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672423-a-de-ac",
     "name": "A de AC",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -14060,13 +14060,13 @@
   {
     "id": "2022-gpm-iteso-672106-equipoprogra4",
     "name": "EquipoProgra4",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738059-void9",
     "name": "Void9",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14144,7 +14144,7 @@
   {
     "id": "2022-gpm-iteso-738346-miribka",
     "name": "Miribka",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2022
   },
   {
@@ -14156,7 +14156,7 @@
   {
     "id": "2022-gpm-iteso-672008-gcoders",
     "name": "Gcoders",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14168,13 +14168,13 @@
   {
     "id": "2022-gpm-iteso-672434-los-binarios",
     "name": "Los binarios",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738555-watt",
     "name": "WATT",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14186,13 +14186,13 @@
   {
     "id": "2022-gpm-iteso-670702-o-syntax-error",
     "name": "O(Syntax Error)",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738367-los-destructores",
     "name": "Los destructores",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14204,7 +14204,7 @@
   {
     "id": "2022-gpm-iteso-738664-popcorn",
     "name": "Popcorn",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14246,7 +14246,7 @@
   {
     "id": "2022-gpm-iteso-728747-ingecs",
     "name": "IngeCs",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2022
   },
   {
@@ -14258,7 +14258,7 @@
   {
     "id": "2022-gpm-iteso-732046-robotics-py",
     "name": "Robotics.py",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2022
   },
   {
@@ -14276,7 +14276,7 @@
   {
     "id": "2022-gpm-iteso-737828-nlogn",
     "name": "NlogN",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14300,19 +14300,19 @@
   {
     "id": "2022-gpm-iteso-672630-rama",
     "name": "RAMA",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672427-las-chicas-del-barrio",
     "name": "Las chicas del barrio",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672007-napolitanomx",
     "name": "NapolitanoMX",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14336,7 +14336,7 @@
   {
     "id": "2022-gpm-iteso-672462-upteam03",
     "name": "UPTEAM03",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
@@ -14348,7 +14348,7 @@
   {
     "id": "2022-gpm-iteso-670483-cypherpunks",
     "name": "CypherPunks",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14384,7 +14384,7 @@
   {
     "id": "2022-gpm-iteso-670646-helloled",
     "name": "HelloLed",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -14396,7 +14396,7 @@
   {
     "id": "2022-gpm-iteso-672432-pandora",
     "name": "Pandora",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2022
   },
   {
@@ -14420,7 +14420,7 @@
   {
     "id": "2022-gpm-iteso-738559-nextwave",
     "name": "NextWave",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
@@ -14432,7 +14432,7 @@
   {
     "id": "2022-gpm-iteso-672462-atomos-fuera-de-serie",
     "name": "Átomos Fuera de Serie",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
@@ -14444,7 +14444,7 @@
   {
     "id": "2022-gpm-iteso-670709-las-adas",
     "name": "Las Adas",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -14456,31 +14456,31 @@
   {
     "id": "2022-gpm-iteso-738456-pyhtonist",
     "name": "Pyhtonist",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732502-caos",
     "name": "Caos",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672240-codebreakers",
     "name": "CodeBreakers",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-738224-c-tec",
     "name": "C+Tec",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-732025-mmx",
     "name": "MMX",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
@@ -14492,7 +14492,7 @@
   {
     "id": "2022-gpm-iteso-731033-codeburggers",
     "name": "CodeBurggers",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2022
   },
   {
@@ -14504,7 +14504,7 @@
   {
     "id": "2022-gpm-iteso-730266-1f47b",
     "name": "1F47B",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2022
   },
   {
@@ -14528,19 +14528,19 @@
   {
     "id": "2022-gpm-iteso-732500-los-alusines",
     "name": "Los alusines",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-672441-los-kosakos",
     "name": "Los Kosakos",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {
     "id": "2022-gpm-iteso-670703-the-last-dance",
     "name": "the last dance++",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2022
   },
   {
@@ -14558,7 +14558,7 @@
   {
     "id": "2022-gpm-iteso-731758-ionicos",
     "name": "Ionicos",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2022
   },
   {
@@ -14570,7 +14570,7 @@
   {
     "id": "2022-gpm-iteso-732647-los-inadaptados",
     "name": "Los inadaptados",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2022
   },
   {
@@ -14582,7 +14582,7 @@
   {
     "id": "2022-gpm-iteso-672437-upteam02",
     "name": "UPTEAM02",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2022
   },
   {

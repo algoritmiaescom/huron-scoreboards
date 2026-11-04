@@ -2,7 +2,7 @@
   {
     "id": "2011-mexico-finals-global-row-0001-manowar",
     "name": "Manowar",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2011
   },
   {
@@ -20,7 +20,7 @@
   {
     "id": "2011-mexico-finals-global-row-0004-c-mita",
     "name": "C_mita",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2011
   },
   {
@@ -32,7 +32,7 @@
   {
     "id": "2011-mexico-finals-global-row-0006-escoders",
     "name": "Escoders.",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2011
   },
   {
@@ -56,13 +56,13 @@
   {
     "id": "2011-mexico-finals-global-row-0010-super-pointers",
     "name": "Super Pointers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0011-cocodrilos",
     "name": "cocodrilos",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2011
   },
   {
@@ -74,7 +74,7 @@
   {
     "id": "2011-mexico-finals-global-row-0013-anonymous",
     "name": "Anonymous",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2011
   },
   {
@@ -86,19 +86,19 @@
   {
     "id": "2011-mexico-finals-global-row-0015-ftw",
     "name": "ftw",
-    "schoolId": "source-school-742fd898cd47",
+    "schoolId": "itesm-morelia",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0016-geekstra",
     "name": "Geekstra",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0017-dos-primos-y-un-nacho",
     "name": "Dos Primos y un Nacho",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2011
   },
   {
@@ -110,7 +110,7 @@
   {
     "id": "2011-mexico-finals-global-row-0019-hurones-salvajes",
     "name": "Hurones salvajes.",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2011
   },
   {
@@ -140,7 +140,7 @@
   {
     "id": "2011-mexico-finals-global-row-0024-bitshifters",
     "name": "Bitshifters",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2011
   },
   {
@@ -152,7 +152,7 @@
   {
     "id": "2011-mexico-finals-global-row-0026-void-0",
     "name": "(void *) 0",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2011
   },
   {
@@ -182,7 +182,7 @@
   {
     "id": "2011-mexico-finals-global-row-0031-macpaches",
     "name": "macpaches",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2011
   },
   {
@@ -212,25 +212,25 @@
   {
     "id": "2011-mexico-finals-global-row-0036-ealoseum",
     "name": "Ealoseum",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0037-sa",
     "name": "SA²",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0038-powermilk",
     "name": "PowerMilk",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0039-the-expendables",
     "name": "The Expendables",
-    "schoolId": "source-school-ac5afbcfd1fa",
+    "schoolId": "itesm-saltillo",
     "seasonYear": 2011
   },
   {
@@ -242,7 +242,7 @@
   {
     "id": "2011-mexico-finals-global-row-0041-yotta-byte",
     "name": "Yotta Byte",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2011
   },
   {
@@ -266,19 +266,19 @@
   {
     "id": "2011-mexico-finals-global-row-0045-pain-train",
     "name": "Pain Train",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0046-crazy-coders",
     "name": "Crazy Coders",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0047-echo",
     "name": "Echo",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2011
   },
   {
@@ -290,7 +290,7 @@
   {
     "id": "2011-mexico-finals-global-row-0049-logics",
     "name": "Logics",
-    "schoolId": "source-school-8cd84f4d1524",
+    "schoolId": "itesm-zacatecas",
     "seasonYear": 2011
   },
   {
@@ -314,25 +314,25 @@
   {
     "id": "2011-mexico-finals-global-row-0053-dragones",
     "name": "Dragones.",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0054-pastafarians",
     "name": "Pastafarians",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0055-llaveros",
     "name": "Llaveros",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0056-the-assemblers",
     "name": "The Assemblers",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2011
   },
   {
@@ -362,7 +362,7 @@
   {
     "id": "2011-mexico-finals-global-row-0061-tryte",
     "name": "Tryte",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2011
   },
   {
@@ -398,13 +398,13 @@
   {
     "id": "2011-mexico-finals-global-row-0067-javapros",
     "name": "JavaPros++",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2011
   },
   {
     "id": "2011-mexico-finals-global-row-0068-felipe-el-pato",
     "name": "Felipe El Pato",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2011
   },
   {
@@ -416,7 +416,7 @@
   {
     "id": "2011-mexico-finals-global-row-0070-policeman",
     "name": "POLICEMAN!!!",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2011
   },
   {
@@ -554,7 +554,7 @@
   {
     "id": "2011-mexico-finals-global-row-0093-jobelu",
     "name": "JoBeLu",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2011
   },
   {
@@ -956,7 +956,7 @@
   {
     "id": "2011-mexico-finals-global-row-0160-protrolls",
     "name": "protrolls",
-    "schoolId": "source-school-742fd898cd47",
+    "schoolId": "itesm-morelia",
     "seasonYear": 2011
   }
 ]

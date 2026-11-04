@@ -66,6 +66,7 @@ it('renders accumulated publication notes alongside the official source link', (
 it('shows unranked school results without a fabricated trend or podium', () => {
   const source = {
     ...archive,
+    seasonStandings: [],
     contests: [
       { ...contest, standings: contest.standings.map((row) => ({ ...row, place: null })) },
     ],

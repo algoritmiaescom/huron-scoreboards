@@ -2,7 +2,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0001-team",
     "name": ":)",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -38,7 +38,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0007-pumas-sangrientos-de-la-facultad",
     "name": "Pumas sangrientos de la Facultad de Ingeniería",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -86,7 +86,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0015-bowser-bytes",
     "name": "Bowser Bytes",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -314,7 +314,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0053-falsificamos-el-ine-de-wicho",
     "name": "Falsificamos el INE de Wicho",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -434,7 +434,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0073-skycoders",
     "name": "SkyCoders",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -476,7 +476,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0080-creatina-tim",
     "name": "Creatina tim",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -548,7 +548,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0092-skibidi-inges",
     "name": "Skibidi_Inges",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -566,7 +566,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0095-ramonas",
     "name": "RAMonas",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -596,7 +596,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0100-chambitasfi",
     "name": "ChambitasFI",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -614,7 +614,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0103-matrizceleste",
     "name": "MatrizCeleste",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -788,7 +788,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0132-flow-limit-exceeded",
     "name": "Flow Limit Exceeded",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -842,7 +842,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0141-codesloths",
     "name": "CodeSloths",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -980,7 +980,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0164-danaran",
     "name": "Danaran",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -1286,7 +1286,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0215-alvin-y-las-ardillas",
     "name": "Alvin y las Ardillas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -1406,7 +1406,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0235-kampilation-error-por-prefix-zum",
     "name": "Kampilation Error por Prefix Zum",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -1478,7 +1478,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0247-theplatypoosv2-0",
     "name": "ThePlatyPOOsV2.0",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -1490,7 +1490,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0249-fork-it",
     "name": "Fork-it",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -1514,7 +1514,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0253-tistas",
     "name": "Tistas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -1526,7 +1526,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0255-programacdores",
     "name": "PrograMacDores",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -1568,7 +1568,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0262-migraine-in-my-code",
     "name": "Migraine in My Code",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -1586,7 +1586,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0265-bocchi-la-piedra-y-su-banda-roca",
     "name": "Bocchi la piedra y su banda roca",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -1628,7 +1628,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0272-papusnlogn",
     "name": "PAPUSNLOGN",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -1652,7 +1652,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0276-macarthy-fanboys",
     "name": "MACarthy fanboys",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -1856,7 +1856,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0310-codigoticos",
     "name": "codigóticos",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -1904,7 +1904,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0318-chiquitics",
     "name": "Chiquitics",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -1988,7 +1988,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0332-idk-who-is-c",
     "name": "IDK Who is c++",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -2156,7 +2156,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0360-codifikadas",
     "name": "Codifikadas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -2618,7 +2618,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0437-macsteelers",
     "name": "MacSteelers",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -2786,7 +2786,7 @@
   {
     "id": "2025-gpm-qualifier-1-row-0465-brain-not-found",
     "name": "Brain Not Found",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -3704,7 +3704,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0024-bowser-bytes",
     "name": "Bowser Bytes",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -3764,13 +3764,13 @@
   {
     "id": "2025-gpm-qualifier-2-row-0034-team",
     "name": ":)",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-qualifier-2-row-0035-pumas-sangrientos-de-la-facultad",
     "name": "Pumas sangrientos de la Facultad de Ingeniería",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -3926,13 +3926,13 @@
   {
     "id": "2025-gpm-qualifier-2-row-0061-falsificamos-el-ine-de-wicho",
     "name": "Falsificamos el INE de Wicho",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-qualifier-2-row-0062-skycoders",
     "name": "SkyCoders",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -4244,7 +4244,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0114-skibidi-inges",
     "name": "Skibidi_Inges",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -4280,13 +4280,13 @@
   {
     "id": "2025-gpm-qualifier-2-row-0120-alvin-y-las-ardillas",
     "name": "Alvin y las Ardillas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-qualifier-2-row-0121-kampilation-error-por-prefix-zum",
     "name": "Kampilation Error por Prefix Zum",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -4514,13 +4514,13 @@
   {
     "id": "2025-gpm-qualifier-2-row-0159-migraine-in-my-code",
     "name": "Migraine in My Code",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-qualifier-2-row-0160-chambitasfi",
     "name": "ChambitasFI",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -4634,7 +4634,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0179-tistas",
     "name": "Tistas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -4682,7 +4682,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0187-codesloths",
     "name": "CodeSloths",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -4706,13 +4706,13 @@
   {
     "id": "2025-gpm-qualifier-2-row-0191-matrizceleste",
     "name": "MatrizCeleste",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-qualifier-2-row-0192-programacdores",
     "name": "PrograMacDores",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -4724,7 +4724,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0194-creatina-tim",
     "name": "Creatina tim",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -4808,7 +4808,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0208-ramonas",
     "name": "RAMonas",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -4838,7 +4838,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0213-fork-it",
     "name": "Fork-it",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -4850,7 +4850,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0215-macarthy-fanboys",
     "name": "MACarthy fanboys",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -4892,7 +4892,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0222-idk-who-is-c",
     "name": "IDK Who is c++",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -4946,7 +4946,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0231-codifikadas",
     "name": "Codifikadas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -5090,7 +5090,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0255-macsteelers",
     "name": "MacSteelers",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -5156,7 +5156,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0266-flow-limit-exceeded",
     "name": "Flow Limit Exceeded",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -5360,7 +5360,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0300-codigoticos",
     "name": "codigóticos",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -5660,7 +5660,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0350-theplatypoosv2-0",
     "name": "ThePlatyPOOsV2.0",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -5684,7 +5684,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0354-danaran",
     "name": "Danaran",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -5858,7 +5858,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0383-compilachelas",
     "name": "Compilachelas",
-    "schoolId": "tec-mx",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
@@ -5954,7 +5954,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0399-chiquitics",
     "name": "Chiquitics",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -6152,7 +6152,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0432-brain-not-found",
     "name": "Brain Not Found",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -6362,7 +6362,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0467-papusnlogn",
     "name": "PAPUSNLOGN",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -6500,7 +6500,7 @@
   {
     "id": "2025-gpm-qualifier-2-row-0490-bocchi-la-piedra-y-su-banda-roca",
     "name": "Bocchi la piedra y su banda roca",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -7850,7 +7850,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0016-team",
     "name": ":)",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -7976,7 +7976,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0037-falsificamos-el-ine-de-wicho",
     "name": "Falsificamos el INE de Wicho",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -8000,7 +8000,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0041-bowser-bytes",
     "name": "Bowser Bytes",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -8120,7 +8120,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0061-toyota-corolla",
     "name": "Toyota Corolla",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -8246,13 +8246,13 @@
   {
     "id": "2025-gpm-qualifier-3-row-0082-skycoders",
     "name": "SkyCoders",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-qualifier-3-row-0083-pumas-sangrientos-de-la-facultad",
     "name": "Pumas sangrientos de la Facultad de Ingeniería",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -8330,7 +8330,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0096-chambitasfi",
     "name": "ChambitasFI",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -8420,7 +8420,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0111-matrizceleste",
     "name": "MatrizCeleste",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -8666,7 +8666,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0152-skibidi-inges",
     "name": "Skibidi_Inges",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -8690,7 +8690,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0156-codesloths",
     "name": "CodeSloths",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -8870,13 +8870,13 @@
   {
     "id": "2025-gpm-qualifier-3-row-0186-flow-limit-exceeded",
     "name": "Flow Limit Exceeded",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-qualifier-3-row-0187-programacdores",
     "name": "PrograMacDores",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -8930,7 +8930,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0196-migraine-in-my-code",
     "name": "Migraine in My Code",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -8942,7 +8942,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0198-theplatypoosv2-0",
     "name": "ThePlatyPOOsV2.0",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -8954,7 +8954,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0200-creatina-tim",
     "name": "Creatina tim",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -8984,7 +8984,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0205-alvin-y-las-ardillas",
     "name": "Alvin y las Ardillas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -9200,7 +9200,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0241-idk-who-is-c",
     "name": "IDK Who is c++",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -9290,7 +9290,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0256-kampilation-error-por-prefix-zum",
     "name": "Kampilation Error por Prefix Zum",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -9308,7 +9308,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0259-tistas",
     "name": "Tistas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -9464,7 +9464,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0285-whatsapp2",
     "name": "WhatsApp2",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -9530,7 +9530,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0296-tcmx2",
     "name": "TCMX2",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -9578,7 +9578,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0304-macsteelers",
     "name": "MacSteelers",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -9596,7 +9596,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0307-codigoticos",
     "name": "codigóticos",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -9680,7 +9680,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0321-chiquitics",
     "name": "Chiquitics",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -9704,13 +9704,13 @@
   {
     "id": "2025-gpm-qualifier-3-row-0325-wa-al-fallo",
     "name": "WA al fallo",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-qualifier-3-row-0326-fork-it",
     "name": "Fork-it",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -9788,7 +9788,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0339-brain-not-found",
     "name": "Brain Not Found",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -9842,7 +9842,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0348-codifikadas",
     "name": "Codifikadas",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -9884,7 +9884,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0355-los-primos",
     "name": "Los Primos",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -10100,7 +10100,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0391-bocchi-la-piedra-y-su-banda-roca",
     "name": "Bocchi la piedra y su banda roca",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -10472,7 +10472,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0453-compilachelas",
     "name": "Compilachelas",
-    "schoolId": "tec-mx",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
@@ -10568,7 +10568,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0469-danaran",
     "name": "Danaran",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -10664,7 +10664,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0485-dynamic-programmers",
     "name": "Dynamic Programmers",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -11336,7 +11336,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0597-macarthy-fanboys",
     "name": "MACarthy fanboys",
-    "schoolId": "fes-acatlan",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -11480,7 +11480,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0621-nitter-nos-atropello",
     "name": "Nitter nos atropelló",
-    "schoolId": "unam-ingenieria",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -11660,7 +11660,7 @@
   {
     "id": "2025-gpm-qualifier-3-row-0651-ramonas",
     "name": "RAMonas",
-    "schoolId": "enes-morelia",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -13172,7 +13172,7 @@
   {
     "id": "2025-mexico-finals-final-row-0173-the-strings",
     "name": "The Strings",
-    "schoolId": "tec-mx",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
@@ -14120,7 +14120,7 @@
   {
     "id": "2025-mexico-finals-final-row-0331-matemagicos",
     "name": "Matemágicos",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2025
   },
   {
@@ -15008,7 +15008,7 @@
   {
     "id": "2025-mexico-finals-final-row-0479-mcintosh-coders",
     "name": "McIntosh Coders",
-    "schoolId": "buap-mx",
+    "schoolId": "buap",
     "seasonYear": 2025
   },
   {
@@ -15542,7 +15542,7 @@
   {
     "id": "2025-mexico-finals-final-row-0568-cucei-extreme",
     "name": "CUCEI Extreme",
-    "schoolId": "udg",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -15698,7 +15698,7 @@
   {
     "id": "2025-gpm-iteso-1068692-hmmmmmmmmm",
     "name": "hmmmmmmmmm",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -15710,19 +15710,19 @@
   {
     "id": "2025-gpm-iteso-1049664-find-nim-mo",
     "name": "Find(Nim, Mo);",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1051347-cookie-clickers",
     "name": "Cookie Clickers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1051344-sindicato-de-taxistas-calakmul-pd-500-usd-y-agregamos-tu-nom",
     "name": "Sindicato de Taxistas Calakmul (PD 500 usd y agregamos tu nombre)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -15734,19 +15734,19 @@
   {
     "id": "2025-gpm-iteso-1066914-cocon14",
     "name": "Cocon14",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1067940-team",
     "name": ":)",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068701-los-vengadores-de-galois",
     "name": "Los vengadores de Galois",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -15758,7 +15758,7 @@
   {
     "id": "2025-gpm-iteso-1068108-fernanda-y-los-icpcerdos",
     "name": "Fernanda y los icpcerdos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -15776,13 +15776,13 @@
   {
     "id": "2025-gpm-iteso-1047719-mathgic-crue",
     "name": "Mäthgic Crüe",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1066578-f-tenten",
     "name": "f(tenten)",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -15794,7 +15794,7 @@
   {
     "id": "2025-gpm-iteso-1068104-igloo-zone",
     "name": "Igloo Zone",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -15806,7 +15806,7 @@
   {
     "id": "2025-gpm-iteso-1045713-bowser-bytes",
     "name": "Bowser Bytes",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -15824,7 +15824,7 @@
   {
     "id": "2025-gpm-iteso-1045680-paleteria-la-michoacana",
     "name": "Paletería la Michoacana",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -15842,7 +15842,7 @@
   {
     "id": "2025-gpm-iteso-1068834-brigada-fantasma",
     "name": "Brigada Fantasma",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2025
   },
   {
@@ -15860,7 +15860,7 @@
   {
     "id": "2025-gpm-iteso-1069342-conejito-malo-icpc-zyn-miedo-al-exito",
     "name": "Conejito Malo ICPC: ZYN miedo al éxito",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2025
   },
   {
@@ -15872,7 +15872,7 @@
   {
     "id": "2025-gpm-iteso-1067946-pumas-sangrientos-de-la-facultad-de-ingenieria",
     "name": "Pumas sangrientos de la Facultad de Ingeniería",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -15884,13 +15884,13 @@
   {
     "id": "2025-gpm-iteso-1072649-testigos-de-german",
     "name": "Testigos de Germán",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1067234-por-dios-que-dificil",
     "name": "Por dios, que difícil",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2025
   },
   {
@@ -15902,7 +15902,7 @@
   {
     "id": "2025-gpm-iteso-1067180-the-strings",
     "name": "The Strings",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
@@ -15914,7 +15914,7 @@
   {
     "id": "2025-gpm-iteso-1068673-code-for-a-dream-and-debug-the-life",
     "name": "Code for a Dream and Debug the Life",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -15926,13 +15926,13 @@
   {
     "id": "2025-gpm-iteso-1067942-falsificamos-el-ine-de-wicho",
     "name": "Falsificamos el INE de Wicho",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068836-momazos-fc",
     "name": "Momazos FC",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2025
   },
   {
@@ -15944,7 +15944,7 @@
   {
     "id": "2025-gpm-iteso-1068365-los-3debuggers",
     "name": "Los 3Debuggers",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
@@ -15968,7 +15968,7 @@
   {
     "id": "2025-gpm-iteso-1049137-data-divas",
     "name": "Data Divas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -15986,7 +15986,7 @@
   {
     "id": "2025-gpm-iteso-1068669-chimpancini-bananini",
     "name": "Chimpancini Bananini",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -15998,7 +15998,7 @@
   {
     "id": "2025-gpm-iteso-1042194-ddosattack",
     "name": "DDoSAttack",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
@@ -16010,7 +16010,7 @@
   {
     "id": "2025-gpm-iteso-1049135-patos-con-sombrero",
     "name": "Patos_Con_Sombrero",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -16022,13 +16022,13 @@
   {
     "id": "2025-gpm-iteso-1042007-npcs",
     "name": "NPCs",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1052522-club-penguin",
     "name": "Club Penguin",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -16046,13 +16046,13 @@
   {
     "id": "2025-gpm-iteso-1069136-time-limit-exceeded",
     "name": "Time Limit Exceeded",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068105-mle-marquina-limit-exceeded",
     "name": "MLE (Marquina Limit Exceeded)",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16064,13 +16064,13 @@
   {
     "id": "2025-gpm-iteso-1052340-7-up",
     "name": "7-UP",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1060228-subelo-se-compila-en-el-juez-los-originales",
     "name": "Súbelo!!!, se compila en el Juez (Los originales)",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
@@ -16118,13 +16118,13 @@
   {
     "id": "2025-gpm-iteso-1068118-infinite-loopers",
     "name": "Infinite Loopers",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1047675-skycoders",
     "name": "SkyCoders",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -16136,7 +16136,7 @@
   {
     "id": "2025-gpm-iteso-1076403-toyota-corolla",
     "name": "Toyota Corolla",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16154,7 +16154,7 @@
   {
     "id": "2025-gpm-iteso-1069111-tijuana-liga-emeequis-tle",
     "name": "Tijuana Liga Emeequis (TLE)",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -16166,7 +16166,7 @@
   {
     "id": "2025-gpm-iteso-1068837-oaxackers",
     "name": "Oaxackers",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2025
   },
   {
@@ -16190,19 +16190,19 @@
   {
     "id": "2025-gpm-iteso-1050397-rbrgs-cpp",
     "name": "rbrgs.cpp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1042260-permanganato-de-potasio",
     "name": "Permanganato de Potasio",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068663-axolotitos-anonimos",
     "name": "Axolotitos anónimos",
-    "schoolId": "source-school-b71fbe062024",
+    "schoolId": "ipn-esime-culhuacan",
     "seasonYear": 2025
   },
   {
@@ -16226,7 +16226,7 @@
   {
     "id": "2025-gpm-iteso-1068107-regrouped",
     "name": "regroUPed",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16244,43 +16244,43 @@
   {
     "id": "2025-gpm-iteso-1068494-ajolotetos",
     "name": "Ajolotetos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068120-icpceros",
     "name": "ICPCeros",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068690-equipo-dedos",
     "name": "Equipo dedos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068201-rascals-do-not-know-the-fibo-sequence-wa",
     "name": "Rascals Do Not Know the Fibo Sequence (WA)",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068199-koqforces",
     "name": "KOQForces",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068773-o-a-v",
     "name": "O(A²+V)",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068268-skibidi-inges",
     "name": "Skibidi_Inges",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16292,7 +16292,7 @@
   {
     "id": "2025-gpm-iteso-1067943-chambitasfi",
     "name": "ChambitasFI",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16304,7 +16304,7 @@
   {
     "id": "2025-gpm-iteso-1066515-tritoneros",
     "name": "TRITONEROS",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -16322,7 +16322,7 @@
   {
     "id": "2025-gpm-iteso-1069063-team-impala",
     "name": "Team Impala",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -16334,13 +16334,13 @@
   {
     "id": "2025-gpm-iteso-1052140-me-puse-bien-treap-cuando-fui-al-puntero",
     "name": "Me puse bien treap cuando fui al puntero",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1066603-matrizceleste",
     "name": "MatrizCeleste",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -16352,13 +16352,13 @@
   {
     "id": "2025-gpm-iteso-1066277-la-matraca-traca-traca",
     "name": "La matraca traca traca",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1048982-drop-table-equipos",
     "name": "\");Drop table equipos;--",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16370,7 +16370,7 @@
   {
     "id": "2025-gpm-iteso-1057920-adictos-al-div-4",
     "name": "Adictos al Div 4",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16388,7 +16388,7 @@
   {
     "id": "2025-gpm-iteso-1068838-no-batallo-pa-subirlas-batallo-pa-subir-a-verde-en-cf",
     "name": "no batallo pa subirlas batallo pa subir a verde en cf",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2025
   },
   {
@@ -16406,13 +16406,13 @@
   {
     "id": "2025-gpm-iteso-1069103-picafresas-la-revancha",
     "name": "Picafresas: La Revancha",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068265-creatina-tim",
     "name": "Creatina tim",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16430,7 +16430,7 @@
   {
     "id": "2025-gpm-iteso-1068796-codesloths",
     "name": "CodeSloths",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16448,7 +16448,7 @@
   {
     "id": "2025-gpm-iteso-1068833-gatos-naranjosos",
     "name": "Gatos Naranjosos",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2025
   },
   {
@@ -16508,7 +16508,7 @@
   {
     "id": "2025-gpm-iteso-1068352-bruteforce",
     "name": "BruteForce",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16532,7 +16532,7 @@
   {
     "id": "2025-gpm-iteso-1069112-una-linea-a-la-vez",
     "name": "una linea a la vez",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -16556,13 +16556,13 @@
   {
     "id": "2025-gpm-iteso-1067944-flow-limit-exceeded",
     "name": "Flow Limit Exceeded",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1050399-mascotas-maravilla",
     "name": "Mascotas Maravilla",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -16622,7 +16622,7 @@
   {
     "id": "2025-gpm-iteso-1068944-coders",
     "name": "Coders",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2025
   },
   {
@@ -16658,7 +16658,7 @@
   {
     "id": "2025-gpm-iteso-1066656-datashots",
     "name": "Datashots",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -16670,25 +16670,25 @@
   {
     "id": "2025-gpm-iteso-1068768-alvin-y-las-ardillas",
     "name": "Alvin y las Ardillas",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1066592-programacdores",
     "name": "PrograMacDores",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1066604-migraine-in-my-code",
     "name": "Migraine in My Code",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1051208-syntaxsquad",
     "name": "SyntaxSquad",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16700,7 +16700,7 @@
   {
     "id": "2025-gpm-iteso-1052341-upmat",
     "name": "UPMAT",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
@@ -16724,19 +16724,19 @@
   {
     "id": "2025-gpm-iteso-1067934-cross-edge",
     "name": "Cross Edge",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1054591-bombardiros-crocodilos",
     "name": "Bombardiros Crocodilos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1067232-faith-limit-exceeded",
     "name": "Faith Limit Exceeded",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16760,13 +16760,13 @@
   {
     "id": "2025-gpm-iteso-1060296-tlayudas-el-guero",
     "name": "Tlayudas El Güero",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1050398-v-3",
     "name": "(:v)3",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -16778,19 +16778,19 @@
   {
     "id": "2025-gpm-iteso-1060229-compitiendo-desde-los-separos",
     "name": "Compitiendo desde los separos",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068704-martes-de-tacos",
     "name": "Martes de Tacos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068769-idk-who-is-c",
     "name": "IDK Who is c++",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16814,13 +16814,13 @@
   {
     "id": "2025-gpm-iteso-1068232-holy-c",
     "name": "Holy C++",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068119-temp",
     "name": "temp",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16832,7 +16832,7 @@
   {
     "id": "2025-gpm-iteso-1067947-kampilation-error-por-prefix-zum",
     "name": "Kampilation Error por Prefix Zum",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16844,7 +16844,7 @@
   {
     "id": "2025-gpm-iteso-1067945-tistas",
     "name": "Tistas",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16856,7 +16856,7 @@
   {
     "id": "2025-gpm-iteso-1067941-theplatypoosv2-0",
     "name": "ThePlatyPOOsV2.0",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -16886,25 +16886,25 @@
   {
     "id": "2025-gpm-iteso-1067178-compuchidos",
     "name": "Compuchidos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068819-kairos",
     "name": "Kairos",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1051856-itislimitless",
     "name": "Itislimitless",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068666-black-flash",
     "name": "Black Flash",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -16916,13 +16916,13 @@
   {
     "id": "2025-gpm-iteso-1068787-twofors",
     "name": "TwoFors",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1049998-debugme",
     "name": "DebugMe!",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -16970,19 +16970,19 @@
   {
     "id": "2025-gpm-iteso-1069566-codigoticos",
     "name": "codigóticos",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1069002-los-debuffers",
     "name": "Los Debuffers",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1051513-alphacentaury",
     "name": "AlphaCentaury",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -17000,7 +17000,7 @@
   {
     "id": "2025-gpm-iteso-1049253-fork-it",
     "name": "Fork-it",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -17048,7 +17048,7 @@
   {
     "id": "2025-gpm-iteso-1068290-codifikadas",
     "name": "Codifikadas",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -17060,7 +17060,7 @@
   {
     "id": "2025-gpm-iteso-1066591-macsteelers",
     "name": "MacSteelers",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -17096,7 +17096,7 @@
   {
     "id": "2025-gpm-iteso-1068691-exit-1",
     "name": "exit(1)",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -17108,7 +17108,7 @@
   {
     "id": "2025-gpm-iteso-1060231-ladyboys-uwu",
     "name": "LadyBoys UwU",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
@@ -17120,13 +17120,13 @@
   {
     "id": "2025-gpm-iteso-1068588-sharkbyte",
     "name": "SharkByte",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068230-scrum-masters",
     "name": "SCRUM Masters",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
@@ -17168,7 +17168,7 @@
   {
     "id": "2025-gpm-iteso-1069190-chiquitics",
     "name": "Chiquitics",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -17210,7 +17210,7 @@
   {
     "id": "2025-gpm-iteso-1060294-0xffffff-eyed-peas",
     "name": "0xFFFFFF Eyed Peas",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
@@ -17234,7 +17234,7 @@
   {
     "id": "2025-gpm-iteso-1066605-brain-not-found",
     "name": "Brain Not Found",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -17264,7 +17264,7 @@
   {
     "id": "2025-gpm-iteso-1068358-payloaders-ccm",
     "name": "Payloaders CCM",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
@@ -17276,19 +17276,19 @@
   {
     "id": "2025-gpm-iteso-1066910-caza-mathgics",
     "name": "Caza Mathgics",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068589-piripituflauticos",
     "name": "Piripituflauticos",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1072955-revolucion-ruta-301",
     "name": "Revolucion Ruta 301",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -17300,7 +17300,7 @@
   {
     "id": "2025-gpm-iteso-1068668-casi-compila",
     "name": "Casi Compila",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -17318,19 +17318,19 @@
   {
     "id": "2025-gpm-iteso-1068590-ramonas",
     "name": "RAMonas",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1067183-opentowork",
     "name": "#opentoWork",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1053149-cheddarini",
     "name": "Cheddarini",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
@@ -17348,19 +17348,19 @@
   {
     "id": "2025-gpm-iteso-1068202-404-no-team-name-found",
     "name": "404: No Team Name Found",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1049136-scriptum",
     "name": "SCRIPTUM",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068234-utf-8",
     "name": "UTF-8",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
@@ -17384,7 +17384,7 @@
   {
     "id": "2025-gpm-iteso-1068355-los-deudores-de-conocimiento",
     "name": "Los deudores de conocimiento",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -17396,19 +17396,19 @@
   {
     "id": "2025-gpm-iteso-1069019-los-3-locos",
     "name": "Los 3 Locos",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1070924-chatgrd",
     "name": "ChatGRD",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1066590-macarthy-fanboys",
     "name": "MACarthy fanboys",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -17426,7 +17426,7 @@
   {
     "id": "2025-gpm-iteso-1067179-llegaronlaspipshas",
     "name": "LlegaronLasPipshas",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
@@ -17438,7 +17438,7 @@
   {
     "id": "2025-gpm-iteso-1071601-los-bug-busters",
     "name": "Los bug busters",
-    "schoolId": "source-school-b71fbe062024",
+    "schoolId": "ipn-esime-culhuacan",
     "seasonYear": 2025
   },
   {
@@ -17456,7 +17456,7 @@
   {
     "id": "2025-gpm-iteso-1068505-danaran",
     "name": "Danaran",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2025
   },
   {
@@ -17468,7 +17468,7 @@
   {
     "id": "2025-gpm-iteso-1068772-moras-azules",
     "name": "Moras Azules",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -17492,7 +17492,7 @@
   {
     "id": "2025-gpm-iteso-1068817-galois-power",
     "name": "Galois' Power",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
@@ -17504,13 +17504,13 @@
   {
     "id": "2025-gpm-iteso-1045681-cmascafe",
     "name": "Cmascafe",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1060232-manana-si-vienen-los-buenos",
     "name": "Mañana si vienen los buenos",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
@@ -17540,7 +17540,7 @@
   {
     "id": "2025-gpm-iteso-1068200-tec-rs",
     "name": "Tec.rs",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
@@ -17558,19 +17558,19 @@
   {
     "id": "2025-gpm-iteso-1068674-codigos-tumbados",
     "name": "Códigos Tumbados",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1042289-vacas-vaqueras",
     "name": "vacas vaqueras",
-    "schoolId": "source-school-0835dc54967a",
+    "schoolId": "unam-fes-cuautitlan",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068552-soul-s-circus",
     "name": "Soul's Circus",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
@@ -17600,13 +17600,13 @@
   {
     "id": "2025-gpm-iteso-1068231-codigostumbados",
     "name": "CódigosTumbados",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1060230-los-migueles",
     "name": "Los Migueles",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
@@ -17618,7 +17618,7 @@
   {
     "id": "2025-gpm-iteso-1067182-3f-capys",
     "name": "3F capys",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
@@ -17678,7 +17678,7 @@
   {
     "id": "2025-gpm-iteso-1069021-caballeros-del-codigo",
     "name": "Caballeros del Código",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -17732,13 +17732,13 @@
   {
     "id": "2025-gpm-iteso-1067948-papusnlogn",
     "name": "PAPUSNLOGN",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1069104-return1",
     "name": "Return1",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -17762,7 +17762,7 @@
   {
     "id": "2025-gpm-iteso-1053094-infinite-loops",
     "name": "infinite_loops",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
@@ -17858,7 +17858,7 @@
   {
     "id": "2025-gpm-iteso-1060297-gain-eagers",
     "name": "Gain Eagers",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
@@ -17882,7 +17882,7 @@
   {
     "id": "2025-gpm-iteso-1068695-las-ardillas-del-son",
     "name": "Las Ardillas del Son",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -17894,7 +17894,7 @@
   {
     "id": "2025-gpm-iteso-1051835-los-bryans",
     "name": "Los Bryans",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2025
   },
   {
@@ -17936,7 +17936,7 @@
   {
     "id": "2025-gpm-iteso-1077355-jd2",
     "name": "jd2",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2025
   },
   {
@@ -17954,7 +17954,7 @@
   {
     "id": "2025-gpm-iteso-1068522-equipo-alfa-buena-maravilla-onda-dinamita-escuadron-lobo",
     "name": "Equipo Alfa Buena Maravilla Onda Dinamita Escuadron Lobo",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -18002,7 +18002,7 @@
   {
     "id": "2025-gpm-iteso-1050276-devsindev",
     "name": "DevsInDev",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
@@ -18038,13 +18038,13 @@
   {
     "id": "2025-gpm-iteso-1073500-null",
     "name": "Null",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1052325-dorian-samanuel-aguilera-garsa",
     "name": "Dorian Samanuel Aguilera Garsa",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2025
   },
   {
@@ -18068,7 +18068,7 @@
   {
     "id": "2025-gpm-iteso-1068229-runtime-error",
     "name": "RunTime Error",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
@@ -18080,7 +18080,7 @@
   {
     "id": "2025-gpm-iteso-1069020-python-es",
     "name": "Python_Es",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -18116,7 +18116,7 @@
   {
     "id": "2025-gpm-iteso-1068239-codex9642",
     "name": "Codex9642",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
@@ -18128,13 +18128,13 @@
   {
     "id": "2025-gpm-iteso-1069235-gamedevs",
     "name": "GameDevs",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1052315-o-n-log-n",
     "name": "O(n! log n!)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -18146,7 +18146,7 @@
   {
     "id": "2025-gpm-iteso-1067181-maa-algorithm",
     "name": "MAA Algorithm",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
@@ -18164,7 +18164,7 @@
   {
     "id": "2025-gpm-iteso-1066276-fibonacci-fairies",
     "name": "Fibonacci Fairies",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -18182,25 +18182,25 @@
   {
     "id": "2025-gpm-iteso-1067949-bocchi-la-piedra-y-su-banda-roca",
     "name": "Bocchi la piedra y su banda roca",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1047732-il-vento-d-oro",
     "name": "il vento d'oro",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1052033-torre-de-camarones",
     "name": "Torre de camarones",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1069022-0xdeadbeef",
     "name": "0xDEADBEEF",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -18230,13 +18230,13 @@
   {
     "id": "2025-gpm-iteso-1068354-while-true-win",
     "name": "While True: Win()",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068835-tuxguinitos",
     "name": "Tuxgüinitos",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2025
   },
   {
@@ -18254,7 +18254,7 @@
   {
     "id": "2025-gpm-iteso-1066678-bombordino",
     "name": "Bombordino",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
@@ -18290,7 +18290,7 @@
   {
     "id": "2025-gpm-iteso-1068665-anemonas-anonimas",
     "name": "Anémonas Anónimas",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -18302,7 +18302,7 @@
   {
     "id": "2025-gpm-iteso-1072275-the-o-n-homies",
     "name": "The O(n!) homies",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2025
   },
   {
@@ -18326,7 +18326,7 @@
   {
     "id": "2025-gpm-iteso-1066393-icpc-girlies",
     "name": "icpc girlies!!!",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -18344,7 +18344,7 @@
   {
     "id": "2025-gpm-iteso-1066677-chilaquiles",
     "name": "Chilaquiles ++",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2025
   },
   {
@@ -18374,7 +18374,7 @@
   {
     "id": "2025-gpm-iteso-1077221-whatsapp2",
     "name": "WhatsApp2",
-    "schoolId": "source-school-5f34e226e4d7",
+    "schoolId": "unam-fi",
     "seasonYear": 2025
   },
   {
@@ -18404,13 +18404,13 @@
   {
     "id": "2025-gpm-iteso-1071677-compilachelas",
     "name": "Compilachelas",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1069023-tocadores-de-teclados",
     "name": "Tocadores de Teclados",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -18422,7 +18422,7 @@
   {
     "id": "2025-gpm-iteso-1068703-lhdc",
     "name": "LHDC",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
@@ -18494,7 +18494,7 @@
   {
     "id": "2025-gpm-iteso-1068367-gauss-jordan",
     "name": "Gauss-Jordan",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
@@ -18524,7 +18524,7 @@
   {
     "id": "2025-gpm-iteso-1066420-los-infopapus-fc",
     "name": "Los Infopapus FC",
-    "schoolId": "source-school-0835dc54967a",
+    "schoolId": "unam-fes-cuautitlan",
     "seasonYear": 2025
   },
   {
@@ -18656,7 +18656,7 @@
   {
     "id": "2025-gpm-iteso-1068233-40t-f0und",
     "name": "40T F0UND",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2025
   },
   {
@@ -18722,13 +18722,13 @@
   {
     "id": "2025-gpm-iteso-1068667-brain-limit-exceeded",
     "name": "Brain Limit Exceeded",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068360-programa-puercos",
     "name": "Programa puercos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
@@ -18758,7 +18758,7 @@
   {
     "id": "2025-gpm-iteso-1077512-science-based-programming",
     "name": "Science Based Programming",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
@@ -18770,7 +18770,7 @@
   {
     "id": "2025-gpm-iteso-1077395-los-primos",
     "name": "Los Primos",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2025
   },
   {
@@ -18782,7 +18782,7 @@
   {
     "id": "2025-gpm-iteso-1077187-chalanes-cpp",
     "name": "Chalanes.cpp",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -18800,31 +18800,31 @@
   {
     "id": "2025-gpm-iteso-1071918-equipo",
     "name": "Equipo",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1060310-chiles-poblanos-con-pibil",
     "name": "Chiles Poblanos con Pibil",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1067170-cafe-cargado",
     "name": "Café Cargado",
-    "schoolId": "source-school-516d80476120",
+    "schoolId": "ipn-esfm",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1049141-compilaton-error-ahhmoment",
     "name": "Compilaton Error AhhMoment",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1073026-ilabtdi",
     "name": "iLabTDI",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2025
   },
   {

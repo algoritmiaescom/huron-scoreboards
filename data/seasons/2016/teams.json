@@ -2,7 +2,7 @@
   {
     "id": "2016-mexico-finals-global-row-0001-pu",
     "name": "PU++",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2016
   },
   {
@@ -20,13 +20,13 @@
   {
     "id": "2016-mexico-finals-global-row-0004-new-avengers",
     "name": "New avengers",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
     "id": "2016-mexico-finals-global-row-0005-locos",
     "name": "Locos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -38,7 +38,7 @@
   {
     "id": "2016-mexico-finals-global-row-0007-sopa-de-pinguino",
     "name": "Sopa de pingüino",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
@@ -56,19 +56,19 @@
   {
     "id": "2016-mexico-finals-global-row-0010-quetzal-h",
     "name": "Quetzal.h",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
     "id": "2016-mexico-finals-global-row-0011-pinguinos-de-sopa",
     "name": "Pinguinos de sopa",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
     "id": "2016-mexico-finals-global-row-0012-wlog",
     "name": "wlog",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2016
   },
   {
@@ -92,25 +92,25 @@
   {
     "id": "2016-mexico-finals-global-row-0016-char-mander",
     "name": "char mander;",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2016
   },
   {
     "id": "2016-mexico-finals-global-row-0017-code-n-play",
     "name": "Code'n'play",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2016
   },
   {
     "id": "2016-mexico-finals-global-row-0018-clfies",
     "name": "Clfies",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2016
   },
   {
     "id": "2016-mexico-finals-global-row-0019-greedies",
     "name": "Greedies",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -134,7 +134,7 @@
   {
     "id": "2016-mexico-finals-global-row-0023-twt",
     "name": "twt",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
@@ -146,7 +146,7 @@
   {
     "id": "2016-mexico-finals-global-row-0025-cooperativa-pascal",
     "name": "Cooperativa Pascal",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
@@ -158,7 +158,7 @@
   {
     "id": "2016-mexico-finals-global-row-0027-the-feel-train",
     "name": "The Feel Train",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
@@ -170,13 +170,13 @@
   {
     "id": "2016-mexico-finals-global-row-0029-entscheidungsteam",
     "name": "Entscheidungsteam",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
     "id": "2016-mexico-finals-global-row-0030-make-sandwich",
     "name": "make sandwich",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2016
   },
   {
@@ -188,13 +188,13 @@
   {
     "id": "2016-mexico-finals-global-row-0032-m3",
     "name": "M3",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2016
   },
   {
     "id": "2016-mexico-finals-global-row-0033-kebabs",
     "name": "Kebabs",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
@@ -206,7 +206,7 @@
   {
     "id": "2016-mexico-finals-global-row-0035-printfers",
     "name": "Printfers",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2016
   },
   {
@@ -224,7 +224,7 @@
   {
     "id": "2016-mexico-finals-global-row-0038-csf1",
     "name": "CSF1",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2016
   },
   {
@@ -272,7 +272,7 @@
   {
     "id": "2016-mexico-finals-global-row-0046-3idiotas",
     "name": "3idiotas",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2016
   },
   {
@@ -320,7 +320,7 @@
   {
     "id": "2016-mexico-finals-global-row-0054-the-brewskis",
     "name": "The Brewskis",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2016
   },
   {
@@ -362,7 +362,7 @@
   {
     "id": "2016-mexico-finals-global-row-0061-the-orden-of-the-t-rex",
     "name": "The orden of the T-Rex",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
@@ -548,55 +548,55 @@
   {
     "id": "2016-gpm-iteso-row-0008-perrillos",
     "name": "Perrillos",
-    "schoolId": "source-school-3999b6144a49",
+    "schoolId": "ug-cimat",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0017-pinguinos-de-sopa",
     "name": "Pinguinos de Sopa",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0018-jaguar",
     "name": "Jaguar",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0020-cocoders",
     "name": "Cocoders",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0021-brp",
     "name": "BRP",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0022-horchata-team",
     "name": "Horchata Team",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0023-los-papus-pro",
     "name": "Los papus pro",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0024-wolves-of-codestreet",
     "name": "Wolves of Codestreet",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0026-dic-h",
     "name": "dic.h",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
@@ -608,13 +608,13 @@
   {
     "id": "2016-gpm-iteso-row-0032-pelados",
     "name": "PeLaDos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0036-conde-n-play",
     "name": "Conde'n'play",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2016
   },
   {
@@ -626,25 +626,25 @@
   {
     "id": "2016-gpm-iteso-row-0042-los-chimpantasticos",
     "name": "Los Chimpantasticos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0043-tacos",
     "name": "TacOS",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0045-quoda",
     "name": "Quoda:",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0046-code-c",
     "name": "Code C",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -656,13 +656,13 @@
   {
     "id": "2016-gpm-iteso-row-0051-c-y-dos-mas",
     "name": "C y dos mas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0054-musketeers",
     "name": "Musketeers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -674,19 +674,19 @@
   {
     "id": "2016-gpm-iteso-row-0058-next-gen",
     "name": "Next Gen",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0062-los-de-concreto",
     "name": "Los de Concreto",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0066-segfault",
     "name": "SegFault",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
@@ -698,31 +698,31 @@
   {
     "id": "2016-gpm-iteso-row-0068-los-lunas",
     "name": "Los Lunas",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0070-mjm",
     "name": "MJM",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0071-thecodeleague",
     "name": "TheCodeLeague",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0073-pacha-memers",
     "name": "Pacha Memers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0075-dinamita",
     "name": "Dinamita",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
@@ -734,7 +734,7 @@
   {
     "id": "2016-gpm-iteso-row-0079-kygerand",
     "name": "Kygerand",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
@@ -752,19 +752,19 @@
   {
     "id": "2016-gpm-iteso-row-0082-los-compadres",
     "name": "Los Compadres",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0085-rebel-coders",
     "name": "Rebel Coders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0087-ponejitos",
     "name": "Ponejitos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -782,13 +782,13 @@
   {
     "id": "2016-gpm-iteso-row-0092-frens",
     "name": "Frens",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0093-poncho-el-pato",
     "name": "Poncho el pato",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -800,7 +800,7 @@
   {
     "id": "2016-gpm-iteso-row-0095-e-z",
     "name": "e^z",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
@@ -848,13 +848,13 @@
   {
     "id": "2016-gpm-iteso-row-0112-voidcode",
     "name": "voidcode",
-    "schoolId": "source-school-bfcfeb8363f7",
+    "schoolId": "buap-fcc",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0113-pu",
     "name": "++PU",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2016
   },
   {
@@ -884,25 +884,25 @@
   {
     "id": "2016-gpm-iteso-row-0118-cyborg-raccoons",
     "name": "Cyborg Raccoons",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0119-night-coders",
     "name": "Night Coders",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0121-mjdcode",
     "name": "MJDCode",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0122-los-exiliados",
     "name": "Los Exiliados",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
@@ -914,19 +914,19 @@
   {
     "id": "2016-gpm-iteso-row-0124-equipo42",
     "name": "Equipo42",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0125-the-enigmas",
     "name": "The enigmas",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0126-see",
     "name": "SEE++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
@@ -938,7 +938,7 @@
   {
     "id": "2016-gpm-iteso-row-0128-404-not-found",
     "name": "404_not_found",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2016
   },
   {
@@ -956,7 +956,7 @@
   {
     "id": "2016-gpm-iteso-row-0131-u-p-nes",
     "name": "U.P. NES",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
@@ -968,7 +968,7 @@
   {
     "id": "2016-gpm-iteso-row-0133-kdump",
     "name": "kdump",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
@@ -986,7 +986,7 @@
   {
     "id": "2016-gpm-iteso-row-0136-adaline",
     "name": "Adaline",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
@@ -1022,7 +1022,7 @@
   {
     "id": "2016-gpm-iteso-row-0143-syntax-error",
     "name": "Syntax Error",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
@@ -1046,13 +1046,13 @@
   {
     "id": "2016-gpm-iteso-row-0147-los-nuevos",
     "name": "Los nuevos",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0148-neto-y-los-omi",
     "name": "Neto y los OMI",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2016
   },
   {
@@ -1082,19 +1082,19 @@
   {
     "id": "2016-gpm-iteso-row-0153-nullsoft",
     "name": "NullSoft",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0154-krieg-coders",
     "name": "Krieg Coders",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0156-cyberrams1",
     "name": "CyberRams1",
-    "schoolId": "source-school-ac5afbcfd1fa",
+    "schoolId": "itesm-saltillo",
     "seasonYear": 2016
   },
   {
@@ -1130,13 +1130,13 @@
   {
     "id": "2016-gpm-iteso-row-0162-espace",
     "name": "EsPaCe",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0163-salamandras-azules",
     "name": "Salamandras Azules",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
@@ -1154,7 +1154,7 @@
   {
     "id": "2016-gpm-iteso-row-0166-los-obsesionados",
     "name": "Los obsesionados",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
@@ -1202,7 +1202,7 @@
   {
     "id": "2016-gpm-iteso-row-0178-8bits",
     "name": "8bits",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -1256,13 +1256,13 @@
   {
     "id": "2016-gpm-iteso-row-0188-los-asiaticos",
     "name": "Los asiaticos",
-    "schoolId": "source-label-unidad-profesional-interdisciplinaria-de-ingenieria-campus-zacatecas-81f44b0514",
+    "schoolId": "ipn-upiiz",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0189-drim-tim",
     "name": "Drim tim",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -1304,7 +1304,7 @@
   {
     "id": "2016-gpm-iteso-row-0197-csf2",
     "name": "CSF2",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2016
   },
   {
@@ -1316,13 +1316,13 @@
   {
     "id": "2016-gpm-iteso-row-0199-c0derz",
     "name": "c0derz",
-    "schoolId": "source-school-ac5afbcfd1fa",
+    "schoolId": "itesm-saltillo",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0200-mean-girls",
     "name": "Mean Girls",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -1388,25 +1388,25 @@
   {
     "id": "2016-gpm-iteso-row-0212-fisicoculturistas-wow",
     "name": "Fisicoculturistas <- Wow",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0213-stl-team",
     "name": "STL Team",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0214-nolastname-404",
     "name": "NOLASTNAME 404",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0215-improvisados",
     "name": "Improvisados",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -1418,7 +1418,7 @@
   {
     "id": "2016-gpm-iteso-row-0217-beagletown",
     "name": "Beagletown",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -1448,7 +1448,7 @@
   {
     "id": "2016-gpm-iteso-row-0222-spacemonkeys",
     "name": "SpaceMonkeys",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2016
   },
   {
@@ -1460,19 +1460,19 @@
   {
     "id": "2016-gpm-iteso-row-0224-bit-byte-bit",
     "name": "bit-byte-bit",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0225-desarrolladores-anonimos",
     "name": "Desarrolladores Anónimos",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0226-expendables",
     "name": "Expendables",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
@@ -1496,7 +1496,7 @@
   {
     "id": "2016-gpm-iteso-row-0230-faith",
     "name": "Faith",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
@@ -1508,7 +1508,7 @@
   {
     "id": "2016-gpm-iteso-row-0232-javalio",
     "name": "Javalio",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -1520,7 +1520,7 @@
   {
     "id": "2016-gpm-iteso-row-0234-epsilon",
     "name": "Epsilon",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -1532,7 +1532,7 @@
   {
     "id": "2016-gpm-iteso-row-0236-chicos-que-lloran",
     "name": "Chicos que lloran",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2016
   },
   {
@@ -1550,7 +1550,7 @@
   {
     "id": "2016-gpm-iteso-row-0239-csf3",
     "name": "CSF3",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2016
   },
   {
@@ -1562,7 +1562,7 @@
   {
     "id": "2016-gpm-iteso-row-0241-murox-y-friends",
     "name": "Murox y Friends",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
@@ -1586,7 +1586,7 @@
   {
     "id": "2016-gpm-iteso-row-0245-salamandras-verdes",
     "name": "Salamandras Verdes",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
@@ -1604,7 +1604,7 @@
   {
     "id": "2016-gpm-iteso-row-0248-blackriver",
     "name": "BlackRiver",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2016
   },
   {
@@ -1652,7 +1652,7 @@
   {
     "id": "2016-gpm-iteso-row-0256-evelia-friends",
     "name": "Evelia & Friends",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
@@ -1676,13 +1676,13 @@
   {
     "id": "2016-gpm-iteso-row-0260-robocode",
     "name": "Robocode",
-    "schoolId": "source-school-751fdf1568f6",
+    "schoolId": "ipn-esime-azcapotzalco",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0261-xirosame",
     "name": "Xirosame",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2016
   },
   {
@@ -1694,13 +1694,13 @@
   {
     "id": "2016-gpm-iteso-row-0264-mlz",
     "name": "MLZ",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2016
   },
   {
     "id": "2016-gpm-iteso-row-0265-hackerman-s",
     "name": "Hackerman´s",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2016
   },
   {
@@ -1718,7 +1718,7 @@
   {
     "id": "2016-gpm-iteso-row-0268-itcrew",
     "name": "ITCrew",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2016
   },
   {
@@ -1742,7 +1742,7 @@
   {
     "id": "2016-gpm-iteso-row-0273-los-destructores",
     "name": "Los destructores",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2016
   }
 ]

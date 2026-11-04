@@ -2,7 +2,7 @@
   {
     "id": "2009-mexico-finals-global-row-0001-los-punteros",
     "name": "Los punteros",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2009
   },
   {
@@ -26,7 +26,7 @@
   {
     "id": "2009-mexico-finals-global-row-0005-escom56",
     "name": "Escom56",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2009
   },
   {
@@ -44,13 +44,13 @@
   {
     "id": "2009-mexico-finals-global-row-0008-acm-problem-solvers",
     "name": "ACM Problem Solvers",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2009
   },
   {
     "id": "2009-mexico-finals-global-row-0009-mty01",
     "name": "MTY01",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2009
   },
   {
@@ -62,13 +62,13 @@
   {
     "id": "2009-mexico-finals-global-row-0011-mty03",
     "name": "MTY03",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2009
   },
   {
     "id": "2009-mexico-finals-global-row-0012-itccm",
     "name": "ITCCM",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2009
   },
   {
@@ -110,7 +110,7 @@
   {
     "id": "2009-mexico-finals-global-row-0019-thehiveclusterisunderattack",
     "name": "TheHiveClusterIsUnderAttack!!!",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2009
   },
   {
@@ -122,7 +122,7 @@
   {
     "id": "2009-mexico-finals-global-row-0021-carlit-os",
     "name": "Carlit-OS",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2009
   },
   {
@@ -146,7 +146,7 @@
   {
     "id": "2009-mexico-finals-global-row-0025-escom",
     "name": "Escom",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2009
   },
   {
@@ -158,7 +158,7 @@
   {
     "id": "2009-mexico-finals-global-row-0027-mty02",
     "name": "MTY02",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2009
   },
   {
@@ -176,7 +176,7 @@
   {
     "id": "2009-mexico-finals-global-row-0030-dethlok",
     "name": "DethLok",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2009
   },
   {
@@ -206,13 +206,13 @@
   {
     "id": "2009-mexico-finals-global-row-0035-tesla",
     "name": "Tesla",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2009
   },
   {
     "id": "2009-mexico-finals-global-row-0036-sons-of-a-bit",
     "name": "Sons of a bit",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2009
   },
   {
@@ -236,19 +236,19 @@
   {
     "id": "2009-mexico-finals-global-row-0040-itsenautas",
     "name": "Itsenautas",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2009
   },
   {
     "id": "2009-mexico-finals-global-row-0041-team-name-null",
     "name": "Team.name = null;",
-    "schoolId": "source-school-64985288ecac",
+    "schoolId": "tec-aguascalientes",
     "seasonYear": 2009
   },
   {
     "id": "2009-mexico-finals-global-row-0042-laguna-3",
     "name": "Laguna 3",
-    "schoolId": "source-school-d0d329114035",
+    "schoolId": "itesm-laguna",
     "seasonYear": 2009
   },
   {
@@ -308,13 +308,13 @@
   {
     "id": "2009-mexico-finals-global-row-0052-qwerty",
     "name": "qwerty",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2009
   },
   {
     "id": "2009-mexico-finals-global-row-0053-alpha",
     "name": "Alpha",
-    "schoolId": "source-school-742fd898cd47",
+    "schoolId": "itesm-morelia",
     "seasonYear": 2009
   },
   {
@@ -368,7 +368,7 @@
   {
     "id": "2009-mexico-finals-global-row-0062-cucei-people",
     "name": "CUCEI People",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2009
   },
   {
@@ -386,7 +386,7 @@
   {
     "id": "2009-mexico-finals-global-row-0065-burros-blancos",
     "name": "Burros Blancos",
-    "schoolId": "source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8",
+    "schoolId": "ipn-escom",
     "seasonYear": 2009
   },
   {
@@ -410,7 +410,7 @@
   {
     "id": "2009-mexico-finals-global-row-0069-stupiduserexception",
     "name": "StupidUserException",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2009
   },
   {
@@ -434,7 +434,7 @@
   {
     "id": "2009-mexico-finals-global-row-0073-nullpointerexception",
     "name": "NullPointerException",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2009
   },
   {
@@ -458,7 +458,7 @@
   {
     "id": "2009-mexico-finals-global-row-0077-laguna-1",
     "name": "Laguna 1",
-    "schoolId": "source-school-d0d329114035",
+    "schoolId": "itesm-laguna",
     "seasonYear": 2009
   },
   {
@@ -482,7 +482,7 @@
   {
     "id": "2009-mexico-finals-global-row-0081-arigato",
     "name": "Arigato",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2009
   },
   {
@@ -524,7 +524,7 @@
   {
     "id": "2009-mexico-finals-global-row-0088-null-breakers",
     "name": "Null Breakers",
-    "schoolId": "source-label-universidad-de-guadalajara-cucei-9cfd67a2df",
+    "schoolId": "udg-cucei",
     "seasonYear": 2009
   },
   {
@@ -602,7 +602,7 @@
   {
     "id": "2009-mexico-finals-global-row-0101-epsilon",
     "name": "Epsilon",
-    "schoolId": "source-school-742fd898cd47",
+    "schoolId": "itesm-morelia",
     "seasonYear": 2009
   },
   {
@@ -626,7 +626,7 @@
   {
     "id": "2009-mexico-finals-global-row-0105-deadlockers",
     "name": "DeadLockers",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2009
   },
   {
@@ -650,7 +650,7 @@
   {
     "id": "2009-mexico-finals-global-row-0109-children-of-evolution",
     "name": "Children of Evolution",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2009
   },
   {
@@ -704,7 +704,7 @@
   {
     "id": "2009-mexico-finals-global-row-0118-queequipo",
     "name": "QueEquipo",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2009
   },
   {
@@ -848,7 +848,7 @@
   {
     "id": "2009-mexico-finals-global-row-0142-itic-zacatecas",
     "name": "ITIC Zacatecas",
-    "schoolId": "source-school-8cd84f4d1524",
+    "schoolId": "itesm-zacatecas",
     "seasonYear": 2009
   },
   {
@@ -866,7 +866,7 @@
   {
     "id": "2009-mexico-finals-global-row-0145-laguna-2",
     "name": "Laguna 2",
-    "schoolId": "source-school-d0d329114035",
+    "schoolId": "itesm-laguna",
     "seasonYear": 2009
   },
   {
@@ -914,7 +914,7 @@
   {
     "id": "2009-mexico-finals-global-row-0153-omicron",
     "name": "Omicron",
-    "schoolId": "source-school-742fd898cd47",
+    "schoolId": "itesm-morelia",
     "seasonYear": 2009
   },
   {

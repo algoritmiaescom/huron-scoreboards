@@ -268,8 +268,10 @@ export const selectSchoolHistory = (
         seasonYear,
         teams: new Set([...entries, ...published].map(({ row }) => row.teamId)).size,
         contests: new Set(entries.map(({ contest }) => contest.id)).size,
-        bestPlace: bestKnownPlace(entries.map(({ row }) => row.place)),
-        podiums: entries.filter(({ row }) => isPodiumPlace(row.place)).length,
+        bestPlace: bestKnownPlace([...entries, ...published].map(({ row }) => row.place)),
+        podiums:
+          entries.filter(({ row }) => isPodiumPlace(row.place)).length +
+          published.filter(({ row }) => isPodiumPlace(row.place)).length,
       };
     });
   return {
