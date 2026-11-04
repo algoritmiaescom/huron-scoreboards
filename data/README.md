@@ -43,7 +43,7 @@ Contest files are organized under `data/seasons/<year>/`. School identities use 
 canonical records where supported by the source and review notes. Other non-empty source labels
 are preserved literally as separate school records rather than merged by guesswork; 95 teams have
 `schoolId: null` because their source did not identify an institution, and the scoreboard displays
-“Institución no identificada” for them. The school directory now contains 1,118 records.
+“Institución no identificada” for them. The school directory now contains 1,080 records.
 
 The 2026 GPM archive contains qualifiers 1, 2 and 3 from ICPC Mexico: 601, 701 and 610 rows.
 The first two tables have confirmed published row counts and problem detail. The third publishes

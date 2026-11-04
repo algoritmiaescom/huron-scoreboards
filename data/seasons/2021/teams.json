@@ -902,7 +902,7 @@
   {
     "id": "2021-gpm-repechage-row-0151-2-boys-1-dog",
     "name": "2 boys 1 dog",
-    "schoolId": "tec-mx",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2021
   },
   {
@@ -2756,7 +2756,7 @@
   {
     "id": "2021-gpm-repechage-row-0460-turingcompletists",
     "name": "TuringCompletists",
-    "schoolId": "tec-mx",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2021
   },
   {
@@ -6272,7 +6272,7 @@
   {
     "id": "2021-gpm-iteso-551914-ac-holics-itesm-monterrey",
     "name": "AC’Holics - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6314,7 +6314,7 @@
   {
     "id": "2021-gpm-iteso-555107-f-tle-itesm-cem",
     "name": "F TLE - ITESM CEM",
-    "schoolId": "source-school-95d04191fe16",
+    "schoolId": "itesm-cem",
     "seasonYear": 2021
   },
   {
@@ -6338,7 +6338,7 @@
   {
     "id": "2021-gpm-iteso-551753-b11-itesm-monterrey",
     "name": "B11 - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6350,7 +6350,7 @@
   {
     "id": "2021-gpm-iteso-553594-los-que-no-vinieron-itesm-cuernavaca",
     "name": "Los que no vinieron - ITESM Cuernavaca",
-    "schoolId": "source-school-940ac9035f2c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2021
   },
   {
@@ -6380,7 +6380,7 @@
   {
     "id": "2021-gpm-iteso-554216-o-3-bugs-itesm-monterrey",
     "name": "O(3 bugs) - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6494,7 +6494,7 @@
   {
     "id": "2021-gpm-iteso-554876-o-1-itesm-monterrey",
     "name": "O(1) - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6554,7 +6554,7 @@
   {
     "id": "2021-gpm-iteso-555388-los-seguidores-de-karel-itesm-gda",
     "name": "Los seguidores de Karel - ITESM GDA",
-    "schoolId": "source-school-d71e1c0db7ee",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2021
   },
   {
@@ -6566,13 +6566,13 @@
   {
     "id": "2021-gpm-iteso-555451-tec-gdl-6-itesm-gda",
     "name": "Tec GDL 6 - ITESM GDA",
-    "schoolId": "source-school-d71e1c0db7ee",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2021
   },
   {
     "id": "2021-gpm-iteso-555934-la-sosiedad-itesm-monterrey",
     "name": "La Sosiedad - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6596,7 +6596,7 @@
   {
     "id": "2021-gpm-iteso-555397-2-boys-1-dog-itesm-chihuahua",
     "name": "2 boys 1 dog - ITESM CHIHUAHUA",
-    "schoolId": "source-school-beed31ec1ef8",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2021
   },
   {
@@ -6620,7 +6620,7 @@
   {
     "id": "2021-gpm-iteso-554777-tec-gdl-5-itesm-gda",
     "name": "Tec GDL 5 - ITESM GDA",
-    "schoolId": "source-school-d71e1c0db7ee",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2021
   },
   {
@@ -6638,7 +6638,7 @@
   {
     "id": "2021-gpm-iteso-552830-riko-pollo-itesm-monterrey",
     "name": "Riko Pollo - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6650,7 +6650,7 @@
   {
     "id": "2021-gpm-iteso-554711-tec-gdl-1-itesm-gda",
     "name": "Tec GDL 1 - ITESM GDA",
-    "schoolId": "source-school-d71e1c0db7ee",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2021
   },
   {
@@ -6686,7 +6686,7 @@
   {
     "id": "2021-gpm-iteso-553427-bughunteraddicts-itesm-toluca",
     "name": "BugHunterAddicts - ITESM Toluca",
-    "schoolId": "source-school-7c0a0a825e92",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2021
   },
   {
@@ -6710,7 +6710,7 @@
   {
     "id": "2021-gpm-iteso-555384-echo-coding-itesm-ccm",
     "name": "Echo Coding - ITESM CCM",
-    "schoolId": "source-school-0c4ad61b0a3b",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2021
   },
   {
@@ -6746,7 +6746,7 @@
   {
     "id": "2021-gpm-iteso-551873-codeadores-tumbados-itesm-monterrey",
     "name": "Codeadores Tumbados - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6812,7 +6812,7 @@
   {
     "id": "2021-gpm-iteso-555140-o-nice-itesm-cem",
     "name": "O(Nice) - ITESM CEM",
-    "schoolId": "source-school-95d04191fe16",
+    "schoolId": "itesm-cem",
     "seasonYear": 2021
   },
   {
@@ -6824,7 +6824,7 @@
   {
     "id": "2021-gpm-iteso-551939-timelimitexceeded-itesm-monterrey",
     "name": "TimeLimitExceeded - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6848,13 +6848,13 @@
   {
     "id": "2021-gpm-iteso-555207-artemisa-itesm-cem",
     "name": "Artemisa - ITESM CEM",
-    "schoolId": "source-school-95d04191fe16",
+    "schoolId": "itesm-cem",
     "seasonYear": 2021
   },
   {
     "id": "2021-gpm-iteso-552500-fsocietymx-itesm-monterrey",
     "name": "FSOCIETYMX - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -6938,7 +6938,7 @@
   {
     "id": "2021-gpm-iteso-555413-turingcompletists-itesm-chihuahua",
     "name": "TuringCompletists - ITESM CHIHUAHUA",
-    "schoolId": "source-school-beed31ec1ef8",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2021
   },
   {
@@ -6992,7 +6992,7 @@
   {
     "id": "2021-gpm-iteso-571089-ajolotechs-itesm-toluca",
     "name": "AjoloTechs - ITESM Toluca",
-    "schoolId": "source-school-7c0a0a825e92",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2021
   },
   {
@@ -7022,7 +7022,7 @@
   {
     "id": "2021-gpm-iteso-554909-tec-gdl-3-itesm-gda",
     "name": "Tec GDL 3 - ITESM GDA",
-    "schoolId": "source-school-d71e1c0db7ee",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2021
   },
   {
@@ -7052,7 +7052,7 @@
   {
     "id": "2021-gpm-iteso-553465-programadioses-itesm-puebla",
     "name": "Programadioses - ITESM-Puebla",
-    "schoolId": "source-school-65fa55ecf399",
+    "schoolId": "tec-puebla",
     "seasonYear": 2021
   },
   {
@@ -7112,7 +7112,7 @@
   {
     "id": "2021-gpm-iteso-555173-las-chicas-superpoderosas-itesm-cem",
     "name": "Las chicas superpoderosas - ITESM CEM",
-    "schoolId": "source-school-95d04191fe16",
+    "schoolId": "itesm-cem",
     "seasonYear": 2021
   },
   {
@@ -7136,7 +7136,7 @@
   {
     "id": "2021-gpm-iteso-554843-deltacode-itesm-monterrey",
     "name": "DeltaCode - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -7190,7 +7190,7 @@
   {
     "id": "2021-gpm-iteso-554712-los-httpotters-itesm-monterrey",
     "name": "Los HTTPotters - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -7208,7 +7208,7 @@
   {
     "id": "2021-gpm-iteso-555395-codiboys-itesm-chihuahua",
     "name": "CodiBoys - ITESM CHIHUAHUA",
-    "schoolId": "source-school-beed31ec1ef8",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2021
   },
   {
@@ -7220,7 +7220,7 @@
   {
     "id": "2021-gpm-iteso-554389-jat-itesm-toluca",
     "name": "!JAT - ITESM Toluca",
-    "schoolId": "source-school-7c0a0a825e92",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2021
   },
   {
@@ -7238,19 +7238,19 @@
   {
     "id": "2021-gpm-iteso-551751-404-itesm-monterrey",
     "name": "404 - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
     "id": "2021-gpm-iteso-570371-team-diff-itesm-monterrey",
     "name": "Team Diff - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
     "id": "2021-gpm-iteso-554390-ranas-tacticas-itesm-toluca",
     "name": "Ranas Tácticas - ITESM Toluca",
-    "schoolId": "source-school-7c0a0a825e92",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2021
   },
   {
@@ -7268,7 +7268,7 @@
   {
     "id": "2021-gpm-iteso-555407-runtime-error-itesm-chihuahua",
     "name": "Runtime Error - ITESM CHIHUAHUA",
-    "schoolId": "source-school-beed31ec1ef8",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2021
   },
   {
@@ -7280,7 +7280,7 @@
   {
     "id": "2021-gpm-iteso-551750-alfa-lobo-buena-onda-dinamita-itesm-monterrey",
     "name": "Alfa lobo buena onda dinamita - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -7292,7 +7292,7 @@
   {
     "id": "2021-gpm-iteso-555453-tec-gdl-7-itesm-gda",
     "name": "Tec GDL 7 - ITESM GDA",
-    "schoolId": "source-school-d71e1c0db7ee",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2021
   },
   {
@@ -7304,7 +7304,7 @@
   {
     "id": "2021-gpm-iteso-571088-los-empresaurios-itesm-cem",
     "name": "Los Empresaurios - ITESM CEM",
-    "schoolId": "source-school-95d04191fe16",
+    "schoolId": "itesm-cem",
     "seasonYear": 2021
   },
   {
@@ -7328,7 +7328,7 @@
   {
     "id": "2021-gpm-iteso-554283-matlabers-itesm-monterrey",
     "name": "Matlabers - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -7340,7 +7340,7 @@
   {
     "id": "2021-gpm-iteso-551915-code101-itesm-monterrey",
     "name": "CODE101 - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -7364,7 +7364,7 @@
   {
     "id": "2021-gpm-iteso-555305-oceano-atlantico-itesm-puebla",
     "name": "Océano Atlántico - ITESM-Puebla",
-    "schoolId": "source-school-65fa55ecf399",
+    "schoolId": "tec-puebla",
     "seasonYear": 2021
   },
   {
@@ -7436,7 +7436,7 @@
   {
     "id": "2021-gpm-iteso-552764-helloworld-tec-itesm-monterrey",
     "name": "helloWorld.tec - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -7484,7 +7484,7 @@
   {
     "id": "2021-gpm-iteso-555239-aba-itesm-cem",
     "name": "ABA - ITESM CEM",
-    "schoolId": "source-school-95d04191fe16",
+    "schoolId": "itesm-cem",
     "seasonYear": 2021
   },
   {
@@ -7532,7 +7532,7 @@
   {
     "id": "2021-gpm-iteso-571087-gcoders-itesm-cem",
     "name": "GCoders - ITESM CEM",
-    "schoolId": "source-school-95d04191fe16",
+    "schoolId": "itesm-cem",
     "seasonYear": 2021
   },
   {
@@ -7544,7 +7544,7 @@
   {
     "id": "2021-gpm-iteso-554117-crazy-math-scientists-itesm-monterrey",
     "name": "Crazy Math Scientists - ITESM Monterrey",
-    "schoolId": "source-school-0fdad3b95a45",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2021
   },
   {
@@ -7556,7 +7556,7 @@
   {
     "id": "2021-gpm-iteso-555455-tec-gdl-8-itesm-gda",
     "name": "Tec GDL 8 - ITESM GDA (*)",
-    "schoolId": "source-school-d71e1c0db7ee",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2021
   },
   {
@@ -7568,7 +7568,7 @@
   {
     "id": "2021-gpm-iteso-554810-tec-gdl-2-itesm-gda",
     "name": "Tec GDL 2 - ITESM GDA",
-    "schoolId": "source-school-d71e1c0db7ee",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2021
   },
   {

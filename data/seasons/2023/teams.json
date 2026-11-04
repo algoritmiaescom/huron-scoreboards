@@ -14240,7 +14240,7 @@
   {
     "id": "2023-gpm-iteso-839292-borregos-salvajes",
     "name": "Borregos Salvajes",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2023
   },
   {
@@ -14324,7 +14324,7 @@
   {
     "id": "2023-gpm-iteso-845009-golden",
     "name": "GOLDEN",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -14378,7 +14378,7 @@
   {
     "id": "2023-gpm-iteso-849770-team-cpp",
     "name": "team.cpp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -14432,7 +14432,7 @@
   {
     "id": "2023-gpm-iteso-849760-data-divas",
     "name": "Data Divas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -14444,7 +14444,7 @@
   {
     "id": "2023-gpm-iteso-852933-subditos-de-sommerville",
     "name": "súbditos de sommerville",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -14522,7 +14522,7 @@
   {
     "id": "2023-gpm-iteso-850475-la-sosiedad",
     "name": "La Sosiedad",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -14564,7 +14564,7 @@
   {
     "id": "2023-gpm-iteso-850582-siuuu",
     "name": "Siuuu++",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2023
   },
   {
@@ -14642,7 +14642,7 @@
   {
     "id": "2023-gpm-iteso-853782-los-devastadores",
     "name": "Los DEVastadores",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -14654,7 +14654,7 @@
   {
     "id": "2023-gpm-iteso-839338-sabritones",
     "name": "Sabritones",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -14666,7 +14666,7 @@
   {
     "id": "2023-gpm-iteso-852969-pi-3",
     "name": "pi/3",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -14732,7 +14732,7 @@
   {
     "id": "2023-gpm-iteso-852970-si-pifa-ehhh-owww",
     "name": "Sí pifa ? Ehhh : Owww",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -14744,7 +14744,7 @@
   {
     "id": "2023-gpm-iteso-853032-o-no",
     "name": "O(NO)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -14762,7 +14762,7 @@
   {
     "id": "2023-gpm-iteso-850583-los-tlacuaches-de-turin",
     "name": "Los Tlacuaches de Turín",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2023
   },
   {
@@ -14786,7 +14786,7 @@
   {
     "id": "2023-gpm-iteso-853297-dosattack",
     "name": "DoSAttack",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2023
   },
   {
@@ -14846,7 +14846,7 @@
   {
     "id": "2023-gpm-iteso-852965-code-enjoyers",
     "name": "Code enjoyers",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -14936,7 +14936,7 @@
   {
     "id": "2023-gpm-iteso-854181-programasters",
     "name": "Programasters",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2023
   },
   {
@@ -14984,7 +14984,7 @@
   {
     "id": "2023-gpm-iteso-853303-trinidad",
     "name": "Trinidad",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -14996,7 +14996,7 @@
   {
     "id": "2023-gpm-iteso-839337-crusaders",
     "name": "Crusaders",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -15014,7 +15014,7 @@
   {
     "id": "2023-gpm-iteso-853650-aguacate-overflow",
     "name": "Aguacate Overflow",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -15050,7 +15050,7 @@
   {
     "id": "2023-gpm-iteso-850296-walking-devs",
     "name": "Walking Devs",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -15188,13 +15188,13 @@
   {
     "id": "2023-gpm-iteso-852974-el-equipobol",
     "name": "EL EQUIPOBOL",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-852966-byte-me",
     "name": "Byte Me",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -15230,7 +15230,7 @@
   {
     "id": "2023-gpm-iteso-853500-lxs-pixies",
     "name": "Lxs Pixies",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2023
   },
   {
@@ -15272,7 +15272,7 @@
   {
     "id": "2023-gpm-iteso-852968-using-brainspace",
     "name": "Using BrainSpace;",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -15362,7 +15362,7 @@
   {
     "id": "2023-gpm-iteso-850855-rbrgs-cpp",
     "name": "Rbrgs.cpp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -15404,13 +15404,13 @@
   {
     "id": "2023-gpm-iteso-841237-ezpz",
     "name": "EZPZ",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-852140-los-fosa",
     "name": "Los Fosa",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2023
   },
   {
@@ -15428,7 +15428,7 @@
   {
     "id": "2023-gpm-iteso-852972-rivolta",
     "name": "Rivolta",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -15464,13 +15464,13 @@
   {
     "id": "2023-gpm-iteso-853654-chefsitos",
     "name": "Chefsitos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-852981-404-name-not-found",
     "name": "404 Name Not Found",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -15518,7 +15518,7 @@
   {
     "id": "2023-gpm-iteso-855181-los-tres-jinetes",
     "name": "Los tres jinetes",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2023
   },
   {
@@ -15560,13 +15560,13 @@
   {
     "id": "2023-gpm-iteso-852932-kabrilian",
     "name": "Kabrilian",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-852971-mango",
     "name": "Mango",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -15692,7 +15692,7 @@
   {
     "id": "2023-gpm-iteso-852973-c3p0-icpc",
     "name": "C3P0_ICPC",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -15764,7 +15764,7 @@
   {
     "id": "2023-gpm-iteso-852975-last-minute",
     "name": "Last minute",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2023
   },
   {
@@ -15794,7 +15794,7 @@
   {
     "id": "2023-gpm-iteso-842844-coding-chimps",
     "name": "Coding Chimps",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -15968,13 +15968,13 @@
   {
     "id": "2023-gpm-iteso-861864-o-n",
     "name": "O(n)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-862103-bubble-sorters",
     "name": "Bubble Sorters",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2023
   },
   {
@@ -16034,7 +16034,7 @@
   {
     "id": "2023-gpm-iteso-850476-letsc-h-a",
     "name": "letsC +h -a",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -16052,13 +16052,13 @@
   {
     "id": "2023-gpm-iteso-849759-o-n-2",
     "name": "O(n^2)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-850854-chepeverapp",
     "name": "chepeverapp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -16100,7 +16100,7 @@
   {
     "id": "2023-gpm-iteso-855045-devsociety",
     "name": "devsociety",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2023
   },
   {
@@ -16112,19 +16112,19 @@
   {
     "id": "2023-gpm-iteso-853795-tecueme",
     "name": "TECueme",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-850477-void9",
     "name": "Void9",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-839291-pepenadores",
     "name": "Pepenadores",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -16226,7 +16226,7 @@
   {
     "id": "2023-gpm-iteso-842657-los-titanes",
     "name": "Los Titanes",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -16370,7 +16370,7 @@
   {
     "id": "2023-gpm-iteso-862104-codici",
     "name": "CodICI",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2023
   },
   {
@@ -16454,7 +16454,7 @@
   {
     "id": "2023-gpm-iteso-839290-criptomanas",
     "name": "Criptómanas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -16532,43 +16532,43 @@
   {
     "id": "2023-gpm-iteso-854285-compilation-error",
     "name": "compilation error",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-854115-rodolfines",
     "name": "Rodolfines",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-854076-oslo",
     "name": "Oslo",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-854075-return-nombre",
     "name": "return Nombre;",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-849761-cypherplus",
     "name": "CypherPlus",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-842656-gansitos",
     "name": "Gansitos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
     "id": "2023-gpm-iteso-837947-golden-x",
     "name": "GOLDEN.X",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2023
   },
   {
@@ -16610,7 +16610,7 @@
   {
     "id": "2023-gpm-iteso-853703-gadax",
     "name": "GADAX",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2023
   },
   {

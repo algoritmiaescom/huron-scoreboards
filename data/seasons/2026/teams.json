@@ -56,7 +56,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0010-75f7ea4e4aae",
     "name": "🇲🇽 Hijos del Puntero",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -80,7 +80,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0014-753aa9e16745",
     "name": "🇲🇽 Data Divas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -98,13 +98,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0017-868a6eea03f8",
     "name": "🇲🇽 Labubus vs Ternurines II",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0018-3b9e9a4c3ea3",
     "name": "🇲🇽 Los Ratones",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -212,7 +212,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0036-2a54ed61fa46",
     "name": "🇲🇽 The algorithms are talking",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -224,13 +224,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0038-b063e42d1d97",
     "name": "🇲🇽 NPCs",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0039-4502ac56c866",
     "name": "🇲🇽 Academia de Pilotaje Aerostático Manuel Doblado (Clases Privadas de Anatomía y Género $100/hr + 529993244386)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -284,7 +284,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0048-cfada925ffab",
     "name": "🇲🇽 Gigante Noble",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -416,7 +416,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0070-137e0ccd32dc",
     "name": "🇲🇽 Rascals Last AC",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -434,7 +434,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0073-e1ec905a4f69",
     "name": "🇲🇽 ATCSUSMS (Alianza)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -452,7 +452,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0076-e0c3b3136e5f",
     "name": "🇲🇽 Bellakos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -482,7 +482,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0081-88c7c13f6a83",
     "name": "🇲🇽 Chirigüillos de Tamaulipas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -656,13 +656,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0110-0037f621b833",
     "name": "🇲🇽 De ultimo momento",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0111-932bad3c64a8",
     "name": "🇲🇽 internal pointer",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -686,7 +686,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0115-ed7264b43aa4",
     "name": "🇲🇽 Tacos Orinoco",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -722,7 +722,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0121-b7808d02c6a4",
     "name": "🇲🇽 Sopes",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -788,7 +788,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0132-8b7971509915",
     "name": "🇲🇽 UnregisteredHypercam2",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -872,7 +872,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0146-d54f8b0de14c",
     "name": "🇲🇽 Snack Overflow",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -932,7 +932,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0156-3e39d0201cce",
     "name": "🇲🇽 (:v)3",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1022,7 +1022,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0171-905fee2009d9",
     "name": "🇲🇽 @iTEC",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1046,7 +1046,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0175-a87340bd8dcb",
     "name": "🇲🇽 hermanos brothers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1070,13 +1070,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0179-aef1e495a4b2",
     "name": "🇲🇽 Revolucion Ruta 302",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0180-43003b951999",
     "name": "🇲🇽 Vibecoders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1124,7 +1124,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0188-647b3cd19cb3",
     "name": "🇲🇽 Hope Overflow",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1172,7 +1172,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0196-e063586136fd",
     "name": "🇲🇽 solvers++",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1214,7 +1214,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0203-01802dbb6584",
     "name": "🇲🇽 Code Collective Crusaders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1232,7 +1232,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0206-6c769fa9cfa5",
     "name": "🇲🇽 tripi tropis",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1376,7 +1376,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0230-fd87802fcc43",
     "name": "🇲🇽 Los TestCases",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1406,7 +1406,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0235-ee8e219cbe23",
     "name": "🇲🇽 TPS DATA",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1448,7 +1448,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0242-dad8c294a3d2",
     "name": "🇲🇽 International Coding Papupros Corporation",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1466,7 +1466,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0245-a21b5874e5ed",
     "name": "🇲🇽 Andatti",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1484,7 +1484,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0248-1b3802602937",
     "name": "🇲🇽 SharkByte",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1496,7 +1496,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0250-54d37be04efc",
     "name": "🇲🇽",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1562,7 +1562,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0261-594a49bb7a9d",
     "name": "🇲🇽 TripleT",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -1640,7 +1640,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0274-cd7370c8f1e9",
     "name": "🇲🇽 Code Malone",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1742,7 +1742,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0291-c85d5fc6c91d",
     "name": "🇲🇽 Holy C++",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1808,13 +1808,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0302-b9d58f2bb216",
     "name": "🇲🇽 MicrobiOS",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0303-e054e7ce67aa",
     "name": "🇲🇽 Kairos",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -1892,7 +1892,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0316-da7681dd911e",
     "name": "🇲🇽 BK2",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2026
   },
   {
@@ -1922,7 +1922,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0321-7003c5c2dc5a",
     "name": "🇲🇽 Banda El Limón",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1940,7 +1940,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0324-12c8a6347729",
     "name": "🇲🇽 Team_Opus4.6",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -1988,7 +1988,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0332-7f001352b2e7",
     "name": "🇲🇽 Papi Claude",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2108,7 +2108,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0352-f9e1549f6b17",
     "name": "🇲🇽 Incodeables",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -2168,7 +2168,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0362-ff35b6645068",
     "name": "🇲🇽 borreguitos.cpp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2180,7 +2180,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0364-f2d512d68471",
     "name": "🇲🇽 Larp Larp Larp Sahurs",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -2192,7 +2192,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0366-e29b950411a3",
     "name": "🇲🇽 KerangKecil",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2210,7 +2210,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0369-ace40c75d5f5",
     "name": "🇲🇽 StackStorm",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -2336,13 +2336,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0390-8d3a08fbf230",
     "name": "🇲🇽 BitWarden",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0391-fd96fe126817",
     "name": "🇲🇽 BlueKeys",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -2624,7 +2624,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0438-9264628a07d7",
     "name": "🇲🇽 Cultivatec",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2726,7 +2726,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0455-119b7861c714",
     "name": "🇲🇽 Poke1",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2882,7 +2882,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0481-b3422cdfa530",
     "name": "🇲🇽 Hackstreet Girls",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -2978,7 +2978,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0497-49fa456ed429",
     "name": "🇲🇽 Dream team",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -3188,7 +3188,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0532-0023a61e7b20",
     "name": "🇲🇽 6ix7even",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2026
   },
   {
@@ -3224,7 +3224,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0538-7edb6f863fd1",
     "name": "🇲🇽 Bugbusters",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3242,7 +3242,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0541-811673e0fa70",
     "name": "🇲🇽 CabritasFC",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3260,7 +3260,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0544-c50477543114",
     "name": "🇲🇽 coahuilaceratops",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3290,7 +3290,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0549-3cdbc0477162",
     "name": "🇲🇽 Drimtim Patapim",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -3326,13 +3326,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0555-4064ba4a27c6",
     "name": "🇲🇽 icpcnes",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0556-d1cf61dfac44",
     "name": "🇲🇽 JUEGUIPIBES",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3362,13 +3362,13 @@
   {
     "id": "2026-gpm-qualifier-1-row-0561-037f95338204",
     "name": "🇲🇽 Legión 501",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-qualifier-1-row-0562-fee6e616de3f",
     "name": "🇲🇽 long long long",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -3428,7 +3428,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0572-36a781cc4b5b",
     "name": "🇲🇽 Nao Nao",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3440,7 +3440,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0574-6614c01f6852",
     "name": "🇲🇽 Ninja Code Force",
-    "schoolId": "source-school-1ffa2ceeda41",
+    "schoolId": "itesm-leon",
     "seasonYear": 2026
   },
   {
@@ -3452,7 +3452,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0576-e9b11bc5ba3a",
     "name": "🇲🇽 null pointers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3464,7 +3464,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0578-1faef7e984d7",
     "name": "🇲🇽 PapusPros",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3536,7 +3536,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0590-5f58aa965f44",
     "name": "🇲🇽 Rollback",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3554,7 +3554,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0593-fff1a9db75bb",
     "name": "🇲🇽 Teorema de Noether",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3608,7 +3608,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0009-649c72721d90",
     "name": "🇲🇽 Academia de Pilotaje Aerostático Manuel Doblado (Clases Privadas de Anatomía y Género $100/hr ...",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3644,7 +3644,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0051-9f56651f1f10",
     "name": "🇲🇽 LanievepintalamontañahoyNohayhuellasqueseguirEnlasoledad,unreinoYlareinaviveenmíElvientorugeYh...",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3866,7 +3866,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0349-12fa3ef21170",
     "name": "🇲🇽 IZPZ",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -3908,7 +3908,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0377-2971a2fe0b9e",
     "name": "🇲🇽 dinamita",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -4412,7 +4412,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0673-f6c2f7745909",
     "name": "🇲🇽 The algorithms 67",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -4532,7 +4532,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0059-1d8aa512abcf",
     "name": "🇲🇽 \" \"",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -4898,7 +4898,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0494-75251bf96780",
     "name": "🇲🇽 LanievepintalamontañahoyNohayhuellasqueseguirEnlasoledad,unreinoYlareinaviveenmíElvientorugeYhaytormentaenmiinteriorUnatempestadQuedemísalióLoquehayenti,nodejesverBuenachica,túsiempredebesserNohasdeabrirtucorazónPuesyaseabrióLibresoy,libresoy",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5078,7 +5078,7 @@
   {
     "id": "2026-gpm-accumulated-1126730",
     "name": "🇲🇽 Hijos del Puntero",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5102,7 +5102,7 @@
   {
     "id": "2026-gpm-accumulated-1126438",
     "name": "🇲🇽 Academia de Pilotaje Aerostático Manuel Doblado (Clases Privadas de Anatomía y Género $100/hr + 529993244386)",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5114,7 +5114,7 @@
   {
     "id": "2026-gpm-accumulated-1127319",
     "name": "🇲🇽 The algorithms are talking",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5180,13 +5180,13 @@
   {
     "id": "2026-gpm-accumulated-1124449",
     "name": "🇲🇽 Los Ratones",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126433",
     "name": "🇲🇽 Data Divas",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5204,7 +5204,7 @@
   {
     "id": "2026-gpm-accumulated-1127172",
     "name": "🇲🇽 Labubus vs Ternurines II",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -5228,7 +5228,7 @@
   {
     "id": "2026-gpm-accumulated-1126436",
     "name": "🇲🇽 ATCSUSMS (Alianza)",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5300,7 +5300,7 @@
   {
     "id": "2026-gpm-accumulated-1126908",
     "name": "🇲🇽 Gigante Noble",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5384,13 +5384,13 @@
   {
     "id": "2026-gpm-accumulated-1126437",
     "name": "🇲🇽 Nao Nao",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127131",
     "name": "🇲🇽 NPCs",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -5480,7 +5480,7 @@
   {
     "id": "2026-gpm-accumulated-1132431",
     "name": "🇲🇽 LanievepintalamontañahoyNohayhuellasqueseguirEnlasoledad,unreinoYlareinaviveenmíElvientorugeYh...",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5606,7 +5606,7 @@
   {
     "id": "2026-gpm-accumulated-1127163",
     "name": "🇲🇽 Chirigüillos de Tamaulipas",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5642,7 +5642,7 @@
   {
     "id": "2026-gpm-accumulated-1127138",
     "name": "🇲🇽 Bellakos",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5672,7 +5672,7 @@
   {
     "id": "2026-gpm-accumulated-1127164",
     "name": "🇲🇽 solvers++",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5756,7 +5756,7 @@
   {
     "id": "2026-gpm-accumulated-1126511",
     "name": "🇲🇽",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5768,7 +5768,7 @@
   {
     "id": "2026-gpm-accumulated-1127048",
     "name": "🇲🇽 Kairos",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -5810,7 +5810,7 @@
   {
     "id": "2026-gpm-accumulated-1126434",
     "name": "🇲🇽 UnregisteredHypercam2",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5900,7 +5900,7 @@
   {
     "id": "2026-gpm-accumulated-1126400",
     "name": "🇲🇽 TripleT",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5912,7 +5912,7 @@
   {
     "id": "2026-gpm-accumulated-1126446",
     "name": "🇲🇽 Sopes",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -5942,7 +5942,7 @@
   {
     "id": "2026-gpm-accumulated-1127321",
     "name": "🇲🇽 Andatti",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -6014,7 +6014,7 @@
   {
     "id": "2026-gpm-accumulated-1126431",
     "name": "🇲🇽 Tacos Orinoco",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6044,7 +6044,7 @@
   {
     "id": "2026-gpm-accumulated-1128135",
     "name": "🇲🇽 De ultimo momento",
-    "schoolId": "source-school-f8a66d8f4c32",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -6134,7 +6134,7 @@
   {
     "id": "2026-gpm-accumulated-1127480",
     "name": "🇲🇽 hermanos brothers",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6170,7 +6170,7 @@
   {
     "id": "2026-gpm-accumulated-1128133",
     "name": "🇲🇽 BlueKeys",
-    "schoolId": "source-school-f8a66d8f4c32",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -6272,7 +6272,7 @@
   {
     "id": "2026-gpm-accumulated-1127173",
     "name": "🇲🇽 Snack Overflow",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -6404,7 +6404,7 @@
   {
     "id": "2026-gpm-accumulated-1129021",
     "name": "🇲🇽 Team_Opus4.6",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6428,7 +6428,7 @@
   {
     "id": "2026-gpm-accumulated-1126638",
     "name": "🇲🇽 TPS DATA",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6530,7 +6530,7 @@
   {
     "id": "2026-gpm-accumulated-1127660",
     "name": "🇲🇽 Hope Overflow",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6560,13 +6560,13 @@
   {
     "id": "2026-gpm-accumulated-1127662",
     "name": "🇲🇽 International Coding Papupros Corporation",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127661",
     "name": "🇲🇽 MicrobiOS",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6578,7 +6578,7 @@
   {
     "id": "2026-gpm-accumulated-1128124",
     "name": "🇲🇽 Banda El Limón",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6704,7 +6704,7 @@
   {
     "id": "2026-gpm-accumulated-1126435",
     "name": "🇲🇽 (:v)3",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6716,7 +6716,7 @@
   {
     "id": "2026-gpm-accumulated-1124503",
     "name": "🇲🇽 internal pointer",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6776,7 +6776,7 @@
   {
     "id": "2026-gpm-accumulated-1127174",
     "name": "🇲🇽 tripi tropis",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -6806,7 +6806,7 @@
   {
     "id": "2026-gpm-accumulated-1127052",
     "name": "🇲🇽 SharkByte",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -6830,7 +6830,7 @@
   {
     "id": "2026-gpm-accumulated-1128441",
     "name": "🇲🇽 Holy C++",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6854,7 +6854,7 @@
   {
     "id": "2026-gpm-accumulated-1126432",
     "name": "🇲🇽 Revolucion Ruta 302",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -6866,7 +6866,7 @@
   {
     "id": "2026-gpm-accumulated-1127659",
     "name": "🇲🇽 Vibecoders",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -6878,7 +6878,7 @@
   {
     "id": "2026-gpm-accumulated-1127574",
     "name": "🇲🇽 Los TestCases",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -6992,7 +6992,7 @@
   {
     "id": "2026-gpm-accumulated-1127479",
     "name": "🇲🇽 BK2",
-    "schoolId": "source-school-df77f8c4e06f",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2026
   },
   {
@@ -7016,7 +7016,7 @@
   {
     "id": "2026-gpm-accumulated-1124502",
     "name": "🇲🇽 Code Malone",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -7034,7 +7034,7 @@
   {
     "id": "2026-gpm-accumulated-1126913",
     "name": "🇲🇽 borreguitos.cpp",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -7052,7 +7052,7 @@
   {
     "id": "2026-gpm-accumulated-1126932",
     "name": "🇲🇽 KerangKecil",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -7064,13 +7064,13 @@
   {
     "id": "2026-gpm-accumulated-1134667",
     "name": "🇲🇽 IZPZ",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127298",
     "name": "🇲🇽 Larp Larp Larp Sahurs",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -7082,7 +7082,7 @@
   {
     "id": "2026-gpm-accumulated-1128065",
     "name": "🇲🇽 Papi Claude",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -7166,7 +7166,7 @@
   {
     "id": "2026-gpm-accumulated-1127658",
     "name": "🇲🇽 BitWarden",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -7196,7 +7196,7 @@
   {
     "id": "2026-gpm-accumulated-1128609",
     "name": "🇲🇽 Dream team",
-    "schoolId": "source-school-f8a66d8f4c32",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -7250,7 +7250,7 @@
   {
     "id": "2026-gpm-accumulated-1128517",
     "name": "🇲🇽 Poke1",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7292,7 +7292,7 @@
   {
     "id": "2026-gpm-accumulated-1128301",
     "name": "🇲🇽 long long long",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -7364,7 +7364,7 @@
   {
     "id": "2026-gpm-accumulated-1127663",
     "name": "🇲🇽 Rascals Last AC",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -7418,7 +7418,7 @@
   {
     "id": "2026-gpm-accumulated-1127657",
     "name": "🇲🇽 @iTEC",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -7430,7 +7430,7 @@
   {
     "id": "2026-gpm-accumulated-1128122",
     "name": "🇲🇽 Code Collective Crusaders",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -7604,7 +7604,7 @@
   {
     "id": "2026-gpm-accumulated-1128123",
     "name": "🇲🇽 Incodeables",
-    "schoolId": "source-school-d61c41a82877",
+    "schoolId": "itesm-cem",
     "seasonYear": 2026
   },
   {
@@ -7652,7 +7652,7 @@
   {
     "id": "2026-gpm-accumulated-1128134",
     "name": "🇲🇽 StackStorm",
-    "schoolId": "source-school-f8a66d8f4c32",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2026
   },
   {
@@ -7742,7 +7742,7 @@
   {
     "id": "2026-gpm-accumulated-1126910",
     "name": "🇲🇽 Ninja Code Force",
-    "schoolId": "source-school-41239e5c8a3b",
+    "schoolId": "itesm-leon",
     "seasonYear": 2026
   },
   {
@@ -7838,7 +7838,7 @@
   {
     "id": "2026-gpm-accumulated-1127168",
     "name": "🇲🇽 Cultivatec",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -7928,7 +7928,7 @@
   {
     "id": "2026-gpm-accumulated-1134844",
     "name": "🇲🇽 dinamita",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -7946,7 +7946,7 @@
   {
     "id": "2026-gpm-accumulated-1128522",
     "name": "🇲🇽 Drimtim Patapim",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -8024,7 +8024,7 @@
   {
     "id": "2026-gpm-accumulated-1128067",
     "name": "🇲🇽 Hackstreet Girls",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8108,7 +8108,7 @@
   {
     "id": "2026-gpm-accumulated-1127666",
     "name": "🇲🇽 6ix7even",
-    "schoolId": "source-school-c81c4e48c8ed",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2026
   },
   {
@@ -8162,19 +8162,19 @@
   {
     "id": "2026-gpm-accumulated-1127176",
     "name": "🇲🇽 Bugbusters",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1127175",
     "name": "🇲🇽 CabritasFC",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1128061",
     "name": "🇲🇽 coahuilaceratops",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8330,7 +8330,7 @@
   {
     "id": "2026-gpm-accumulated-1127162",
     "name": "🇲🇽 icpcnes",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -8366,7 +8366,7 @@
   {
     "id": "2026-gpm-accumulated-1128062",
     "name": "🇲🇽 JUEGUIPIBES",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8414,7 +8414,7 @@
   {
     "id": "2026-gpm-accumulated-1127181",
     "name": "🇲🇽 Legión 501",
-    "schoolId": "source-school-1e495eaa39fa",
+    "schoolId": "tec-puebla",
     "seasonYear": 2026
   },
   {
@@ -8528,13 +8528,13 @@
   {
     "id": "2026-gpm-accumulated-1127137",
     "name": "🇲🇽 null pointers",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1126909",
     "name": "🇲🇽 PapusPros",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8594,7 +8594,7 @@
   {
     "id": "2026-gpm-accumulated-1126987",
     "name": "🇲🇽 Rollback",
-    "schoolId": "source-school-36dd3f015eef",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2026
   },
   {
@@ -8648,13 +8648,13 @@
   {
     "id": "2026-gpm-accumulated-1128587",
     "name": "🇲🇽 Teorema de Noether",
-    "schoolId": "source-school-eac8bea18c92",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2026
   },
   {
     "id": "2026-gpm-accumulated-1134415",
     "name": "🇲🇽 The algorithms 67",
-    "schoolId": "source-school-0f8e1e27e205",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {

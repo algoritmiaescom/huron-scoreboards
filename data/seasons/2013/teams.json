@@ -20,7 +20,7 @@
   {
     "id": "2013-mexico-finals-global-row-0004-locos",
     "name": "Locos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -74,7 +74,7 @@
   {
     "id": "2013-mexico-finals-global-row-0013-cembitshifters",
     "name": "CEMbitshifters",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2013
   },
   {
@@ -110,7 +110,7 @@
   {
     "id": "2013-mexico-finals-global-row-0019-modelo-entidad-relacion",
     "name": "Modelo entidad-relación",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -122,7 +122,7 @@
   {
     "id": "2013-mexico-finals-global-row-0021-algoritmo",
     "name": "Algoritmo",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -152,7 +152,7 @@
   {
     "id": "2013-mexico-finals-global-row-0026-dudes",
     "name": "Dudes",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2013
   },
   {
@@ -182,7 +182,7 @@
   {
     "id": "2013-mexico-finals-global-row-0031-yhwh",
     "name": "YHWH",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -194,7 +194,7 @@
   {
     "id": "2013-mexico-finals-global-row-0033-los-forloops",
     "name": "Los Forloops",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -236,7 +236,7 @@
   {
     "id": "2013-mexico-finals-global-row-0040-greedies",
     "name": "Greedies",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -260,7 +260,7 @@
   {
     "id": "2013-mexico-finals-global-row-0044-trinomio",
     "name": "Trinomio",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -302,7 +302,7 @@
   {
     "id": "2013-mexico-finals-global-row-0051-tribonacci",
     "name": "Tribonacci",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2013
   },
   {
@@ -344,7 +344,7 @@
   {
     "id": "2013-mexico-finals-global-row-0058-perrys",
     "name": "Perrys",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2013
   },
   {
@@ -356,7 +356,7 @@
   {
     "id": "2013-mexico-finals-global-row-0060-el-santo-blue-demon-y-bulldog",
     "name": "El Santo, Blue Demon y Bulldog",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2013
   },
   {
@@ -386,7 +386,7 @@
   {
     "id": "2013-mexico-finals-global-row-0065-error-418",
     "name": "Error 418",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2013
   },
   {
@@ -410,7 +410,7 @@
   {
     "id": "2013-mexico-finals-global-row-0069-thewhileloops",
     "name": "TheWhileLoops",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -464,7 +464,7 @@
   {
     "id": "2013-mexico-finals-global-row-0078-aio",
     "name": "AIO",
-    "schoolId": "source-school-64985288ecac",
+    "schoolId": "tec-aguascalientes",
     "seasonYear": 2013
   },
   {
@@ -548,7 +548,7 @@
   {
     "id": "2013-mexico-finals-global-row-0092-kebabs",
     "name": "Kebabs",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2013
   },
   {
@@ -584,7 +584,7 @@
   {
     "id": "2013-mexico-finals-global-row-0098-ncodersqro",
     "name": "nCodersQro",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2013
   },
   {
@@ -794,7 +794,7 @@
   {
     "id": "2013-mexico-finals-global-row-0133-the-three-amigos",
     "name": "The three amigos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {
@@ -914,7 +914,7 @@
   {
     "id": "2013-mexico-finals-global-row-0153-death-or-alive",
     "name": "Death Or Alive",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2013
   },
   {

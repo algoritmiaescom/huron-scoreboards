@@ -34,6 +34,79 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('consolidates ITESM campuses under one university while keeping unrelated institutions separate', async () => {
+    const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published archive');
+    }
+    const published = result.data;
+    const institution = selectSchoolScope(published, 'itesm', 'institution');
+    const direct = selectSchoolScope(published, 'itesm', 'school');
+    if (institution.status !== 'found' || direct.status !== 'found') {
+      throw new Error('Expected ITESM institutional and direct scopes');
+    }
+    expect(institution.record.school.shortName).toBe('Tec de Monterrey');
+    expect(institution.record.schools).toHaveLength(20);
+    expect(institution.record.teams).toHaveLength(1713);
+    expect(direct.record.teams).toHaveLength(0);
+    for (const [id, count] of [
+      ['itesm-monterrey', 706],
+      ['itesm-cem', 311],
+      ['tec-puebla', 166],
+      ['tec-guadalajara', 120],
+      ['tec-queretaro', 120],
+      ['tec-ciudad-de-mexico', 104],
+      ['tec-monterrey-toluca', 70],
+      ['itesm-cuernavaca', 34],
+      ['tec-santa-fe', 33],
+      ['itesm-chihuahua', 10],
+      ['tec-aguascalientes', 9],
+      ['itesm-morelia', 8],
+      ['itesm-saltillo', 5],
+      ['itesm-tampico', 4],
+      ['itesm-zacatecas', 4],
+      ['itesm-laguna', 4],
+      ['itesm-leon', 2],
+      ['itesm-central-veracruz', 2],
+      ['itesm-san-luis', 1],
+    ] as const) {
+      const unit = selectSchoolScope(published, id, 'school');
+      if (unit.status !== 'found') {
+        throw new Error(`Expected ITESM campus ${id}`);
+      }
+      expect(unit.record.school.parentInstitutionId).toBe('itesm');
+      expect(unit.record.school.officialName).toMatch(/^Tecnológico de Monterrey, Campus /);
+      expect(unit.record.teams).toHaveLength(count);
+      expect(institution.record.teams.map((team) => team.id)).toEqual(
+        expect.arrayContaining(unit.record.teams.map((team) => team.id)),
+      );
+    }
+    expect(published.schools.some(({ id }) => id === 'tec-mx')).toBe(false);
+    expect(published.teams.some(({ schoolId }) => schoolId === 'tec-mx')).toBe(false);
+    expect(
+      published.teams.find(({ id }) => id === '2019-mexico-finals-final-row-0069-leftasanexercise')
+        ?.schoolId,
+    ).toBe('tec-queretaro');
+    const includedIds = new Set(institution.record.teams.map(({ id }) => id));
+    for (const schoolId of [
+      'iteso',
+      'udem-monterrey',
+      'tecmilenio-las-torres',
+      'tec-costa-rica',
+      'tec-costa-rica-alajuela',
+      'tecnm-parral',
+      'source-label-tec-4e03be678c',
+    ]) {
+      const unrelated = published.teams.filter((team) => team.schoolId === schoolId);
+      expect(unrelated.length).toBeGreaterThan(0);
+      expect(unrelated.every(({ id }) => !includedIds.has(id))).toBe(true);
+    }
+  });
+
   it('consolidates UNAM units without inferring faculties for university-only registrations', async () => {
     const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
       query: '?raw',
@@ -139,7 +212,7 @@ describe('runtime repositories', () => {
     const ipnIds = new Set(ipn.record.teams.map(({ id }) => id));
     expect(unamTeams.every(({ id }) => !ipnIds.has(id))).toBe(true);
     expect(published.teams.filter(({ schoolId }) => schoolId === 'ipn')).toHaveLength(0);
-    expect(published.schools).toHaveLength(1118);
+    expect(published.schools).toHaveLength(1080);
   });
 
   it('consolidates ESCOM registrations under its IPN unit without merging unrelated schools', async () => {

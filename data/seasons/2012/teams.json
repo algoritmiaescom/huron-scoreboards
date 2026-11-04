@@ -62,7 +62,7 @@
   {
     "id": "2012-mexico-finals-global-row-0011-c-mita",
     "name": "C-mita",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2012
   },
   {
@@ -92,7 +92,7 @@
   {
     "id": "2012-mexico-finals-global-row-0016-tribonacci",
     "name": "Tribonacci",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2012
   },
   {
@@ -146,7 +146,7 @@
   {
     "id": "2012-mexico-finals-global-row-0025-los-queries",
     "name": "Los Queries",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -230,7 +230,7 @@
   {
     "id": "2012-mexico-finals-global-row-0039-iterators",
     "name": "Iterators",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -380,7 +380,7 @@
   {
     "id": "2012-mexico-finals-global-row-0064-pallevalopacomelaqui",
     "name": "PaLlevalOPaComelAqui",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -434,7 +434,7 @@
   {
     "id": "2012-mexico-finals-global-row-0073-iot",
     "name": "IOT",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2012
   },
   {
@@ -500,7 +500,7 @@
   {
     "id": "2012-mexico-finals-global-row-0084-los-forloops",
     "name": "Los Forloops",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -524,7 +524,7 @@
   {
     "id": "2012-mexico-finals-global-row-0088-borregos",
     "name": "Borregos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -548,7 +548,7 @@
   {
     "id": "2012-mexico-finals-global-row-0092-bubblegum-sort",
     "name": "Bubblegum Sort",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -560,7 +560,7 @@
   {
     "id": "2012-mexico-finals-global-row-0094-los-picadientes-de-caborca",
     "name": "Los Picadientes de Caborca",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -572,13 +572,13 @@
   {
     "id": "2012-mexico-finals-global-row-0096-tri-gun",
     "name": "Tri-Gun",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
     "id": "2012-mexico-finals-global-row-0097-razadelarazon",
     "name": "RazaDeLaRazon",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -680,13 +680,13 @@
   {
     "id": "2012-mexico-finals-global-row-0114-nipper",
     "name": "Nipper",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
     "id": "2012-mexico-finals-global-row-0115-ccm1",
     "name": "ccm1",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2012
   },
   {
@@ -698,7 +698,7 @@
   {
     "id": "2012-mexico-finals-global-row-0117-pampasmitas",
     "name": "Pampasmitas",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
@@ -710,7 +710,7 @@
   {
     "id": "2012-mexico-finals-global-row-0119-losrivas",
     "name": "losrivas",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2012
   },
   {
@@ -728,19 +728,19 @@
   {
     "id": "2012-mexico-finals-global-row-0122-losparces",
     "name": "losparces",
-    "schoolId": "source-school-d2a548191dfa",
+    "schoolId": "tec-monterrey-toluca",
     "seasonYear": 2012
   },
   {
     "id": "2012-mexico-finals-global-row-0123-los-saiyayin",
     "name": "Los Saiyayin",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2012
   },
   {
     "id": "2012-mexico-finals-global-row-0124-ccm2",
     "name": "ccm2",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2012
   },
   {

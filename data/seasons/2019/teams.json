@@ -410,7 +410,7 @@
   {
     "id": "2019-mexico-finals-final-row-0069-leftasanexercise",
     "name": "lEFTaSaNeXERCISE",
-    "schoolId": "tec-mx",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
@@ -2216,7 +2216,7 @@
   {
     "id": "2019-gpm-iteso-row-0002-we-put-the-d-in-dp",
     "name": "We put the D in DP",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2240,7 +2240,7 @@
   {
     "id": "2019-gpm-iteso-row-0006-heaps-dont-lie",
     "name": "Heaps Dont Lie",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2264,7 +2264,7 @@
   {
     "id": "2019-gpm-iteso-row-0010-ac-holics",
     "name": "AC’holics",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2282,7 +2282,7 @@
   {
     "id": "2019-gpm-iteso-row-0013-leftasanexercise",
     "name": "lEFTaSaNeXERCISE",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
@@ -2300,7 +2300,7 @@
   {
     "id": "2019-gpm-iteso-row-0017-los-que-no-vinieron",
     "name": "Los que no vinieron",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2019
   },
   {
@@ -2342,7 +2342,7 @@
   {
     "id": "2019-gpm-iteso-row-0024-mdp",
     "name": "mdp",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2019
   },
   {
@@ -2372,7 +2372,7 @@
   {
     "id": "2019-gpm-iteso-row-0029-kygerand",
     "name": "Kygerand",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -2408,7 +2408,7 @@
   {
     "id": "2019-gpm-iteso-row-0038-o-1",
     "name": "O(1)",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2462,7 +2462,7 @@
   {
     "id": "2019-gpm-iteso-row-0048-los-hombres-de-katy",
     "name": "Los hombres de Katy",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2474,7 +2474,7 @@
   {
     "id": "2019-gpm-iteso-row-0050-bissingzeile11",
     "name": "Bissingzeile11",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2498,7 +2498,7 @@
   {
     "id": "2019-gpm-iteso-row-0054-pitones",
     "name": "Pitones",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -2552,7 +2552,7 @@
   {
     "id": "2019-gpm-iteso-row-0063-gekko",
     "name": "Gekko",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2019
   },
   {
@@ -2576,7 +2576,7 @@
   {
     "id": "2019-gpm-iteso-row-0067-char-izard",
     "name": "char izard;",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2019
   },
   {
@@ -2600,7 +2600,7 @@
   {
     "id": "2019-gpm-iteso-row-0071-galacticos-1",
     "name": "Galácticos 1",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2019
   },
   {
@@ -2732,7 +2732,7 @@
   {
     "id": "2019-gpm-iteso-row-0093-name-not-found",
     "name": "name not found",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2019
   },
   {
@@ -2756,7 +2756,7 @@
   {
     "id": "2019-gpm-iteso-row-0097-root-scramblers",
     "name": "root@scramblers",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -2798,7 +2798,7 @@
   {
     "id": "2019-gpm-iteso-row-0104-equipo-estrella",
     "name": "Equipo Estrella",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2822,13 +2822,13 @@
   {
     "id": "2019-gpm-iteso-row-0108-rebel-coders",
     "name": "Rebel Coders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0109-your-socialist-hacker",
     "name": "Your Socialist Hacker",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -2840,13 +2840,13 @@
   {
     "id": "2019-gpm-iteso-row-0111-dj-ikstra-pimp-y-kuzko",
     "name": "DJ Ikstra, Pimp y Kuzko",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0112-techlink",
     "name": "techlink",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2864,7 +2864,7 @@
   {
     "id": "2019-gpm-iteso-row-0115-bathtub-coding",
     "name": "Bathtub Coding",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2882,7 +2882,7 @@
   {
     "id": "2019-gpm-iteso-row-0118-eszettcorp",
     "name": "EszettCorp",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2894,7 +2894,7 @@
   {
     "id": "2019-gpm-iteso-row-0120-elite-penguin-force",
     "name": "Elite Penguin Force",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2019
   },
   {
@@ -2918,7 +2918,7 @@
   {
     "id": "2019-gpm-iteso-row-0124-coderregos",
     "name": "CODErregos",
-    "schoolId": "source-label-itesm-campus-chihuahua-fd05b9a0a5",
+    "schoolId": "itesm-chihuahua",
     "seasonYear": 2019
   },
   {
@@ -2930,7 +2930,7 @@
   {
     "id": "2019-gpm-iteso-row-0126-the-girls-have-no-name",
     "name": "The girls have no name",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -2960,7 +2960,7 @@
   {
     "id": "2019-gpm-iteso-row-0131-gunters",
     "name": "Gunters",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -2990,7 +2990,7 @@
   {
     "id": "2019-gpm-iteso-row-0136-team-extends-god",
     "name": "Team extends God",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2019
   },
   {
@@ -3056,13 +3056,13 @@
   {
     "id": "2019-gpm-iteso-row-0147-quesadilla-con-queso",
     "name": "Quesadilla con queso",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0148-calcetines-de-bebe",
     "name": "Calcetines de bebé",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -3098,7 +3098,7 @@
   {
     "id": "2019-gpm-iteso-row-0154-flaming-flamingoes",
     "name": "Flaming Flamingoes",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3164,7 +3164,7 @@
   {
     "id": "2019-gpm-iteso-row-0165-team-jpg",
     "name": "Team JPG",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3206,7 +3206,7 @@
   {
     "id": "2019-gpm-iteso-row-0172-fenix",
     "name": "Fenix",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3260,13 +3260,13 @@
   {
     "id": "2019-gpm-iteso-row-0181-c-nadores",
     "name": "C-nadores",
-    "schoolId": "source-label-itesm-campus-santa-fe-9fc02ffda4",
+    "schoolId": "tec-santa-fe",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0182-yippee-ki-yay-mother-coders",
     "name": "Yippee ki-yay mother coders",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -3284,7 +3284,7 @@
   {
     "id": "2019-gpm-iteso-row-0185-codebusters",
     "name": "Codebusters",
-    "schoolId": "source-label-itesm-campus-estado-de-mexico-9c896306c4",
+    "schoolId": "itesm-cem",
     "seasonYear": 2019
   },
   {
@@ -3320,13 +3320,13 @@
   {
     "id": "2019-gpm-iteso-row-0191-galacticos-2",
     "name": "Galácticos 2",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0192-rike-polle-de-10-pesitos",
     "name": "Rike Polle de 10 pesitos",
-    "schoolId": "source-label-itesm-campus-cuernavaca-85b5efd00c",
+    "schoolId": "itesm-cuernavaca",
     "seasonYear": 2019
   },
   {
@@ -3356,13 +3356,13 @@
   {
     "id": "2019-gpm-iteso-row-0197-beagletown",
     "name": "BeagleTown",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0198-codevengers",
     "name": "Codevengers",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3554,7 +3554,7 @@
   {
     "id": "2019-gpm-iteso-row-0230-no-compila",
     "name": "No Compila",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3614,7 +3614,7 @@
   {
     "id": "2019-gpm-iteso-row-0240-uwu",
     "name": "uwu",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3626,7 +3626,7 @@
   {
     "id": "2019-gpm-iteso-row-0242-el-cartel-de-java",
     "name": "El cartel de Java",
-    "schoolId": "source-label-itesm-campus-ciudad-de-mexico-d472aae1b9",
+    "schoolId": "tec-ciudad-de-mexico",
     "seasonYear": 2019
   },
   {
@@ -3650,7 +3650,7 @@
   {
     "id": "2019-gpm-iteso-row-0246-los-pescadores-del-rio-bravo",
     "name": "Los Pescadores del Río Bravo",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3692,7 +3692,7 @@
   {
     "id": "2019-gpm-iteso-row-0253-tornados-tlaquepaque",
     "name": "Tornados Tlaquepaque",
-    "schoolId": "source-label-itesm-campus-puebla-ee3242fade",
+    "schoolId": "tec-puebla",
     "seasonYear": 2019
   },
   {
@@ -3710,13 +3710,13 @@
   {
     "id": "2019-gpm-iteso-row-0256-nionic",
     "name": "Nionic",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0257-equipo-perdedor",
     "name": "Equipo perdedor",
-    "schoolId": "source-label-itesm-campus-tampico-63b99f7f21",
+    "schoolId": "itesm-tampico",
     "seasonYear": 2019
   },
   {
@@ -3764,7 +3764,7 @@
   {
     "id": "2019-gpm-iteso-row-0265-bubulubuenos",
     "name": "Bubulubuenos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -3788,7 +3788,7 @@
   {
     "id": "2019-gpm-iteso-row-0269-galacticos-5",
     "name": "Galácticos 5",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2019
   },
   {
@@ -4082,7 +4082,7 @@
   {
     "id": "2019-gpm-iteso-row-0318-los-nopales-cosmicos",
     "name": "Los nopales cósmicos",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -4172,7 +4172,7 @@
   {
     "id": "2019-gpm-iteso-row-0333-segmentation-fault",
     "name": "Segmentation Fault",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -4214,7 +4214,7 @@
   {
     "id": "2019-gpm-iteso-row-0340-galacticos-3",
     "name": "Galácticos 3",
-    "schoolId": "source-label-itesm-campus-guadalajara-a27baa0fd4",
+    "schoolId": "tec-guadalajara",
     "seasonYear": 2019
   },
   {
@@ -4232,7 +4232,7 @@
   {
     "id": "2019-gpm-iteso-row-0343-pizza-atomica-2-0",
     "name": "Pizza Atómica 2.0",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
@@ -4292,7 +4292,7 @@
   {
     "id": "2019-gpm-iteso-row-0353-tokki-team",
     "name": "Tokki Team",
-    "schoolId": "source-label-itesm-campus-tampico-63b99f7f21",
+    "schoolId": "itesm-tampico",
     "seasonYear": 2019
   },
   {
@@ -4376,7 +4376,7 @@
   {
     "id": "2019-gpm-iteso-row-0367-sovie",
     "name": "Sovie",
-    "schoolId": "source-label-itesm-campus-queretaro-3c252201a2",
+    "schoolId": "tec-queretaro",
     "seasonYear": 2019
   },
   {
@@ -4454,7 +4454,7 @@
   {
     "id": "2019-gpm-iteso-row-0380-combos-a-99",
     "name": "Combos a 99",
-    "schoolId": "source-label-itesm-campus-monterrey-4bfce0d452",
+    "schoolId": "itesm-monterrey",
     "seasonYear": 2019
   },
   {
@@ -4466,7 +4466,7 @@
   {
     "id": "2019-gpm-iteso-row-0382-acusticartisans",
     "name": "AcusticArtisans",
-    "schoolId": "source-label-itesm-campus-tampico-63b99f7f21",
+    "schoolId": "itesm-tampico",
     "seasonYear": 2019
   }
 ]
