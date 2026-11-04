@@ -15758,7 +15758,7 @@
   {
     "id": "2025-gpm-iteso-1068108-fernanda-y-los-icpcerdos",
     "name": "Fernanda y los icpcerdos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -15794,7 +15794,7 @@
   {
     "id": "2025-gpm-iteso-1068104-igloo-zone",
     "name": "Igloo Zone",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -15884,7 +15884,7 @@
   {
     "id": "2025-gpm-iteso-1072649-testigos-de-german",
     "name": "Testigos de Germán",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -16046,13 +16046,13 @@
   {
     "id": "2025-gpm-iteso-1069136-time-limit-exceeded",
     "name": "Time Limit Exceeded",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1068105-mle-marquina-limit-exceeded",
     "name": "MLE (Marquina Limit Exceeded)",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16064,7 +16064,7 @@
   {
     "id": "2025-gpm-iteso-1052340-7-up",
     "name": "7-UP",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
@@ -16118,7 +16118,7 @@
   {
     "id": "2025-gpm-iteso-1068118-infinite-loopers",
     "name": "Infinite Loopers",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16226,7 +16226,7 @@
   {
     "id": "2025-gpm-iteso-1068107-regrouped",
     "name": "regroUPed",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16250,7 +16250,7 @@
   {
     "id": "2025-gpm-iteso-1068120-icpceros",
     "name": "ICPCeros",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16322,7 +16322,7 @@
   {
     "id": "2025-gpm-iteso-1069063-team-impala",
     "name": "Team Impala",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -16508,7 +16508,7 @@
   {
     "id": "2025-gpm-iteso-1068352-bruteforce",
     "name": "BruteForce",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16700,7 +16700,7 @@
   {
     "id": "2025-gpm-iteso-1052341-upmat",
     "name": "UPMAT",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2025
   },
   {
@@ -16820,7 +16820,7 @@
   {
     "id": "2025-gpm-iteso-1068119-temp",
     "name": "temp",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2025
   },
   {
@@ -16976,7 +16976,7 @@
   {
     "id": "2025-gpm-iteso-1069002-los-debuffers",
     "name": "Los Debuffers",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -17396,13 +17396,13 @@
   {
     "id": "2025-gpm-iteso-1069019-los-3-locos",
     "name": "Los 3 Locos",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
     "id": "2025-gpm-iteso-1070924-chatgrd",
     "name": "ChatGRD",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -17678,7 +17678,7 @@
   {
     "id": "2025-gpm-iteso-1069021-caballeros-del-codigo",
     "name": "Caballeros del Código",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -18080,7 +18080,7 @@
   {
     "id": "2025-gpm-iteso-1069020-python-es",
     "name": "Python_Es",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -18200,7 +18200,7 @@
   {
     "id": "2025-gpm-iteso-1069022-0xdeadbeef",
     "name": "0xDEADBEEF",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -18410,7 +18410,7 @@
   {
     "id": "2025-gpm-iteso-1069023-tocadores-de-teclados",
     "name": "Tocadores de Teclados",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {
@@ -18782,7 +18782,7 @@
   {
     "id": "2025-gpm-iteso-1077187-chalanes-cpp",
     "name": "Chalanes.cpp",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2025
   },
   {

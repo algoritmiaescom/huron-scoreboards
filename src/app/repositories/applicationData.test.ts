@@ -34,6 +34,76 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('consolidates explicit Panamericana campuses without assigning ambiguous UP registrations', async () => {
+    const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published archive');
+    }
+    const published = result.data;
+    const institution = selectSchoolScope(published, 'up', 'institution');
+    const direct = selectSchoolScope(published, 'up', 'school');
+    if (institution.status !== 'found' || direct.status !== 'found') {
+      throw new Error('Expected Panamericana institutional and direct scopes');
+    }
+    expect(institution.record.school).toEqual({
+      id: 'up',
+      officialName: 'Universidad Panamericana',
+      shortName: 'UP',
+    });
+    expect(institution.record.schools).toHaveLength(4);
+    expect(institution.record.teams).toHaveLength(568);
+    expect(direct.record.teams).toHaveLength(0);
+    for (const [id, shortName, count, historicalTeam] of [
+      ['up-aguascalientes', 'UP Bonaterra', 306, '2009-mexico-finals-global-row-0052-qwerty'],
+      ['up-guadalajara', 'UP Guadalajara', 247, '2021-gpm-iteso-555399-mojibake-upgdl'],
+      ['up-ciudad-de-mexico', 'UP CDMX', 15, '2015-gpm-iteso-row-0202-upm2'],
+    ] as const) {
+      const unit = selectSchoolScope(published, id, 'school');
+      if (unit.status !== 'found') {
+        throw new Error(`Expected Panamericana campus ${id}`);
+      }
+      expect(unit.record.school.parentInstitutionId).toBe('up');
+      expect(unit.record.school.shortName).toBe(shortName);
+      expect(unit.record.teams).toHaveLength(count);
+      expect(unit.record.teams.map((team) => team.id)).toContain(historicalTeam);
+    }
+    for (const id of [
+      'source-label-universidad-panamericana-campus-bonaterra-d3efb4189f',
+      'source-label-up-bonaterra-8c52d5b992',
+      'source-school-aa2a43de1753',
+      'source-school-f00f1f3e2d58',
+      'source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0',
+      'source-school-51b132f7b9a7',
+      'source-school-b4d27b58e7e2',
+      'source-school-91f6e4436bd9',
+      'source-school-5b30fd95c616',
+    ]) {
+      expect(published.schools.some((school) => school.id === id)).toBe(false);
+      expect(published.teams.some((team) => team.schoolId === id)).toBe(false);
+    }
+    expect(published.schools.find(({ id }) => id === 'source-label-up-42cb4e6f84')).toEqual({
+      id: 'source-label-up-42cb4e6f84',
+      officialName: 'UP',
+      shortName: 'UP',
+    });
+    expect(
+      published.teams
+        .filter(({ schoolId }) => schoolId === 'source-label-up-42cb4e6f84')
+        .map(({ id }) => id),
+    ).toEqual([
+      '2024-gpm-qualifier-1-row-0188-mixcoac',
+      '2024-gpm-qualifier-2-row-0149-mixcoac',
+      '2024-gpm-repechage-row-0065-mixcoac',
+      '2024-mexico-finals-final-row-0234-mixcoac',
+      '2025-mexico-finals-final-row-0204-7-up',
+      '2025-mexico-finals-final-row-0495-upmat',
+    ]);
+  });
+
   it('consolidates UG-CIMAT without inferring a parent or merging DCNE and SENAI identities', async () => {
     const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
       query: '?raw',
@@ -306,7 +376,7 @@ describe('runtime repositories', () => {
     const ipnIds = new Set(ipn.record.teams.map(({ id }) => id));
     expect(unamTeams.every(({ id }) => !ipnIds.has(id))).toBe(true);
     expect(published.teams.filter(({ schoolId }) => schoolId === 'ipn')).toHaveLength(0);
-    expect(published.schools).toHaveLength(1075);
+    expect(published.schools).toHaveLength(1067);
   });
 
   it('consolidates ESCOM registrations under its IPN unit without merging unrelated schools', async () => {

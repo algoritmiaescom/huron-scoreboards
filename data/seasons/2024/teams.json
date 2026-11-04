@@ -16244,7 +16244,7 @@
   {
     "id": "2024-gpm-iteso-980950-upsolving",
     "name": "UPsolving",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -16256,7 +16256,7 @@
   {
     "id": "2024-gpm-iteso-980826-upgraded",
     "name": "UPgraded",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -16304,13 +16304,13 @@
   {
     "id": "2024-gpm-iteso-980846-legion501",
     "name": "Legion501",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
     "id": "2024-gpm-iteso-980080-team-impala",
     "name": "Team Impala",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -16490,7 +16490,7 @@
   {
     "id": "2024-gpm-iteso-980849-iseepc",
     "name": "ISeePC",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -16646,7 +16646,7 @@
   {
     "id": "2024-gpm-iteso-980835-the-last-dance",
     "name": "The last dance",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -16688,7 +16688,7 @@
   {
     "id": "2024-gpm-iteso-980834-rocketup",
     "name": "RocketUP",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -16856,7 +16856,7 @@
   {
     "id": "2024-gpm-iteso-979173-mixcoac",
     "name": "Mixcoac",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2024
   },
   {
@@ -16880,7 +16880,7 @@
   {
     "id": "2024-gpm-iteso-979162-testigos-de-duport",
     "name": "Testigos de DuPort",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -17078,7 +17078,7 @@
   {
     "id": "2024-gpm-iteso-980854-holamundo",
     "name": "HolaMundo",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -17474,7 +17474,7 @@
   {
     "id": "2024-gpm-iteso-980856-quack",
     "name": "Quack++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -17672,7 +17672,7 @@
   {
     "id": "2024-gpm-iteso-979163-up-fuerzas-especiales",
     "name": "UP Fuerzas Especiales",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -17684,7 +17684,7 @@
   {
     "id": "2024-gpm-iteso-980755-las-divines",
     "name": "Las Divines",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -17750,7 +17750,7 @@
   {
     "id": "2024-gpm-iteso-980857-los-taqueros-iii",
     "name": "Los Taqueros III",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -17768,7 +17768,7 @@
   {
     "id": "2024-gpm-iteso-980758-remaria",
     "name": "Remaria",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -17876,13 +17876,13 @@
   {
     "id": "2024-gpm-iteso-980756-ingenieros-malvados-y-asociados",
     "name": "Ingenieros Malvados y Asociados",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
     "id": "2024-gpm-iteso-979166-python-es",
     "name": "Python_Es",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -17918,7 +17918,7 @@
   {
     "id": "2024-gpm-iteso-980079-los-javasaurios",
     "name": "Los Javasaurios",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -17948,7 +17948,7 @@
   {
     "id": "2024-gpm-iteso-980757-coquette",
     "name": "Coquette",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -18128,7 +18128,7 @@
   {
     "id": "2024-gpm-iteso-981106-java-lioestesemestre",
     "name": "Java lioestesemestre",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -18158,7 +18158,7 @@
   {
     "id": "2024-gpm-iteso-980916-pescadores-del-puerto",
     "name": "Pescadores del puerto",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -18554,7 +18554,7 @@
   {
     "id": "2024-gpm-iteso-980858-natahaters",
     "name": "Natahaters",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {
@@ -18770,7 +18770,7 @@
   {
     "id": "2024-gpm-iteso-979164-joshiditos",
     "name": "Joshiditos",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2024
   },
   {
@@ -18794,7 +18794,7 @@
   {
     "id": "2024-gpm-iteso-980951-natalovers",
     "name": "Natalovers",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2024
   },
   {

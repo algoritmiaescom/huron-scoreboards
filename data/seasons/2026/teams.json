@@ -32,7 +32,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0006-6ccf15ef374f",
     "name": "🇲🇽 Prisioneros de Alcatraz",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -116,7 +116,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0020-ef72b2b74c2a",
     "name": "🇲🇽 while(!AC)",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -134,7 +134,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0023-612e4c0305c5",
     "name": "🇲🇽 The good, the bad and the ugly",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -344,7 +344,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0058-5ddc97b30107",
     "name": "🇲🇽 Equipo Rosa (los muchachitos)",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -398,7 +398,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0067-e582e0cf5792",
     "name": "🇲🇽 temp++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -446,7 +446,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0075-7dc07d3657d2",
     "name": "🇲🇽 Arroz con leche, me quiero matar",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -806,7 +806,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0135-7c6c6cccaebf",
     "name": "🇲🇽 Zumitos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -974,7 +974,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0163-911a0672ebdc",
     "name": "🇲🇽 DreamTeam++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -992,7 +992,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0166-e7e2e1d3fdc4",
     "name": "🇲🇽 Árbol",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -1028,7 +1028,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0172-86d679e8043e",
     "name": "🇲🇽 Teorema del mono infinito",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -1712,7 +1712,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0286-6f81d1e2b40c",
     "name": "🇲🇽 La magia de la amistad",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -1736,7 +1736,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0290-1ae3d578b451",
     "name": "🇲🇽 If(we == FAIL) try again",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -1880,7 +1880,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0314-92aae3f9dba4",
     "name": "🇲🇽 Chocomilk en bolsa",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -1958,7 +1958,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0327-d31c6a2259ed",
     "name": "🇲🇽 David el Pro XD",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -2030,7 +2030,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0339-2b4cc5173b75",
     "name": "🇲🇽 Segment Treemendo",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -2228,7 +2228,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0372-616141bd39fe",
     "name": "🇲🇽 Fórmula General",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2294,7 +2294,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0383-360c20f87fa0",
     "name": "🇲🇽 Claudeholics",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -2606,7 +2606,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0435-e0ac934466b0",
     "name": "🇲🇽 Masa madre",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2702,7 +2702,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0451-ffbfe10ec70a",
     "name": "🇲🇽 EFN Remix",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2750,7 +2750,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0459-ccd8ba0052c2",
     "name": "🇲🇽 AlphaTherians",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -2834,7 +2834,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0473-8bfe0f465fca",
     "name": "🇲🇽 Monos",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3248,7 +3248,7 @@
   {
     "id": "2026-gpm-qualifier-1-row-0542-9c51924a8ed5",
     "name": "🇲🇽 Chat, danos un nombre para ICPC",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -3728,7 +3728,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0161-7499329de6f6",
     "name": "🇲🇽 chalanes.cpp",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3980,7 +3980,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0433-589c438e5725",
     "name": "🇲🇽 Sigma",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -3998,7 +3998,7 @@
   {
     "id": "2026-gpm-qualifier-2-row-0441-c20d8bc79c84",
     "name": "🇲🇽 Las chicas superpoderosas y Toño",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -4502,7 +4502,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0027-ff4464ba087e",
     "name": "🇲🇽 while(!AC);",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -4604,7 +4604,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0188-f9fe93b7a9b1",
     "name": "🇲🇽 El jajas, el yoker, y el wai sou sirius",
-    "schoolId": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -4634,7 +4634,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0217-742ef217e2c8",
     "name": "🇲🇽 Los Pythones, en honor al lenguaje de programación Python",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -4706,7 +4706,7 @@
   {
     "id": "2026-gpm-qualifier-3-row-0295-3e7e565bf0e4",
     "name": "🇲🇽 .PDF",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -5144,7 +5144,7 @@
   {
     "id": "2026-gpm-accumulated-1128611",
     "name": "🇲🇽 Prisioneros de Alcatraz",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5168,7 +5168,7 @@
   {
     "id": "2026-gpm-accumulated-1128259",
     "name": "🇲🇽 The good, the bad and the ugly",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5222,7 +5222,7 @@
   {
     "id": "2026-gpm-accumulated-1128262",
     "name": "🇲🇽 while(!AC)",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5252,7 +5252,7 @@
   {
     "id": "2026-gpm-accumulated-1128265",
     "name": "🇲🇽 Equipo Rosa (los muchachitos)",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5564,7 +5564,7 @@
   {
     "id": "2026-gpm-accumulated-1128260",
     "name": "🇲🇽 Arroz con leche, me quiero matar",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5588,7 +5588,7 @@
   {
     "id": "2026-gpm-accumulated-1128254",
     "name": "🇲🇽 temp++",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5708,7 +5708,7 @@
   {
     "id": "2026-gpm-accumulated-1128614",
     "name": "🇲🇽 Teorema del mono infinito",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -5792,7 +5792,7 @@
   {
     "id": "2026-gpm-accumulated-1128266",
     "name": "🇲🇽 Zumitos",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -5930,7 +5930,7 @@
   {
     "id": "2026-gpm-accumulated-1128267",
     "name": "🇲🇽 Claudeholics",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -6032,7 +6032,7 @@
   {
     "id": "2026-gpm-accumulated-1128612",
     "name": "🇲🇽 Árbol",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -6266,7 +6266,7 @@
   {
     "id": "2026-gpm-accumulated-1128621",
     "name": "🇲🇽 Chocomilk en bolsa",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -6332,7 +6332,7 @@
   {
     "id": "2026-gpm-accumulated-1128263",
     "name": "🇲🇽 DreamTeam++",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -6524,7 +6524,7 @@
   {
     "id": "2026-gpm-accumulated-1128257",
     "name": "🇲🇽 Segment Treemendo",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -6572,7 +6572,7 @@
   {
     "id": "2026-gpm-accumulated-1128268",
     "name": "🇲🇽 If(we == FAIL) try again",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -6836,7 +6836,7 @@
   {
     "id": "2026-gpm-accumulated-1134418",
     "name": "🇲🇽 chalanes.cpp",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -6938,7 +6938,7 @@
   {
     "id": "2026-gpm-accumulated-1128620",
     "name": "🇲🇽 Masa madre",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7058,7 +7058,7 @@
   {
     "id": "2026-gpm-accumulated-1128623",
     "name": "🇲🇽 La magia de la amistad",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7244,7 +7244,7 @@
   {
     "id": "2026-gpm-accumulated-1128256",
     "name": "🇲🇽 Chat, danos un nombre para ICPC",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -7298,7 +7298,7 @@
   {
     "id": "2026-gpm-accumulated-1134669",
     "name": "🇲🇽 Sigma",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7316,7 +7316,7 @@
   {
     "id": "2026-gpm-accumulated-1128619",
     "name": "🇲🇽 EFN Remix",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7352,7 +7352,7 @@
   {
     "id": "2026-gpm-accumulated-1128624",
     "name": "🇲🇽 AlphaTherians",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7442,7 +7442,7 @@
   {
     "id": "2026-gpm-accumulated-1145583",
     "name": "🇲🇽 El jajas, el yoker, y el wai sou sirius",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7496,7 +7496,7 @@
   {
     "id": "2026-gpm-accumulated-1145564",
     "name": "🇲🇽 Los Pythones, en honor al lenguaje de programación Python",
-    "schoolId": "source-school-5b30fd95c616",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -7568,7 +7568,7 @@
   {
     "id": "2026-gpm-accumulated-1128255",
     "name": "🇲🇽 David el Pro XD",
-    "schoolId": "source-school-f00f1f3e2d58",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2026
   },
   {
@@ -7658,7 +7658,7 @@
   {
     "id": "2026-gpm-accumulated-1128613",
     "name": "🇲🇽 Fórmula General",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -7790,7 +7790,7 @@
   {
     "id": "2026-gpm-accumulated-1145626",
     "name": "🇲🇽 .PDF",
-    "schoolId": "source-school-5b30fd95c616",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2026
   },
   {
@@ -8000,7 +8000,7 @@
   {
     "id": "2026-gpm-accumulated-1128622",
     "name": "🇲🇽 Monos",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {
@@ -8042,7 +8042,7 @@
   {
     "id": "2026-gpm-accumulated-1134417",
     "name": "🇲🇽 Las chicas superpoderosas y Toño",
-    "schoolId": "source-school-b4d27b58e7e2",
+    "schoolId": "up-guadalajara",
     "seasonYear": 2026
   },
   {

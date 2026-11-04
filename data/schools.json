@@ -2199,16 +2199,6 @@
     "shortName": "Universidad Nacional de Colombia - Bogotá"
   },
   {
-    "id": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
-    "officialName": "Universidad Panamericana Campus Bonaterra",
-    "shortName": "Universidad Panamericana Campus Bonaterra"
-  },
-  {
-    "id": "source-label-universidad-panamericana-campus-guadalajara-9fe3f527a0",
-    "officialName": "Universidad Panamericana Campus Guadalajara",
-    "shortName": "Universidad Panamericana Campus Guadalajara"
-  },
-  {
     "id": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
     "officialName": "Universidad Tecnológica de la Mixteca",
     "shortName": "Universidad Tecnológica de la Mixteca"
@@ -2297,11 +2287,6 @@
     "id": "source-label-up-42cb4e6f84",
     "officialName": "UP",
     "shortName": "UP"
-  },
-  {
-    "id": "source-label-up-bonaterra-8c52d5b992",
-    "officialName": "UP/Bonaterra",
-    "shortName": "UP/Bonaterra"
   },
   {
     "id": "source-label-upb-buc-f54cbcb8d7",
@@ -2864,11 +2849,6 @@
     "shortName": "ITVer"
   },
   {
-    "id": "source-school-51b132f7b9a7",
-    "officialName": "Universidad Panamericana Guadalajara",
-    "shortName": "Universidad Panamericana Guadalajara"
-  },
-  {
     "id": "source-school-520749ecba08",
     "officialName": "IT Culiacan",
     "shortName": "IT Culiacan"
@@ -2967,11 +2947,6 @@
     "id": "source-school-5aa147c84039",
     "officialName": "Instituto Tecnológico Superior de Irapuato Campus Purísima del Rincon",
     "shortName": "Instituto Tecnológico Superior de Irapuato Campus Purísima del Rincon"
-  },
-  {
-    "id": "source-school-5b30fd95c616",
-    "officialName": "UP CDMX",
-    "shortName": "UP CDMX"
   },
   {
     "id": "source-school-5b3266f2ec11",
@@ -3244,11 +3219,6 @@
     "shortName": "Universidad Tecnológica de la Zona Metropolitana de Guadalajara"
   },
   {
-    "id": "source-school-91f6e4436bd9",
-    "officialName": "Universidad Panamericana Ciudad de México",
-    "shortName": "Universidad Panamericana Ciudad de México"
-  },
-  {
     "id": "source-school-92183a1f39cc",
     "officialName": "Instituto Tecnológico de Estudios Superiores de Zamora",
     "shortName": "Instituto Tecnológico de Estudios Superiores de Zamora"
@@ -3379,11 +3349,6 @@
     "shortName": "Universidad Americana"
   },
   {
-    "id": "source-school-aa2a43de1753",
-    "officialName": "Universidad Panamericana Bonaterra",
-    "shortName": "Universidad Panamericana Bonaterra"
-  },
-  {
     "id": "source-school-ac35ddd18166",
     "officialName": "Universidad de Costa Rica campus Pacífico",
     "shortName": "Universidad de Costa Rica campus Pacífico"
@@ -3427,11 +3392,6 @@
     "id": "source-school-b4299c29a8da",
     "officialName": "Universidad Politécnica de Tlaxcala",
     "shortName": "Universidad Politécnica de Tlaxcala"
-  },
-  {
-    "id": "source-school-b4d27b58e7e2",
-    "officialName": "UP GDL",
-    "shortName": "UP GDL"
   },
   {
     "id": "source-school-b5487600068d",
@@ -3722,11 +3682,6 @@
     "id": "source-school-efa104e08024",
     "officialName": "Universidad de Costa Rica Campus Pacífico",
     "shortName": "Universidad de Costa Rica Campus Pacífico"
-  },
-  {
-    "id": "source-school-f00f1f3e2d58",
-    "officialName": "UP Bonaterra",
-    "shortName": "UP Bonaterra"
   },
   {
     "id": "source-school-f05d9b78be9b",
@@ -5129,19 +5084,27 @@
     "shortName": "UNT"
   },
   {
+    "id": "up",
+    "officialName": "Universidad Panamericana",
+    "shortName": "UP"
+  },
+  {
     "id": "up-aguascalientes",
     "officialName": "Universidad Panamericana, Campus Aguascalientes",
-    "shortName": "UP Bonaterra"
+    "shortName": "UP Bonaterra",
+    "parentInstitutionId": "up"
   },
   {
     "id": "up-ciudad-de-mexico",
     "officialName": "Universidad Panamericana, Campus Ciudad de México",
-    "shortName": "Universidad Panamericana Ciudad de México"
+    "shortName": "UP CDMX",
+    "parentInstitutionId": "up"
   },
   {
     "id": "up-guadalajara",
     "officialName": "Universidad Panamericana, Campus Guadalajara",
-    "shortName": "UPGDL"
+    "shortName": "UP Guadalajara",
+    "parentInstitutionId": "up"
   },
   {
     "id": "upaep",

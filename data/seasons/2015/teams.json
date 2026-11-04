@@ -44,7 +44,7 @@
   {
     "id": "2015-mexico-finals-global-row-0008-lla",
     "name": "Lla++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2015
   },
   {
@@ -176,7 +176,7 @@
   {
     "id": "2015-mexico-finals-global-row-0030-dic-h",
     "name": "dic.h",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2015
   },
   {
@@ -524,7 +524,7 @@
   {
     "id": "2015-gpm-iteso-row-0030-brp",
     "name": "BRP",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2015
   },
   {
@@ -548,7 +548,7 @@
   {
     "id": "2015-gpm-iteso-row-0035-los-grenuditos",
     "name": "Los Greñuditos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2015
   },
   {
@@ -734,7 +734,7 @@
   {
     "id": "2015-gpm-iteso-row-0098-jem",
     "name": "JEM",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2015
   },
   {
@@ -932,7 +932,7 @@
   {
     "id": "2015-gpm-iteso-row-0136-include-rik-h",
     "name": "#include<RIK.h>",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2015
   },
   {
@@ -998,7 +998,7 @@
   {
     "id": "2015-gpm-iteso-row-0147-seh",
     "name": "SEH++",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2015
   },
   {
@@ -1310,7 +1310,7 @@
   {
     "id": "2015-gpm-iteso-row-0202-upm2",
     "name": "UPM2",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2015
   },
   {
@@ -1454,7 +1454,7 @@
   {
     "id": "2015-gpm-iteso-row-0228-los-indecisos",
     "name": "Los indecisos",
-    "schoolId": "source-label-universidad-panamericana-campus-bonaterra-d3efb4189f",
+    "schoolId": "up-aguascalientes",
     "seasonYear": 2015
   },
   {
@@ -1676,7 +1676,7 @@
   {
     "id": "2015-gpm-iteso-row-0266-upm1",
     "name": "UPM1",
-    "schoolId": "source-school-91f6e4436bd9",
+    "schoolId": "up-ciudad-de-mexico",
     "seasonYear": 2015
   },
   {
