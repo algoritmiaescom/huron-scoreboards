@@ -149,11 +149,15 @@ including ties. Accumulated standings and teams registered without results do no
 metric. Cards link to the corresponding school history.
 
 Every school has a page summarizing contest results across seasons, with separate exact-school and
-institution-descendant scopes. Statistics and trend points use contest rows only; accumulated
-standings are displayed separately and do not inflate participation, podium, or best-place
-metrics. Responsive trend charts reverse the place axis and provide exact seasonal values as
-accessible text. Podium highlights, rosters, and contest-result cards link to the selected
-contest. Unit histories provide a parent-institution link without changing the default exact
+institution-descendant scopes. Participation and best-place statistics and trend points use
+contest rows only. Podium totals, seasonal counts and highlights include published places 1–3
+from all contest stages (including Mexico Finals) and accumulated standings, including ties.
+Each team's podium row counts once per contest or accumulated standing; non-final accumulated
+highlights disclose their snapshot status. Accumulated-only seasons retain their podiums without
+inventing contest participation or trend points. Responsive trend charts reverse the place axis
+and provide exact seasonal values as accessible text. Podium highlights link to their contest or
+accumulated standing; rosters and contest-result cards link to the selected contest.
+Unit histories provide a parent-institution link without changing the default exact
 scope. Empty histories, unknown schools, invalid scope parameters, absent rosters, and repository
 errors are explicit states.
 

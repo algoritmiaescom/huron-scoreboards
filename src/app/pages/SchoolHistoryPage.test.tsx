@@ -77,7 +77,7 @@ describe('school history workflow', () => {
     );
     expect(statistic('Resultados de equipos')).toHaveTextContent('2');
     expect(statistic('Concursos')).toHaveTextContent('1');
-    expect(statistic('Podios')).toHaveTextContent('1');
+    expect(statistic('Podios')).toHaveTextContent('2');
     expect(bestPlace()).toHaveTextContent('#1');
     expect(
       screen.getByRole('img', { name: /Tendencia del mejor puesto por temporada/ }),
@@ -121,7 +121,7 @@ describe('school history workflow', () => {
     expect(screen.getByText(/Resultados directos de UNI y de sus unidades/)).toBeInTheDocument();
     expect(statistic('Resultados de equipos')).toHaveTextContent('3');
     expect(statistic('Equipos')).toHaveTextContent('3');
-    expect(statistic('Podios')).toHaveTextContent('2');
+    expect(statistic('Podios')).toHaveTextContent('4');
     expect(screen.getAllByRole('link', { name: 'Ver concurso completo' })).toHaveLength(3);
     await user.click(screen.getByRole('link', { name: 'Ver solo resultados directos' }));
     expect(router.state.location.search).toBe('?scope=school');
@@ -134,14 +134,66 @@ describe('school history workflow', () => {
     expect(statistic('Resultados de equipos')).toHaveTextContent('3');
   });
 
-  it('keeps accumulated rows separate from contest statistics and trend lines', async () => {
+  it('links qualifier, Mexico Finals and accumulated podiums to their scoreboards', async () => {
     renderHistory('/schools/unit', {
       status: 'ready',
-      data: { ...archive, contests: [], seasonStandings: [archive.seasonStandings[0]] },
+      data: {
+        ...archive,
+        contests: [
+          contest,
+          {
+            ...contest,
+            id: '2024-mexico-finals',
+            seriesId: 'mexico-finals',
+            stage: 'final',
+            name: 'Final México',
+          },
+        ],
+      },
+    });
+    await screen.findByRole('heading', { level: 1, name: 'Unit' });
+    expect(statistic('Podios')).toHaveTextContent('3');
+    expect(statistic('Resultados de equipos')).toHaveTextContent('4');
+    const podiums = screen.getByRole('list', { name: 'Podios destacados' });
+    for (const [name, href] of [
+      ['Contest', `/scoreboards?contest=${contest.id}`],
+      ['Final México', '/scoreboards?contest=2024-mexico-finals'],
+      [
+        'GPM 2024 · Clasificación acumulada',
+        '/scoreboards?season=2024&series=gpm&view=accumulated',
+      ],
+    ]) {
+      expect(within(podiums).getByRole('link', { name })).toHaveAttribute('href', href);
+    }
+  });
+
+  it('shows accumulated-only podium highlights without inventing contest statistics or trend lines', async () => {
+    renderHistory('/schools/unit', {
+      status: 'ready',
+      data: {
+        ...archive,
+        contests: [],
+        seasonStandings: [
+          {
+            ...archive.seasonStandings[0],
+            snapshot: 'unconfirmed',
+            snapshotLabel: 'Acumulado hasta la tercera fecha',
+          },
+        ],
+      },
     });
     await screen.findByRole('heading', { level: 1, name: 'Unit' });
     expect(statistic('Resultados de equipos')).toHaveTextContent('0');
-    expect(statistic('Podios')).toHaveTextContent('0');
+    expect(statistic('Podios')).toHaveTextContent('1');
+    expect(bestPlace()).toHaveTextContent('—');
+    const podiums = screen.getByRole('list', { name: 'Podios destacados' });
+    expect(within(podiums).getByText('Alpha')).toBeInTheDocument();
+    expect(
+      within(podiums).getByRole('link', { name: 'GPM 2024 · Clasificación acumulada' }),
+    ).toHaveAttribute('href', '/scoreboards?season=2024&series=gpm&view=accumulated');
+    expect(within(podiums).getByRole('alert')).toHaveTextContent(
+      'Acumulado hasta la tercera fecha (no confirmado como final)',
+    );
     expect(
       screen.queryByRole('img', { name: /Tendencia del mejor puesto por temporada/ }),
     ).not.toBeInTheDocument();

@@ -269,7 +269,7 @@ describe('institutional history', () => {
       status: 'found',
       record: {
         contests: [],
-        seasons: [{ seasonYear: 2024, teams: 2, contests: 0, bestPlace: undefined, podiums: 0 }],
+        seasons: [{ seasonYear: 2024, teams: 2, contests: 0, bestPlace: undefined, podiums: 1 }],
       },
     });
   });
@@ -296,7 +296,7 @@ describe('institutional history', () => {
       '2024-d',
     ]);
     expect(institution.record.seasons).toEqual([
-      { seasonYear: 2024, teams: 3, contests: 1, bestPlace: 1, podiums: 2 },
+      { seasonYear: 2024, teams: 3, contests: 1, bestPlace: 1, podiums: 4 },
     ]);
     expect(selectSchoolHistory(archive, 'missing')).toEqual({ status: 'not-found' });
     expect(selectSchoolScope(archive, 'solo', 'institution')).toMatchObject({
@@ -327,7 +327,7 @@ describe('institutional history', () => {
     expect(result.record.teams).toHaveLength(3);
     expect(result.record.seasons).toEqual([
       { seasonYear: 2023, teams: 1, contests: 1, bestPlace: 1, podiums: 1 },
-      { seasonYear: 2024, teams: 2, contests: 2, bestPlace: 1, podiums: 2 },
+      { seasonYear: 2024, teams: 2, contests: 2, bestPlace: 1, podiums: 3 },
     ]);
   });
 });

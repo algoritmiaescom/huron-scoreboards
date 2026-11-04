@@ -245,10 +245,12 @@ export const SchoolHistoryPage = () => {
   const podiums = history.podiums.toSorted(
     (a, b) =>
       comparePlaces(a.row.place, b.row.place) ||
-      b.contest.seasonYear - a.contest.seasonYear ||
-      (b.contest.date ?? '').localeCompare(a.contest.date ?? ''),
+      b.seasonYear - a.seasonYear ||
+      (b.date ?? '').localeCompare(a.date ?? '') ||
+      a.key.localeCompare(b.key),
   );
   const highlights = podiums.slice(0, 5);
+  const contestSeasons = history.seasons.filter(({ results }) => results > 0);
   return (
     <>
       <DocumentTitle>{`${school.shortName} | Instituciones`}</DocumentTitle>
@@ -346,45 +348,42 @@ export const SchoolHistoryPage = () => {
             />
           </section>
 
-          {history.seasons.length > 0 ? (
-            <Insights>
-              <SchoolTrendChart seasons={history.seasons} />
-              <PodiumSection role="region" aria-labelledby="school-podium-heading">
-                <SectionTitle id="school-podium-heading" eyebrow="Podio" title="Mejores puestos" />
-                <ListGrid columns={{ md: 3 }} spacing={1.5} aria-label="Podios destacados">
-                  {highlights.length > 0 ? (
-                    highlights.map(({ contest, row }) => (
-                      <li key={`${contest.id}-${row.teamId}`}>
-                        <Highlight variant="outlined">
-                          <Typography variant="overline">
-                            {contest.seasonYear} · Puesto #{row.place}
-                          </Typography>
-                          <TeamIdentity team={row.team} />
-                          <HighlightLink
-                            to={`/scoreboards?contest=${encodeURIComponent(contest.id)}`}
-                          >
-                            {contest.name}
-                          </HighlightLink>
-                        </Highlight>
-                      </li>
-                    ))
-                  ) : (
-                    <li>
-                      <Typography color="text.secondary">
-                        Aún no hay puestos de podio registrados.
-                      </Typography>
+          <Insights>
+            {contestSeasons.length > 0 ? (
+              <SchoolTrendChart seasons={contestSeasons} />
+            ) : (
+              <Alert severity="info">
+                Todavía no hay resultados de concursos publicados para construir una tendencia.
+              </Alert>
+            )}
+            <PodiumSection role="region" aria-labelledby="school-podium-heading">
+              <SectionTitle id="school-podium-heading" eyebrow="Podio" title="Mejores puestos" />
+              <ListGrid columns={{ md: 3 }} spacing={1.5} aria-label="Podios destacados">
+                {highlights.length > 0 ? (
+                  highlights.map(({ key, seasonYear, name, href, row, notice }) => (
+                    <li key={key}>
+                      <Highlight variant="outlined">
+                        <Typography variant="overline">
+                          {seasonYear} · Puesto #{row.place}
+                        </Typography>
+                        <TeamIdentity team={row.team} />
+                        <HighlightLink to={href}>{name}</HighlightLink>
+                        {notice !== undefined && <Alert severity="warning">{notice}</Alert>}
+                      </Highlight>
                     </li>
-                  )}
-                </ListGrid>
-              </PodiumSection>
-            </Insights>
-          ) : (
-            <Alert severity="info">
-              Todavía no hay resultados de concursos publicados para construir una tendencia.
-            </Alert>
-          )}
+                  ))
+                ) : (
+                  <li>
+                    <Typography color="text.secondary">
+                      Aún no hay puestos de podio registrados.
+                    </Typography>
+                  </li>
+                )}
+              </ListGrid>
+            </PodiumSection>
+          </Insights>
 
-          {history.seasons.length > 0 && <SchoolParticipationChart seasons={history.seasons} />}
+          {contestSeasons.length > 0 && <SchoolParticipationChart seasons={contestSeasons} />}
 
           <section aria-labelledby="school-seasons-heading">
             <Typography id="school-seasons-heading" component="h2" variant="h4">
@@ -392,11 +391,12 @@ export const SchoolHistoryPage = () => {
             </Typography>
             <Typography color="text.secondary">
               Cada participación cuenta una fila de un equipo en un concurso. Si compite en varios,
-              cuenta una vez por concurso.
+              cuenta una vez por concurso. Los podios también incluyen clasificaciones acumuladas;
+              el mejor puesto y las demás estadísticas solo consideran concursos.
             </Typography>
             {history.seasons.length === 0 ? (
               <Typography color="text.secondary">
-                No hay temporadas con concursos publicados.
+                No hay temporadas con resultados publicados.
               </Typography>
             ) : (
               <Stack spacing={2}>

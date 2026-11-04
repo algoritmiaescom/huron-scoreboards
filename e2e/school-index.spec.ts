@@ -335,6 +335,33 @@ test('publishes three consolidated Panamericana campuses with shared institution
   ).toHaveText('0');
 });
 
+test('counts qualifier, Mexico Finals and accumulated podiums in school history', async ({
+  page,
+}) => {
+  await page.goto(`${directoryUrl}/unam`);
+  const statistics = page.getByRole('region', { name: 'Resumen del historial' });
+  await expect(
+    statistics.getByText('Podios', { exact: true }).locator('..').locator('dd'),
+  ).toHaveText('26');
+  const seasons = page.locator('section', {
+    has: page.getByRole('heading', { name: 'Temporadas y podios', exact: true }),
+  });
+  await expect(seasons.getByText(/7 podios/)).toBeVisible();
+  await expect(seasons.getByText(/8 podios/)).toBeVisible();
+  await page.goto(`${directoryUrl}/unam-fi`);
+  const podiums = page.getByRole('list', { name: 'Podios destacados' });
+  const accumulated = podiums.getByRole('link', {
+    name: 'GPM 2025 · Clasificación acumulada',
+    exact: true,
+  });
+  await expect(accumulated).toHaveAttribute(
+    'href',
+    '#/scoreboards?season=2025&series=gpm&view=accumulated',
+  );
+  await accumulated.click();
+  await expect(page).toHaveURL(`${origin}/#/scoreboards?season=2025&series=gpm&view=accumulated`);
+});
+
 test('opens unit and institution histories with the correct scope and contest destination', async ({
   page,
 }) => {
