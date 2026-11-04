@@ -269,7 +269,7 @@ describe('institutional history', () => {
       status: 'found',
       record: {
         contests: [],
-        seasons: [{ seasonYear: 2024, teams: 2, contests: 0, bestPlace: undefined, podiums: 1 }],
+        seasons: [{ seasonYear: 2024, teams: 2, contests: 0, bestPlace: 1, podiums: 1 }],
       },
     });
   });

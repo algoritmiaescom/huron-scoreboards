@@ -1,7 +1,18 @@
-import { ArrowBack, Launch, LocationOnOutlined } from '@mui/icons-material';
-import { Alert, Button, Card, Chip, Paper, Stack, Typography } from '@mui/material';
+import { ArrowBack, LocationOnOutlined } from '@mui/icons-material';
+import {
+  Alert,
+  Button,
+  Card,
+  Chip,
+  Paper,
+  Stack,
+  Tab,
+  Tabs,
+  TextField,
+  Typography,
+} from '@mui/material';
 import { alpha, styled } from '@mui/material/styles';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Link, useLoaderData, useParams, useSearchParams } from 'react-router';
 
 import { DocumentTitle } from '@/app/components/DocumentTitle';
@@ -14,14 +25,18 @@ import {
   SectionTitle,
   TextLink,
 } from '@/components';
-import { QualificationChip } from '@/features/scoreboards/components/QualificationChip';
+import { SchoolAccumulatedResults } from '@/features/scoreboards/components/SchoolAccumulatedResults';
 import { SchoolHistoryResults } from '@/features/scoreboards/components/SchoolHistoryResults';
 import { SchoolLogo } from '@/features/scoreboards/components/SchoolLogo';
 import { SchoolParticipationChart } from '@/features/scoreboards/components/SchoolParticipationChart';
 import { SchoolTrendChart } from '@/features/scoreboards/components/SchoolTrendChart';
 import { TeamIdentity } from '@/features/scoreboards/components/TeamIdentity';
 import { comparePlaces, formatPlace } from '@/features/scoreboards/model/ranking';
-import { selectSchoolHistoryPresentation } from '@/features/scoreboards/model/schoolHistory';
+import {
+  schoolHistorySeriesOptions,
+  selectSchoolHistoryPresentation,
+} from '@/features/scoreboards/model/schoolHistory';
+import { hasInvalidSchoolHistoryParams } from '@/features/scoreboards/model/schoolResultsFilters';
 
 import type { ScoreboardsArchive } from '@/features/scoreboards';
 import type { RepositoryResult } from '@/lib/data/repository';
@@ -121,19 +136,6 @@ const Insights = styled('div')(({ theme }) => ({
 }));
 const SeasonCard = styled(Card)(({ theme }) => ({ padding: theme.spacing(2) }));
 const PodiumSection = styled(Card)(({ theme }) => ({ padding: theme.spacing(3) }));
-const AccumulatedStack = styled(Stack)(({ theme }) => ({ marginTop: theme.spacing(2) }));
-const AccumulatedCard = styled(Card)(({ theme }) => ({ padding: theme.spacing(2) }));
-const SummaryRow = styled(Stack)(({ theme }) => ({
-  justifyContent: 'space-between',
-  [theme.breakpoints.down('sm')]: { flexDirection: 'column', alignItems: 'flex-start' },
-  [theme.breakpoints.up('sm')]: { flexDirection: 'row', alignItems: 'center' },
-}));
-const InlineSummary = styled(Stack)(({ theme }) => ({
-  alignItems: 'center',
-  flexDirection: 'row',
-  gap: theme.spacing(1),
-  flexWrap: 'wrap',
-}));
 
 const Highlight = styled(Paper)(({ theme }) => ({
   minWidth: 0,
@@ -148,6 +150,7 @@ const Highlight = styled(Paper)(({ theme }) => ({
 const HistoryPage = styled('div')(({ theme }) => ({
   display: 'grid',
   gap: theme.spacing(4),
+  '& > *': { minWidth: 0 },
 }));
 
 const StatusSection = ({
@@ -168,14 +171,15 @@ const StatusSection = ({
 export const SchoolHistoryPage = () => {
   const result = useLoaderData<RepositoryResult<ScoreboardsArchive>>();
   const { schoolId = '' } = useParams();
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
+  const [expandedPodiumScope, setExpandedPodiumScope] = useState<string>();
   const archive = result.status === 'ready' || result.status === 'empty' ? result.data : undefined;
   const school = archive?.schools.find(({ id }) => id === schoolId);
   const requestedScope = params.get('scope');
-  const invalidParams =
-    [...params.keys()].some((key) => key !== 'scope') ||
-    params.getAll('scope').length > 1 ||
-    (requestedScope !== null && requestedScope !== 'school' && requestedScope !== 'institution');
+  const invalidParams = hasInvalidSchoolHistoryParams(params);
+  const selectedSeries =
+    schoolHistorySeriesOptions.find(({ value }) => value === params.get('series'))?.value ?? 'all';
+  const activeTab = params.get('tab') ?? 'seasons';
   const scope =
     requestedScope === 'school' || requestedScope === 'institution'
       ? requestedScope
@@ -186,11 +190,23 @@ export const SchoolHistoryPage = () => {
     () =>
       archive === undefined || invalidParams
         ? undefined
-        : selectSchoolHistoryPresentation(archive, schoolId, scope),
-    [archive, invalidParams, schoolId, scope],
+        : selectSchoolHistoryPresentation(archive, schoolId, scope, selectedSeries),
+    [archive, invalidParams, schoolId, scope, selectedSeries],
   );
+  const updateView = (key: 'series' | 'tab', value: string) => {
+    const next = new URLSearchParams(params);
+    if ((key === 'series' && value === 'all') || (key === 'tab' && value === 'seasons'))
+      next.delete(key);
+    else next.set(key, value);
+    setParams(next, { replace: true, preventScrollReset: true, flushSync: true });
+  };
 
   const clearParams = `/schools/${encodeURIComponent(schoolId)}`;
+  const scopeUrl = (value: 'school' | 'institution') => {
+    const next = new URLSearchParams(params);
+    next.set('scope', value);
+    return `${clearParams}?${next.toString()}`;
+  };
   if (result.status === 'invalid' || result.status === 'error') {
     return (
       <StatusSection documentTitle="Instituciones" maxWidth="lg">
@@ -210,7 +226,9 @@ export const SchoolHistoryPage = () => {
           Selección no disponible
         </Typography>
         <Alert severity="warning">
-          El alcance debe ser único y ser "school" o "institution"; no se admiten otros parámetros.
+          El alcance debe ser único y ser "school" o "institution". Los filtros de equipo, temporada
+          y orden de concursos y acumulados, la serie y la pestaña deben ser válidos y únicos; no se
+          admiten otros parámetros.
         </Alert>
         <Button component={Link} to={clearParams} variant="contained">
           Restablecer alcance
@@ -249,7 +267,9 @@ export const SchoolHistoryPage = () => {
       (b.date ?? '').localeCompare(a.date ?? '') ||
       a.key.localeCompare(b.key),
   );
-  const highlights = podiums.slice(0, 5);
+  const podiumScope = `${schoolId}:${scope}:${selectedSeries}`;
+  const allPodiumsVisible = expandedPodiumScope === podiumScope;
+  const highlights = allPodiumsVisible ? podiums : podiums.slice(0, 5);
   const contestSeasons = history.seasons.filter(({ results }) => results > 0);
   return (
     <>
@@ -300,6 +320,22 @@ export const SchoolHistoryPage = () => {
       <Content maxWidth="xl">
         <HistoryPage>
           <Stack spacing={2}>
+            <TextField
+              select
+              label="Serie del historial"
+              size="small"
+              value={selectedSeries}
+              slotProps={{ select: { native: true }, inputLabel: { shrink: true } }}
+              onChange={(event) => {
+                updateView('series', event.target.value);
+              }}
+            >
+              {schoolHistorySeriesOptions.map(({ value, label }) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </TextField>
             <Alert severity={scope === 'institution' ? 'info' : 'warning'}>
               {scope === 'institution'
                 ? children.length > 0
@@ -325,12 +361,12 @@ export const SchoolHistoryPage = () => {
                 </Button>
               )}
               {scope === 'institution' && children.length > 0 && (
-                <Button component={Link} to={`${clearParams}?scope=school`} variant="outlined">
+                <Button component={Link} to={scopeUrl('school')} variant="outlined">
                   Ver solo resultados directos
                 </Button>
               )}
               {scope === 'school' && children.length > 0 && (
-                <Button component={Link} to={`${clearParams}?scope=institution`} variant="outlined">
+                <Button component={Link} to={scopeUrl('institution')} variant="outlined">
                   Incluir unidades descendientes
                 </Button>
               )}
@@ -349,16 +385,21 @@ export const SchoolHistoryPage = () => {
           </section>
 
           <Insights>
-            {contestSeasons.length > 0 ? (
-              <SchoolTrendChart seasons={contestSeasons} />
+            {history.seasons.length > 0 ? (
+              <SchoolTrendChart seasons={history.seasons} />
             ) : (
               <Alert severity="info">
-                Todavía no hay resultados de concursos publicados para construir una tendencia.
+                Todavía no hay resultados publicados para construir una tendencia.
               </Alert>
             )}
             <PodiumSection role="region" aria-labelledby="school-podium-heading">
               <SectionTitle id="school-podium-heading" eyebrow="Podio" title="Mejores puestos" />
-              <ListGrid columns={{ md: 3 }} spacing={1.5} aria-label="Podios destacados">
+              <ListGrid
+                id="school-podium-list"
+                columns={{ md: 3 }}
+                spacing={1.5}
+                aria-label="Podios destacados"
+              >
                 {highlights.length > 0 ? (
                   highlights.map(({ key, seasonYear, name, href, row, notice }) => (
                     <li key={key}>
@@ -380,82 +421,113 @@ export const SchoolHistoryPage = () => {
                   </li>
                 )}
               </ListGrid>
+              {podiums.length > 5 && (
+                <Button
+                  aria-expanded={allPodiumsVisible}
+                  aria-controls="school-podium-list"
+                  onClick={() => {
+                    setExpandedPodiumScope(allPodiumsVisible ? undefined : podiumScope);
+                  }}
+                >
+                  {allPodiumsVisible ? 'Ver menos' : 'Ver todos'}
+                </Button>
+              )}
             </PodiumSection>
           </Insights>
 
           {contestSeasons.length > 0 && <SchoolParticipationChart seasons={contestSeasons} />}
 
-          <section aria-labelledby="school-seasons-heading">
-            <Typography id="school-seasons-heading" component="h2" variant="h4">
-              Temporadas y podios
-            </Typography>
-            <Typography color="text.secondary">
-              Cada participación cuenta una fila de un equipo en un concurso. Si compite en varios,
-              cuenta una vez por concurso. Los podios también incluyen clasificaciones acumuladas;
-              el mejor puesto y las demás estadísticas solo consideran concursos.
-            </Typography>
-            {history.seasons.length === 0 ? (
-              <Typography color="text.secondary">
-                No hay temporadas con resultados publicados.
-              </Typography>
-            ) : (
-              <Stack spacing={2}>
-                {history.seasons.map((season) => (
-                  <SeasonCard key={season.seasonYear} variant="outlined">
-                    <Typography component="h3" variant="h5">
-                      {season.seasonYear}
-                    </Typography>
+          <div>
+            <Tabs
+              value={activeTab}
+              onChange={(_, value: string) => {
+                updateView('tab', value);
+              }}
+              variant="scrollable"
+              scrollButtons="auto"
+              allowScrollButtonsMobile
+              aria-label="Secciones del historial"
+            >
+              <Tab
+                id="school-tab-seasons"
+                value="seasons"
+                label="Temporadas y podios"
+                aria-controls="school-panel-seasons"
+              />
+              <Tab
+                id="school-tab-accumulated"
+                value="accumulated"
+                label="Clasificaciones acumuladas"
+                aria-controls="school-panel-accumulated"
+              />
+              <Tab
+                id="school-tab-contests"
+                value="contests"
+                label="Resultados por concursos"
+                aria-controls="school-panel-contests"
+              />
+            </Tabs>
+            <div
+              role="tabpanel"
+              id="school-panel-seasons"
+              aria-labelledby="school-tab-seasons"
+              hidden={activeTab !== 'seasons'}
+            >
+              {activeTab === 'seasons' && (
+                <section aria-labelledby="school-seasons-heading">
+                  <Typography id="school-seasons-heading" component="h2" variant="h4">
+                    Temporadas y podios
+                  </Typography>
+                  <Typography color="text.secondary">
+                    Cada participación cuenta una fila de un equipo en un concurso. Si compite en
+                    varios, cuenta una vez por concurso. Los podios y el mejor puesto también
+                    incluyen clasificaciones acumuladas; las estadísticas de participación solo
+                    consideran concursos.
+                  </Typography>
+                  {history.seasons.length === 0 ? (
                     <Typography color="text.secondary">
-                      {season.teams} equipos · {season.contests} concursos · {season.results}{' '}
-                      participaciones · {season.podiums.length} podios · mejor puesto{' '}
-                      {formatPlace(season.bestPlace)}
+                      No hay temporadas con resultados publicados.
                     </Typography>
-                  </SeasonCard>
-                ))}
-              </Stack>
-            )}
-          </section>
+                  ) : (
+                    <Stack spacing={2}>
+                      {history.seasons.map((season) => (
+                        <SeasonCard key={season.seasonYear} variant="outlined">
+                          <Typography component="h3" variant="h5">
+                            {season.seasonYear}
+                          </Typography>
+                          <Typography color="text.secondary">
+                            {season.teams} equipos · {season.contests} concursos · {season.results}{' '}
+                            participaciones · {season.podiums.length} podios · mejor puesto{' '}
+                            {formatPlace(season.bestPlace)}
+                          </Typography>
+                        </SeasonCard>
+                      ))}
+                    </Stack>
+                  )}
+                </section>
+              )}
+            </div>
 
-          {history.accumulated.length > 0 && (
-            <section aria-labelledby="school-accumulated-heading">
-              <Typography id="school-accumulated-heading" component="h2" variant="h4">
-                Clasificaciones acumuladas publicadas
-              </Typography>
-              <Typography color="text.secondary">
-                Se muestran por separado y no cuentan como concursos, resultados ni participación.
-              </Typography>
-              <AccumulatedStack spacing={2}>
-                {history.accumulated.map(({ standing, row }) => (
-                  <AccumulatedCard
-                    key={`${String(standing.seasonYear)}-${standing.seriesId}-${row.teamId}`}
-                    variant="outlined"
-                  >
-                    <SummaryRow spacing={2}>
-                      <div>
-                        <Typography component="h3" variant="h6">
-                          {standing.seasonYear} · {standing.seriesId} · puesto #{row.place}
-                        </Typography>
-                        <TeamIdentity team={row.team} />
-                      </div>
-                      <InlineSummary>
-                        <Typography variant="data">Puntaje publicado: {row.score}</Typography>
-                        <QualificationChip qualified={row.qualified} />
-                        <Button
-                          component={Link}
-                          to={`/scoreboards?season=${String(standing.seasonYear)}&series=${encodeURIComponent(standing.seriesId)}&view=accumulated`}
-                          endIcon={<Launch />}
-                        >
-                          Ver clasificación
-                        </Button>
-                      </InlineSummary>
-                    </SummaryRow>
-                  </AccumulatedCard>
-                ))}
-              </AccumulatedStack>
-            </section>
-          )}
+            <div
+              role="tabpanel"
+              id="school-panel-accumulated"
+              aria-labelledby="school-tab-accumulated"
+              hidden={activeTab !== 'accumulated'}
+            >
+              {activeTab === 'accumulated' && <SchoolAccumulatedResults history={history} />}
+            </div>
 
-          <SchoolHistoryResults history={history} datasetSource={result.data.source} />
+            <div
+              role="tabpanel"
+              id="school-panel-contests"
+              aria-labelledby="school-tab-contests"
+              hidden={activeTab !== 'contests'}
+            >
+              {activeTab === 'contests' && (
+                <SchoolHistoryResults history={history} datasetSource={result.data.source} />
+              )}
+            </div>
+          </div>
         </HistoryPage>
       </Content>
     </>

@@ -476,11 +476,12 @@ Mock and real references are always resolved independently.
 
 Domain selectors preserve official places and stored accumulated scores. School history
 defaults to the exact competing school; institution scope explicitly includes all descendants
-once. Teams remain season-scoped. Per-season contest counts and best place use contest rows.
+once. Teams remain season-scoped. Per-season contest counts use contest rows; best place uses
+the lowest known published place across contest and accumulated rows.
 Podium counts include published places 1–3 from all contest stages and accumulated standings,
 including ties, once per team per contest or standing. Non-final accumulated highlights retain
-their snapshot caveat. Accumulated-only seasons remain visible, with no invented best contest
-place or contest participation; domain team counts include either kind of published participation.
+their snapshot caveat. Accumulated-only seasons contribute their published best place to trends
+without inventing contest participation; domain team counts include either kind of published participation.
 
 ## Open questions
 

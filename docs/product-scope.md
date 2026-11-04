@@ -149,17 +149,49 @@ including ties. Accumulated standings and teams registered without results do no
 metric. Cards link to the corresponding school history.
 
 Every school has a page summarizing contest results across seasons, with separate exact-school and
-institution-descendant scopes. Participation and best-place statistics and trend points use
-contest rows only. Podium totals, seasonal counts and highlights include published places 1–3
+institution-descendant scopes. Participation statistics use contest rows only. Best-place
+statistics and seasonal trend points use the lowest known published place across both contests
+and accumulated standings. Podium totals, seasonal counts and highlights include published places 1–3
 from all contest stages (including Mexico Finals) and accumulated standings, including ties.
 Each team's podium row counts once per contest or accumulated standing; non-final accumulated
 highlights disclose their snapshot status. Accumulated-only seasons retain their podiums without
-inventing contest participation or trend points. Responsive trend charts reverse the place axis
+inventing contest participation. Their published places also contribute trend points.
+Highlights show the first five podiums, ordered by place, newest season, newest contest date,
+and stable identity. “Ver todos” expands the full list and “Ver menos” restores the preview.
+Responsive trend charts reverse the place axis
 and provide exact seasonal values as accessible text. Podium highlights link to their contest or
 accumulated standing; rosters and contest-result cards link to the selected contest.
 Unit histories provide a parent-institution link without changing the default exact
 scope. Empty histories, unknown schools, invalid scope parameters, absent rosters, and repository
 errors are explicit states.
+
+The school history has a single global series selector: all series (default), GPM qualifiers
+(all GPM contests, including Fecha 0 and repechage), GPM accumulated, or Mexico Finals.
+The `series` URL parameter scopes every result-driven summary, best place, podium, trend,
+participation chart, season card, and result list before section-specific filters are applied.
+School identity and parent/descendant navigation remain available even without matching results.
+The details appear in accessible tabs: “Temporadas y podios”, “Clasificaciones acumuladas”,
+and “Resultados por concursos”. “Temporadas y podios” is the default. The `tab` parameter preserves the selected panel on
+reload and navigation; changing tabs or series preserves scope and section filters.
+Only the selected panel is displayed. Valid selections without results have explicit empty states.
+Series names reuse the standings selector's shared labels: “Gran Premio de México” and
+“Final Regional Mexicana”, with classification suffixes distinguishing the two GPM options.
+
+The school history's contest-result section filters by team name (case-insensitive, trimmed)
+and season. Results default to newest first and can be sorted by best published place (unknown
+places last), team name A–Z, or most problems solved. Ties retain newest-first order.
+The `team`, `season`, and `sort` URL parameters preserve these controls on reload and navigation,
+alongside `scope`. Filtering does not change summaries, podiums, charts, or accumulated results.
+No-match results offer an explicit reset that preserves the selected school scope. Repeated,
+unknown, or invalid parameters require recovery rather than silently showing unfiltered results.
+
+Published accumulated results have independent team-name and season filters and sorting by
+newest first, best place, team name A–Z, or highest published score. The `accumulatedTeam`,
+`accumulatedSeason`, and `accumulatedSort` URL parameters persist these controls; resetting them
+preserves contest filters and scope. Sorting defaults to newest season, preserving publication
+order within each season; other sort ties prefer newer seasons. Score sorting compares the
+published numeric values and warns that units or scales may differ across seasons. Available
+score units appear beside each score. These controls do not change statistics or podiums.
 
 ### 2. Media feed
 

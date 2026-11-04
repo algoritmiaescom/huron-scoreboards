@@ -1,14 +1,37 @@
 import { bestKnownPlace, isPodiumPlace } from './ranking';
-import { selectSchoolHistory } from './selectors';
+import { selectSchoolHistory, seriesLabel } from './selectors';
 
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
+
+export const schoolHistorySeriesOptions = [
+  { value: 'all', label: 'Todas las series' },
+  { value: 'gpm-qualifiers', label: `${seriesLabel('gpm')} · Clasificatorias` },
+  { value: 'gpm-accumulated', label: `${seriesLabel('gpm')} · Clasificación acumulada` },
+  { value: 'mexico-finals', label: seriesLabel('mexico-finals') },
+] as const;
+
+export type SchoolHistorySeries = (typeof schoolHistorySeriesOptions)[number]['value'];
 
 export const selectSchoolHistoryPresentation = (
   archive: ScoreboardsArchive,
   schoolId: string,
   scope: 'school' | 'institution',
+  series: SchoolHistorySeries = 'all',
 ) => {
-  const selection = selectSchoolHistory(archive, schoolId, scope);
+  const filteredArchive = {
+    ...archive,
+    contests: archive.contests.filter(
+      (contest) =>
+        series === 'all' ||
+        (series === 'gpm-qualifiers' && contest.seriesId === 'gpm') ||
+        (series === 'mexico-finals' && contest.seriesId === 'mexico-finals'),
+    ),
+    seasonStandings: archive.seasonStandings.filter(
+      (standing) =>
+        series === 'all' || (series === 'gpm-accumulated' && standing.seriesId === 'gpm'),
+    ),
+  };
+  const selection = selectSchoolHistory(filteredArchive, schoolId, scope);
   if (selection.status === 'not-found') {
     return selection;
   }
@@ -45,13 +68,14 @@ export const selectSchoolHistoryPresentation = (
   const seasonYears = selection.record.seasons.map(({ seasonYear }) => seasonYear);
   const seasons = seasonYears.map((seasonYear) => {
     const rows = contests.filter(({ contest }) => contest.seasonYear === seasonYear);
+    const published = accumulated.filter(({ standing }) => standing.seasonYear === seasonYear);
     return {
       seasonYear,
       results: rows.length,
       contests: new Set(rows.map(({ contest }) => contest.id)).size,
       teams: new Set(rows.map(({ row }) => row.teamId)).size,
       solved: rows.reduce((total, { row }) => total + row.solved, 0),
-      bestPlace: bestKnownPlace(rows.map(({ row }) => row.place)),
+      bestPlace: bestKnownPlace([...rows, ...published].map(({ row }) => row.place)),
       podiums: podiums.filter((podium) => podium.seasonYear === seasonYear),
     };
   });
@@ -65,7 +89,7 @@ export const selectSchoolHistoryPresentation = (
         contests: new Set(contests.map(({ contest }) => contest.id)).size,
         teams: new Set(contests.map(({ row }) => row.teamId)).size,
         podiums: podiums.length,
-        bestPlace: bestKnownPlace(contests.map(({ row }) => row.place)),
+        bestPlace: bestKnownPlace([...contests, ...accumulated].map(({ row }) => row.place)),
       },
       podiums,
       accumulated,

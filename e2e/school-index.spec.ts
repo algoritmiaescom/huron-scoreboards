@@ -93,6 +93,7 @@ test('shows one BUAP university and its distinct FCC unit in the published archi
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Facultad de Ciencias de la Computación',
   );
+  await page.getByRole('tab', { name: 'Clasificaciones acumuladas' }).click();
   await expect(page.getByText('Esta escuela únicamente', { exact: true })).toBeVisible();
   await expect(page.getByText('voidcode', { exact: true })).toBeVisible();
   await expect(page.getByText('FAAV team', { exact: true })).toBeVisible();
@@ -100,6 +101,7 @@ test('shows one BUAP university and its distinct FCC unit in the published archi
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Benemérita Universidad Autónoma de Puebla',
   );
+  await page.getByRole('tab', { name: 'Clasificaciones acumuladas' }).click();
   await expect(page.getByText('Alcance institucional', { exact: true })).toBeVisible();
   await expect(page.getByText('voidcode', { exact: true })).toBeVisible();
   await expect(page.getByText('FAAV team', { exact: true })).toBeVisible();
@@ -116,6 +118,7 @@ test('shows consolidated ESCOM history as a distinct IPN unit in the published a
   await expect(list.getByRole('article')).toHaveCount(1);
   await expect(page.getByRole('status')).toHaveText('1 de 1067 instituciones y unidades');
   await list.getByRole('link', { name: 'ESCOM IPN', exact: true }).click();
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Escuela Superior de Cómputo');
   await expect(page.getByText('Esta escuela únicamente', { exact: true })).toBeVisible();
   await expect(
@@ -131,6 +134,7 @@ test('shows consolidated ESCOM history as a distinct IPN unit in the published a
     'Instituto Politécnico Nacional',
   );
   await expect(page.getByText('Alcance institucional', { exact: true })).toBeVisible();
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   const results = page.getByRole('list', { name: 'Resultados de concursos' });
   await expect(results.getByText('Escoders', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: 'Ver solo resultados directos', exact: true }).click();
@@ -165,6 +169,7 @@ test('publishes consolidated IPN units and a separate UNAM CNYN history', async 
       exact: true,
     }),
   ).toHaveAttribute('href', '#/schools/unam');
+  await page.getByRole('tab', { name: 'Clasificaciones acumuladas' }).click();
   const accumulated = page.getByText('Hijos de Turing', { exact: true });
   await expect(accumulated).toBeVisible();
   await expect(page.getByText('Sereno el Fullereno - CNyMyN', { exact: true })).toBeVisible();
@@ -212,6 +217,7 @@ test('publishes one record per UNAM unit with correct institutional navigation',
   await page.getByRole('link', { name: 'Ver institución UNAM', exact: true }).click();
   await expect(page.getByText('Alcance institucional', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: 'Ver solo resultados directos', exact: true }).click();
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(
     page
       .getByRole('list', { name: 'Resultados de concursos' })
@@ -240,6 +246,7 @@ test('publishes distinct ITESM campuses and a shared university history', async 
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Tecnológico de Monterrey, Campus Querétaro',
   );
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(page.getByText('Esta escuela únicamente', { exact: true })).toBeVisible();
   await expect(
     page
@@ -268,10 +275,12 @@ test('publishes one CUCEI unit and includes confirmed CUCEI Extreme in its histo
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Centro Universitario de Ciencias Exactas e Ingenierías',
   );
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(page.getByText('Esta escuela únicamente', { exact: true })).toBeVisible();
   const results = page.getByRole('list', { name: 'Resultados de concursos' });
   await expect(results.getByText('CUCEI Extreme', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: 'Ver institución U de G', exact: true }).click();
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(page.getByText('Alcance institucional', { exact: true })).toBeVisible();
   await expect(results.getByText('CUCEI Extreme', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: 'Ver solo resultados directos', exact: true }).click();
@@ -290,6 +299,7 @@ test('publishes combined UG-CIMAT history without inventing a university parent'
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Universidad de Guanajuato / Centro de Investigación en Matemáticas',
   );
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(page.getByRole('link', { name: /^Ver institución / })).toHaveCount(0);
   const results = page.getByRole('list', { name: 'Resultados de concursos' });
   await expect(results.getByText('Manowar', { exact: true }).first()).toBeVisible();
@@ -318,12 +328,15 @@ test('publishes three consolidated Panamericana campuses with shared institution
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Universidad Panamericana, Campus Ciudad de México',
   );
+  await page.getByRole('tab', { name: 'Clasificaciones acumuladas' }).click();
   await expect(page.getByText('Esta escuela únicamente', { exact: true })).toBeVisible();
   await expect(page.getByText('UPM2', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: 'Ver institución UP', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Universidad Panamericana');
+  await page.getByRole('tab', { name: 'Clasificaciones acumuladas' }).click();
   await expect(page.getByText('Alcance institucional', { exact: true })).toBeVisible();
   await expect(page.getByText('UPM2', { exact: true })).toBeVisible();
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(
     page.getByRole('list', { name: 'Resultados de concursos' }).getByText('qwerty', {
       exact: true,
@@ -335,6 +348,187 @@ test('publishes three consolidated Panamericana campuses with shared institution
   ).toHaveText('0');
 });
 
+test('filters and sorts school team results with reloadable URL state', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(`${directoryUrl}/unam?scope=institution&tab=contests`);
+  const search = page.getByRole('textbox', { name: 'Nombre del equipo', exact: true });
+  const season = page.getByRole('combobox', { name: 'Temporada', exact: true });
+  const sort = page.getByRole('combobox', { name: 'Ordenar equipos por' });
+  const results = page.getByRole('list', { name: 'Resultados de concursos' });
+  const summary = page.getByRole('region', { name: 'Resumen del historial' });
+  const before = await summary.textContent();
+  await search.fill('Alpha');
+  await season.selectOption('2024');
+  await sort.selectOption('place');
+  await expect(page.getByRole('status', { name: 'Recuento de concursos' })).toHaveText(
+    '4 de 50 resultados de equipos',
+  );
+  await expect(results.locator(':scope > li')).toHaveCount(4);
+  await expect(results.locator(':scope > li').first()).toContainText('#1');
+  await expect(summary).toHaveText(before ?? '');
+  await expect(page).toHaveURL(
+    `${directoryUrl}/unam?scope=institution&tab=contests&team=Alpha&season=2024&sort=place`,
+  );
+  await page.reload();
+  await expect(search).toHaveValue('Alpha');
+  await expect(season).toHaveValue('2024');
+  await expect(sort).toHaveValue('place');
+  await sort.selectOption('team');
+  await sort.selectOption('solved');
+  await search.fill('does-not-exist');
+  await expect(page.getByText('No hay resultados que coincidan con estos filtros.')).toBeVisible();
+  await expect(results).toHaveCount(0);
+  await page.getByRole('button', { name: 'Restablecer resultados' }).click();
+  await expect(page).toHaveURL(`${directoryUrl}/unam?scope=institution&tab=contests`);
+  await expect(page.getByRole('status', { name: 'Recuento de concursos' })).toHaveText(
+    '50 de 50 resultados de equipos',
+  );
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
+    true,
+  );
+  await page.goto(`${directoryUrl}/unam?sort=invalid`);
+  await expect(page.getByRole('heading', { name: 'Selección no disponible' })).toBeVisible();
+});
+
+test('filters and sorts accumulated school results independently with reloadable URLs', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(
+    `${directoryUrl}/unam?scope=institution&team=Alpha&season=2024&sort=place&tab=accumulated`,
+  );
+  const search = page.getByRole('textbox', { name: 'Nombre del equipo acumulado' });
+  const season = page.getByRole('combobox', { name: 'Temporada acumulada' });
+  const sort = page.getByRole('combobox', { name: 'Ordenar acumulados por' });
+  const count = page.getByRole('status', { name: 'Recuento de acumulados' });
+  const results = page.getByRole('list', { name: 'Resultados acumulados' });
+  await expect(count).toHaveText('6 de 6 resultados acumulados');
+  await expect(results.getByRole('listitem').first()).toContainText('2025');
+  await sort.selectOption('score');
+  await expect(
+    page.getByText(
+      'Los puntajes publicados pueden usar unidades o escalas distintas entre temporadas.',
+    ),
+  ).toBeVisible();
+  await search.fill('Alpha');
+  await season.selectOption('2024');
+  await expect(count).toHaveText('1 de 6 resultados acumulados');
+  await expect(page).toHaveURL(
+    `${directoryUrl}/unam?scope=institution&team=Alpha&season=2024&sort=place&tab=accumulated&accumulatedSort=score&accumulatedTeam=Alpha&accumulatedSeason=2024`,
+  );
+  await page.reload();
+  await expect(search).toHaveValue('Alpha');
+  await expect(season).toHaveValue('2024');
+  await expect(sort).toHaveValue('score');
+  await sort.selectOption('place');
+  await sort.selectOption('team');
+  await expect(results.getByRole('link', { name: 'Ver clasificación' })).toHaveAttribute(
+    'href',
+    '#/scoreboards?season=2024&series=gpm&view=accumulated',
+  );
+  await search.fill('does-not-exist');
+  await expect(
+    page.getByText('No hay clasificaciones acumuladas que coincidan con estos filtros.'),
+  ).toBeVisible();
+  await expect(results).toHaveCount(0);
+  await page.getByRole('button', { name: 'Restablecer acumulados' }).click();
+  await expect(page).toHaveURL(
+    `${directoryUrl}/unam?scope=institution&team=Alpha&season=2024&sort=place&tab=accumulated`,
+  );
+  await expect(count).toHaveText('6 de 6 resultados acumulados');
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
+  await expect(page.getByRole('status', { name: 'Recuento de concursos' })).toHaveText(
+    '4 de 50 resultados de equipos',
+  );
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
+    true,
+  );
+});
+
+test('applies global series across school history and persists accessible detail tabs', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(`${directoryUrl}/unam`);
+  await expect(page.getByRole('tab', { name: 'Temporadas y podios' })).toHaveAttribute(
+    'aria-selected',
+    'true',
+  );
+  await expect(page.getByRole('tabpanel', { name: 'Temporadas y podios' })).toBeVisible();
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
+  const series = page.getByRole('combobox', { name: 'Serie del historial' });
+  const summary = page.getByRole('region', { name: 'Resumen del historial' });
+  const resultsCount = summary
+    .getByText('Resultados de equipos', { exact: true })
+    .locator('..')
+    .locator('dd');
+  await series.selectOption('mexico-finals');
+  await expect(resultsCount).toHaveText('6');
+  await expect(page.getByRole('status', { name: 'Recuento de concursos' })).toHaveText(
+    '6 de 6 resultados de equipos',
+  );
+  await page.getByRole('tab', { name: 'Clasificaciones acumuladas' }).click();
+  await expect(
+    page.getByText('No hay clasificaciones acumuladas publicadas para la serie seleccionada.'),
+  ).toBeVisible();
+  await series.selectOption('gpm-accumulated');
+  await expect(resultsCount).toHaveText('0');
+  await expect(page.getByRole('status', { name: 'Recuento de acumulados' })).toHaveText(
+    '6 de 6 resultados acumulados',
+  );
+  await expect(
+    page.getByRole('img', { name: /Tendencia del mejor puesto por temporada/ }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Participación y problemas resueltos' }),
+  ).toHaveCount(0);
+  await expect(page.getByRole('list', { name: 'Resultados de concursos' })).toHaveCount(0);
+  await expect(page).toHaveURL(`${directoryUrl}/unam?tab=accumulated&series=gpm-accumulated`);
+  await page.reload();
+  await expect(series).toHaveValue('gpm-accumulated');
+  await expect(page.getByRole('tabpanel', { name: 'Clasificaciones acumuladas' })).toBeVisible();
+  await page.getByRole('tab', { name: 'Temporadas y podios' }).click();
+  await expect(page.getByRole('tabpanel', { name: 'Temporadas y podios' })).toBeVisible();
+  await series.selectOption('gpm-qualifiers');
+  await expect(resultsCount).toHaveText('44');
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
+  await expect(page.getByRole('status', { name: 'Recuento de concursos' })).toHaveText(
+    '44 de 44 resultados de equipos',
+  );
+  await series.selectOption('all');
+  await expect(resultsCount).toHaveText('50');
+  await page.getByRole('tab', { name: 'Temporadas y podios' }).click();
+  await expect(page).toHaveURL(`${directoryUrl}/unam`);
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= document.documentElement.clientWidth,
+    ),
+  ).toBe(true);
+});
+
+test('includes ESCOM accumulated wins in seasonal trends and expands all podiums', async ({
+  page,
+}) => {
+  await page.goto('./#/schools/ipn-escom');
+  const chart = page.getByRole('img', { name: /Tendencia del mejor puesto por temporada/ });
+  await expect(chart.locator('[data-season="2020"]')).toHaveAttribute('data-place', '1');
+  const podiums = page.getByRole('list', { name: 'Podios destacados' });
+  await expect(podiums.getByRole('listitem')).toHaveCount(5);
+  await expect(podiums.getByText('Escuela Superior de Comedia', { exact: true })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Ver todos', exact: true }).click();
+  await expect(podiums.getByRole('listitem')).toHaveCount(27);
+  const comedia = podiums.getByRole('listitem').filter({ hasText: 'Escuela Superior de Comedia' });
+  await expect(comedia).toContainText('2020 · Puesto #1');
+  await expect(comedia.getByRole('link')).toHaveAttribute(
+    'href',
+    '#/scoreboards?season=2020&series=gpm&view=accumulated',
+  );
+  await expect(comedia.getByRole('alert')).toContainText('no confirmado como final');
+  await page.getByRole('button', { name: 'Ver menos', exact: true }).click();
+  await expect(podiums.getByRole('listitem')).toHaveCount(5);
+});
+
 test('counts qualifier, Mexico Finals and accumulated podiums in school history', async ({
   page,
 }) => {
@@ -343,6 +537,7 @@ test('counts qualifier, Mexico Finals and accumulated podiums in school history'
   await expect(
     statistics.getByText('Podios', { exact: true }).locator('..').locator('dd'),
   ).toHaveText('26');
+  await page.getByRole('tab', { name: 'Temporadas y podios' }).click();
   const seasons = page.locator('section', {
     has: page.getByRole('heading', { name: 'Temporadas y podios', exact: true }),
   });
@@ -379,10 +574,14 @@ test('opens unit and institution histories with the correct scope and contest de
   await expect(
     page.getByRole('region', { name: 'Resumen del historial' }).locator('dd').first(),
   ).toHaveText('0');
-  await expect(page.getByText(/Todavía no hay resultados de concursos/)).toBeVisible();
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
+  await expect(
+    page.getByText('Esta escuela todavía no tiene resultados de concursos publicados.'),
+  ).toBeVisible();
   await page.getByRole('link', { name: 'Todas las instituciones' }).click();
   await page.getByRole('link', { name: 'UNAM FI', exact: true }).click();
   await expect(page).toHaveURL(`${origin}/#/schools/unam-fi`);
+  await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(page.getByText('Esta escuela únicamente')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Ver institución UNAM' })).toHaveAttribute(
     'href',
@@ -441,6 +640,7 @@ for (const mode of ['light', 'dark'] as const) {
     }, mode);
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto(`${origin}/#/schools/unam-fi`);
+    await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
     const results = page.getByRole('list', { name: 'Resultados de concursos' });
     await expect(results.locator(':scope > li').first()).toBeVisible();
     const original = await results.textContent();
@@ -450,7 +650,9 @@ for (const mode of ['light', 'dark'] as const) {
       page.getByRole('heading', { name: 'Participación y problemas resueltos' }),
     ).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Mejores puestos' })).toBeVisible();
+    await page.getByRole('tab', { name: 'Temporadas y podios' }).click();
     await expect(page.getByText(/Cada participación cuenta una fila de un equipo/)).toBeVisible();
+    await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
     const stats = page.getByRole('region', { name: 'Resumen del historial' });
     const count = await results.locator(':scope > li').count();
     for (const [width, height] of [

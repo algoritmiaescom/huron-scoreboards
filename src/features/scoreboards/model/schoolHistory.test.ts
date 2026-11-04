@@ -5,6 +5,36 @@ import { archive, contest, partialContest, standing } from '@/test/fixtures/arch
 import { selectSchoolHistoryPresentation } from './schoolHistory';
 
 describe('school history presentation selectors', () => {
+  it.each([
+    ['all', 8, 2, 5],
+    ['gpm-qualifiers', 6, 0, 3],
+    ['gpm-accumulated', 0, 2, 1],
+    ['mexico-finals', 2, 0, 1],
+  ] as const)(
+    'applies the %s global series to all history calculations',
+    (series, results, accumulated, podiums) => {
+      const source = {
+        ...archive,
+        contests: [
+          contest,
+          { ...contest, id: '2024-gpm-repechage', stage: 'repechage' as const },
+          { ...contest, id: '2024-gpm-fecha-0', stage: 'fecha-0' as const },
+          { ...contest, id: '2024-finals', seriesId: 'mexico-finals', stage: 'final' as const },
+        ],
+      };
+      const selection = selectSchoolHistoryPresentation(source, 'unit', 'school', series);
+      if (selection.status !== 'found') throw new Error('Expected unit history');
+      expect(selection.record.summary.results).toBe(results);
+      expect(selection.record.accumulated).toHaveLength(accumulated);
+      expect(selection.record.podiums).toHaveLength(podiums);
+      expect(selection.record.summary.podiums).toBe(podiums);
+      expect(selection.record.seasons[0].results).toBe(results);
+      expect(selection.record.seasons[0].solved).toBe(results / 2);
+      expect(selection.record.seasons[0].bestPlace).toBe(1);
+      expect(source.contests).toHaveLength(4);
+    },
+  );
+
   it('counts unranked results without creating a best place or podium', () => {
     const source = {
       ...archive,
@@ -92,16 +122,16 @@ describe('school history presentation selectors', () => {
     }
   });
 
-  it('handles accumulated-only seasons separately from contest trends', () => {
+  it('includes accumulated-only seasons in trends without inventing contest participation', () => {
     const source = { ...archive, contests: [], seasonStandings: [standing] };
     const result = selectSchoolHistoryPresentation(source, 'unit', 'school');
     expect(result.status).toBe('found');
     if (result.status === 'found') {
       expect(result.record.summary.results).toBe(0);
-      expect(result.record.summary.bestPlace).toBeUndefined();
+      expect(result.record.summary.bestPlace).toBe(1);
       expect(result.record.summary.podiums).toBe(1);
       expect(result.record.seasons).toMatchObject([
-        { seasonYear: 2024, results: 0, contests: 0, teams: 0, bestPlace: undefined },
+        { seasonYear: 2024, results: 0, contests: 0, teams: 0, bestPlace: 1 },
       ]);
       expect(result.record.seasons[0].podiums).toHaveLength(1);
       expect(result.record.accumulated).toHaveLength(2);
@@ -111,6 +141,37 @@ describe('school history presentation selectors', () => {
     });
   });
 
+  it('uses the best published place across contests and accumulated standings, including non-podium places', () => {
+    const source = {
+      ...archive,
+      contests: [
+        {
+          ...contest,
+          standings: contest.standings.map((row) => ({ ...row, place: 47 })),
+        },
+      ],
+    };
+    const result = selectSchoolHistoryPresentation(source, 'unit', 'school');
+    expect(result).toMatchObject({
+      record: { summary: { bestPlace: 1 }, seasons: [{ bestPlace: 1 }] },
+    });
+    const outsidePodium = selectSchoolHistoryPresentation(
+      {
+        ...source,
+        seasonStandings: [
+          {
+            ...standing,
+            rows: standing.rows.map((row) => ({ ...row, place: 10 })),
+          },
+        ],
+      },
+      'unit',
+      'school',
+    );
+    expect(outsidePodium).toMatchObject({
+      record: { summary: { bestPlace: 10, podiums: 0 }, seasons: [{ bestPlace: 10 }] },
+    });
+  });
   it('counts qualifiers, Mexico Finals and tied accumulated podiums once per published row', () => {
     const finals = {
       ...contest,
