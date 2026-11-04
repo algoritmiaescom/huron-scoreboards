@@ -2,7 +2,7 @@
   {
     "id": "2016-mexico-finals-global-row-0001-pu",
     "name": "PU++",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2016
   },
   {
@@ -134,7 +134,7 @@
   {
     "id": "2016-mexico-finals-global-row-0023-twt",
     "name": "twt",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
@@ -362,7 +362,7 @@
   {
     "id": "2016-mexico-finals-global-row-0061-the-orden-of-the-t-rex",
     "name": "The orden of the T-Rex",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
@@ -722,7 +722,7 @@
   {
     "id": "2016-gpm-iteso-row-0075-dinamita",
     "name": "Dinamita",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
@@ -800,7 +800,7 @@
   {
     "id": "2016-gpm-iteso-row-0095-e-z",
     "name": "e^z",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {
@@ -854,7 +854,7 @@
   {
     "id": "2016-gpm-iteso-row-0113-pu",
     "name": "++PU",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2016
   },
   {
@@ -1400,7 +1400,7 @@
   {
     "id": "2016-gpm-iteso-row-0214-nolastname-404",
     "name": "NOLASTNAME 404",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2016
   },
   {

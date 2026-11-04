@@ -32,13 +32,13 @@
   {
     "id": "2014-mexico-finals-global-row-0006-burst-programming",
     "name": "Burst Programming",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2014
   },
   {
     "id": "2014-mexico-finals-global-row-0007-pu",
     "name": "PU++",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2014
   },
   {
@@ -212,7 +212,7 @@
   {
     "id": "2014-mexico-finals-global-row-0036-deprecated-machine",
     "name": "Deprecated Machine",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2014
   },
   {

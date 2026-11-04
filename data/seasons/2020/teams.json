@@ -14,7 +14,7 @@
   {
     "id": "2020-mexico-finals-final-row-0003-pumomm",
     "name": "PumOMM",
-    "schoolId": "source-label-unam-fc-f6c1204110",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -644,7 +644,7 @@
   {
     "id": "2020-mexico-finals-final-row-0108-pumas",
     "name": "Pumas+",
-    "schoolId": "source-label-unam-fc-f6c1204110",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -830,7 +830,7 @@
   {
     "id": "2020-mexico-finals-final-row-0139-lavanda-nortena",
     "name": "Lavanda Norteña",
-    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -1034,7 +1034,7 @@
   {
     "id": "2020-mexico-finals-final-row-0173-los-de-arriba-son-tramposos",
     "name": "Los de arriba son tramposos",
-    "schoolId": "source-label-unam-enes-morelia-a4d37af5d6",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
@@ -1328,7 +1328,7 @@
   {
     "id": "2020-mexico-finals-final-row-0222-utf-8",
     "name": "UTF-8",
-    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -1478,7 +1478,7 @@
   {
     "id": "2020-mexico-finals-final-row-0247-chicas-superpoderosas",
     "name": "Chicas Superpoderosas",
-    "schoolId": "source-label-unam-fc-f6c1204110",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -1706,7 +1706,7 @@
   {
     "id": "2020-mexico-finals-final-row-0285-m-c-nificas",
     "name": "M@C'nificas",
-    "schoolId": "source-label-unam-fes-acatlan-04beda8ec8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -1826,7 +1826,7 @@
   {
     "id": "2020-gpm-iteso-464302-pumomm",
     "name": "PumOMM",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -1880,7 +1880,7 @@
   {
     "id": "2020-gpm-iteso-465200-pumas",
     "name": "Pumas+",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -1940,7 +1940,7 @@
   {
     "id": "2020-gpm-iteso-466685-lavanda-nortena",
     "name": "Lavanda Norteña",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -1970,7 +1970,7 @@
   {
     "id": "2020-gpm-iteso-466692-utf-8",
     "name": "UTF-8",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -2042,13 +2042,13 @@
   {
     "id": "2020-gpm-iteso-463740-los-de-arriba-son-tramposos",
     "name": "Los de arriba son tramposos",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464310-b-i-o-s",
     "name": "B.I.O.S",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2090,7 +2090,7 @@
   {
     "id": "2020-gpm-iteso-462341-predators",
     "name": "Predators",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2138,7 +2138,7 @@
   {
     "id": "2020-gpm-iteso-470158-problem-3n-1",
     "name": "Problem 3n - 1",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -2150,7 +2150,7 @@
   {
     "id": "2020-gpm-iteso-470159-m-c-nificas",
     "name": "M@C'nificas",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2020
   },
   {
@@ -2354,19 +2354,19 @@
   {
     "id": "2020-gpm-iteso-465286-pumasds",
     "name": "PumasDS",
-    "schoolId": "source-school-b985fd84d0b8",
+    "schoolId": "unam-iimas",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465283-include-victory-h",
     "name": "#include <victory.h>",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465206-chicas-superpoderosas",
     "name": "Chicas Superpoderosas",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2378,7 +2378,7 @@
   {
     "id": "2020-gpm-iteso-464444-quarantined-code",
     "name": "Quarantined Code",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2396,7 +2396,7 @@
   {
     "id": "2020-gpm-iteso-465259-i",
     "name": "i++",
-    "schoolId": "source-school-b985fd84d0b8",
+    "schoolId": "unam-iimas",
     "seasonYear": 2020
   },
   {
@@ -2420,7 +2420,7 @@
   {
     "id": "2020-gpm-iteso-465215-elementary-my-dear-watson",
     "name": "Elementary, my dear Watson!",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2504,7 +2504,7 @@
   {
     "id": "2020-gpm-iteso-465186-valhalla",
     "name": "Valhalla",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2558,7 +2558,7 @@
   {
     "id": "2020-gpm-iteso-464965-javasonicos",
     "name": "Javasonicos",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2630,13 +2630,13 @@
   {
     "id": "2020-gpm-iteso-464301-estesilesgusta-c",
     "name": "EsteSiLesGusta?>:c",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-465301-braxad",
     "name": "BRAXAD",
-    "schoolId": "source-school-af13892124a2",
+    "schoolId": "unam-fi",
     "seasonYear": 2020
   },
   {
@@ -2654,7 +2654,7 @@
   {
     "id": "2020-gpm-iteso-465311-stc",
     "name": "STC",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -2756,13 +2756,13 @@
   {
     "id": "2020-gpm-iteso-469780-los-pixies-2-0",
     "name": "Los pixies 2.0",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
     "id": "2020-gpm-iteso-464313-undefined",
     "name": "Undefined",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
@@ -2822,7 +2822,7 @@
   {
     "id": "2020-gpm-iteso-464166-mc-y-los-malacopa-de-michoacan",
     "name": "MC y los malacopa de michoacan",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
@@ -2846,7 +2846,7 @@
   {
     "id": "2020-gpm-iteso-465516-las-neuronas",
     "name": "Las neuronas",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
@@ -2996,7 +2996,7 @@
   {
     "id": "2020-gpm-iteso-464163-michexotic-s",
     "name": "MichExoTic's",
-    "schoolId": "source-school-4509fd5dafbc",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2020
   },
   {
@@ -3134,7 +3134,7 @@
   {
     "id": "2020-gpm-iteso-465473-pumabytes",
     "name": "PumaBytes",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -3242,7 +3242,7 @@
   {
     "id": "2020-gpm-iteso-465282-script-cuantico",
     "name": "Script Cuántico",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {
@@ -3506,7 +3506,7 @@
   {
     "id": "2020-gpm-iteso-465226-luigi-vampa",
     "name": "Luigi Vampa",
-    "schoolId": "source-school-3a4ea71a63f4",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2020
   },
   {

@@ -34,6 +34,54 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('consolidates UNAM units without inferring faculties for university-only registrations', async () => {
+    const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published archive');
+    }
+    const published = result.data;
+    const institution = selectSchoolScope(published, 'unam', 'institution');
+    const direct = selectSchoolScope(published, 'unam', 'school');
+    if (institution.status !== 'found' || direct.status !== 'found') {
+      throw new Error('Expected UNAM institutional and direct scopes');
+    }
+    expect(institution.record.school.shortName).toBe('UNAM');
+    expect(institution.record.teams).toHaveLength(813);
+    expect(direct.record.teams).toHaveLength(15);
+    expect(direct.record.teams.map(({ id }) => id)).toContain(
+      '2010-mexico-finals-global-row-0121-bubulubu-fi-unam',
+    );
+    for (const [id, count] of [
+      ['unam-fciencias', 248],
+      ['unam-fi', 245],
+      ['unam-fes-acatlan', 150],
+      ['unam-enes-morelia', 127],
+      ['unam-fes-cuautitlan', 10],
+      ['unam-iimas', 9],
+      ['unam-economia', 5],
+      ['unam-cfata', 1],
+      ['unam-cnyn', 3],
+    ] as const) {
+      const unit = selectSchoolScope(published, id, 'school');
+      if (unit.status !== 'found') {
+        throw new Error(`Expected UNAM unit ${id}`);
+      }
+      expect(unit.record.school.parentInstitutionId).toBe('unam');
+      expect(unit.record.teams).toHaveLength(count);
+      expect(institution.record.teams.map((team) => team.id)).toEqual(
+        expect.arrayContaining(unit.record.teams.map((team) => team.id)),
+      );
+    }
+    for (const id of ['unam-ingenieria', 'fes-acatlan', 'enes-morelia']) {
+      expect(published.schools.some((school) => school.id === id)).toBe(false);
+      expect(published.teams.some((team) => team.schoolId === id)).toBe(false);
+    }
+  });
+
   it('consolidates IPN units and keeps explicitly UNAM nanoscience registrations separate', async () => {
     const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
       query: '?raw',
@@ -91,7 +139,7 @@ describe('runtime repositories', () => {
     const ipnIds = new Set(ipn.record.teams.map(({ id }) => id));
     expect(unamTeams.every(({ id }) => !ipnIds.has(id))).toBe(true);
     expect(published.teams.filter(({ schoolId }) => schoolId === 'ipn')).toHaveLength(0);
-    expect(published.schools).toHaveLength(1149);
+    expect(published.schools).toHaveLength(1118);
   });
 
   it('consolidates ESCOM registrations under its IPN unit without merging unrelated schools', async () => {

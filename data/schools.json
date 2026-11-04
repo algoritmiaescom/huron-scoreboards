@@ -82,12 +82,6 @@
     "parentInstitutionId": "emi-bolivia"
   },
   {
-    "id": "enes-morelia",
-    "officialName": "Escuela Nacional de Estudios Superiores, Unidad Morelia (ENES Morelia)",
-    "shortName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia",
-    "parentInstitutionId": "unam"
-  },
-  {
     "id": "esan-pe",
     "officialName": "Universidad ESAN (ESAN Graduate School of Business)",
     "shortName": "ESAN"
@@ -172,12 +166,6 @@
     "id": "fei-br",
     "officialName": "Centro Universitário FEI",
     "shortName": "FEI"
-  },
-  {
-    "id": "fes-acatlan",
-    "officialName": "Facultad de Estudios Superiores Acatlán",
-    "shortName": "Facultad de Estudios Superiores Acatlán - UNAM",
-    "parentInstitutionId": "unam"
   },
   {
     "id": "fgv",
@@ -949,16 +937,6 @@
     "shortName": "FACULMONTES"
   },
   {
-    "id": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
-    "officialName": "Facultad de Ciencias-Universidad Nacional Autónoma de México",
-    "shortName": "Facultad de Ciencias-Universidad Nacional Autónoma de México"
-  },
-  {
-    "id": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
-    "officialName": "Facultad de Estudios Superiores Acatlán - UNAM",
-    "shortName": "Facultad de Estudios Superiores Acatlán - UNAM"
-  },
-  {
     "id": "source-label-fai-80d0e12571",
     "officialName": "FAI",
     "shortName": "FAI"
@@ -977,11 +955,6 @@
     "id": "source-label-fcen-0f01e9672c",
     "officialName": "FCEN",
     "shortName": "FCEN"
-  },
-  {
-    "id": "source-label-fe-unam-7a4403ea09",
-    "officialName": "FE-UNAM",
-    "shortName": "FE-UNAM"
   },
   {
     "id": "source-label-fib-d99c045aea",
@@ -1964,26 +1937,6 @@
     "shortName": "UNAL/Bogotá"
   },
   {
-    "id": "source-label-unam-enes-morelia-a4d37af5d6",
-    "officialName": "UNAM/ENES Morelia",
-    "shortName": "UNAM/ENES Morelia"
-  },
-  {
-    "id": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
-    "officialName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia",
-    "shortName": "UNAM Escuela Nacional de Estudios Superiores Unidad Morelia"
-  },
-  {
-    "id": "source-label-unam-fc-f6c1204110",
-    "officialName": "UNAM/FC",
-    "shortName": "UNAM/FC"
-  },
-  {
-    "id": "source-label-unam-fes-acatlan-04beda8ec8",
-    "officialName": "UNAM/FES Acatlan",
-    "shortName": "UNAM/FES Acatlan"
-  },
-  {
     "id": "source-label-unan-managua-373da2ab3e",
     "officialName": "UNAN/Managua",
     "shortName": "UNAN/Managua"
@@ -2574,11 +2527,6 @@
     "shortName": "UWI/TTO"
   },
   {
-    "id": "source-school-0149ac9523a7",
-    "officialName": "Facultad de Ingenieria - Universidad Nacional Autónoma de México",
-    "shortName": "Facultad de Ingenieria - Universidad Nacional Autónoma de México"
-  },
-  {
     "id": "source-school-0161a1267336",
     "officialName": "ITCancún",
     "shortName": "ITCancún"
@@ -2587,11 +2535,6 @@
     "id": "source-school-068741c53129",
     "officialName": "Universidad Tecnica Nacional de Costa Rica",
     "shortName": "Universidad Tecnica Nacional de Costa Rica"
-  },
-  {
-    "id": "source-school-0835dc54967a",
-    "officialName": "Facultad de Estudios Superiores Cuautitlán - UNAM",
-    "shortName": "Facultad de Estudios Superiores Cuautitlán - UNAM"
   },
   {
     "id": "source-school-086bf4f4b3fa",
@@ -2754,11 +2697,6 @@
     "shortName": "Universidad Centroamericana"
   },
   {
-    "id": "source-school-275a4aead4c3",
-    "officialName": "Universidad Nacional Autónoma de México ENES Morelia",
-    "shortName": "Universidad Nacional Autónoma de México ENES Morelia"
-  },
-  {
     "id": "source-school-27740a8f1201",
     "officialName": "CETYS Universidad Campus Mexicali",
     "shortName": "CETYS Universidad Campus Mexicali"
@@ -2909,16 +2847,6 @@
     "shortName": "Universidad Politécnica de Pénjamo"
   },
   {
-    "id": "source-school-3a45010d69b0",
-    "officialName": "Universidad Nacional Autónoma de México Facultad de Ingenierías",
-    "shortName": "Universidad Nacional Autónoma de México Facultad de Ingenierías"
-  },
-  {
-    "id": "source-school-3a4ea71a63f4",
-    "officialName": "Facultad de Ciencias - UNAM",
-    "shortName": "Facultad de Ciencias - UNAM"
-  },
-  {
     "id": "source-school-3a8a3f9f2cce",
     "officialName": "UABC",
     "shortName": "UABC"
@@ -2977,16 +2905,6 @@
     "id": "source-school-44cc991d7bdf",
     "officialName": "Instituto Tecnológico Superior de Comalcalco",
     "shortName": "Instituto Tecnológico Superior de Comalcalco"
-  },
-  {
-    "id": "source-school-4509fd5dafbc",
-    "officialName": "Escuela Nacional de Estudios Superiores Unidad Morelia - UNAM",
-    "shortName": "Escuela Nacional de Estudios Superiores Unidad Morelia - UNAM"
-  },
-  {
-    "id": "source-school-465388a6b0c1",
-    "officialName": "UNAM CFATA Campus Juriquilla",
-    "shortName": "UNAM CFATA Campus Juriquilla"
   },
   {
     "id": "source-school-48649350a9b2",
@@ -3164,11 +3082,6 @@
     "shortName": "ITC"
   },
   {
-    "id": "source-school-5f34e226e4d7",
-    "officialName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México",
-    "shortName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México"
-  },
-  {
     "id": "source-school-628390b14281",
     "officialName": "Instituto Tecnologico de Piedras Negras",
     "shortName": "Instituto Tecnologico de Piedras Negras"
@@ -3187,11 +3100,6 @@
     "id": "source-school-64985288ecac",
     "officialName": "ITESM Campus Aguascalientes",
     "shortName": "ITESM Campus Aguascalientes"
-  },
-  {
-    "id": "source-school-651ab7cb3fc0",
-    "officialName": "Universidad Nacional Autónoma de México Facultad de Ciencias",
-    "shortName": "Universidad Nacional Autónoma de México Facultad de Ciencias"
   },
   {
     "id": "source-school-65fa55ecf399",
@@ -3374,19 +3282,9 @@
     "shortName": "Universidad del Istmo, Campus Tehuantepec"
   },
   {
-    "id": "source-school-84fe5610e0ce",
-    "officialName": "UNAM ENES Morelia",
-    "shortName": "UNAM ENES Morelia"
-  },
-  {
     "id": "source-school-8605d7dea947",
     "officialName": "Universidad Gerardo Barrios",
     "shortName": "Universidad Gerardo Barrios"
-  },
-  {
-    "id": "source-school-87392873a345",
-    "officialName": "Facultad de Ciencias-UNAM",
-    "shortName": "Facultad de Ciencias-UNAM"
   },
   {
     "id": "source-school-8783f41bc328",
@@ -3529,11 +3427,6 @@
     "shortName": "University of Technology- Jamaica"
   },
   {
-    "id": "source-school-974208957e60",
-    "officialName": "FI-UNAM",
-    "shortName": "FI-UNAM"
-  },
-  {
     "id": "source-school-97d7e30bc553",
     "officialName": "Colegio de Estudios Cientificos y Tecnologicos del Estado de Michoacan",
     "shortName": "Colegio de Estudios Cientificos y Tecnologicos del Estado de Michoacan"
@@ -3562,11 +3455,6 @@
     "id": "source-school-9e12e710636d",
     "officialName": "Universidad Autónoma Metropolitana Unidad Iztapalapa",
     "shortName": "Universidad Autónoma Metropolitana Unidad Iztapalapa"
-  },
-  {
-    "id": "source-school-9fb0a30c8929",
-    "officialName": "FES Cuautitlan - UNAM",
-    "shortName": "FES Cuautitlan - UNAM"
   },
   {
     "id": "source-school-a0e44fb98d65",
@@ -3654,11 +3542,6 @@
     "shortName": "Instituto Tecnológico de Costa Rica campus Limón"
   },
   {
-    "id": "source-school-af13892124a2",
-    "officialName": "Facultad de Ingenierías - UNAM",
-    "shortName": "Facultad de Ingenierías - UNAM"
-  },
-  {
     "id": "source-school-b057236ebacb",
     "officialName": "Facultad de Ingeniería y Tecnología Campus Apizaquito",
     "shortName": "Facultad de Ingeniería y Tecnología Campus Apizaquito"
@@ -3687,11 +3570,6 @@
     "id": "source-school-b4299c29a8da",
     "officialName": "Universidad Politécnica de Tlaxcala",
     "shortName": "Universidad Politécnica de Tlaxcala"
-  },
-  {
-    "id": "source-school-b452914c0ee7",
-    "officialName": "Universidad Nacional Autónoma de México FES Acatlán",
-    "shortName": "Universidad Nacional Autónoma de México FES Acatlán"
   },
   {
     "id": "source-school-b4d27b58e7e2",
@@ -3724,11 +3602,6 @@
     "shortName": "Intituto Tecnologico de Lázaro Cárdenas"
   },
   {
-    "id": "source-school-b985fd84d0b8",
-    "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas - UNAM",
-    "shortName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas - UNAM"
-  },
-  {
     "id": "source-school-b9c2c80cbc65",
     "officialName": "Universidad Nacional de Costa Rica",
     "shortName": "Universidad Nacional de Costa Rica"
@@ -3742,11 +3615,6 @@
     "id": "source-school-bac1a836d628",
     "officialName": "Universidad Autonoma de Coahuila Facultad de Sistemas Unidad Saltillo",
     "shortName": "Universidad Autonoma de Coahuila Facultad de Sistemas Unidad Saltillo"
-  },
-  {
-    "id": "source-school-bd755128e841",
-    "officialName": "FES Acatlan UNAM",
-    "shortName": "FES Acatlan UNAM"
   },
   {
     "id": "source-school-beed31ec1ef8",
@@ -3799,19 +3667,9 @@
     "shortName": "UDEM"
   },
   {
-    "id": "source-school-cb8aece785ce",
-    "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas-UNAM",
-    "shortName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas-UNAM"
-  },
-  {
     "id": "source-school-cc60902d90be",
     "officialName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 148",
     "shortName": "Centro de Bachillerato Tecnológico Industrial y de Servicios No. 148"
-  },
-  {
-    "id": "source-school-ccd13ba3aeb4",
-    "officialName": "Facultad de Economia - Universidad Nacional Autonoma de Mexico",
-    "shortName": "Facultad de Economia - Universidad Nacional Autonoma de Mexico"
   },
   {
     "id": "source-school-cd42395ecd92",
@@ -3832,11 +3690,6 @@
     "id": "source-school-d04db20e2326",
     "officialName": "Universidad Vasco de Quiroga",
     "shortName": "Universidad Vasco de Quiroga"
-  },
-  {
-    "id": "source-school-d0a0b175c12e",
-    "officialName": "Facultad de Ciencias UNAM",
-    "shortName": "Facultad de Ciencias UNAM"
   },
   {
     "id": "source-school-d0d329114035",
@@ -3979,11 +3832,6 @@
     "shortName": "Instituto Tecnologico de Mexicali"
   },
   {
-    "id": "source-school-e1fb333bae37",
-    "officialName": "FC-UNAM",
-    "shortName": "FC-UNAM"
-  },
-  {
     "id": "source-school-e21d04dd0199",
     "officialName": "Universidad Tecnologica de Durango",
     "shortName": "Universidad Tecnologica de Durango"
@@ -4059,11 +3907,6 @@
     "shortName": "Universidad Autónoma de Guadalajara"
   },
   {
-    "id": "source-school-ef4797e02280",
-    "officialName": "UNAM ENES Unidad Morelia",
-    "shortName": "UNAM ENES Unidad Morelia"
-  },
-  {
     "id": "source-school-ef5b207f46fc",
     "officialName": "Colegio Nacional de Educación Profesional Técnica Moroleon",
     "shortName": "Colegio Nacional de Educación Profesional Técnica Moroleon"
@@ -4122,11 +3965,6 @@
     "id": "source-school-f6a6eb9fe115",
     "officialName": "Universidad de Gualajara CUALTOS",
     "shortName": "Universidad de Gualajara CUALTOS"
-  },
-  {
-    "id": "source-school-f7216a0611b9",
-    "officialName": "Universidad Nacional Autónoma de México IIMAS",
-    "shortName": "Universidad Nacional Autónoma de México IIMAS"
   },
   {
     "id": "source-school-f8a66d8f4c32",
@@ -5071,7 +4909,13 @@
   {
     "id": "unam",
     "officialName": "Universidad Nacional Autónoma de México",
-    "shortName": "Universidad Nacional Autónoma de México"
+    "shortName": "UNAM"
+  },
+  {
+    "id": "unam-cfata",
+    "officialName": "UNAM CFATA Campus Juriquilla",
+    "shortName": "CFATA UNAM",
+    "parentInstitutionId": "unam"
   },
   {
     "id": "unam-cnyn",
@@ -5080,44 +4924,45 @@
     "parentInstitutionId": "unam"
   },
   {
+    "id": "unam-economia",
+    "officialName": "Facultad de Economía",
+    "shortName": "FE UNAM",
+    "parentInstitutionId": "unam"
+  },
+  {
     "id": "unam-enes-morelia",
     "officialName": "Escuela Nacional de Estudios Superiores (ENES), Unidad Morelia",
-    "shortName": "UNAM ENES Morelia",
+    "shortName": "ENES Morelia UNAM",
     "parentInstitutionId": "unam"
   },
   {
     "id": "unam-fciencias",
     "officialName": "Facultad de Ciencias",
-    "shortName": "FC-UNAM",
+    "shortName": "FC UNAM",
     "parentInstitutionId": "unam"
   },
   {
     "id": "unam-fes-acatlan",
     "officialName": "Facultad de Estudios Superiores Acatlán",
-    "shortName": "FES Acatlan UNAM",
+    "shortName": "FES Acatlán UNAM",
     "parentInstitutionId": "unam"
   },
   {
     "id": "unam-fes-cuautitlan",
     "officialName": "Facultad de Estudios Superiores Cuautitlán",
-    "shortName": "Facultad de Estudios Superiores Cuautitlán - UNAM",
+    "shortName": "FES Cuautitlán UNAM",
     "parentInstitutionId": "unam"
   },
   {
     "id": "unam-fi",
     "officialName": "Facultad de Ingeniería, Universidad Nacional Autónoma de México",
-    "shortName": "Facultad de Ingenieria"
+    "shortName": "FI UNAM",
+    "parentInstitutionId": "unam"
   },
   {
     "id": "unam-iimas",
     "officialName": "Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas",
     "shortName": "IIMAS",
-    "parentInstitutionId": "unam"
-  },
-  {
-    "id": "unam-ingenieria",
-    "officialName": "Facultad de Ingeniería",
-    "shortName": "Facultad de Ingenieria-Universidad Nacional Autónoma de México",
     "parentInstitutionId": "unam"
   },
   {

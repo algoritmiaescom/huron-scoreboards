@@ -8,7 +8,7 @@
   {
     "id": "2017-mexico-finals-global-row-0002-pu",
     "name": "PU++",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2017
   },
   {
@@ -74,7 +74,7 @@
   {
     "id": "2017-mexico-finals-global-row-0013-la-cabana-del-tio-raggi",
     "name": "La cabaña del tio Raggi",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2017
   },
   {
@@ -152,7 +152,7 @@
   {
     "id": "2017-mexico-finals-global-row-0026-los-pythons",
     "name": "Los pythons",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2017
   },
   {
@@ -182,7 +182,7 @@
   {
     "id": "2017-mexico-finals-global-row-0031-turing-incompleto",
     "name": "turing incompleto",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2017
   },
   {
@@ -290,7 +290,7 @@
   {
     "id": "2017-mexico-finals-global-row-0049-hombres-c",
     "name": "hombres C",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2017
   },
   {
@@ -854,7 +854,7 @@
   {
     "id": "2017-gpm-iteso-row-0106-novatos",
     "name": "novatos",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2017
   },
   {
@@ -872,7 +872,7 @@
   {
     "id": "2017-gpm-iteso-row-0109-arkanan",
     "name": "Arkanan",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2017
   },
   {
@@ -1190,7 +1190,7 @@
   {
     "id": "2017-gpm-iteso-row-0167-lomitos-suavecitos",
     "name": "Lomitos Suavecitos",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2017
   },
   {
@@ -1220,7 +1220,7 @@
   {
     "id": "2017-gpm-iteso-row-0173-unam-amada",
     "name": "UNAM amada",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2017
   },
   {
@@ -1286,7 +1286,7 @@
   {
     "id": "2017-gpm-iteso-row-0185-rho",
     "name": "rho",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2017
   },
   {
@@ -1298,7 +1298,7 @@
   {
     "id": "2017-gpm-iteso-row-0188-uperbit",
     "name": "UperBit",
-    "schoolId": "source-school-465388a6b0c1",
+    "schoolId": "unam-cfata",
     "seasonYear": 2017
   },
   {
@@ -1364,7 +1364,7 @@
   {
     "id": "2017-gpm-iteso-row-0201-marcosoft",
     "name": "marcosoft",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2017
   },
   {

@@ -50,7 +50,7 @@
   {
     "id": "2018-mexico-finals-global-row-0009-unam-amada",
     "name": "UNAM Amada",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
@@ -134,7 +134,7 @@
   {
     "id": "2018-mexico-finals-global-row-0023-topoboros",
     "name": "Topoboros",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2018
   },
   {
@@ -176,7 +176,7 @@
   {
     "id": "2018-mexico-finals-global-row-0030-pu-turbo",
     "name": "pu+turbo",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
@@ -194,7 +194,7 @@
   {
     "id": "2018-mexico-finals-global-row-0033-tupla-de-camarones",
     "name": "Tupla de Camarones",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2018
   },
   {
@@ -248,7 +248,7 @@
   {
     "id": "2018-mexico-finals-global-row-0042-los-horchatos",
     "name": "Los Horchatos",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2018
   },
   {
@@ -296,7 +296,7 @@
   {
     "id": "2018-mexico-finals-global-row-0050-la-mafia-del-poder",
     "name": "La Mafia del Poder",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2018
   },
   {
@@ -608,7 +608,7 @@
   {
     "id": "2018-gpm-iteso-row-0012-unam-amada",
     "name": "UNAM Amada",
-    "schoolId": "source-school-87392873a345",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
@@ -620,7 +620,7 @@
   {
     "id": "2018-gpm-iteso-row-0015-tupla-de-camarones",
     "name": "Tupla de Camarones",
-    "schoolId": "source-school-ef4797e02280",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2018
   },
   {
@@ -632,7 +632,7 @@
   {
     "id": "2018-gpm-iteso-row-0021-pu-turbo",
     "name": "pu+turbo",
-    "schoolId": "source-school-87392873a345",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
@@ -692,13 +692,13 @@
   {
     "id": "2018-gpm-iteso-row-0054-pu-turbo",
     "name": "PU++Turbo",
-    "schoolId": "source-school-87392873a345",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
     "id": "2018-gpm-iteso-row-0056-los-horchatos",
     "name": "Los Horchatos",
-    "schoolId": "source-school-ef4797e02280",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2018
   },
   {
@@ -788,7 +788,7 @@
   {
     "id": "2018-gpm-iteso-row-0075-pc",
     "name": "PC",
-    "schoolId": "source-school-87392873a345",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
@@ -854,7 +854,7 @@
   {
     "id": "2018-gpm-iteso-row-0087-la-trifecta",
     "name": "La Trifecta",
-    "schoolId": "source-school-ef4797e02280",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2018
   },
   {
@@ -968,7 +968,7 @@
   {
     "id": "2018-gpm-iteso-row-0106-pu-e-n",
     "name": "Pu++e 'n'",
-    "schoolId": "source-school-87392873a345",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
@@ -1112,7 +1112,7 @@
   {
     "id": "2018-gpm-iteso-row-0130-la-parceria-haciendo-historia",
     "name": "La Parcería haciendo Historia",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2018
   },
   {
@@ -1142,7 +1142,7 @@
   {
     "id": "2018-gpm-iteso-row-0135-deus-vult",
     "name": "Deus Vult",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2018
   },
   {
@@ -1418,7 +1418,7 @@
   {
     "id": "2018-gpm-iteso-row-0183-beaners",
     "name": "Beaners",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2018
   },
   {
@@ -1574,7 +1574,7 @@
   {
     "id": "2018-gpm-iteso-row-0210-vaquitas-marinas",
     "name": "Vaquitas Marinas",
-    "schoolId": "source-school-87392873a345",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
@@ -1940,7 +1940,7 @@
   {
     "id": "2018-gpm-iteso-row-0272-while-true",
     "name": "While(true)",
-    "schoolId": "source-school-87392873a345",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2018
   },
   {
@@ -2228,7 +2228,7 @@
   {
     "id": "2018-gpm-iteso-row-0321-extra-xd",
     "name": "Extra xD",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2018
   },
   {

@@ -2228,7 +2228,7 @@
   {
     "id": "2019-gpm-iteso-row-0004-pu-os",
     "name": "pu+os",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -2294,7 +2294,7 @@
   {
     "id": "2019-gpm-iteso-row-0016-pumas",
     "name": "Pumas+",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -2312,7 +2312,7 @@
   {
     "id": "2019-gpm-iteso-row-0019-ezln",
     "name": "EZLN",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -2354,13 +2354,13 @@
   {
     "id": "2019-gpm-iteso-row-0026-programalovers",
     "name": "ProgramaLovers",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0027-batchnorm3d",
     "name": "BatchNorm3d",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -2402,7 +2402,7 @@
   {
     "id": "2019-gpm-iteso-row-0036-lavanda-nortena",
     "name": "LAVANDA NORTEÑA",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
@@ -2414,7 +2414,7 @@
   {
     "id": "2019-gpm-iteso-row-0039-la-mafia-del-poder",
     "name": "LA MAFIA DEL PODER",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
@@ -2480,13 +2480,13 @@
   {
     "id": "2019-gpm-iteso-row-0051-beaners",
     "name": "BEANERS",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0052-las-neuronas",
     "name": "Las neuronas",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -2594,7 +2594,7 @@
   {
     "id": "2019-gpm-iteso-row-0070-re100te",
     "name": "RE100TE",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
@@ -2606,7 +2606,7 @@
   {
     "id": "2019-gpm-iteso-row-0072-ponjo",
     "name": "PONJO",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
@@ -2618,7 +2618,7 @@
   {
     "id": "2019-gpm-iteso-row-0074-ac-tlecos",
     "name": "ac@tlecos",
-    "schoolId": "source-label-facultad-de-estudios-superiores-acatlan-unam-8bc841cda8",
+    "schoolId": "unam-fes-acatlan",
     "seasonYear": 2019
   },
   {
@@ -2744,7 +2744,7 @@
   {
     "id": "2019-gpm-iteso-row-0095-pumitas",
     "name": "Pumitas",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -2762,7 +2762,7 @@
   {
     "id": "2019-gpm-iteso-row-0098-los-pixies",
     "name": "Los pixies",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -2858,7 +2858,7 @@
   {
     "id": "2019-gpm-iteso-row-0114-404",
     "name": "404",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -3152,7 +3152,7 @@
   {
     "id": "2019-gpm-iteso-row-0163-los-diamancos",
     "name": "Los diamancos",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -3182,13 +3182,13 @@
   {
     "id": "2019-gpm-iteso-row-0168-solaristas",
     "name": "Solaristas",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0169-the-code-redemption",
     "name": "The Code Redemption",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -3224,7 +3224,7 @@
   {
     "id": "2019-gpm-iteso-row-0175-las-chicas-superpoderosas",
     "name": "Las chicas superpoderosas",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -3596,13 +3596,13 @@
   {
     "id": "2019-gpm-iteso-row-0237-o-possum",
     "name": "O(possum)",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
     "id": "2019-gpm-iteso-row-0238-te-ma",
     "name": "te ma+",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -3674,7 +3674,7 @@
   {
     "id": "2019-gpm-iteso-row-0250-los-purepechas",
     "name": "Los Purepechas",
-    "schoolId": "source-label-unam-escuela-nacional-de-estudios-superiores-unidad-morelia-76ab9ec1d1",
+    "schoolId": "unam-enes-morelia",
     "seasonYear": 2019
   },
   {
@@ -4004,7 +4004,7 @@
   {
     "id": "2019-gpm-iteso-row-0305-los-perezosos",
     "name": "Los perezosos",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
@@ -4268,7 +4268,7 @@
   {
     "id": "2019-gpm-iteso-row-0349-valhalla",
     "name": "Valhalla",
-    "schoolId": "source-label-facultad-de-ciencias-universidad-nacional-autonoma-de-mexico-64142773db",
+    "schoolId": "unam-fciencias",
     "seasonYear": 2019
   },
   {
