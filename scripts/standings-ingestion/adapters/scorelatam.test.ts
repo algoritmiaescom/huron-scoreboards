@@ -97,6 +97,34 @@ describe('ScoreLATAM edition discovery', () => {
 });
 
 describe('ScoreLATAM Mexico scoreboard parser', () => {
+  it('recognizes a unique country group without requiring a CCL section', () => {
+    const html = mexicoScoreboardHtml
+      .replace('<a onclick="toggleGroup(28)">CCL</a>', '')
+      .replace('<a onclick="toggleGroup(33)">Mexico</a>', '')
+      .replace('>Global</a>', '>global</a>');
+    expect(parseScoreLATAMMexicoScoreboard(html, edition)).toMatchObject({
+      status: 'ready',
+      mexicoGroupId: 17,
+    });
+    expect(
+      parseScoreLATAMMexicoScoreboard(html.replace('>Mexico</a>', '>mxmx</a>'), {
+        ...edition,
+        editionYear: 2019,
+      }),
+    ).toMatchObject({ status: 'ready', mexicoGroupId: 17 });
+    expect(
+      parseScoreLATAMMexicoScoreboard(html.replace('>Mexico</a>', '>mxmx</a>'), edition),
+    ).toMatchObject({ status: 'staged', rows: [] });
+  });
+
+  it('preserves a missing institution without treating its empty brackets as the team name', () => {
+    const html = mexicoScoreboardHtml.replaceAll('[School Alpha] Alpha', '[] Alpha');
+    expect(parseScoreLATAMMexicoScoreboard(html, edition).rows[0]).toMatchObject({
+      teamName: 'Alpha',
+      schoolName: null,
+    });
+  });
+
   it('uses the Mexico local-place group, preserves global ranks, and verifies /MX membership', () => {
     const result = parseScoreLATAMMexicoScoreboard(mexicoScoreboardHtml, edition);
     expect(result).toMatchObject({

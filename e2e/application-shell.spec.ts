@@ -71,6 +71,58 @@ test('opens archived multimedia from desktop and mobile navigation', async ({ pa
   await expect(page).toHaveURL('./#/media');
 });
 
+test('shows all curated social posts with complete galleries and original links in the production feed', async ({
+  page,
+}) => {
+  await page.clock.setFixedTime(new Date('2026-11-05T06:00:00Z'));
+  await page.route(/^https:\/\/.*(?:fbcdn\.net|cdninstagram\.com)\//, (route) =>
+    route.fulfill({ path: 'public/brand/icpc-mexico.png', contentType: 'image/png' }),
+  );
+  await page.goto('./#/media?event=2026-mexico-finals');
+  await expect(page.getByRole('article')).toHaveCount(32);
+  const reel = page.getByRole('article').filter({
+    has: page.getByRole('heading', { name: 'Reel: convocatoria a la Final Mexicana 2026' }),
+  });
+  await expect(reel.getByRole('link', { name: 'Ver publicación original' })).toHaveAttribute(
+    'href',
+    'https://www.instagram.com/reel/DWDK4g_jQaL/',
+  );
+  await expect(reel.getByRole('img', { name: /Imagen de @icpc_mexico/ })).toBeVisible();
+  await expect(reel.locator('video')).toHaveCount(0);
+  const firstQualifier = page.getByRole('article').filter({
+    has: page.getByRole('heading', { name: 'Primera fecha del GPM 2026 en ESCOM' }),
+  });
+  await expect(firstQualifier.getByText(/58 equipos/)).toBeVisible();
+  await expect(firstQualifier.getByText('1 / 6', { exact: true })).toBeVisible();
+  const thirdQualifier = page.getByRole('article').filter({
+    has: page.getByRole('heading', { name: 'Tercera fecha del GPM 2026 en ESCOM' }),
+  });
+  await expect(thirdQualifier.getByText('1 / 48', { exact: true })).toBeVisible();
+  const firstImage = await thirdQualifier.locator('img').getAttribute('src');
+  if (firstImage === null) {
+    throw new Error('Expected the first gallery image.');
+  }
+  await thirdQualifier.getByRole('button', { name: 'Recurso siguiente, 1 de 48' }).click();
+  await expect(thirdQualifier.getByText('2 / 48', { exact: true })).toBeVisible();
+  await expect(thirdQualifier.locator('img')).not.toHaveAttribute('src', firstImage);
+  await thirdQualifier.getByRole('button', { name: 'Recurso anterior, 2 de 48' }).click();
+  await expect(thirdQualifier.locator('img')).toHaveAttribute('src', firstImage);
+  await thirdQualifier.getByRole('button', { name: 'Recurso anterior, 1 de 48' }).click();
+  await expect(thirdQualifier.getByText('48 / 48', { exact: true })).toBeVisible();
+  await thirdQualifier.getByRole('button', { name: 'Recurso siguiente, 48 de 48' }).click();
+  await expect(thirdQualifier.getByText('1 / 48', { exact: true })).toBeVisible();
+  await expect(thirdQualifier.locator('img')).toHaveAttribute('src', firstImage);
+  await expect(
+    page.getByRole('heading', { name: 'Equipos clasificados: 2026-11-01', exact: true }),
+  ).toBeVisible();
+  const lastGallery = page.getByRole('article').filter({
+    has: page.getByRole('heading', { name: 'Equipos clasificados: 2026-11-01', exact: true }),
+  });
+  await expect(lastGallery.getByText('1 / 6', { exact: true })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole('article')).toHaveCount(32);
+});
+
 for (const mode of ['light', 'dark'] as const) {
   test(`browses previous mock contest media in ${mode} and reloads the selection`, async ({
     page,

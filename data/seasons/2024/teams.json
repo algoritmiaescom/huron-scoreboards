@@ -13140,12 +13140,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0005-un-pasito-tun-tun",
-    "name": "UN pasito tUN tUN",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0006-incognia-duda-cade-o-beto",
     "name": "Incognia: Duda, cadê o Beto?",
     "schoolId": "ccl",
@@ -13161,12 +13155,6 @@
     "id": "2024-mexico-finals-final-row-0008-cache-overflow",
     "name": "CACHE OVERFLOW",
     "schoolId": "ufcg",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0009-nan-need-a-name",
-    "name": "NaN (Need a Name)",
-    "schoolId": "ing-unlp",
     "seasonYear": 2024
   },
   {
@@ -13197,12 +13185,6 @@
     "id": "2024-mexico-finals-final-row-0014-i-was-jubilado-for-skipping-a-we",
     "name": "i was jubilado for skipping a week of class",
     "schoolId": "source-label-ime-b6cebba598",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0015-unratedlegendarygrandmasters",
-    "name": "UnratedLegendaryGrandMasters",
-    "schoolId": "uni-fc-pe",
     "seasonYear": 2024
   },
   {
@@ -13254,12 +13236,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0024-wa-doesn-t-go-away-with-tears",
-    "name": "WA doesn't go away with tears",
-    "schoolId": "utec-peru",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0025-los-medonhos",
     "name": "Los_Medonhos",
     "schoolId": "ufrj",
@@ -13284,21 +13260,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0029-coderats-al-fallo",
-    "name": "CodeRats al fallo",
-    "schoolId": "unsa-arequipa",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0030-c-ou-uma-linguagem-misteriosa",
     "name": "C++ ou uma linguagem misteriosa?",
     "schoolId": "puc-goias",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0031-saleenodeuno",
-    "name": "SaleEnOdeUno",
-    "schoolId": "uni-fiis-pe",
     "seasonYear": 2024
   },
   {
@@ -13329,12 +13293,6 @@
     "id": "2024-mexico-finals-final-row-0036-bnu-otrebla-ogait-oniriuq",
     "name": "[BnU] Otrebla Ogait Oniriuq",
     "schoolId": "ccl",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0037-sparkies-ii-graphs-are-often-pre",
-    "name": "Sparkies II: Graphs are often pretty",
-    "schoolId": "puj-cali",
     "seasonYear": 2024
   },
   {
@@ -13410,24 +13368,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0050-que-bendicion",
-    "name": "Que bendición",
-    "schoolId": "eafit",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0051-imc-alto",
-    "name": "IMC alto",
-    "schoolId": "source-label-puc-e43e69c8d9",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0052-lobitosfc",
-    "name": "LobitosFC",
-    "schoolId": "ucsp-pe",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0053-caltech-calvillo-institute-of-te",
     "name": "CALTECH (Calvillo Institute of Technology)",
     "schoolId": "uaa-aguascalientes",
@@ -13449,18 +13389,6 @@
     "id": "2024-mexico-finals-final-row-0056-la-casneta",
     "name": "La CASneta",
     "schoolId": "utfsm",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0057-disfunctional",
-    "name": "disfUNctional",
-    "schoolId": "unal-medellin",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0058-untreeciclo",
-    "name": "UNTreeCiclo",
-    "schoolId": "unal-medellin",
     "seasonYear": 2024
   },
   {
@@ -13536,12 +13464,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0071-p-napa",
-    "name": "P=NAPA",
-    "schoolId": "utec-peru",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0072-e-so-fazer",
     "name": "É só fazer",
     "schoolId": "unb",
@@ -13566,27 +13488,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0076-otro-pasito-tun-tun",
-    "name": "otro pasito tUN tUN",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0077-remonaschinas",
-    "name": "ReMonasChinas",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0078-tigres-cpp",
     "name": "Tigres.cpp",
     "schoolId": "uanl",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0079-turingbot",
-    "name": "TuringBot",
-    "schoolId": "unt",
     "seasonYear": 2024
   },
   {
@@ -13692,12 +13596,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0097-binpowerpuff-girls",
-    "name": "Binpowerpuff girls",
-    "schoolId": "eafit",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0098-monkeys-monkeys-monkeys-monkeys",
     "name": "Monkeys: Monkeys Monkeys Monkeys",
     "schoolId": "ufg",
@@ -13707,12 +13605,6 @@
     "id": "2024-mexico-finals-final-row-0099-team-impala",
     "name": "Team Impala",
     "schoolId": "up-guadalajara",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0100-ufpechugonas",
-    "name": "UFPechugonaS",
-    "schoolId": "ufps-cucuta",
     "seasonYear": 2024
   },
   {
@@ -13746,30 +13638,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0106-unratedpuj",
-    "name": "UnratedPUJ",
-    "schoolId": "puj-bogota",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0107-tleontest1",
-    "name": "TLEonTest1",
-    "schoolId": "uni-fc-pe",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0108-dpr",
-    "name": "DPR",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0109-gunter132fanclub",
-    "name": "Gunter132FanClub",
-    "schoolId": "unsa-arequipa",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0110-keyboard-warriors",
     "name": "Keyboard Warriors",
     "schoolId": "tec-guadalajara",
@@ -13794,27 +13662,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0114-ort-dividimos-y-no-conquistamos",
-    "name": "ORT - Dividimos y No Conquistamos",
-    "schoolId": "ort-uy",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0115-team-tocar-pasto",
     "name": "team.tocar(pasto);",
     "schoolId": "uchile",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0116-utp-gauss",
-    "name": "UTP - Gauss",
-    "schoolId": "source-label-utp-f8d556ed41",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0117-fraizen-fraizen",
-    "name": "Fraizen Fraizen",
-    "schoolId": "udelar-inco",
     "seasonYear": 2024
   },
   {
@@ -13848,27 +13698,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0123-lab-brats",
-    "name": "Lab Brats",
-    "schoolId": "ib-ar",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0124-utp-codedegrace",
-    "name": "UTP - CodeDeGrace",
-    "schoolId": "source-label-utp-f8d556ed41",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0125-twoandahalfwomen",
     "name": "TwoAndAHalfWomen",
     "schoolId": "ufmg",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0126-dijkstraidos",
-    "name": "Dijkstraidos",
-    "schoolId": "source-label-uniandes-9ef0f0f29f",
     "seasonYear": 2024
   },
   {
@@ -13908,33 +13740,15 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0133-flow-factory",
-    "name": "Flow Factory",
-    "schoolId": "eafit",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0134-arch-btw",
     "name": "arch btw",
     "schoolId": "unr-rosario",
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0135-chimichangas",
-    "name": "Chimichangas",
-    "schoolId": "eafit",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0136-aoooo-pow-tencia",
     "name": "Aoooo pow(tencia)",
     "schoolId": "ufu",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0137-chirimbolo",
-    "name": "Chirimbolo",
-    "schoolId": "udesa",
     "seasonYear": 2024
   },
   {
@@ -13974,21 +13788,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0144-skuerestristes",
-    "name": "SkueresTristes",
-    "schoolId": "unsaac",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0145-tecgpt",
     "name": "TecGPT",
     "schoolId": "source-label-tec-4e03be678c",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0146-choripunk",
-    "name": "choripunk",
-    "schoolId": "source-label-puc-e43e69c8d9",
     "seasonYear": 2024
   },
   {
@@ -14022,21 +13824,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0152-el-bendito-fulkerson",
-    "name": "El Bendito Fulkerson",
-    "schoolId": "unsaac",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0153-khe-mae",
     "name": "khe mae",
     "schoolId": "ucr-costa-rica",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0154-se",
-    "name": "SÉ--",
-    "schoolId": "ib-ar",
     "seasonYear": 2024
   },
   {
@@ -14049,12 +13839,6 @@
     "id": "2024-mexico-finals-final-row-0156-money-mavens",
     "name": "Money Mavens",
     "schoolId": "unam-economia",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0157-gauss-n-roses",
-    "name": "gaUss N roses",
-    "schoolId": "unal-bogota",
     "seasonYear": 2024
   },
   {
@@ -14094,12 +13878,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0164-los-tarches",
-    "name": "los tarches",
-    "schoolId": "udesa",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0165-monkeys-acho-que-e-uma-dp-era-gu",
     "name": "Monkeys: acho que é uma DP (era guloso)",
     "schoolId": "ufg",
@@ -14118,18 +13896,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0168-aee",
-    "name": "AEE",
-    "schoolId": "pucmm-csd",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0169-haskull",
-    "name": "Haskull",
-    "schoolId": "eafit",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0170-o-problema-do-gerbil-viajante",
     "name": "O Problema do Gerbil Viajante",
     "schoolId": "utfpr-curitiba",
@@ -14139,12 +13905,6 @@
     "id": "2024-mexico-finals-final-row-0171-code-boys",
     "name": "Code::Boys",
     "schoolId": "iftm-uberaba",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0172-bug-abstract-factory",
-    "name": "Bug Abstract Factory",
-    "schoolId": "unrn-ar",
     "seasonYear": 2024
   },
   {
@@ -14160,27 +13920,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0175-asado-familiar",
-    "name": "Asado Familiar",
-    "schoolId": "source-label-puc-e43e69c8d9",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0176-crossover",
-    "name": "crossover",
-    "schoolId": "uni-fc-pe",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0177-peranoteccoders",
     "name": "PeranoTecCoders",
     "schoolId": "tec-ciudad-de-mexico",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0178-naranja2",
-    "name": "Naranja2",
-    "schoolId": "unimet-venezuela",
     "seasonYear": 2024
   },
   {
@@ -14220,12 +13962,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0185-tlechickens",
-    "name": "TLEChickens",
-    "schoolId": "uni-fiis-pe",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0186-variable-compleja",
     "name": "Variable Compleja",
     "schoolId": "tec-costa-rica-alajuela",
@@ -14247,12 +13983,6 @@
     "id": "2024-mexico-finals-final-row-0189-la-ele-1e3-vezes",
     "name": "Lá ele 1e3 vezes",
     "schoolId": "ufs-br",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0190-tequieromuchovictor",
-    "name": "TeQuieroMuchoVictor",
-    "schoolId": "utec-peru",
     "seasonYear": 2024
   },
   {
@@ -14310,12 +14040,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0200-joa-mani-es-dp",
-    "name": "Joa_mani_es_dp",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0201-balloon-thieves",
     "name": "Balloon thieves",
     "schoolId": "uaz",
@@ -14352,12 +14076,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0207-thereturners",
-    "name": "theReturners",
-    "schoolId": "icesi",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0208-daj",
     "name": "DAJ",
     "schoolId": "itsur",
@@ -14367,12 +14085,6 @@
     "id": "2024-mexico-finals-final-row-0209-shadow-wizard-money-gang",
     "name": "Shadow Wizard Money Gang",
     "schoolId": "itesm-monterrey",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0210-k3rn3lp4n1c",
-    "name": "K3rn3lP4n1c!",
-    "schoolId": "source-label-ucv-294962d46d",
     "seasonYear": 2024
   },
   {
@@ -14406,12 +14118,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0216-pandebugs",
-    "name": "Pandebugs",
-    "schoolId": "icesi",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0217-ed-edd-y-eddy",
     "name": "Ed, Edd y Eddy",
     "schoolId": "unlam",
@@ -14430,12 +14136,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0220-jat-gpt-grupo-de-programacion-tr",
-    "name": "JAT GPT (Grupo de Programación Tranqui)",
-    "schoolId": "unrn-ar",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0221-npcs",
     "name": "NPCs",
     "schoolId": "tec-puebla",
@@ -14445,12 +14145,6 @@
     "id": "2024-mexico-finals-final-row-0222-gaticones",
     "name": "Gaticones",
     "schoolId": "iteso",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0223-gcc-great-chimbilicos-coders",
-    "name": "gcc: great chimbilicos coders",
-    "schoolId": "puj-cali",
     "seasonYear": 2024
   },
   {
@@ -14472,12 +14166,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0227-unlimited",
-    "name": "UNlimited",
-    "schoolId": "unal-medellin",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0228-glistering-melon",
     "name": "Glistering Melon",
     "schoolId": "unc-famaf",
@@ -14496,18 +14184,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0231-rh-o-n",
-    "name": "RH: O(n)",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0232-ort-runteam-error",
-    "name": "ORT - Runteam error",
-    "schoolId": "ort-uy",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0233-bowser-bytes",
     "name": "Bowser Bytes",
     "schoolId": "unam-enes-morelia",
@@ -14520,21 +14196,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0235-awadefresa",
-    "name": "awadefresa",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0236-udec",
     "name": "[UdeC]",
     "schoolId": null,
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0237-artic-munkres",
-    "name": "Artic Munkres",
-    "schoolId": "source-label-usa-aa5ab35a91",
     "seasonYear": 2024
   },
   {
@@ -14556,33 +14220,15 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0241-thechosenuan-s",
-    "name": "TheChosenUAn's",
-    "schoolId": "uniamazonia-co",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0242-salbutes-con-frijol",
     "name": "Salbutes con frijol",
     "schoolId": "uady",
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0243-omt-usm",
-    "name": "OMT-USM",
-    "schoolId": "usm-cl",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0244-tamalesdemole",
     "name": "TamalesDeMole",
     "schoolId": "source-label-udla-341db081bf",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0245-cypher",
-    "name": "Cypher++",
-    "schoolId": "uprm-pr",
     "seasonYear": 2024
   },
   {
@@ -14616,12 +14262,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0251-cocacola-al-fallo",
-    "name": "cocacola al fallo",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0252-usurpadores",
     "name": "Usurpadores",
     "schoolId": "tecnm-leon",
@@ -14637,12 +14277,6 @@
     "id": "2024-mexico-finals-final-row-0254-nsp",
     "name": "NSP",
     "schoolId": "uanl",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0255-rascogoats",
-    "name": "RascoGoats",
-    "schoolId": "source-label-uniandes-9ef0f0f29f",
     "seasonYear": 2024
   },
   {
@@ -14760,12 +14394,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0275-nullpointer",
-    "name": "NullPointer",
-    "schoolId": "eia-colombia",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0276-las-simuladoras",
     "name": "Las Simuladoras",
     "schoolId": "uba-fcen",
@@ -14778,45 +14406,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0278-ecigma-acum",
-    "name": "ECIGMA aCum",
-    "schoolId": "source-label-eci-e098f79a76",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0279-gatasonly",
     "name": "GatasOnly",
     "schoolId": "uchile",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0280-ophyucus",
-    "name": "Ophyucus",
-    "schoolId": "udesa",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0281-hola-mundo",
-    "name": "hola mUNdo",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0282-debugging-divas",
-    "name": "Debugging Divas",
-    "schoolId": "puj-cali",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0283-napolitana-provoleta-hard",
-    "name": "Napolitana-Provoleta Hard",
-    "schoolId": "utdt-ar",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0284-triple-pointer",
-    "name": "Triple Pointer",
-    "schoolId": "source-label-ucv-294962d46d",
     "seasonYear": 2024
   },
   {
@@ -14832,12 +14424,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0287-no-pointer-home",
-    "name": "No Pointer Home",
-    "schoolId": "pucmm-santiago",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0288-club-fanaticos-de-jose-veas",
     "name": "Club Fanáticos de José Veas",
     "schoolId": "source-label-ucn-aeba039663",
@@ -14847,12 +14433,6 @@
     "id": "2024-mexico-finals-final-row-0289-ban-crabs",
     "name": "Ban Crabs",
     "schoolId": "uca-el-salvador",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0290-virtum",
-    "name": "VIRTUM",
-    "schoolId": "ucab-venezuela",
     "seasonYear": 2024
   },
   {
@@ -14886,12 +14466,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0296-dois-programadores-e-meio",
-    "name": "Dois Programadores e Meio",
-    "schoolId": "ifam-parintins",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0297-cin-chance",
     "name": "cin>>chance",
     "schoolId": "upsa-bolivia",
@@ -14916,12 +14490,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0301-object-bruteforces-o-1",
-    "name": "object Bruteforces=O(1);",
-    "schoolId": "unsaac",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0302-cod3r5",
     "name": "Cod3r5",
     "schoolId": "tec-queretaro",
@@ -14937,12 +14505,6 @@
     "id": "2024-mexico-finals-final-row-0304-los-gato-fino",
     "name": "Los gato fino",
     "schoolId": "udg-cucosta",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0305-offside",
-    "name": "Offside",
-    "schoolId": "utdt-ar",
     "seasonYear": 2024
   },
   {
@@ -14982,12 +14544,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0312-wronginput",
-    "name": "WrongInput",
-    "schoolId": "ucsp-pe",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0313-computeiros",
     "name": "COMPUTEIROS",
     "schoolId": "unibalsas",
@@ -15000,33 +14556,15 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0315-heartbits",
-    "name": "Heartbits",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0316-las-aceitunas-del-inge-erwin",
     "name": "Las aceitunas del inge Erwin",
     "schoolId": "uto-kakachaca",
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0317-chibicoders",
-    "name": "Chibicoders",
-    "schoolId": "uptc",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0318-tacos-envenenados",
     "name": "Tacos Envenenados",
     "schoolId": "ipn-upiiz",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0319-lambda",
-    "name": "lambda",
-    "schoolId": "udabol-la-paz",
     "seasonYear": 2024
   },
   {
@@ -15042,12 +14580,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0322-proyectonestor",
-    "name": "ProyectoNestor",
-    "schoolId": "poli-co",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0323-gatubelxs",
     "name": "Gatubelxs",
     "schoolId": "iteso",
@@ -15057,18 +14589,6 @@
     "id": "2024-mexico-finals-final-row-0324-placeholder",
     "name": "placeholder",
     "schoolId": "itesm-cem",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0325-pichonesdeingenieros",
-    "name": "PichonesDeIngenieros",
-    "schoolId": "uniamazonia-co",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0326-skibidi-dob-dob",
-    "name": "skibidi dob dob",
-    "schoolId": "utec-peru",
     "seasonYear": 2024
   },
   {
@@ -15108,21 +14628,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0333-los-trajavadores",
-    "name": "Los trajavadores",
-    "schoolId": "source-label-ungs-ic-a8a0e140da",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0334-que-amortizo",
     "name": "que amortizó",
     "schoolId": "umss",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0335-3x-1",
-    "name": "3x+1",
-    "schoolId": "uwi-st-augustine",
     "seasonYear": 2024
   },
   {
@@ -15132,33 +14640,15 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0337-figuras-de-caverna",
-    "name": "Figuras de Caverna",
-    "schoolId": "utec-peru",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0338-compitiendo-desde-los-separos",
     "name": "Compitiendo desde los Separos",
     "schoolId": "ipn-esfm",
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0339-fourlokolovers",
-    "name": "FourLokoLovers",
-    "schoolId": "eia-colombia",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0340-c-plas-plas",
     "name": "C Plas Plas",
     "schoolId": "tec-queretaro",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0341-null",
-    "name": "NULL",
-    "schoolId": "puj-cali",
     "seasonYear": 2024
   },
   {
@@ -15174,33 +14664,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0344-centauro",
-    "name": "Centauro",
-    "schoolId": "unrn-ar",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0345-los-eleninminadores",
-    "name": "Los eLENINminadores",
-    "schoolId": "upb-bucaramanga",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0346-bf",
-    "name": "BF++",
-    "schoolId": "utesa-santiago",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0347-los-shabos",
     "name": "Los shabOS",
     "schoolId": "uaeh",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0348-wolfbyte",
-    "name": "WolfByte",
-    "schoolId": "upr-arecibo",
     "seasonYear": 2024
   },
   {
@@ -15234,12 +14700,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0354-wildbytes",
-    "name": "WildBytes",
-    "schoolId": "upr-arecibo",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0355-boscosoft",
     "name": "BOSCOSOFT",
     "schoolId": "uatf",
@@ -15252,33 +14712,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0357-frostbyte",
-    "name": "FrostByte",
-    "schoolId": "source-label-uwi-fic-54de1e6bf3",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0358-infinite-aura-444",
-    "name": "INFINITE AURA 444",
-    "schoolId": "uwi-st-augustine",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0359-mofongowarriors",
-    "name": "MofongoWarriors",
-    "schoolId": "uprm-pr",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0360-y-porque-no-nos-rendimos",
     "name": "Y porque no nos rendimos?",
     "schoolId": "source-label-uatf-is-5cb1da0089",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0361-potrassalvajesedd",
-    "name": "potrassalvajesedd",
-    "schoolId": "unimet-venezuela",
     "seasonYear": 2024
   },
   {
@@ -15294,21 +14730,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0364-apolo",
-    "name": "Apolo",
-    "schoolId": "uapa",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0365-chupapis-algoritmicos",
     "name": "Chupapis Algoritmicos",
     "schoolId": "umss",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0366-huahcoders",
-    "name": "HuahCoders",
-    "schoolId": "unjfsc",
     "seasonYear": 2024
   },
   {
@@ -15348,18 +14772,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0373-fuera-de-la-caja",
-    "name": "Fuera de la Caja",
-    "schoolId": "utdt-ar",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0374-quantum-coders",
-    "name": "Quantum Coders",
-    "schoolId": "uwi-st-augustine",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0375-2-variables-y-1-error",
     "name": "2 variables y 1 error",
     "schoolId": "source-label-uatf-is-5cb1da0089",
@@ -15378,12 +14790,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0378-bit-dirty",
-    "name": "Bit Dirty",
-    "schoolId": "source-label-ucv-294962d46d",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0379-chapin-devs",
     "name": "Chapin Devs",
     "schoolId": "utn-frro",
@@ -15393,18 +14799,6 @@
     "id": "2024-mexico-finals-final-row-0380-dijkstra-idos",
     "name": "Dijkstra-idos",
     "schoolId": "info-unlp-ar",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0381-skip-list",
-    "name": "Skip List",
-    "schoolId": "udesa",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0382-hc-koalas",
-    "name": "HC Koalas",
-    "schoolId": "unjfsc",
     "seasonYear": 2024
   },
   {
@@ -15492,12 +14886,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0397-logiclegendsuq",
-    "name": "LogicLegendsUQ",
-    "schoolId": "source-label-uq-33abe804f4",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0398-the-core-dumpers",
     "name": "The Core Dumpers",
     "schoolId": "uca-el-salvador",
@@ -15510,24 +14898,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0400-were-so-back",
-    "name": "were_so_back",
-    "schoolId": "pucmm-csd",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0401-codeblockers",
-    "name": "CodeBlockers();",
-    "schoolId": "uniamazonia-co",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0402-ifpi-code",
-    "name": "IFPI code",
-    "schoolId": "ifpi-parnaiba",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0403-los-gaussianos",
     "name": "Los Gaussianos",
     "schoolId": "udg-cuvalles",
@@ -15537,18 +14907,6 @@
     "id": "2024-mexico-finals-final-row-0404-pray4isaac",
     "name": "#Pray4Isaac",
     "schoolId": "intec-rd",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0405-asterisco-punto-y-coma",
-    "name": "Asterisco Punto y Coma",
-    "schoolId": "ucentral-cl",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0406-fatal-error-method-solveproblem",
-    "name": "Fatal Error: Method ‘solveProblem’ Not Defined in Class",
-    "schoolId": "ucentral-cl",
     "seasonYear": 2024
   },
   {
@@ -15588,39 +14946,15 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0413-lastminute",
-    "name": "LastMinute",
-    "schoolId": "upr-bayamon",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0414-ctrl-alt-t",
     "name": "Ctrl+Alt+T",
     "schoolId": "info-unlp-ar",
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0415-ctrl-z",
-    "name": "Ctrl+z",
-    "schoolId": "ucab-venezuela",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0416-bug",
     "name": "BUG",
     "schoolId": "uajms",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0417-bogosort-inc",
-    "name": "Bogosort INC",
-    "schoolId": "uft",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0418-codebreakers",
-    "name": "CodeBreakers",
-    "schoolId": "source-label-iujo-cad5c883c3",
     "seasonYear": 2024
   },
   {
@@ -15636,12 +14970,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0421-2b-2b",
-    "name": "2b || !2b",
-    "schoolId": "uwi-st-augustine",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0422-arepapower",
     "name": "ArepaPower",
     "schoolId": "usb-venezuela",
@@ -15651,24 +14979,6 @@
     "id": "2024-mexico-finals-final-row-0423-karma",
     "name": "Karma",
     "schoolId": "uca-el-salvador",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0424-pseudocoders",
-    "name": "Pseudocoders",
-    "schoolId": "unmsm",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0425-bit-flow",
-    "name": "Bit Flow",
-    "schoolId": "source-label-uwi-fic-54de1e6bf3",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0426-delta",
-    "name": "Delta",
-    "schoolId": "source-label-uwi-fic-54de1e6bf3",
     "seasonYear": 2024
   },
   {
@@ -15732,12 +15042,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0437-dificultad-artificial",
-    "name": "Dificultad Artificial",
-    "schoolId": "source-label-uq-33abe804f4",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0438-re-turn-zero",
     "name": "RE: Turn Zero",
     "schoolId": "uady-tizimin",
@@ -15774,12 +15078,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0444-bee",
-    "name": "Bee",
-    "schoolId": "udesa",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0445-team-limit",
     "name": "Team_Limit",
     "schoolId": "upds-santa-cruz",
@@ -15789,12 +15087,6 @@
     "id": "2024-mexico-finals-final-row-0446-code-crafters",
     "name": "Code Crafters",
     "schoolId": "uvg-guatemala",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0447-los-jardineros",
-    "name": "Los jardineros",
-    "schoolId": "uprrp-edu",
     "seasonYear": 2024
   },
   {
@@ -15828,18 +15120,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0453-ready-coders",
-    "name": "Ready Coders",
-    "schoolId": "source-label-ucv-294962d46d",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0454-clase-naranja",
-    "name": "Clase Naranja",
-    "schoolId": "unimet-venezuela",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0455-satinadores",
     "name": "Satinadores",
     "schoolId": "usb-venezuela",
@@ -15867,18 +15147,6 @@
     "id": "2024-mexico-finals-final-row-0459-los-papas-fritas",
     "name": "Los papas fritas",
     "schoolId": "source-label-srounsa-373bcb4636",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0460-sobrevivientes-de-software",
-    "name": "Sobrevivientes de Software",
-    "schoolId": "ucab-venezuela",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0461-waza",
-    "name": "waza",
-    "schoolId": "uni-fiis-pe",
     "seasonYear": 2024
   },
   {
@@ -15918,12 +15186,6 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0468-los-guimos",
-    "name": "Los Güimos",
-    "schoolId": "upr-arecibo",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0469-algoritmos-a-la-tortrix",
     "name": "Algoritmos a la tortrix",
     "schoolId": "uvg-guatemala",
@@ -15936,27 +15198,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0471-bad-boys",
-    "name": "BAD BOYS|",
-    "schoolId": "source-label-unap-6ca9750bc9",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0472-jov",
     "name": "JoV",
     "schoolId": "udg-cutonala",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0473-san-kai",
-    "name": "Sān Kâi",
-    "schoolId": "unrn-ar",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0474-las-pepitas-bandoleras",
-    "name": "LAS PEPITAS BANDOLERAS",
-    "schoolId": "source-label-unap-6ca9750bc9",
     "seasonYear": 2024
   },
   {
@@ -16026,21 +15270,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0486-code-team",
-    "name": "CODE TEAM",
-    "schoolId": "source-label-unap-6ca9750bc9",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0487-m-a-th",
     "name": "M.A.TH",
     "schoolId": "ucenfotec-cr",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0488-cyberwolf",
-    "name": "CyberWolf",
-    "schoolId": "upr-arecibo",
     "seasonYear": 2024
   },
   {
@@ -16077,12 +15309,6 @@
     "id": "2024-mexico-finals-final-row-0494-los-workbenchos",
     "name": "Los Workbenchos",
     "schoolId": "url-rafael-landivar",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0495-l-p-s-v",
-    "name": "L.P.S.V.(.)",
-    "schoolId": "source-label-unap-6ca9750bc9",
     "seasonYear": 2024
   },
   {
@@ -16128,27 +15354,9 @@
     "seasonYear": 2024
   },
   {
-    "id": "2024-mexico-finals-final-row-0503-chicasunimet",
-    "name": "ChicasUNIMET",
-    "schoolId": "unimet-venezuela",
-    "seasonYear": 2024
-  },
-  {
     "id": "2024-mexico-finals-final-row-0504-cyberglimmers",
     "name": "CyberGlimmers",
     "schoolId": "uca-el-salvador",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0505-did",
-    "name": "DID",
-    "schoolId": "pucmm-csd",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0506-dream-team",
-    "name": "Dream Team",
-    "schoolId": "uto-ingenieria-mecatronica",
     "seasonYear": 2024
   },
   {
@@ -16191,12 +15399,6 @@
     "id": "2024-mexico-finals-final-row-0513-umizoomi",
     "name": "Umizoomi",
     "schoolId": "itszn-mx",
-    "seasonYear": 2024
-  },
-  {
-    "id": "2024-mexico-finals-final-row-0514-we-go-pass",
-    "name": "We go pass",
-    "schoolId": "uwi-st-augustine",
     "seasonYear": 2024
   },
   {

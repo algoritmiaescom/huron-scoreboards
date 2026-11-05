@@ -10134,12 +10134,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0006-phiun",
-    "name": "phiUN",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0007-voce-beijaria-matheus-leal-viana",
     "name": "Você beijaria Matheus Leal Viana?",
     "schoolId": "unicamp",
@@ -10185,12 +10179,6 @@
     "id": "2022-mexico-finals-final-row-0014-flamengo",
     "name": "FLAMENGO",
     "schoolId": "unb",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0015-fast-and-fourier",
-    "name": "Fast and Fourier",
-    "schoolId": "eafit",
     "seasonYear": 2022
   },
   {
@@ -10284,12 +10272,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0031-samuraisdeluwu",
-    "name": "SamuraisDelUwu",
-    "schoolId": "utec-peru",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0032-cagua",
     "name": "Cagua++",
     "schoolId": "unam-fciencias",
@@ -10326,21 +10308,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0038-tlenjoyers",
-    "name": "TLEnjoyers",
-    "schoolId": "uni-fc-pe",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0039-que-la-sigan-mandando",
     "name": "Que la sigan mandando",
     "schoolId": "uba-fcen",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0040-yesreturn",
-    "name": "YesReturn",
-    "schoolId": "source-label-ult-a6729e9f80",
     "seasonYear": 2022
   },
   {
@@ -10437,12 +10407,6 @@
     "id": "2022-mexico-finals-final-row-0056-geracao-ead-coda-y-coda",
     "name": "Geração EAD Coda Y Coda",
     "schoolId": "ufal",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0057-unfpor-nosotros",
-    "name": "UnFPor_nosotroS",
-    "schoolId": "ufps-cucuta",
     "seasonYear": 2022
   },
   {
@@ -10578,12 +10542,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0080-treeranosaurios-rex",
-    "name": "Treeranosaurios Rex",
-    "schoolId": "eafit",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0081-los-mismisimos-carajillos",
     "name": "Los Mismísimos Carajillos",
     "schoolId": "udg-cucei",
@@ -10596,21 +10554,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0083-team3c-1",
-    "name": "Team3C-1",
-    "schoolId": "source-label-ccl-vcl-44a76e32a4",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0084-spiders-suns-sweethearts",
     "name": "Spiders Suns Sweethearts",
     "schoolId": "ccl",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0085-codebreaker",
-    "name": "CodeBreaker();",
-    "schoolId": "uniamazonia-co",
     "seasonYear": 2022
   },
   {
@@ -10662,12 +10608,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0094-newton-s-flaming-laser-sword",
-    "name": "Newton's Flaming Laser Sword",
-    "schoolId": "source-label-uniandes-9ef0f0f29f",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0095-inimigos-do-wesley",
     "name": "Inimigos do Wesley",
     "schoolId": "ufabc",
@@ -10686,12 +10626,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0098-delacunalataud",
-    "name": "delacUNALataud",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0099-poetas-da-roca",
     "name": "Poetas da Roça",
     "schoolId": "unifei",
@@ -10701,18 +10635,6 @@
     "id": "2022-mexico-finals-final-row-0100-hololive",
     "name": "Hololive",
     "schoolId": "up-guadalajara",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0101-adhockers",
-    "name": "ADHOCKERS",
-    "schoolId": "uni-fiis-pe",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0102-opencubitos",
-    "name": "OpenCubitos",
-    "schoolId": "source-label-unsa-cc-01d00a7fa7",
     "seasonYear": 2022
   },
   {
@@ -10776,12 +10698,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0113-glorioushunters",
-    "name": "glorioushUNters",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0114-tangotech",
     "name": "TangoTech",
     "schoolId": "unc-famaf",
@@ -10818,12 +10734,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0120-stacks-duracell",
-    "name": "Stacks Duracell",
-    "schoolId": "puj-cali",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0121-tle-squared",
     "name": "TLE_SQUARED",
     "schoolId": "uacj",
@@ -10854,12 +10764,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0126-caribbean-pirates",
-    "name": "Caribbean Pirates",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0127-el-resto",
     "name": "El Resto",
     "schoolId": "source-label-puc-mat-dc8bf6731e",
@@ -10878,21 +10782,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0130-unnamed",
-    "name": "UNnaMED",
-    "schoolId": "unal-medellin",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0131-rmf4-san-andres",
     "name": "RMF4.San_Andres()",
     "schoolId": "umsa",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0132-los-galacticos",
-    "name": "Los galácticos",
-    "schoolId": "ucsp-pe",
     "seasonYear": 2022
   },
   {
@@ -10914,39 +10806,15 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0136-unos-estudiantes",
-    "name": "UNos_estudiantes",
-    "schoolId": "unal-medellin",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0137-brainstorm",
     "name": "BrainStorm",
     "schoolId": "uci-cuba",
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0138-gpt-is-your-turn",
-    "name": "GPT is your turn",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0139-gauss-n-roses",
     "name": "Gauss N' Roses",
     "schoolId": "uady",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0140-no-name-team",
-    "name": "No Name Team",
-    "schoolId": "puj-cali",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0141-errorbynight",
-    "name": "ErrorByNight",
-    "schoolId": "eafit",
     "seasonYear": 2022
   },
   {
@@ -10980,33 +10848,15 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0147-troyanos",
-    "name": "Troyanos",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0148-hell-claro",
     "name": "HELL CLARO",
     "schoolId": "unesp-rio-claro",
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0149-gauss-n-roses",
-    "name": "gaUss N’ roses",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0150-ice-and-fire",
     "name": "Ice and Fire",
     "schoolId": "uaz",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0151-ecigma-error-404",
-    "name": "ECIGMA ERROR 404",
-    "schoolId": "source-label-eci-e098f79a76",
     "seasonYear": 2022
   },
   {
@@ -11058,12 +10908,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0160-ultimatum",
-    "name": "Ultimatum",
-    "schoolId": "eafit",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0161-espantabugs",
     "name": "EspantaBugs",
     "schoolId": "tecnm-leon",
@@ -11079,30 +10923,6 @@
     "id": "2022-mexico-finals-final-row-0163-coco-coco",
     "name": "Coco Coco",
     "schoolId": "fce-unlp",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0164-frogdogs",
-    "name": "FrogDogs",
-    "schoolId": "poli-co",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0165-o-1",
-    "name": "O(1)",
-    "schoolId": "utec-peru",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0166-c0d3br0th3rs",
-    "name": "C0d3Br0th3rs",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0167-los-j-balbinarios",
-    "name": "Los J-Balbinarios",
-    "schoolId": "puj-cali",
     "seasonYear": 2022
   },
   {
@@ -11130,24 +10950,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0172-los-enviados-de-walfrido",
-    "name": "Los enviados de Walfrido",
-    "schoolId": "upr-pr",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0173-unteamwon",
-    "name": "UNTeamWon",
-    "schoolId": "unal-medellin",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0174-utp-neocode-generation",
-    "name": "UTP - NeoCode Generation",
-    "schoolId": "source-label-utp-f8d556ed41",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0175-red-warriors-team",
     "name": "Red Warriors Team",
     "schoolId": "umss",
@@ -11157,12 +10959,6 @@
     "id": "2022-mexico-finals-final-row-0176-cryptocoders",
     "name": "Cryptocoders",
     "schoolId": "uagrm",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0177-codewarriors",
-    "name": "CodeWarriors",
-    "schoolId": "icesi",
     "seasonYear": 2022
   },
   {
@@ -11181,18 +10977,6 @@
     "id": "2022-mexico-finals-final-row-0180-wajakos",
     "name": "Wajakos",
     "schoolId": "uach-chihuahua",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0181-coffeeteam",
-    "name": "CoffeeTeam",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0182-fraizen-fraizen",
-    "name": "Fraizen fraizen",
-    "schoolId": "udelar-inco",
     "seasonYear": 2022
   },
   {
@@ -11220,12 +11004,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0187-leetmecode",
-    "name": "LeetmeCode",
-    "schoolId": "eafit",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0188-los-culisueltos",
     "name": "Los Culisueltos",
     "schoolId": "source-label-upblp-aa5c09945f",
@@ -11244,27 +11022,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0191-digitalcodex",
-    "name": "DigitalCodeX",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0192-ort-uruguay-hava-jackers",
-    "name": "ORT Uruguay - Hava Jackers",
-    "schoolId": "ort-uy",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0193-e-rc-2",
     "name": "E = RC^2",
     "schoolId": "unc-famaf",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0194-ort-uruguay-orchestrators",
-    "name": "ORT Uruguay - Orchestrators",
-    "schoolId": "ort-uy",
     "seasonYear": 2022
   },
   {
@@ -11322,12 +11082,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0204-javalimos",
-    "name": "Javalimos",
-    "schoolId": "source-label-usa-aa5ab35a91",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0205-los-colados",
     "name": "Los colados",
     "schoolId": "iteso",
@@ -11352,30 +11106,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0209-bitroll",
-    "name": "BitRoll",
-    "schoolId": "upb-bucaramanga",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0210-callback",
-    "name": "Callback",
-    "schoolId": "eia-colombia",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0211-un-waro",
-    "name": "UN_WAro",
-    "schoolId": "unal-medellin",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0212-ecigma-beta",
-    "name": "ECIGMA BETA",
-    "schoolId": "source-label-eci-e098f79a76",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0213-equipo-alfa-buena-maravilla-onda",
     "name": "Equipo alfa buena maravilla onda dinamita escuadrón lobo",
     "schoolId": "udem-monterrey",
@@ -11385,12 +11115,6 @@
     "id": "2022-mexico-finals-final-row-0214-nova",
     "name": "NOVA",
     "schoolId": "source-label-ucb-c2b4b7f319",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0215-spicy-chontaduros",
-    "name": "Spicy Chontaduros",
-    "schoolId": "icesi",
     "seasonYear": 2022
   },
   {
@@ -11448,12 +11172,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0225-mangu-salami-y-cebolla",
-    "name": "Mangú, Salami y Cebolla",
-    "schoolId": "pucmm-csd",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0226-red-squadron",
     "name": "Red Squadron",
     "schoolId": "iteso",
@@ -11463,12 +11181,6 @@
     "id": "2022-mexico-finals-final-row-0227-strongbyte",
     "name": "StrongByte []",
     "schoolId": null,
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0228-404",
-    "name": "404",
-    "schoolId": "utec-peru",
     "seasonYear": 2022
   },
   {
@@ -11490,12 +11202,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0232-abransealv",
-    "name": "AbranseALV",
-    "schoolId": "source-label-uc-93bb321984",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0233-vkm",
     "name": "VKM []",
     "schoolId": null,
@@ -11514,12 +11220,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0236-codepals",
-    "name": "CodePals",
-    "schoolId": "source-label-uc-93bb321984",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0237-deep-work",
     "name": "Deep Work []",
     "schoolId": null,
@@ -11529,18 +11229,6 @@
     "id": "2022-mexico-finals-final-row-0238-o-1",
     "name": "O(1)",
     "schoolId": "itesm-monterrey",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0239-runtime-terror",
-    "name": "Runtime Terror",
-    "schoolId": "pucmm-santiago",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0240-beowulf",
-    "name": "Beowulf",
-    "schoolId": "source-label-usa-aa5ab35a91",
     "seasonYear": 2022
   },
   {
@@ -11562,27 +11250,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0244-unalike",
-    "name": "UNALike",
-    "schoolId": "unal-medellin",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0245-al-que-se-le-trabo-la-aaaaaaaaaa",
     "name": "Al que se le trabo la aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     "schoolId": "ccl",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0246-qsy",
-    "name": "Qsy",
-    "schoolId": "pucmm-santiago",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0247-ritmo",
-    "name": "rITMo",
-    "schoolId": "itm-medellin",
     "seasonYear": 2022
   },
   {
@@ -11598,39 +11268,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0250-age-23",
-    "name": "AGE 23",
-    "schoolId": "instec",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0251-ban-crabs",
     "name": "Ban Crabs",
     "schoolId": "uca-el-salvador",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0252-code-breakers",
-    "name": "Code:Breakers",
-    "schoolId": "upr-pr",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0253-yeezus",
-    "name": "Yeezus",
-    "schoolId": "utesa",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0254-k3rn3lp4n1c",
-    "name": "K3rn3lP4n1c!",
-    "schoolId": "source-label-ucv-294962d46d",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0255-team-a",
-    "name": "TEAM A",
-    "schoolId": "pucmm-csd",
     "seasonYear": 2022
   },
   {
@@ -11652,33 +11292,15 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0259-jed",
-    "name": "JED",
-    "schoolId": "eia-colombia",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0260-trojan-horse",
     "name": "Trojan Horse",
     "schoolId": "uca-el-salvador",
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0261-icompila",
-    "name": "iCompila",
-    "schoolId": "source-label-um-d3cd680850",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0262-abduzcan",
     "name": "Abduzcan",
     "schoolId": "source-label-upblp-aa5c09945f",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0263-aliodoo",
-    "name": "Aliodoo",
-    "schoolId": "source-label-ult-a6729e9f80",
     "seasonYear": 2022
   },
   {
@@ -11706,12 +11328,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0268-ecigma-jmj",
-    "name": "ECIGMA JMJ",
-    "schoolId": "source-label-eci-e098f79a76",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0269-las-belicas",
     "name": "Las bélicas",
     "schoolId": "udg-cucei",
@@ -11721,12 +11337,6 @@
     "id": "2022-mexico-finals-final-row-0270-iccc",
     "name": "ICCC",
     "schoolId": "source-label-ucb-c2b4b7f319",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0271-la-banda-binaria",
-    "name": "La banda Binaria",
-    "schoolId": "unsaac",
     "seasonYear": 2022
   },
   {
@@ -11748,18 +11358,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0275-the-competidor-jhajuset",
-    "name": "The competidor Jhajuset",
-    "schoolId": "unsaac",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0276-apolo",
-    "name": "Apolo",
-    "schoolId": "uapa",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0277-rec",
     "name": "REC",
     "schoolId": "uagrm",
@@ -11769,12 +11367,6 @@
     "id": "2022-mexico-finals-final-row-0278-lazy-developments",
     "name": "Lazy developments []",
     "schoolId": null,
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0279-vicalela",
-    "name": "VICALELA",
-    "schoolId": "source-label-um-d3cd680850",
     "seasonYear": 2022
   },
   {
@@ -11826,12 +11418,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0288-ker",
-    "name": "KER",
-    "schoolId": "source-label-um-d3cd680850",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0289-coding-crusaders",
     "name": "Coding Crusaders",
     "schoolId": "uci-cuba",
@@ -11856,21 +11442,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0293-uhoplus",
-    "name": "UHoPlus",
-    "schoolId": "uho",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0294-agora-bateu",
     "name": "Agora Bateu",
     "schoolId": "ufs-br",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0295-grupo-x",
-    "name": "Grupo x",
-    "schoolId": "pucmm-santiago",
     "seasonYear": 2022
   },
   {
@@ -11889,24 +11463,6 @@
     "id": "2022-mexico-finals-final-row-0298-javalio-python",
     "name": "JAVAlio PYTHON []",
     "schoolId": null,
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0299-cpy",
-    "name": "CPy",
-    "schoolId": "utesa",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0300-ingnuc",
-    "name": "IngNUC++",
-    "schoolId": "instec",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0301-warrior-soft",
-    "name": "Warrior Soft",
-    "schoolId": "uapa",
     "seasonYear": 2022
   },
   {
@@ -11934,27 +11490,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0306-unnamed",
-    "name": "Unnamed",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0307-oxbests",
     "name": "OxBests",
     "schoolId": "itnl",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0308-wolfbyte",
-    "name": "WolfByte",
-    "schoolId": "upr-arecibo",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0309-nabla",
-    "name": "Nabla",
-    "schoolId": "instec",
     "seasonYear": 2022
   },
   {
@@ -11970,12 +11508,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0312-magikarp",
-    "name": "MagiKarp",
-    "schoolId": "konrad-lorenz",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0313-upds-potosi101",
     "name": "UPDS-Potosi101 []",
     "schoolId": null,
@@ -11985,12 +11517,6 @@
     "id": "2022-mexico-finals-final-row-0314-bcd",
     "name": "BCD",
     "schoolId": "unifacef",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0315-maqueentosh",
-    "name": "MaQueenTosh",
-    "schoolId": "unsaac",
     "seasonYear": 2022
   },
   {
@@ -12012,21 +11538,9 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0319-breakcoders-etitc",
-    "name": "BreakCoders Etitc",
-    "schoolId": "etitc",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0320-codestroyers",
     "name": "CodeStroyers",
     "schoolId": "source-label-una-51072ac1a6",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0321-atlasttime",
-    "name": "atLastTime()",
-    "schoolId": "source-label-uc-93bb321984",
     "seasonYear": 2022
   },
   {
@@ -12042,12 +11556,6 @@
     "seasonYear": 2022
   },
   {
-    "id": "2022-mexico-finals-final-row-0324-codebreakers",
-    "name": "CodeBreakers",
-    "schoolId": "source-label-iujo-cad5c883c3",
-    "seasonYear": 2022
-  },
-  {
     "id": "2022-mexico-finals-final-row-0325-escuadron-lobo",
     "name": "Escuadrón lobo []",
     "schoolId": null,
@@ -12057,12 +11565,6 @@
     "id": "2022-mexico-finals-final-row-0326-esquadrao-suicida-stone-1",
     "name": "Esquadrão Suicida - Stone 1",
     "schoolId": "ccl",
-    "seasonYear": 2022
-  },
-  {
-    "id": "2022-mexico-finals-final-row-0327-hola-mundo",
-    "name": "HOLA MUNDO",
-    "schoolId": "ucne",
     "seasonYear": 2022
   },
   {

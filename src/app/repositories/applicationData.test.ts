@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { createJsonMediaRepository, selectEvent } from '@/features/media';
+import { createJsonMediaRepository, selectEvent, selectEventFeed } from '@/features/media';
 import {
   createJsonScoreboardsRepository,
   selectContest,
@@ -34,6 +34,84 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
+  it('loads all curated Facebook and Instagram links in the real 2026 media feed', async () => {
+    const files = import.meta.glob<string>('/data/media/events/*.json', {
+      query: '?raw',
+      import: 'default',
+    });
+    const result = await createJsonMediaRepository(files, 'archive').load(new Set());
+    if (result.status !== 'ready') {
+      throw new Error('Expected a valid published media archive');
+    }
+    const feed = selectEventFeed(
+      result.data,
+      '2026-mexico-finals',
+      new Date('2026-11-05T06:00:00Z'),
+    );
+    if (feed.status !== 'found') {
+      throw new Error('Expected the curated Final Mexicana feed');
+    }
+    const { event, posts } = feed.record;
+    expect(event).toMatchObject({
+      name: 'Final Mexicana 2026',
+      date: '2026-11-07',
+      location: 'ESCOM IPN',
+    });
+    expect(posts).toHaveLength(32);
+    expect(posts.filter(({ source }) => source === 'facebook')).toHaveLength(22);
+    expect(posts.filter(({ source }) => source === 'instagram')).toHaveLength(7);
+    expect(posts.filter(({ source }) => source === 'linkedin')).toHaveLength(3);
+    expect(new Set(posts.map(({ permalink }) => permalink)).size).toBe(32);
+    const curated = posts.filter(({ title }) => title !== undefined);
+    expect(curated).toHaveLength(23);
+    expect(curated.every(({ media }) => media.every(({ type }) => type === 'image'))).toBe(true);
+    expect(curated.reduce((sum, { media }) => sum + media.length, 0)).toBe(127);
+    expect(curated.map(({ title, media }) => [title, media.length])).toEqual([
+      ['Reel: convocatoria a la Final Mexicana 2026', 1],
+      ['Primera fecha del GPM 2026 en ESCOM', 6],
+      ['Segunda fecha del GPM 2026 en ESCOM', 1],
+      ['Presentación de un equipo clasificado', 1],
+      ['Tercera fecha del GPM 2026 en ESCOM', 48],
+      ['Invitación a la Final Mexicana 2026', 1],
+      ['Equipos clasificados: 2026-09-08', 11],
+      ['Equipos clasificados: 2026-09-23', 4],
+      ['Equipos clasificados: 2026-09-29', 4],
+      ['M for Matrix: cupo 070', 1],
+      ['Equipos clasificados: 2026-09-30', 8],
+      ['Equipos clasificados: 2026-10-02', 11],
+      ['Equipos clasificados: 2026-10-03', 2],
+      ['Equipos clasificados: 2026-10-04', 3],
+      ['Equipos clasificados: 2026-10-05', 3],
+      ['Equipos clasificados: 2026-10-10', 4],
+      ['Equipos clasificados: 2026-10-19', 2],
+      ['Equipos clasificados: 2026-10-24', 2],
+      ['Equipos clasificados: 2026-10-25', 2],
+      ['Equipos clasificados: 2026-10-27', 3],
+      ['Rascals Last AC: cupo 054', 1],
+      ['Equipos clasificados: 2026-10-31', 2],
+      ['Equipos clasificados: 2026-11-01', 6],
+    ]);
+    for (const { media } of curated) {
+      expect(new Set(media.map(({ url }) => new URL(url).pathname)).size).toBe(media.length);
+    }
+    expect(curated.every(({ permalink }) => new URL(permalink).search === '')).toBe(true);
+    expect(posts.find(({ permalink }) => permalink.endsWith('/reel/DWDK4g_jQaL/'))).toMatchObject({
+      author: { username: 'icpc_mexico' },
+      postedAt: '2026-03-19T02:41:46.000Z',
+      title: 'Reel: convocatoria a la Final Mexicana 2026',
+    });
+    expect(
+      posts.find(({ title }) => title === 'Primera fecha del GPM 2026 en ESCOM'),
+    ).toMatchObject({
+      author: { username: 'algoritmiaescom', displayName: 'Club de Algoritmia ESCOM' },
+      postedAt: '2026-04-20T18:46:31.000Z',
+    });
+    expect(posts.find(({ title }) => title === 'Equipos clasificados: 2026-11-01')).toMatchObject({
+      author: { username: 'acm.iteso', displayName: 'Icpc MX At Iteso' },
+      postedAt: '2026-11-01T19:42:44.000Z',
+    });
+  });
+
   it('consolidates explicit Panamericana campuses without assigning ambiguous UP registrations', async () => {
     const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
       query: '?raw',
@@ -53,6 +131,7 @@ describe('runtime repositories', () => {
       id: 'up',
       officialName: 'Universidad Panamericana',
       shortName: 'UP',
+      logo: 'https://www.up.edu.mx/wp-content/uploads/2026/11/Icono-Roble_2026-536x536.png',
     });
     expect(institution.record.schools).toHaveLength(4);
     expect(institution.record.teams).toHaveLength(568);
@@ -162,6 +241,7 @@ describe('runtime repositories', () => {
       officialName: 'Centro Universitario de Ciencias Exactas e Ingenierías',
       shortName: 'UdG CUCEI',
       parentInstitutionId: 'udg',
+      logo: 'https://www.cucei.udg.mx/sites/default/files/favicon.ico',
     });
     for (const id of [
       'source-label-udg-cucei-86b0833dc5',
@@ -376,7 +456,7 @@ describe('runtime repositories', () => {
     const ipnIds = new Set(ipn.record.teams.map(({ id }) => id));
     expect(unamTeams.every(({ id }) => !ipnIds.has(id))).toBe(true);
     expect(published.teams.filter(({ schoolId }) => schoolId === 'ipn')).toHaveLength(0);
-    expect(published.schools).toHaveLength(1067);
+    expect(published.schools).toHaveLength(875);
   });
 
   it('consolidates ESCOM registrations under its IPN unit without merging unrelated schools', async () => {
@@ -394,6 +474,7 @@ describe('runtime repositories', () => {
       officialName: 'Escuela Superior de Cómputo',
       shortName: 'ESCOM IPN',
       parentInstitutionId: 'ipn',
+      logo: 'https://www.escom.ipn.mx/images/logoESCOM2x.png',
     });
     for (const id of [
       'source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8',
@@ -442,6 +523,7 @@ describe('runtime repositories', () => {
         id: 'buap',
         officialName: 'Benemérita Universidad Autónoma de Puebla',
         shortName: 'BUAP',
+        logo: 'https://www.buap.mx/sites/default/files/favicon.ico',
       },
       {
         id: 'buap-fcc',

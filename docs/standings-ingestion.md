@@ -93,8 +93,23 @@ Global regional Finals. Publication preserves source-specific exceptions explici
 ties, distinct same-name registrations, the intermediate 2023 accumulated table, and the 2013
 Finals' missing and unknown places. This manual source review does not relax automatic
 reconciliation/materialization gates for non-final or irregular candidates. Native Global GPM
-tables are not substituted for accumulated-point PDFs; differing 2019–2025 native Finals tables
-do not overwrite existing ICPC Mexico archive records.
+tables are not substituted for accumulated-point PDFs. The reviewed 2019–2025 archive Finals
+now use ScoreLATAM's Mexico-only classifications, with published local places and explicit `/MX`
+country evidence; native Global tables are corroborating evidence, not extra rows to append.
+See [archive coverage and limitations](../data/README.md).
+
+ScoreLATAM country-group discovery accepts a unique `Mexico` label without requiring a CCL
+section. If country labels repeat in a separate CCL block, the adapter must still distinguish
+the competitive Mexico group. The reviewed 2019 and 2020 `mxmx` labels are accepted only for
+those editions, and every selected row must independently have the exact `/MX` User/Site suffix.
+Empty institution brackets produce an unknown school, not part of the team name. Missing
+final-state headings continue to block automatic publication; the 2020/2021 archive replacement
+was manually corroborated against official Global Finals teams and totals.
+
+The 2009–2018 combined Mexico/Central America Finals remain unchanged pending complete
+country evidence. The public Global projection silently omits requested `country`/`countryCode`
+fields; neither a Mexico-branded page nor a partial set of geographic medal citations establishes
+that every row is Mexican. Do not filter unknown-country rows or recompute their ranks by guesswork.
 
 ICPC Mexico also publishes four-column totals-only tables, as for qualifier 3 in 2026. The adapter
 preserves solved/penalty observations with an unknown problem set and `results: null`; it does not

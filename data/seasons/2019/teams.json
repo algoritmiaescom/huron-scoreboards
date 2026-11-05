@@ -6,18 +6,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0002-t-me-maratonabrasil",
-    "name": "t.me/maratonabrasil",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0003-descomunal",
-    "name": "descomUNAL",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0004-norman-is-hunting",
     "name": "Norman is Hunting",
     "schoolId": "ipn-escom",
@@ -42,21 +30,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0008-chefes-do-beto",
-    "name": "Chefes do Beto",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0009-inchavola",
     "name": "InChaVoLa",
     "schoolId": "uba-fcen",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0010-ore-wo-dare-da-to-omotte-yagaru",
-    "name": "Ore wo dare da to omotte yagaru?!",
-    "schoolId": "source-label-ccl-br-989f407cbb",
     "seasonYear": 2019
   },
   {
@@ -72,12 +48,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0013-gg-dem",
-    "name": "GG Dem",
-    "schoolId": "source-label-unc-famaf-ea0fe7138f",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0014-nuevaconstitucion-uchile1",
     "name": "#NuevaConstitución UChile1",
     "schoolId": "uchile",
@@ -90,21 +60,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0016-decoradores-do-mp",
-    "name": "Decoradores do MP",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0017-mastropiero-unlimited",
     "name": "Mastropiero Unlimited",
     "schoolId": "uns-bahia-blanca",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0018-rating-miserable",
-    "name": "Rating MiSeRable",
-    "schoolId": "uni-fc-pe",
     "seasonYear": 2019
   },
   {
@@ -123,12 +81,6 @@
     "id": "2019-mexico-finals-final-row-0021-e3",
     "name": "E3",
     "schoolId": "source-label-ugtodcne-5945f3f915",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0022-limitless",
-    "name": "Limitless",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
     "seasonYear": 2019
   },
   {
@@ -156,21 +108,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0027-this-is-the-bad-day",
-    "name": "This is the bad day",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0028-define-trilci-404-0-v",
     "name": "#define TriLCI(404.0) :v",
     "schoolId": "itsur",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0029-aposentados-e-maratonistas",
-    "name": "Aposentados e Maratonistas",
-    "schoolId": "source-label-ccl-br-989f407cbb",
     "seasonYear": 2019
   },
   {
@@ -216,21 +156,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0037-vendo-fiat-uno-1995-conservado",
-    "name": "VENDO Fiat Uno 1995 CONSERVADO",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0038-heaps-dont-lie",
     "name": "Heaps Dont Lie",
     "schoolId": "itesm-monterrey",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0039-wildlings",
-    "name": "Wildlings",
-    "schoolId": "source-label-ccl-br-989f407cbb",
     "seasonYear": 2019
   },
   {
@@ -264,39 +192,15 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0045-we-are-lgm",
-    "name": "We are LGM",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0046-hypercube-destroyers",
     "name": "Hypercube Destroyers",
     "schoolId": "source-label-ugtodcne-5945f3f915",
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0047-almo5there",
-    "name": "Almo5There",
-    "schoolId": "icesi",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0048-uh-reloaded",
     "name": "UH_RELOADED",
     "schoolId": "uh",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0049-jump-forces",
-    "name": "Jump Forces",
-    "schoolId": "poli-co",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0050-team-g",
-    "name": "Team G",
-    "schoolId": "source-label-uni-fim-e75012792b",
     "seasonYear": 2019
   },
   {
@@ -315,24 +219,6 @@
     "id": "2019-mexico-finals-final-row-0053-if-avx",
     "name": "if avx !",
     "schoolId": "ufcg",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0054-noincacolanofun",
-    "name": "NoIncaColaNoFun",
-    "schoolId": "uni-fiis-pe",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0055-team3c-1",
-    "name": "Team3C-1",
-    "schoolId": "source-label-ccl-cu-78ea5a32a8",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0056-treevial",
-    "name": "Treevial",
-    "schoolId": "pucp",
     "seasonYear": 2019
   },
   {
@@ -378,21 +264,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0064-javamos-a-moscow",
-    "name": "Javamos a Moscow",
-    "schoolId": "source-label-uniandes-9ef0f0f29f",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0065-cade-o-meu-coach",
     "name": "Cadê o meu coach?",
     "schoolId": "source-label-ime-b6cebba598",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0066-nba",
-    "name": "NBA",
-    "schoolId": "source-label-puc-e43e69c8d9",
     "seasonYear": 2019
   },
   {
@@ -414,27 +288,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0070-riemann-witnesses",
-    "name": "Riemann Witnesses",
-    "schoolId": "eafit",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0071-unemployed",
-    "name": "UNemployed",
-    "schoolId": "source-label-universidad-nacional-de-colombia-bogota-3f821f7a99",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0072-chilakillers",
     "name": "Chilakillers",
     "schoolId": "up-aguascalientes",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0073-antabaka",
-    "name": "Antabaka",
-    "schoolId": "pucp",
     "seasonYear": 2019
   },
   {
@@ -456,69 +312,15 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0077-counter",
-    "name": "coUNter",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0078-talla-mediana",
     "name": "Talla Mediana",
     "schoolId": "source-label-ugtodcne-5945f3f915",
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0079-do-you-fala-portunol",
-    "name": "Do you fala portuñol?",
-    "schoolId": "ucsp-pe",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0080-utp-newlegend",
-    "name": "UTP - NewLegend",
-    "schoolId": "source-label-utp-f8d556ed41",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0081-come-n-or-write-equipo",
-    "name": "come(n) or write(equipo)",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0082-di-sol-ver",
-    "name": "DI-SOL-VER",
-    "schoolId": "uni-fc-pe",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0083-um-pombo-em-cima-do-outro",
-    "name": "Um pombo em cima do outro",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0084-shell-breakers",
-    "name": "Shell Breakers",
-    "schoolId": "source-label-unc-famaf-ea0fe7138f",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0085-agarudon",
-    "name": "Agarudon",
-    "schoolId": "source-label-uni-fiee-d08cf74a2a",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0086-caminhoneiros-do-cerrado",
     "name": "Caminhoneiros do Cerrado",
     "schoolId": "unb-fga",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0087-jml",
-    "name": "JML",
-    "schoolId": "source-label-unc-famaf-ea0fe7138f",
     "seasonYear": 2019
   },
   {
@@ -531,12 +333,6 @@
     "id": "2019-mexico-finals-final-row-0089-caranguejo-misterioso",
     "name": "Caranguejo Misterioso",
     "schoolId": "ufs-br",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0090-print-acm",
-    "name": "print(\"ACM\")",
-    "schoolId": "uni-fiis-pe",
     "seasonYear": 2019
   },
   {
@@ -573,18 +369,6 @@
     "id": "2019-mexico-finals-final-row-0096-juntos-shell-now",
     "name": "Juntos & Shell | Now",
     "schoolId": "ufba",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0097-trabalhamos-com-beto",
-    "name": "Trabalhamos com Beto",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0098-ltu",
-    "name": "LTU++",
-    "schoolId": "source-label-ult-a6729e9f80",
     "seasonYear": 2019
   },
   {
@@ -654,39 +438,15 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0110-divide-et-impera",
-    "name": "Divide et Impera",
-    "schoolId": "pucp",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0111-machinebox",
-    "name": "MachineBox",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0112-tres-caras-numa-moto",
     "name": "Três caras numa moto",
     "schoolId": "ufpi",
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0113-colombia-chinese",
-    "name": "Colombia Chinese",
-    "schoolId": "icesi",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0114-triada",
     "name": "TriAda",
     "schoolId": "uanl",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0115-pac-men",
-    "name": "◔ Pac-men •••",
-    "schoolId": "pucmm-csd",
     "seasonYear": 2019
   },
   {
@@ -699,24 +459,6 @@
     "id": "2019-mexico-finals-final-row-0117-youshallnot-cpp",
     "name": "YouShallNot.cpp",
     "schoolId": "ufpr",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0118-godzilla-giroflex",
-    "name": "Godzilla Giroflex",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0119-jpg",
-    "name": ".jpg",
-    "schoolId": "source-label-puc-e43e69c8d9",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0120-unannounced",
-    "name": "unANnounced",
-    "schoolId": "source-label-uniandes-9ef0f0f29f",
     "seasonYear": 2019
   },
   {
@@ -744,12 +486,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0125-define-project-mayhem-322121300",
-    "name": "#define Project_Mayhem 322121300",
-    "schoolId": "unsaac",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0126-icpcrikos",
     "name": "ICPCrikos",
     "schoolId": "up-aguascalientes",
@@ -768,27 +504,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0129-minecode",
-    "name": "MineCode",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0130-chernobyl-tourists",
-    "name": "Chernobyl Tourists",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0131-mdp",
     "name": "mdp []",
     "schoolId": null,
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0132-alpha-codic",
-    "name": "Alpha Codic",
-    "schoolId": "unt",
     "seasonYear": 2019
   },
   {
@@ -807,18 +525,6 @@
     "id": "2019-mexico-finals-final-row-0135-zforc",
     "name": "ZForC",
     "schoolId": "uclv",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0136-utp-insensitive",
-    "name": "UTP - Insensitive",
-    "schoolId": "source-label-utp-f8d556ed41",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0137-tllm",
-    "name": "TLLM",
-    "schoolId": "source-label-uninorte-eeaa605de2",
     "seasonYear": 2019
   },
   {
@@ -852,27 +558,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0143-fariseos-again-v",
-    "name": "Fariseos Again :v/",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0144-promised-rinascimento",
     "name": "Promised Rinascimento",
     "schoolId": "itesg",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0145-c",
-    "name": "C##",
-    "schoolId": "source-label-upblp-if-8c97df5b76",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0146-aux",
-    "name": "AUX",
-    "schoolId": "eafit",
     "seasonYear": 2019
   },
   {
@@ -894,12 +582,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0150-arrempujados",
-    "name": "arremPUJados",
-    "schoolId": "puj-bogota",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0151-sucesso",
     "name": "(++sucesso)++;",
     "schoolId": "uece",
@@ -915,12 +597,6 @@
     "id": "2019-mexico-finals-final-row-0153-kygerand",
     "name": "Kygerand",
     "schoolId": "itesm-cem",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0154-los-3-anticarries",
-    "name": "Los 3 anticarries",
-    "schoolId": "source-label-upc-e44b982403",
     "seasonYear": 2019
   },
   {
@@ -948,21 +624,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0159-not-connected",
-    "name": "NOT_CONNECTED",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0160-hu3-ontheedgeofoblivion",
     "name": "Hu3++OnTheEdgeOfOblivion",
     "schoolId": "uffs",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0161-mart-mclight",
-    "name": "Mart McLight",
-    "schoolId": "source-label-puc-e43e69c8d9",
     "seasonYear": 2019
   },
   {
@@ -978,33 +642,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0164-jemg",
-    "name": "JEMG",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0165-sortanejo-unidirecionado",
-    "name": "Sortanejo Unidirecionado",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0166-antenas-paranoicas",
     "name": "Antenas Paranoicas",
     "schoolId": "ifpb-joao-pessoa",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0167-the-titans",
-    "name": "The Titans",
-    "schoolId": "pucmm-csd",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0168-mortal-konrad",
-    "name": "Mortal Konrad",
-    "schoolId": "konrad-lorenz",
     "seasonYear": 2019
   },
   {
@@ -1014,39 +654,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0170-blackrock2",
-    "name": "Blackrock2",
-    "schoolId": "source-label-undav-a1590a58d4",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0171-l4nz4tuwaa",
-    "name": "L4nz4TuWAA..",
-    "schoolId": "uni-fiis-pe",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0172-fumo",
-    "name": "Fumo (╥﹏╥)",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0173-tc48",
-    "name": "TC48",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0174-coco-coco",
     "name": "CoCo - CoCo",
     "schoolId": "fce-unlp",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0175-mathssacre",
-    "name": "Mathssacre",
-    "schoolId": "eafit",
     "seasonYear": 2019
   },
   {
@@ -1068,27 +678,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0179-um-balao-ta-massa",
-    "name": "Um balão tá massa",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0180-nuevaconstitucion-udec-1",
     "name": "#NuevaConstitución UdeC-1",
     "schoolId": "source-label-udec-06a1d4f639",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0181-depois-de-3-wa-pede-musica",
-    "name": "Depois de 3 WA pede música?",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0182-teamusach1",
-    "name": "TeamUsach1",
-    "schoolId": "source-label-usach-ing-94044172b8",
     "seasonYear": 2019
   },
   {
@@ -1104,21 +696,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0185-batman",
-    "name": "Batman",
-    "schoolId": "puj-bogota",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0186-los-pixies",
     "name": "Los pixies",
     "schoolId": "usb-venezuela",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0187-ula-01",
-    "name": "ULA-01",
-    "schoolId": "source-label-ula-3c37d69a5c",
     "seasonYear": 2019
   },
   {
@@ -1146,18 +726,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0192-el-tropelin",
-    "name": "El Tropelin",
-    "schoolId": "source-label-ucart-6ca5a388c9",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0193-bfs",
-    "name": "bFs",
-    "schoolId": "source-label-upc-e44b982403",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0194-iobits",
     "name": "IObits",
     "schoolId": "uca-el-salvador",
@@ -1167,12 +735,6 @@
     "id": "2019-mexico-finals-final-row-0195-segmentation-fault",
     "name": "Segmentation Fault",
     "schoolId": "source-label-tec-4e03be678c",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0196-uprising",
-    "name": "UPRising",
-    "schoolId": "upr-pr",
     "seasonYear": 2019
   },
   {
@@ -1188,12 +750,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0199-los-reencauchados-de-la-eafi",
-    "name": "Los reencauchados de la eafí",
-    "schoolId": "eafit",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0200-programalovers",
     "name": "ProgramaLovers",
     "schoolId": "unam-enes-morelia",
@@ -1206,57 +762,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0202-kernelpan-c",
-    "name": "KernelPan!c",
-    "schoolId": "source-label-ucv-294962d46d",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0203-enigma",
     "name": "Enigma",
     "schoolId": "unifacens-br",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0204-mi-coach-no-cree-en-nosotros",
-    "name": "Mi coach no cree en nosotros",
-    "schoolId": "source-label-umsa-inf-82f1c14387",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0205-javariana",
-    "name": "Javariana",
-    "schoolId": "puj-cali",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0206-dijkstrai2",
-    "name": "DijkstraI2",
-    "schoolId": "uniamazonia-co",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0207-without-sense",
-    "name": "Without_sense",
-    "schoolId": "ucsp-pe",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0208-diacpam",
-    "name": "diaCpam",
-    "schoolId": "ucsp-pe",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0209-nja",
-    "name": "NJA",
-    "schoolId": "poli-co",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0210-choclitos-crew",
-    "name": "Choclitos Crew",
-    "schoolId": "puj-cali",
     "seasonYear": 2019
   },
   {
@@ -1272,30 +780,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0213-press-f-for-milanesitas",
-    "name": "Press F for Milanesitas",
-    "schoolId": "source-label-unc-famaf-ea0fe7138f",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0214-scalando",
-    "name": "SCALAndo",
-    "schoolId": "source-label-uniandes-9ef0f0f29f",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0215-long-jevos",
-    "name": "Long jevos;",
-    "schoolId": "ing-unlp",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0216-miracle-contact",
-    "name": "Miracle Contact",
-    "schoolId": "source-label-uni-fim-e75012792b",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0217-teganeporuno",
     "name": "TeGanePorUno",
     "schoolId": "utn-frsf",
@@ -1305,12 +789,6 @@
     "id": "2019-mexico-finals-final-row-0218-the-best-skynet",
     "name": "The Best Skynet",
     "schoolId": "source-label-uaq-dbf6df3a31",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0219-unisabana",
-    "name": "unisabana",
-    "schoolId": "source-label-unisabana-ca51b45ae5",
     "seasonYear": 2019
   },
   {
@@ -1329,12 +807,6 @@
     "id": "2019-mexico-finals-final-row-0222-uclv1",
     "name": "UCLV1",
     "schoolId": "uclv",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0223-c12h22o11-daddy-monti",
-    "name": "C12H22O11 Daddy Monti",
-    "schoolId": "source-label-ucsm-74dfa8de13",
     "seasonYear": 2019
   },
   {
@@ -1368,21 +840,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0229-meeseeks",
-    "name": "Meeseeks",
-    "schoolId": "icesi",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0230-smashcode",
     "name": "smashcode []",
     "schoolId": null,
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0231-cuchesitoshighschool",
-    "name": "CuchesitosHighSchool",
-    "schoolId": "source-label-ucsm-74dfa8de13",
     "seasonYear": 2019
   },
   {
@@ -1392,51 +852,15 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0233-ecigma-omega",
-    "name": "ECIgma Omega",
-    "schoolId": "source-label-eci-e098f79a76",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0234-socket-es",
     "name": "Socket-ES",
     "schoolId": "uca-el-salvador",
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0235-tres-mosqueteiros",
-    "name": "Três mosqueteiros",
-    "schoolId": "source-label-ufrpe-f4057cf139",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0236-void-blank",
-    "name": "void Blank",
-    "schoolId": "source-label-uca-96533bf408",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0237-el-team-que-si-decidio-nombre",
     "name": "El Team que si decidió nombre",
     "schoolId": "utalca-ingenieria",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0238-405-found",
-    "name": "405 Found",
-    "schoolId": "poli-co",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0239-dominiruchi-drc",
-    "name": "Dominiruchi (drc)",
-    "schoolId": "pucmm-santiago",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0240-falta-uno",
-    "name": "Falta uno",
-    "schoolId": "puj-cali",
     "seasonYear": 2019
   },
   {
@@ -1449,12 +873,6 @@
     "id": "2019-mexico-finals-final-row-0242-ravenclaw",
     "name": "Ravenclaw",
     "schoolId": "intec-rd",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0243-creativity-null",
-    "name": "Creativity = NULL;",
-    "schoolId": "unal-medellin",
     "seasonYear": 2019
   },
   {
@@ -1473,12 +891,6 @@
     "id": "2019-mexico-finals-final-row-0246-boracodarcaramba",
     "name": "BoraCodarCaramba",
     "schoolId": "ufscar",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0247-cpctucuman-reloaded",
-    "name": "CPCTucumán Reloaded",
-    "schoolId": "unt",
     "seasonYear": 2019
   },
   {
@@ -1503,12 +915,6 @@
     "id": "2019-mexico-finals-final-row-0251-el-mariachi-dorado-de-michoacan",
     "name": "El Mariachi dorado de Michoacán []",
     "schoolId": null,
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0252-be-a-pointer",
-    "name": "Be A Pointer",
-    "schoolId": "cujae",
     "seasonYear": 2019
   },
   {
@@ -1542,12 +948,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0258-remontada",
-    "name": "Remontada",
-    "schoolId": "source-label-unsa-cs-b44fc0523e",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0259-talerdo-s-2-0",
     "name": "Talerdo's 2.0",
     "schoolId": "ucsc-cl",
@@ -1563,12 +963,6 @@
     "id": "2019-mexico-finals-final-row-0261-cuidado-con-gaspar",
     "name": "Cuidado con GAspar",
     "schoolId": "fi-unju",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0262-el-raro-2",
-    "name": "El Raro + 2",
-    "schoolId": "source-label-ucp-6db36b7b77",
     "seasonYear": 2019
   },
   {
@@ -1590,21 +984,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0266-sasterisco",
-    "name": "SAsterisco",
-    "schoolId": "source-label-uniandes-9ef0f0f29f",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0267-plus-ultra",
     "name": "Plus Ultra",
     "schoolId": "uca-el-salvador",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0268-gucci-gang",
-    "name": "Gucci Gang",
-    "schoolId": "pucp",
     "seasonYear": 2019
   },
   {
@@ -1644,39 +1026,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0275-the-coca-queue-company",
-    "name": "The Coca Queue Company",
-    "schoolId": "puj-cali",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0276-code-failed-successfully",
     "name": "Code Failed Successfully",
     "schoolId": "source-label-universidad-nacional-903022448b",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0277-progder",
-    "name": "ProgDer_",
-    "schoolId": "icesi",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0278-unnamable",
-    "name": "UNnamable",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0279-usa2",
-    "name": "USA2",
-    "schoolId": "source-label-usa-aa5ab35a91",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0280-icipici",
-    "name": "ICIPICI",
-    "schoolId": "source-label-upblp-isc-2c1b68d337",
     "seasonYear": 2019
   },
   {
@@ -1686,45 +1038,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0282-falcon-8k",
-    "name": "Falcon 8k",
-    "schoolId": "source-label-unse-64141fa852",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0283-hallelujah",
     "name": "Hallelujah",
     "schoolId": "umsa",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0284-eructitos",
-    "name": "Eructitos",
-    "schoolId": "source-label-loyola-a2a83ee2dc",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0285-cin-kbza",
-    "name": "cin<<kbza",
-    "schoolId": "source-label-um-d3cd680850",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0286-96ers",
-    "name": "96ers",
-    "schoolId": "source-label-um-d3cd680850",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0287-mathapp",
-    "name": "Mathapp",
-    "schoolId": "puj-cali",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0288-utesa",
-    "name": "Utesa",
-    "schoolId": "utesa",
     "seasonYear": 2019
   },
   {
@@ -1734,39 +1050,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0290-ort-eq-1-i-m-a-teapot",
-    "name": "ORT Eq. 1 - I'm a teapot",
-    "schoolId": "ort-uy",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0291-datys-villaclara",
-    "name": "Datys-VillaClara",
-    "schoolId": "source-label-ccl-cu-78ea5a32a8",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0292-beagletown",
     "name": "BeagleTown",
     "schoolId": "itesm-monterrey",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0293-los-atomicos",
-    "name": "Los Atómicos",
-    "schoolId": "itm-medellin",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0294-no-magic",
-    "name": "No Magic",
-    "schoolId": "source-label-unse-64141fa852",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0295-ok-f",
-    "name": "Ok-F",
-    "schoolId": "uprm-pr",
     "seasonYear": 2019
   },
   {
@@ -1800,18 +1086,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0301-teamusach2",
-    "name": "TeamUsach2",
-    "schoolId": "source-label-usach-ing-94044172b8",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0302-c-ou",
-    "name": "C + ou -",
-    "schoolId": "source-label-unifacef-85c8edb673",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0303-grupoequipo",
     "name": "Grupoequipo",
     "schoolId": "unlp-ar",
@@ -1833,24 +1107,6 @@
     "id": "2019-mexico-finals-final-row-0306-code-is-poetry",
     "name": "Code is poetry []",
     "schoolId": null,
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0307-skyscraper-uc",
-    "name": "Skyscraper_UC",
-    "schoolId": "source-label-uc-93bb321984",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0308-include-teamname",
-    "name": "#Include <TeamName>",
-    "schoolId": "uprrp-edu",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0309-amateurs",
-    "name": "Amateurs",
-    "schoolId": "source-label-unsa-cs-b44fc0523e",
     "seasonYear": 2019
   },
   {
@@ -1890,21 +1146,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0316-exb",
-    "name": "EXB",
-    "schoolId": "unt",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0317-bite-the-dust",
     "name": "Bite_the_Dust",
     "schoolId": "uci-cuba",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0318-jumentus",
-    "name": "Jumentus",
-    "schoolId": "source-label-fatec-ourinhos-7efad438dd",
     "seasonYear": 2019
   },
   {
@@ -1920,21 +1164,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0321-ddk-uc",
-    "name": "DDK_UC_*+",
-    "schoolId": "source-label-uc-93bb321984",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0322-r3d2",
     "name": "R3D2",
     "schoolId": "uca-el-salvador",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0323-ort-eq-2-badrequest",
-    "name": "ORT Eq. 2 - BadRequest",
-    "schoolId": "ort-uy",
     "seasonYear": 2019
   },
   {
@@ -2016,12 +1248,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0337-asi-tal-cual",
-    "name": "Así tal cual",
-    "schoolId": "source-label-uct-c3c86464d0",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0338-the-flag-society",
     "name": "The Flag Society",
     "schoolId": "source-label-una-51072ac1a6",
@@ -2034,18 +1260,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0340-bora-ici-1",
-    "name": "Bora.ICI-1",
-    "schoolId": "source-label-ubb-conce-2971f795c3",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0341-bora-ici-2",
-    "name": "Bora.ICI-2",
-    "schoolId": "source-label-ubb-conce-2971f795c3",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0342-code-dev",
     "name": "Code.dev",
     "schoolId": "uca-el-salvador",
@@ -2055,12 +1269,6 @@
     "id": "2019-mexico-finals-final-row-0343-completa-racha",
     "name": "Completa Racha",
     "schoolId": "ifce-tiangua",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0344-equipo-dinamita",
-    "name": "Equipo Dinamita",
-    "schoolId": "source-label-itscec-o-f083c762e4",
     "seasonYear": 2019
   },
   {
@@ -2100,12 +1308,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0351-montihighschool",
-    "name": "MontiHighSchool",
-    "schoolId": "source-label-ucsm-74dfa8de13",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0352-muerte-a-pascal",
     "name": "Muerte a Pascal",
     "schoolId": "unlp-ar",
@@ -2121,12 +1323,6 @@
     "id": "2019-mexico-finals-final-row-0354-projeto-beta",
     "name": "Projeto Beta",
     "schoolId": "ufopa",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0355-rebambaramba-team",
-    "name": "Rebambaramba Team",
-    "schoolId": "source-label-ug-becc2c3e15",
     "seasonYear": 2019
   },
   {
@@ -2148,24 +1344,6 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0359-scorpions",
-    "name": "Scorpions",
-    "schoolId": "source-label-ugb-7eceea3de6",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0360-sudorm-rf",
-    "name": "SudoRM -rf",
-    "schoolId": "source-label-iujo-cad5c883c3",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0361-tnt",
-    "name": "TNT",
-    "schoolId": "itm-medellin",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0362-team-binary",
     "name": "Team Binary",
     "schoolId": "source-label-i-e-s-no-7-a172506eb6",
@@ -2178,33 +1356,9 @@
     "seasonYear": 2019
   },
   {
-    "id": "2019-mexico-finals-final-row-0364-there-is-no-trie",
-    "name": "There is no Trie",
-    "schoolId": "source-label-ccl-br-989f407cbb",
-    "seasonYear": 2019
-  },
-  {
     "id": "2019-mexico-finals-final-row-0365-utn-geeks",
     "name": "UTN-GEEKS",
     "schoolId": "utn-ar",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0366-unexpectederror",
-    "name": "UnexpectedError",
-    "schoolId": "source-label-uscg-cd17725146",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0367-yottabyte",
-    "name": "YottaByte",
-    "schoolId": "source-label-upr-by-31940a3466",
-    "seasonYear": 2019
-  },
-  {
-    "id": "2019-mexico-finals-final-row-0368-teamthree",
-    "name": "teamthree",
-    "schoolId": "source-label-iujo-cad5c883c3",
     "seasonYear": 2019
   },
   {

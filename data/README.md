@@ -15,7 +15,7 @@ Both are validated by `npm run validate:data`, but they are validated **independ
 resolve within a single dataset, so a mock team can never satisfy a reference in the real archive
 and mock records can never be served as history.
 
-The real archive contains 34 contest scoreboards from the 2009–2026 seasons, totaling 14,658
+The real archive contains 34 contest scoreboards from the 2009–2026 seasons, totaling 12,374
 contest rows, plus 12 accumulated GPM standings with 4,800 rows:
 
 | Season | Contests | Contest rows | Accumulated rows |
@@ -30,20 +30,31 @@ contest rows, plus 12 accumulated GPM standings with 4,800 rows:
 | 2016   | 1        | 89           | 273              |
 | 2017   | 1        | 88           | 404              |
 | 2018   | 1        | 97           | 393              |
-| 2019   | 1        | 368          | 382              |
-| 2020   | 1        | 302          | 350              |
-| 2021   | 2        | 1,040        | 225              |
-| 2022   | 5        | 2,076        | 381              |
-| 2023   | 4        | 2,368        | 458              |
-| 2024   | 4        | 2,702        | 482              |
-| 2025   | 4        | 2,616        | 532              |
+| 2019   | 1        | 53           | 382              |
+| 2020   | 1        | 57           | 350              |
+| 2021   | 2        | 819          | 225              |
+| 2022   | 5        | 1,802        | 381              |
+| 2023   | 4        | 1,999        | 458              |
+| 2024   | 4        | 2,302        | 482              |
+| 2025   | 4        | 2,156        | 532              |
 | 2026   | 3        | 1,912        | 614              |
 
 Contest files are organized under `data/seasons/<year>/`. School identities use reviewed
 canonical records where supported by the source and review notes. Other non-empty source labels
 are preserved literally as separate school records rather than merged by guesswork; 95 teams have
 `schoolId: null` because their source did not identify an institution, and the scoreboard displays
-“Institución no identificada” for them. The school directory now contains 1,067 records.
+“Institución no identificada” for them. The school directory now contains 875 records.
+
+The directory excludes schools with no recorded team participation in either contest standings
+or accumulated standings. The cleanup removed 192 school records and their 843 unused team
+registrations. Presence in a published result is what counts: zero solved problems, zero
+accumulated points, unknown places and totals-only results still establish participation.
+All 12,374 contest rows and 4,800 accumulated rows are unchanged.
+
+Parents needed by participating units are retained recursively, even when no team competes under
+the parent directly (IPN, ITESM, UNLP and UP). Unused registrations belonging to retained schools
+are not removed; this is school-directory cleanup, not a blanket deletion of teams without results.
+Mock data is unchanged.
 
 The 2026 GPM archive contains qualifiers 1, 2 and 3 from ICPC Mexico: 601, 701 and 610 rows.
 The first two tables have confirmed published row counts and problem detail. The third publishes
@@ -63,10 +74,33 @@ discrepancy is disclosed without inventing an assignment. The snapshot remains `
 because the source does not explicitly identify it as final. Exact unique team/school pairs
 reuse existing season registrations; other source identities remain separate.
 
-The 2019 and 2020 archives each contain the complete ICPC Mexico Finals scoreboard. Their dates
-and durations were unavailable on the source scoreboards and remain `null`; 29 teams in the 2019
-source have no school identity. ScoreLATAM also lists these editions, but its Mexico-only group
-could not be reliably distinguished from other score groups, so those rows were not imported.
+The 2019–2025 Finals now use ScoreLATAM's Mexico-only groups rather than ICPC Mexico's
+LATAM-wide tables. Every selected source row explicitly identifies country `/MX` in User/Site.
+The published Mexico-group places are preserved, including ties; they are not invented ranks
+obtained by subtracting foreign teams from the previous archive. CCL classifications are separate
+and are not appended to the Mexico group. Existing team IDs and school assignments are retained
+for participating schools; the subsequent zero-participation cleanup removes unused registrations
+only for removed schools. GPM results and mock data are unchanged. No country is guessed from
+a team name or assigned to an unidentified school.
+
+| Season | Previous Finals rows | Mexico-group rows | Source                                                            |
+| ------ | -------------------- | ----------------- | ----------------------------------------------------------------- |
+| 2019   | 368                  | 53                | [ScoreLATAM 2019](https://scorelatam.naquadah.com.br/latam-2019/) |
+| 2020   | 302                  | 57                | [ScoreLATAM 2020](https://scorelatam.naquadah.com.br/latam-2020/) |
+| 2021   | 273                  | 52                | [ScoreLATAM 2021](https://scorelatam.naquadah.com.br/latam-2021/) |
+| 2022   | 329                  | 55                | [ScoreLATAM 2022](https://scorelatam.naquadah.com.br/latam-2022/) |
+| 2023   | 424                  | 55                | [ScoreLATAM 2023](https://scorelatam.naquadah.com.br/latam-2023/) |
+| 2024   | 516                  | 116               | [ScoreLATAM 2024](https://scorelatam.naquadah.com.br/latam-2024/) |
+| 2025   | 593                  | 133               | [ScoreLATAM 2025](https://scorelatam.naquadah.com.br/latam-2025/) |
+
+The 2019 and 2020 layouts label Mexico's group `mxmx`; country membership is still checked
+against `/MX`, not inferred from that code alone. The 2020 and 2021 pages lack an explicit
+final-state heading: all selected teams and totals were corroborated against ICPC Global's
+published Finals. ScoreLATAM's distinct zero-score places are retained even where Global reports
+ties. This manual review does not change automatic publication-state gates. Seven rows
+(three in 2023, one in 2024, three in 2025) preserve published totals with `results: null` because
+the available detail does not reproduce those totals with the recorded penalty rule. Dates and
+durations remain unknown where not established by the selected scoreboard.
 
 The 2019 archive also contains the ITESO accumulated GPM table, with all 382 rows and 79 source
 institution labels. Nineteen labels match one existing school record exactly; the other 60 are
@@ -94,8 +128,16 @@ In 2013 the source omits place 13 and leaves 81 of its 174 rows unranked. Its ex
 `ranking: "published"` preserves that gap and uses `place: null` for the unknown places. Such rows
 display “No publicado”, count as participation, and never create podiums or fabricated best places.
 
-The separate Global native tables for 2019–2025 disagree with the existing ICPC Mexico records in
-coverage. They were not merged into or substituted for the existing archive. Native Global GPM
+The country audit queried the Global native standings and finder views for all 2009–2026 seasons,
+ICPC Mexico's contest index and all available Finals, ScoreLATAM's seven listed LATAM editions,
+and both ITESO indexes. ITESO is an accumulated-source adapter, not a Finals adapter.
+Global's public standings projection does not expose complete row-level countries, even when
+`country` and `countryCode` are requested. Geographic medal citations cover only a few historical
+rows and cannot classify the whole table. Consequently 2009–2018 remain unresolved and unchanged;
+the archive is not yet entirely Mexico-only. No 2026 Finals standing is available.
+
+The separate Global native tables for 2019–2025 differ from ScoreLATAM's Mexico groups in
+coverage, including CCL and unranked rows. They were not appended to those groups. Native Global GPM
 rows are not accumulated-point standings and are not published as such. Older directory entries
 may link to external results even when their native standings are empty; an empty table is not
 proof that no historical results exist.

@@ -81,6 +81,21 @@ export const selectSchoolDirectory = (archive: ScoreboardsArchive) => {
 
 export type SchoolSummary = ReturnType<typeof selectSchoolDirectory>[number];
 
+export type SchoolDirectorySort = 'participations' | 'place';
+
+export const sortSchoolDirectory = (
+  summaries: readonly SchoolSummary[],
+  sort: SchoolDirectorySort,
+) =>
+  summaries.toSorted(
+    (a, b) =>
+      (sort === 'place'
+        ? (a.bestPlace ?? Infinity) - (b.bestPlace ?? Infinity) || b.results - a.results
+        : b.results - a.results) ||
+      a.school.shortName.localeCompare(b.school.shortName, 'es') ||
+      a.school.id.localeCompare(b.school.id),
+  );
+
 export const filterSchoolDirectory = (summaries: SchoolSummary[], query: string) => {
   const search = query.trim().toLocaleLowerCase('es');
   return summaries.filter(({ school }) =>

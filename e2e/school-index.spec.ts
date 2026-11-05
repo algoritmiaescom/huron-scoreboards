@@ -63,7 +63,7 @@ test('uses the real archive in production and exposes current institution naviga
   page,
 }) => {
   await page.goto('./#/schools');
-  await expect(page.getByRole('status')).toHaveText('1067 de 1067 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('875 de 875 instituciones y unidades');
   await expect(page.getByRole('article', { name: 'CCL', exact: true })).toBeVisible();
   await expect(
     page
@@ -78,13 +78,128 @@ test('uses the real archive in production and exposes current institution naviga
   );
 });
 
+test('places sorting beside search only on large screens', async ({ page }) => {
+  await page.goto(directoryUrl);
+  const search = page.getByRole('textbox', { name: searchLabel });
+  const sorting = page.getByRole('group', { name: 'Ordenar instituciones' });
+  for (const width of [390, 1024, 1280]) {
+    await page.setViewportSize({ width, height: 900 });
+    const searchBox = await search.boundingBox();
+    const sortBox = await sorting.boundingBox();
+    if (searchBox === null || sortBox === null) {
+      throw new Error('Expected visible search and sorting controls');
+    }
+    if (width >= 1200) {
+      expect(sortBox.x).toBeGreaterThan(searchBox.x + searchBox.width);
+      expect(sortBox.y).toBeLessThan(searchBox.y + searchBox.height);
+    } else {
+      expect(sortBox.y).toBeGreaterThan(searchBox.y + searchBox.height);
+    }
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
+    ).toBe(true);
+  }
+});
+
+test('sorts the real school directory by participations and best place with reloadable search', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('./#/schools');
+  const most = page.getByRole('button', { name: 'Más participaciones', exact: true });
+  const best = page.getByRole('button', { name: 'Mejor puesto', exact: true });
+  await expect(most).toHaveAttribute('aria-pressed', 'true');
+  const list = page.getByRole('list', { name: 'Instituciones y unidades' });
+  const counts = await list
+    .getByRole('article')
+    .evaluateAll((cards) =>
+      cards.map((card) => Number(card.querySelectorAll('dd')[1].textContent)),
+    );
+  expect(counts.length).toBe(875);
+  expect(counts).toEqual([...counts].sort((a, b) => b - a));
+  await best.click();
+  await expect(page).toHaveURL('./#/schools?sort=place');
+  await expect(best).toHaveAttribute('aria-pressed', 'true');
+  const places = await list.getByRole('article').evaluateAll((cards) =>
+    cards.map((card) => {
+      const place = card.querySelectorAll('dd')[0].textContent;
+      return place.startsWith('#') ? Number(place.slice(1)) : Infinity;
+    }),
+  );
+  expect(places).toEqual([...places].sort((a, b) => a - b));
+  const search = page.getByRole('textbox', { name: searchLabel });
+  await search.fill('ITESM');
+  await expect(page.getByRole('status')).toHaveText('19 de 875 instituciones y unidades');
+  await page.reload();
+  await expect(search).toHaveValue('ITESM');
+  await expect(best).toHaveAttribute('aria-pressed', 'true');
+  await most.click();
+  await expect(page).toHaveURL('./#/schools?q=ITESM');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
+    true,
+  );
+});
+
+test('omits nonparticipating schools but retains zero-score schools and institution parents', async ({
+  page,
+}) => {
+  await page.goto('./#/schools?q=ITESO');
+  await expect(page.locator('a[href="#/schools/iteso-preparatoria"]')).toHaveCount(0);
+  await expect(page.locator('a[href="#/schools/iteso"]')).toBeVisible();
+  await page.goto('./#/schools/ifpb?tab=contests');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Instituto Federal da Paraíba');
+  await expect(page.getByRole('list', { name: 'Resultados de concursos' })).toContainText(
+    'IFPB-MONTEIRO-1',
+  );
+  await page.goto('./#/schools/ipn?scope=institution');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    'Instituto Politécnico Nacional',
+  );
+  await expect(page.getByRole('region', { name: 'Resumen del historial' })).toBeVisible();
+});
+
+test('renders reviewed official logo and favicon sources in production school history', async ({
+  page,
+}) => {
+  for (const [id, name, logo] of [
+    ['ipn-escom', 'Escuela Superior de Cómputo', 'https://www.escom.ipn.mx/images/logoESCOM2x.png'],
+    [
+      'uaslp',
+      'Universidad Autónoma de San Luis Potosí (UASLP)',
+      'https://www.uaslp.mx/Images/favicon.png',
+    ],
+    [
+      'unam',
+      'Universidad Nacional Autónoma de México',
+      'https://www.ingenieria.unam.mx/images/unam/unam.png',
+    ],
+    [
+      'up',
+      'Universidad Panamericana',
+      'https://www.up.edu.mx/wp-content/uploads/2026/11/Icono-Roble_2026-536x536.png',
+    ],
+  ]) {
+    await page.route(logo, (route) =>
+      route.fulfill({ path: 'public/brand/icpc-mexico.png', contentType: 'image/png' }),
+    );
+    await page.goto(`./#/schools/${id}`);
+    const image = page.getByRole('img', { name: `Logo de ${name}`, exact: true });
+    await expect(image).toHaveAttribute('src', logo);
+    await expect
+      .poll(() =>
+        image.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0),
+      )
+      .toBe(true);
+  }
+});
+
 test('shows one BUAP university and its distinct FCC unit in the published archive', async ({
   page,
 }) => {
   await page.goto('./#/schools?q=BUAP');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(2);
-  await expect(page.getByRole('status')).toHaveText('2 de 1067 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('2 de 875 instituciones y unidades');
   await expect(list.getByRole('link', { name: 'BUAP', exact: true })).toHaveAttribute(
     'href',
     '#/schools/buap',
@@ -116,7 +231,7 @@ test('shows consolidated ESCOM history as a distinct IPN unit in the published a
   await page.goto('./#/schools?q=Escuela%20Superior%20de%20C%C3%B3mputo');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(1);
-  await expect(page.getByRole('status')).toHaveText('1 de 1067 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('1 de 875 instituciones y unidades');
   await list.getByRole('link', { name: 'ESCOM IPN', exact: true }).click();
   await page.getByRole('tab', { name: 'Resultados por concursos' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Escuela Superior de Cómputo');
@@ -186,7 +301,7 @@ test('publishes one record per UNAM unit with correct institutional navigation',
   await page.goto('./#/schools?q=UNAM');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(9);
-  await expect(page.getByRole('status')).toHaveText('9 de 1067 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('9 de 875 instituciones y unidades');
   for (const [name, id] of [
     ['FC UNAM', 'unam-fciencias'],
     ['FI UNAM', 'unam-fi'],
@@ -229,7 +344,7 @@ test('publishes distinct ITESM campuses and a shared university history', async 
   await page.goto('./#/schools?q=ITESM');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(19);
-  await expect(page.getByRole('status')).toHaveText('19 de 1067 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('19 de 875 instituciones y unidades');
   for (const [name, id] of [
     ['ITESM CEM', 'itesm-cem'],
     ['ITESM CCM', 'tec-ciudad-de-mexico'],
@@ -270,7 +385,7 @@ test('publishes one CUCEI unit and includes confirmed CUCEI Extreme in its histo
   await page.goto('./#/schools?q=CUCEI');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(1);
-  await expect(page.getByRole('status')).toHaveText('1 de 1067 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('1 de 875 instituciones y unidades');
   await list.getByRole('link', { name: 'UdG CUCEI', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Centro Universitario de Ciencias Exactas e Ingenierías',
@@ -294,7 +409,7 @@ test('publishes combined UG-CIMAT history without inventing a university parent'
   await page.goto('./#/schools?q=UG-CIMAT');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(1);
-  await expect(page.getByRole('status')).toHaveText('1 de 1067 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('1 de 875 instituciones y unidades');
   await list.getByRole('link', { name: 'UG-CIMAT', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     'Universidad de Guanajuato / Centro de Investigación en Matemáticas',
@@ -312,7 +427,7 @@ test('publishes three consolidated Panamericana campuses with shared institution
   await page.goto('./#/schools?q=Panamericana');
   const list = page.getByRole('list', { name: 'Instituciones y unidades' });
   await expect(list.getByRole('article')).toHaveCount(4);
-  await expect(page.getByRole('status')).toHaveText('4 de 1067 instituciones y unidades');
+  await expect(page.getByRole('status')).toHaveText('4 de 875 instituciones y unidades');
   for (const [name, id] of [
     ['UP', 'up'],
     ['UP Bonaterra', 'up-aguascalientes'],
@@ -517,7 +632,7 @@ test('includes ESCOM accumulated wins in seasonal trends and expands all podiums
   await expect(podiums.getByRole('listitem')).toHaveCount(5);
   await expect(podiums.getByText('Escuela Superior de Comedia', { exact: true })).toHaveCount(0);
   await page.getByRole('button', { name: 'Ver todos', exact: true }).click();
-  await expect(podiums.getByRole('listitem')).toHaveCount(27);
+  await expect(podiums.getByRole('listitem')).toHaveCount(31);
   const comedia = podiums.getByRole('listitem').filter({ hasText: 'Escuela Superior de Comedia' });
   await expect(comedia).toContainText('2020 · Puesto #1');
   await expect(comedia.getByRole('link')).toHaveAttribute(

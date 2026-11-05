@@ -347,11 +347,15 @@ export const parseScoreLATAMMexicoScoreboard = (
     return match === null ? [] : [{ groupId: Number(match[1]), label: normalizedText(node) }];
   });
   const cclGroupIndex = scoreGroups.findIndex(({ label }) => /^CCL\b/i.test(label));
-  const globalGroup = scoreGroups.find(({ label }) => label === 'Global');
+  const globalGroup = scoreGroups.find(({ label }) => /^global$/i.test(label));
+  const isMexicoGroup = ({ label }: { label: string }): boolean =>
+    /^mexico$/i.test(label) ||
+    ((edition.editionYear === 2019 || edition.editionYear === 2020) && label === 'mxmx');
+  const countryGroups = scoreGroups.filter(isMexicoGroup);
   const mexicoGroups =
-    cclGroupIndex < 0
-      ? []
-      : scoreGroups.slice(0, cclGroupIndex).filter(({ label }) => label === 'Mexico');
+    countryGroups.length === 1
+      ? countryGroups
+      : scoreGroups.slice(0, Math.max(0, cclGroupIndex)).filter(isMexicoGroup);
   if (globalGroup === undefined || mexicoGroups.length !== 1) {
     return stagedScoreboard(
       edition,
@@ -508,8 +512,9 @@ export const parseScoreLATAMMexicoScoreboard = (
       .replace(/\s*Qualified for Programadores de America in .+$/i, '')
       .replace(/\s*🎖️\s*$/u, '')
       .trim();
-    const schoolMatch = /^\[([^\]]+)\]\s*(.*)$/.exec(rawName);
+    const schoolMatch = /^\[([^\]]*)\]\s*(.*)$/.exec(rawName);
     const teamName = schoolMatch === null ? rawName : schoolMatch[2].trim();
+    const schoolName = schoolMatch === null ? null : schoolMatch[1].trim();
     if (teamName.length === 0) {
       return stagedScoreboard(
         edition,
@@ -560,7 +565,7 @@ export const parseScoreLATAMMexicoScoreboard = (
       sourceTeamId: userSite.sourceTeamId,
       sourceUserSite: userSite.sourceUserSite,
       teamName,
-      schoolName: schoolMatch === null ? null : schoolMatch[1].trim(),
+      schoolName: schoolName === '' ? null : schoolName,
       results: resultsAreComplete ? parsedResults : null,
       publishedTotals,
       evidence,

@@ -43,6 +43,40 @@ const renderPage = (
 };
 
 describe('school index workflow', () => {
+  it('defaults to participations and preserves sorting alongside search and navigation', async () => {
+    const user = userEvent.setup();
+    const { router, loader } = renderPage();
+    const most = await screen.findByRole('button', { name: 'Más participaciones' });
+    const best = screen.getByRole('button', { name: 'Mejor puesto' });
+    expect(most).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getAllByRole('article').map((card) => card.getAttribute('aria-label'))).toEqual([
+      'UNI',
+      'UNIT',
+      'C',
+      'S',
+      'N',
+    ]);
+    await user.click(best);
+    expect(best).toHaveAttribute('aria-pressed', 'true');
+    expect(router.state.location.search).toBe('?sort=place');
+    const search = screen.getByRole('textbox', {
+      name: 'Buscar instituciones, unidades, ciudades o estados',
+    });
+    await user.type(search, 'missing');
+    expect(router.state.location.search).toBe('?sort=place&q=missing');
+    await user.click(screen.getByRole('button', { name: 'Limpiar búsqueda' }));
+    expect(router.state.location.search).toBe('?sort=place');
+    await act(async () => {
+      await router.navigate('/schools?q=Campus&sort=place', { flushSync: true });
+    });
+    expect(best).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getAllByRole('article')).toHaveLength(1);
+    await user.click(most);
+    expect(router.state.location.search).toBe('?q=Campus');
+    expect(router.state.historyAction).toBe('REPLACE');
+    expect(loader).toHaveBeenCalledTimes(1);
+  });
+
   it('shows precise scoped summaries, identities and working history links', async () => {
     renderPage();
     await screen.findByRole('heading', { name: 'Instituciones a través de cada temporada.' });
@@ -111,7 +145,7 @@ describe('school index workflow', () => {
     expect(screen.getAllByRole('article')).toHaveLength(5);
   });
 
-  it.each(['?q=UNI&q=Campus', '?unknown=1'])(
+  it.each(['?q=UNI&q=Campus', '?unknown=1', '?sort=invalid', '?sort=place&sort=participations'])(
     'explains malformed search and offers recovery: %s',
     async (query) => {
       const user = userEvent.setup();

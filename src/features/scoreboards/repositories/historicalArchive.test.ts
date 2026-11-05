@@ -9,15 +9,94 @@ const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.jso
 });
 
 describe('published historical archive', () => {
+  it('keeps only participating schools and required parents without excluding zero-score results', async () => {
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Historical archive did not pass repository validation.');
+    }
+    const { schools, teams, contests, seasonStandings } = result.data;
+    const byTeam = new Map(teams.map((team) => [team.id, team]));
+    const bySchool = new Map(schools.map((school) => [school.id, school]));
+    const rows = [
+      ...contests.flatMap(({ standings }) => standings),
+      ...seasonStandings.flatMap(({ rows }) => rows),
+    ];
+    const participatingSchools = new Set(
+      rows
+        .map(({ teamId }) => byTeam.get(teamId)?.schoolId)
+        .filter((schoolId): schoolId is string => schoolId !== undefined && schoolId !== null),
+    );
+    const requiredSchools = new Set(participatingSchools);
+    for (const id of participatingSchools) {
+      let parent = bySchool.get(id)?.parentInstitutionId;
+      while (parent !== undefined) {
+        requiredSchools.add(parent);
+        parent = bySchool.get(parent)?.parentInstitutionId;
+      }
+    }
+    expect(participatingSchools.size).toBe(871);
+    expect(schools).toHaveLength(875);
+    expect(new Set(schools.map(({ id }) => id))).toEqual(requiredSchools);
+    expect(schools.filter(({ id }) => !participatingSchools.has(id)).map(({ id }) => id)).toEqual([
+      'ipn',
+      'itesm',
+      'unlp',
+      'up',
+    ]);
+    expect(teams).toHaveLength(17221);
+    for (const id of ['cujae', 'eafit', 'iteso-preparatoria']) {
+      expect(bySchool.has(id)).toBe(false);
+      expect(teams.some(({ schoolId }) => schoolId === id)).toBe(false);
+    }
+    for (const id of ['ifpb', 'it-cd-jimenez', 'itsav']) {
+      expect(participatingSchools.has(id)).toBe(true);
+    }
+    expect(
+      contests
+        .flatMap(({ standings }) => standings)
+        .some(
+          (row) => byTeam.get(row.teamId)?.schoolId === 'ifpb' && row.publishedTotals?.solved === 0,
+        ),
+    ).toBe(true);
+    expect(
+      seasonStandings
+        .flatMap(({ rows }) => rows)
+        .some(
+          (row) =>
+            byTeam.get(row.teamId)?.schoolId === 'source-school-254fc4ed9920' && row.score === 0,
+        ),
+    ).toBe(true);
+  });
+
   it('loads every recovered accumulated document and historical Finals through the repository boundary', async () => {
     const result = await createJsonScoreboardsRepository(files, 'archive').load();
     expect(result.status).toBe('ready');
     if (result.status !== 'ready') {
       throw new Error('Historical archive did not pass repository validation.');
     }
-    const { contests, seasonStandings, teams } = result.data;
+    const { contests, seasonStandings, teams, schools } = result.data;
+    const branded = schools.filter(({ logo }) => logo !== undefined);
+    expect(branded).toHaveLength(61);
+    expect(branded.every(({ logo }) => logo?.startsWith('https://'))).toBe(true);
+    for (const id of ['itl', 'itsur', 'itnl', 'ug-cimat', 'ccl']) {
+      expect(schools.find((school) => school.id === id)?.logo).toBeUndefined();
+    }
+    for (const [canonical, alias] of [
+      ['iteso', 'source-label-iteso-university-f66d759f69'],
+      ['uaslp', 'source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9'],
+      ['tec-costa-rica-alajuela', 'source-school-d172e86ae35a'],
+      ['uaz', 'source-label-universidad-autonoma-de-zacatecas-258b87c15e'],
+      ['tecnm-its-lerdo', 'source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76'],
+    ]) {
+      expect(schools.find(({ id }) => id === canonical)?.logo).toBe(
+        schools.find(({ id }) => id === alias)?.logo,
+      );
+    }
+    for (const id of ['itesm', 'ipn', 'unam', 'udg', 'up']) {
+      expect(schools.find((school) => school.id === id)?.logo).toMatch(/^https:\/\//);
+    }
     expect(contests).toHaveLength(34);
-    expect(contests.reduce((sum, contest) => sum + contest.standings.length, 0)).toBe(14658);
+    expect(contests.reduce((sum, contest) => sum + contest.standings.length, 0)).toBe(12374);
     const qualifiers = contests.filter(({ seasonYear }) => seasonYear === 2026);
     expect(
       qualifiers.map(({ stage, standings, date }) => ({ stage, rows: standings.length, date })),
@@ -81,8 +160,57 @@ describe('published historical archive', () => {
     expect(partial?.standings).toHaveLength(174);
     expect(partial?.standings.filter(({ place }) => place === null)).toHaveLength(81);
     expect(partial?.standings.some(({ place }) => place === 13)).toBe(false);
-    expect(contests.find(({ id }) => id === '2019-mexico-finals-final')?.standings).toHaveLength(
-      368,
+    for (const [year, count] of [
+      [2019, 53],
+      [2020, 57],
+      [2021, 52],
+      [2022, 55],
+      [2023, 55],
+      [2024, 116],
+      [2025, 133],
+    ]) {
+      const finals = contests.find(({ id }) => id === `${String(year)}-mexico-finals-final`);
+      expect(finals?.standings).toHaveLength(count);
+      expect(finals?.source).toBe(`https://scorelatam.naquadah.com.br/latam-${String(year)}/`);
+      expect(finals?.publicationNotes?.join(' ')).toContain('país MX');
+      expect(finals?.publicationNotes?.join(' ')).toContain('excluye las clasificaciones CCL');
+      expect(finals?.standings[0].place).toBe(1);
+      expect(finals?.standings.every(({ teamId }) => teams.some(({ id }) => id === teamId))).toBe(
+        true,
+      );
+    }
+    const finals2019 = contests.find(
+      ({ seasonYear, seriesId }) => seasonYear === 2019 && seriesId === 'mexico-finals',
     );
+    expect(teams.find(({ id }) => id === finals2019?.standings[0].teamId)?.name).toBe(
+      'Norman is Hunting',
+    );
+    expect(
+      finals2019?.standings.some(
+        ({ teamId }) => teams.find(({ id }) => id === teamId)?.name === 'Time com T',
+      ),
+    ).toBe(false);
+    for (const year of [2020, 2021]) {
+      expect(
+        contests
+          .find(({ seasonYear, seriesId }) => seasonYear === year && seriesId === 'mexico-finals')
+          ?.publicationNotes?.join(' '),
+      ).toContain('Se verificaron todos los equipos');
+    }
+    expect(
+      contests
+        .find(({ id }) => id === '2023-mexico-finals-final')
+        ?.standings.filter(({ results }) => results === null),
+    ).toHaveLength(3);
+    expect(
+      contests
+        .find(({ id }) => id === '2024-mexico-finals-final')
+        ?.standings.filter(({ results }) => results === null),
+    ).toHaveLength(1);
+    expect(
+      contests
+        .find(({ id }) => id === '2025-mexico-finals-final')
+        ?.standings.filter(({ results }) => results === null),
+    ).toHaveLength(3);
   });
 });
