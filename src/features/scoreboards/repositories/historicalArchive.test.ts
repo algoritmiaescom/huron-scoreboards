@@ -17,7 +17,7 @@ describe('published historical archive', () => {
     }
     const { contests, seasonStandings, teams } = result.data;
     expect(contests).toHaveLength(34);
-    expect(contests.reduce((sum, contest) => sum + contest.standings.length, 0)).toBe(14658);
+    expect(contests.reduce((sum, contest) => sum + contest.standings.length, 0)).toBe(12374);
     const qualifiers = contests.filter(({ seasonYear }) => seasonYear === 2026);
     expect(
       qualifiers.map(({ stage, standings, date }) => ({ stage, rows: standings.length, date })),
@@ -81,8 +81,57 @@ describe('published historical archive', () => {
     expect(partial?.standings).toHaveLength(174);
     expect(partial?.standings.filter(({ place }) => place === null)).toHaveLength(81);
     expect(partial?.standings.some(({ place }) => place === 13)).toBe(false);
-    expect(contests.find(({ id }) => id === '2019-mexico-finals-final')?.standings).toHaveLength(
-      368,
+    for (const [year, count] of [
+      [2019, 53],
+      [2020, 57],
+      [2021, 52],
+      [2022, 55],
+      [2023, 55],
+      [2024, 116],
+      [2025, 133],
+    ]) {
+      const finals = contests.find(({ id }) => id === `${String(year)}-mexico-finals-final`);
+      expect(finals?.standings).toHaveLength(count);
+      expect(finals?.source).toBe(`https://scorelatam.naquadah.com.br/latam-${String(year)}/`);
+      expect(finals?.publicationNotes?.join(' ')).toContain('país MX');
+      expect(finals?.publicationNotes?.join(' ')).toContain('excluye las clasificaciones CCL');
+      expect(finals?.standings[0].place).toBe(1);
+      expect(finals?.standings.every(({ teamId }) => teams.some(({ id }) => id === teamId))).toBe(
+        true,
+      );
+    }
+    const finals2019 = contests.find(
+      ({ seasonYear, seriesId }) => seasonYear === 2019 && seriesId === 'mexico-finals',
     );
+    expect(teams.find(({ id }) => id === finals2019?.standings[0].teamId)?.name).toBe(
+      'Norman is Hunting',
+    );
+    expect(
+      finals2019?.standings.some(
+        ({ teamId }) => teams.find(({ id }) => id === teamId)?.name === 'Time com T',
+      ),
+    ).toBe(false);
+    for (const year of [2020, 2021]) {
+      expect(
+        contests
+          .find(({ seasonYear, seriesId }) => seasonYear === year && seriesId === 'mexico-finals')
+          ?.publicationNotes?.join(' '),
+      ).toContain('Se verificaron todos los equipos');
+    }
+    expect(
+      contests
+        .find(({ id }) => id === '2023-mexico-finals-final')
+        ?.standings.filter(({ results }) => results === null),
+    ).toHaveLength(3);
+    expect(
+      contests
+        .find(({ id }) => id === '2024-mexico-finals-final')
+        ?.standings.filter(({ results }) => results === null),
+    ).toHaveLength(1);
+    expect(
+      contests
+        .find(({ id }) => id === '2025-mexico-finals-final')
+        ?.standings.filter(({ results }) => results === null),
+    ).toHaveLength(3);
   });
 });

@@ -151,7 +151,10 @@ test('preserves all 2026 accumulated scores and only explicit quota assignments'
   await expect(mobile.getByText('Clasificado', { exact: true })).toHaveCount(70);
 });
 
-test('loads the complete 2019 and 2020 Mexico Finals from the real archive', async ({ page }) => {
+test('loads Mexico-only Finals with published local places and country provenance', async ({
+  page,
+}) => {
+  test.setTimeout(60_000);
   await page.setViewportSize({ width: 1280, height: 800 });
   await page.goto('./#/scoreboards?contest=2019-mexico-finals-final');
   await expect(page.getByRole('heading', { name: 'Final Regional de México 2019' })).toBeVisible();
@@ -159,7 +162,15 @@ test('loads the complete 2019 and 2020 Mexico Finals from the real archive', asy
   const finals2019 = page.getByRole('table', {
     name: 'Clasificación de Final Regional de México 2019',
   });
-  await expect(finals2019.getByRole('row')).toHaveCount(369);
+  await expect(finals2019.getByRole('row')).toHaveCount(54);
+  await expect(finals2019.getByRole('row').filter({ hasText: 'Time com T' })).toHaveCount(0);
+  await expect(
+    finals2019
+      .getByRole('row')
+      .filter({ hasText: 'Norman is Hunting' })
+      .getByRole('cell', { name: '#1', exact: true }),
+  ).toBeVisible();
+  await expect(page.getByRole('alert').filter({ hasText: 'país MX' })).toBeVisible();
   const unidentified = finals2019.getByRole('row').filter({ hasText: 'Leones(0,0,0); []' });
   await expect(unidentified.getByText('Institución no identificada')).toBeVisible();
 
@@ -169,7 +180,32 @@ test('loads the complete 2019 and 2020 Mexico Finals from the real archive', asy
     page
       .getByRole('table', { name: 'Clasificación de Final Regional de México 2020' })
       .getByRole('row'),
-  ).toHaveCount(303);
+  ).toHaveCount(58);
+  await expect(
+    page
+      .getByRole('table')
+      .getByRole('row')
+      .filter({ hasText: 'Legendary Grand Newbies' })
+      .getByRole('cell', { name: '#1', exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('alert').filter({ hasText: 'Se verificaron todos los equipos' }),
+  ).toBeVisible();
+  for (const [year, rows] of [
+    [2021, 52],
+    [2022, 55],
+    [2023, 55],
+    [2024, 116],
+    [2025, 133],
+  ]) {
+    await page.goto(`./#/scoreboards?contest=${String(year)}-mexico-finals-final`);
+    const table = page.getByRole('table', {
+      name: `Clasificación de Final Regional de México ${String(year)}`,
+    });
+    await expect(table.getByRole('row')).toHaveCount(rows + 1);
+    await expect(table.getByRole('cell', { name: '#1', exact: true })).toBeVisible();
+    await expect(page.getByRole('alert').filter({ hasText: 'país MX' })).toBeVisible();
+  }
 });
 
 test('labels the unconfirmed 2019 GPM accumulated snapshot', async ({ page }) => {

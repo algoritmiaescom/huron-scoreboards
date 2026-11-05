@@ -517,7 +517,7 @@ test('includes ESCOM accumulated wins in seasonal trends and expands all podiums
   await expect(podiums.getByRole('listitem')).toHaveCount(5);
   await expect(podiums.getByText('Escuela Superior de Comedia', { exact: true })).toHaveCount(0);
   await page.getByRole('button', { name: 'Ver todos', exact: true }).click();
-  await expect(podiums.getByRole('listitem')).toHaveCount(27);
+  await expect(podiums.getByRole('listitem')).toHaveCount(31);
   const comedia = podiums.getByRole('listitem').filter({ hasText: 'Escuela Superior de Comedia' });
   await expect(comedia).toContainText('2020 · Puesto #1');
   await expect(comedia.getByRole('link')).toHaveAttribute(
