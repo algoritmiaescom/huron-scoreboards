@@ -78,6 +78,68 @@ test('uses the real archive in production and exposes current institution naviga
   );
 });
 
+test('places sorting beside search only on large screens', async ({ page }) => {
+  await page.goto(directoryUrl);
+  const search = page.getByRole('textbox', { name: searchLabel });
+  const sorting = page.getByRole('group', { name: 'Ordenar instituciones' });
+  for (const width of [390, 1024, 1280]) {
+    await page.setViewportSize({ width, height: 900 });
+    const searchBox = await search.boundingBox();
+    const sortBox = await sorting.boundingBox();
+    if (searchBox === null || sortBox === null) {
+      throw new Error('Expected visible search and sorting controls');
+    }
+    if (width >= 1200) {
+      expect(sortBox.x).toBeGreaterThan(searchBox.x + searchBox.width);
+      expect(sortBox.y).toBeLessThan(searchBox.y + searchBox.height);
+    } else {
+      expect(sortBox.y).toBeGreaterThan(searchBox.y + searchBox.height);
+    }
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
+    ).toBe(true);
+  }
+});
+
+test('sorts the real school directory by participations and best place with reloadable search', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('./#/schools');
+  const most = page.getByRole('button', { name: 'Más participaciones', exact: true });
+  const best = page.getByRole('button', { name: 'Mejor puesto', exact: true });
+  await expect(most).toHaveAttribute('aria-pressed', 'true');
+  const list = page.getByRole('list', { name: 'Instituciones y unidades' });
+  const counts = await list
+    .getByRole('article')
+    .evaluateAll((cards) =>
+      cards.map((card) => Number(card.querySelectorAll('dd')[1].textContent)),
+    );
+  expect(counts.length).toBe(875);
+  expect(counts).toEqual([...counts].sort((a, b) => b - a));
+  await best.click();
+  await expect(page).toHaveURL('./#/schools?sort=place');
+  await expect(best).toHaveAttribute('aria-pressed', 'true');
+  const places = await list.getByRole('article').evaluateAll((cards) =>
+    cards.map((card) => {
+      const place = card.querySelectorAll('dd')[0].textContent;
+      return place.startsWith('#') ? Number(place.slice(1)) : Infinity;
+    }),
+  );
+  expect(places).toEqual([...places].sort((a, b) => a - b));
+  const search = page.getByRole('textbox', { name: searchLabel });
+  await search.fill('ITESM');
+  await expect(page.getByRole('status')).toHaveText('19 de 875 instituciones y unidades');
+  await page.reload();
+  await expect(search).toHaveValue('ITESM');
+  await expect(best).toHaveAttribute('aria-pressed', 'true');
+  await most.click();
+  await expect(page).toHaveURL('./#/schools?q=ITESM');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
+    true,
+  );
+});
+
 test('omits nonparticipating schools but retains zero-score schools and institution parents', async ({
   page,
 }) => {

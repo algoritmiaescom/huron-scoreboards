@@ -2,9 +2,45 @@ import { describe, expect, it } from 'vitest';
 
 import { archive, contest, standing } from '@/test/fixtures/archive';
 
-import { filterSchoolDirectory, selectSchoolDirectory } from './schoolDirectory';
+import {
+  filterSchoolDirectory,
+  selectSchoolDirectory,
+  sortSchoolDirectory,
+} from './schoolDirectory';
 
 describe('school directory summaries', () => {
+  it('sorts participation counts descending and best published places ascending without mutating input', () => {
+    const summaries = selectSchoolDirectory(archive);
+    const original = [...summaries];
+    expect(sortSchoolDirectory(summaries, 'participations').map(({ school }) => school.id)).toEqual(
+      ['uni', 'unit', 'campus', 'solo', 'unused'],
+    );
+    expect(sortSchoolDirectory(summaries, 'place').map(({ school }) => school.id)).toEqual([
+      'uni',
+      'unit',
+      'campus',
+      'solo',
+      'unused',
+    ]);
+    const differentPlaces = summaries.map((summary) =>
+      summary.school.id === 'solo' ? { ...summary, bestPlace: 1 } : summary,
+    );
+    expect(sortSchoolDirectory(differentPlaces, 'place').map(({ school }) => school.id)).toEqual([
+      'uni',
+      'unit',
+      'solo',
+      'campus',
+      'unused',
+    ]);
+    expect(summaries).toEqual(original);
+    expect(
+      sortSchoolDirectory(
+        summaries.map((summary) => ({ ...summary, bestPlace: undefined })),
+        'place',
+      ).map(({ school }) => school.id),
+    ).toEqual(['uni', 'unit', 'campus', 'solo', 'unused']);
+  });
+
   it('includes unranked participation without counting it as a best place', () => {
     const source = {
       ...archive,

@@ -1,5 +1,13 @@
 import Search from '@mui/icons-material/Search';
-import { Alert, Button, InputAdornment, Stack, TextField, Typography } from '@mui/material';
+import {
+  Alert,
+  Button,
+  InputAdornment,
+  Stack,
+  TextField,
+  ToggleButton,
+  Typography,
+} from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { useMemo } from 'react';
 import { useLoaderData, useSearchParams } from 'react-router';
@@ -10,6 +18,7 @@ import { SchoolSummaryCard } from '@/features/scoreboards/components/SchoolSumma
 import {
   filterSchoolDirectory,
   selectSchoolDirectory,
+  sortSchoolDirectory,
 } from '@/features/scoreboards/model/schoolDirectory';
 
 import type { ScoreboardsArchive } from '@/features/scoreboards';
@@ -42,12 +51,31 @@ const Hero = styled(HeroBanner)(({ theme }) => ({
   },
 }));
 
+const DirectoryControls = styled('div')(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: theme.spacing(6),
+  [theme.breakpoints.up('lg')]: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: theme.spacing(3),
+  },
+}));
+
 const SearchPanel = styled('div')(({ theme }) => ({
+  width: '100%',
   maxWidth: 680,
+  minWidth: 0,
   padding: theme.spacing(1),
   backgroundColor: theme.palette.background.paper,
   borderRadius: theme.shape.borderRadius,
   boxShadow: theme.shadows[3],
+}));
+
+const SortButtons = styled('div')(({ theme }) => ({
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: theme.spacing(1),
 }));
 
 export const SchoolsPage = () => {
@@ -61,11 +89,20 @@ export const SchoolsPage = () => {
     [result],
   );
   const query = params.get('q') ?? '';
-  const filtered = filterSchoolDirectory(summaries, query);
+  const sort = params.get('sort') ?? 'participations';
+  const filtered = sortSchoolDirectory(
+    filterSchoolDirectory(summaries, query),
+    sort === 'place' ? 'place' : 'participations',
+  );
   const invalidQuery =
-    params.getAll('q').length > 1 || [...params.keys()].some((key) => key !== 'q');
+    params.getAll('q').length > 1 ||
+    params.getAll('sort').length > 1 ||
+    !['participations', 'place'].includes(sort) ||
+    [...params.keys()].some((key) => key !== 'q' && key !== 'sort');
   const clearSearch = () => {
-    setParams({}, { replace: true, flushSync: true });
+    const next = new URLSearchParams(params);
+    next.delete('q');
+    setParams(next, { replace: true, flushSync: true });
   };
   return (
     <>
@@ -91,37 +128,72 @@ export const SchoolsPage = () => {
                   Datos de demostración: las estadísticas provienen de resultados inventados.
                 </Alert>
               )}
-              <SearchPanel>
-                <TextField
-                  fullWidth
-                  label="Buscar instituciones, unidades, ciudades o estados"
-                  value={query}
-                  onChange={(event) => {
-                    const next = new URLSearchParams(params);
-                    if (event.target.value === '') {
-                      next.delete('q');
-                    } else {
-                      next.set('q', event.target.value);
-                    }
-                    setParams(next, { replace: true, flushSync: true });
-                  }}
-                  slotProps={{
-                    input: {
-                      startAdornment: (
-                        <InputAdornment position="start">
-                          <Search />
-                        </InputAdornment>
-                      ),
-                    },
-                  }}
-                />
-              </SearchPanel>
+              <DirectoryControls>
+                <SearchPanel>
+                  <TextField
+                    fullWidth
+                    label="Buscar instituciones, unidades, ciudades o estados"
+                    value={query}
+                    onChange={(event) => {
+                      const next = new URLSearchParams(params);
+                      if (event.target.value === '') {
+                        next.delete('q');
+                      } else {
+                        next.set('q', event.target.value);
+                      }
+                      setParams(next, { replace: true, flushSync: true });
+                    }}
+                    slotProps={{
+                      input: {
+                        startAdornment: (
+                          <InputAdornment position="start">
+                            <Search />
+                          </InputAdornment>
+                        ),
+                      },
+                    }}
+                  />
+                </SearchPanel>
+                <SortButtons role="group" aria-label="Ordenar instituciones">
+                  {[
+                    ['participations', 'Más participaciones'],
+                    ['place', 'Mejor puesto'],
+                  ].map(([value, label]) => (
+                    <ToggleButton
+                      key={value}
+                      value={value}
+                      selected={sort === value}
+                      onClick={() => {
+                        const next = new URLSearchParams(params);
+                        if (value === 'participations') {
+                          next.delete('sort');
+                        } else {
+                          next.set('sort', value);
+                        }
+                        setParams(next, {
+                          replace: true,
+                          flushSync: true,
+                          preventScrollReset: true,
+                        });
+                      }}
+                    >
+                      {label}
+                    </ToggleButton>
+                  ))}
+                </SortButtons>
+              </DirectoryControls>
               {invalidQuery ? (
                 <Stack spacing={2}>
                   <Alert severity="warning">
                     La búsqueda contiene parámetros repetidos o desconocidos.
                   </Alert>
-                  <Button onClick={clearSearch}>Restablecer búsqueda</Button>
+                  <Button
+                    onClick={() => {
+                      setParams({}, { replace: true, flushSync: true });
+                    }}
+                  >
+                    Restablecer búsqueda
+                  </Button>
                 </Stack>
               ) : (
                 <>
@@ -130,7 +202,9 @@ export const SchoolsPage = () => {
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Cada resultado corresponde a un equipo en un concurso, no a una clasificación
-                    acumulada. Los historiales individuales estarán disponibles próximamente.
+                    acumulada. El mejor puesto usa los puestos publicados en concursos; los
+                    desconocidos aparecen al final. En instituciones con unidades se incluyen sus
+                    resultados.
                   </Typography>
                   {filtered.length === 0 ? (
                     <Stack spacing={2}>
