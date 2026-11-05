@@ -168,6 +168,16 @@ test('renders reviewed official logo and favicon sources in production school hi
       'Universidad Autónoma de San Luis Potosí (UASLP)',
       'https://www.uaslp.mx/Images/favicon.png',
     ],
+    [
+      'unam',
+      'Universidad Nacional Autónoma de México',
+      'https://www.ingenieria.unam.mx/images/unam/unam.png',
+    ],
+    [
+      'up',
+      'Universidad Panamericana',
+      'https://www.up.edu.mx/wp-content/uploads/2026/11/Icono-Roble_2026-536x536.png',
+    ],
   ]) {
     await page.route(logo, (route) =>
       route.fulfill({ path: 'public/brand/icpc-mexico.png', contentType: 'image/png' }),

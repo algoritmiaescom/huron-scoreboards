@@ -76,7 +76,7 @@ describe('published historical archive', () => {
     }
     const { contests, seasonStandings, teams, schools } = result.data;
     const branded = schools.filter(({ logo }) => logo !== undefined);
-    expect(branded).toHaveLength(45);
+    expect(branded).toHaveLength(61);
     expect(branded.every(({ logo }) => logo?.startsWith('https://'))).toBe(true);
     for (const id of ['itl', 'itsur', 'itnl', 'ug-cimat', 'ccl']) {
       expect(schools.find((school) => school.id === id)?.logo).toBeUndefined();
@@ -85,10 +85,15 @@ describe('published historical archive', () => {
       ['iteso', 'source-label-iteso-university-f66d759f69'],
       ['uaslp', 'source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9'],
       ['tec-costa-rica-alajuela', 'source-school-d172e86ae35a'],
+      ['uaz', 'source-label-universidad-autonoma-de-zacatecas-258b87c15e'],
+      ['tecnm-its-lerdo', 'source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76'],
     ]) {
       expect(schools.find(({ id }) => id === canonical)?.logo).toBe(
         schools.find(({ id }) => id === alias)?.logo,
       );
+    }
+    for (const id of ['itesm', 'ipn', 'unam', 'udg', 'up']) {
+      expect(schools.find((school) => school.id === id)?.logo).toMatch(/^https:\/\//);
     }
     expect(contests).toHaveLength(34);
     expect(contests.reduce((sum, contest) => sum + contest.standings.length, 0)).toBe(12374);

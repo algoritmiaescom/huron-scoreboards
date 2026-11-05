@@ -53,6 +53,7 @@ describe('runtime repositories', () => {
       id: 'up',
       officialName: 'Universidad Panamericana',
       shortName: 'UP',
+      logo: 'https://www.up.edu.mx/wp-content/uploads/2026/11/Icono-Roble_2026-536x536.png',
     });
     expect(institution.record.schools).toHaveLength(4);
     expect(institution.record.teams).toHaveLength(568);

@@ -400,7 +400,8 @@
   {
     "id": "ipn",
     "officialName": "Instituto Politécnico Nacional",
-    "shortName": "IPN"
+    "shortName": "IPN",
+    "logo": "https://www.ipn.mx/assets/files/main/img/template/header/logo-ipn-horizontal.svg"
   },
   {
     "id": "ipn-cnymyn",
@@ -511,7 +512,8 @@
   {
     "id": "it-veracruz",
     "officialName": "Instituto Tecnológico de Veracruz",
-    "shortName": "Instituto Tecnológico de Veracruz"
+    "shortName": "Instituto Tecnológico de Veracruz",
+    "logo": "https://www.veracruz.tecnm.mx/favicon.ico"
   },
   {
     "id": "it-zacatepec",
@@ -561,7 +563,8 @@
   {
     "id": "itesm",
     "officialName": "Instituto Tecnológico y de Estudios Superiores de Monterrey",
-    "shortName": "Tec de Monterrey"
+    "shortName": "Tec de Monterrey",
+    "logo": "https://tec.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "itesm-cem",
@@ -701,7 +704,8 @@
   {
     "id": "itsmante",
     "officialName": "Instituto Tecnológico Superior de El Mante",
-    "shortName": "ITSMANTE"
+    "shortName": "ITSMANTE",
+    "logo": "https://www.itsmante.edu.mx/wp-content/uploads/2017/09/ITSM_oficial_rac3.png"
   },
   {
     "id": "itsoeh",
@@ -721,7 +725,8 @@
   {
     "id": "itszn-mx",
     "officialName": "Instituto Tecnológico Superior Zacatecas Norte",
-    "shortName": "ITSZN"
+    "shortName": "ITSZN",
+    "logo": "https://www.itszn.edu.mx/coyote/img/assets/Logos%20tec.svg"
   },
   {
     "id": "itver",
@@ -1031,7 +1036,8 @@
   {
     "id": "source-label-instituto-tecnologico-superior-de-lerdo-5eca1aae76",
     "officialName": "Instituto Tecnologico Superior de Lerdo",
-    "shortName": "Instituto Tecnologico Superior de Lerdo"
+    "shortName": "Instituto Tecnologico Superior de Lerdo",
+    "logo": "https://www.lerdo.tecnm.mx/templates/tec19/images/logo_itsl.png"
   },
   {
     "id": "source-label-instituto-tecnologico-superior-de-los-reyes-f14f0cc6fa",
@@ -1624,7 +1630,8 @@
   {
     "id": "source-label-universidad-autonoma-de-zacatecas-258b87c15e",
     "officialName": "Universidad Autónoma de Zacatecas",
-    "shortName": "Universidad Autónoma de Zacatecas"
+    "shortName": "Universidad Autónoma de Zacatecas",
+    "logo": "https://www.uaz.edu.mx/wp-content/uploads/2025/11/faviconUAZ.png"
   },
   {
     "id": "source-label-universidad-autonoma-metropolitana-azcapotzalco-427b5b1146",
@@ -1654,7 +1661,8 @@
   {
     "id": "source-label-universidad-de-guadalajara-cutonala-7e8a75f556",
     "officialName": "Universidad de Guadalajara CUTONALA",
-    "shortName": "Universidad de Guadalajara CUTONALA"
+    "shortName": "Universidad de Guadalajara CUTONALA",
+    "logo": "https://cutonala.udg.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "source-label-universidad-de-guadalajara-cuvalles-7e16c1bcc4",
@@ -3103,7 +3111,8 @@
   {
     "id": "tec-costa-rica",
     "officialName": "Instituto Tecnológico de Costa Rica (TEC)",
-    "shortName": "Tecnológico de Costa Rica"
+    "shortName": "Tecnológico de Costa Rica",
+    "logo": "https://www.tec.ac.cr/themes/custom/tecnologico/favicon.ico"
   },
   {
     "id": "tec-costa-rica-alajuela",
@@ -3466,7 +3475,8 @@
   {
     "id": "udg",
     "officialName": "Universidad de Guadalajara",
-    "shortName": "U de G"
+    "shortName": "U de G",
+    "logo": "https://www.udg.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "udg-cucei",
@@ -3825,7 +3835,8 @@
   {
     "id": "ufu",
     "officialName": "Universidade Federal de Uberlândia",
-    "shortName": "UFU"
+    "shortName": "UFU",
+    "logo": "https://ufu.br/themes/custom/ufu/logo.svg"
   },
   {
     "id": "ufu-monte-carmelo",
@@ -3904,7 +3915,8 @@
   {
     "id": "unam",
     "officialName": "Universidad Nacional Autónoma de México",
-    "shortName": "UNAM"
+    "shortName": "UNAM",
+    "logo": "https://www.ingenieria.unam.mx/images/unam/unam.png"
   },
   {
     "id": "unam-cfata",
@@ -3967,7 +3979,8 @@
   {
     "id": "unb",
     "officialName": "Universidade de Brasília",
-    "shortName": "UnB"
+    "shortName": "UnB",
+    "logo": "https://unb.br/templates/unb/assets/img/logo/as_bas_COR.png"
   },
   {
     "id": "unb-fga",
@@ -4003,7 +4016,8 @@
   {
     "id": "unicamp",
     "officialName": "Universidade Estadual de Campinas",
-    "shortName": "UNICAMP"
+    "shortName": "UNICAMP",
+    "logo": "https://www.unicamp.br/wp-content/themes/bx-unicamp-multisite/assets/img/logo-unicamp.svg"
   },
   {
     "id": "unicap",
@@ -4251,7 +4265,8 @@
   {
     "id": "up",
     "officialName": "Universidad Panamericana",
-    "shortName": "UP"
+    "shortName": "UP",
+    "logo": "https://www.up.edu.mx/wp-content/uploads/2026/11/Icono-Roble_2026-536x536.png"
   },
   {
     "id": "up-aguascalientes",
@@ -4378,7 +4393,8 @@
   {
     "id": "usp",
     "officialName": "Universidade de São Paulo",
-    "shortName": "USP"
+    "shortName": "USP",
+    "logo": "https://www5.usp.br/wp-content/uploads/usp-2018preto.png?x80753"
   },
   {
     "id": "usp-each",
