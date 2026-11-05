@@ -377,7 +377,7 @@ describe('runtime repositories', () => {
     const ipnIds = new Set(ipn.record.teams.map(({ id }) => id));
     expect(unamTeams.every(({ id }) => !ipnIds.has(id))).toBe(true);
     expect(published.teams.filter(({ schoolId }) => schoolId === 'ipn')).toHaveLength(0);
-    expect(published.schools).toHaveLength(1067);
+    expect(published.schools).toHaveLength(875);
   });
 
   it('consolidates ESCOM registrations under its IPN unit without merging unrelated schools', async () => {

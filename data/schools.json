@@ -47,11 +47,6 @@
     "shortName": "UdG CUALTOS"
   },
   {
-    "id": "cujae",
-    "officialName": "Universidad Tecnológica de La Habana José Antonio Echeverría (CUJAE)",
-    "shortName": "CUJAE"
-  },
-  {
     "id": "cuvalles-udg-mx",
     "officialName": "Centro Universitario de los Valles, Universidad de Guadalajara",
     "shortName": "Universidad de Guadalajara CUVALLES"
@@ -60,16 +55,6 @@
     "id": "dom-helder",
     "officialName": "Centro Universitário Dom Helder Câmara",
     "shortName": "Dom Helder"
-  },
-  {
-    "id": "eafit",
-    "officialName": "Universidad EAFIT",
-    "shortName": "EAFIT"
-  },
-  {
-    "id": "eia-colombia",
-    "officialName": "Universidad EIA",
-    "shortName": "EIA"
   },
   {
     "id": "emi-bolivia",
@@ -83,19 +68,9 @@
     "parentInstitutionId": "emi-bolivia"
   },
   {
-    "id": "esan-pe",
-    "officialName": "Universidad ESAN (ESAN Graduate School of Business)",
-    "shortName": "ESAN"
-  },
-  {
     "id": "esen",
     "officialName": "Escuela Superior de Economía y Negocios (ESEN)",
     "shortName": "Escuela Superior de Economía y Negocios"
-  },
-  {
-    "id": "etitc",
-    "officialName": "Escuela Tecnológica Instituto Técnico Central",
-    "shortName": "ETITC"
   },
   {
     "id": "facape",
@@ -159,11 +134,6 @@
     "shortName": "FCEIA-UNR"
   },
   {
-    "id": "fecap",
-    "officialName": "Fundação Escola de Comércio Álvares Penteado (FECAP)",
-    "shortName": "FECAP"
-  },
-  {
     "id": "fei-br",
     "officialName": "Centro Universitário FEI",
     "shortName": "FEI"
@@ -189,19 +159,9 @@
     "shortName": "FURG"
   },
   {
-    "id": "ib-ar",
-    "officialName": "Instituto Balseiro",
-    "shortName": "IB"
-  },
-  {
     "id": "ibilce-unesp",
     "officialName": "Instituto de Biociências, Letras e Ciências Exatas - UNESP (Câmpus de São José do Rio Preto)",
     "shortName": "UNESP/IBILCE"
-  },
-  {
-    "id": "icesi",
-    "officialName": "Universidad Icesi",
-    "shortName": "ICESI"
   },
   {
     "id": "iesb",
@@ -217,11 +177,6 @@
     "id": "ifal",
     "officialName": "Instituto Federal de Alagoas",
     "shortName": "IFAL"
-  },
-  {
-    "id": "ifam-parintins",
-    "officialName": "Instituto Federal do Amazonas - Campus Parintins",
-    "shortName": "IFAM - Parintins"
   },
   {
     "id": "ifb",
@@ -256,11 +211,6 @@
     "officialName": "Instituto Federal do Ceará - Campus Tianguá",
     "shortName": "IFCE/Tianguá",
     "parentInstitutionId": "ifce"
-  },
-  {
-    "id": "ifes",
-    "officialName": "Instituto Federal do Espírito Santo",
-    "shortName": "IFES"
   },
   {
     "id": "ifgoiano-rio-verde",
@@ -325,12 +275,6 @@
     "id": "ifpi",
     "officialName": "Instituto Federal do Piauí",
     "shortName": "IFPI"
-  },
-  {
-    "id": "ifpi-parnaiba",
-    "officialName": "Instituto Federal do Piauí - Campus Parnaíba",
-    "shortName": "IFPI - Parnaíba",
-    "parentInstitutionId": "ifpi"
   },
   {
     "id": "ifpi-picos",
@@ -444,20 +388,9 @@
     "parentInstitutionId": "unlp"
   },
   {
-    "id": "ing-unlp",
-    "officialName": "Facultad de Ingeniería - Universidad Nacional de La Plata",
-    "shortName": "ING UNLP",
-    "parentInstitutionId": "unlp"
-  },
-  {
     "id": "insper",
     "officialName": "Insper - Instituto de Ensino e Pesquisa",
     "shortName": "Insper"
-  },
-  {
-    "id": "instec",
-    "officialName": "Instituto Superior de Tecnologías y Ciencias Aplicadas (InSTEC)",
-    "shortName": "INSTEC"
   },
   {
     "id": "intec-rd",
@@ -711,12 +644,6 @@
     "logo": "https://iteso.mx/documents/123/0/logo-ITESO.svg/b45726c2-dc08-87b7-8190-3983f01b229b?t=1636494360921"
   },
   {
-    "id": "iteso-preparatoria",
-    "officialName": "Preparatoria ITESO",
-    "shortName": "PrepaITESO",
-    "parentInstitutionId": "iteso"
-  },
-  {
     "id": "itl",
     "officialName": "Instituto Tecnologico de la Laguna",
     "shortName": "Instituto Tecnologico de la Laguna"
@@ -725,11 +652,6 @@
     "id": "itlac",
     "officialName": "Instituto Tecnológico de Lázaro Cárdenas (ITLAC)",
     "shortName": "Instituto Tecnológico de Lázaro Cárdenas"
-  },
-  {
-    "id": "itm-medellin",
-    "officialName": "Instituto Tecnológico Metropolitano (ITM)",
-    "shortName": "ITM"
   },
   {
     "id": "itnl",
@@ -812,11 +734,6 @@
     "shortName": "Instituto Key de Ingeniería y Ciencias"
   },
   {
-    "id": "konrad-lorenz",
-    "officialName": "Fundación Universitaria Konrad Lorenz",
-    "shortName": "FUKL"
-  },
-  {
     "id": "mackenzie",
     "officialName": "Universidade Presbiteriana Mackenzie",
     "shortName": "Mackenzie"
@@ -837,16 +754,6 @@
     "shortName": "OMIJAL"
   },
   {
-    "id": "ort-uy",
-    "officialName": "Universidad ORT Uruguay",
-    "shortName": "ORT"
-  },
-  {
-    "id": "poli-co",
-    "officialName": "Politécnico Grancolombiano",
-    "shortName": "PoliGran"
-  },
-  {
     "id": "puc-goias",
     "officialName": "Pontifícia Universidade Católica de Goiás",
     "shortName": "PUC-GO"
@@ -862,31 +769,6 @@
     "shortName": "PUC-MG/ICEI"
   },
   {
-    "id": "pucmm-csd",
-    "officialName": "Pontificia Universidad Católica Madre y Maestra (PUCMM), Campus de Santo Domingo (CSD)",
-    "shortName": "PUCMM-CSD"
-  },
-  {
-    "id": "pucmm-santiago",
-    "officialName": "Pontificia Universidad Católica Madre y Maestra, Campus Santiago",
-    "shortName": "PUCMM-CSTI"
-  },
-  {
-    "id": "pucp",
-    "officialName": "Pontificia Universidad Católica del Perú",
-    "shortName": "PUCP"
-  },
-  {
-    "id": "puj-bogota",
-    "officialName": "Pontificia Universidad Javeriana, sede Bogotá",
-    "shortName": "PUJ-Bog"
-  },
-  {
-    "id": "puj-cali",
-    "officialName": "Pontificia Universidad Javeriana, Seccional Cali",
-    "shortName": "PUJ-Cali"
-  },
-  {
     "id": "senai-cimatec",
     "officialName": "SENAI CIMATEC (Centro Integrado de Manufatura e Tecnologia)",
     "shortName": "SENAI SIMATEC"
@@ -900,21 +782,6 @@
     "id": "source-label-cavanis-5b019bc33a",
     "officialName": "CAVANIS",
     "shortName": "CAVANIS"
-  },
-  {
-    "id": "source-label-ccl-br-989f407cbb",
-    "officialName": "CCL-BR",
-    "shortName": "CCL-BR"
-  },
-  {
-    "id": "source-label-ccl-cu-78ea5a32a8",
-    "officialName": "CCL-CU",
-    "shortName": "CCL-CU"
-  },
-  {
-    "id": "source-label-ccl-vcl-44a76e32a4",
-    "officialName": "CCL-VCL",
-    "shortName": "CCL-VCL"
   },
   {
     "id": "source-label-cefet-rj-petropolis-06ba531ff2",
@@ -957,21 +824,6 @@
     "shortName": "DICISUG"
   },
   {
-    "id": "source-label-ean-2311f6a1d6",
-    "officialName": "EAN",
-    "shortName": "EAN"
-  },
-  {
-    "id": "source-label-ecci-c6c3e6eb44",
-    "officialName": "ECCI",
-    "shortName": "ECCI"
-  },
-  {
-    "id": "source-label-eci-e098f79a76",
-    "officialName": "ECI",
-    "shortName": "ECI"
-  },
-  {
     "id": "source-label-eep-b5a19c77a0",
     "officialName": "EEP",
     "shortName": "EEP"
@@ -997,11 +849,6 @@
     "shortName": "ESPM"
   },
   {
-    "id": "source-label-exactas-8e3f953c22",
-    "officialName": "Exactas",
-    "shortName": "Exactas"
-  },
-  {
     "id": "source-label-faculmontes-279b6cd485",
     "officialName": "FACULMONTES",
     "shortName": "FACULMONTES"
@@ -1015,11 +862,6 @@
     "id": "source-label-fap-17503276f6",
     "officialName": "FAP",
     "shortName": "FAP"
-  },
-  {
-    "id": "source-label-fatec-ourinhos-7efad438dd",
-    "officialName": "Fatec Ourinhos",
-    "shortName": "Fatec Ourinhos"
   },
   {
     "id": "source-label-fcen-0f01e9672c",
@@ -1072,11 +914,6 @@
     "shortName": "IFC"
   },
   {
-    "id": "source-label-ifce-41d6ff4887",
-    "officialName": "IFCE",
-    "shortName": "IFCE"
-  },
-  {
     "id": "source-label-ifg-morrinhos-075b822ea6",
     "officialName": "IFG-Morrinhos",
     "shortName": "IFG-Morrinhos"
@@ -1100,11 +937,6 @@
     "id": "source-label-ifrn-aa3bb1c3e6",
     "officialName": "IFRN",
     "shortName": "IFRN"
-  },
-  {
-    "id": "source-label-ifsp-c38814678b",
-    "officialName": "IFSP",
-    "shortName": "IFSP"
   },
   {
     "id": "source-label-ifsudestemgjf-0423de23ac",
@@ -1252,11 +1084,6 @@
     "shortName": "ITat"
   },
   {
-    "id": "source-label-itb-d5dec79b3c",
-    "officialName": "ITB",
-    "shortName": "ITB"
-  },
-  {
     "id": "source-label-itcc-07309325f4",
     "officialName": "ITCC",
     "shortName": "ITCC"
@@ -1332,11 +1159,6 @@
     "id": "source-label-itsao-a08eb62f6b",
     "officialName": "ITSAO",
     "shortName": "ITSAO"
-  },
-  {
-    "id": "source-label-itscec-o-f083c762e4",
-    "officialName": "ITSCEC - O",
-    "shortName": "ITSCEC - O"
   },
   {
     "id": "source-label-itsch-a6e75f8059",
@@ -1419,11 +1241,6 @@
     "shortName": "ITTIZIMIN"
   },
   {
-    "id": "source-label-iujo-cad5c883c3",
-    "officialName": "IUJO",
-    "shortName": "IUJO"
-  },
-  {
     "id": "source-label-kabul-education-university-of-rabbani-b3713fc927",
     "officialName": "Kabul Education University of Rabbani",
     "shortName": "Kabul Education University of Rabbani"
@@ -1434,11 +1251,6 @@
     "shortName": "?"
   },
   {
-    "id": "source-label-loyola-a2a83ee2dc",
-    "officialName": "Loyola",
-    "shortName": "Loyola"
-  },
-  {
     "id": "source-label-maristamerida-2037f34583",
     "officialName": "maristamerida",
     "shortName": "maristamerida"
@@ -1447,21 +1259,6 @@
     "id": "source-label-mesogt-70d1111049",
     "officialName": "MesoGT",
     "shortName": "MesoGT"
-  },
-  {
-    "id": "source-label-mined-8f5e47628c",
-    "officialName": "MINED",
-    "shortName": "MINED"
-  },
-  {
-    "id": "source-label-my-passion-body-utalca-ing-bcd27703d5",
-    "officialName": "my passion}]: <body/> [UTalca/Ing",
-    "shortName": "my passion}]: <body/> [UTalca/Ing"
-  },
-  {
-    "id": "source-label-ofmi-ddfd501221",
-    "officialName": "OFMI",
-    "shortName": "OFMI"
   },
   {
     "id": "source-label-oieg-5d3f19f209",
@@ -1504,16 +1301,6 @@
     "shortName": "PUC Campinas"
   },
   {
-    "id": "source-label-puc-e43e69c8d9",
-    "officialName": "PUC",
-    "shortName": "PUC"
-  },
-  {
-    "id": "source-label-puc-go-e2aac6937e",
-    "officialName": "PUC/GO",
-    "shortName": "PUC/GO"
-  },
-  {
     "id": "source-label-puc-ing-18cb93b230",
     "officialName": "PUC-Ing",
     "shortName": "PUC-Ing"
@@ -1522,26 +1309,6 @@
     "id": "source-label-puc-mat-dc8bf6731e",
     "officialName": "PUC-Mat",
     "shortName": "PUC-Mat"
-  },
-  {
-    "id": "source-label-puc-rj-fe883476e1",
-    "officialName": "PUC/RJ",
-    "shortName": "PUC/RJ"
-  },
-  {
-    "id": "source-label-pucmm-csd-b52a91ecff",
-    "officialName": "PUCMM/CSD",
-    "shortName": "PUCMM/CSD"
-  },
-  {
-    "id": "source-label-puj-bog-d074f9ad47",
-    "officialName": "PUJ/Bog",
-    "shortName": "PUJ/Bog"
-  },
-  {
-    "id": "source-label-puj-cali-49842f2e98",
-    "officialName": "PUJ/Cali",
-    "shortName": "PUJ/Cali"
   },
   {
     "id": "source-label-senai-cimatec-eebe9d6039",
@@ -1562,11 +1329,6 @@
     "id": "source-label-tec-4e03be678c",
     "officialName": "TEC",
     "shortName": "TEC"
-  },
-  {
-    "id": "source-label-tec-alajuela-457bd3c236",
-    "officialName": "TEC/Alajuela",
-    "shortName": "TEC/Alajuela"
   },
   {
     "id": "source-label-tec-alajuela-5dd02c5f4e",
@@ -1614,11 +1376,6 @@
     "shortName": "UAM/Azcapotzalco"
   },
   {
-    "id": "source-label-uan-064ec95fd0",
-    "officialName": "UAN",
-    "shortName": "UAN"
-  },
-  {
     "id": "source-label-uao-oaxaca-30b9f398d8",
     "officialName": "UAO/Oaxaca",
     "shortName": "UAO/Oaxaca"
@@ -1639,34 +1396,9 @@
     "shortName": "UATF-IS"
   },
   {
-    "id": "source-label-uba-fcen-3f39b45ec8",
-    "officialName": "UBA/FCEN",
-    "shortName": "UBA/FCEN"
-  },
-  {
-    "id": "source-label-ubb-conce-2971f795c3",
-    "officialName": "UBB-Conce",
-    "shortName": "UBB-Conce"
-  },
-  {
     "id": "source-label-ubi-6c2c1c536c",
     "officialName": "UBI",
     "shortName": "UBI"
-  },
-  {
-    "id": "source-label-uc-93bb321984",
-    "officialName": "UC",
-    "shortName": "UC"
-  },
-  {
-    "id": "source-label-uca-96533bf408",
-    "officialName": "] [UCA",
-    "shortName": "] [UCA"
-  },
-  {
-    "id": "source-label-ucart-6ca5a388c9",
-    "officialName": "UCart",
-    "shortName": "UCart"
   },
   {
     "id": "source-label-ucb-c2b4b7f319",
@@ -1674,24 +1406,9 @@
     "shortName": "UCB"
   },
   {
-    "id": "source-label-ucb-cochabamba-99330c5888",
-    "officialName": "UCB/Cochabamba",
-    "shortName": "UCB/Cochabamba"
-  },
-  {
     "id": "source-label-ucc-bf0a1c9598",
     "officialName": "UCC",
     "shortName": "UCC"
-  },
-  {
-    "id": "source-label-ucentral-974575dd56",
-    "officialName": "UCentral",
-    "shortName": "UCentral"
-  },
-  {
-    "id": "source-label-uclv-cp-0bfe3181f2",
-    "officialName": "UCLV-CP",
-    "shortName": "UCLV-CP"
   },
   {
     "id": "source-label-ucm-77b08067f6",
@@ -1704,31 +1421,6 @@
     "shortName": "UCN"
   },
   {
-    "id": "source-label-ucp-6db36b7b77",
-    "officialName": "ucp",
-    "shortName": "ucp"
-  },
-  {
-    "id": "source-label-ucp-f31c845370",
-    "officialName": "UCP",
-    "shortName": "UCP"
-  },
-  {
-    "id": "source-label-ucsm-74dfa8de13",
-    "officialName": "UCSM",
-    "shortName": "UCSM"
-  },
-  {
-    "id": "source-label-uct-c3c86464d0",
-    "officialName": "UCT",
-    "shortName": "UCT"
-  },
-  {
-    "id": "source-label-ucv-294962d46d",
-    "officialName": "UCV",
-    "shortName": "UCV"
-  },
-  {
     "id": "source-label-udabol-oruro-259c942a03",
     "officialName": "UDABOL-Oruro",
     "shortName": "UDABOL-Oruro"
@@ -1737,11 +1429,6 @@
     "id": "source-label-udec-06a1d4f639",
     "officialName": "UdeC",
     "shortName": "UdeC"
-  },
-  {
-    "id": "source-label-udenar-b93635fd12",
-    "officialName": "UdeNar",
-    "shortName": "UdeNar"
   },
   {
     "id": "source-label-udesc-96d14c7095",
@@ -1764,19 +1451,9 @@
     "shortName": "UDS-Potosi"
   },
   {
-    "id": "source-label-ueb-2ce06bc9e3",
-    "officialName": "UEB",
-    "shortName": "UEB"
-  },
-  {
     "id": "source-label-uespi-teresina-fe00737a90",
     "officialName": "UESPI - Teresina",
     "shortName": "UESPI - Teresina"
-  },
-  {
-    "id": "source-label-ufam-icomp-56b7131a94",
-    "officialName": "UFAM/IComp",
-    "shortName": "UFAM/IComp"
   },
   {
     "id": "source-label-ufc-crateus-4013b6ff59",
@@ -1794,11 +1471,6 @@
     "shortName": "UFF"
   },
   {
-    "id": "source-label-ufg-inf-0a8b13106d",
-    "officialName": "UFG/INF",
-    "shortName": "UFG/INF"
-  },
-  {
     "id": "source-label-ufma-32b21fe64f",
     "officialName": "UFMA",
     "shortName": "UFMA"
@@ -1814,49 +1486,14 @@
     "shortName": "UFPel"
   },
   {
-    "id": "source-label-ufps-cucuta-77ea7e318b",
-    "officialName": "UFPS/Cucuta",
-    "shortName": "UFPS/Cucuta"
-  },
-  {
-    "id": "source-label-ufps-ocana-bf3cb39f83",
-    "officialName": "UFPS/Ocaña",
-    "shortName": "UFPS/Ocaña"
-  },
-  {
     "id": "source-label-ufra-845c695b7c",
     "officialName": "UFRA",
     "shortName": "UFRA"
   },
   {
-    "id": "source-label-ufrpe-f4057cf139",
-    "officialName": "UFRPE",
-    "shortName": "UFRPE"
-  },
-  {
-    "id": "source-label-ufrr-3374fb6a57",
-    "officialName": "UFRR",
-    "shortName": "UFRR"
-  },
-  {
     "id": "source-label-ufsc-ara-4bc6cc94ff",
     "officialName": "UFSC-ARA",
     "shortName": "UFSC-ARA"
-  },
-  {
-    "id": "source-label-ufv-dpi-dbdbc9642e",
-    "officialName": "UFV/DPI",
-    "shortName": "UFV/DPI"
-  },
-  {
-    "id": "source-label-ug-becc2c3e15",
-    "officialName": "UG",
-    "shortName": "UG"
-  },
-  {
-    "id": "source-label-ugb-7eceea3de6",
-    "officialName": "UGB",
-    "shortName": "UGB"
   },
   {
     "id": "source-label-ugtodcea-5905408f94",
@@ -1869,119 +1506,9 @@
     "shortName": "UGTODCNE"
   },
   {
-    "id": "source-label-uh-ff-edd08b2c9b",
-    "officialName": "UH-FF",
-    "shortName": "UH-FF"
-  },
-  {
-    "id": "source-label-uis-ea6ea1f152",
-    "officialName": "UIS",
-    "shortName": "UIS"
-  },
-  {
-    "id": "source-label-ula-3c37d69a5c",
-    "officialName": "ULA",
-    "shortName": "ULA"
-  },
-  {
-    "id": "source-label-ult-a6729e9f80",
-    "officialName": "ULT",
-    "shortName": "ULT"
-  },
-  {
-    "id": "source-label-um-d3cd680850",
-    "officialName": "UM",
-    "shortName": "UM"
-  },
-  {
-    "id": "source-label-umsa-inf-82f1c14387",
-    "officialName": "UMSA-INF",
-    "shortName": "UMSA-INF"
-  },
-  {
     "id": "source-label-una-51072ac1a6",
     "officialName": "UNA",
     "shortName": "UNA"
-  },
-  {
-    "id": "source-label-unal-bogota-bfe791c995",
-    "officialName": "UNAL/Bogotá",
-    "shortName": "UNAL/Bogotá"
-  },
-  {
-    "id": "source-label-unan-managua-373da2ab3e",
-    "officialName": "UNAN/Managua",
-    "shortName": "UNAN/Managua"
-  },
-  {
-    "id": "source-label-unap-6ca9750bc9",
-    "officialName": "UNAP",
-    "shortName": "UNAP"
-  },
-  {
-    "id": "source-label-unc-famac-58abe10a12",
-    "officialName": "UNC/FAMAC",
-    "shortName": "UNC/FAMAC"
-  },
-  {
-    "id": "source-label-unc-famaf-ea0fe7138f",
-    "officialName": "UNC-FaMAF",
-    "shortName": "UNC-FaMAF"
-  },
-  {
-    "id": "source-label-undav-a1590a58d4",
-    "officialName": "UNDAV",
-    "shortName": "UNDAV"
-  },
-  {
-    "id": "source-label-undec-3bca6b835f",
-    "officialName": "UNdeC",
-    "shortName": "UNdeC"
-  },
-  {
-    "id": "source-label-unesc-3fe11e3e2c",
-    "officialName": "UNESC",
-    "shortName": "UNESC"
-  },
-  {
-    "id": "source-label-ungs-ic-a8a0e140da",
-    "officialName": "UNGS-IC",
-    "shortName": "UNGS-IC"
-  },
-  {
-    "id": "source-label-uni-fc-847d66a5e3",
-    "officialName": "UNI/FC",
-    "shortName": "UNI/FC"
-  },
-  {
-    "id": "source-label-uni-fiee-d08cf74a2a",
-    "officialName": "UNI-FIEE",
-    "shortName": "UNI-FIEE"
-  },
-  {
-    "id": "source-label-uni-fiee-e8b41df7b5",
-    "officialName": "UNI/FIEE",
-    "shortName": "UNI/FIEE"
-  },
-  {
-    "id": "source-label-uni-fiis-530d59b32b",
-    "officialName": "UNI/FIIS",
-    "shortName": "UNI/FIIS"
-  },
-  {
-    "id": "source-label-uni-fim-39bbe3a669",
-    "officialName": "UNI/FIM",
-    "shortName": "UNI/FIM"
-  },
-  {
-    "id": "source-label-uni-fim-e75012792b",
-    "officialName": "UNI-FIM",
-    "shortName": "UNI-FIM"
-  },
-  {
-    "id": "source-label-uniandes-9ef0f0f29f",
-    "officialName": "Uniandes",
-    "shortName": "Uniandes"
   },
   {
     "id": "source-label-uniararas-9fef8dd270",
@@ -1999,11 +1526,6 @@
     "shortName": "Unicaribe"
   },
   {
-    "id": "source-label-unifacef-85c8edb673",
-    "officialName": "UNIFACEF",
-    "shortName": "UNIFACEF"
-  },
-  {
     "id": "source-label-unifacisa-96e4bb6631",
     "officialName": "Unifacisa",
     "shortName": "Unifacisa"
@@ -2012,11 +1534,6 @@
     "id": "source-label-unifagoc-6b93b154f3",
     "officialName": "UNIFAGOC",
     "shortName": "UNIFAGOC"
-  },
-  {
-    "id": "source-label-unifap-ace17cb69f",
-    "officialName": "UNIFAP",
-    "shortName": "UNIFAP"
   },
   {
     "id": "source-label-unijui-622d3cdcf3",
@@ -2034,11 +1551,6 @@
     "shortName": "Unimar"
   },
   {
-    "id": "source-label-uniminuto-70a4a1ee39",
-    "officialName": "Uniminuto",
-    "shortName": "Uniminuto"
-  },
-  {
     "id": "source-label-uninassau-olinda-6c276628c5",
     "officialName": "UNINASSAU Olinda",
     "shortName": "UNINASSAU Olinda"
@@ -2047,16 +1559,6 @@
     "id": "source-label-uninorte-97d02d7600",
     "officialName": "UNINORTE",
     "shortName": "UNINORTE"
-  },
-  {
-    "id": "source-label-uninorte-eeaa605de2",
-    "officialName": "UniNorte",
-    "shortName": "UniNorte"
-  },
-  {
-    "id": "source-label-unior-16be4b98ca",
-    "officialName": "UNIOR",
-    "shortName": "UNIOR"
   },
   {
     "id": "source-label-unir-536bdfae93",
@@ -2069,29 +1571,9 @@
     "shortName": "UNIS"
   },
   {
-    "id": "source-label-unisabana-ca51b45ae5",
-    "officialName": "UNISABANA",
-    "shortName": "UNISABANA"
-  },
-  {
-    "id": "source-label-unisangil-95143545b1",
-    "officialName": "UNISANGIL",
-    "shortName": "UNISANGIL"
-  },
-  {
-    "id": "source-label-uniss-a41319ff01",
-    "officialName": "UNISS",
-    "shortName": "UNISS"
-  },
-  {
     "id": "source-label-univalle-91ad6ed309",
     "officialName": "Univalle",
     "shortName": "Univalle"
-  },
-  {
-    "id": "source-label-univem-2925dedb04",
-    "officialName": "UNIVEM",
-    "shortName": "UNIVEM"
   },
   {
     "id": "source-label-universidad-anahuac-campus-oaxaca-c48468344b",
@@ -2205,11 +1687,6 @@
     "shortName": "Universidad Nacional"
   },
   {
-    "id": "source-label-universidad-nacional-de-colombia-bogota-3f821f7a99",
-    "officialName": "Universidad Nacional de Colombia - Bogotá",
-    "shortName": "Universidad Nacional de Colombia - Bogotá"
-  },
-  {
     "id": "source-label-universidad-tecnologica-de-la-mixteca-faa2f7f4a5",
     "officialName": "Universidad Tecnológica de la Mixteca",
     "shortName": "Universidad Tecnológica de la Mixteca"
@@ -2220,74 +1697,14 @@
     "shortName": "UNIVO"
   },
   {
-    "id": "source-label-unju-fi-741e733e7a",
-    "officialName": "UNju/FI",
-    "shortName": "UNju/FI"
-  },
-  {
     "id": "source-label-unjui-24990d4806",
     "officialName": "UNJUI",
     "shortName": "UNJUI"
   },
   {
-    "id": "source-label-unlp-fce-89b60d3f50",
-    "officialName": "UNLP/FCE",
-    "shortName": "UNLP/FCE"
-  },
-  {
-    "id": "source-label-unlp-ing-346cb52aba",
-    "officialName": "UNLP/ING",
-    "shortName": "UNLP/ING"
-  },
-  {
     "id": "source-label-uno-med-1a02792163",
     "officialName": "UNO-MED",
     "shortName": "UNO-MED"
-  },
-  {
-    "id": "source-label-unsa-cc-01d00a7fa7",
-    "officialName": "UNSA-CC",
-    "shortName": "UNSA-CC"
-  },
-  {
-    "id": "source-label-unsa-cs-5c773769a5",
-    "officialName": "UNSA/CS",
-    "shortName": "UNSA/CS"
-  },
-  {
-    "id": "source-label-unsa-cs-b44fc0523e",
-    "officialName": "UNSA-CS",
-    "shortName": "UNSA-CS"
-  },
-  {
-    "id": "source-label-unsa-ea66aac76d",
-    "officialName": "UNSA",
-    "shortName": "UNSA"
-  },
-  {
-    "id": "source-label-unse-64141fa852",
-    "officialName": "UNSE",
-    "shortName": "UNSE"
-  },
-  {
-    "id": "source-label-uo-sam-bad14bb3c2",
-    "officialName": "UO/SAM",
-    "shortName": "UO/SAM"
-  },
-  {
-    "id": "source-label-uo-sam-d9f38cc3ec",
-    "officialName": "UO-SAM",
-    "shortName": "UO-SAM"
-  },
-  {
-    "id": "source-label-uo-sjam-15497272d8",
-    "officialName": "UO/SJAM",
-    "shortName": "UO/SJAM"
-  },
-  {
-    "id": "source-label-uo-sjam-2518620e00",
-    "officialName": "UO-SJAM",
-    "shortName": "UO-SJAM"
   },
   {
     "id": "source-label-uoh-d8048a465e",
@@ -2300,39 +1717,9 @@
     "shortName": "UP"
   },
   {
-    "id": "source-label-upb-buc-f54cbcb8d7",
-    "officialName": "UPB/Buc",
-    "shortName": "UPB/Buc"
-  },
-  {
     "id": "source-label-upblp-aa5c09945f",
     "officialName": "UPBLP",
     "shortName": "UPBLP"
-  },
-  {
-    "id": "source-label-upblp-if-8c97df5b76",
-    "officialName": "UPBLP-IF",
-    "shortName": "UPBLP-IF"
-  },
-  {
-    "id": "source-label-upblp-isc-2c1b68d337",
-    "officialName": "UPBLP-ISC",
-    "shortName": "UPBLP-ISC"
-  },
-  {
-    "id": "source-label-upc-bog-011cc14016",
-    "officialName": "UPC/Bog",
-    "shortName": "UPC/Bog"
-  },
-  {
-    "id": "source-label-upc-e44b982403",
-    "officialName": "UPC",
-    "shortName": "UPC"
-  },
-  {
-    "id": "source-label-updstja-is-a3e517d7fc",
-    "officialName": "UPDSTJA/IS",
-    "shortName": "UPDSTJA/IS"
   },
   {
     "id": "source-label-upf-f8f9f357e6",
@@ -2340,39 +1727,9 @@
     "shortName": "UPF"
   },
   {
-    "id": "source-label-upr-by-31940a3466",
-    "officialName": "UPR-BY",
-    "shortName": "UPR-BY"
-  },
-  {
     "id": "source-label-upz-8c7fa73052",
     "officialName": "UPZ",
     "shortName": "UPZ"
-  },
-  {
-    "id": "source-label-uq-33abe804f4",
-    "officialName": "UQ",
-    "shortName": "UQ"
-  },
-  {
-    "id": "source-label-usa-aa5ab35a91",
-    "officialName": "USA",
-    "shortName": "USA"
-  },
-  {
-    "id": "source-label-usach-ing-94044172b8",
-    "officialName": "USACH-Ing",
-    "shortName": "USACH-Ing"
-  },
-  {
-    "id": "source-label-usc-3dde180d1d",
-    "officialName": "USC",
-    "shortName": "USC"
-  },
-  {
-    "id": "source-label-uscg-cd17725146",
-    "officialName": "USCG",
-    "shortName": "USCG"
   },
   {
     "id": "source-label-usf-be233f80c0",
@@ -2390,21 +1747,6 @@
     "shortName": "USFJ - SEDE"
   },
   {
-    "id": "source-label-uta-8fb9737adc",
-    "officialName": "UTA",
-    "shortName": "UTA"
-  },
-  {
-    "id": "source-label-utadeo-b1c0135ab7",
-    "officialName": "UTadeo",
-    "shortName": "UTadeo"
-  },
-  {
-    "id": "source-label-utfpr-ct-5b6514b4a4",
-    "officialName": "UTFPR/CT",
-    "shortName": "UTFPR/CT"
-  },
-  {
     "id": "source-label-utfsm-santiago-ffe8859bef",
     "officialName": "UTFSM-Santiago",
     "shortName": "UTFSM-Santiago"
@@ -2413,31 +1755,6 @@
     "id": "source-label-utm-1e14cd101c",
     "officialName": "UTM",
     "shortName": "UTM"
-  },
-  {
-    "id": "source-label-utn-frba-0fc0a35ae0",
-    "officialName": "UTN/FRBA",
-    "shortName": "UTN/FRBA"
-  },
-  {
-    "id": "source-label-utn-frlr-1b6481cee6",
-    "officialName": "UTN/FRLR",
-    "shortName": "UTN/FRLR"
-  },
-  {
-    "id": "source-label-utn-santa-fe-08d9ebd4ab",
-    "officialName": "UTN/Santa Fe",
-    "shortName": "UTN/Santa Fe"
-  },
-  {
-    "id": "source-label-uto-huanuni-22ca254e10",
-    "officialName": "UTO/Huanuni",
-    "shortName": "UTO/Huanuni"
-  },
-  {
-    "id": "source-label-utp-f8d556ed41",
-    "officialName": "UTP",
-    "shortName": "UTP"
   },
   {
     "id": "source-label-utpsc-005b7c77cd",
@@ -2468,16 +1785,6 @@
     "id": "source-label-uvm-guadalajata-sur-2abeeffc57",
     "officialName": "UVM Guadalajata Sur",
     "shortName": "UVM Guadalajata Sur"
-  },
-  {
-    "id": "source-label-uwi-fic-54de1e6bf3",
-    "officialName": "UWI-FIC",
-    "shortName": "UWI-FIC"
-  },
-  {
-    "id": "source-label-uwi-tto-027a45250e",
-    "officialName": "UWI/TTO",
-    "shortName": "UWI/TTO"
   },
   {
     "id": "source-school-0161a1267336",
@@ -4015,11 +3322,6 @@
     "shortName": "UAO"
   },
   {
-    "id": "uapa",
-    "officialName": "Universidad Abierta para Adultos (UAPA)",
-    "shortName": "UAPA"
-  },
-  {
     "id": "uas-fimaz",
     "officialName": "Facultad de Informática Mazatlán, Universidad Autónoma de Sinaloa (UAS)",
     "shortName": "FIMAZ",
@@ -4076,11 +3378,6 @@
     "logo": "https://uca.edu.sv/wp-content/themes/kubo/images/logo-uca.png"
   },
   {
-    "id": "ucab-venezuela",
-    "officialName": "Universidad Católica Andrés Bello",
-    "shortName": "UCAB"
-  },
-  {
     "id": "ucatec",
     "officialName": "Universidad Católica Boliviana 'UCATEC' / Universidad Católica Técnica (UCATEC)",
     "shortName": "Ucatec"
@@ -4111,16 +3408,6 @@
     "shortName": "UCenfo"
   },
   {
-    "id": "ucentral-cl",
-    "officialName": "Universidad Central de Chile",
-    "shortName": "UCEN"
-  },
-  {
-    "id": "uceva",
-    "officialName": "Unidad Central del Valle del Cauca",
-    "shortName": "UCEVA"
-  },
-  {
     "id": "uchile",
     "officialName": "Universidad de Chile",
     "shortName": "UChile"
@@ -4134,11 +3421,6 @@
     "id": "uclv",
     "officialName": "Universidad Central \"Marta Abreu\" de Las Villas",
     "shortName": "UCLV"
-  },
-  {
-    "id": "ucne",
-    "officialName": "Universidad Católica Nordestana",
-    "shortName": "UCNE"
   },
   {
     "id": "ucol",
@@ -4166,51 +3448,15 @@
     "shortName": "UCSC"
   },
   {
-    "id": "ucsp-pe",
-    "officialName": "Universidad Católica San Pablo",
-    "shortName": "UCSP"
-  },
-  {
-    "id": "ucu-uy",
-    "officialName": "Universidad Católica del Uruguay",
-    "shortName": "UCU"
-  },
-  {
-    "id": "udabol",
-    "officialName": "Universidad De Aquino Bolivia",
-    "shortName": "UDABOL"
-  },
-  {
-    "id": "udabol-la-paz",
-    "officialName": "Universidad De Aquino Bolivia - Campus La Paz",
-    "shortName": "UDABOL-La Paz",
-    "parentInstitutionId": "udabol"
-  },
-  {
     "id": "udb-sv",
     "officialName": "Universidad Don Bosco",
     "shortName": "UDB"
-  },
-  {
-    "id": "udec-facatativa",
-    "officialName": "Universidad de Cundinamarca - Extensión Facatativá",
-    "shortName": "UDEC Facatativá"
-  },
-  {
-    "id": "udelar-inco",
-    "officialName": "Instituto de Computación, Facultad de Ingeniería, Universidad de la República",
-    "shortName": "In.Co."
   },
   {
     "id": "udem-monterrey",
     "officialName": "Universidad de Monterrey",
     "shortName": "UDEM",
     "logo": "https://www.udem.edu.mx/themes/custom/udm/apple-touch-icon.png"
-  },
-  {
-    "id": "udesa",
-    "officialName": "Universidad de San Andrés",
-    "shortName": "UDESA"
   },
   {
     "id": "udesc",
@@ -4256,11 +3502,6 @@
     "parentInstitutionId": "udg"
   },
   {
-    "id": "udistrital",
-    "officialName": "Universidad Distrital Francisco José de Caldas",
-    "shortName": "UDist"
-  },
-  {
     "id": "udlap",
     "officialName": "Universidad de las Américas Puebla (UDLAP)",
     "shortName": "Universidad de las Americas-Puebla"
@@ -4304,12 +3545,6 @@
     "id": "uepa",
     "officialName": "Universidade do Estado do Pará",
     "shortName": "UEPA"
-  },
-  {
-    "id": "uepa-parauapebas",
-    "officialName": "Universidade do Estado do Pará - Campus Parauapebas",
-    "shortName": "UEPA - Parauapebas",
-    "parentInstitutionId": "uepa"
   },
   {
     "id": "uepb",
@@ -4521,16 +3756,6 @@
     "shortName": "UFPR"
   },
   {
-    "id": "ufps-cucuta",
-    "officialName": "Universidad Francisco de Paula Santander - Cúcuta",
-    "shortName": "UFPS - Cucuta"
-  },
-  {
-    "id": "ufpso",
-    "officialName": "Universidad Francisco de Paula Santander Ocaña",
-    "shortName": "UFPSO"
-  },
-  {
     "id": "ufrgs",
     "officialName": "Universidade Federal do Rio Grande do Sul",
     "shortName": "UFRGS"
@@ -4593,11 +3818,6 @@
     "shortName": "UFSM"
   },
   {
-    "id": "uft",
-    "officialName": "Universidade Federal do Tocantins",
-    "shortName": "UFT"
-  },
-  {
     "id": "uftm",
     "officialName": "Universidade Federal do Triângulo Mineiro",
     "shortName": "UFTM"
@@ -4652,19 +3872,9 @@
     "shortName": "UH"
   },
   {
-    "id": "uho",
-    "officialName": "Universidad de Holguín (UHo)",
-    "shortName": "UHO"
-  },
-  {
     "id": "ujed-fica",
     "officialName": "Facultad de Ingeniería, Ciencias y Arquitectura, Universidad Juárez del Estado de Durango",
     "shortName": "Facultad de Ingeniería, Ciencias y Arquitectura, Universidad Juarez del Estado de Durango"
-  },
-  {
-    "id": "ulima",
-    "officialName": "Universidad de Lima",
-    "shortName": "ULIMA"
   },
   {
     "id": "umg-gt",
@@ -4690,16 +3900,6 @@
     "id": "unadmexico",
     "officialName": "Universidad Abierta y a Distancia de México (UnADM)",
     "shortName": "UnADM"
-  },
-  {
-    "id": "unal-bogota",
-    "officialName": "Universidad Nacional de Colombia, Sede Bogotá",
-    "shortName": "UNAL Bogotá"
-  },
-  {
-    "id": "unal-medellin",
-    "officialName": "Universidad Nacional de Colombia, Sede Medellín",
-    "shortName": "UN-Med"
   },
   {
     "id": "unam",
@@ -4776,11 +3976,6 @@
     "parentInstitutionId": "unb"
   },
   {
-    "id": "unbosque",
-    "officialName": "Universidad El Bosque",
-    "shortName": "UBosq"
-  },
-  {
     "id": "unc-famaf",
     "officialName": "Facultad de Matemática, Astronomía, Física y Computación",
     "shortName": "FAMAF - UNC"
@@ -4796,29 +3991,9 @@
     "shortName": "UNESP-RC"
   },
   {
-    "id": "uni-fc-pe",
-    "officialName": "Facultad de Ciencias, Universidad Nacional de Ingeniería",
-    "shortName": "UNI-FC"
-  },
-  {
-    "id": "uni-fiis-pe",
-    "officialName": "Facultad de Ingeniería Industrial y de Sistemas, Universidad Nacional de Ingeniería",
-    "shortName": "UNI-FIIS"
-  },
-  {
-    "id": "uniamazonia-co",
-    "officialName": "Universidad de la Amazonia",
-    "shortName": "Uniamazonia"
-  },
-  {
     "id": "unibalsas",
     "officialName": "Faculdade União de Balsas (UNIBALSAS)",
     "shortName": "UNIBALSAS"
-  },
-  {
-    "id": "unibe-do",
-    "officialName": "Universidad Iberoamericana (UNIBE)",
-    "shortName": "UNIBE"
   },
   {
     "id": "unicaes-sv",
@@ -4910,11 +4085,6 @@
     "id": "unime",
     "officialName": "Centro Universitário UNIME",
     "shortName": "UNIME"
-  },
-  {
-    "id": "unimet-venezuela",
-    "officialName": "Universidad Metropolitana",
-    "shortName": "UNIMET"
   },
   {
     "id": "unimontes",
@@ -5017,16 +4187,6 @@
     "shortName": "UNIVILLE"
   },
   {
-    "id": "unjbg",
-    "officialName": "Universidad Nacional Jorge Basadre Grohmann",
-    "shortName": "UNJBG"
-  },
-  {
-    "id": "unjfsc",
-    "officialName": "Universidad Nacional José Faustino Sánchez Carrión (UNJFSC)",
-    "shortName": "UNJFSC"
-  },
-  {
     "id": "unju-escuela-de-minas",
     "officialName": "Escuela de Minas, Universidad Nacional de Jujuy",
     "shortName": "EscM-UNJu"
@@ -5045,16 +4205,6 @@
     "id": "unlp-ar",
     "officialName": "Universidad Nacional de La Plata",
     "shortName": "UN La Plata"
-  },
-  {
-    "id": "unmsm",
-    "officialName": "Universidad Nacional Mayor de San Marcos",
-    "shortName": "UNMSM"
-  },
-  {
-    "id": "unne",
-    "officialName": "Universidad Nacional del Nordeste",
-    "shortName": "UNNE"
   },
   {
     "id": "unoesc",
@@ -5089,39 +4239,14 @@
     "shortName": "UNRC"
   },
   {
-    "id": "unrn-ar",
-    "officialName": "Universidad Nacional de Río Negro",
-    "shortName": "UNRN"
-  },
-  {
     "id": "uns-bahia-blanca",
     "officialName": "Universidad Nacional del Sur (UNS)",
     "shortName": "UN del Sur"
   },
   {
-    "id": "unsa-arequipa",
-    "officialName": "Universidad Nacional de San Agustín de Arequipa",
-    "shortName": "UNSA-IS"
-  },
-  {
-    "id": "unsa-salta",
-    "officialName": "Universidad Nacional de Salta",
-    "shortName": "UNSa"
-  },
-  {
-    "id": "unsaac",
-    "officialName": "Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)",
-    "shortName": "UNSAAC"
-  },
-  {
     "id": "unsxx",
     "officialName": "Universidad Nacional Siglo XX",
     "shortName": "UNSXX- II"
-  },
-  {
-    "id": "unt",
-    "officialName": "Universidad Nacional de Tucumán (UNT)",
-    "shortName": "UNT"
   },
   {
     "id": "up",
@@ -5165,11 +4290,6 @@
     "shortName": "UPB Santa Cruz"
   },
   {
-    "id": "upb-bucaramanga",
-    "officialName": "Universidad Pontificia Bolivariana - Seccional Bucaramanga",
-    "shortName": "UPB-Buc"
-  },
-  {
     "id": "upb-cochabamba",
     "officialName": "Universidad Privada Boliviana - Sede Cochabamba",
     "shortName": "UPB - Cbba"
@@ -5205,32 +4325,6 @@
     "shortName": "UPPue"
   },
   {
-    "id": "upr-arecibo",
-    "officialName": "Universidad de Puerto Rico, Recinto de Arecibo (UPR-Arecibo)",
-    "shortName": "UPR-A"
-  },
-  {
-    "id": "upr-bayamon",
-    "officialName": "University of Puerto Rico, Bayamón Campus (UPR-Bayamón)",
-    "shortName": "UPR-B"
-  },
-  {
-    "id": "upr-pr",
-    "officialName": "Universidad de Puerto Rico (UPR)",
-    "shortName": "UPR"
-  },
-  {
-    "id": "uprm-pr",
-    "officialName": "Universidad de Puerto Rico, Recinto Universitario de Mayagüez (RUM)",
-    "shortName": "UPR-M",
-    "parentInstitutionId": "upr-pr"
-  },
-  {
-    "id": "uprrp-edu",
-    "officialName": "Universidad de Puerto Rico, Recinto de Río Piedras",
-    "shortName": "UPR-RP"
-  },
-  {
     "id": "upsa-bolivia",
     "officialName": "Universidad Privada de Santa Cruz de la Sierra (UPSA)",
     "shortName": "UPSA"
@@ -5244,11 +4338,6 @@
     "id": "upslp-mx",
     "officialName": "Universidad Politécnica de San Luis Potosí (UPSLP)",
     "shortName": "Universidad Politécnica de San Luis Potosi"
-  },
-  {
-    "id": "uptc",
-    "officialName": "Universidad Pedagógica y Tecnológica de Colombia",
-    "shortName": "UPTC"
   },
   {
     "id": "upz-mx",
@@ -5287,11 +4376,6 @@
     "shortName": "USFX-Chuquisaca"
   },
   {
-    "id": "usm-cl",
-    "officialName": "Universidad Técnica Federico Santa María",
-    "shortName": "USM"
-  },
-  {
     "id": "usp",
     "officialName": "Universidade de São Paulo",
     "shortName": "USP"
@@ -5325,36 +4409,9 @@
     "shortName": "UTalca-Ing"
   },
   {
-    "id": "utdt-ar",
-    "officialName": "Universidad Torcuato Di Tella",
-    "shortName": "UTDT"
-  },
-  {
-    "id": "utec-peru",
-    "officialName": "Universidad de Ingeniería y Tecnología (UTEC)",
-    "shortName": "UTEC"
-  },
-  {
     "id": "utepsa-bo",
     "officialName": "Universidad Tecnológica Privada de Santa Cruz de la Sierra (UTEPSA)",
     "shortName": "UTEPSA"
-  },
-  {
-    "id": "utesa",
-    "officialName": "Universidad Tecnológica de Santiago",
-    "shortName": "UTESA"
-  },
-  {
-    "id": "utesa-dajabon",
-    "officialName": "Universidad Tecnológica de Santiago - Recinto Dajabón",
-    "shortName": "UTESA-DAJ",
-    "parentInstitutionId": "utesa"
-  },
-  {
-    "id": "utesa-santiago",
-    "officialName": "Universidad Tecnológica de Santiago - Campus Santiago",
-    "shortName": "UTESA-STI",
-    "parentInstitutionId": "utesa"
   },
   {
     "id": "utfpr-curitiba",
@@ -5393,23 +4450,6 @@
     "parentInstitutionId": "utn-ar"
   },
   {
-    "id": "utn-frc",
-    "officialName": "Universidad Tecnológica Nacional - Facultad Regional Córdoba",
-    "shortName": "FRC - UTN",
-    "parentInstitutionId": "utn-ar"
-  },
-  {
-    "id": "utn-frd",
-    "officialName": "Universidad Tecnológica Nacional - Facultad Regional Delta",
-    "shortName": "UTN - FRD",
-    "parentInstitutionId": "utn-ar"
-  },
-  {
-    "id": "utn-frre",
-    "officialName": "Universidad Tecnológica Nacional - Facultad Regional Resistencia",
-    "shortName": "UTN - FRRe"
-  },
-  {
     "id": "utn-frro",
     "officialName": "Universidad Tecnológica Nacional, Facultad Regional Rosario (UTN-FRRo)",
     "shortName": "UTN-Rosario",
@@ -5440,12 +4480,6 @@
     "id": "uto-informatica",
     "officialName": "Universidad Técnica de Oruro - Informática",
     "shortName": "UTO-Inf",
-    "parentInstitutionId": "uto-bolivia"
-  },
-  {
-    "id": "uto-ingenieria-mecatronica",
-    "officialName": "Universidad Técnica de Oruro - Ingeniería Mecatrónica",
-    "shortName": "Universidad Tecnica de Oruro - Ingenieria Mecatronica",
     "parentInstitutionId": "uto-bolivia"
   },
   {
@@ -5481,10 +4515,5 @@
     "officialName": "Universidad del Valle de México - Campus Guadalajara Sur",
     "shortName": "Universidad del Valle de Mexico Campus Guadalajara Sur",
     "parentInstitutionId": "uvm"
-  },
-  {
-    "id": "uwi-st-augustine",
-    "officialName": "The University of the West Indies, St. Augustine Campus",
-    "shortName": "UWI-TTO"
   }
 ]

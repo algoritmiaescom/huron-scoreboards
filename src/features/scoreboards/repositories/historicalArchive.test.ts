@@ -9,6 +9,65 @@ const files = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.jso
 });
 
 describe('published historical archive', () => {
+  it('keeps only participating schools and required parents without excluding zero-score results', async () => {
+    const result = await createJsonScoreboardsRepository(files, 'archive').load();
+    if (result.status !== 'ready') {
+      throw new Error('Historical archive did not pass repository validation.');
+    }
+    const { schools, teams, contests, seasonStandings } = result.data;
+    const byTeam = new Map(teams.map((team) => [team.id, team]));
+    const bySchool = new Map(schools.map((school) => [school.id, school]));
+    const rows = [
+      ...contests.flatMap(({ standings }) => standings),
+      ...seasonStandings.flatMap(({ rows }) => rows),
+    ];
+    const participatingSchools = new Set(
+      rows
+        .map(({ teamId }) => byTeam.get(teamId)?.schoolId)
+        .filter((schoolId): schoolId is string => schoolId !== undefined && schoolId !== null),
+    );
+    const requiredSchools = new Set(participatingSchools);
+    for (const id of participatingSchools) {
+      let parent = bySchool.get(id)?.parentInstitutionId;
+      while (parent !== undefined) {
+        requiredSchools.add(parent);
+        parent = bySchool.get(parent)?.parentInstitutionId;
+      }
+    }
+    expect(participatingSchools.size).toBe(871);
+    expect(schools).toHaveLength(875);
+    expect(new Set(schools.map(({ id }) => id))).toEqual(requiredSchools);
+    expect(schools.filter(({ id }) => !participatingSchools.has(id)).map(({ id }) => id)).toEqual([
+      'ipn',
+      'itesm',
+      'unlp',
+      'up',
+    ]);
+    expect(teams).toHaveLength(17221);
+    for (const id of ['cujae', 'eafit', 'iteso-preparatoria']) {
+      expect(bySchool.has(id)).toBe(false);
+      expect(teams.some(({ schoolId }) => schoolId === id)).toBe(false);
+    }
+    for (const id of ['ifpb', 'it-cd-jimenez', 'itsav']) {
+      expect(participatingSchools.has(id)).toBe(true);
+    }
+    expect(
+      contests
+        .flatMap(({ standings }) => standings)
+        .some(
+          (row) => byTeam.get(row.teamId)?.schoolId === 'ifpb' && row.publishedTotals?.solved === 0,
+        ),
+    ).toBe(true);
+    expect(
+      seasonStandings
+        .flatMap(({ rows }) => rows)
+        .some(
+          (row) =>
+            byTeam.get(row.teamId)?.schoolId === 'source-school-254fc4ed9920' && row.score === 0,
+        ),
+    ).toBe(true);
+  });
+
   it('loads every recovered accumulated document and historical Finals through the repository boundary', async () => {
     const result = await createJsonScoreboardsRepository(files, 'archive').load();
     expect(result.status).toBe('ready');

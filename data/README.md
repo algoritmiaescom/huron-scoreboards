@@ -43,7 +43,18 @@ Contest files are organized under `data/seasons/<year>/`. School identities use 
 canonical records where supported by the source and review notes. Other non-empty source labels
 are preserved literally as separate school records rather than merged by guesswork; 95 teams have
 `schoolId: null` because their source did not identify an institution, and the scoreboard displays
-“Institución no identificada” for them. The school directory now contains 1,067 records.
+“Institución no identificada” for them. The school directory now contains 875 records.
+
+The directory excludes schools with no recorded team participation in either contest standings
+or accumulated standings. The cleanup removed 192 school records and their 843 unused team
+registrations. Presence in a published result is what counts: zero solved problems, zero
+accumulated points, unknown places and totals-only results still establish participation.
+All 12,374 contest rows and 4,800 accumulated rows are unchanged.
+
+Parents needed by participating units are retained recursively, even when no team competes under
+the parent directly (IPN, ITESM, UNLP and UP). Unused registrations belonging to retained schools
+are not removed; this is school-directory cleanup, not a blanket deletion of teams without results.
+Mock data is unchanged.
 
 The 2026 GPM archive contains qualifiers 1, 2 and 3 from ICPC Mexico: 601, 701 and 610 rows.
 The first two tables have confirmed published row counts and problem detail. The third publishes
@@ -67,9 +78,10 @@ The 2019–2025 Finals now use ScoreLATAM's Mexico-only groups rather than ICPC 
 LATAM-wide tables. Every selected source row explicitly identifies country `/MX` in User/Site.
 The published Mexico-group places are preserved, including ties; they are not invented ranks
 obtained by subtracting foreign teams from the previous archive. CCL classifications are separate
-and are not appended to the Mexico group. Existing team IDs, school assignments and registrations
-are retained, including registrations no longer appearing in these Finals; GPM results and mock
-data are unchanged. No country is guessed from a team name or assigned to an unidentified school.
+and are not appended to the Mexico group. Existing team IDs and school assignments are retained
+for participating schools; the subsequent zero-participation cleanup removes unused registrations
+only for removed schools. GPM results and mock data are unchanged. No country is guessed from
+a team name or assigned to an unidentified school.
 
 | Season | Previous Finals rows | Mexico-group rows | Source                                                            |
 | ------ | -------------------- | ----------------- | ----------------------------------------------------------------- |

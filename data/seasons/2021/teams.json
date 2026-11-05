@@ -4632,12 +4632,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0006-rating-miserable",
-    "name": "Rating Miserable",
-    "schoolId": "uni-fc-pe",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0007-summergimurne",
     "name": "Summergimurne?",
     "schoolId": "ufmg",
@@ -4683,12 +4677,6 @@
     "id": "2021-mexico-finals-final-row-0014-prim-floyd",
     "name": "Prim Floyd",
     "schoolId": "uba-fcen",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0015-graphtronco",
-    "name": "GraphTronCo",
-    "schoolId": "uni-fiis-pe",
     "seasonYear": 2021
   },
   {
@@ -4788,12 +4776,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0032-doscomunal",
-    "name": "doscomUNAL",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0033-radical-sweep",
     "name": "Radical Sweep",
     "schoolId": "itam",
@@ -4824,39 +4806,15 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0038-off-by-one-kenobi",
-    "name": "Off By One Kenobi",
-    "schoolId": "source-label-puc-e43e69c8d9",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0039-backtrack-or-feed",
-    "name": "Backtrack or Feed",
-    "schoolId": "uni-fc-pe",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0040-triada",
     "name": "TriAda",
     "schoolId": "uanl",
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0041-samuraisdeluwu",
-    "name": "SamuraisDelUwu",
-    "schoolId": "utec-peru",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0042-freestyle",
     "name": "FreesTyle",
     "schoolId": "uci-cuba",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0043-valknut",
-    "name": "VALKNUT",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
     "seasonYear": 2021
   },
   {
@@ -4875,12 +4833,6 @@
     "id": "2021-mexico-finals-final-row-0046-owo",
     "name": "OWO",
     "schoolId": "ug-cimat",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0047-team3c-1",
-    "name": "Team3C-1",
-    "schoolId": "source-label-mined-8f5e47628c",
     "seasonYear": 2021
   },
   {
@@ -4920,12 +4872,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0054-tsunami",
-    "name": "tsUNami",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0055-saideira",
     "name": "Saideira",
     "schoolId": "ufu",
@@ -4941,12 +4887,6 @@
     "id": "2021-mexico-finals-final-row-0057-nullptr",
     "name": "!nullptr",
     "schoolId": "uaslp",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0058-javandres",
-    "name": "javANDrES",
-    "schoolId": "source-label-uniandes-9ef0f0f29f",
     "seasonYear": 2021
   },
   {
@@ -4977,12 +4917,6 @@
     "id": "2021-mexico-finals-final-row-0063-uerjljv",
     "name": "UERJLJV",
     "schoolId": "uerj",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0064-adhockers",
-    "name": "Adhockers",
-    "schoolId": "uni-fiis-pe",
     "seasonYear": 2021
   },
   {
@@ -5028,21 +4962,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0072-internalzervererror",
-    "name": "InternalZerverError",
-    "schoolId": "pucp",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0073-2-matematicos-e-2-flamenguistas",
     "name": "2 matemáticos e 2 flamenguistas",
     "schoolId": "ifpb-joao-pessoa",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0074-pablo",
-    "name": "Pablo",
-    "schoolId": "source-label-puc-e43e69c8d9",
     "seasonYear": 2021
   },
   {
@@ -5070,12 +4992,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0079-seeking-for-glory-unal",
-    "name": "Seeking for Glory UNAL",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0080-tres-caras-numa-moto",
     "name": "Três caras numa moto",
     "schoolId": "ufpi",
@@ -5094,12 +5010,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0083-3blue3brown",
-    "name": "3blue3brown",
-    "schoolId": "utec-peru",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0084-udec-2",
     "name": "UdeC 2",
     "schoolId": "source-label-udec-06a1d4f639",
@@ -5112,33 +5022,15 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0086-wewere7here",
-    "name": "WeWere7here",
-    "schoolId": "icesi",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0087-a-query-ta-o-n-de-novo",
     "name": "A query tá O(n) DE NOVO",
     "schoolId": "ufal",
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0088-jump-forces",
-    "name": "Jump Forces",
-    "schoolId": "poli-co",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0089-uh-alpha",
     "name": "UH-Alpha",
     "schoolId": "uh",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0090-arrempujados",
-    "name": "ArremPUJados",
-    "schoolId": "puj-bogota",
     "seasonYear": 2021
   },
   {
@@ -5220,12 +5112,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0104-rojo-ofmi-guanajuato",
-    "name": "Rojo (OFMI Guanajuato)",
-    "schoolId": "source-label-ofmi-ddfd501221",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0105-mobius",
     "name": "++Mobius",
     "schoolId": "ucr-costa-rica",
@@ -5304,21 +5190,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0118-utp-unusual-programers",
-    "name": "UTP - Unusual Programers",
-    "schoolId": "source-label-utp-f8d556ed41",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0119-como-assim-a-maratona-e-hoje",
     "name": "Como assim a maratona é hoje?",
     "schoolId": "ifnmg",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0120-the-beats-boys",
-    "name": "The Beats Boys",
-    "schoolId": "unsaac",
     "seasonYear": 2021
   },
   {
@@ -5370,18 +5244,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0129-byte-me",
-    "name": "Byte Me",
-    "schoolId": "eafit",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0130-everything-is-binary-search",
-    "name": "Everything Is Binary Search",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0131-nova",
     "name": "Nova",
     "schoolId": "source-label-ucb-c2b4b7f319",
@@ -5406,21 +5268,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0135-slower-and-fourier",
-    "name": "Slower and Fourier",
-    "schoolId": "eafit",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0136-unesplrm",
     "name": "UnespLRM",
     "schoolId": "unesp-bauru",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0137-unleashed",
-    "name": "UNleashed",
-    "schoolId": "unal-medellin",
     "seasonYear": 2021
   },
   {
@@ -5433,12 +5283,6 @@
     "id": "2021-mexico-finals-final-row-0139-acmamo",
     "name": "ACMamo",
     "schoolId": "udg-cutonala",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0140-unos-estudiantes",
-    "name": "UNos_estudiantes",
-    "schoolId": "unal-medellin",
     "seasonYear": 2021
   },
   {
@@ -5472,24 +5316,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0146-lionelmessi",
-    "name": "LionElMessi",
-    "schoolId": "pucp",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0147-jjm",
-    "name": "JJM",
-    "schoolId": "icesi",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0148-big-queue",
-    "name": "Big Queue",
-    "schoolId": "puj-cali",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0149-antes-tarde-do-que-tle",
     "name": "Antes tarde do que TLE",
     "schoolId": "utfpr-toledo",
@@ -5508,45 +5334,15 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0152-optimus",
-    "name": "optimus",
-    "schoolId": "pucmm-santiago",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0153-too-lazy-to-propagate",
     "name": "Too lazy to propagate",
     "schoolId": "itsur",
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0154-codebreaker",
-    "name": "CodeBreaker();",
-    "schoolId": "uniamazonia-co",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0155-javamos-de-wa",
     "name": "Javamos de WA",
     "schoolId": "ccl",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0156-tomatunalgada",
-    "name": "tomatUNALgada",
-    "schoolId": "unal-bogota",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0157-gdc",
-    "name": "GDC",
-    "schoolId": "icesi",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0158-alphacode",
-    "name": "AlphaCode",
-    "schoolId": "eafit",
     "seasonYear": 2021
   },
   {
@@ -5616,12 +5412,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0170-no-wa-no-accepted",
-    "name": "No WA No Accepted",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0171-utmiitas",
     "name": "UTMiitas",
     "schoolId": "source-label-utm-1e14cd101c",
@@ -5670,12 +5460,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0179-un-nombre-bueno",
-    "name": "un nombre bueno",
-    "schoolId": "source-label-puc-e43e69c8d9",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0180-doitforchalo",
     "name": "DoItForChalo",
     "schoolId": "utfsm",
@@ -5688,57 +5472,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0182-nscc",
-    "name": "NSCC",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0183-drk",
-    "name": "DRK",
-    "schoolId": "source-label-uc-93bb321984",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0184-stacks-duracell",
-    "name": "Stacks Duracell",
-    "schoolId": "puj-cali",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0185-skyscraper",
-    "name": "Skyscraper",
-    "schoolId": "source-label-uc-93bb321984",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0186-magikarp",
-    "name": "MagiKarp",
-    "schoolId": "konrad-lorenz",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0187-mefistofelicos",
     "name": "Mefistofélicos",
     "schoolId": "uto-bolivia",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0188-azul-ofmi-nacional",
-    "name": "Azul (OFMI Nacional)",
-    "schoolId": "source-label-ofmi-ddfd501221",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0189-ya-no-estamos-pa-estos-trotes",
-    "name": "ya no estamos pa estos trotes",
-    "schoolId": "ufps-cucuta",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0190-hamawt-a",
-    "name": "HAMAWT'A",
-    "schoolId": "ulima",
     "seasonYear": 2021
   },
   {
@@ -5766,27 +5502,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0195-poli-2",
-    "name": "Poli-2",
-    "schoolId": "poli-co",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0196-los-tres-paleteros",
     "name": "Los Tres Paleteros",
     "schoolId": "uanl",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0197-c",
-    "name": "C--",
-    "schoolId": "uho",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0198-errorbynight",
-    "name": "ErrorByNight",
-    "schoolId": "eafit",
     "seasonYear": 2021
   },
   {
@@ -5814,27 +5532,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0203-dos-programadores",
-    "name": "Dos programadores",
-    "schoolId": "itm-medellin",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0204-outofherenfact",
-    "name": "OutOfHereNFact",
-    "schoolId": "unal-medellin",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0205-algoteam",
     "name": "AlgoTeam",
     "schoolId": "uacj",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0206-utp-neocode-generation",
-    "name": "UTP - NeoCode Generation",
-    "schoolId": "source-label-utp-f8d556ed41",
     "seasonYear": 2021
   },
   {
@@ -5865,12 +5565,6 @@
     "id": "2021-mexico-finals-final-row-0211-we-re-here-for-the-prizes",
     "name": "We're here for the prizes",
     "schoolId": "intec-rd",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0212-aida-lite",
-    "name": "AIDA-lite",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
     "seasonYear": 2021
   },
   {
@@ -5946,12 +5640,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0225-alt-f4",
-    "name": "Alt+F4",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0226-sudo-programmers",
     "name": "Sudo Programmers",
     "schoolId": "uaz",
@@ -5961,12 +5649,6 @@
     "id": "2021-mexico-finals-final-row-0227-titanes-programadores",
     "name": "TITANES PROGRAMADORES",
     "schoolId": "emi-bolivia",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0228-unalike",
-    "name": "UNALike",
-    "schoolId": "unal-medellin",
     "seasonYear": 2021
   },
   {
@@ -6024,12 +5706,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0238-cthulhu",
-    "name": "Cthulhu",
-    "schoolId": "source-label-uo-sam-d9f38cc3ec",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0239-cumbia-coders",
     "name": "Cumbia Coders",
     "schoolId": "source-label-ucb-c2b4b7f319",
@@ -6048,33 +5724,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0242-frito-con-salami",
-    "name": "Frito con Salami",
-    "schoolId": "pucmm-csd",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0243-frostmourn",
     "name": "Frostmourn",
     "schoolId": "uci-cuba",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0244-h7",
-    "name": "H7++",
-    "schoolId": "source-label-mined-8f5e47628c",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0245-highhopes",
-    "name": "HighHopes",
-    "schoolId": "source-label-uc-93bb321984",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0246-jrm",
-    "name": "JRM",
-    "schoolId": "instec",
     "seasonYear": 2021
   },
   {
@@ -6096,12 +5748,6 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0250-madcoders",
-    "name": "MadCoders",
-    "schoolId": "source-label-ucp-6db36b7b77",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0251-masterdevteam",
     "name": "MasterDevTeam",
     "schoolId": "source-label-tec-4e03be678c",
@@ -6114,27 +5760,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0253-mob-mobius",
-    "name": "Mob Möbius",
-    "schoolId": "eafit",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0254-no-coffee-no-life",
     "name": "No Coffee No Life",
     "schoolId": "ufpi-picos",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0255-piratas-de-la-noche",
-    "name": "Piratas de la noche",
-    "schoolId": "pucmm-csd",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0256-programming-teachers",
-    "name": "Programming teachers",
-    "schoolId": "source-label-uclv-cp-0bfe3181f2",
     "seasonYear": 2021
   },
   {
@@ -6150,39 +5778,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0259-sarscode",
-    "name": "SarsCode",
-    "schoolId": "upb-bucaramanga",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0260-segmenteam",
-    "name": "SegmenTeam",
-    "schoolId": "utec-peru",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0261-sin-conexion",
-    "name": "Sin conexión",
-    "schoolId": "unsaac",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0262-sportgusto",
-    "name": "SportGusto",
-    "schoolId": "source-label-unsa-ea66aac76d",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0263-temp00",
     "name": "Temp00",
     "schoolId": "uca-el-salvador",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0264-the-slowers",
-    "name": "The Slowers",
-    "schoolId": "unal-medellin",
     "seasonYear": 2021
   },
   {
@@ -6192,51 +5790,9 @@
     "seasonYear": 2021
   },
   {
-    "id": "2021-mexico-finals-final-row-0266-upr-3",
-    "name": "UPR-3",
-    "schoolId": "upr-pr",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0267-update-attachment",
-    "name": "Update Attachment",
-    "schoolId": "uniamazonia-co",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0268-wr",
-    "name": "WR",
-    "schoolId": "ucne",
-    "seasonYear": 2021
-  },
-  {
     "id": "2021-mexico-finals-final-row-0269-wajakos",
     "name": "Wajakos",
     "schoolId": "uach-chihuahua",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0270-xrd",
-    "name": "XRD",
-    "schoolId": "source-label-um-d3cd680850",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0271-icompila",
-    "name": "iCompila",
-    "schoolId": "source-label-um-d3cd680850",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0272-ijava",
-    "name": "iJava",
-    "schoolId": "source-label-um-d3cd680850",
-    "seasonYear": 2021
-  },
-  {
-    "id": "2021-mexico-finals-final-row-0273-ipvce-am",
-    "name": "ipvce_am",
-    "schoolId": "source-label-mined-8f5e47628c",
     "seasonYear": 2021
   },
   {
