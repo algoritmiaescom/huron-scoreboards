@@ -78,6 +78,31 @@ test('uses the real archive in production and exposes current institution naviga
   );
 });
 
+test('renders reviewed official logo and favicon sources in production school history', async ({
+  page,
+}) => {
+  for (const [id, name, logo] of [
+    ['ipn-escom', 'Escuela Superior de Cómputo', 'https://www.escom.ipn.mx/images/logoESCOM2x.png'],
+    [
+      'uaslp',
+      'Universidad Autónoma de San Luis Potosí (UASLP)',
+      'https://www.uaslp.mx/Images/favicon.png',
+    ],
+  ]) {
+    await page.route(logo, (route) =>
+      route.fulfill({ path: 'public/brand/icpc-mexico.png', contentType: 'image/png' }),
+    );
+    await page.goto(`./#/schools/${id}`);
+    const image = page.getByRole('img', { name: `Logo de ${name}`, exact: true });
+    await expect(image).toHaveAttribute('src', logo);
+    await expect
+      .poll(() =>
+        image.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0),
+      )
+      .toBe(true);
+  }
+});
+
 test('shows one BUAP university and its distinct FCC unit in the published archive', async ({
   page,
 }) => {

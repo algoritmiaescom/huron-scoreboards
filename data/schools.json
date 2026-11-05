@@ -12,7 +12,8 @@
   {
     "id": "buap",
     "officialName": "Benemérita Universidad Autónoma de Puebla",
-    "shortName": "BUAP"
+    "shortName": "BUAP",
+    "logo": "https://www.buap.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "buap-fcc",
@@ -478,13 +479,15 @@
     "id": "ipn-escom",
     "officialName": "Escuela Superior de Cómputo",
     "shortName": "ESCOM IPN",
-    "parentInstitutionId": "ipn"
+    "parentInstitutionId": "ipn",
+    "logo": "https://www.escom.ipn.mx/images/logoESCOM2x.png"
   },
   {
     "id": "ipn-esfm",
     "officialName": "Escuela Superior de Física y Matemáticas",
     "shortName": "ESFM IPN",
-    "parentInstitutionId": "ipn"
+    "parentInstitutionId": "ipn",
+    "logo": "https://www.esfm.ipn.mx/assets/files/esfm/img/identidad/escudo-esfm.png"
   },
   {
     "id": "ipn-esime-azcapotzalco",
@@ -548,7 +551,8 @@
   {
     "id": "it-oaxaca",
     "officialName": "Instituto Tecnológico de Oaxaca",
-    "shortName": "ITO"
+    "shortName": "ITO",
+    "logo": "https://www.oaxaca.tecnm.mx/wp-content/uploads/2025/08/logo_cliente.png"
   },
   {
     "id": "it-orizaba",
@@ -568,7 +572,8 @@
   {
     "id": "it-saltillo",
     "officialName": "Instituto Tecnológico de Saltillo",
-    "shortName": "Tec Saltillo"
+    "shortName": "Tec Saltillo",
+    "logo": "https://saltillo.tecnm.mx/images/its-alt-logo.png"
   },
   {
     "id": "it-veracruz",
@@ -629,7 +634,8 @@
     "id": "itesm-cem",
     "officialName": "Tecnológico de Monterrey, Campus Estado de México",
     "shortName": "ITESM CEM",
-    "parentInstitutionId": "itesm"
+    "parentInstitutionId": "itesm",
+    "logo": "https://tec.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "itesm-central-veracruz",
@@ -665,7 +671,8 @@
     "id": "itesm-monterrey",
     "officialName": "Tecnológico de Monterrey, Campus Monterrey",
     "shortName": "ITESM Monterrey",
-    "parentInstitutionId": "itesm"
+    "parentInstitutionId": "itesm",
+    "logo": "https://tec.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "itesm-morelia",
@@ -700,7 +707,8 @@
   {
     "id": "iteso",
     "officialName": "Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO)",
-    "shortName": "ITESO"
+    "shortName": "ITESO",
+    "logo": "https://iteso.mx/documents/123/0/logo-ITESO.svg/b45726c2-dc08-87b7-8190-3983f01b229b?t=1636494360921"
   },
   {
     "id": "iteso-preparatoria",
@@ -1271,12 +1279,14 @@
   {
     "id": "source-label-iteshu-092c0c8052",
     "officialName": "ITESHU",
-    "shortName": "ITESHU"
+    "shortName": "ITESHU",
+    "logo": "https://www.iteshu.edu.mx/iteshu/images/header/iteshu_r_rgb.png"
   },
   {
     "id": "source-label-iteso-university-f66d759f69",
     "officialName": "ITESO University",
-    "shortName": "ITESO University"
+    "shortName": "ITESO University",
+    "logo": "https://iteso.mx/documents/123/0/logo-ITESO.svg/b45726c2-dc08-87b7-8190-3983f01b229b?t=1636494360921"
   },
   {
     "id": "source-label-itess-67f1abda56",
@@ -2106,7 +2116,8 @@
   {
     "id": "source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9",
     "officialName": "Universidad Autónoma de San Luis Potosi",
-    "shortName": "Universidad Autónoma de San Luis Potosi"
+    "shortName": "Universidad Autónoma de San Luis Potosi",
+    "logo": "https://www.uaslp.mx/Images/favicon.png"
   },
   {
     "id": "source-label-universidad-autonoma-de-sinaloa-0a5a019280",
@@ -3506,7 +3517,8 @@
   {
     "id": "source-school-d172e86ae35a",
     "officialName": "Instituto Tecnológico de Costa Rica campus Alajuela",
-    "shortName": "Instituto Tecnológico de Costa Rica campus Alajuela"
+    "shortName": "Instituto Tecnológico de Costa Rica campus Alajuela",
+    "logo": "https://www.tec.ac.cr/themes/custom/tecnologico/favicon.ico"
   },
   {
     "id": "source-school-d22414b1cca8",
@@ -3778,7 +3790,8 @@
     "id": "tec-ciudad-de-mexico",
     "officialName": "Tecnológico de Monterrey, Campus Ciudad de México",
     "shortName": "ITESM CCM",
-    "parentInstitutionId": "itesm"
+    "parentInstitutionId": "itesm",
+    "logo": "https://tec.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "tec-costa-rica",
@@ -3789,7 +3802,8 @@
     "id": "tec-costa-rica-alajuela",
     "officialName": "Instituto Tecnológico de Costa Rica, Campus Alajuela",
     "shortName": "Instituto Tecnológico de Costa Rica campus Alajuela",
-    "parentInstitutionId": "tec-costa-rica"
+    "parentInstitutionId": "tec-costa-rica",
+    "logo": "https://www.tec.ac.cr/themes/custom/tecnologico/favicon.ico"
   },
   {
     "id": "tec-costa-rica-limon",
@@ -3801,7 +3815,8 @@
     "id": "tec-guadalajara",
     "officialName": "Tecnológico de Monterrey, Campus Guadalajara",
     "shortName": "ITESM GDA",
-    "parentInstitutionId": "itesm"
+    "parentInstitutionId": "itesm",
+    "logo": "https://tec.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "tec-monterrey-toluca",
@@ -3813,13 +3828,15 @@
     "id": "tec-puebla",
     "officialName": "Tecnológico de Monterrey, Campus Puebla",
     "shortName": "ITESM Puebla",
-    "parentInstitutionId": "itesm"
+    "parentInstitutionId": "itesm",
+    "logo": "https://tec.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "tec-queretaro",
     "officialName": "Tecnológico de Monterrey, Campus Querétaro",
     "shortName": "ITESM Querétaro",
-    "parentInstitutionId": "itesm"
+    "parentInstitutionId": "itesm",
+    "logo": "https://tec.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "tec-santa-fe",
@@ -3846,17 +3863,20 @@
   {
     "id": "tecnm-cancun",
     "officialName": "Instituto Tecnológico de Cancún (TecNM Campus Cancún)",
-    "shortName": "ITCancún"
+    "shortName": "ITCancún",
+    "logo": "https://www.cancun.tecnm.mx/wp-content/themes/TemaITC25V2.1/recursos/logos/ITC.png"
   },
   {
     "id": "tecnm-culiacan",
     "officialName": "Instituto Tecnológico de Culiacán",
-    "shortName": "IT Culiacan"
+    "shortName": "IT Culiacan",
+    "logo": "https://www.culiacan.tecnm.mx/wp-content/uploads/2026/05/logo-itc-1.svg"
   },
   {
     "id": "tecnm-its-lerdo",
     "officialName": "Instituto Tecnológico Superior de Lerdo",
-    "shortName": "ITS Lerdo"
+    "shortName": "ITS Lerdo",
+    "logo": "https://www.lerdo.tecnm.mx/templates/tec19/images/logo_itsl.png"
   },
   {
     "id": "tecnm-lazaro-cardenas",
@@ -3866,7 +3886,8 @@
   {
     "id": "tecnm-leon",
     "officialName": "Instituto Tecnológico de León (TecNM Campus León)",
-    "shortName": "ITL"
+    "shortName": "ITL",
+    "logo": "https://leon.tecnm.mx/wp-content/themes/twentysixteen/img/logo_itl.png"
   },
   {
     "id": "tecnm-parral",
@@ -3881,7 +3902,8 @@
   {
     "id": "tecnm-salvatierra",
     "officialName": "Instituto Tecnológico Superior de Salvatierra",
-    "shortName": "Instituto Tecnológico Superior de Salvatierra"
+    "shortName": "Instituto Tecnológico Superior de Salvatierra",
+    "logo": "https://salvatierra.tecnm.mx/img/logos/logo_itess.png"
   },
   {
     "id": "tecnm-san-andres-tuxtla",
@@ -3901,7 +3923,8 @@
   {
     "id": "uaa-aguascalientes",
     "officialName": "Universidad Autónoma de Aguascalientes",
-    "shortName": "UAA"
+    "shortName": "UAA",
+    "logo": "https://www.uaa.mx/portal/wp-content/themes/UAAV2/assets/index/logo-nombre-lateral.jpg"
   },
   {
     "id": "uabc",
@@ -3911,12 +3934,14 @@
   {
     "id": "uach-chihuahua",
     "officialName": "Universidad Autónoma de Chihuahua",
-    "shortName": "UACH"
+    "shortName": "UACH",
+    "logo": "https://uach.mx/assets/media/snippet/62/escudo-web-header-black.svg"
   },
   {
     "id": "uacj",
     "officialName": "Universidad Autónoma de Ciudad Juárez",
-    "shortName": "UACJ"
+    "shortName": "UACJ",
+    "logo": "https://www.uacj.mx/images/escudo.png"
   },
   {
     "id": "uade",
@@ -3926,7 +3951,8 @@
   {
     "id": "uady",
     "officialName": "Universidad Autónoma de Yucatán",
-    "shortName": "Universidad Autónoma de Yucatán"
+    "shortName": "Universidad Autónoma de Yucatán",
+    "logo": "https://uady.mx/favicon.ico"
   },
   {
     "id": "uady-fmat",
@@ -3943,7 +3969,8 @@
   {
     "id": "uaeh",
     "officialName": "Universidad Autónoma del Estado de Hidalgo",
-    "shortName": "Universidad Autónoma del Estado de Hidalgo"
+    "shortName": "Universidad Autónoma del Estado de Hidalgo",
+    "logo": "https://www.uaeh.edu.mx/favicon.ico"
   },
   {
     "id": "uagrm",
@@ -3979,7 +4006,8 @@
   {
     "id": "uanl",
     "officialName": "Universidad Autónoma de Nuevo León",
-    "shortName": "UANL"
+    "shortName": "UANL",
+    "logo": "https://www.uanl.mx/wp-content/uploads/2018/04/uanl.png"
   },
   {
     "id": "uao-colombia",
@@ -4005,12 +4033,14 @@
   {
     "id": "uaslp",
     "officialName": "Universidad Autónoma de San Luis Potosí (UASLP)",
-    "shortName": "UASLP"
+    "shortName": "UASLP",
+    "logo": "https://www.uaslp.mx/Images/favicon.png"
   },
   {
     "id": "uat",
     "officialName": "Universidad Autónoma de Tamaulipas",
-    "shortName": "UAT"
+    "shortName": "UAT",
+    "logo": "https://miscodigos.uat.edu.mx/assets/Global/Portal-UAT/favicon.ico"
   },
   {
     "id": "uatf",
@@ -4026,7 +4056,8 @@
   {
     "id": "uaz",
     "officialName": "Universidad Autónoma de Zacatecas (UAZ)",
-    "shortName": "UAZ"
+    "shortName": "UAZ",
+    "logo": "https://www.uaz.edu.mx/wp-content/uploads/2025/11/faviconUAZ.png"
   },
   {
     "id": "uba",
@@ -4041,7 +4072,8 @@
   {
     "id": "uca-el-salvador",
     "officialName": "Universidad Centroamericana José Simeón Cañas",
-    "shortName": "UCA"
+    "shortName": "UCA",
+    "logo": "https://uca.edu.sv/wp-content/themes/kubo/images/logo-uca.png"
   },
   {
     "id": "ucab-venezuela",
@@ -4172,7 +4204,8 @@
   {
     "id": "udem-monterrey",
     "officialName": "Universidad de Monterrey",
-    "shortName": "UDEM"
+    "shortName": "UDEM",
+    "logo": "https://www.udem.edu.mx/themes/custom/udm/apple-touch-icon.png"
   },
   {
     "id": "udesa",
@@ -4193,13 +4226,15 @@
     "id": "udg-cucei",
     "officialName": "Centro Universitario de Ciencias Exactas e Ingenierías",
     "shortName": "UdG CUCEI",
-    "parentInstitutionId": "udg"
+    "parentInstitutionId": "udg",
+    "logo": "https://www.cucei.udg.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "udg-cucosta",
     "officialName": "Centro Universitario de la Costa",
     "shortName": "UdG CUCOSTA",
-    "parentInstitutionId": "udg"
+    "parentInstitutionId": "udg",
+    "logo": "https://www.cuc.udg.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "udg-cusur",
@@ -4211,7 +4246,8 @@
     "id": "udg-cutonala",
     "officialName": "Centro Universitario de Tonalá",
     "shortName": "Universidad de Guadalajara CUTONALA",
-    "parentInstitutionId": "udg"
+    "parentInstitutionId": "udg",
+    "logo": "https://cutonala.udg.mx/sites/default/files/favicon.ico"
   },
   {
     "id": "udg-cuvalles",
@@ -4692,19 +4728,22 @@
     "id": "unam-enes-morelia",
     "officialName": "Escuela Nacional de Estudios Superiores (ENES), Unidad Morelia",
     "shortName": "ENES Morelia UNAM",
-    "parentInstitutionId": "unam"
+    "parentInstitutionId": "unam",
+    "logo": "https://www.enesmorelia.unam.mx/wp-content/themes/ENESTHEME/theme_assets/images_enes/favicon.png"
   },
   {
     "id": "unam-fciencias",
     "officialName": "Facultad de Ciencias",
     "shortName": "FC UNAM",
-    "parentInstitutionId": "unam"
+    "parentInstitutionId": "unam",
+    "logo": "https://www.fciencias.unam.mx/sites/default/files/logoFC_3.png"
   },
   {
     "id": "unam-fes-acatlan",
     "officialName": "Facultad de Estudios Superiores Acatlán",
     "shortName": "FES Acatlán UNAM",
-    "parentInstitutionId": "unam"
+    "parentInstitutionId": "unam",
+    "logo": "https://www.acatlan.unam.mx/img/icons/icon.png"
   },
   {
     "id": "unam-fes-cuautitlan",
@@ -4716,7 +4755,8 @@
     "id": "unam-fi",
     "officialName": "Facultad de Ingeniería, Universidad Nacional Autónoma de México",
     "shortName": "FI UNAM",
-    "parentInstitutionId": "unam"
+    "parentInstitutionId": "unam",
+    "logo": "https://www.ingenieria.unam.mx/images/escudo_color.png"
   },
   {
     "id": "unam-iimas",
@@ -5092,7 +5132,8 @@
     "id": "up-aguascalientes",
     "officialName": "Universidad Panamericana, Campus Aguascalientes",
     "shortName": "UP Bonaterra",
-    "parentInstitutionId": "up"
+    "parentInstitutionId": "up",
+    "logo": "https://www.up.edu.mx/wp-content/themes/panamericana/img/logo-universidad-panamericana.png"
   },
   {
     "id": "up-ciudad-de-mexico",
@@ -5104,12 +5145,14 @@
     "id": "up-guadalajara",
     "officialName": "Universidad Panamericana, Campus Guadalajara",
     "shortName": "UP Guadalajara",
-    "parentInstitutionId": "up"
+    "parentInstitutionId": "up",
+    "logo": "https://www.up.edu.mx/wp-content/themes/panamericana/img/logo-universidad-panamericana.png"
   },
   {
     "id": "upaep",
     "officialName": "Universidad Popular Autónoma del Estado de Puebla",
-    "shortName": "UPAEP"
+    "shortName": "UPAEP",
+    "logo": "https://upaep.mx/images/upaep/Logo_UPAEP.svg"
   },
   {
     "id": "upalt",
@@ -5220,7 +5263,8 @@
   {
     "id": "url-guatemala",
     "officialName": "Universidad Rafael Landívar",
-    "shortName": "Universidad Rafael Landívar"
+    "shortName": "Universidad Rafael Landívar",
+    "logo": "https://principal.url.edu.gt/wp-content/uploads/2025/07/URL_LOGO.svg"
   },
   {
     "id": "url-rafael-landivar",
@@ -5424,7 +5468,8 @@
   {
     "id": "uvg-guatemala",
     "officialName": "Universidad del Valle de Guatemala",
-    "shortName": "Universidad del Valle de Guatemala"
+    "shortName": "Universidad del Valle de Guatemala",
+    "logo": "https://www.uvg.edu.gt/wp-content/uploads/favico2.png"
   },
   {
     "id": "uvm",

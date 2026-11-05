@@ -15,7 +15,22 @@ describe('published historical archive', () => {
     if (result.status !== 'ready') {
       throw new Error('Historical archive did not pass repository validation.');
     }
-    const { contests, seasonStandings, teams } = result.data;
+    const { contests, seasonStandings, teams, schools } = result.data;
+    const branded = schools.filter(({ logo }) => logo !== undefined);
+    expect(branded).toHaveLength(45);
+    expect(branded.every(({ logo }) => logo?.startsWith('https://'))).toBe(true);
+    for (const id of ['itl', 'itsur', 'itnl', 'ug-cimat', 'ccl']) {
+      expect(schools.find((school) => school.id === id)?.logo).toBeUndefined();
+    }
+    for (const [canonical, alias] of [
+      ['iteso', 'source-label-iteso-university-f66d759f69'],
+      ['uaslp', 'source-label-universidad-autonoma-de-san-luis-potosi-90a8e47bc9'],
+      ['tec-costa-rica-alajuela', 'source-school-d172e86ae35a'],
+    ]) {
+      expect(schools.find(({ id }) => id === canonical)?.logo).toBe(
+        schools.find(({ id }) => id === alias)?.logo,
+      );
+    }
     expect(contests).toHaveLength(34);
     expect(contests.reduce((sum, contest) => sum + contest.standings.length, 0)).toBe(12374);
     const qualifiers = contests.filter(({ seasonYear }) => seasonYear === 2026);

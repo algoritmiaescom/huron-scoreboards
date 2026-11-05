@@ -162,6 +162,7 @@ describe('runtime repositories', () => {
       officialName: 'Centro Universitario de Ciencias Exactas e Ingenierías',
       shortName: 'UdG CUCEI',
       parentInstitutionId: 'udg',
+      logo: 'https://www.cucei.udg.mx/sites/default/files/favicon.ico',
     });
     for (const id of [
       'source-label-udg-cucei-86b0833dc5',
@@ -394,6 +395,7 @@ describe('runtime repositories', () => {
       officialName: 'Escuela Superior de Cómputo',
       shortName: 'ESCOM IPN',
       parentInstitutionId: 'ipn',
+      logo: 'https://www.escom.ipn.mx/images/logoESCOM2x.png',
     });
     for (const id of [
       'source-label-escuela-superior-de-computo-instituto-politecnico-nacional-3ab1b04bc8',
@@ -442,6 +444,7 @@ describe('runtime repositories', () => {
         id: 'buap',
         officialName: 'Benemérita Universidad Autónoma de Puebla',
         shortName: 'BUAP',
+        logo: 'https://www.buap.mx/sites/default/files/favicon.ico',
       },
       {
         id: 'buap-fcc',
