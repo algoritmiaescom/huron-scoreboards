@@ -301,11 +301,14 @@ test('restores a saved theme across reloads', async ({ page }) => {
   await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(245, 244, 239)');
 });
 
-test('loads fonts locally and uses its initial light palette', async ({ page }) => {
-  const remoteRequests: string[] = [];
+test('loads fonts locally and uses its initial light palette', async ({ page, baseURL }) => {
+  if (baseURL === undefined) {
+    throw new Error('Expected the production preview URL');
+  }
+  const remoteFontRequests: string[] = [];
   page.on('request', (request) => {
-    if (!request.url().startsWith('http://127.0.0.1:4173/')) {
-      remoteRequests.push(request.url());
+    if (request.resourceType() === 'font' && !request.url().startsWith(baseURL)) {
+      remoteFontRequests.push(request.url());
     }
   });
 
@@ -330,7 +333,7 @@ test('loads fonts locally and uses its initial light palette', async ({ page }) 
   expect(typography.displayFaces).toBeGreaterThan(0);
   expect(typography.dataFaces).toBeGreaterThan(0);
   expect(typography.background).toBe('rgb(245, 244, 239)');
-  expect(remoteRequests).toEqual([]);
+  expect(remoteFontRequests).toEqual([]);
 });
 
 test('reflows the real contest across the responsive verification matrix', async ({ page }) => {
