@@ -1,6 +1,8 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
+import finalsEvent from '../data/media/events/2026-mexico-finals.json' with { type: 'json' };
+
 test('navigates the complete page, restores its theme, and recovers unknown routes', async ({
   page,
 }) => {
@@ -98,7 +100,7 @@ test('shows all curated social posts with complete galleries and original links 
     route.fulfill({ path: 'public/brand/icpc-mexico.png', contentType: 'image/png' }),
   );
   await page.goto('./#/media?event=2026-mexico-finals');
-  await expect(page.getByRole('article')).toHaveCount(32);
+  await expect(page.getByRole('article')).toHaveCount(finalsEvent.event.postIds.length);
   const reel = page.getByRole('article').filter({
     has: page.getByRole('heading', { name: 'Reel: convocatoria a la Final Mexicana 2026' }),
   });
@@ -139,7 +141,7 @@ test('shows all curated social posts with complete galleries and original links 
   });
   await expect(lastGallery.getByText('1 / 6', { exact: true })).toBeVisible();
   await page.reload();
-  await expect(page.getByRole('article')).toHaveCount(32);
+  await expect(page.getByRole('article')).toHaveCount(finalsEvent.event.postIds.length);
 });
 
 for (const mode of ['light', 'dark'] as const) {

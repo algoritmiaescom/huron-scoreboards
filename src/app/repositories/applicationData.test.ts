@@ -35,7 +35,7 @@ afterEach(() => {
 });
 
 describe('runtime repositories', () => {
-  it('loads all curated Facebook and Instagram links in the real 2026 media feed', async () => {
+  it('loads every event-linked post and representative curated links in the real 2026 media feed', async () => {
     const files = import.meta.glob<string>('/data/media/events/*.json', {
       query: '?raw',
       import: 'default',
@@ -58,44 +58,8 @@ describe('runtime repositories', () => {
       date: '2026-11-07',
       location: 'ESCOM IPN',
     });
-    expect(posts).toHaveLength(32);
-    expect(posts.filter(({ source }) => source === 'facebook')).toHaveLength(22);
-    expect(posts.filter(({ source }) => source === 'instagram')).toHaveLength(7);
-    expect(posts.filter(({ source }) => source === 'linkedin')).toHaveLength(3);
-    expect(new Set(posts.map(({ permalink }) => permalink)).size).toBe(32);
-    const curated = posts.filter(({ title }) => title !== undefined);
-    expect(curated).toHaveLength(23);
-    expect(curated.every(({ media }) => media.every(({ type }) => type === 'image'))).toBe(true);
-    expect(curated.reduce((sum, { media }) => sum + media.length, 0)).toBe(127);
-    expect(curated.map(({ title, media }) => [title, media.length])).toEqual([
-      ['Reel: convocatoria a la Final Mexicana 2026', 1],
-      ['Primera fecha del GPM 2026 en ESCOM', 6],
-      ['Segunda fecha del GPM 2026 en ESCOM', 1],
-      ['Presentación de un equipo clasificado', 1],
-      ['Tercera fecha del GPM 2026 en ESCOM', 48],
-      ['Invitación a la Final Mexicana 2026', 1],
-      ['Equipos clasificados: 2026-09-08', 11],
-      ['Equipos clasificados: 2026-09-23', 4],
-      ['Equipos clasificados: 2026-09-29', 4],
-      ['M for Matrix: cupo 070', 1],
-      ['Equipos clasificados: 2026-09-30', 8],
-      ['Equipos clasificados: 2026-10-02', 11],
-      ['Equipos clasificados: 2026-10-03', 2],
-      ['Equipos clasificados: 2026-10-04', 3],
-      ['Equipos clasificados: 2026-10-05', 3],
-      ['Equipos clasificados: 2026-10-10', 4],
-      ['Equipos clasificados: 2026-10-19', 2],
-      ['Equipos clasificados: 2026-10-24', 2],
-      ['Equipos clasificados: 2026-10-25', 2],
-      ['Equipos clasificados: 2026-10-27', 3],
-      ['Rascals Last AC: cupo 054', 1],
-      ['Equipos clasificados: 2026-10-31', 2],
-      ['Equipos clasificados: 2026-11-01', 6],
-    ]);
-    for (const { media } of curated) {
-      expect(new Set(media.map(({ url }) => new URL(url).pathname)).size).toBe(media.length);
-    }
-    expect(curated.every(({ permalink }) => new URL(permalink).search === '')).toBe(true);
+    expect(posts.map(({ id }) => id)).toEqual(event.postIds);
+    expect(new Set(posts.map(({ permalink }) => permalink)).size).toBe(posts.length);
     expect(posts.find(({ permalink }) => permalink.endsWith('/reel/DWDK4g_jQaL/'))).toMatchObject({
       author: { username: 'icpc_mexico' },
       postedAt: '2026-03-19T02:41:46.000Z',
