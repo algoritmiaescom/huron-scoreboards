@@ -6,6 +6,7 @@ import { Link, Outlet, useLocation, useNavigation } from 'react-router';
 import { SiteFooter } from '@/app/components/SiteFooter';
 import { SiteNavigation } from '@/app/components/SiteNavigation';
 import { ThemeModeControl } from '@/app/components/ThemeModeControl';
+import { publicAssetUrl } from '@/lib/publicAsset';
 
 const Root = styled('div')({
   display: 'flex',
@@ -110,7 +111,7 @@ export const AppShell = ({ children }: { children?: ReactNode }) => {
           <HeaderToolbar disableGutters>
             <Brand to="/">
               <BrandImage
-                src={`${import.meta.env.BASE_URL}brand/huron-club.jpg`}
+                src={publicAssetUrl('brand/huron-club.jpg')}
                 alt="Huron Scoreboards, inicio"
               />
               <BrandText>

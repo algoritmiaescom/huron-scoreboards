@@ -18,6 +18,7 @@ import { AccumulatedHeader } from '@/features/scoreboards/components/Accumulated
 import { AccumulatedResults } from '@/features/scoreboards/components/AccumulatedResults';
 import { ContestResults } from '@/features/scoreboards/components/ContestResults';
 import { mexicoCityDate } from '@/lib/dates';
+import { publicAssetUrl } from '@/lib/publicAsset';
 
 import type { RepositoryResult } from '@/lib/data/repository';
 import type { ReactNode } from 'react';
@@ -89,12 +90,7 @@ const ScoreboardsLayout = ({ children }: { children: ReactNode }) => (
       title="Cada solución tiene una historia."
       titleComponent="p"
       description="Explora clasificaciones oficiales por temporadas y series, preservadas por la comunidad."
-      aside={
-        <HeroLogo
-          src={`${import.meta.env.BASE_URL}brand/icpc-mexico.png`}
-          alt="ICPC Masters México"
-        />
-      }
+      aside={<HeroLogo src={publicAssetUrl('brand/icpc-mexico.png')} alt="ICPC Masters México" />}
     />
     <Content maxWidth="xl">
       <Overlap>{children}</Overlap>

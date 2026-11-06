@@ -2,6 +2,8 @@ import SchoolOutlined from '@mui/icons-material/SchoolOutlined';
 import { styled } from '@mui/material/styles';
 import { useState } from 'react';
 
+import { publicAssetUrl, remoteAssetUrl } from '@/lib/publicAsset';
+
 import { schoolLogoSchema } from '../model/schemas';
 
 import type { School } from '../model/schemas';
@@ -17,8 +19,8 @@ const Logo = styled('img')(({ theme }) => ({
 const schoolLogoSource = (logo: string) =>
   schoolLogoSchema.safeParse(logo).success
     ? logo.startsWith('logos/')
-      ? `${import.meta.env.BASE_URL}${logo}`
-      : logo
+      ? publicAssetUrl(logo)
+      : remoteAssetUrl(logo)
     : undefined;
 
 /** The school logo, falling back to a generic icon when it is missing or fails to load. */

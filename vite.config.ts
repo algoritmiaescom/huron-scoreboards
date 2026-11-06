@@ -6,6 +6,7 @@ import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   base: process.env.VITE_BASE_PATH ?? '/',
+  define: { __INLINE_PUBLIC_ASSETS__: '{}' },
   plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
   resolve: {
     alias: {

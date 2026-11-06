@@ -12,6 +12,7 @@ export default defineConfig([
   globalIgnores([
     'coverage',
     'dist',
+    'dist-offline',
     'node_modules',
     'playwright-report',
     'test-results',
