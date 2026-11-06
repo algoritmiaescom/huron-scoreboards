@@ -273,7 +273,9 @@ export const SchoolHistoryPage = () => {
   const contestSeasons = history.seasons.filter(({ results }) => results > 0);
   return (
     <>
-      <DocumentTitle>{`${school.shortName} | Instituciones`}</DocumentTitle>
+      <DocumentTitle
+        description={`Consulta el historial de resultados, temporadas y participación de ${school.officialName} en el ICPC México.`}
+      >{`${school.shortName} | Instituciones`}</DocumentTitle>
       <Hero
         asideBreakpoint="md"
         navigation={

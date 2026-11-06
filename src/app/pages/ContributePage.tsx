@@ -52,7 +52,9 @@ const SectionDivider = styled(Divider)(({ theme }) => ({ marginBlock: theme.spac
 
 export const ContributePage = () => (
   <>
-    <DocumentTitle>Contribuir</DocumentTitle>
+    <DocumentTitle description="Aprende a corregir resultados históricos del ICPC México con evidencia oficial y una contribución en GitHub.">
+      Contribuir
+    </DocumentTitle>
     <Hero
       maxWidth="lg"
       eyebrow="Datos públicos, revisión pública"

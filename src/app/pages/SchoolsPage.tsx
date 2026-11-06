@@ -106,7 +106,9 @@ export const SchoolsPage = () => {
   };
   return (
     <>
-      <DocumentTitle>Instituciones</DocumentTitle>
+      <DocumentTitle description="Explora las instituciones y escuelas participantes, sus resultados y trayectorias históricas en el ICPC México.">
+        Instituciones
+      </DocumentTitle>
       <Hero
         eyebrow="02 — Instituciones participantes"
         title="Instituciones a través de cada temporada."

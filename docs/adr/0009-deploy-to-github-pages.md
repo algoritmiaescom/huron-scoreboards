@@ -22,8 +22,12 @@ enable GitHub Actions as its Pages source. Production continues to ship only val
 archive data.
 
 Public links include `#`, such as `/huron-scoreboards/#/scoreboards?contest=<id>`.
-Development uses the same routing format. Moving to a custom domain or another hosting layout
-requires updating the build base path. Pages deployments wait for the full CI gate, including
-Python ingestion checks.
+Development uses the same routing format. Hash routes are client-rendered and cannot be emitted
+as independently crawlable static pages under GitHub Pages. The root document provides canonical
+and social metadata; the client updates the title and description after route loading. Route-
+specific static SEO requires revisiting this routing decision and the deployment layout.
+
+Moving to a custom domain or another hosting layout requires updating the build base path. Pages
+deployments wait for the full CI gate, including Python ingestion checks.
 
 See the [deployment instructions](../../README.md#deployment) for setup and redeployment.

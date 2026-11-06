@@ -12,6 +12,7 @@ import { renderApp } from '@/test/test-utils';
 
 vi.mock('@/app/repositories/loadScoreboards', () => ({
   loadScoreboards: () => Promise.resolve({ status: 'ready', data: archive }),
+  revalidateScoreboards: () => false,
 }));
 
 afterEach(() => {

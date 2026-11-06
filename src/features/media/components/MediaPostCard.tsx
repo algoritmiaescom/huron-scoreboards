@@ -157,6 +157,10 @@ export const MediaPostCard = ({ post }: { post: Post }) => {
               <Image
                 src={remoteAssetUrl(asset.url)}
                 alt={assetLabel}
+                width={960}
+                height={720}
+                loading="lazy"
+                decoding="async"
                 onError={() => {
                   setFailedImage(asset.url);
                 }}

@@ -2,9 +2,8 @@ import { Paper, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import { accumulatedSelectionParams, contestSelectionParams } from '../model/scoreboardSelection';
-import { selectCatalog, selectLatestHeldContest } from '../model/selectors';
+import { selectCatalog } from '../model/selectors';
 
-import type { Contest } from '../model/schemas';
 import type { SelectedScoreboard } from '../model/scoreboardSelection';
 import type { ScoreboardsArchive } from '../repositories/scoreboardsRepository';
 
@@ -49,22 +48,27 @@ export const ScoreboardSelector = ({
   const season = catalog.find(({ seasonYear }) => seasonYear === selected?.seasonYear);
   const series = season?.series.find(({ id }) => id === selected?.seriesId);
   const selectGroup = (seasonYear: number, seriesId?: string) => {
-    const contests: Contest[] = archive.contests.filter(
-      (candidate) =>
-        candidate.seasonYear === seasonYear &&
-        (seriesId === undefined || candidate.seriesId === seriesId),
+    const selectedSeries =
+      catalog
+        .find(({ seasonYear: candidateYear }) => candidateYear === seasonYear)
+        ?.series.filter((candidate) => seriesId === undefined || candidate.id === seriesId) ?? [];
+    const selectedSeriesWithContest = selectedSeries.find(
+      (candidate) => candidate.contests.length > 0,
     );
-    const standing = archive.seasonStandings.find(
-      (candidate) =>
-        candidate.seasonYear === seasonYear &&
-        (seriesId === undefined || candidate.seriesId === seriesId),
-    );
-    if (standing !== undefined && (selection?.status === 'accumulated' || contests.length === 0)) {
-      onSelect(accumulatedSelectionParams(standing.seasonYear, standing.seriesId));
+    const selectedSeriesWithStanding = selectedSeries.find((candidate) => candidate.accumulated);
+    if (
+      selectedSeriesWithStanding !== undefined &&
+      (selection?.status === 'accumulated' || selectedSeriesWithContest === undefined)
+    ) {
+      onSelect(accumulatedSelectionParams(seasonYear, selectedSeriesWithStanding.id));
       return;
     }
-    const latest = selectLatestHeldContest({ ...archive, contests }, today);
-    const next = latest.status === 'found' ? latest.record : contests.at(0);
+    const contests = selectedSeries.flatMap(({ contests: entries }) => entries);
+    const next =
+      contests
+        .filter((contest) => contest.date !== null && contest.date <= today)
+        .toSorted((a, b) => (b.date ?? '').localeCompare(a.date ?? '') || a.id.localeCompare(b.id))
+        .at(0) ?? contests.at(0);
     if (next === undefined) {
       throw new Error('ScoreboardSelector requires a published contest or season standing.');
     }

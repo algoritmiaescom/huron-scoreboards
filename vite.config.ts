@@ -4,10 +4,12 @@ import babel from '@rolldown/plugin-babel';
 import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';
 
+import { scoreboardsCatalogPlugin } from './vite.scoreboardsCatalog.mjs';
+
 export default defineConfig({
   base: process.env.VITE_BASE_PATH ?? '/',
   define: { __INLINE_PUBLIC_ASSETS__: '{}' },
-  plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
+  plugins: [scoreboardsCatalogPlugin(), react(), babel({ presets: [reactCompilerPreset()] })],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

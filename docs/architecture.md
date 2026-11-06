@@ -23,7 +23,11 @@ one main landmark, and footer. Route transitions focus the main region and reset
 The contribution, standings, school index, school history, and media routes load lazily; initial
 and navigation loading states are announced.
 Route error boundaries log diagnostics and provide reload/home recovery. Page titles are
-rendered with React 19 document metadata. The document language is Spanish.
+rendered with React 19 document metadata, including route-specific descriptions. The static
+document supplies canonical and social-sharing metadata for the site. Because GitHub Pages uses
+hash routing and the app is client-rendered, those route descriptions are not present in the
+initial HTML and individual hash routes cannot receive separate static snapshots. The document
+language is Spanish.
 
 Application configuration in `src/app/config.ts` supplies repository URL, default branch, and
 the provisional-link flag. Contribution/footer links share derived URLs. The user-approved
@@ -76,6 +80,13 @@ Repository `load()` results distinguish `ready`, `empty`, `invalid`, and `error`
 failed loads retain file/record diagnostics and expose no partial dataset. Explicit record
 lookups return `found` or `not-found`. Both CI and runtime use the same Zod schemas and
 browser-safe reference validators; only CI checks local logo files on disk.
+
+The build generates a compact, Zod-validated catalog without standings rows. The scoreboard route
+loads the shared school directory and the selected season only, reusing it for filters and other
+selections within that season. Choosing a different season loads and validates that season at the
+repository boundary. School histories and media still load the full archive for their current
+cross-season derivations and contest-reference validation. See
+[ADR 0010](adr/0010-load-scoreboard-seasons-on-demand.md).
 
 The application loads scoreboards first and supplies their contest ids to media validation,
 without a media-to-scoreboards import. Invalid scoreboards block media validation explicitly;

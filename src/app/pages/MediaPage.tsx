@@ -114,7 +114,9 @@ export const MediaPage = () => {
 
   return (
     <>
-      <DocumentTitle>Comunidad</DocumentTitle>
+      <DocumentTitle description="Publicaciones y recursos archivados de la comunidad del ICPC México.">
+        Comunidad
+      </DocumentTitle>
       <Hero
         eyebrow={`Publicaciones archivadas · ${selectedEvent?.name ?? selectedContest?.name ?? 'comunidad'}`}
         title="Más allá de la clasificación."

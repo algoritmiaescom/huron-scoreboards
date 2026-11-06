@@ -334,6 +334,35 @@ export const seasonStandingSchema = z
     );
   });
 
+export const contestCatalogEntrySchema = z.object({
+  id: slugSchema,
+  seasonYear: seasonYearSchema,
+  seriesId: slugSchema,
+  stage: contestStageSchema,
+  name: z.string().min(1),
+  date: z.iso.date().nullable(),
+  durationMinutes: z.number().int().positive().nullable(),
+  penaltyMinutesPerFailedAttempt: z.number().int().nonnegative().nullable(),
+  problems: z.array(problemSchema),
+  source: z.url(),
+  ...publicationFields,
+});
+
+export const seasonStandingCatalogEntrySchema = z.object({
+  seasonYear: seasonYearSchema,
+  seriesId: slugSchema,
+  source: z.url(),
+  scoreUnit: z.string().min(1).optional(),
+  snapshot: z.enum(['intermediate', 'latest-explicit', 'unconfirmed']).optional(),
+  snapshotLabel: z.string().min(1).optional(),
+  ...publicationFields,
+});
+
+export const scoreboardsCatalogSchema = z.object({
+  contests: z.array(contestCatalogEntrySchema),
+  seasonStandings: z.array(seasonStandingCatalogEntrySchema),
+});
+
 export const schoolsFileSchema = z.array(schoolSchema);
 export const teamsFileSchema = z.array(teamSchema);
 
@@ -345,4 +374,7 @@ export type ProblemResult = z.infer<typeof problemResultSchema>;
 export type StandingRow = z.infer<typeof standingRowSchema>;
 export type Contest = z.infer<typeof contestSchema>;
 export type SeasonStanding = z.infer<typeof seasonStandingSchema>;
+export type ContestCatalogEntry = z.infer<typeof contestCatalogEntrySchema>;
+export type SeasonStandingCatalogEntry = z.infer<typeof seasonStandingCatalogEntrySchema>;
+export type ScoreboardsCatalog = z.infer<typeof scoreboardsCatalogSchema>;
 export type ContestStage = z.infer<typeof contestStageSchema>;

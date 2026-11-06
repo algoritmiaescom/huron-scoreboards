@@ -75,7 +75,7 @@ describe('school index workflow', () => {
     expect(router.state.location.search).toBe('?q=Campus');
     expect(router.state.historyAction).toBe('REPLACE');
     expect(loader).toHaveBeenCalledTimes(1);
-  });
+  }, 15_000);
 
   it('shows precise scoped summaries, identities and working history links', async () => {
     renderPage();

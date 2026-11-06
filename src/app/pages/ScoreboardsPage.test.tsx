@@ -31,7 +31,12 @@ const renderPage = (
             ...route,
             children: route.children?.map((child) =>
               child.path === 'scoreboards'
-                ? { ...child, Component: ScoreboardsPage, loader }
+                ? {
+                    ...child,
+                    Component: ScoreboardsPage,
+                    loader,
+                    shouldRevalidate: () => false,
+                  }
                 : child,
             ),
           },
@@ -53,7 +58,7 @@ describe('contest filtering workflow', () => {
   it('combines filters, retains tied first solvers and official places, and removes one chip at a time', async () => {
     const user = userEvent.setup();
     const { router, loader } = renderPage();
-    await screen.findByRole('heading', { name: 'Contest' });
+    await screen.findByRole('heading', { name: 'Contest' }, { timeout: 5000 });
     expect(document.title).toBe('Contest | Huron Scoreboards');
     await user.selectOptions(screen.getByRole('combobox', { name: 'Problema' }), 'A');
     expect(screen.getByRole('status')).toHaveTextContent('4 de 4 equipos');

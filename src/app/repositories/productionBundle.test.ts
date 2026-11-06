@@ -6,6 +6,7 @@ import { build } from 'vite';
 import { afterEach, expect, it, vi } from 'vitest';
 
 import { createApplicationRepositories, loadApplicationData } from './applicationData';
+import { scoreboardsCatalogPlugin } from '../../../vite.scoreboardsCatalog.mjs';
 
 const archiveFiles = import.meta.glob<string>(['/data/**/*.json', '!/data/mock/**/*.json'], {
   query: '?raw',
@@ -25,6 +26,7 @@ it.each(['mock', 'archive', 'invalid'])(
       configFile: false,
       logLevel: 'silent',
       resolve: { alias: { '@': fileURLToPath(new URL('../../', import.meta.url)) } },
+      plugins: [scoreboardsCatalogPlugin()],
       build: {
         write: false,
         lib: {
