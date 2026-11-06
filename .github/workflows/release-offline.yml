@@ -1,0 +1,52 @@
+name: Release offline app
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag, for example offline-2026-11-05
+        required: true
+        type: string
+
+concurrency:
+  group: release-offline
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      TAG: ${{ inputs.tag }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:data
+      - run: npm run build:offline
+      - name: Package standalone file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir release
+          cp dist-offline/index.html release/huron-scoreboards-offline.html
+          (cd release && sha256sum huron-scoreboards-offline.html > huron-scoreboards-offline.html.sha256)
+      - name: Publish release
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create "$TAG" release/* \
+            --target "$GITHUB_SHA" \
+            --title "Offline app $TAG" \
+            --notes "Standalone single-file build of the site at $GITHUB_SHA. Open the HTML file in a browser; no network is needed."

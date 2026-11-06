@@ -11,6 +11,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:offline": "tsc -b && vite build -c vite.offline.config.ts",
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "lint": "eslint . --max-warnings 0",
@@ -81,10 +82,12 @@
     "jsdom": "^27.0.1",
     "lint-staged": "^16.2.6",
     "prettier": "^3.6.2",
+    "sharp": "^0.35.5",
     "tsx": "^4.23.15",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.69.0",
     "vite": "^8.3.0",
+    "vite-plugin-singlefile": "^2.3.4",
     "vitest": "^4.0.4"
   }
 }

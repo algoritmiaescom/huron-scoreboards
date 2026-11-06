@@ -9,7 +9,7 @@ import {
   RouteLoading,
 } from '@/app/pages/RouteStatusPages';
 import { loadMediaPage } from '@/app/repositories/loadMediaPage';
-import { loadScoreboards } from '@/app/repositories/loadScoreboards';
+import { loadScoreboards, revalidateScoreboards } from '@/app/repositories/loadScoreboards';
 
 import type { RouteObject, ShouldRevalidateFunction } from 'react-router';
 
@@ -44,7 +44,7 @@ export const routes: RouteObject[] = [
       {
         path: 'scoreboards',
         loader: loadScoreboards,
-        shouldRevalidate: revalidateArchive,
+        shouldRevalidate: revalidateScoreboards,
         ErrorBoundary: RouteErrorPage,
         Component: ScoreboardsPage,
       },

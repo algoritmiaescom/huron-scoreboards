@@ -1,4 +1,3 @@
-import Code from '@mui/icons-material/Code';
 import GitHub from '@mui/icons-material/GitHub';
 import Launch from '@mui/icons-material/Launch';
 import { Alert, Button, Divider, Stack } from '@mui/material';
@@ -53,7 +52,9 @@ const SectionDivider = styled(Divider)(({ theme }) => ({ marginBlock: theme.spac
 
 export const ContributePage = () => (
   <>
-    <DocumentTitle>Contribuir</DocumentTitle>
+    <DocumentTitle description="Aprende a corregir resultados históricos del ICPC México con evidencia oficial y una contribución en GitHub.">
+      Contribuir
+    </DocumentTitle>
     <Hero
       maxWidth="lg"
       eyebrow="Datos públicos, revisión pública"
@@ -107,10 +108,6 @@ export const ContributePage = () => (
         </Button>
       </Resources>
       <SectionDivider />
-      <Alert severity="info" icon={<Code />}>
-        Esta aplicación no tiene cuentas, pantallas de administración ni formularios de edición. El
-        historial de Git es el registro de auditoría de cada corrección.
-      </Alert>
     </Page>
   </>
 );

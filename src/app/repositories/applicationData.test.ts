@@ -22,6 +22,7 @@ import {
   createApplicationRepositories,
   loadApplicationData,
   loadApplicationRepositories,
+  scoreboardsCatalog,
   selectLatestFeed,
 } from './applicationData';
 
@@ -575,6 +576,7 @@ describe('runtime repositories', () => {
                 import: 'default',
               }),
           source,
+          scoreboardsCatalog,
         ),
       );
       expect(await loadApplicationData(repositories)).toEqual(expected);
@@ -626,7 +628,14 @@ describe('runtime repositories', () => {
     );
     expect(result.scoreboards).toEqual({
       status: 'empty',
-      data: { source: 'archive', schools: [], teams: [], contests: [], seasonStandings: [] },
+      data: {
+        source: 'archive',
+        schools: [],
+        teams: [],
+        contests: [],
+        seasonStandings: [],
+        catalog: { contests: [], seasonStandings: [] },
+      },
     });
     expect(result.media).toEqual({ status: 'empty', data: { source: 'archive', events: [] } });
   });

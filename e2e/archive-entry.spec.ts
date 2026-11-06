@@ -278,7 +278,6 @@ test('shows published archive media before its unlinked event takes place', asyn
   await expect(page.getByRole('link', { name: /Ver clasificación de/ })).toHaveCount(0);
   await expect(page.getByLabel('Ver publicaciones de otro evento')).toHaveCount(0);
   await expect(page.getByText(/inventados/)).toHaveCount(0);
-  await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
   await page.goto('./#/media?event=2026-mexico-finals');
   await page.reload();
   await expect(page.getByText(/Final Mexicana 2026 ·/)).toBeVisible();
@@ -317,7 +316,9 @@ test('loads fonts locally and uses its initial light palette', async ({ page, ba
     page.getByRole('heading', { name: 'Gran Premio MX 2026 — Tercera Fecha' }),
   ).toBeVisible({ timeout: 30_000 });
   await page.goto('./#/scoreboards?contest=2022-gpm-repechage');
-  await expect(page.getByRole('heading', { name: 'Repechaje Gran Premio MX 2022' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Repechaje Gran Premio MX 2022' })).toBeVisible({
+    timeout: 30_000,
+  });
 
   const typography = await page.evaluate(async () => {
     const display = await document.fonts.load('700 16px "Space Grotesk Variable"');

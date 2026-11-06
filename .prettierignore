@@ -1,6 +1,7 @@
 coverage
 coverage-python
 dist
+dist-offline
 node_modules
 package-lock.json
 playwright-report

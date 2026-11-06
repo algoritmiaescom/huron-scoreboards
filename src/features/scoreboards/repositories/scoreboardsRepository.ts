@@ -4,10 +4,13 @@ import {
 } from '@/features/scoreboards/model/dataset';
 import {
   type Contest,
+  contestCatalogEntrySchema,
   contestSchema,
   type School,
   schoolsFileSchema,
+  type ScoreboardsCatalog,
   type SeasonStanding,
+  seasonStandingCatalogEntrySchema,
   seasonStandingSchema,
   type Team,
   teamsFileSchema,
@@ -29,17 +32,22 @@ export interface ScoreboardsArchive {
   teams: Team[];
   contests: Contest[];
   seasonStandings: SeasonStanding[];
+  catalog?: ScoreboardsCatalog;
 }
 
 export interface ScoreboardsRepository {
   load: () => Promise<RepositoryResult<ScoreboardsArchive>>;
+  loadSeason: (seasonYear: number) => Promise<RepositoryResult<ScoreboardsArchive>>;
 }
 
 export const createJsonScoreboardsRepository = (
   files: JsonFiles,
   source: DatasetSource,
-): ScoreboardsRepository => ({
-  load: async () => {
+  catalog?: ScoreboardsCatalog,
+): ScoreboardsRepository => {
+  const loadArchive = async (
+    seasonYear?: number,
+  ): Promise<RepositoryResult<ScoreboardsArchive>> => {
     const dataset: ScoreboardsDataset = {
       schools: [],
       teams: [],
@@ -68,6 +76,13 @@ export const createJsonScoreboardsRepository = (
       Object.entries(files).map(async ([file, load]) => {
         const relative = relativeDataPath(file, source);
         if (relative === undefined || relative.startsWith('media/')) {
+          return;
+        }
+        if (
+          seasonYear !== undefined &&
+          relative !== 'schools.json' &&
+          !relative.startsWith(`seasons/${String(seasonYear)}/`)
+        ) {
           return;
         }
         if (relative === 'schools.json') {
@@ -106,18 +121,26 @@ export const createJsonScoreboardsRepository = (
     if (issues.length > 0) {
       return { status: failures.includes('error') ? 'error' : 'invalid', issues };
     }
+    const contests = dataset.contests
+      .map(({ record }) => record)
+      .sort((a, b) => a.id.localeCompare(b.id));
+    const seasonStandings = dataset.seasonStandings
+      .map(({ record }) => record)
+      .sort((a, b) => b.seasonYear - a.seasonYear || a.seriesId.localeCompare(b.seriesId));
     const data: ScoreboardsArchive = {
       source,
       schools: dataset.schools
         .flatMap(({ record }) => record)
         .sort((a, b) => a.id.localeCompare(b.id)),
       teams: dataset.teams.flatMap(({ record }) => record).sort((a, b) => a.id.localeCompare(b.id)),
-      contests: dataset.contests
-        .map(({ record }) => record)
-        .sort((a, b) => a.id.localeCompare(b.id)),
-      seasonStandings: dataset.seasonStandings
-        .map(({ record }) => record)
-        .sort((a, b) => b.seasonYear - a.seasonYear || a.seriesId.localeCompare(b.seriesId)),
+      contests,
+      seasonStandings,
+      catalog: catalog ?? {
+        contests: contests.map((contest) => contestCatalogEntrySchema.parse(contest)),
+        seasonStandings: seasonStandings.map((standing) =>
+          seasonStandingCatalogEntrySchema.parse(standing),
+        ),
+      },
     };
     return {
       status:
@@ -130,5 +153,29 @@ export const createJsonScoreboardsRepository = (
           : 'ready',
       data,
     };
-  },
-});
+  };
+  const seasonResults = new Map<number, Promise<RepositoryResult<ScoreboardsArchive>>>();
+
+  return {
+    load: () => loadArchive(),
+    loadSeason: (seasonYear) => {
+      const cached = seasonResults.get(seasonYear);
+      if (cached !== undefined) {
+        return cached;
+      }
+      const pending = loadArchive(seasonYear);
+      seasonResults.set(seasonYear, pending);
+      void pending.then(
+        (result) => {
+          if (result.status === 'invalid' || result.status === 'error') {
+            seasonResults.delete(seasonYear);
+          }
+        },
+        () => {
+          seasonResults.delete(seasonYear);
+        },
+      );
+      return pending;
+    },
+  };
+};

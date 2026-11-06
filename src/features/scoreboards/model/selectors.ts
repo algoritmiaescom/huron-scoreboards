@@ -28,7 +28,9 @@ export const seriesLabel = (id: string): string => {
 };
 
 export const selectCatalog = (archive: ScoreboardsArchive) => {
-  const records = [...archive.contests, ...archive.seasonStandings];
+  const contests = archive.catalog?.contests ?? archive.contests;
+  const seasonStandings = archive.catalog?.seasonStandings ?? archive.seasonStandings;
+  const records = [...contests, ...seasonStandings];
   return [...new Set(records.map(({ seasonYear }) => seasonYear))]
     .sort((a, b) => b - a)
     .map((seasonYear) => ({
@@ -42,14 +44,14 @@ export const selectCatalog = (archive: ScoreboardsArchive) => {
         .map((seriesId) => ({
           id: seriesId,
           label: seriesLabel(seriesId),
-          contests: archive.contests
+          contests: contests
             .filter((contest) => contest.seasonYear === seasonYear && contest.seriesId === seriesId)
             .toSorted(
               (a, b) =>
                 (a.date ?? '9999').localeCompare(b.date ?? '9999') || a.id.localeCompare(b.id),
             )
             .map((contest) => ({ ...contest, stageLabel: contestStageLabel(contest.stage) })),
-          accumulated: archive.seasonStandings.some(
+          accumulated: seasonStandings.some(
             (standing) => standing.seasonYear === seasonYear && standing.seriesId === seriesId,
           ),
         })),

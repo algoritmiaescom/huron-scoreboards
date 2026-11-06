@@ -3,15 +3,23 @@ export {
   type ScoreboardsArchive,
   type ScoreboardsRepository,
 } from './repositories/scoreboardsRepository';
+export {
+  contestCatalogEntrySchema,
+  scoreboardsCatalogSchema,
+  seasonStandingCatalogEntrySchema,
+} from './model/schemas';
 export * from './model/selectors';
 export { scoreStandingRow, selectFirstSolves } from './model/scoring';
 export type {
   Contest,
+  ContestCatalogEntry,
   ContestStage,
   Problem,
   ProblemResult,
   School,
   SeasonStanding,
+  SeasonStandingCatalogEntry,
+  ScoreboardsCatalog,
   StandingRow,
   Team,
 } from './model/schemas';

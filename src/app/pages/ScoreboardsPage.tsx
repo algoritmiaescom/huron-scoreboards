@@ -18,6 +18,7 @@ import { AccumulatedHeader } from '@/features/scoreboards/components/Accumulated
 import { AccumulatedResults } from '@/features/scoreboards/components/AccumulatedResults';
 import { ContestResults } from '@/features/scoreboards/components/ContestResults';
 import { mexicoCityDate } from '@/lib/dates';
+import { publicAssetUrl } from '@/lib/publicAsset';
 
 import type { RepositoryResult } from '@/lib/data/repository';
 import type { ReactNode } from 'react';
@@ -59,6 +60,9 @@ const Hero = styled(HeroBanner)(({ theme }) => {
 const HeroLogo = styled('img')(({ theme }) => ({
   alignSelf: 'flex-start',
   width: 150,
+  aspectRatio: '1 / 1',
+  objectFit: 'contain',
+  boxSizing: 'border-box',
   padding: theme.spacing(3),
   filter: 'brightness(0) invert(1)',
   opacity: 0.9,
@@ -89,12 +93,7 @@ const ScoreboardsLayout = ({ children }: { children: ReactNode }) => (
       title="Cada solución tiene una historia."
       titleComponent="p"
       description="Explora clasificaciones oficiales por temporadas y series, preservadas por la comunidad."
-      aside={
-        <HeroLogo
-          src={`${import.meta.env.BASE_URL}brand/icpc-mexico.png`}
-          alt="ICPC Masters México"
-        />
-      }
+      aside={<HeroLogo src={publicAssetUrl('brand/icpc-mexico.png')} alt="ICPC Masters México" />}
     />
     <Content maxWidth="xl">
       <Overlap>{children}</Overlap>
@@ -110,7 +109,9 @@ const StatusSection = ({
   children: ReactNode;
 }) => (
   <PageContainer maxWidth={maxWidth}>
-    <DocumentTitle>Clasificaciones</DocumentTitle>
+    <DocumentTitle description="Consulta clasificaciones históricas del ICPC México, sus resultados oficiales y temporadas acumuladas.">
+      Clasificaciones
+    </DocumentTitle>
     <Section>
       <Stack spacing={2}>{children}</Stack>
     </Section>
@@ -228,7 +229,9 @@ export const ScoreboardsPage = () => {
     const { standing } = selection;
     return (
       <ScoreboardsLayout>
-        <DocumentTitle>{`Acumulada ${String(standing.seasonYear)} - ${seriesLabel(standing.seriesId)}`}</DocumentTitle>
+        <DocumentTitle
+          description={`Consulta los resultados publicados de la clasificación acumulada ${seriesLabel(standing.seriesId)} de la temporada ${String(standing.seasonYear)} del ICPC México.`}
+        >{`Acumulada ${String(standing.seasonYear)} - ${seriesLabel(standing.seriesId)}`}</DocumentTitle>
         <Stack spacing={3}>
           {selector}
           <AccumulatedHeader standing={standing} datasetSource={archive.source} />
@@ -242,7 +245,11 @@ export const ScoreboardsPage = () => {
 
   return (
     <ScoreboardsLayout>
-      <DocumentTitle>{contest.name}</DocumentTitle>
+      <DocumentTitle
+        description={`Consulta los resultados y equipos de ${contest.name}, parte del archivo histórico del ICPC México.`}
+      >
+        {contest.name}
+      </DocumentTitle>
       <Stack spacing={3}>
         {selector}
         <ContestHeader contest={contest} datasetSource={archive.source} />

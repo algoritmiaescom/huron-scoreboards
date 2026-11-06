@@ -1,3 +1,4 @@
+import { scoreboardsCatalog as rawScoreboardsCatalog } from 'virtual:scoreboards-catalog';
 import { z } from 'zod';
 
 import {
@@ -9,12 +10,21 @@ import {
 import {
   createJsonScoreboardsRepository,
   type ScoreboardsArchive,
+  type ScoreboardsCatalog,
+  scoreboardsCatalogSchema,
   type ScoreboardsRepository,
   selectLatestHeldContest,
 } from '@/features/scoreboards';
 import { mexicoCityDate } from '@/lib/dates';
 
 import type { DatasetSource, JsonFiles } from '@/lib/data/repository';
+
+const parsedCatalog = scoreboardsCatalogSchema.safeParse(rawScoreboardsCatalog);
+if (!parsedCatalog.success) {
+  throw new Error(`Invalid generated scoreboard catalog: ${parsedCatalog.error.message}`);
+}
+
+export const scoreboardsCatalog: ScoreboardsCatalog = parsedCatalog.data;
 
 export interface ApplicationRepositories {
   source: DatasetSource;
@@ -25,9 +35,10 @@ export interface ApplicationRepositories {
 export const createApplicationRepositories = (
   files: JsonFiles,
   source: DatasetSource,
+  catalog?: ScoreboardsCatalog,
 ): ApplicationRepositories => ({
   source,
-  scoreboards: createJsonScoreboardsRepository(files, source),
+  scoreboards: createJsonScoreboardsRepository(files, source, catalog),
   media: createJsonMediaRepository(files, source),
 });
 
@@ -41,7 +52,7 @@ export const loadApplicationRepositories = async (): Promise<ApplicationReposito
     }
     if (source.data === 'mock') {
       const { mockDataFiles } = await import('./mockDataFiles');
-      return createApplicationRepositories(mockDataFiles, 'mock');
+      return createApplicationRepositories(mockDataFiles, 'mock', scoreboardsCatalog);
     }
   }
   return createApplicationRepositories(
@@ -50,6 +61,7 @@ export const loadApplicationRepositories = async (): Promise<ApplicationReposito
       import: 'default',
     }),
     'archive',
+    scoreboardsCatalog,
   );
 };
 

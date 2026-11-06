@@ -13,6 +13,14 @@ test('navigates the complete page, restores its theme, and recovers unknown rout
     .click();
   await expect(page).toHaveURL('./#/contribute');
   await expect(page).toHaveTitle('Contribuir | Huron Scoreboards');
+  await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+    'content',
+    'Aprende a corregir resultados históricos del ICPC México con evidencia oficial y una contribución en GitHub.',
+  );
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    'href',
+    'https://algoritmiaescom.github.io/huron-scoreboards/',
+  );
   await expect(page.getByRole('main')).toBeFocused();
   await expect(page.getByRole('link', { name: 'Contribuir', exact: true })).toHaveAttribute(
     'aria-current',
@@ -57,8 +65,19 @@ test('opens archived multimedia from desktop and mobile navigation', async ({ pa
     'aria-current',
     'page',
   );
-  await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
   await expect(page.getByRole('article').first()).toBeVisible();
+  await expect(page.getByRole('article').first().getByRole('img').first()).toHaveAttribute(
+    'loading',
+    'lazy',
+  );
+  await expect(page.getByRole('article').first().getByRole('img').first()).toHaveAttribute(
+    'width',
+    '960',
+  );
+  await expect(page.getByRole('article').first().getByRole('img').first()).toHaveAttribute(
+    'height',
+    '720',
+  );
   await page.setViewportSize({ width: 390, height: 844 });
   await page.getByRole('button', { name: 'Abrir navegación' }).click();
   const drawer = page.getByRole('dialog', { name: 'Menú de navegación' });
