@@ -37,7 +37,8 @@
       "2026-mexico-finals-facebook-7b15c06da6d1f20d43095ef5b218324705b7aeb44bec4cd2b3da9bc1e942b7d7",
       "2026-mexico-finals-facebook-54d0b268e47e3ca9b27c4e984eafc8b65a97b2e485f4ddf51b27968e716f5aa3",
       "2026-mexico-finals-facebook-ff7237019e82d9ee7699df83f1e06559f02e6bf0ee55050ac89d1399cc89c4bb",
-      "2026-mexico-finals-facebook-99d1dea5d7de5b142b97363086a0d8337d3b8601939129676f373b097a0e53c6"
+      "2026-mexico-finals-facebook-99d1dea5d7de5b142b97363086a0d8337d3b8601939129676f373b097a0e53c6",
+      "2026-mexico-finals-instagram-3bcf64576cde3fa2542aacf5eb4020848e36bad9c645194eb06198866ec60097"
     ]
   },
   "posts": [
@@ -1473,6 +1474,67 @@
       ],
       "permalink": "https://www.facebook.com/acm.iteso/posts/pfbid0YRpPrFsGD9oPykNRzDDsAEYrLJFwzhL4XeyvEMaDVxK1ry576aGd97oGkxbwp4EYl",
       "tags": []
+    },
+    {
+      "id": "2026-mexico-finals-instagram-3bcf64576cde3fa2542aacf5eb4020848e36bad9c645194eb06198866ec60097",
+      "source": "instagram",
+      "author": {
+        "username": "cpc.uaeh",
+        "displayName": "cpc.uaeh",
+        "avatarUrl": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-19/504353438_17858181771445666_7180648223917862071_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gEre4_MKHz9qeWHhObFyCyl024GvK7ESRMzvR7YpT7kq19d9BQ6aqFcFMCntqZSvtw&_nc_ohc=ElNKNjeoqFgQ7kNvwFOtlui&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&edm=AMKDjl4BAAAA&ccb=7-5&ig_cache_key=GJ7SDx6iRdL063E-ALfsqdODyaZjbmNDAQAB1501500j-ccb7-5&oh=00_AQQ1studjV-DCOcfaWnhTWApSW2dXOmxHFu6ZW8NrZ8sVA&oe=6AF297B6&_nc_sid=472314",
+        "profileUrl": "https://www.instagram.com/cpc.uaeh/"
+      },
+      "postedAt": "2026-11-05T03:15:32.000+00:00",
+      "body": "¡Repechaje de ICPC Gran Premio México 2026! 🇲🇽\n\nEstá fue la última competencia de clasificación hacia la Final Mexicana 🙀. Aquí todos los equipos demostraron el gran avance y esfuerzo que han hecho durante el transcurso del año 🎈\n\nAdemás de tener una convivencia, conocimos a los dos equipos clasificados, que competirán en los próximos días en la Final Mexicana ICPC 2026 ¡Y estamos más que orgullosos!\n\n1. CapyBabys 🧠\n2. Dos de anca de rana y un agua de guayaba 🐸\n\nTodo el club les desea suerte y éxito en sus próximas competencias y no lo olviden...\n\n¡Sigamos Aprendiendo! ¡Sigamos Programando! 😼💙\n\n#ICPCMX2026 #CPC_UAEH #Programación_Competitiva #repechaje #CPC",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/892091371_17922984951445666_8896561544934492073_n.webp?stp=dst-webp_p1080x1080&_nc_cat=107&ig_cache_key=NDAyMzQwMDU5NTI0NTY5MTY2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=k6NpIlAx9TwQ7kNvwH2EQwO&_nc_oc=Ado-iphFfIyeGx9m0zDiaNNtxg9L_qhqHrW9JQCVYmpaNOZpQtWyoMsJZ1DmGUv-zGI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQSdbASj5RUiMrCgZ9u5IAs60bpFaWo-kTFrh011y8XKLg&oe=6AF2B7C6",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/889935768_17922984960445666_721250373369138198_n.webp?stp=dst-webp_p1080x1080&_nc_cat=111&ig_cache_key=NDAyMzQwMDU5OTIwNTExNTU3OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=LLwZZCC5M0AQ7kNvwG8pHrH&_nc_oc=Adr6Nb7LJ7WsAogGpeI3Gn7gK-ZMfjTkEpInroBBBQzULIlsFWepgTkNFgBr-TxF2Nw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQR91_RfepW4UUTpbd-iJHQ5ioD63--kMx3OyaKtIvA38w&oe=6AF2B6BF",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/887316288_17922984975445666_8308315331971653463_n.webp?stp=dst-webp_p1080x1080&_nc_cat=108&ig_cache_key=NDAyMzQwMDYwNjUzNjY1MzU3OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=KfbYcQOHXMAQ7kNvwGJ_MIy&_nc_oc=AdpADrhN4NvAY6WzJ7WuZFVoqqE-zNrB0m5aVBGbO1GyW7Ctlc2a5CItSHuk-pVllok&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQS3qkSRta9fZ5jelLolGHSpMXypwxHgiEzIHFqMUwzEpQ&oe=6AF2A1D8",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/887813523_17922985005445666_3625434351001729481_n.webp?stp=dst-webp_p1080x1080&_nc_cat=111&ig_cache_key=NDAyMzQwMDYxMjc1MjY4MDAxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fDxS6buCcw4Q7kNvwF7N8tD&_nc_oc=AdpM9omDCrYO0ol63p4cZ7oILFE6fFEQRMeVP4HcmraootyXjUhBacEpz_s1ugoyKHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQQusF_RwKl90RGljRyrhCImchcJ3QYtEj4KRBr0jfVEWA&oe=6AF2B8A3",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/890188581_17922985035445666_928580351391454277_n.webp?stp=dst-webp_p1080x1080&_nc_cat=102&ig_cache_key=NDAyMzQwMDYxNzE5ODUwODMxNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=vAYuVmf1pKEQ7kNvwHeYhWx&_nc_oc=AdoZPTSD3rgmWj5IW5yELVuFjByOohTZ1jP2mqfAq1IM8WkeRTqZpVmaO0LYyWPm3lI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQT5XpD3JSVa7shnWEUItFHBcC3MyWeUE3Tzzxvx9Zb2ZA&oe=6AF2ADDC",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/890616612_17922985071445666_2193644400616827765_n.webp?stp=dst-webp_p1080x1080&_nc_cat=108&ig_cache_key=NDAyMzQwMDYyMjcxODMyNjUwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mLFkLxRt9h8Q7kNvwEFzVMt&_nc_oc=AdraHUuMLctkhWKfxlN0GU2O57RTjYFtBmE4kg_oxjaHle5tF1KO9b_dyPdN8hkaM4Q&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQSOmRkpH7AwHkrFj8f3usXGVNn3TAlhGWkvFpjbzkXLmQ&oe=6AF2A723",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/890549952_17922985086445666_3533984106643191400_n.webp?stp=dst-webp_p1080x1080&_nc_cat=107&ig_cache_key=NDAyMzQwMDYyODA0NTE5MjU0MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Vjtgp71cqTIQ7kNvwFaQFm0&_nc_oc=AdoBMqotfeJhKbMfHpj3pkZlYxD6poJ2-68sjq9fd2cIiXYmJUc1j9RR51PTHjKGxJA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQTLGWQKz32gx8pNAOZnYB9bXlEaHUBEGNN2Bk2gW7lnLg&oe=6AF2B9D6",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/886743788_17922985095445666_4930700687825189052_n.webp?stp=dst-webp_p1080x1080&_nc_cat=109&ig_cache_key=NDAyMzQwMDYzMzM3MTg3MTkyNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fIwGl0A76n8Q7kNvwFCsJiw&_nc_oc=Adq-zgOVbhZsJlh1gIhezXS71MOCxC3hIeEzApg57ISnLMvmzzeL51g_n_npyIzedUg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQTVxw_0edPohGLcD-zgDl2nYYpxW32iXxwB6lB5N7Rpqw&oe=6AF2B90A",
+          "alt": ""
+        },
+        {
+          "type": "image",
+          "url": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/887032564_17922985113445666_5019525190455450561_n.webp?stp=dst-webp_s1080x1080&_nc_cat=106&ig_cache_key=NDAyMzQwMDYzNjA4MTI0NzY3Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=11eJIieHlHsQ7kNvwGa5vnN&_nc_oc=AdpXFd-q2UbEzGTskmzH6FhnEP07fRZm_o7G7R0zp5nbsZ6uy3WDGw7Y0XSdpaQN1Pw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=eN6_8CkRiFylgtDaW5JE8Q&_nc_ss=7a3ba&oh=00_AQQRQwf4shwSC46EwjJrdAuR14oCAOxR2WH2fzXjTXGicw&oe=6AF2CCDF",
+          "alt": ""
+        }
+      ],
+      "permalink": "https://www.instagram.com/p/DfWCBAHDWpZ/",
+      "tags": ["#ICPCMX2026", "#CPC_UAEH", "#Programación_Competitiva", "#repechaje", "#CPC"]
     }
   ]
 }
