@@ -7,6 +7,7 @@ import { styled } from '@mui/material/styles';
 import { useState } from 'react';
 
 import { formatMexicoCityDateTime } from '@/lib/dates';
+import { remoteAssetUrl } from '@/lib/publicAsset';
 
 import type { Post, PostSource } from '../model/schemas';
 
@@ -154,7 +155,7 @@ export const MediaPostCard = ({ post }: { post: Post }) => {
               </Typography>
             ) : (
               <Image
-                src={asset.url}
+                src={remoteAssetUrl(asset.url)}
                 alt={assetLabel}
                 onError={() => {
                   setFailedImage(asset.url);
@@ -198,7 +199,11 @@ export const MediaPostCard = ({ post }: { post: Post }) => {
         <PostHeader>
           <Author>
             <Avatar
-              src={failedAvatar ? undefined : post.author.avatarUrl}
+              src={
+                failedAvatar || post.author.avatarUrl === undefined
+                  ? undefined
+                  : remoteAssetUrl(post.author.avatarUrl)
+              }
               alt=""
               onError={() => {
                 setFailedAvatar(true);
