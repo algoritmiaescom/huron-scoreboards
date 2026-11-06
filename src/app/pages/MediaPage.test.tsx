@@ -122,7 +122,6 @@ describe('media page', () => {
       'href',
       post.permalink,
     );
-    expect(screen.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
     expect(document.title).toBe('Comunidad | Huron Scoreboards');
   });
 

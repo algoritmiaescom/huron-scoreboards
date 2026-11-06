@@ -1,4 +1,4 @@
-import { Alert, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import { GuideSection } from './GuideSection';
@@ -81,10 +81,5 @@ export const DataRequirements = () => (
         </li>
       </Rules>
     </GuideSection>
-    <Alert severity="warning">
-      <code>data/mock/</code> contiene resultados inventados, no una fuente oficial. Nunca
-      promociones esos archivos al archivo real: transcribe los resultados desde la clasificación
-      oficial a <code>data/</code>.
-    </Alert>
   </Stack>
 );

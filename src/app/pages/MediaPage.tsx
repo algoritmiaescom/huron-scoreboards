@@ -85,10 +85,6 @@ const EmptyContent = styled(CardContent)(({ theme }) => ({
   gap: theme.spacing(2),
 }));
 
-const SourceNote = styled(Alert)(({ theme }) => ({
-  marginTop: theme.spacing(3),
-}));
-
 export const MediaPage = () => {
   const {
     scoreboards,
@@ -242,12 +238,6 @@ export const MediaPage = () => {
                 </EmptyContent>
               </EmptyCard>
             )}
-
-            <SourceNote severity="info">
-              Este feed muestra publicaciones seleccionadas y versionadas en el archivo del
-              proyecto; no consulta redes sociales en vivo. Cada recurso multimedia requiere texto
-              alternativo y cada tarjeta enlaza a la publicación original.
-            </SourceNote>
           </FeedSection>
         )}
       </PageContainer>

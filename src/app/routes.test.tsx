@@ -59,7 +59,6 @@ describe('application routes', () => {
     expect(screen.getByText('Los intentos incluyen el envío aceptado.')).toBeInTheDocument();
     expect(screen.getByText(/no siempre es 20/)).toBeInTheDocument();
     expect(screen.getByText(/No guardes primeros en resolver/)).toBeInTheDocument();
-    expect(screen.getByText(/Nunca promociones/)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Guía de contribución' })).toHaveAttribute(
       'href',
       repositoryLinks.contributing,

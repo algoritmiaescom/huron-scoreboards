@@ -1,4 +1,3 @@
-import Code from '@mui/icons-material/Code';
 import GitHub from '@mui/icons-material/GitHub';
 import Launch from '@mui/icons-material/Launch';
 import { Alert, Button, Divider, Stack } from '@mui/material';
@@ -107,10 +106,6 @@ export const ContributePage = () => (
         </Button>
       </Resources>
       <SectionDivider />
-      <Alert severity="info" icon={<Code />}>
-        Esta aplicación no tiene cuentas, pantallas de administración ni formularios de edición. El
-        historial de Git es el registro de auditoría de cada corrección.
-      </Alert>
     </Page>
   </>
 );

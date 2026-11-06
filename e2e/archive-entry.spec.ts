@@ -278,7 +278,6 @@ test('shows published archive media before its unlinked event takes place', asyn
   await expect(page.getByRole('link', { name: /Ver clasificación de/ })).toHaveCount(0);
   await expect(page.getByLabel('Ver publicaciones de otro evento')).toHaveCount(0);
   await expect(page.getByText(/inventados/)).toHaveCount(0);
-  await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
   await page.goto('./#/media?event=2026-mexico-finals');
   await page.reload();
   await expect(page.getByText(/Final Mexicana 2026 ·/)).toBeVisible();

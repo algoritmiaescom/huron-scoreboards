@@ -55,7 +55,6 @@ test('opens archived multimedia from desktop and mobile navigation', async ({ pa
     'aria-current',
     'page',
   );
-  await expect(page.getByText(/no consulta redes sociales en vivo/)).toBeVisible();
   await expect(page.getByRole('article').first()).toBeVisible();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.getByRole('button', { name: 'Abrir navegación' }).click();
